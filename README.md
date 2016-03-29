@@ -2,7 +2,7 @@ Template Syntax
 ---------------
 
 Welcome to the example application used in angular.io/dart's
-[Template Syntax](//github.com/angular/angular.io/public/docs/_examples/template-syntax/dart) page.
+[Template Syntax](//github.com/angular/angular.io/tree/masterpublic/docs/_examples/template-syntax/dart) page.
 
 To run your own copy:
 
