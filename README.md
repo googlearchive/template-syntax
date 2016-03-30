@@ -21,8 +21,8 @@ To run your own copy:
 
 -------------------------------------------------------
 
-*Note:* The content of this repository is generated from //github.com/angular/angular.io/tree/master/public/docs/_examples/template-syntax/dart
-by running the [dart-doc-syncer](//github.com/angular/dart-doc-syncer) tool.
+*Note:* The content of this repository is generated from
+[the angular.io repository](//github.com/angular/angular.io/tree/master/public/docs/_examples/template-syntax/dart) by running the
+[dart-doc-syncer](//github.com/angular/dart-doc-syncer) tool.
 If you find a problem with this sample's code, please open an
 [issue at angular/angular.io](https://github.com/angular/angular.io/issues/new).
-Any issues opened here will be automatically closed.
