@@ -5,7 +5,8 @@ import 'package:angular2/core.dart';
 @Directive(selector: '[myClick]')
 class MyClickDirective {
   // @Output(alias) [type info] propertyName = ...
-  @Output('myClick') final EventEmitter clicks = new EventEmitter<String>();
+  @Output('myClick')
+  final EventEmitter clicks = new EventEmitter<String>();
 
   bool _toggle = false;
 
@@ -18,8 +19,7 @@ class MyClickDirective {
   }
 }
 
-@Directive(
-    selector: '[myClick2]',
+@Directive(selector: '[myClick2]',
     // ...
     outputs: const ['clicks:myClick']) // propertyName:alias
 class MyClickDirective2 {

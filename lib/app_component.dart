@@ -131,8 +131,8 @@ class AppComponent implements OnInit, AfterViewInit {
       'special': isSpecial // true
     };
     // compensate for DevMode (sigh)
-    if (JSON.encode(_previousClasses) ==
-        JSON.encode(classes)) return _previousClasses;
+    if (JSON.encode(_previousClasses) == JSON.encode(classes))
+      return _previousClasses;
     _previousClasses = classes;
     return classes;
   }
@@ -170,13 +170,16 @@ class AppComponent implements OnInit, AfterViewInit {
   int heroesNoTrackByChangeCount = 0;
   int heroesWithTrackByChangeCount = 0;
 
-  @ViewChildren('noTrackBy') QueryList<ElementRef> childrenNoTrackBy;
-  @ViewChildren('withTrackBy') QueryList<ElementRef> childrenWithTrackBy;
+  @ViewChildren('noTrackBy')
+  QueryList<ElementRef> childrenNoTrackBy;
+  @ViewChildren('withTrackBy')
+  QueryList<ElementRef> childrenWithTrackBy;
 
   void _detectNgForTrackByEffects() {
     /// Converts [viewChildren] to a list of [Element].
     List<Element> _extractChildren(QueryList<ElementRef> viewChildren) =>
-        viewChildren.toList()[0].nativeElement.children.toList() as List<Element>;
+        viewChildren.toList()[0].nativeElement.children.toList()
+        as List<Element>;
 
     {
       // Updates 'without TrackBy' statistics.

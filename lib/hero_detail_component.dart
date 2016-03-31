@@ -19,13 +19,13 @@ var nextHeroDetailId = 1;
           {{prefix}} {{hero?.fullName}}
         </span>
         <button (click)="delete()">Delete</button>
-      </div>'''
-    )
+      </div>''')
 class HeroDetailComponent {
   Hero hero = new Hero('Zzzzzzzz'); // default sleeping hero
   String heroImageUrl = 'assets/images/hero.png';
   String lineThrough = ''; // PENDING: use null instead?
-  @Input() String prefix = '';
+  @Input()
+  String prefix = '';
 
   // This component make a request but it can't actually delete a hero.
   final deleteRequest = new EventEmitter<Hero>();
@@ -55,12 +55,15 @@ class HeroDetailComponent {
         <button (click)="delete()">Delete</button>
       </div>''')
 class BigHeroDetailComponent extends HeroDetailComponent {
-  @Input() Hero hero;
-  @Output() final deleteRequest = new EventEmitter<Hero>();
+  @Input()
+  Hero hero;
+  @Output()
+  final deleteRequest = new EventEmitter<Hero>();
 
   String get heroImageUrl => 'assets/images/hero.png';
 
-  @override void delete() {
+  @override
+  void delete() {
     deleteRequest.emit(hero);
   }
 }
