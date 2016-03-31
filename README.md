@@ -1,3 +1,8 @@
+**WARNING:** This example is preliminary and will probably change.
+
+------------------------------------------------------------------
+      
+
 Template Syntax
 ---------------
 
