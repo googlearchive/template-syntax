@@ -1,0 +1,215 @@
+{
+  "ngDeps": {
+    "1": "",
+    "3": [
+      {
+        "1": "package:angular2/core.dart",
+        "5": false
+      },
+      {
+        "1": "hero.dart",
+        "5": false
+      }
+    ],
+    "5": [
+      {
+        "1": "HeroDetailComponent",
+        "4": [
+          {
+            "1": "Component",
+            "3": [
+              {
+                "1": "selector",
+                "2": "'hero-detail'"
+              },
+              {
+                "1": "inputs",
+                "2": "const ['hero']"
+              },
+              {
+                "1": "outputs",
+                "2": "const ['deleteRequest']"
+              },
+              {
+                "1": "styles",
+                "2": "const ['button { margin-left: 8px} div {margin: 8px 0} img {height:24px}']"
+              },
+              {
+                "1": "template",
+                "2": "'''\n      <div>\n        <img src=\"{{heroImageUrl}}\">\n        <span [style.text-decoration]=\"lineThrough\">\n          {{prefix}} {{hero?.fullName}}\n        </span>\n        <button (click)=\"delete()\">Delete</button>\n      </div>'''"
+              }
+            ],
+            "4": false,
+            "5": true,
+            "6": true,
+            "7": true,
+            "8": false
+          }
+        ],
+        "7": [
+          {
+            "1": "prefix",
+            "2": [
+              {
+                "1": "Input",
+                "4": false,
+                "5": false,
+                "6": false,
+                "7": false,
+                "8": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "1": "BigHeroDetailComponent",
+        "4": [
+          {
+            "1": "Component",
+            "3": [
+              {
+                "1": "selector",
+                "2": "'big-hero-detail'"
+              },
+              {
+                "1": "template",
+                "2": "'''\n      <div style=\"border: 1px solid black; padding:3px\">\n        <img src=\"{{heroImageUrl}}\" style=\"float:left; margin-right:8px;\">\n        <div><b>{{hero?.fullName}}</b></div>\n        <div>First: {{hero?.firstName}}</div>\n        <div>Last: {{hero?.lastName}}</div>\n        <div>Birthdate: {{hero?.birthdate | date:'longDate'}}</div>\n        <div>Web: <a href=\"{{hero?.url}}\" target=\"_blank\">{{hero?.url}}</a></div>\n        <div>Rate/hr: {{hero?.rate | currency:'EUR'}}</div>\n        <br clear=\"all\">\n        <button (click)=\"delete()\">Delete</button>\n      </div>'''"
+              }
+            ],
+            "4": false,
+            "5": true,
+            "6": true,
+            "7": true,
+            "8": false
+          }
+        ],
+        "7": [
+          {
+            "1": "hero",
+            "2": [
+              {
+                "1": "Input",
+                "4": false,
+                "5": false,
+                "6": false,
+                "7": false,
+                "8": false
+              }
+            ]
+          },
+          {
+            "1": "deleteRequest",
+            "2": [
+              {
+                "1": "Output",
+                "4": false,
+                "5": false,
+                "6": false,
+                "7": false,
+                "8": false
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "6": "hero_detail_component.dart",
+    "10": [
+      {
+        "1": "package:angular2/core.template.dart",
+        "4": "i0"
+      },
+      {
+        "1": "hero.template.dart",
+        "4": "i1"
+      }
+    ]
+  },
+  "type": {
+    "HeroDetailComponent": {
+      "class": "Directive",
+      "isComponent": true,
+      "dynamicLoadable": true,
+      "selector": "hero-detail",
+      "exportAs": null,
+      "type": {
+        "class": "Type",
+        "name": "HeroDetailComponent",
+        "moduleUrl": "asset:template_syntax/lib/hero_detail_component.dart",
+        "prefix": null,
+        "isHost": false,
+        "constConstructor": null,
+        "value": null,
+        "diDeps": []
+      },
+      "changeDetection": 5,
+      "inputs": {
+        "hero": "hero",
+        "prefix": "prefix"
+      },
+      "outputs": {
+        "deleteRequest": "deleteRequest"
+      },
+      "hostListeners": {},
+      "hostProperties": {},
+      "hostAttributes": {},
+      "lifecycleHooks": [],
+      "template": {
+        "encapsulation": 0,
+        "template": "      <div>\n        <img src=\"{{heroImageUrl}}\">\n        <span [style.text-decoration]=\"lineThrough\">\n          {{prefix}} {{hero?.fullName}}\n        </span>\n        <button (click)=\"delete()\">Delete</button>\n      </div>",
+        "templateUrl": "asset:template_syntax/lib/hero_detail_component.dart",
+        "styles": [
+          "button { margin-left: 8px} div {margin: 8px 0} img {height:24px}"
+        ],
+        "styleUrls": [],
+        "ngContentSelectors": []
+      },
+      "providers": [],
+      "viewProviders": [],
+      "queries": [],
+      "viewQueries": []
+    },
+    "BigHeroDetailComponent": {
+      "class": "Directive",
+      "isComponent": true,
+      "dynamicLoadable": true,
+      "selector": "big-hero-detail",
+      "exportAs": null,
+      "type": {
+        "class": "Type",
+        "name": "BigHeroDetailComponent",
+        "moduleUrl": "asset:template_syntax/lib/hero_detail_component.dart",
+        "prefix": null,
+        "isHost": false,
+        "constConstructor": null,
+        "value": null,
+        "diDeps": []
+      },
+      "changeDetection": 5,
+      "inputs": {
+        "hero": "hero"
+      },
+      "outputs": {
+        "deleteRequest": "deleteRequest"
+      },
+      "hostListeners": {},
+      "hostProperties": {},
+      "hostAttributes": {},
+      "lifecycleHooks": [],
+      "template": {
+        "encapsulation": 2,
+        "template": "      <div style=\"border: 1px solid black; padding:3px\">\n        <img src=\"{{heroImageUrl}}\" style=\"float:left; margin-right:8px;\">\n        <div><b>{{hero?.fullName}}</b></div>\n        <div>First: {{hero?.firstName}}</div>\n        <div>Last: {{hero?.lastName}}</div>\n        <div>Birthdate: {{hero?.birthdate | date:'longDate'}}</div>\n        <div>Web: <a href=\"{{hero?.url}}\" target=\"_blank\">{{hero?.url}}</a></div>\n        <div>Rate/hr: {{hero?.rate | currency:'EUR'}}</div>\n        <br clear=\"all\">\n        <button (click)=\"delete()\">Delete</button>\n      </div>",
+        "templateUrl": "asset:template_syntax/lib/hero_detail_component.dart",
+        "styles": [],
+        "styleUrls": [],
+        "ngContentSelectors": []
+      },
+      "providers": [],
+      "viewProviders": [],
+      "queries": [],
+      "viewQueries": []
+    }
+  },
+  "alias": {}
+}
