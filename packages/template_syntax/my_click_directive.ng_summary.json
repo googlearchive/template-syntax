@@ -14,69 +14,15 @@
     "5": [
       {
         "1": "MyClickDirective",
-        "4": [
-          {
-            "1": "Directive",
-            "3": [
-              {
-                "1": "selector",
-                "2": "'[myClick]'"
-              }
-            ],
-            "4": false,
-            "5": true,
-            "6": false,
-            "7": true,
-            "8": false
-          }
-        ],
         "5": [
           {
             "1": "ElementRef",
             "4": "el"
           }
-        ],
-        "7": [
-          {
-            "1": "clicks",
-            "2": [
-              {
-                "1": "Output",
-                "2": [
-                  "'myClick'"
-                ],
-                "4": false,
-                "5": false,
-                "6": false,
-                "7": false,
-                "8": false
-              }
-            ]
-          }
         ]
       },
       {
         "1": "MyClickDirective2",
-        "4": [
-          {
-            "1": "Directive",
-            "3": [
-              {
-                "1": "selector",
-                "2": "'[myClick2]'"
-              },
-              {
-                "1": "outputs",
-                "2": "const ['clicks:myClick']"
-              }
-            ],
-            "4": false,
-            "5": true,
-            "6": false,
-            "7": true,
-            "8": false
-          }
-        ],
         "5": [
           {
             "1": "ElementRef",
@@ -91,7 +37,6 @@
     "MyClickDirective": {
       "class": "Directive",
       "isComponent": false,
-      "dynamicLoadable": true,
       "selector": "[myClick]",
       "exportAs": null,
       "type": {
@@ -100,25 +45,29 @@
         "moduleUrl": "asset:template_syntax/lib/my_click_directive.dart",
         "prefix": null,
         "isHost": false,
-        "constConstructor": null,
         "value": null,
         "diDeps": [
           {
             "token": {
-              "class": "Identifier",
-              "name": "ElementRef",
-              "moduleUrl": null,
-              "prefix": null,
-              "constConstructor": null,
-              "value": null
+              "value": null,
+              "identifier": {
+                "class": "Identifier",
+                "name": "ElementRef",
+                "moduleUrl": null,
+                "prefix": null,
+                "value": null
+              },
+              "identifierIsInstance": false
             },
             "query": null,
             "viewQuery": null,
+            "value": null,
             "isAttribute": false,
             "isSelf": false,
             "isHost": false,
             "isSkipSelf": false,
-            "isOptional": false
+            "isOptional": false,
+            "isValue": false
           }
         ]
       },
@@ -140,7 +89,6 @@
     "MyClickDirective2": {
       "class": "Directive",
       "isComponent": false,
-      "dynamicLoadable": true,
       "selector": "[myClick2]",
       "exportAs": null,
       "type": {
@@ -149,25 +97,29 @@
         "moduleUrl": "asset:template_syntax/lib/my_click_directive.dart",
         "prefix": null,
         "isHost": false,
-        "constConstructor": null,
         "value": null,
         "diDeps": [
           {
             "token": {
-              "class": "Identifier",
-              "name": "ElementRef",
-              "moduleUrl": null,
-              "prefix": null,
-              "constConstructor": null,
-              "value": null
+              "value": null,
+              "identifier": {
+                "class": "Identifier",
+                "name": "ElementRef",
+                "moduleUrl": null,
+                "prefix": null,
+                "value": null
+              },
+              "identifierIsInstance": false
             },
             "query": null,
             "viewQuery": null,
+            "value": null,
             "isAttribute": false,
             "isSelf": false,
             "isHost": false,
             "isSkipSelf": false,
-            "isOptional": false
+            "isOptional": false,
+            "isValue": false
           }
         ]
       },
