@@ -2,8 +2,6 @@ import 'package:angular2/core.dart';
 
 import 'hero.dart';
 
-var nextHeroDetailId = 1;
-
 @Component(
     selector: 'hero-detail',
     // ...

@@ -1,12 +1,11 @@
 
 
-Template Syntax
----------------
+## Template Syntax
 
 Welcome to the example application used in angular.io/dart's
-[Template Syntax](https://angular.io/docs/ts/latest/guide/template-syntax.html) page.
+[Template Syntax](https://angular.io/docs/dart/latest/guide/template-syntax.html) page.
 
-To run your own copy:
+You can run a [hosted copy](http://angular-examples.github.io/template-syntax) of this sample. Or run your own copy:
 
 1. Clone this repo.
 2. Download the dependencies:
@@ -27,4 +26,4 @@ To run your own copy:
 [the angular.io repository](//github.com/angular/angular.io/tree/master/public/docs/_examples/template-syntax/dart) by running the
 [dart-doc-syncer](//github.com/angular/dart-doc-syncer) tool.
 If you find a problem with this sample's code, please open an
-[issue at angular/angular.io](https://github.com/angular/angular.io/issues/new).
+[issue at angular/angular.io](//github.com/angular/angular.io/issues/new?labels=dart,example&title=%5BDart%5D%5Bexample%5D%20guide/template-syntax%3A%20).
