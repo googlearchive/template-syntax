@@ -1,5 +1,6 @@
 import 'dart:convert';
 import 'dart:html';
+import 'dart:math';
 
 import 'package:angular2/core.dart';
 import 'package:angular2/common.dart';
@@ -122,8 +123,12 @@ class AppComponent implements OnInit, AfterViewInit {
   }
 
   String getStyles(Element el) {
-    var showStyles = setStyles();
-    return JSON.encode(showStyles);
+    final style = el.style;
+    final Map styles = <String, String>{};
+    for (var i = 0; i < style.length; i++) {
+      styles[style.item(i)] = style.getPropertyValue(style.item(i));
+    }
+    return JSON.encode(styles);
   }
 
   Map<String, bool> _previousClasses = {};
@@ -140,11 +145,23 @@ class AppComponent implements OnInit, AfterViewInit {
     return classes;
   }
 
-  Map setStyles() {
-    return {
+  Map<String, String> setStyles() {
+    return <String, String>{
       'font-style': canSave ? 'italic' : 'normal', // italic
       'font-weight': !isUnchanged ? 'bold' : 'normal', // normal
       'font-size': isSpecial ? '24px' : '8px' // 24px
+    };
+  }
+
+  bool isItalic = false;
+  bool isBold = false;
+  num fontSizePx = 20;
+
+  Map<String, String> setStyle() {
+    return {
+      'font-style': isItalic ? 'italic' : 'normal',
+      'font-weight': isBold ? 'bold' : 'normal',
+      'font-size': '${fontSizePx}px'
     };
   }
 
