@@ -320,6 +320,16 @@ bindon-ngModel
 <!-- NgStyle binding -->
 <hr><h2 id="ngStyle">NgStyle Binding</h2>
 
+<div>
+  <p [ngStyle]="setStyle()" #styleP>Change style of this text!</p>
+
+  <label>Italic: <input type="checkbox" [(ngModel)]="isItalic"></label>
+  <label>Bold: <input type="checkbox" [(ngModel)]="isBold"></label>
+  <label>Size: <input type="number" [(ngModel)]="fontSizePx"></label>
+
+  <p>Style set to: '<code>{{styleP.style.cssText}}</code>'</p>
+</div>
+
 <div [style.font-size]="isSpecial ? 'x-large' : 'smaller'" >
   This div is x-large.
 </div>
