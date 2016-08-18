@@ -1,6 +1,5 @@
 import 'dart:convert';
 import 'dart:html';
-import 'dart:math';
 
 import 'package:angular2/core.dart';
 import 'package:angular2/common.dart';
@@ -155,18 +154,22 @@ class AppComponent implements OnInit, AfterViewInit {
 
   bool isItalic = false;
   bool isBold = false;
-  num fontSizePx = 20;
+  String fontSize = 'large';
 
   Map<String, String> setStyle() {
     return {
       'font-style': isItalic ? 'italic' : 'normal',
       'font-weight': isBold ? 'bold' : 'normal',
-      'font-size': '${fontSizePx}px'
+      'font-size': fontSize
     };
   }
 
   String title = 'Template Syntax';
+  String evilTitle =
+      'Template <script>alert("evil never sleeps")</script>Syntax';
+
   String toeChoice;
+
   String toeChooser(Element picker) {
     List<Element> choices = picker.children;
     for (var i = 0; i < choices.length; i++) {
