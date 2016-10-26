@@ -36,10 +36,13 @@
         "value": null,
         "diDeps": []
       },
-      "changeDetection": 5,
+      "changeDetection": 6,
       "inputs": {
         "hero": "hero",
         "prefix": "prefix"
+      },
+      "inputTypes": {
+        "prefix": " String"
       },
       "outputs": {
         "deleteRequest": "deleteRequest"
@@ -77,9 +80,12 @@
         "value": null,
         "diDeps": []
       },
-      "changeDetection": 5,
+      "changeDetection": 6,
       "inputs": {
         "hero": "hero"
+      },
+      "inputTypes": {
+        "hero": " Hero"
       },
       "outputs": {
         "deleteRequest": "deleteRequest"
