@@ -6,7 +6,8 @@ import 'package:angular2/common.dart';
 
 import 'hero.dart';
 import 'hero_detail_component.dart';
-import 'my_click_directive.dart';
+import 'click_directive.dart';
+import 'sizer_component.dart';
 
 enum Color { red, green, blue }
 
@@ -17,7 +18,8 @@ enum Color { red, green, blue }
       HeroDetailComponent,
       BigHeroDetailComponent,
       MyClickDirective,
-      MyClickDirective2
+      MyClickDirective2,
+      MySizerComponent
     ])
 class AppComponent implements OnInit, AfterViewInit {
   @override
@@ -155,6 +157,7 @@ class AppComponent implements OnInit, AfterViewInit {
   bool isItalic = false;
   bool isBold = false;
   String fontSize = 'large';
+  String fontSizePx = '14';
 
   Map<String, String> setStyle() {
     return {
