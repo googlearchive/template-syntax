@@ -13,7 +13,7 @@
 </div>
 <br>
 <a href="#event-binding">Event Binding</a><br>
-
+<a href="#two-way">Two-way Binding</a><br>
 <br>
 <div>Directives</div>
 <div style="margin-left:8px">
@@ -191,9 +191,6 @@ button</button>
 
   <button [attr.disabled]="!isUnchanged">Disabled as well</button>
 
-  <!-- can't remove it with [attr.disabled] either -->
-  <button disabled [attr.disabled]>Still disabled</button>
-
   <!-- we'd have to remove it with property binding -->
   <button disabled [disabled]="false">Enabled (but inert)</button>
 </div>
@@ -208,7 +205,7 @@ button</button>
 
 <!-- reset/override all class names with a binding  -->
 <div class="bad curly special"
-     [className]="badCurly">Bad curly</div>
+     [class]="badCurly">Bad curly</div>
 
 <!-- toggle the "special" class on/off with a property -->
 <div [class.special]="isSpecial">The class binding is special</div>
@@ -268,6 +265,20 @@ button</button>
 <!-- Will save twice -->
 <div (click)="onSave()">
   <button (click)="onSave() || true">Save w/ propagation</button>
+</div>
+<br><br>
+<a class="to-toc" href="#toc">top</a>
+
+<hr><h2 id="two-way">Two-way Binding</h2>
+<div id="two-way-1">
+  <my-sizer [(size)]="fontSizePx"></my-sizer>
+  <div [style.font-size.px]="fontSizePx">Resizable Text</div>
+  <label>FontSize (px): <input [(ngModel)]="fontSizePx"></label>
+</div>
+<br>
+<div id="two-way-2">
+  <h3>De-sugared two-way binding</h3>
+  <my-sizer [size]="fontSizePx" (sizeChange)="fontSizePx=$event"></my-sizer>
 </div>
 <br><br>
 
@@ -591,7 +602,7 @@ bindon-ngModel
 
 <div>
   <!-- pipe price to USD and display the $ symbol -->
-  <label>Price: </label>{{product['price'] | currency:'USD':false}}
+  <label>Price: </label>{{product['price'] | currency:'USD':true}}
 </div>
 
 <a class="to-toc" href="#toc">top</a>
