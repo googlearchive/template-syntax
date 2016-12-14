@@ -205,7 +205,7 @@ class AppComponent implements OnInit, AfterViewInit {
     /// Converts [viewChildren] to a list of [Element].
     List<Element> _extractChildren(QueryList<ElementRef> viewChildren) =>
         viewChildren.toList()[0].nativeElement.children.toList()
-        as List<Element>;
+            as List<Element>;
 
     {
       // Updates 'without TrackBy' statistics.
