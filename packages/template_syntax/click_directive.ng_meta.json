@@ -13,7 +13,7 @@
     ],
     "5": [
       {
-        "1": "MyClickDirective",
+        "1": "ClickDirective",
         "5": [
           {
             "1": "ElementRef",
@@ -22,7 +22,7 @@
         ]
       },
       {
-        "1": "MyClickDirective2",
+        "1": "ClickDirective2",
         "5": [
           {
             "1": "ElementRef",
@@ -40,14 +40,14 @@
     ]
   },
   "type": {
-    "MyClickDirective": {
+    "ClickDirective": {
       "class": "Directive",
       "isComponent": false,
       "selector": "[myClick]",
       "exportAs": null,
       "type": {
         "class": "Type",
-        "name": "MyClickDirective",
+        "name": "ClickDirective",
         "moduleUrl": "asset:template_syntax/lib/click_directive.dart",
         "prefix": null,
         "isHost": false,
@@ -91,14 +91,14 @@
       "queries": [],
       "viewQueries": []
     },
-    "MyClickDirective2": {
+    "ClickDirective2": {
       "class": "Directive",
       "isComponent": false,
       "selector": "[myClick2]",
       "exportAs": null,
       "type": {
         "class": "Type",
-        "name": "MyClickDirective2",
+        "name": "ClickDirective2",
         "moduleUrl": "asset:template_syntax/lib/click_directive.dart",
         "prefix": null,
         "isHost": false,

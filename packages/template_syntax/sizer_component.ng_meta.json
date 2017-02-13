@@ -13,7 +13,7 @@
     ],
     "5": [
       {
-        "1": "MySizerComponent"
+        "1": "SizerComponent"
       }
     ],
     "6": "sizer_component.dart",
@@ -25,14 +25,14 @@
     ]
   },
   "type": {
-    "MySizerComponent": {
+    "SizerComponent": {
       "class": "Directive",
       "isComponent": true,
       "selector": "my-sizer",
       "exportAs": null,
       "type": {
         "class": "Type",
-        "name": "MySizerComponent",
+        "name": "SizerComponent",
         "moduleUrl": "asset:template_syntax/lib/sizer_component.dart",
         "prefix": null,
         "isHost": false,
