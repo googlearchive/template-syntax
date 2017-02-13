@@ -17,9 +17,9 @@ enum Color { red, green, blue }
     directives: const [
       HeroDetailComponent,
       BigHeroDetailComponent,
-      MyClickDirective,
-      MyClickDirective2,
-      MySizerComponent
+      ClickDirective,
+      ClickDirective2,
+      SizerComponent
     ])
 class AppComponent implements OnInit, AfterViewInit {
   @override
@@ -139,7 +139,7 @@ class AppComponent implements OnInit, AfterViewInit {
       'modified': !isUnchanged, // false
       'special': isSpecial // true
     };
-    // compensate for DevMode (sigh)
+    // Compensate for DevMode.
     if (JSON.encode(_previousClasses) == JSON.encode(classes))
       return _previousClasses;
     _previousClasses = classes;

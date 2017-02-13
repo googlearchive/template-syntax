@@ -237,7 +237,7 @@ button</button>
 <button on-click="onSave()">On Save</button>
 
 <div>
-<!-- `myClick` is an event on the custom `MyClickDirective` -->
+<!-- `myClick` is an event on the custom `ClickDirective` -->
 <div (myClick)="clickMessage=$event">click with myClick</div>
 {{clickMessage}}
 </div>
@@ -493,14 +493,9 @@ bindon-ngModel
   <div *ngFor="let hero of heroes trackBy:trackByHeroes">({{hero.id}}) {{hero.fullName}}</div>
 </div>
 
-<p>with <i>*ngForTrackBy</i></p>
-<div class="box">
-  <div *ngFor="let hero of heroes" *ngForTrackBy="trackByHeroes">({{hero.id}}) {{hero.fullName}}</div>
-</div>
-
 <p>with <i>generic</i> trackById function</p>
 <div class="box">
-  <div *ngFor="let hero of heroes" *ngForTrackBy="trackById">({{hero.id}}) {{hero.fullName}}</div>
+  <div *ngFor="let hero of heroes, trackBy:trackById">({{hero.id}}) {{hero.fullName}}</div>
 </div>
 
 <a class="to-toc" href="#toc">top</a>
