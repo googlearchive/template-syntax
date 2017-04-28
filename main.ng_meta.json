@@ -3,6 +3,14 @@
     "1": "",
     "3": [
       {
+        "1": "dart:html",
+        "5": false
+      },
+      {
+        "1": "package:angular2/core.dart",
+        "5": false
+      },
+      {
         "1": "package:angular2/platform/browser_static.dart",
         "5": false
       },
@@ -11,19 +19,46 @@
         "5": false
       }
     ],
+    "5": [
+      {
+        "1": "BrowserExceptionHandler",
+        "4": [
+          {
+            "1": "Injectable",
+            "4": false
+          }
+        ],
+        "6": [
+          "ExceptionHandler"
+        ]
+      }
+    ],
     "6": "main.dart",
     "7": [
       {
-        "1": "package:angular2/platform/browser_static.template.dart",
+        "1": "package:angular2/core.template.dart",
         "4": "i0"
       },
       {
-        "1": "package:template_syntax/app_component.template.dart",
+        "1": "package:angular2/platform/browser_static.template.dart",
         "4": "i1"
+      },
+      {
+        "1": "package:template_syntax/app_component.template.dart",
+        "4": "i2"
       }
     ]
   },
   "type": {
+    "BrowserExceptionHandler": {
+      "class": "Type",
+      "name": "BrowserExceptionHandler",
+      "moduleUrl": "asset:template_syntax/web/main.dart",
+      "prefix": null,
+      "isHost": false,
+      "value": null,
+      "diDeps": []
+    },
     "main": {
       "class": "Identifier",
       "name": "main",
