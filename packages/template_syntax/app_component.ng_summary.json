@@ -7,7 +7,7 @@
         "5": false
       },
       {
-        "1": "package:angular2/core.dart",
+        "1": "package:angular2/angular2.dart",
         "5": false
       },
       {
@@ -48,6 +48,9 @@
         ],
         "7": [
           {
+            "2": "COMMON_DIRECTIVES"
+          },
+          {
             "2": "BigHeroDetailComponent"
           },
           {
@@ -70,6 +73,11 @@
           },
           {
             "2": "materialDirectives"
+          }
+        ],
+        "8": [
+          {
+            "2": "COMMON_PIPES"
           }
         ]
       }

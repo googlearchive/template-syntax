@@ -7,7 +7,7 @@
         "5": false
       },
       {
-        "1": "package:angular2/core.dart",
+        "1": "package:angular2/angular2.dart",
         "5": false
       },
       {
@@ -23,13 +23,18 @@
         ]
       },
       {
-        "1": "BigHeroDetailComponent"
+        "1": "BigHeroDetailComponent",
+        "8": [
+          {
+            "2": "COMMON_PIPES"
+          }
+        ]
       }
     ],
     "6": "hero_detail_component.dart",
     "7": [
       {
-        "1": "package:angular2/core.template.dart",
+        "1": "package:angular2/angular2.template.dart",
         "4": "i0"
       },
       {
@@ -67,7 +72,7 @@
       "lifecycleHooks": [],
       "template": {
         "encapsulation": 0,
-        "template": "      <div class=\"detail\">\n        <img src=\"{{heroImageUrl}}\">\n        <div><b>{{hero?.name}}</b></div>\n        <div>Name: {{hero?.name}}</div>\n        <div>Emotion: {{hero?.emotion}}</div>\n        <div>Birthdate: {{hero?.birthdate | date:'longDate'}}</div>\n        <div>Web: <a href=\"{{hero?.url}}\" target=\"_blank\">{{hero?.url}}</a></div>\n        <div>Rate/hr: {{hero?.rate | currency:'EUR'}}</div>\n        <br clear=\"all\">\n        <button (click)=\"delete()\">Delete</button>\n      </div>\n    ",
+        "template": "    <div class=\"detail\">\n      <img src=\"{{heroImageUrl}}\">\n      <div><b>{{hero?.name}}</b></div>\n      <div>Name: {{hero?.name}}</div>\n      <div>Emotion: {{hero?.emotion}}</div>\n      <div>Birthdate: {{hero?.birthdate | date:'longDate'}}</div>\n      <div>Web: <a href=\"{{hero?.url}}\" target=\"_blank\">{{hero?.url}}</a></div>\n      <div>Rate/hr: {{hero?.rate | currency:'EUR'}}</div>\n      <br clear=\"all\">\n      <button (click)=\"delete()\">Delete</button>\n    </div>\n  ",
         "templateUrl": "asset:template_syntax/lib/hero_detail_component.dart",
         "styles": [
           ".detail { border: 1px solid black; padding: 4px; max-width: 450px; }",

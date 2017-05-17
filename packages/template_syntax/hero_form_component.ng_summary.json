@@ -17,7 +17,12 @@
     ],
     "5": [
       {
-        "1": "HeroFormComponent"
+        "1": "HeroFormComponent",
+        "7": [
+          {
+            "2": "COMMON_DIRECTIVES"
+          }
+        ]
       }
     ],
     "6": "hero_form_component.dart"
