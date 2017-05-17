@@ -5,7 +5,7 @@ environment:
   sdk: '>=1.23.0 <2.0.0'
 dependencies:
   angular2: ^3.0.0
-  angular_components: ^0.5.0
+  angular_components: ^0.5.1
 dev_dependencies:
   angular_test: ^1.0.0-beta+2
   browser: ^0.10.0
@@ -14,10 +14,6 @@ dev_dependencies:
 
 transformers:
 - angular2:
-    platform_directives:
-    - 'package:angular2/common.dart#COMMON_DIRECTIVES'
-    platform_pipes:
-    - 'package:angular2/common.dart#COMMON_PIPES'
     entry_points: web/main.dart
 - angular2/transform/reflection_remover:
     $include: test/**_test.dart

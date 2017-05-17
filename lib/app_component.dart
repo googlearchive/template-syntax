@@ -1,6 +1,6 @@
 import 'dart:html';
 
-import 'package:angular2/core.dart';
+import 'package:angular2/angular2.dart';
 import 'package:angular_components/angular_components.dart';
 
 import 'hero.dart';
@@ -18,6 +18,7 @@ enum Color { red, green, blue }
   templateUrl: 'app_component.html',
   styleUrls: const ['app_component.css'],
   directives: const [
+    COMMON_DIRECTIVES,
     BigHeroDetailComponent,
     HeroDetailComponent,
     HeroFormComponent,
@@ -28,6 +29,7 @@ enum Color { red, green, blue }
     materialDirectives
   ],
   providers: const [materialProviders],
+  pipes: const [COMMON_PIPES],
 )
 class AppComponent implements AfterViewInit, OnInit {
   @override

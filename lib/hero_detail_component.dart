@@ -1,5 +1,5 @@
 import 'dart:async';
-import 'package:angular2/core.dart';
+import 'package:angular2/angular2.dart';
 
 import 'hero.dart';
 
@@ -43,29 +43,29 @@ class HeroDetailComponent implements OnInit {
 }
 
 @Component(
-    selector: 'big-hero-detail',
-    inputs: const ['hero'],
-    outputs: const ['deleteRequest'],
-    template: '''
-      <div class="detail">
-        <img src="{{heroImageUrl}}">
-        <div><b>{{hero?.name}}</b></div>
-        <div>Name: {{hero?.name}}</div>
-        <div>Emotion: {{hero?.emotion}}</div>
-        <div>Birthdate: {{hero?.birthdate | date:'longDate'}}</div>
-        <div>Web: <a href="{{hero?.url}}" target="_blank">{{hero?.url}}</a></div>
-        <div>Rate/hr: {{hero?.rate | currency:'EUR'}}</div>
-        <br clear="all">
-        <button (click)="delete()">Delete</button>
-      </div>
-    ''',
-    styles: const [
-      '.detail { border: 1px solid black; padding: 4px; max-width: 450px; }',
-      'img     { float: left; margin-right: 8px; height: 100px; }'
-    ])
+  selector: 'big-hero-detail',
+  inputs: const ['hero'],
+  outputs: const ['deleteRequest'],
+  template: '''
+    <div class="detail">
+      <img src="{{heroImageUrl}}">
+      <div><b>{{hero?.name}}</b></div>
+      <div>Name: {{hero?.name}}</div>
+      <div>Emotion: {{hero?.emotion}}</div>
+      <div>Birthdate: {{hero?.birthdate | date:'longDate'}}</div>
+      <div>Web: <a href="{{hero?.url}}" target="_blank">{{hero?.url}}</a></div>
+      <div>Rate/hr: {{hero?.rate | currency:'EUR'}}</div>
+      <br clear="all">
+      <button (click)="delete()">Delete</button>
+    </div>
+  ''',
+  styles: const [
+    '.detail { border: 1px solid black; padding: 4px; max-width: 450px; }',
+    'img     { float: left; margin-right: 8px; height: 100px; }'
+  ],
+  pipes: const [COMMON_PIPES],
+)
 class BigHeroDetailComponent extends HeroDetailComponent {
-  // FIXME(chalin): where is this docregion used?
-
   @override
   void delete() {
     _deleteRequest.add(hero);
