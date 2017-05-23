@@ -17058,7 +17058,7 @@
         "ngBeforeSubmit": "ngBeforeSubmit"
       },
       "hostListeners": {
-        "submit": "onSubmit()"
+        "submit": "onSubmit($event)"
       },
       "hostProperties": {},
       "hostAttributes": {},
@@ -17252,7 +17252,7 @@
         "ngBeforeSubmit": "ngBeforeSubmit"
       },
       "hostListeners": {
-        "submit": "onSubmit()"
+        "submit": "onSubmit($event)"
       },
       "hostProperties": {},
       "hostAttributes": {},
