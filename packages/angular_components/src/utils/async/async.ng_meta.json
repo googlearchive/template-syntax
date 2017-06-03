@@ -21,9 +21,6 @@
         "1": "src/lazy_stream_controller.dart"
       },
       {
-        "1": "src/noop_stream.dart"
-      },
-      {
         "1": "src/priority_stream_iterator.dart"
       },
       {
@@ -63,24 +60,20 @@
         "4": "i5"
       },
       {
-        "1": "src/noop_stream.template.dart",
+        "1": "src/priority_stream_iterator.template.dart",
         "4": "i6"
       },
       {
-        "1": "src/priority_stream_iterator.template.dart",
+        "1": "src/simple_stream.template.dart",
         "4": "i7"
       },
       {
-        "1": "src/simple_stream.template.dart",
+        "1": "src/throttle_stream.template.dart",
         "4": "i8"
       },
       {
-        "1": "src/throttle_stream.template.dart",
-        "4": "i9"
-      },
-      {
         "1": "src/zoned_async.template.dart",
-        "4": "i10"
+        "4": "i9"
       }
     ]
   },
@@ -131,20 +124,6 @@
       "class": "Identifier",
       "name": "LazyStreamController",
       "moduleUrl": "asset:angular_components/lib/src/utils/async/src/lazy_stream_controller.dart",
-      "prefix": null,
-      "value": null
-    },
-    "NoopStream": {
-      "class": "Identifier",
-      "name": "NoopStream",
-      "moduleUrl": "asset:angular_components/lib/src/utils/async/src/noop_stream.dart",
-      "prefix": null,
-      "value": null
-    },
-    "NoopStreamSubscription": {
-      "class": "Identifier",
-      "name": "NoopStreamSubscription",
-      "moduleUrl": "asset:angular_components/lib/src/utils/async/src/noop_stream.dart",
       "prefix": null,
       "value": null
     },
@@ -243,6 +222,13 @@
       "class": "Identifier",
       "name": "_ZoneRunner",
       "moduleUrl": "asset:angular_components/lib/src/utils/async/src/zoned_async.dart",
+      "prefix": null,
+      "value": null
+    },
+    "_defaultComparator": {
+      "class": "Identifier",
+      "name": "_defaultComparator",
+      "moduleUrl": "asset:angular_components/lib/src/utils/async/src/priority_stream_iterator.dart",
       "prefix": null,
       "value": null
     },

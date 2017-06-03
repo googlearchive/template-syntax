@@ -34,6 +34,13 @@
       "moduleUrl": "asset:angular_components/lib/src/utils/async/src/priority_stream_iterator.dart",
       "prefix": null,
       "value": null
+    },
+    "_defaultComparator": {
+      "class": "Identifier",
+      "name": "_defaultComparator",
+      "moduleUrl": "asset:angular_components/lib/src/utils/async/src/priority_stream_iterator.dart",
+      "prefix": null,
+      "value": null
     }
   },
   "alias": {}

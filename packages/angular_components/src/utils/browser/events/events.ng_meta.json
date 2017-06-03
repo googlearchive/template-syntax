@@ -80,6 +80,13 @@
       "prefix": null,
       "value": null
     },
+    "isStandardMouseEvent": {
+      "class": "Identifier",
+      "name": "isStandardMouseEvent",
+      "moduleUrl": "asset:angular_components/lib/src/utils/browser/events/events.dart",
+      "prefix": null,
+      "value": null
+    },
     "modifierKeyUsed": {
       "class": "Identifier",
       "name": "modifierKeyUsed",

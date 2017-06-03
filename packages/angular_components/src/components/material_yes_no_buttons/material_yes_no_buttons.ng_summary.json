@@ -23,10 +23,6 @@
         "5": false
       },
       {
-        "1": "../../utils/async/async.dart",
-        "5": false
-      },
-      {
         "1": "../material_button/material_button.dart",
         "5": false
       },
@@ -509,7 +505,7 @@
       "lifecycleHooks": [],
       "template": {
         "encapsulation": 0,
-        "template": "<!--\n Copyright (c) 2016, the Dart project authors.  Please see the AUTHORS file\n for details. All rights reserved. Use of this source code is governed by a\n BSD-style license that can be found in the LICENSE file.\n-->\n<div *ngIf=\"pending\"\n     class=\"btn spinner\">\n  <material-spinner></material-spinner>\n</div>\n<material-button #yesButton\n                 *ngIf=\"!pending && yesDisplayed\"\n                 class=\"btn btn-yes\"\n                 [raised]=\"yesRaised || raised\"\n                 [class.highlighted]=\"yesHighlighted\"\n                 [disabled]=\"yesDisabled || disabled\"\n                 (trigger)=\"yes.add($event)\">\n  {{yesText}}\n</material-button>\n<material-button #noButton\n                 *ngIf=\"!pending && noDisplayed\"\n                 class=\"btn btn-no\"\n                 [raised]=\"raised\"\n                 [disabled]=\"disabled\"\n                 (trigger)=\"no.add($event)\">\n  {{noText}}\n</material-button>\n",
+        "template": "<!--\n Copyright (c) 2016, the Dart project authors.  Please see the AUTHORS file\n for details. All rights reserved. Use of this source code is governed by a\n BSD-style license that can be found in the LICENSE file.\n-->\n<div *ngIf=\"pending\"\n     class=\"btn spinner\">\n  <material-spinner></material-spinner>\n</div>\n<material-button #yesButton\n                 *ngIf=\"!pending && yesDisplayed\"\n                 class=\"btn btn-yes\"\n                 [raised]=\"yesRaised || raised\"\n                 [class.highlighted]=\"yesHighlighted\"\n                 [disabled]=\"yesDisabled || disabled\"\n                 (trigger)=\"onYes($event)\">\n  {{yesText}}\n</material-button>\n<material-button #noButton\n                 *ngIf=\"!pending && noDisplayed\"\n                 class=\"btn btn-no\"\n                 [raised]=\"raised\"\n                 [disabled]=\"disabled\"\n                 (trigger)=\"onNo($event)\">\n  {{noText}}\n</material-button>\n",
         "templateUrl": "asset:angular_components/lib/src/components/material_yes_no_buttons/material_yes_no_buttons.html",
         "styles": [],
         "styleUrls": [

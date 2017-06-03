@@ -15,14 +15,14 @@
         "5": false
       },
       {
-        "1": "../../../laminate/overlay/module.dart",
+        "1": "../../laminate/overlay/module.dart",
         "2": [
           "overlayContainerToken"
         ],
         "5": false
       },
       {
-        "1": "../material_expansionpanel.dart",
+        "1": "./material_expansionpanel.dart",
         "5": false
       }
     ],
@@ -63,7 +63,7 @@
       "type": {
         "class": "Type",
         "name": "MaterialExpansionPanelAutoDismiss",
-        "moduleUrl": "asset:angular_components/lib/src/components/material_expansionpanel/src/material_expansionpanel_auto_dismiss.dart",
+        "moduleUrl": "asset:angular_components/lib/src/components/material_expansionpanel/material_expansionpanel_auto_dismiss.dart",
         "prefix": null,
         "isHost": false,
         "value": null,

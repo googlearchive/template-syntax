@@ -21,9 +21,6 @@
         "1": "src/lazy_stream_controller.dart"
       },
       {
-        "1": "src/noop_stream.dart"
-      },
-      {
         "1": "src/priority_stream_iterator.dart"
       },
       {

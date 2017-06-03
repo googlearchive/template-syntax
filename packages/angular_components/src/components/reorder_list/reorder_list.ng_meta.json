@@ -30,10 +30,6 @@
         "5": false
       },
       {
-        "1": "../../utils/async/async.dart",
-        "5": false
-      },
-      {
         "1": "../../utils/disposer/disposer.dart",
         "5": false
       },
@@ -85,24 +81,20 @@
         "4": "i1"
       },
       {
-        "1": "../../utils/async/async.template.dart",
+        "1": "../../utils/disposer/disposer.template.dart",
         "4": "i2"
       },
       {
-        "1": "../../utils/disposer/disposer.template.dart",
+        "1": "../../utils/keyboard/keyboard.template.dart",
         "4": "i3"
       },
       {
-        "1": "../../utils/keyboard/keyboard.template.dart",
+        "1": "./reorder_events.template.dart",
         "4": "i4"
       },
       {
-        "1": "./reorder_events.template.dart",
-        "4": "i5"
-      },
-      {
         "1": "reorder_events.template.dart",
-        "4": "i6"
+        "4": "i5"
       }
     ]
   },

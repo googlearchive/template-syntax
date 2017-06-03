@@ -27,10 +27,6 @@
         "5": false
       },
       {
-        "1": "../../utils/async/async.dart",
-        "5": false
-      },
-      {
         "1": "../../utils/browser/dom_service/dom_service.dart",
         "5": false
       },
@@ -125,36 +121,32 @@
         "4": "i3"
       },
       {
-        "1": "../../utils/async/async.template.dart",
+        "1": "../../utils/browser/dom_service/dom_service.template.dart",
         "4": "i4"
       },
       {
-        "1": "../../utils/browser/dom_service/dom_service.template.dart",
+        "1": "../../utils/disposer/disposer.template.dart",
         "4": "i5"
       },
       {
-        "1": "../../utils/disposer/disposer.template.dart",
+        "1": "../button_decorator/button_decorator.template.dart",
         "4": "i6"
       },
       {
-        "1": "../button_decorator/button_decorator.template.dart",
+        "1": "../content/deferred_content_aware.template.dart",
         "4": "i7"
       },
       {
-        "1": "../content/deferred_content_aware.template.dart",
+        "1": "../focus/focus.template.dart",
         "4": "i8"
       },
       {
-        "1": "../focus/focus.template.dart",
+        "1": "../glyph/glyph.template.dart",
         "4": "i9"
       },
       {
-        "1": "../glyph/glyph.template.dart",
-        "4": "i10"
-      },
-      {
         "1": "../material_yes_no_buttons/material_yes_no_buttons.template.dart",
-        "4": "i11"
+        "4": "i10"
       }
     ]
   },

@@ -223,6 +223,7 @@
         "itemRenderer": "itemRenderer",
         "componentRenderer": "componentRenderer",
         "useCheckMarks": "useCheckMarks",
+        "selectOnActivate": "selectOnActivate",
         "selection": "selection",
         "selected": "selected",
         "closeOnActivate": "closeOnActivate"
@@ -230,6 +231,7 @@
       "inputTypes": {
         "itemRenderer": " ItemRenderer",
         "componentRenderer": " ComponentRenderer",
+        "selectOnActivate": " bool",
         "selection": " SelectionModel"
       },
       "outputs": {
@@ -258,7 +260,7 @@
       ],
       "template": {
         "encapsulation": 0,
-        "template": "<!--\n Copyright (c) 2016, the Dart project authors.  Please see the AUTHORS file\n for details. All rights reserved. Use of this source code is governed by a\n BSD-style license that can be found in the LICENSE file.\n-->\n<div *ngIf=\"!supportsMultiSelect && isSelected\"\n     class=\"selected-accent\"\n     [attr.aria-label]=\"selectedMessage\">\n</div>\n<material-checkbox *ngIf=\"supportsMultiSelect && !useCheckMarks\"\n                   tabindex=\"-1\"\n                   [checked]=\"isSelected\"\n                   [disabled]=\"disabled\"\n                   [attr.aria-label]=\n                       \"isSelected ? selectedMessage : notSelectedMessage\">\n</material-checkbox>\n<span *ngIf=\"supportsMultiSelect && useCheckMarks\"\n      class=\"check-container\"\n      [attr.aria-label]=\"isSelected ? selectedMessage : notSelectedMessage\">\n  <glyph *ngIf=\"isSelected\"\n         baseline\n         class=\"check\"\n         icon=\"check\">\n  </glyph>\n</span>\n<span *ngIf=\"valueHasLabel\" class=\"label\">{{valueLabel}}</span>\n<dynamic-component *ngIf=\"componentType != null\"\n                   class=\"dynamic-item\"\n                   [componentType]=\"componentType\"\n                   [value]=\"value\">\n</dynamic-component>\n<ng-content></ng-content>\n",
+        "template": "<!--\n Copyright (c) 2016, the Dart project authors.  Please see the AUTHORS file\n for details. All rights reserved. Use of this source code is governed by a\n BSD-style license that can be found in the LICENSE file.\n-->\n<div *ngIf=\"!supportsMultiSelect && isSelected\"\n    class=\"selected-accent\"\n    [attr.aria-label]=\"selectedMessage\">\n</div>\n<template [ngIf]=\"supportsMultiSelect && !hideCheckbox\">\n  <material-checkbox *ngIf=\"!useCheckMarks\"\n      tabindex=\"-1\"\n      [checked]=\"isSelected\"\n      [disabled]=\"disabled\"\n      [attr.aria-label]=\n          \"isSelected ? selectedMessage : notSelectedMessage\">\n  </material-checkbox>\n  <span *ngIf=\"useCheckMarks\"\n      class=\"check-container\"\n      [attr.aria-label]=\"isSelected ? selectedMessage : notSelectedMessage\">\n    <glyph *ngIf=\"isSelected\"\n        baseline\n        class=\"check\"\n        icon=\"check\">\n    </glyph>\n  </span>\n</template>\n<span *ngIf=\"valueHasLabel\" class=\"label\">{{valueLabel}}</span>\n<dynamic-component *ngIf=\"componentType != null\"\n    class=\"dynamic-item\"\n    [componentType]=\"componentType\"\n    [value]=\"value\">\n</dynamic-component>\n<ng-content></ng-content>\n",
         "templateUrl": "asset:angular_components/lib/src/components/material_select/material_select_item.html",
         "styles": [],
         "styleUrls": [

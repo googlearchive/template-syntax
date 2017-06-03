@@ -11,6 +11,10 @@
         "5": false
       },
       {
+        "1": "../../model/selection/select.dart",
+        "5": false
+      },
+      {
         "1": "../../model/selection/selection_container.dart",
         "5": false
       },
@@ -72,36 +76,40 @@
         "4": "i0"
       },
       {
-        "1": "../../model/selection/selection_container.template.dart",
+        "1": "../../model/selection/select.template.dart",
         "4": "i1"
       },
       {
-        "1": "../../model/selection/selection_model.template.dart",
+        "1": "../../model/selection/selection_container.template.dart",
         "4": "i2"
       },
       {
-        "1": "../../model/ui/has_renderer.template.dart",
+        "1": "../../model/selection/selection_model.template.dart",
         "4": "i3"
       },
       {
-        "1": "../../model/ui/template_support.template.dart",
+        "1": "../../model/ui/has_renderer.template.dart",
         "4": "i4"
       },
       {
-        "1": "../../utils/angular/properties/properties.template.dart",
+        "1": "../../model/ui/template_support.template.dart",
         "4": "i5"
       },
       {
-        "1": "../material_list/material_list.template.dart",
+        "1": "../../utils/angular/properties/properties.template.dart",
         "4": "i6"
       },
       {
-        "1": "material_select_base.template.dart",
+        "1": "../material_list/material_list.template.dart",
         "4": "i7"
       },
       {
-        "1": "material_select_item.template.dart",
+        "1": "material_select_base.template.dart",
         "4": "i8"
+      },
+      {
+        "1": "material_select_item.template.dart",
+        "4": "i9"
       }
     ]
   },
@@ -143,7 +151,7 @@
       ],
       "template": {
         "encapsulation": 0,
-        "template": "<!--\n Copyright (c) 2016, the Dart project authors.  Please see the AUTHORS file\n for details. All rights reserved. Use of this source code is governed by a\n BSD-style license that can be found in the LICENSE file.\n-->\n<material-list [width]=\"width\">\n  <ng-content></ng-content>\n  <div class=\"options-wrapper\" *ngIf=\"options != null\">\n    <div *ngFor=\"let group of options.optionGroups trackBy trackByIndexFn\" group\n         [class.empty]=\"group.isEmpty\">\n      <template [ngIf]=\"group.isNotEmpty\">\n        <span *ngIf=\"group.hasLabel\" label>{{group.uiDisplayName}}</span>\n        <material-select-item *ngFor=\"let item of group\"\n                              [itemRenderer]=\"itemRenderer\"\n                              [disabled]=\"disabled\"\n                              [componentRenderer]=\"componentRenderer\"\n                              [selection]=\"selection\"\n                              [value]=\"item\">\n        </material-select-item>\n      </template>\n    </div>\n  </div>\n</material-list>\n",
+        "template": "<!--\n Copyright (c) 2016, the Dart project authors.  Please see the AUTHORS file\n for details. All rights reserved. Use of this source code is governed by a\n BSD-style license that can be found in the LICENSE file.\n-->\n<material-list [width]=\"width\">\n  <ng-content></ng-content>\n  <div class=\"options-wrapper\" *ngIf=\"options != null\">\n    <div *ngFor=\"let group of options.optionGroups trackBy trackByIndexFn\" group\n         [class.empty]=\"group.isEmpty\">\n      <template [ngIf]=\"group.isNotEmpty\">\n        <span *ngIf=\"group.hasLabel\" label>{{group.uiDisplayName}}</span>\n        <material-select-item *ngFor=\"let item of group\"\n                              [itemRenderer]=\"itemRenderer\"\n                              [disabled]=\"disabled || isOptionDisabled(item)\"\n                              [componentRenderer]=\"componentRenderer\"\n                              [selection]=\"selection\"\n                              [value]=\"item\">\n        </material-select-item>\n      </template>\n    </div>\n  </div>\n</material-list>\n",
         "templateUrl": "asset:angular_components/lib/src/components/material_select/material_select.html",
         "styles": [],
         "styleUrls": [

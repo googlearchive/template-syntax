@@ -32,7 +32,8 @@
           }
         ],
         "6": [
-          "AfterViewInit"
+          "AfterViewInit",
+          "OnDestroy"
         ]
       }
     ],
@@ -114,7 +115,8 @@
       "hostProperties": {},
       "hostAttributes": {},
       "lifecycleHooks": [
-        6
+        6,
+        1
       ],
       "template": {
         "encapsulation": 0,

@@ -11,10 +11,6 @@
         "5": false
       },
       {
-        "1": "../../utils/async/async.dart",
-        "5": false
-      },
-      {
         "1": "fixed_material_tab_strip.dart",
         "5": false
       },
@@ -50,20 +46,16 @@
         "4": "i0"
       },
       {
-        "1": "../../utils/async/async.template.dart",
+        "1": "fixed_material_tab_strip.template.dart",
         "4": "i1"
       },
       {
-        "1": "fixed_material_tab_strip.template.dart",
+        "1": "material_tab.template.dart",
         "4": "i2"
       },
       {
-        "1": "material_tab.template.dart",
-        "4": "i3"
-      },
-      {
         "1": "tab_change_event.template.dart",
-        "4": "i4"
+        "4": "i3"
       }
     ]
   },
