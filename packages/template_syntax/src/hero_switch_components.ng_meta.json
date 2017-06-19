@@ -46,7 +46,7 @@
       "type": {
         "class": "Type",
         "name": "ConfusedHeroComponent",
-        "moduleUrl": "asset:template_syntax/lib/hero_switch_components.dart",
+        "moduleUrl": "asset:template_syntax/lib/src/hero_switch_components.dart",
         "prefix": null,
         "isHost": false,
         "value": null,
@@ -67,7 +67,7 @@
       "template": {
         "encapsulation": 2,
         "template": "Are you as confused as {{hero.name}}?",
-        "templateUrl": "asset:template_syntax/lib/hero_switch_components.dart",
+        "templateUrl": "asset:template_syntax/lib/src/hero_switch_components.dart",
         "styles": [],
         "styleUrls": [],
         "ngContentSelectors": []
@@ -85,7 +85,7 @@
       "type": {
         "class": "Type",
         "name": "HappyHeroComponent",
-        "moduleUrl": "asset:template_syntax/lib/hero_switch_components.dart",
+        "moduleUrl": "asset:template_syntax/lib/src/hero_switch_components.dart",
         "prefix": null,
         "isHost": false,
         "value": null,
@@ -106,7 +106,7 @@
       "template": {
         "encapsulation": 2,
         "template": "Wow. You like {{hero.name}}. What a happy hero ... just like you.",
-        "templateUrl": "asset:template_syntax/lib/hero_switch_components.dart",
+        "templateUrl": "asset:template_syntax/lib/src/hero_switch_components.dart",
         "styles": [],
         "styleUrls": [],
         "ngContentSelectors": []
@@ -124,7 +124,7 @@
       "type": {
         "class": "Type",
         "name": "SadHeroComponent",
-        "moduleUrl": "asset:template_syntax/lib/hero_switch_components.dart",
+        "moduleUrl": "asset:template_syntax/lib/src/hero_switch_components.dart",
         "prefix": null,
         "isHost": false,
         "value": null,
@@ -145,7 +145,7 @@
       "template": {
         "encapsulation": 2,
         "template": "You like {{hero.name}}? Such a sad hero. Are you sad too?",
-        "templateUrl": "asset:template_syntax/lib/hero_switch_components.dart",
+        "templateUrl": "asset:template_syntax/lib/src/hero_switch_components.dart",
         "styles": [],
         "styleUrls": [],
         "ngContentSelectors": []
@@ -163,7 +163,7 @@
       "type": {
         "class": "Type",
         "name": "UnknownHeroComponent",
-        "moduleUrl": "asset:template_syntax/lib/hero_switch_components.dart",
+        "moduleUrl": "asset:template_syntax/lib/src/hero_switch_components.dart",
         "prefix": null,
         "isHost": false,
         "value": null,
@@ -184,7 +184,7 @@
       "template": {
         "encapsulation": 2,
         "template": "{{message}}",
-        "templateUrl": "asset:template_syntax/lib/hero_switch_components.dart",
+        "templateUrl": "asset:template_syntax/lib/src/hero_switch_components.dart",
         "styles": [],
         "styleUrls": [],
         "ngContentSelectors": []
@@ -197,7 +197,7 @@
     "heroSwitchComponents": {
       "class": "Identifier",
       "name": "heroSwitchComponents",
-      "moduleUrl": "asset:template_syntax/lib/hero_switch_components.dart",
+      "moduleUrl": "asset:template_syntax/lib/src/hero_switch_components.dart",
       "prefix": null,
       "value": [
         {
@@ -207,7 +207,7 @@
             "identifier": {
               "class": "Type",
               "name": "HappyHeroComponent",
-              "moduleUrl": "asset:template_syntax/lib/hero_switch_components.dart",
+              "moduleUrl": "asset:template_syntax/lib/src/hero_switch_components.dart",
               "prefix": null,
               "isHost": false,
               "value": null,
@@ -218,7 +218,7 @@
           "useClass": {
             "class": "Type",
             "name": "HappyHeroComponent",
-            "moduleUrl": "asset:template_syntax/lib/hero_switch_components.dart",
+            "moduleUrl": "asset:template_syntax/lib/src/hero_switch_components.dart",
             "prefix": null,
             "isHost": false,
             "value": null,
@@ -237,7 +237,7 @@
             "identifier": {
               "class": "Type",
               "name": "SadHeroComponent",
-              "moduleUrl": "asset:template_syntax/lib/hero_switch_components.dart",
+              "moduleUrl": "asset:template_syntax/lib/src/hero_switch_components.dart",
               "prefix": null,
               "isHost": false,
               "value": null,
@@ -248,7 +248,7 @@
           "useClass": {
             "class": "Type",
             "name": "SadHeroComponent",
-            "moduleUrl": "asset:template_syntax/lib/hero_switch_components.dart",
+            "moduleUrl": "asset:template_syntax/lib/src/hero_switch_components.dart",
             "prefix": null,
             "isHost": false,
             "value": null,
@@ -267,7 +267,7 @@
             "identifier": {
               "class": "Type",
               "name": "ConfusedHeroComponent",
-              "moduleUrl": "asset:template_syntax/lib/hero_switch_components.dart",
+              "moduleUrl": "asset:template_syntax/lib/src/hero_switch_components.dart",
               "prefix": null,
               "isHost": false,
               "value": null,
@@ -278,7 +278,7 @@
           "useClass": {
             "class": "Type",
             "name": "ConfusedHeroComponent",
-            "moduleUrl": "asset:template_syntax/lib/hero_switch_components.dart",
+            "moduleUrl": "asset:template_syntax/lib/src/hero_switch_components.dart",
             "prefix": null,
             "isHost": false,
             "value": null,
@@ -297,7 +297,7 @@
             "identifier": {
               "class": "Type",
               "name": "UnknownHeroComponent",
-              "moduleUrl": "asset:template_syntax/lib/hero_switch_components.dart",
+              "moduleUrl": "asset:template_syntax/lib/src/hero_switch_components.dart",
               "prefix": null,
               "isHost": false,
               "value": null,
@@ -308,7 +308,7 @@
           "useClass": {
             "class": "Type",
             "name": "UnknownHeroComponent",
-            "moduleUrl": "asset:template_syntax/lib/hero_switch_components.dart",
+            "moduleUrl": "asset:template_syntax/lib/src/hero_switch_components.dart",
             "prefix": null,
             "isHost": false,
             "value": null,

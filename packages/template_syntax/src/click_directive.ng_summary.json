@@ -35,13 +35,7 @@
         ]
       }
     ],
-    "6": "click_directive.dart",
-    "7": [
-      {
-        "1": "package:angular2/angular2.template.dart",
-        "4": "i0"
-      }
-    ]
+    "6": "click_directive.dart"
   },
   "type": {
     "ClickDirective": {
@@ -52,7 +46,7 @@
       "type": {
         "class": "Type",
         "name": "ClickDirective",
-        "moduleUrl": "asset:template_syntax/lib/click_directive.dart",
+        "moduleUrl": "asset:template_syntax/lib/src/click_directive.dart",
         "prefix": null,
         "isHost": false,
         "value": null,
@@ -63,7 +57,7 @@
               "identifier": {
                 "class": "Identifier",
                 "name": "ElementRef",
-                "moduleUrl": "asset:angular2/lib/src/core/linker/element_ref.dart",
+                "moduleUrl": null,
                 "prefix": null,
                 "value": null
               },
@@ -103,7 +97,7 @@
       "type": {
         "class": "Type",
         "name": "ClickDirective2",
-        "moduleUrl": "asset:template_syntax/lib/click_directive.dart",
+        "moduleUrl": "asset:template_syntax/lib/src/click_directive.dart",
         "prefix": null,
         "isHost": false,
         "value": null,
@@ -114,7 +108,7 @@
               "identifier": {
                 "class": "Identifier",
                 "name": "ElementRef",
-                "moduleUrl": "asset:angular2/lib/src/core/linker/element_ref.dart",
+                "moduleUrl": null,
                 "prefix": null,
                 "value": null
               },

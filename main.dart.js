@@ -31227,16 +31227,16 @@ Nm:{"^":"c;fx,fy,go,id,k1,k2,k3,k4,a,b,c,d,e,f,r,x,y,z,Q,ch,cx,cy,db,dx,dy,fr",
 j:function(){var z,y,x,w,v,u,t,s
 z=this.ab(this.r)
 y=document
-z.appendChild(y.createTextNode("      "))
+z.appendChild(y.createTextNode("    "))
 x=S.d(y,"div",z)
 this.fx=x
 this.i(x)
-w=y.createTextNode("\n        ")
+w=y.createTextNode("\n      ")
 this.fx.appendChild(w)
 x=S.d(y,"img",this.fx)
 this.fy=x
 this.l(x)
-v=y.createTextNode("\n        ")
+v=y.createTextNode("\n      ")
 this.fx.appendChild(v)
 x=S.d(y,"span",this.fx)
 this.go=x
@@ -31244,15 +31244,16 @@ this.l(x)
 x=y.createTextNode("")
 this.id=x
 this.go.appendChild(x)
-u=y.createTextNode("\n        ")
+u=y.createTextNode("\n      ")
 this.fx.appendChild(u)
 x=S.d(y,"button",this.fx)
 this.k1=x
 this.i(x)
 t=y.createTextNode("Delete")
 this.k1.appendChild(t)
-s=y.createTextNode("\n      ")
+s=y.createTextNode("\n    ")
 this.fx.appendChild(s)
+z.appendChild(y.createTextNode("\n  "))
 J.v(this.k1,"click",this.W(J.oO(this.db)),null)
 this.m(C.a,C.a)
 return},
@@ -31269,8 +31270,8 @@ u=w
 x.setProperty(v,u,"")
 this.k3=w}x=J.CU(z)
 v=z.gaQ()==null?null:J.aB(z.gaQ())
-x="\n          "+(x==null?"":x)+" "
-t=x+(v==null?"":H.h(v))+"\n        "
+x="\n        "+(x==null?"":x)+" "
+t=x+(v==null?"":H.h(v))+"\n      "
 x=this.k4
 if(x!==t){this.id.textContent=t
 this.k4=t}},
@@ -31908,26 +31909,26 @@ PB:{"^":"c;fx,fy,go,id,k1,k2,k3,k4,r1,a,b,c,d,e,f,r,x,y,z,Q,ch,cx,cy,db,dx,dy,fr
 j:function(){var z,y,x,w,v,u,t
 z=this.ab(this.r)
 y=document
-z.appendChild(y.createTextNode("      "))
+z.appendChild(y.createTextNode("    "))
 x=S.d(y,"div",z)
 this.fx=x
-x.appendChild(y.createTextNode("\n        "))
+x.appendChild(y.createTextNode("\n      "))
 x=S.d(y,"button",this.fx)
 this.fy=x
 x.appendChild(y.createTextNode("-"))
-w=y.createTextNode("\n        ")
+w=y.createTextNode("\n      ")
 this.fx.appendChild(w)
 x=S.d(y,"button",this.fx)
 this.go=x
 x.appendChild(y.createTextNode("+"))
-v=y.createTextNode("\n        ")
+v=y.createTextNode("\n      ")
 this.fx.appendChild(v)
 x=S.d(y,"label",this.fx)
 this.id=x
 u=y.createTextNode("")
 this.k1=u
 x.appendChild(u)
-t=y.createTextNode("\n      ")
+t=y.createTextNode("\n    ")
 this.fx.appendChild(t)
 J.v(this.fy,"click",this.W(this.db.gJt()),null)
 J.v(this.go,"click",this.W(this.db.gM_()),null)

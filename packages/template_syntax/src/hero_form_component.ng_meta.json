@@ -7,10 +7,6 @@
         "5": false
       },
       {
-        "1": "package:angular2/angular2.dart",
-        "5": false
-      },
-      {
         "1": "hero.dart",
         "5": false
       }
@@ -46,7 +42,7 @@
       "type": {
         "class": "Type",
         "name": "HeroFormComponent",
-        "moduleUrl": "asset:template_syntax/lib/hero_form_component.dart",
+        "moduleUrl": "asset:template_syntax/lib/src/hero_form_component.dart",
         "prefix": null,
         "isHost": false,
         "value": null,
@@ -67,7 +63,7 @@
       "template": {
         "encapsulation": 0,
         "template": "<div id=\"heroForm\">\n    <form (ngSubmit)=\"onSubmit(heroForm)\" #heroForm=\"ngForm\">\n        <div class=\"form-group\">\n            <label for=\"name\">Name\n                <input class=\"form-control\"\n                       ngControl=\"name\"\n                       required\n                       [(ngModel)]=\"hero.name\">\n            </label>\n        </div>\n        <button type=\"submit\" [disabled]=\"!heroForm.form.valid\">Submit</button>\n    </form>\n    <div [hidden]=\"!heroForm.form.valid\">\n        {{submitMessage}}\n    </div>\n</div>\n",
-        "templateUrl": "asset:template_syntax/lib/hero_form_component.html",
+        "templateUrl": "asset:template_syntax/lib/src/hero_form_component.html",
         "styles": [
           "      button { margin: 6px 0; }\n      #heroForm { border: 1px solid black; margin: 20px 0; padding: 8px; max-width: 350px; }\n    "
         ],

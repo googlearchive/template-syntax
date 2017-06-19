@@ -20,7 +20,13 @@
         "1": "SizerComponent"
       }
     ],
-    "6": "sizer_component.dart"
+    "6": "sizer_component.dart",
+    "7": [
+      {
+        "1": "package:angular2/angular2.template.dart",
+        "4": "i0"
+      }
+    ]
   },
   "type": {
     "SizerComponent": {
@@ -31,7 +37,7 @@
       "type": {
         "class": "Type",
         "name": "SizerComponent",
-        "moduleUrl": "asset:template_syntax/lib/sizer_component.dart",
+        "moduleUrl": "asset:template_syntax/lib/src/sizer_component.dart",
         "prefix": null,
         "isHost": false,
         "value": null,
@@ -51,8 +57,8 @@
       "lifecycleHooks": [],
       "template": {
         "encapsulation": 2,
-        "template": "      <div>\n        <button (click)=\"dec()\" [disabled]=\"size <= minSize\">-</button>\n        <button (click)=\"inc()\" [disabled]=\"size >= maxSize\">+</button>\n        <label [style.font-size.px]=\"size\">FontSize: {{size}}px</label>\n      </div>",
-        "templateUrl": "asset:template_syntax/lib/sizer_component.dart",
+        "template": "    <div>\n      <button (click)=\"dec()\" [disabled]=\"size <= minSize\">-</button>\n      <button (click)=\"inc()\" [disabled]=\"size >= maxSize\">+</button>\n      <label [style.font-size.px]=\"size\">FontSize: {{size}}px</label>\n    </div>",
+        "templateUrl": "asset:template_syntax/lib/src/sizer_component.dart",
         "styles": [],
         "styleUrls": [],
         "ngContentSelectors": []

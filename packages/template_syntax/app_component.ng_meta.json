@@ -15,27 +15,27 @@
         "5": false
       },
       {
-        "1": "hero.dart",
+        "1": "src/hero.dart",
         "5": false
       },
       {
-        "1": "hero_detail_component.dart",
+        "1": "src/hero_detail_component.dart",
         "5": false
       },
       {
-        "1": "hero_form_component.dart",
+        "1": "src/hero_form_component.dart",
         "5": false
       },
       {
-        "1": "hero_switch_components.dart",
+        "1": "src/hero_switch_components.dart",
         "5": false
       },
       {
-        "1": "click_directive.dart",
+        "1": "src/click_directive.dart",
         "5": false
       },
       {
-        "1": "sizer_component.dart",
+        "1": "src/sizer_component.dart",
         "5": false
       }
     ],
@@ -93,27 +93,27 @@
         "4": "i1"
       },
       {
-        "1": "hero.template.dart",
+        "1": "src/hero.template.dart",
         "4": "i2"
       },
       {
-        "1": "hero_detail_component.template.dart",
+        "1": "src/hero_detail_component.template.dart",
         "4": "i3"
       },
       {
-        "1": "hero_form_component.template.dart",
+        "1": "src/hero_form_component.template.dart",
         "4": "i4"
       },
       {
-        "1": "hero_switch_components.template.dart",
+        "1": "src/hero_switch_components.template.dart",
         "4": "i5"
       },
       {
-        "1": "click_directive.template.dart",
+        "1": "src/click_directive.template.dart",
         "4": "i6"
       },
       {
-        "1": "sizer_component.template.dart",
+        "1": "src/sizer_component.template.dart",
         "4": "i7"
       }
     ]
