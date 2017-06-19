@@ -3,12 +3,12 @@ import 'dart:html';
 import 'package:angular2/angular2.dart';
 import 'package:angular_components/angular_components.dart';
 
-import 'hero.dart';
-import 'hero_detail_component.dart';
-import 'hero_form_component.dart';
-import 'hero_switch_components.dart';
-import 'click_directive.dart';
-import 'sizer_component.dart';
+import 'src/hero.dart';
+import 'src/hero_detail_component.dart';
+import 'src/hero_form_component.dart';
+import 'src/hero_switch_components.dart';
+import 'src/click_directive.dart';
+import 'src/sizer_component.dart';
 
 enum Color { red, green, blue }
 

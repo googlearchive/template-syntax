@@ -4,18 +4,20 @@ import 'package:angular2/angular2.dart';
 import 'hero.dart';
 
 @Component(
-    selector: 'hero-detail',
-    styles: const [
-      'button {margin-left: 8px} div {margin: 8px 0} img {height:24px}'
-    ],
-    template: '''
-      <div>
-        <img src="{{heroImageUrl}}">
-        <span [style.text-decoration]="lineThrough">
-          {{prefix}} {{hero?.name}}
-        </span>
-        <button (click)="delete()">Delete</button>
-      </div>''')
+  selector: 'hero-detail',
+  styles: const [
+    'button {margin-left: 8px} div {margin: 8px 0} img {height:24px}'
+  ],
+  template: '''
+    <div>
+      <img src="{{heroImageUrl}}">
+      <span [style.text-decoration]="lineThrough">
+        {{prefix}} {{hero?.name}}
+      </span>
+      <button (click)="delete()">Delete</button>
+    </div>
+  ''',
+)
 class HeroDetailComponent implements OnInit {
   @Input()
   Hero hero;
