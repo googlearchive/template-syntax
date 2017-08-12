@@ -67,6 +67,20 @@
       "viewProviders": [],
       "queries": [],
       "viewQueries": []
+    },
+    "_maxSize": {
+      "class": "Identifier",
+      "name": "_maxSize",
+      "moduleUrl": "asset:template_syntax/lib/src/sizer_component.dart",
+      "prefix": null,
+      "value": null
+    },
+    "_minSize": {
+      "class": "Identifier",
+      "name": "_minSize",
+      "moduleUrl": "asset:template_syntax/lib/src/sizer_component.dart",
+      "prefix": null,
+      "value": null
     }
   },
   "alias": {}
