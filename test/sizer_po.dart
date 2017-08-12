@@ -7,19 +7,15 @@ class SizerPO {
   PageLoaderElement _fontSize;
 
   @ByTagName('button')
-  List<PageLoaderElement> _buttons;
+  @WithVisibleText('-')
+  PageLoaderElement _dec;
 
-  Future dec() async {
-    final dec = _buttons[0];
-    assert('-' == await dec.visibleText);
-    return dec.click();
-  }
+  @ByTagName('button')
+  @WithVisibleText('+')
+  PageLoaderElement _inc;
 
-  Future inc() async {
-    final inc = _buttons[1];
-    assert('+' == await inc.visibleText);
-    return inc.click();
-  }
+  Future dec() async => _dec.click();
+  Future inc() async => _inc.click();
 
   Future<int /*?*/ > get fontSizeFromLabelText async {
     final text = await _fontSize.visibleText;
