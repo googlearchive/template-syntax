@@ -1,6 +1,7 @@
 import 'dart:html';
 
 import 'package:angular/angular.dart';
+import 'package:angular_forms/angular_forms.dart';
 import 'package:angular_components/angular_components.dart';
 
 import 'src/hero.dart';
@@ -18,7 +19,8 @@ enum Color { red, green, blue }
   templateUrl: 'app_component.html',
   styleUrls: const ['app_component.css'],
   directives: const [
-    COMMON_DIRECTIVES,
+    CORE_DIRECTIVES,
+    formDirectives,
     BigHeroDetailComponent,
     HeroDetailComponent,
     HeroFormComponent,
