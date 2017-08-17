@@ -196,11 +196,10 @@ button</button>
 <hero-detail [hero]="currentHero"></hero-detail>
 <img bind-src="heroImageUrl">
 
-<!-- ERROR: HeroDetailComponent.hero expects a
-     Hero object, not the string "currentHero" -->
-<div *ngIf="false">
-  <hero-detail hero="currentHero"></hero-detail>
-</div>
+<!-- ERROR: A value of type 'String' can't be assigned to a variable of type 'Hero'.
+<hero-detail hero="currentHero"></hero-detail>
+-->
+
 <hero-detail prefix="You are my" [hero]="currentHero"></hero-detail>
 
 <p><img src="{{heroImageUrl}}"> is the <i>interpolated</i> image.</p>
