@@ -12,22 +12,11 @@
  */
 
 @import 'lib/src/css/material/material';
-@import 'lib/src/components/material_shadow/css/shadow';
+@import 'third_party/dart_src/acx/material_input/lib/mixins';
 
-:host {
-  display: flex;
-}
+.searchbox-input {
+  @include input-leading-glyph-color($mat-grey-400);
 
-:host:focus {
-  outline: none;
-}
-
-:host(.material-tab) {
-  padding: $mat-grid * 2;
-  @include shadow-elevation();
-}
-
-.tab-content {
-  display: flex;
-  flex: 0 0 100%;
+  width: 100%;
+  padding: 0;
 }

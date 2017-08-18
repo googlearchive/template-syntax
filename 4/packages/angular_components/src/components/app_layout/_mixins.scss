@@ -11,23 +11,25 @@
  * to include CSS generation from SASS files during the build process.
  */
 
-@import 'lib/src/css/material/material';
-@import 'lib/src/components/material_shadow/css/shadow';
+/// Sets width of MaterialTemporaryDrawerComponent.
+///
+/// Must be applied to the component itself, e.g.:
+///
+/// ```
+/// material-drawer[temporary] {
+///   @include mat-temporary-drawer-width(512px);
+/// }
+/// ```
+@mixin mat-temporary-drawer-width($width) {
+  ::ng-deep .drawer-content {
+    width: $width;
+  }
 
-:host {
-  display: flex;
-}
+  &:not([end]):not(.mat-drawer-expanded) ::ng-deep .drawer-content {
+    left: -$width;
+  }
 
-:host:focus {
-  outline: none;
-}
-
-:host(.material-tab) {
-  padding: $mat-grid * 2;
-  @include shadow-elevation();
-}
-
-.tab-content {
-  display: flex;
-  flex: 0 0 100%;
+  &[end]:not(.mat-drawer-expanded) ::ng-deep .drawer-content {
+    right: -$width;
+  }
 }
