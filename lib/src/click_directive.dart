@@ -12,9 +12,8 @@ class ClickDirective {
 
   bool _toggle = false;
 
-  ClickDirective(ElementRef el) {
-    Element nativeEl = el.nativeElement;
-    nativeEl.onClick.listen((Event e) {
+  ClickDirective(Element el) {
+    el.onClick.listen((Event e) {
       _toggle = !_toggle;
       _onClick.add(_toggle ? 'Click!' : '');
     });
@@ -31,8 +30,8 @@ class ClickDirective2 {
   Stream<String> get clicks => _onClick.stream;
   bool _toggle = false;
 
-  ClickDirective2(ElementRef el) {
-    el.nativeElement.onClick.listen((Event e) {
+  ClickDirective2(Element el) {
+    el.onClick.listen((Event e) {
       _toggle = !_toggle;
       _onClick.add(_toggle ? 'Click2!' : '');
     });

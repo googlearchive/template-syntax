@@ -30,6 +30,7 @@ enum Color { red, green, blue }
     SizerComponent,
     materialDirectives
   ],
+  exports: const [Color],
   providers: const [materialProviders],
   pipes: const [COMMON_PIPES],
 )
@@ -49,9 +50,9 @@ class AppComponent implements AfterViewInit, OnInit {
   }
 
   @ViewChildren('noTrackBy')
-  QueryList<ElementRef> heroesNoTrackBy;
+  QueryList<Element> heroesNoTrackBy;
   @ViewChildren('withTrackBy')
-  QueryList<ElementRef> heroesWithTrackBy;
+  QueryList<Element> heroesWithTrackBy;
 
   String actionName = 'Go for it';
   String badCurly = 'bad curly';
@@ -81,7 +82,6 @@ class AppComponent implements AfterViewInit, OnInit {
   String clickMessage = '';
   String clickMessage2 = '';
 
-  final Color colorRed = Color.red;
   Color color = Color.red;
   void colorToggle() {
     color = (color == Color.red) ? Color.blue : Color.red;
@@ -180,9 +180,9 @@ class AppComponent implements AfterViewInit, OnInit {
 }
 
 // helper to track changes to viewChildren
-void trackChanges(QueryList<ElementRef> views, void countChange()) {
-  List<ElementRef> oldRefs = views.toList();
-  views.changes.listen((Iterable<ElementRef> changes) {
+void trackChanges(QueryList<Element> views, void countChange()) {
+  List<Element> oldRefs = views.toList();
+  views.changes.listen((Iterable<Element> changes) {
     final changedRefs = changes.toList();
     // Is every changed ElemRef the same as old and in the same position
     final isSame = changedRefs.every((e) => oldRefs.contains(e));
