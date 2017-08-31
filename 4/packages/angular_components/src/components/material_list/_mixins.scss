@@ -11,10 +11,8 @@
  * to include CSS generation from SASS files during the build process.
  */
 
-@import 'lib/src/css/material/material';
-@import 'lib/src/css/shared/compass_polyfills';
-@import 'compass/css3';
 @import 'size';
+@import 'lib/src/css/material/material';
 
 @mixin list-item-base {
   display: block;
@@ -55,16 +53,16 @@
 
 // Include this inside :host-context(body[dir="rtl"])
 @mixin list-item-base-rtl {
-  /deep/ .submenu-icon {
+  ::ng-deep .submenu-icon {
     transform: rotate(90deg);
   }
 }
 
 @mixin list-item-button {
   @include list-item-base();
-  @include display-flex;
-  @include align-items(center);
 
+  display: flex;
+  align-items: center;
   color: $mat-transparent-black;
   cursor: pointer;
 

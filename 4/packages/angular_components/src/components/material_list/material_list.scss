@@ -11,12 +11,8 @@
  * to include CSS generation from SASS files during the build process.
  */
 
-@import 'lib/src/css/shared/compass_polyfills';
-@import 'lib/src/css/material/material';
-@import 'compass/css3/transition',
-        'compass/css3/flexbox';
-
 @import 'mixins';
+@import 'lib/src/css/material/material';
 
 $border-size: 1px;
 
@@ -115,8 +111,9 @@ $x-large: 7;
   }
 }
 
+// TODO(google): Move these styles into mixins.
 :host-context(body[dir="rtl"]) {
-  /deep/ [label] {
+  ::ng-deep [label] {
     @include list-item-base-rtl;
   }
 }
