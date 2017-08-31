@@ -20,13 +20,10 @@ class ClickDirective {
   }
 }
 
-@Directive(
-  selector: '[myClick2]',
-  // ...
-  outputs: const ['clicks:myClick'], // propertyName:alias
-)
+@Directive(selector: '[myClick2]')
 class ClickDirective2 {
   final _onClick = new StreamController<String>();
+  @Output('myClick')
   Stream<String> get clicks => _onClick.stream;
   bool _toggle = false;
 

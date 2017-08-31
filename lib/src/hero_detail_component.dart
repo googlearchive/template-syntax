@@ -46,8 +46,6 @@ class HeroDetailComponent implements OnInit {
 
 @Component(
   selector: 'big-hero-detail',
-  inputs: const ['hero'],
-  outputs: const ['deleteRequest'],
   template: '''
     <div class="detail">
       <img src="{{heroImageUrl}}">
