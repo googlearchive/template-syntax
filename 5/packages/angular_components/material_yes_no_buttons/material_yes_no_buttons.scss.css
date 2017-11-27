@@ -40,8 +40,8 @@
   justify-content: flex-end;
 }
 
-:host[dense] .btn.btn-yes ::ng-deep,
-:host[dense] .btn.btn-no ::ng-deep {
+:host[dense] .btn.btn-yes ::ng-deep:not([icon]),
+:host[dense] .btn.btn-no ::ng-deep:not([icon]) {
   height: 32px;
   font-size: 13px;
 }

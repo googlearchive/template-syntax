@@ -21,7 +21,7 @@
 :host:not([icon]) {
   margin: 0 0.29em;
 }
-:host[dense] {
+:host[dense]:not([icon]) {
   height: 32px;
   font-size: 13px;
 }
@@ -96,9 +96,11 @@
   align-items: center;
 }
 :host .content {
-  justify-content: center;
   height: 56px;
   width: 56px;
+}
+:host .content {
+  justify-content: center;
 }
 :host material-icon ::ng-deep .material-icon-i {
   font-size: 24px;
@@ -132,7 +134,7 @@
 :host[mini]:not([icon]) {
   margin: 0 0.29em;
 }
-:host[mini][dense] {
+:host[mini][dense]:not([icon]) {
   height: 32px;
   font-size: 13px;
 }
@@ -207,7 +209,9 @@
   align-items: center;
 }
 :host[mini] .content {
-  justify-content: center;
   height: 40px;
   width: 40px;
+}
+:host[mini] .content {
+  justify-content: center;
 }

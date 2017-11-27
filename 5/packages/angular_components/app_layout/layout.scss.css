@@ -175,7 +175,7 @@ material-drawer[persistent][end].mat-drawer-collapsed + .material-content {
 material-drawer material-list {
   padding: 0;
 }
-material-drawer [label] {
+material-drawer material-list [label] {
   display: block;
   font-family: inherit;
   font-size: 15px;
@@ -187,34 +187,34 @@ material-drawer [label] {
   color: rgba(0, 0, 0, 0.54);
   display: flex;
 }
-material-drawer [label].disabled {
+material-drawer material-list [label].disabled {
   pointer-events: none;
 }
-material-drawer [label] ::ng-deep .material-list-item-primary {
+material-drawer material-list [label] ::ng-deep .material-list-item-primary {
   color: rgba(0, 0, 0, 0.54);
   width: 40px;
 }
-material-drawer [label].disabled ::ng-deep .material-list-item-primary {
+material-drawer material-list [label].disabled ::ng-deep .material-list-item-primary {
   color: rgba(0, 0, 0, 0.38);
 }
-material-drawer [label] ::ng-deep .material-list-item-secondary {
+material-drawer material-list [label] ::ng-deep .material-list-item-secondary {
   color: rgba(0, 0, 0, 0.54);
   margin-left: auto;
 }
-material-drawer [label].disabled ::ng-deep .material-list-item-secondary {
+material-drawer material-list [label].disabled ::ng-deep .material-list-item-secondary {
   color: rgba(0, 0, 0, 0.38);
 }
-material-drawer [label] ::ng-deep .submenu-icon {
+material-drawer material-list [label] ::ng-deep .submenu-icon {
   transform: rotate(-90deg);
 }
-material-drawer material-list-item,
-material-drawer [label] {
+material-drawer material-list material-list-item,
+material-drawer material-list [label] {
   font-weight: 500;
   height: 48px;
   padding: 0 16px;
 }
-material-drawer material-list-item material-icon,
-material-drawer [label] material-icon {
+material-drawer material-list material-list-item material-icon,
+material-drawer material-list [label] material-icon {
   color: rgba(0, 0, 0, 0.54);
   margin-right: 32px;
 }

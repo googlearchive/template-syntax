@@ -70,3 +70,29 @@
     overflow: visible;
   }
 }
+
+/// Sets the color of the "selected" accent on the selected item.
+///
+/// Apply to <material-select> or <material-select-item>.
+@mixin material-select-selected-color($color) {
+  ::ng-deep .selected-accent.mixin {
+    background-color: $color;
+  }
+}
+
+/// Enables pointer events on disabled MaterialSelectDropdownItems
+///
+/// This can be scoped to a specific selector in cases where
+/// MaterialSelectDropdownItems are placed in an overlay.
+@mixin enable-pointer-events-for-disabled-items($selector: '') {
+  ::ng-deep #{$selector} material-select-dropdown-item.item.disabled {
+    pointer-events: all;
+  }
+}
+
+@mixin material-select-item-padding($padding) {
+  ::ng-deep material-select-item {
+    padding: $padding;
+  }
+}
+

@@ -41,6 +41,9 @@
 .acx-scoreboard-horizontal .scroll-back-button {
   left: 0;
 }
+.acx-scoreboard-horizontal acx-scorecard {
+  vertical-align: top;
+}
 
 .acx-scoreboard-vertical {
   display: inline-block;

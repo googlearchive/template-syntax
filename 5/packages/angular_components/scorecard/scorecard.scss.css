@@ -64,6 +64,9 @@ h3 {
 h2 {
   font-size: 32px;
 }
+h2 value {
+  line-height: 1;
+}
 
 .description,
 .suggestion {

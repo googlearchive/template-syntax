@@ -2,8 +2,8 @@
   display: inline-flex;
   flex: 1;
   flex-direction: column;
+  max-width: 100%;
   min-height: 24px;
-  overflow: hidden;
 }
 
 .button {

@@ -20,9 +20,10 @@
     (trigger)="handleClick($event)"
     popupSource
     #source="popupSource">
-  <ng-content select="[buttonContent]"></ng-content>
+  &ngsp;<ng-content select="[buttonContent]"></ng-content>
 </dropdown-button>
 <material-popup enforceSpaceConstraints
+    [class]="popupClassName"
     [preferredPositions]="preferredPositions"
     [matchMinSourceWidth]="popupMatchInputWidth"
     [slide]="slide"

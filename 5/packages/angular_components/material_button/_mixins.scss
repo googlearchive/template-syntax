@@ -49,9 +49,29 @@ $button-disabled-background-dark: rgba(255, 255, 255, $mat-divider-opacity);
 /// Mixin used for styling dense buttons local to a view. Private to this
 /// file.
 @mixin _button-dense {
-  height: $mat-grid * 4;
-  font-size: $mat-body-font-size;
+  &:not([icon]) {
+    height: $mat-grid * 4;
+    font-size: $mat-body-font-size;
+  }
 }
+
+/// Private mixin for styling the highlight when a button is hovered or focused.
+@mixin _button-hover {
+  &:not([disabled]):not([icon]):hover::after,
+  &.is-focused::after {
+    @content
+  }
+}
+
+/// Mixin to remove the highlight when a button is hovered or focused.
+@mixin no-button-hover($selector) {
+  ::ng-deep #{$selector} {
+    @include _button-hover {
+      display: none;
+    }
+  }
+}
+
 
 @mixin button-base {
   @include acx-theme-dark {
@@ -93,8 +113,7 @@ $button-disabled-background-dark: rgba(255, 255, 255, $mat-divider-opacity);
     }
   }
 
-  &:not([disabled]):not([icon]):hover::after,
-  &.is-focused::after {
+  @include _button-hover {
     content: '';
     display: block;
     position: absolute;
@@ -151,14 +170,21 @@ $button-disabled-background-dark: rgba(255, 255, 255, $mat-divider-opacity);
   }
 }
 
-@mixin fab-base($size) {
-  @include button-base;
+@mixin fab-size($size) {
   border-radius: $size / 2;
 
   .content {
-    justify-content: center;
     height: $size;
     width: $size;
+  }
+}
+
+@mixin fab-base($size) {
+  @include button-base;
+  @include fab-size($size);
+
+  .content {
+    justify-content: center;
   }
 }
 
@@ -228,6 +254,12 @@ $button-disabled-background-dark: rgba(255, 255, 255, $mat-divider-opacity);
       // And here for the icon itself.
       color: $color;
     }
+  }
+}
+
+@mixin icon-button-padding($selector, $padding) {
+  #{$selector}[icon] ::ng-deep .content {
+    padding: $padding;
   }
 }
 
