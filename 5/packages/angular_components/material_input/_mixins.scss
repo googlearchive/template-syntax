@@ -94,6 +94,13 @@
   }
 }
 
+@mixin error-text-width($width) {
+  ::ng-deep .error-text {
+    position: absolute;
+    width: $width;
+  }
+}
+
 @mixin material-input-no-underline() {
   ::ng-deep .underline {
     display: none;
@@ -123,7 +130,7 @@
 }
 
 @mixin material-input-focused-underline-color($color) {
-  ::ng-deep .focused-underline {
+  ::ng-deep .focused-underline:not(.invalid) {
     background-color: $color;
   }
 }

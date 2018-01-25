@@ -81,7 +81,7 @@
   cursor: default;
   pointer-events: all;
 }
-.menu-item glyph.disabled {
+.menu-item material-icon.disabled {
   color: rgba(0, 0, 0, 0.38);
 }
 

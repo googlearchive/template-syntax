@@ -106,7 +106,7 @@ $_panel: 'div.panel.themeable';
 }
 
 @mixin expansionpanel-expand-button-text-color($color) {
-  ::ng-deep #{$_panel} glyph.expand-button {
+  ::ng-deep #{$_panel} material-icon.expand-button {
     color: $color;
   }
 }
@@ -194,5 +194,13 @@ $_panel: 'div.panel.themeable';
     .content-wrapper {
       margin: 0 $mat-grid * 3 $mat-grid;
     }
+  }
+}
+
+// A theme that applies flat style on collapse but keep elevated style when the
+// panel is expanded.
+@mixin expansionpanel-flat-on-collapse-theme() {
+  ::ng-deep #{$_panel}:not(.open) {
+    box-shadow: 0 0 1px 1px $mat-border-light;
   }
 }

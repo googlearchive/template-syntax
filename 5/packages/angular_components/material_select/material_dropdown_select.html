@@ -23,6 +23,7 @@
   &ngsp;<ng-content select="[buttonContent]"></ng-content>
 </dropdown-button>
 <material-popup enforceSpaceConstraints
+    #popup
     [class]="popupClassName"
     [preferredPositions]="preferredPositions"
     [matchMinSourceWidth]="popupMatchInputWidth"
@@ -56,20 +57,21 @@
           [selected]="isDeselectItemSelected"
           [value]="deselectLabel"
           (trigger)="deselectCurrentSelection()"
-          [active]="activeModel.isActive(deselectLabel)"
+          [active]="popup.showPopup && activeModel.isActive(deselectLabel)"
           [attr.id]="activeModel.id(deselectLabel)"
           (mouseenter)="activeModel.activate(deselectLabel)">
       </material-select-dropdown-item>
-      <div *ngFor="let group of options.optionGroups trackBy trackByIndexFn"
+      <div *ngFor="let group of options.optionGroups; trackBy: trackByIndexFn"
           group
           [class.empty]="group.isEmpty && !group.hasEmptyLabel">
         <template [ngIf]="group.isNotEmpty || group.hasEmptyLabel">
-          <span *ngIf="group.hasLabel && labelRenderer == null" label>
+          <span *ngIf="group.hasLabel && !hasCustomLabelRenderer" label>
             {{group.uiDisplayName}}
           </span>
           <dynamic-component
-              *ngIf="labelRenderer != null"
-              [componentType]="labelRenderer(group)"
+              *ngIf="hasCustomLabelRenderer"
+              [componentType]="labelRenderer != null ? labelRenderer(group) : null"
+              [componentFactory]="labelFactory != null ? labelFactory(group) : null"
               [value]="group">
           </dynamic-component>
           <template [ngIf]="group.isNotEmpty">
@@ -77,10 +79,12 @@
                 keyboardOnlyFocusIndicator
                 [itemRenderer]="itemRenderer"
                 [componentRenderer]="componentRenderer"
+                [factoryRenderer]="factoryRenderer"
                 [selection]="selection"
                 [disabled]="isOptionDisabled(item)"
+                [isHidden]="isOptionHidden(item)"
                 [value]="item"
-                [active]="activeModel.isActive(item)"
+                [active]="popup.showPopup && activeModel.isActive(item)"
                 [attr.id]="activeModel.id(item)"
                 (mouseenter)="activeModel.activate(item)">
             </material-select-dropdown-item>

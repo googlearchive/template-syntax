@@ -38,19 +38,22 @@
     (keypress)="onKeyPress($event)"
     (keyup)="onKeyUp($event)">
   <span trailing>
-    <glyph
+    <material-icon
         *ngIf="showClearIcon"
         icon="clear"
         buttonDecorator
         keyboardOnlyFocusIndicator
         stopPropagation
         class="clear-icon"
+        [materialTooltip]="clearIconTooltip"
+        [showTooltipIf]="hasClearIconTooltip"
         (trigger)="onClearIcon()">
-    </glyph>
+    </material-icon>
     <ng-content select="[trailing]"></ng-content>
   </span>
 </material-input>
 <material-popup enforceSpaceConstraints
+    #popup
     trackLayoutChanges
     class="{{popupShadowCssClass}}"
     [autoDismiss]="autoDismiss"
@@ -84,17 +87,18 @@
         [width]="width"
         (mouseleave)="activeModel.activate(null)">
       <div
-          *ngFor="let suggestionGroup of visibleSuggestionGroups trackBy trackByIndexFn"
+          *ngFor="let suggestionGroup of visibleSuggestionGroups; trackBy: trackByIndexFn"
           group
           class="list-group">
-        <span *ngIf="suggestionGroup.hasLabel && labelRenderer == null"
+        <span *ngIf="suggestionGroup.hasLabel && !hasCustomLabelRenderer"
             label
             class="list-group-label"
             (mouseenter)="activeModel.activate(null)">
           {{suggestionGroup.uiDisplayName}}
         </span>
-        <dynamic-component *ngIf="labelRenderer != null"
-            [componentType]="labelRenderer(suggestionGroup)"
+        <dynamic-component *ngIf="hasCustomLabelRenderer"
+            [componentType]="labelRenderer != null ? labelRenderer(suggestionGroup) : null"
+            [componentFactory]="labelFactory != null ? labelFactory(suggestionGroup) : null"
             [value]="suggestionGroup"
             (mouseenter)="activeModel.activate(null)">
         </dynamic-component>
@@ -110,12 +114,14 @@
             keyboardOnlyFocusIndicator
             [itemRenderer]="itemRenderer"
             [componentRenderer]="componentRenderer"
+            [factoryRenderer]="factoryRenderer"
             [selection]="selection"
             [disabled]="isOptionDisabled(suggestion)"
             [value]="suggestion"
             [closeOnActivate]="closeOnActivate"
+            [deselectOnActivate]="isMultiSelect"
             [hideCheckbox]="hideCheckbox"
-            [active]="activeModel.isActive(suggestion)"
+            [active]="popup.showPopup && activeModel.isActive(suggestion)"
             [attr.id]="activeModel.id(suggestion)"
             (mouseenter)="activeModel.activate(suggestion)">
         </material-select-dropdown-item>

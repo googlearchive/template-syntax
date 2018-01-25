@@ -11,8 +11,13 @@
   outline: none;
 }
 :host.disabled {
-  color: rgba(0, 0, 0, 0.26);
   cursor: not-allowed;
+}
+:host.disabled > .content {
+  color: rgba(0, 0, 0, 0.54);
+}
+:host.disabled > .icon-container > .icon {
+  color: rgba(0, 0, 0, 0.26);
 }
 :host.radio-no-left-margin {
   margin-left: -2px;

@@ -55,6 +55,9 @@
   color: rgba(0, 0, 0, 0.38);
   cursor: default;
 }
+:host.hidden {
+  display: none;
+}
 
 .check-container {
   display: inline-block;
