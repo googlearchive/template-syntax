@@ -1,20 +1,20 @@
-@Tags(const ['aot'])
 @TestOn('browser')
 
 import 'dart:async';
 
-import 'package:angular/angular.dart';
 import 'package:angular_test/angular_test.dart';
 import 'package:template_syntax/src/sizer_component.dart';
 import 'package:test/test.dart';
 
+import 'sizer_test.template.dart' as ng;
 import 'sizer_po.dart';
 
 NgTestFixture<SizerComponent> fixture;
 SizerPO po;
 
-@AngularEntrypoint()
 void main() {
+  ng.initReflector();
+
   const initSize = 16;
 
   final testBed = new NgTestBed<SizerComponent>();
