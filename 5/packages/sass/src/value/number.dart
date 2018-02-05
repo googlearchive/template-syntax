@@ -9,6 +9,7 @@ import '../util/number.dart';
 import '../utils.dart';
 import '../value.dart';
 import '../visitor/interface/value.dart';
+import 'external/value.dart' as ext;
 
 /// A nested map containing unit conversion rates.
 ///
@@ -141,57 +142,31 @@ final _conversions = {
 // and numbers with only a single numerator unit. These should be opaque to
 // users of SassNumber.
 
-/// A SassScript number.
-///
-/// Numbers can have units. Although there's no literal syntax for it, numbers
-/// support scientific-style numerator and denominator units (for example,
-/// `miles/hour`). These are expected to be resolved before being emitted to
-/// CSS.
-class SassNumber extends Value {
-  /// The number of distinct digits that are emitted when converting a number to
-  /// CSS.
-  static const precision = 10;
+class SassNumber extends Value implements ext.SassNumber {
+  static const precision = ext.SassNumber.precision;
 
-  /// The value of this number.
   final num value;
 
-  /// This number's numerator units.
   final List<String> numeratorUnits;
 
-  /// This number's denominator units.
   final List<String> denominatorUnits;
 
   /// The slash-separated representation of this number, if it has one.
   final String asSlash;
 
-  /// Whether [this] has any units.
   bool get hasUnits => numeratorUnits.isNotEmpty || denominatorUnits.isNotEmpty;
 
-  /// Whether [this] is an integer, according to [fuzzyEquals].
-  ///
-  /// The [int] value can be accessed using [asInt] or [assertInt]. Note that
-  /// this may return `false` for very large doubles even though they may be
-  /// mathematically integers, because not all platforms have a valid
-  /// representation for integers that large.
   bool get isInt => fuzzyIsInt(value);
 
-  /// If [this] is an integer according to [isInt], returns [value] as an [int].
-  ///
-  /// Otherwise, returns `null`.
   int get asInt => fuzzyAsInt(value);
 
   /// Returns a human readable string representation of this number's units.
   String get unitString =>
       hasUnits ? _unitString(numeratorUnits, denominatorUnits) : '';
 
-  /// Creates a number, optionally with a single numerator unit.
-  ///
-  /// This matches the numbers that can be written as literals.
-  /// [SassNumber.withUnits] can be used to construct more complex units.
   SassNumber(num value, [String unit])
       : this.withUnits(value, numeratorUnits: unit == null ? null : [unit]);
 
-  /// Creates a number with full [numeratorUnits] and [denominatorUnits].
   SassNumber.withUnits(this.value,
       {Iterable<String> numeratorUnits, Iterable<String> denominatorUnits})
       : numeratorUnits = numeratorUnits == null
@@ -219,44 +194,12 @@ class SassNumber extends Value {
 
   SassNumber assertNumber([String name]) => this;
 
-  /// Returns [value] as an [int], if it's an integer value according to
-  /// [isInt].
-  ///
-  /// Throws a [SassScriptException] if [value] isn't an integer. If this came
-  /// from a function argument, [name] is the argument name (without the `$`).
-  /// It's used for debugging.
   int assertInt([String name]) {
     var integer = fuzzyAsInt(value);
     if (integer != null) return integer;
     throw _exception("$this is not an int.", name);
   }
 
-  /// Asserts that this is a valid Sass-style index for [list], and returns the
-  /// Dart-style index.
-  ///
-  /// A Sass-style index is one-based, and uses negative numbers to count
-  /// backwards from the end of the list.
-  ///
-  /// Throws a [SassScriptException] if this isn't an integer or if it isn't a
-  /// valid index for [list]. If this came from a function argument, [name] is
-  /// the argument name (without the `$`). It's used for debugging.
-  int assertIndexFor(List list, [String name]) {
-    var sassIndex = assertInt(name);
-    if (sassIndex == 0) throw _exception("List index may not be 0.");
-    if (sassIndex.abs() > list.length) {
-      throw _exception(
-          "Invalid index $this for a list with ${list.length} elements.");
-    }
-
-    return sassIndex < 0 ? list.length + sassIndex : sassIndex - 1;
-  }
-
-  /// If [value] is between [min] and [max], returns it.
-  ///
-  /// If [value] is [fuzzyEquals] to [min] or [max], it's clamped to the
-  /// appropriate value. Otherwise, this throws a [SassScriptException]. If this
-  /// came from a function argument, [name] is the argument name (without the
-  /// `$`). It's used for debugging.
   num valueInRange(num min, num max, [String name]) {
     var result = fuzzyCheckRange(value, min, max);
     if (result != null) return result;
@@ -264,48 +207,25 @@ class SassNumber extends Value {
         "Expected $this to be within $min$unitString and $max$unitString.");
   }
 
-  /// Returns whether [this] has [unit] as its only unit (and as a numerator).
   bool hasUnit(String unit) =>
       numeratorUnits.length == 1 &&
       denominatorUnits.isEmpty &&
       numeratorUnits.first == unit;
 
-  /// Throws a [SassScriptException] unless [this] has [unit] as its only unit
-  /// (and as a numerator).
-  ///
-  /// If this came from a function argument, [name] is the argument name
-  /// (without the `$`). It's used for debugging.
   void assertUnit(String unit, [String name]) {
     if (hasUnit(unit)) return;
     throw _exception('Expected $this to have unit "$unit".', name);
   }
 
-  /// Throws a [SassScriptException] unless [this] has no units.
-  ///
-  /// If this came from a function argument, [name] is the argument name
-  /// (without the `$`). It's used for debugging.
   void assertNoUnits([String name]) {
     if (!hasUnits) return;
     throw _exception('Expected $this to have no units.', name);
   }
 
-  /// Returns a copy of this number, converted to the units represented by
-  /// [newNumerators] and [newDenominators].
-  ///
-  /// Note that [valueInUnits] is generally more efficient if the value is going
-  /// to be accessed directly.
-  ///
-  /// Throws a [SassScriptException] if this number's units aren't compatible
-  /// with [newNumerators] and [newDenominators].
   SassNumber coerce(List<String> newNumerators, List<String> newDenominators) =>
       new SassNumber.withUnits(valueInUnits(newNumerators, newDenominators),
           numeratorUnits: newNumerators, denominatorUnits: newDenominators);
 
-  /// Returns [value], converted to the units represented by [newNumerators] and
-  /// [newDenominators].
-  ///
-  /// Throws a [SassScriptException] if this number's units aren't compatible
-  /// with [newNumerators] and [newDenominators].
   num valueInUnits(List<String> newNumerators, List<String> newDenominators) {
     if ((newNumerators.isEmpty && newDenominators.isEmpty) ||
         (numeratorUnits.isEmpty && denominatorUnits.isEmpty) ||
@@ -487,11 +407,11 @@ class SassNumber extends Value {
       List<String> denominators2) {
     // Short-circuit without allocating any new unit lists if possible.
     if (numerators1.isEmpty) {
-      if (denominators2.isEmpty) {
+      if (denominators2.isEmpty &&
+          !_areAnyConvertible(denominators1, numerators2)) {
         return new SassNumber.withUnits(value,
             numeratorUnits: numerators2, denominatorUnits: denominators1);
-      } else if (denominators1.isEmpty &&
-          !_areAnyConvertible(numerators1, denominators2)) {
+      } else if (denominators1.isEmpty) {
         return new SassNumber.withUnits(value,
             numeratorUnits: numerators2, denominatorUnits: denominators2);
       }
@@ -524,7 +444,7 @@ class SassNumber extends Value {
       removeFirstWhere<String>(mutableDenominators1, (denominator) {
         var factor = _conversionFactor(numerator, denominator);
         if (factor == null) return false;
-        value *= factor;
+        value /= factor;
         return true;
       }, orElse: () {
         newNumerators.add(numerator);
@@ -603,7 +523,7 @@ class SassNumber extends Value {
         var innerMap = _conversions[unit];
         return innerMap == null
             ? multiplier
-            : multiplier * innerMap.values.first;
+            : multiplier / innerMap.values.first;
       });
 
   /// Throws a [SassScriptException] with the given [message].

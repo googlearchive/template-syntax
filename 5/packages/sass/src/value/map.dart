@@ -6,16 +6,9 @@ import 'package:collection/collection.dart';
 
 import '../visitor/interface/value.dart';
 import '../value.dart';
+import 'external/value.dart' as ext;
 
-/// A SassScript map.
-class SassMap extends Value {
-  // TODO(nweiz): Use persistent data structures rather than copying here. We
-  // need to preserve the order, which can be done by tracking an RRB vector of
-  // keys along with the hash-mapped array trie representing the map.
-  //
-  // We may also want to fall back to a plain unmodifiable Map for small maps
-  // (<32 items?).
-  /// The contents of the map.
+class SassMap extends Value implements ext.SassMap {
   final Map<Value, Value> contents;
 
   ListSeparator get separator => ListSeparator.comma;
@@ -27,6 +20,8 @@ class SassMap extends Value {
     });
     return result;
   }
+
+  int get lengthAsList => contents.length;
 
   /// Returns an empty map.
   const SassMap.empty() : contents = const {};
@@ -41,7 +36,7 @@ class SassMap extends Value {
   bool operator ==(other) =>
       (other is SassMap &&
           const MapEquality().equals(other.contents, contents)) ||
-      (contents.isEmpty && other is SassList && other.contents.isEmpty);
+      (contents.isEmpty && other is SassList && other.asList.isEmpty);
 
   int get hashCode => contents.isEmpty
       ? const SassList.empty().hashCode

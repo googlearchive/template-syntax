@@ -44,7 +44,11 @@ String serialize(CssNode node,
   node.accept(visitor);
   var result = visitor._buffer.toString();
   if (result.codeUnits.any((codeUnit) => codeUnit > 0x7F)) {
-    result = '@charset "UTF-8";\n$result';
+    if (style == OutputStyle.compressed) {
+      result = '\uFEFF$result';
+    } else {
+      result = '@charset "UTF-8";\n$result';
+    }
   }
   return result;
 }
@@ -83,6 +87,9 @@ class _SerializeVisitor implements CssVisitor, ValueVisitor, SelectorVisitor {
   /// The current indentation of the CSS output.
   var _indentation = 0;
 
+  /// The style of CSS to generate.
+  final OutputStyle _style;
+
   /// Whether we're emitting an unambiguous representation of the source
   /// structure, as opposed to valid CSS.
   final bool _inspect;
@@ -99,6 +106,9 @@ class _SerializeVisitor implements CssVisitor, ValueVisitor, SelectorVisitor {
   /// The characters to use for a line feed.
   final LineFeed _lineFeed;
 
+  /// Whether we're emitting compressed output.
+  bool get _isCompressed => _style == OutputStyle.compressed;
+
   _SerializeVisitor(
       {OutputStyle style,
       bool inspect: false,
@@ -106,7 +116,8 @@ class _SerializeVisitor implements CssVisitor, ValueVisitor, SelectorVisitor {
       bool useSpaces: true,
       int indentWidth,
       LineFeed lineFeed})
-      : _inspect = inspect,
+      : _style = style ?? OutputStyle.expanded,
+        _inspect = inspect,
         _quote = quote,
         _indentCharacter = useSpaces ? $space : $tab,
         _indentWidth = indentWidth ?? 2,
@@ -121,17 +132,26 @@ class _SerializeVisitor implements CssVisitor, ValueVisitor, SelectorVisitor {
       if (_isInvisible(child)) continue;
 
       if (previous != null) {
-        _buffer.write(_lineFeed.text);
-        if (previous.isGroupEnd) _buffer.write(_lineFeed.text);
+        if (_requiresSemicolon(previous)) _buffer.writeCharCode($semicolon);
+        _writeLineFeed();
+        if (previous.isGroupEnd) _writeLineFeed();
       }
       previous = child;
 
       child.accept(this);
     }
+
+    if (previous != null && _requiresSemicolon(previous) && !_isCompressed) {
+      _buffer.writeCharCode($semicolon);
+    }
   }
 
   void visitComment(CssComment node) {
+    // Preserve comments that start with `/*!`.
+    if (_isCompressed && !node.isPreserved) return;
+
     var minimumIndentation = _minimumIndentation(node.text);
+    assert(minimumIndentation != -1);
     if (minimumIndentation == null) {
       _writeIndentation();
       _buffer.write(node.text);
@@ -156,44 +176,66 @@ class _SerializeVisitor implements CssVisitor, ValueVisitor, SelectorVisitor {
       _buffer.write(node.value.value);
     }
 
-    if (node.isChildless) {
-      _buffer.writeCharCode($semicolon);
-    } else {
-      _buffer.writeCharCode($space);
+    if (!node.isChildless) {
+      _writeOptionalSpace();
       _visitChildren(node.children);
     }
   }
 
   void visitMediaRule(CssMediaRule node) {
     _writeIndentation();
-    _buffer.write("@media ");
-    _writeBetween(node.queries, ", ", _visitMediaQuery);
-    _buffer.writeCharCode($space);
+    _buffer.write("@media");
+
+    if (!_isCompressed || !node.queries.first.isCondition) {
+      _buffer.writeCharCode($space);
+    }
+
+    _writeBetween(node.queries, _commaSeparator, _visitMediaQuery);
+    _writeOptionalSpace();
     _visitChildren(node.children);
   }
 
   void visitImport(CssImport node) {
     _writeIndentation();
-    _buffer.write("@import ");
-    _buffer.write(node.url.value);
+    _buffer.write("@import");
+    _writeOptionalSpace();
+    _writeImportUrl(node.url.value);
 
     if (node.supports != null) {
-      _buffer.writeCharCode($space);
+      _writeOptionalSpace();
       _buffer.write(node.supports.value);
     }
 
     if (node.media != null) {
-      _buffer.writeCharCode($space);
-      _writeBetween(node.media, ', ', _visitMediaQuery);
+      _writeOptionalSpace();
+      _writeBetween(node.media, _commaSeparator, _visitMediaQuery);
+    }
+  }
+
+  /// Writes [url], which is an import's URL, to the buffer.
+  void _writeImportUrl(String url) {
+    if (!_isCompressed || url.codeUnitAt(0) != $u) {
+      _buffer.write(url);
+      return;
     }
 
-    _buffer.writeCharCode($semicolon);
+    // If this is url(...), remove the surrounding function. This is terser and
+    // it allows us to remove whitespace between `@import` and the URL.
+    var urlContents = url.substring(4, url.length - 1);
+
+    var maybeQuote = urlContents.codeUnitAt(0);
+    if (maybeQuote == $single_quote || maybeQuote == $double_quote) {
+      _buffer.write(urlContents);
+    } else {
+      // If the URL didn't contain quotes, write them manually.
+      _visitQuotedString(urlContents);
+    }
   }
 
   void visitKeyframeBlock(CssKeyframeBlock node) {
     _writeIndentation();
-    _writeBetween(node.selector.value, ", ", _buffer.write);
-    _buffer.writeCharCode($space);
+    _writeBetween(node.selector.value, _commaSeparator, _buffer.write);
+    _writeOptionalSpace();
     _visitChildren(node.children);
   }
 
@@ -205,24 +247,33 @@ class _SerializeVisitor implements CssVisitor, ValueVisitor, SelectorVisitor {
 
     if (query.type != null) {
       _buffer.write(query.type);
-      if (query.features.isNotEmpty) _buffer.write(" and ");
+      if (query.features.isNotEmpty) {
+        _buffer.write(" and");
+        _writeOptionalSpace();
+      }
     }
 
-    _writeBetween(query.features, " and ", _buffer.write);
+    _writeBetween(
+        query.features, _isCompressed ? "and" : " and ", _buffer.write);
   }
 
   void visitStyleRule(CssStyleRule node) {
     _writeIndentation();
     node.selector.value.accept(this);
-    _buffer.writeCharCode($space);
+    _writeOptionalSpace();
     _visitChildren(node.children);
   }
 
   void visitSupportsRule(CssSupportsRule node) {
     _writeIndentation();
-    _buffer.write("@supports ");
+    _buffer.write("@supports");
+
+    if (!(_isCompressed && node.condition.value.codeUnitAt(0) == $lparen)) {
+      _buffer.writeCharCode($space);
+    }
+
     _buffer.write(node.condition.value);
-    _buffer.writeCharCode($space);
+    _writeOptionalSpace();
     _visitChildren(node.children);
   }
 
@@ -230,27 +281,48 @@ class _SerializeVisitor implements CssVisitor, ValueVisitor, SelectorVisitor {
     _writeIndentation();
     _buffer.write(node.name.value);
     _buffer.writeCharCode($colon);
-    if (_shouldReindentValue(node)) {
-      _writeReindentedValue(node);
+
+    if (_isParsedCustomProperty(node)) {
+      if (_isCompressed) {
+        _writeFoldedValue(node);
+      } else {
+        _writeReindentedValue(node);
+      }
     } else {
-      _buffer.writeCharCode($space);
+      _writeOptionalSpace();
       _visitValue(node.value);
     }
-    _buffer.writeCharCode($semicolon);
   }
 
-  /// Returns whether [node]'s value should be re-indented when being written to
-  /// the stylesheet.
+  /// Returns whether [node] is a custom property that was parsed as a custom
+  /// property (rather than being dynamically generated, as in `#{--foo}: ...`).
   ///
   /// We only re-indent custom property values that were parsed as custom
   /// properties, which we detect as unquoted strings. It's possible to have
   /// false positives here, since someone could write `#{--foo}: unquoted`, but
   /// that's unlikely enough that we can spare the extra time a no-op
   /// reindenting will take.
-  bool _shouldReindentValue(CssDeclaration node) {
+  bool _isParsedCustomProperty(CssDeclaration node) {
     if (!node.name.value.startsWith("--")) return false;
     var value = node.value.value;
     return value is SassString && !value.hasQuotes;
+  }
+
+  /// Emits the value of [node], with all newlines followed by whitespace
+  void _writeFoldedValue(CssDeclaration node) {
+    var scanner = new StringScanner((node.value.value as SassString).text);
+    while (!scanner.isDone) {
+      var next = scanner.readChar();
+      if (next != $lf) {
+        _buffer.writeCharCode(next);
+        continue;
+      }
+
+      _buffer.writeCharCode($space);
+      while (isWhitespace(scanner.peekChar())) {
+        scanner.readChar();
+      }
+    }
   }
 
   /// Emits the value of [node], re-indented relative to the current indentation.
@@ -260,6 +332,10 @@ class _SerializeVisitor implements CssVisitor, ValueVisitor, SelectorVisitor {
     var minimumIndentation = _minimumIndentation(value);
     if (minimumIndentation == null) {
       _buffer.write(value);
+      return;
+    } else if (minimumIndentation == -1) {
+      _buffer.write(value.trimRight());
+      _buffer.writeCharCode($space);
       return;
     }
 
@@ -271,12 +347,15 @@ class _SerializeVisitor implements CssVisitor, ValueVisitor, SelectorVisitor {
     _writeWithIndent(value, minimumIndentation);
   }
 
-  /// Returns the indentation level of the least-indented, non-empty line in
-  /// [text].
+  /// Returns the indentation level of the least-indented non-empty line in
+  /// [text] after the first.
+  ///
+  /// Returns `null` if [text] contains no newlines, and -1 if it contains
+  /// newlines but no lines are indented.
   int _minimumIndentation(String text) {
     var scanner = new LineScanner(text);
     while (!scanner.isDone && scanner.readChar() != $lf) {}
-    if (scanner.isDone) return null;
+    if (scanner.isDone) return scanner.peekChar(-1) == $lf ? -1 : null;
 
     int min;
     while (!scanner.isDone) {
@@ -290,23 +369,54 @@ class _SerializeVisitor implements CssVisitor, ValueVisitor, SelectorVisitor {
       while (!scanner.isDone && scanner.readChar() != $lf) {}
     }
 
-    return min;
+    return min ?? -1;
   }
 
-  /// Writes [text] to [_buffer], adding [minimumIndentation] to each non-empty
-  /// line.
+  /// Writes [text] to [_buffer], replacing [minimumIndentation] with
+  /// [_indentation] for each non-empty line after the first.
+  ///
+  /// Compresses trailing empty lines of [text] into a single trailing space.
   void _writeWithIndent(String text, int minimumIndentation) {
     var scanner = new LineScanner(text);
-    while (!scanner.isDone && scanner.peekChar() != $lf) {
-      _buffer.writeCharCode(scanner.readChar());
+
+    // Write the first line as-is.
+    while (!scanner.isDone) {
+      var next = scanner.readChar();
+      if (next == $lf) break;
+      _buffer.writeCharCode(next);
     }
 
-    while (!scanner.isDone) {
-      _buffer.writeCharCode(scanner.readChar());
-      for (var i = 0; i < minimumIndentation; i++) scanner.readChar();
+    while (true) {
+      assert(isWhitespace(scanner.peekChar(-1)));
+
+      // Scan forward until we hit non-whitespace or the end of [text].
+      var lineStart = scanner.position;
+      var newlines = 1;
+      while (true) {
+        // If we hit the end of [text], we still need to preserve the fact that
+        // whitespace exists because it could matter for custom properties.
+        if (scanner.isDone) {
+          _buffer.writeCharCode($space);
+          return;
+        }
+
+        var next = scanner.readChar();
+        if (next == $space || next == $tab) continue;
+        if (next != $lf) break;
+        lineStart = scanner.position;
+        newlines++;
+      }
+
+      _writeTimes($lf, newlines);
       _writeIndentation();
-      while (!scanner.isDone && scanner.peekChar() != $lf) {
-        _buffer.writeCharCode(scanner.readChar());
+      _buffer.write(scanner.substring(lineStart + minimumIndentation));
+
+      // Scan and write until we hit a newline or the end of [text].
+      while (true) {
+        if (scanner.isDone) return;
+        var next = scanner.readChar();
+        if (next == $lf) break;
+        _buffer.writeCharCode(next);
       }
     }
   }
@@ -326,6 +436,26 @@ class _SerializeVisitor implements CssVisitor, ValueVisitor, SelectorVisitor {
   void visitBoolean(SassBoolean value) => _buffer.write(value.value.toString());
 
   void visitColor(SassColor value) {
+    // In compressed mode, emit colors in the shortest representation possible.
+    if (_isCompressed && fuzzyEquals(value.alpha, 1)) {
+      var name = namesByColor[value];
+      var hexLength = _canUseShortHex(value) ? 4 : 7;
+      if (name != null && name.length <= hexLength) {
+        _buffer.write(name);
+      } else if (_canUseShortHex(value)) {
+        _buffer.writeCharCode($hash);
+        _buffer.writeCharCode(hexCharFor(value.red & 0xF));
+        _buffer.writeCharCode(hexCharFor(value.green & 0xF));
+        _buffer.writeCharCode(hexCharFor(value.blue & 0xF));
+      } else {
+        _buffer.writeCharCode($hash);
+        _writeHexComponent(value.red);
+        _writeHexComponent(value.green);
+        _writeHexComponent(value.blue);
+      }
+      return;
+    }
+
     if (value.original != null) {
       _buffer.write(value.original);
     } else if (namesByColor.containsKey(value) &&
@@ -333,17 +463,34 @@ class _SerializeVisitor implements CssVisitor, ValueVisitor, SelectorVisitor {
         // around an IE bug. See sass/sass#1782.
         !fuzzyEquals(value.alpha, 0)) {
       _buffer.write(namesByColor[value]);
-    } else if (value.alpha == 1) {
+    } else if (fuzzyEquals(value.alpha, 1)) {
       _buffer.writeCharCode($hash);
       _writeHexComponent(value.red);
       _writeHexComponent(value.green);
       _writeHexComponent(value.blue);
     } else {
-      _buffer.write("rgba(${value.red}, ${value.green}, ${value.blue}, ");
+      _buffer
+        ..write("rgba(${value.red}")
+        ..write(_commaSeparator)
+        ..write(value.green)
+        ..write(_commaSeparator)
+        ..write(value.blue)
+        ..write(_commaSeparator);
       _writeNumber(value.alpha);
       _buffer.writeCharCode($rparen);
     }
   }
+
+  /// Returns whether [color]'s hex pair representation is symmetrical (e.g.
+  /// `FF`).
+  bool _isSymmetricalHex(int color) => color & 0xF == color >> 4;
+
+  /// Returns whether [color] can be represented as a short hexadecimal color
+  /// (e.g. `#fff`).
+  bool _canUseShortHex(SassColor color) =>
+      _isSymmetricalHex(color.red) &&
+      _isSymmetricalHex(color.green) &&
+      _isSymmetricalHex(color.blue);
 
   /// Emits [color] as a hex character pair.
   void _writeHexComponent(int color) {
@@ -365,7 +512,7 @@ class _SerializeVisitor implements CssVisitor, ValueVisitor, SelectorVisitor {
   void visitList(SassList value) {
     if (value.hasBrackets) {
       _buffer.writeCharCode($lbracket);
-    } else if (value.contents.isEmpty) {
+    } else if (value.asList.isEmpty) {
       if (!_inspect) {
         throw new SassScriptException("() isn't a valid CSS value");
       }
@@ -374,15 +521,15 @@ class _SerializeVisitor implements CssVisitor, ValueVisitor, SelectorVisitor {
     }
 
     var singleton = _inspect &&
-        value.contents.length == 1 &&
+        value.asList.length == 1 &&
         value.separator == ListSeparator.comma;
     if (singleton && !value.hasBrackets) _buffer.writeCharCode($lparen);
 
     _writeBetween<Value>(
         _inspect
-            ? value.contents
-            : value.contents.where((element) => !element.isBlank),
-        value.separator == ListSeparator.space ? " " : ", ",
+            ? value.asList
+            : value.asList.where((element) => !element.isBlank),
+        value.separator == ListSeparator.space ? " " : _commaSeparator,
         _inspect
             ? (element) {
                 var needsParens = _elementNeedsParens(value.separator, element);
@@ -406,7 +553,7 @@ class _SerializeVisitor implements CssVisitor, ValueVisitor, SelectorVisitor {
   /// given [separator].
   bool _elementNeedsParens(ListSeparator separator, Value value) {
     if (value is SassList) {
-      if (value.contents.length < 2) return false;
+      if (value.asList.length < 2) return false;
       if (value.hasBrackets) return false;
       return separator == ListSeparator.comma
           ? value.separator == ListSeparator.comma
@@ -448,6 +595,12 @@ class _SerializeVisitor implements CssVisitor, ValueVisitor, SelectorVisitor {
       return;
     }
 
+    // 0 is valid for any unit context.
+    if (_isCompressed && fuzzyEquals(value.value, 0)) {
+      _buffer.writeCharCode($0);
+      return;
+    }
+
     _writeNumber(value.value);
 
     if (!_inspect) {
@@ -477,6 +630,7 @@ class _SerializeVisitor implements CssVisitor, ValueVisitor, SelectorVisitor {
 
     var text = number.toString();
     if (text.contains("e")) text = _removeExponent(text);
+    if (_isCompressed && text.codeUnitAt(0) == $0) text = text.substring(1);
 
     // Any double that doesn't contain "e" and is less than
     // `SassNumber.precision + 2` digits long is guaranteed to be safe to emit
@@ -763,9 +917,9 @@ class _SerializeVisitor implements CssVisitor, ValueVisitor, SelectorVisitor {
       } else {
         _buffer.writeCharCode($comma);
         if (complex.lineBreak) {
-          _buffer.write(_lineFeed.text);
+          _writeLineFeed();
         } else {
-          _buffer.writeCharCode($space);
+          _writeOptionalSpace();
         }
       }
       visitComplexSelector(complex);
@@ -826,31 +980,56 @@ class _SerializeVisitor implements CssVisitor, ValueVisitor, SelectorVisitor {
       return;
     }
 
-    _buffer.write(_lineFeed.text);
+    _writeLineFeed();
+    CssNode previous;
     _indent(() {
-      CssNode previous;
       for (var i = 0; i < children.length; i++) {
         var child = children[i];
         if (_isInvisible(child)) continue;
 
         if (previous != null) {
-          _buffer.write(_lineFeed.text);
-          if (previous.isGroupEnd) _buffer.write(_lineFeed.text);
+          if (_requiresSemicolon(previous)) _buffer.writeCharCode($semicolon);
+          _writeLineFeed();
+          if (previous.isGroupEnd) _writeLineFeed();
         }
         previous = child;
 
         child.accept(this);
       }
     });
-    _buffer.write(_lineFeed.text);
+
+    if (_requiresSemicolon(previous) && !_isCompressed) {
+      _buffer.writeCharCode($semicolon);
+    }
+    _writeLineFeed();
     _writeIndentation();
     _buffer.writeCharCode($rbrace);
   }
 
+  /// Whether [node] requires a semicolon to be written after it.
+  bool _requiresSemicolon(CssNode node) =>
+      node is CssParentNode ? node.isChildless : node is! CssComment;
+
+  /// Writes a line feed, unless this emitting compressed CSS.
+  void _writeLineFeed() {
+    if (!_isCompressed) _buffer.write(_lineFeed.text);
+  }
+
+  /// Writes a space unless [_style] is [OutputStyle.compressed].
+  void _writeOptionalSpace() {
+    if (!_isCompressed) _buffer.writeCharCode($space);
+  }
+
   /// Writes indentation based on [_indentation].
   void _writeIndentation() {
-    for (var i = 0; i < _indentation * _indentWidth; i++) {
-      _buffer.writeCharCode(_indentCharacter);
+    if (_isCompressed) return;
+    _writeTimes(_indentCharacter, _indentation * _indentWidth);
+  }
+
+  /// Writes [char] to [_buffer] with [times] repetitions.
+  void _writeTimes(int char, int times) {
+    for (var i = 0; i < times; i++) {
+      _buffer.writeCharCode(char);
     }
   }
 
@@ -869,6 +1048,9 @@ class _SerializeVisitor implements CssVisitor, ValueVisitor, SelectorVisitor {
     }
   }
 
+  /// Returns a comma used to separate values in lists.
+  String get _commaSeparator => _isCompressed ? "," : ", ";
+
   /// Runs [callback] with indentation increased one level.
   void _indent(void callback()) {
     _indentation++;
@@ -877,7 +1059,21 @@ class _SerializeVisitor implements CssVisitor, ValueVisitor, SelectorVisitor {
   }
 
   /// Returns whether [node] is considered invisible.
-  bool _isInvisible(CssNode node) => !_inspect && node.isInvisible;
+  bool _isInvisible(CssNode node) {
+    if (_inspect) return false;
+    if (_isCompressed && node is CssComment && !node.isPreserved) return true;
+    if (node is CssParentNode) {
+      // An unknown at-rule is never invisible. Because we don't know the
+      // semantics of unknown rules, we can't guarantee that (for example)
+      // `@foo {}` isn't meaningful.
+      if (node is CssAtRule) return false;
+
+      if (node is CssStyleRule && node.selector.value.isInvisible) return true;
+      return node.children.every(_isInvisible);
+    } else {
+      return false;
+    }
+  }
 
   /// Returns whether [text] is a valid identifier.
   bool _isIdentifier(String text) {
@@ -938,7 +1134,20 @@ class _SerializeVisitor implements CssVisitor, ValueVisitor, SelectorVisitor {
 /// An enum of generated CSS styles.
 class OutputStyle {
   /// The standard CSS style, with each declaration on its own line.
+  ///
+  /// ```css
+  /// .sidebar {
+  ///   width: 100px;
+  /// }
+  /// ```
   static const expanded = const OutputStyle._("expanded");
+
+  /// A CSS style that produces as few bytes of output as possible.
+  ///
+  /// ```css
+  /// .sidebar{width:100px}
+  /// ```
+  static const compressed = const OutputStyle._("compressed");
 
   /// The name of the style.
   final String _name;

@@ -34,10 +34,12 @@ class ViewHeroDetailComponent0 extends AppView<import1.HeroDetailComponent> {
   import2.Element _el_1;
   import2.Element _el_2;
   import2.Text _text_3;
-  import2.ButtonElement _el_4;
+  import2.Text _text_5;
+  import2.ButtonElement _el_6;
   var _expr_0;
   var _expr_1;
   var _expr_2;
+  var _expr_3;
   static RenderComponentType _renderType;
   ViewHeroDetailComponent0(AppView<dynamic> parentView, num parentIndex) : super(import4.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     rootEl = import2.document.createElement('hero-detail');
@@ -56,11 +58,15 @@ class ViewHeroDetailComponent0 extends AppView<import1.HeroDetailComponent> {
     addShimE(_el_2);
     _text_3 = new import2.Text('');
     _el_2.append(_text_3);
-    _el_4 = createAndAppend(doc, 'button', _el_0);
-    addShimC(_el_4);
-    import2.Text _text_5 = new import2.Text('Delete');
-    _el_4.append(_text_5);
-    _el_4.addEventListener('click', eventHandler0(ctx.delete));
+    import2.Text _text_4 = new import2.Text(' ');
+    _el_2.append(_text_4);
+    _text_5 = new import2.Text('');
+    _el_2.append(_text_5);
+    _el_6 = createAndAppend(doc, 'button', _el_0);
+    addShimC(_el_6);
+    import2.Text _text_7 = new import2.Text('Delete');
+    _el_6.append(_text_7);
+    _el_6.addEventListener('click', eventHandler0(ctx.delete));
     init(const [], null);
     return null;
   }
@@ -78,10 +84,15 @@ class ViewHeroDetailComponent0 extends AppView<import1.HeroDetailComponent> {
       _el_2.style.setProperty('text-decoration', currVal_1?.toString());
       _expr_1 = currVal_1;
     }
-    final currVal_2 = import6.interpolate2('', _ctx.prefix, ' ', ((_ctx.hero == null) ? null : _ctx.hero.name), '');
+    final currVal_2 = (_ctx.prefix ?? '');
     if (!identical(_expr_2, currVal_2)) {
       _text_3.text = currVal_2;
       _expr_2 = currVal_2;
+    }
+    final currVal_3 = import6.interpolate0(((_ctx.hero == null) ? null : _ctx.hero.name));
+    if (!identical(_expr_3, currVal_3)) {
+      _text_5.text = currVal_3;
+      _expr_3 = currVal_3;
     }
   }
 }
@@ -143,18 +154,18 @@ class ViewBigHeroDetailComponent0 extends AppView<import1.BigHeroDetailComponent
   import2.Element _el_3;
   import2.Text _text_4;
   import2.DivElement _el_5;
-  import2.Text _text_6;
-  import2.DivElement _el_7;
-  import2.Text _text_8;
-  import2.DivElement _el_9;
+  import2.Text _text_7;
+  import2.DivElement _el_8;
   import2.Text _text_10;
   import2.DivElement _el_11;
-  import2.AnchorElement _el_13;
-  import2.Text _text_14;
-  import2.DivElement _el_15;
-  import2.Text _text_16;
-  import2.Element _el_17;
-  import2.ButtonElement _el_18;
+  import2.Text _text_13;
+  import2.DivElement _el_14;
+  import2.AnchorElement _el_16;
+  import2.Text _text_17;
+  import2.DivElement _el_18;
+  import2.Text _text_20;
+  import2.Element _el_21;
+  import2.ButtonElement _el_22;
   var _expr_0;
   var _expr_1;
   var _expr_2;
@@ -190,37 +201,45 @@ class ViewBigHeroDetailComponent0 extends AppView<import1.BigHeroDetailComponent
     _el_3.append(_text_4);
     _el_5 = createDivAndAppend(doc, _el_0);
     addShimC(_el_5);
-    _text_6 = new import2.Text('');
+    import2.Text _text_6 = new import2.Text('Name: ');
     _el_5.append(_text_6);
-    _el_7 = createDivAndAppend(doc, _el_0);
-    addShimC(_el_7);
-    _text_8 = new import2.Text('');
-    _el_7.append(_text_8);
-    _el_9 = createDivAndAppend(doc, _el_0);
-    addShimC(_el_9);
+    _text_7 = new import2.Text('');
+    _el_5.append(_text_7);
+    _el_8 = createDivAndAppend(doc, _el_0);
+    addShimC(_el_8);
+    import2.Text _text_9 = new import2.Text('Emotion: ');
+    _el_8.append(_text_9);
     _text_10 = new import2.Text('');
-    _el_9.append(_text_10);
+    _el_8.append(_text_10);
     _el_11 = createDivAndAppend(doc, _el_0);
     addShimC(_el_11);
-    import2.Text _text_12 = new import2.Text('Web:');
+    import2.Text _text_12 = new import2.Text('Birthdate: ');
     _el_11.append(_text_12);
-    _el_13 = createAndAppend(doc, 'a', _el_11);
-    createAttr(_el_13, 'target', '_blank');
-    addShimC(_el_13);
-    _text_14 = new import2.Text('');
-    _el_13.append(_text_14);
-    _el_15 = createDivAndAppend(doc, _el_0);
-    addShimC(_el_15);
-    _text_16 = new import2.Text('');
-    _el_15.append(_text_16);
-    _el_17 = createAndAppend(doc, 'br', _el_0);
-    createAttr(_el_17, 'clear', 'all');
-    addShimE(_el_17);
-    _el_18 = createAndAppend(doc, 'button', _el_0);
+    _text_13 = new import2.Text('');
+    _el_11.append(_text_13);
+    _el_14 = createDivAndAppend(doc, _el_0);
+    addShimC(_el_14);
+    import2.Text _text_15 = new import2.Text('Web:');
+    _el_14.append(_text_15);
+    _el_16 = createAndAppend(doc, 'a', _el_14);
+    createAttr(_el_16, 'target', '_blank');
+    addShimC(_el_16);
+    _text_17 = new import2.Text('');
+    _el_16.append(_text_17);
+    _el_18 = createDivAndAppend(doc, _el_0);
     addShimC(_el_18);
-    import2.Text _text_19 = new import2.Text('Delete');
+    import2.Text _text_19 = new import2.Text('Rate/hr: ');
     _el_18.append(_text_19);
-    _el_18.addEventListener('click', eventHandler0(ctx.delete));
+    _text_20 = new import2.Text('');
+    _el_18.append(_text_20);
+    _el_21 = createAndAppend(doc, 'br', _el_0);
+    createAttr(_el_21, 'clear', 'all');
+    addShimE(_el_21);
+    _el_22 = createAndAppend(doc, 'button', _el_0);
+    addShimC(_el_22);
+    import2.Text _text_23 = new import2.Text('Delete');
+    _el_22.append(_text_23);
+    _el_22.addEventListener('click', eventHandler0(ctx.delete));
     _pipe_date_0 = new import8.DatePipe();
     _pipe_date_0_0 = import6.pureProxy2(_pipe_date_0.transform);
     _pipe_currency_1 = new import10.CurrencyPipe();
@@ -242,34 +261,34 @@ class ViewBigHeroDetailComponent0 extends AppView<import1.BigHeroDetailComponent
       _text_4.text = currVal_1;
       _expr_1 = currVal_1;
     }
-    final currVal_2 = import6.interpolate1('Name: ', ((_ctx.hero == null) ? null : _ctx.hero.name), '');
+    final currVal_2 = import6.interpolate0(((_ctx.hero == null) ? null : _ctx.hero.name));
     if (!identical(_expr_2, currVal_2)) {
-      _text_6.text = currVal_2;
+      _text_7.text = currVal_2;
       _expr_2 = currVal_2;
     }
-    final currVal_3 = import6.interpolate1('Emotion: ', ((_ctx.hero == null) ? null : _ctx.hero.emotion), '');
+    final currVal_3 = import6.interpolate0(((_ctx.hero == null) ? null : _ctx.hero.emotion));
     if (!identical(_expr_3, currVal_3)) {
-      _text_8.text = currVal_3;
+      _text_10.text = currVal_3;
       _expr_3 = currVal_3;
     }
-    final currVal_4 = import6.interpolate1('Birthdate: ', _pipe_date_0_0(((_ctx.hero == null) ? null : _ctx.hero.birthdate), 'longDate'), '');
+    final currVal_4 = import6.interpolate0(_pipe_date_0_0(((_ctx.hero == null) ? null : _ctx.hero.birthdate), 'longDate'));
     if (!identical(_expr_4, currVal_4)) {
-      _text_10.text = currVal_4;
+      _text_13.text = currVal_4;
       _expr_4 = currVal_4;
     }
     final currVal_5 = import6.interpolate0(((_ctx.hero == null) ? null : _ctx.hero.url));
     if (!identical(_expr_5, currVal_5)) {
-      setProp(_el_13, 'href', import6.appViewUtils.sanitizer.sanitizeUrl(currVal_5));
+      setProp(_el_16, 'href', import6.appViewUtils.sanitizer.sanitizeUrl(currVal_5));
       _expr_5 = currVal_5;
     }
     final currVal_6 = import6.interpolate0(((_ctx.hero == null) ? null : _ctx.hero.url));
     if (!identical(_expr_6, currVal_6)) {
-      _text_14.text = currVal_6;
+      _text_17.text = currVal_6;
       _expr_6 = currVal_6;
     }
-    final currVal_7 = import6.interpolate1('Rate/hr: ', _pipe_currency_1_0(((_ctx.hero == null) ? null : _ctx.hero.rate), 'EUR'), '');
+    final currVal_7 = import6.interpolate0(_pipe_currency_1_0(((_ctx.hero == null) ? null : _ctx.hero.rate), 'EUR'));
     if (!identical(_expr_7, currVal_7)) {
-      _text_16.text = currVal_7;
+      _text_20.text = currVal_7;
       _expr_7 = currVal_7;
     }
   }

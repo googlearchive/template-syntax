@@ -4,15 +4,13 @@
 
 import 'dart:collection';
 
+import 'package:collection/collection.dart';
+
 import '../utils.dart';
 import '../value.dart';
+import 'external/value.dart' as ext;
 
-/// A SassScript argument list.
-///
-/// An argument list comes from a rest argument, and may contain a keyword map
-/// as well as the positional arguments.
-class SassArgumentList extends SassList {
-  /// The keywords attached to this argument list.
+class SassArgumentList extends SassList implements ext.SassArgumentList {
   Map<String, Value> get keywords {
     _wereKeywordsAccessed = true;
     return _keywords;
@@ -24,6 +22,9 @@ class SassArgumentList extends SassList {
   ///
   /// This is used to determine whether to throw an exception about passing
   /// unexpected keywords.
+  ///
+  /// **Note:** this function should not be called outside the `sass` package.
+  /// It's not guaranteed to be stable across versions.
   bool get wereKeywordsAccessed => _wereKeywordsAccessed;
   var _wereKeywordsAccessed = false;
 

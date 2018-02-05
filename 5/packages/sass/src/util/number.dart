@@ -8,14 +8,23 @@ import '../value.dart';
 
 /// The maximum distance two Sass numbers are allowed to be from one another
 /// before they're considered different.
-final epsilon = 1 / (math.pow(10, SassNumber.precision));
+final epsilon = 1 / math.pow(10, SassNumber.precision);
+
+/// `epsilon / 2`, cached since [math.pow] may not be computed at compile-time
+/// and thus this probably won't be constant-folded.
+final _epsilonOver2 = epsilon / 2;
 
 /// Returns whether [number1] and [number2] are equal within [epsilon].
 bool fuzzyEquals(num number1, num number2) =>
     (number1 - number2).abs() < epsilon;
 
 /// Returns a hash code for [number] that matches [fuzzyEquals].
-int fuzzyHashCode(num number) => (number % epsilon).hashCode;
+int fuzzyHashCode(num number) {
+  var remainder = number % epsilon;
+  var truncated = number - remainder;
+  if (remainder >= _epsilonOver2) truncated += epsilon;
+  return truncated.hashCode;
+}
 
 /// Returns whether [number1] is less than [number2], and not [fuzzyEquals].
 bool fuzzyLessThan(num number1, num number2) =>
@@ -54,8 +63,13 @@ int fuzzyAsInt(num number) => fuzzyIsInt(number) ? number.round() : null;
 int fuzzyRound(num number) {
   // If the number is within epsilon of X.5, round up (or down for negative
   // numbers).
-  if (fuzzyLessThan(number % 1, 0.5)) return number.round();
-  return number > 0 ? number.ceil() : number.floor();
+  if (number > 0) {
+    return fuzzyLessThan(number % 1, 0.5) ? number.floor() : number.ceil();
+  } else {
+    return fuzzyLessThanOrEquals(number % 1, 0.5)
+        ? number.floor()
+        : number.ceil();
+  }
 }
 
 /// Returns [number] if it's within [min] and [max], or `null` if it's not.

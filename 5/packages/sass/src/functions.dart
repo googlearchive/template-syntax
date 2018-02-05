@@ -43,21 +43,39 @@ final List<BuiltInCallable> coreFunctions = new UnmodifiableListView([
   // ## Colors
   // ### RGB
 
-  new BuiltInCallable("rgb", r"$red, $green, $blue", (arguments) {
-    if (arguments[0].isSpecialNumber ||
-        arguments[1].isSpecialNumber ||
-        arguments[2].isSpecialNumber) {
-      return _functionString('rgb', arguments);
+  new BuiltInCallable.overloaded("rgb", {
+    r"$red, $green, $blue": (arguments) {
+      if (arguments[0].isSpecialNumber ||
+          arguments[1].isSpecialNumber ||
+          arguments[2].isSpecialNumber) {
+        return _functionString('rgb', arguments);
+      }
+
+      var red = arguments[0].assertNumber("red");
+      var green = arguments[1].assertNumber("green");
+      var blue = arguments[2].assertNumber("blue");
+
+      return new SassColor.rgb(
+          fuzzyRound(_percentageOrUnitless(red, 255, "red")),
+          fuzzyRound(_percentageOrUnitless(green, 255, "green")),
+          fuzzyRound(_percentageOrUnitless(blue, 255, "blue")));
+    },
+    r"$red, $green": (arguments) {
+      // rgb(123, var(--foo)) is valid CSS because --foo might be `456, 789` and
+      // functions are parsed after variable substitution.
+      if (arguments[0].isVar || arguments[1].isVar) {
+        return _functionString('rgb', arguments);
+      } else {
+        throw new SassScriptException(r"Missing argument $blue.");
+      }
+    },
+    r"$red": (arguments) {
+      if (arguments.first.isVar) {
+        return _functionString('rgb', arguments);
+      } else {
+        throw new SassScriptException(r"Missing argument $green.");
+      }
     }
-
-    var red = arguments[0].assertNumber("red");
-    var green = arguments[1].assertNumber("green");
-    var blue = arguments[2].assertNumber("blue");
-
-    return new SassColor.rgb(
-        fuzzyRound(_percentageOrUnitless(red, 255, "red")),
-        fuzzyRound(_percentageOrUnitless(green, 255, "green")),
-        fuzzyRound(_percentageOrUnitless(blue, 255, "blue")));
   }),
 
   new BuiltInCallable.overloaded("rgba", {
@@ -81,16 +99,45 @@ final List<BuiltInCallable> coreFunctions = new UnmodifiableListView([
           _percentageOrUnitless(alpha, 1, "alpha"));
     },
     r"$color, $alpha": (arguments) {
-      var color = arguments[0].assertColor("color");
-
-      if (arguments[1].isSpecialNumber) {
+      // rgba(var(--foo), 0.5) is valid CSS because --foo might be `123, 456,
+      // 789` and functions are parsed after variable substitution.
+      if (arguments[0].isVar) {
+        return _functionString('rgba', arguments);
+      } else if (arguments[1].isVar) {
+        var first = arguments[0];
+        if (first is SassColor) {
+          return new SassString(
+              "rgba(${first.red}, ${first.green}, ${first.blue}, "
+              "${arguments[1].toCssString()})",
+              quotes: false);
+        } else {
+          return _functionString('rgba', arguments);
+        }
+      } else if (arguments[1].isSpecialNumber) {
+        var color = arguments[0].assertColor("color");
         return new SassString(
             "rgba(${color.red}, ${color.green}, ${color.blue}, "
-            "${arguments[1].toCssString()})");
+            "${arguments[1].toCssString()})",
+            quotes: false);
       }
 
+      var color = arguments[0].assertColor("color");
       var alpha = arguments[1].assertNumber("alpha");
       return color.changeAlpha(_percentageOrUnitless(alpha, 1, "alpha"));
+    },
+    r"$red, $green, $blue": (arguments) {
+      if (arguments[0].isVar || arguments[1].isVar || arguments[2].isVar) {
+        return _functionString('rgba', arguments);
+      } else {
+        throw new SassScriptException(r"Missing argument $alpha.");
+      }
+    },
+    r"$red": (arguments) {
+      if (arguments.first.isVar) {
+        return _functionString('rgba', arguments);
+      } else {
+        throw new SassScriptException(r"Missing argument $green.");
+      }
     }
   }),
 
@@ -115,36 +162,78 @@ final List<BuiltInCallable> coreFunctions = new UnmodifiableListView([
 
   // ### HSL
 
-  new BuiltInCallable("hsl", r"$hue, $saturation, $lightness", (arguments) {
-    if (arguments[0].isSpecialNumber ||
-        arguments[1].isSpecialNumber ||
-        arguments[2].isSpecialNumber) {
-      return _functionString("hsl", arguments);
+  new BuiltInCallable.overloaded("hsl", {
+    r"$hue, $saturation, $lightness": (arguments) {
+      if (arguments[0].isSpecialNumber ||
+          arguments[1].isSpecialNumber ||
+          arguments[2].isSpecialNumber) {
+        return _functionString("hsl", arguments);
+      }
+
+      var hue = arguments[0].assertNumber("hue");
+      var saturation = arguments[1].assertNumber("saturation");
+      var lightness = arguments[2].assertNumber("lightness");
+
+      return new SassColor.hsl(hue.value, saturation.value, lightness.value);
+    },
+    r"$hue, $saturation": (arguments) {
+      // hsl(123, var(--foo)) is valid CSS because --foo might be `10%, 20%` and
+      // functions are parsed after variable substitution.
+      if (arguments[0].isVar || arguments[1].isVar) {
+        return _functionString('hsl', arguments);
+      } else {
+        throw new SassScriptException(r"Missing argument $lightness.");
+      }
+    },
+    r"$hue": (arguments) {
+      if (arguments.first.isVar) {
+        return _functionString('hsl', arguments);
+      } else {
+        throw new SassScriptException(r"Missing argument $saturation.");
+      }
     }
-
-    var hue = arguments[0].assertNumber("hue");
-    var saturation = arguments[1].assertNumber("saturation");
-    var lightness = arguments[2].assertNumber("lightness");
-
-    return new SassColor.hsl(hue.value, saturation.value, lightness.value);
   }),
 
-  new BuiltInCallable("hsla", r"$hue, $saturation, $lightness, $alpha",
-      (arguments) {
-    if (arguments[0].isSpecialNumber ||
-        arguments[1].isSpecialNumber ||
-        arguments[2].isSpecialNumber ||
-        arguments[3].isSpecialNumber) {
-      return _functionString("hsla", arguments);
+  new BuiltInCallable.overloaded("hsla", {
+    r"$hue, $saturation, $lightness, $alpha": (arguments) {
+      if (arguments[0].isSpecialNumber ||
+          arguments[1].isSpecialNumber ||
+          arguments[2].isSpecialNumber ||
+          arguments[3].isSpecialNumber) {
+        return _functionString("hsla", arguments);
+      }
+
+      var hue = arguments[0].assertNumber("hue");
+      var saturation = arguments[1].assertNumber("saturation");
+      var lightness = arguments[2].assertNumber("lightness");
+      var alpha = arguments[3].assertNumber("alpha");
+
+      return new SassColor.hsl(hue.value, saturation.value, lightness.value,
+          _percentageOrUnitless(alpha, 1, "alpha"));
+    },
+    r"$hue, $saturation, $lightness": (arguments) {
+      // hsla(123, var(--foo)) is valid CSS because --foo might be `10%, 20%,
+      // 0.5` and functions are parsed after variable substitution.
+      if (arguments[0].isVar || arguments[1].isVar || arguments[2].isVar) {
+        return _functionString('hsla', arguments);
+      } else {
+        throw new SassScriptException(r"Missing argument $alpha.");
+      }
+    },
+    r"$hue, $saturation": (arguments) {
+      if (arguments[0].isVar || arguments[1].isVar) {
+        return _functionString('hsla', arguments);
+      } else {
+        throw new SassScriptException(r"Missing argument $lightness.");
+      }
+    },
+    r"$hue": (arguments) {
+      if (arguments.first.isVar) {
+        return _functionString('hsla', arguments);
+      } else {
+        throw new SassScriptException(r"Missing argument $saturation.");
+      }
     }
-
-    var hue = arguments[0].assertNumber("hue");
-    var saturation = arguments[1].assertNumber("saturation");
-    var lightness = arguments[2].assertNumber("lightness");
-    var alpha = arguments[3].assertNumber("alpha");
-
-    return new SassColor.hsl(hue.value, saturation.value, lightness.value,
-        _percentageOrUnitless(alpha, 1, "alpha"));
   }),
 
   new BuiltInCallable(
@@ -190,7 +279,7 @@ final List<BuiltInCallable> coreFunctions = new UnmodifiableListView([
   new BuiltInCallable.overloaded("saturate", {
     r"$number": (arguments) {
       var number = arguments[0].assertNumber("number");
-      return new SassString("saturate(${number.toCssString()})");
+      return new SassString("saturate(${number.toCssString()})", quotes: false);
     },
     r"$color, $amount": (arguments) {
       var color = arguments[0].assertColor("color");
@@ -286,7 +375,7 @@ final List<BuiltInCallable> coreFunctions = new UnmodifiableListView([
   new BuiltInCallable("adjust-color", r"$color, $kwargs...", (arguments) {
     var color = arguments[0].assertColor("color");
     var argumentList = arguments[1] as SassArgumentList;
-    if (argumentList.contents.isNotEmpty) {
+    if (argumentList.asList.isNotEmpty) {
       throw new SassScriptException(
           "Only only positional argument is allowed. All other arguments must "
           "be passed by name.");
@@ -339,7 +428,7 @@ final List<BuiltInCallable> coreFunctions = new UnmodifiableListView([
   new BuiltInCallable("scale-color", r"$color, $kwargs...", (arguments) {
     var color = arguments[0].assertColor("color");
     var argumentList = arguments[1] as SassArgumentList;
-    if (argumentList.contents.isNotEmpty) {
+    if (argumentList.asList.isNotEmpty) {
       throw new SassScriptException(
           "Only only positional argument is allowed. All other arguments must "
           "be passed by name.");
@@ -400,7 +489,7 @@ final List<BuiltInCallable> coreFunctions = new UnmodifiableListView([
   new BuiltInCallable("change-color", r"$color, $kwargs...", (arguments) {
     var color = arguments[0].assertColor("color");
     var argumentList = arguments[1] as SassArgumentList;
-    if (argumentList.contents.isNotEmpty) {
+    if (argumentList.asList.isNotEmpty) {
       throw new SassScriptException(
           "Only only positional argument is allowed. All other arguments must "
           "be passed by name.");
@@ -449,7 +538,8 @@ final List<BuiltInCallable> coreFunctions = new UnmodifiableListView([
         component.toRadixString(16).padLeft(2, '0').toUpperCase();
     return new SassString(
         "#${hexString(fuzzyRound(color.alpha * 255))}${hexString(color.red)}"
-        "${hexString(color.green)}${hexString(color.blue)}");
+        "${hexString(color.green)}${hexString(color.blue)}",
+        quotes: false);
   }),
 
   // ## Strings
@@ -457,7 +547,7 @@ final List<BuiltInCallable> coreFunctions = new UnmodifiableListView([
   new BuiltInCallable("unquote", r"$string", (arguments) {
     var string = arguments[0].assertString("string");
     if (!string.hasQuotes) return string;
-    return new SassString(string.text);
+    return new SassString(string.text, quotes: false);
   }),
 
   new BuiltInCallable("quote", r"$string", (arguments) {
@@ -468,7 +558,7 @@ final List<BuiltInCallable> coreFunctions = new UnmodifiableListView([
 
   new BuiltInCallable("str-length", r"$string", (arguments) {
     var string = arguments[0].assertString("string");
-    return new SassNumber(string.text.runes.length);
+    return new SassNumber(string.sassLength);
   }),
 
   new BuiltInCallable("str-insert", r"$string, $insert, $index", (arguments) {
@@ -478,20 +568,14 @@ final List<BuiltInCallable> coreFunctions = new UnmodifiableListView([
     index.assertNoUnits("index");
 
     var indexInt = index.assertInt("index");
-    var codepointIndex = _codepointForIndex(indexInt, string.text.runes.length,
-        allowNegative: true);
 
     // str-insert has unusual behavior for negative inputs. It guarantees that
-    // the $insert is at $index in the result, which means that we want to
-    // insert before that point if $index is positive and after if it's
+    // the `$insert` string is at `$index` in the result, which means that we
+    // want to insert before `$index` if it's positive and after if it's
     // negative.
-    if (indexInt < 0) {
-      if (codepointIndex < 0) {
-        codepointIndex = 0;
-      } else {
-        codepointIndex++;
-      }
-    }
+    if (indexInt < 0) indexInt++;
+
+    var codepointIndex = _codepointForIndex(indexInt, string.sassLength);
 
     var codeUnitIndex =
         codepointIndexToCodeUnitIndex(string.text, codepointIndex);
@@ -519,7 +603,7 @@ final List<BuiltInCallable> coreFunctions = new UnmodifiableListView([
     start.assertNoUnits("start");
     end.assertNoUnits("end");
 
-    var lengthInCodepoints = string.text.runes.length;
+    var lengthInCodepoints = string.sassLength;
 
     // No matter what the start index is, an end index of 0 will produce an
     // empty string.
@@ -609,17 +693,17 @@ final List<BuiltInCallable> coreFunctions = new UnmodifiableListView([
       (arguments) => new SassNumber(arguments[0].asList.length)),
 
   new BuiltInCallable("nth", r"$list, $n", (arguments) {
-    var list = arguments[0].asList;
-    var index = arguments[1].assertNumber("n");
-    return list[index.assertIndexFor(list, "n")];
+    var list = arguments[0];
+    var index = arguments[1];
+    return list.asList[list.sassIndexToListIndex(index, "n")];
   }),
 
   new BuiltInCallable("set-nth", r"$list, $n, $value", (arguments) {
-    var list = arguments[0].asList;
-    var index = arguments[1].assertNumber("n");
+    var list = arguments[0];
+    var index = arguments[1];
     var value = arguments[2];
-    var newList = list.toList();
-    newList[index.assertIndexFor(list, "n")] = value;
+    var newList = list.asList.toList();
+    newList[list.sassIndexToListIndex(index, "n")] = value;
     return arguments[0].changeListContents(newList);
   }),
 
@@ -682,10 +766,7 @@ final List<BuiltInCallable> coreFunctions = new UnmodifiableListView([
   }),
 
   new BuiltInCallable("zip", r"$lists...", (arguments) {
-    var lists = (arguments[0] as SassArgumentList)
-        .contents
-        .map((list) => list.asList)
-        .toList();
+    var lists = arguments[0].asList.map((list) => list.asList).toList();
     var i = 0;
     var results = <SassList>[];
     while (lists.every((list) => i != list.length)) {
@@ -708,8 +789,8 @@ final List<BuiltInCallable> coreFunctions = new UnmodifiableListView([
       "list-separator",
       r"$list",
       (arguments) => arguments[0].separator == ListSeparator.comma
-          ? new SassString("comma")
-          : new SassString("space")),
+          ? new SassString("comma", quotes: false)
+          : new SassString("space", quotes: false)),
 
   new BuiltInCallable("is-bracketed", r"$list",
       (arguments) => new SassBoolean(arguments[0].hasBrackets)),
@@ -730,9 +811,9 @@ final List<BuiltInCallable> coreFunctions = new UnmodifiableListView([
 
   new BuiltInCallable("map-remove", r"$map, $keys...", (arguments) {
     var map = arguments[0].assertMap("map");
-    var keys = arguments[1] as SassArgumentList;
+    var keys = arguments[1];
     var mutableMap = new Map<Value, Value>.from(map.contents);
-    for (var key in keys.contents) {
+    for (var key in keys.asList) {
       mutableMap.remove(key);
     }
     return new SassMap(mutableMap);
@@ -760,7 +841,7 @@ final List<BuiltInCallable> coreFunctions = new UnmodifiableListView([
     var argumentList = arguments[0];
     if (argumentList is SassArgumentList) {
       return new SassMap(mapMap(argumentList.keywords,
-          key: (String key, Value _) => new SassString(key)));
+          key: (String key, Value _) => new SassString(key, quotes: false)));
     } else {
       throw new SassScriptException(
           "\$args: $argumentList is not an argument list.");
@@ -770,7 +851,7 @@ final List<BuiltInCallable> coreFunctions = new UnmodifiableListView([
   // ## Selectors
 
   new BuiltInCallable("selector-nest", r"$selectors...", (arguments) {
-    var selectors = (arguments[0] as SassArgumentList).contents;
+    var selectors = arguments[0].asList;
     if (selectors.isEmpty) {
       throw new SassScriptException(
           "\$selectors: At least one selector must be passed.");
@@ -783,7 +864,7 @@ final List<BuiltInCallable> coreFunctions = new UnmodifiableListView([
   }),
 
   new BuiltInCallable("selector-append", r"$selectors...", (arguments) {
-    var selectors = (arguments[0] as SassArgumentList).contents;
+    var selectors = arguments[0].asList;
     if (selectors.isEmpty) {
       throw new SassScriptException(
           "\$selectors: At least one selector must be passed.");
@@ -846,7 +927,8 @@ final List<BuiltInCallable> coreFunctions = new UnmodifiableListView([
     var selector = arguments[0].assertCompoundSelector(name: "selector");
 
     return new SassList(
-        selector.components.map((simple) => new SassString(simple.toString())),
+        selector.components
+            .map((simple) => new SassString(simple.toString(), quotes: false)),
         ListSeparator.comma);
   }),
 
@@ -861,20 +943,21 @@ final List<BuiltInCallable> coreFunctions = new UnmodifiableListView([
   }),
 
   new BuiltInCallable("inspect", r"$value",
-      (arguments) => new SassString(arguments.first.toString())),
+      (arguments) => new SassString(arguments.first.toString(), quotes: false)),
 
   new BuiltInCallable("type-of", r"$value", (arguments) {
     var value = arguments[0];
-    if (value is SassArgumentList) return new SassString("arglist");
-    if (value is SassBoolean) return new SassString("bool");
-    if (value is SassColor) return new SassString("color");
-    if (value is SassList) return new SassString("list");
-    if (value is SassMap) return new SassString("map");
-    if (value is SassNull) return new SassString("null");
-    if (value is SassNumber) return new SassString("number");
-    if (value is SassFunction) return new SassString("function");
+    if (value is SassArgumentList)
+      return new SassString("arglist", quotes: false);
+    if (value is SassBoolean) return new SassString("bool", quotes: false);
+    if (value is SassColor) return new SassString("color", quotes: false);
+    if (value is SassList) return new SassString("list", quotes: false);
+    if (value is SassMap) return new SassString("map", quotes: false);
+    if (value is SassNull) return new SassString("null", quotes: false);
+    if (value is SassNumber) return new SassString("number", quotes: false);
+    if (value is SassFunction) return new SassString("function", quotes: false);
     assert(value is SassString);
-    return new SassString("string");
+    return new SassString("string", quotes: false);
   }),
 
   new BuiltInCallable("unit", r"$number", (arguments) {
@@ -907,16 +990,19 @@ final List<BuiltInCallable> coreFunctions = new UnmodifiableListView([
     _uniqueID += _random.nextInt(36) + 1;
     if (_uniqueID > math.pow(36, 6)) _uniqueID %= math.pow(36, 6) as int;
     // The leading "u" ensures that the result is a valid identifier.
-    return new SassString("u${_uniqueID.toRadixString(36).padLeft(6, '0')}");
+    return new SassString("u${_uniqueID.toRadixString(36).padLeft(6, '0')}",
+        quotes: false);
   })
 ]);
 
 /// Returns a string representation of [name] called with [arguments], as though
 /// it were a plain CSS function.
 SassString _functionString(String name, Iterable<Value> arguments) =>
-    new SassString("$name(" +
-        arguments.map((argument) => argument.toCssString()).join(', ') +
-        ")");
+    new SassString(
+        "$name(" +
+            arguments.map((argument) => argument.toCssString()).join(', ') +
+            ")",
+        quotes: false);
 
 /// Asserts that [number] is a percentage or has no units, and normalizes the
 /// value.

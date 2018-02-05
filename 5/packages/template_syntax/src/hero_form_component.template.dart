@@ -169,7 +169,7 @@ class ViewHeroFormComponent0 extends AppView<import1.HeroFormComponent> {
       setProp(_el_8, 'hidden', currVal_3);
       _expr_3 = currVal_3;
     }
-    final currVal_4 = import11.interpolate0(_ctx.submitMessage);
+    final currVal_4 = (_ctx.submitMessage ?? '');
     if (!identical(_expr_4, currVal_4)) {
       _text_9.text = currVal_4;
       _expr_4 = currVal_4;

@@ -162,493 +162,466 @@ class ViewAppComponent0 extends AppView<import2.AppComponent> {
   import4.Element _el_89;
   import4.Element _el_90;
   import4.Element _el_92;
-  import4.Text _text_93;
-  import4.Element _el_94;
-  import4.Text _text_95;
-  import4.Element _el_96;
+  import4.Text _text_94;
+  import4.Element _el_95;
+  import4.Text _text_96;
   import4.Element _el_97;
-  import4.Text _text_98;
-  import4.Element _el_99;
+  import4.Element _el_98;
   import4.Text _text_100;
-  import4.AnchorElement _el_101;
-  import4.Element _el_103;
-  import4.Element _el_104;
+  import4.Element _el_101;
+  import4.Text _text_103;
+  import4.AnchorElement _el_104;
   import4.Element _el_106;
-  import4.Text _text_107;
-  import4.DivElement _el_108;
-  import4.Text _text_109;
-  import4.Element _el_110;
-  import4.Element _el_112;
-  ViewContainer _appEl_114;
+  import4.Element _el_107;
+  import4.Element _el_109;
+  import4.DivElement _el_111;
+  import4.Text _text_112;
+  import4.Element _el_113;
   import4.Element _el_115;
-  import4.DivElement _el_117;
-  import4.InputElement _el_119;
-  import4.Text _text_120;
-  import4.AnchorElement _el_121;
-  import4.Element _el_123;
-  import4.Element _el_124;
-  import4.Element _el_126;
-  import4.DivElement _el_128;
-  import4.ButtonElement _el_129;
-  import4.Element _el_131;
-  import4.DivElement _el_133;
-  import4.ButtonElement _el_134;
-  import4.Element _el_136;
-  import4.DivElement _el_138;
-  ViewContainer _appEl_139;
-  import6.NgFor _NgFor_139_7;
+  ViewContainer _appEl_117;
+  import4.Element _el_118;
+  import4.DivElement _el_120;
+  import4.InputElement _el_122;
+  import4.Text _text_124;
+  import4.AnchorElement _el_125;
+  import4.Element _el_127;
+  import4.Element _el_128;
+  import4.Element _el_130;
+  import4.DivElement _el_132;
+  import4.ButtonElement _el_133;
+  import4.Element _el_135;
+  import4.DivElement _el_137;
+  import4.ButtonElement _el_138;
   import4.Element _el_140;
   import4.DivElement _el_142;
-  import4.FormElement _el_143;
-  import7.NgForm _NgForm_143_4;
-  import4.AnchorElement _el_145;
-  import4.Element _el_147;
-  import4.Element _el_148;
-  import4.DivElement _el_150;
+  ViewContainer _appEl_143;
+  import6.NgFor _NgFor_143_7;
+  import4.Element _el_144;
+  import4.DivElement _el_146;
+  import4.FormElement _el_147;
+  import7.NgForm _NgForm_147_4;
+  import4.AnchorElement _el_149;
+  import4.Element _el_151;
   import4.Element _el_152;
-  import4.ButtonElement _el_153;
-  import4.Element _el_155;
+  import4.DivElement _el_154;
   import4.Element _el_156;
-  import4.DivElement _el_157;
-  import4.DivElement _el_158;
+  import4.ButtonElement _el_157;
+  import4.Element _el_159;
   import4.Element _el_160;
-  import8.ViewHeroDetailComponent0 _compView_160;
-  import9.HeroDetailComponent _HeroDetailComponent_160_4;
-  import4.Element _el_161;
-  import4.Element _el_162;
-  import4.DivElement _el_163;
-  import4.ButtonElement _el_164;
+  import4.DivElement _el_161;
+  import4.DivElement _el_162;
+  import4.Element _el_164;
+  import8.ViewHeroDetailComponent0 _compView_164;
+  import9.HeroDetailComponent _HeroDetailComponent_164_4;
+  import4.Element _el_165;
   import4.Element _el_166;
-  import4.Element _el_167;
-  import4.DivElement _el_168;
-  import4.Element _el_169;
+  import4.DivElement _el_167;
+  import4.ButtonElement _el_168;
   import4.Element _el_170;
-  import8.ViewHeroDetailComponent0 _compView_170;
-  import9.HeroDetailComponent _HeroDetailComponent_170_4;
-  import4.DivElement _el_171;
-  import10.NgClass _NgClass_171_4;
-  import4.Element _el_172;
+  import4.Element _el_171;
+  import4.DivElement _el_172;
   import4.Element _el_173;
-  import4.ButtonElement _el_174;
+  import4.Element _el_174;
+  import8.ViewHeroDetailComponent0 _compView_174;
+  import9.HeroDetailComponent _HeroDetailComponent_174_4;
+  import4.DivElement _el_175;
+  import10.NgClass _NgClass_175_4;
   import4.Element _el_176;
-  import8.ViewHeroDetailComponent0 _compView_176;
-  import9.HeroDetailComponent _HeroDetailComponent_176_4;
-  import4.DivElement _el_177;
-  import11.ClickDirective _ClickDirective_177_4;
-  import4.Text _text_179;
+  import4.Element _el_177;
+  import4.ButtonElement _el_178;
   import4.Element _el_180;
-  import4.Element _el_181;
-  import4.DivElement _el_182;
-  import4.InputElement _el_184;
-  import12.DefaultValueAccessor _DefaultValueAccessor_184_4;
-  List<dynamic> _NgValueAccessor_184_5;
-  import13.NgModel _NgModel_184_6;
-  import4.Text _text_185;
-  import4.Element _el_186;
-  import4.Element _el_187;
-  import4.ButtonElement _el_188;
+  import8.ViewHeroDetailComponent0 _compView_180;
+  import9.HeroDetailComponent _HeroDetailComponent_180_4;
+  import4.DivElement _el_181;
+  import11.ClickDirective _ClickDirective_181_4;
+  import4.Text _text_183;
+  import4.Element _el_184;
+  import4.Element _el_185;
+  import4.DivElement _el_186;
+  import4.InputElement _el_188;
+  import12.DefaultValueAccessor _DefaultValueAccessor_188_4;
+  List<dynamic> _NgValueAccessor_188_5;
+  import13.NgModel _NgModel_188_6;
+  import4.Text _text_189;
   import4.Element _el_190;
   import4.Element _el_191;
-  import4.DivElement _el_192;
+  import4.ButtonElement _el_192;
   import4.Element _el_194;
   import4.Element _el_195;
-  import4.ButtonElement _el_196;
-  import4.AnchorElement _el_198;
-  import4.Element _el_200;
-  import4.Element _el_201;
-  import4.Element _el_203;
+  import4.DivElement _el_196;
+  import4.Element _el_198;
+  import4.Element _el_199;
+  import4.ButtonElement _el_200;
+  import4.AnchorElement _el_202;
   import4.Element _el_204;
   import4.Element _el_205;
-  import4.Element _el_206;
   import4.Element _el_207;
   import4.Element _el_208;
-  import4.AnchorElement _el_209;
+  import4.Element _el_209;
+  import4.Element _el_210;
   import4.Element _el_211;
   import4.Element _el_212;
-  import4.ButtonElement _el_214;
-  import4.ButtonElement _el_216;
+  import4.AnchorElement _el_213;
+  import4.Element _el_215;
+  import4.Element _el_216;
   import4.ButtonElement _el_218;
-  import4.Element _el_220;
-  import4.Element _el_221;
+  import4.ButtonElement _el_220;
   import4.ButtonElement _el_222;
-  import4.ButtonElement _el_224;
-  import4.Element _el_226;
-  import4.Element _el_227;
+  import4.Element _el_224;
+  import4.Element _el_225;
+  import4.ButtonElement _el_226;
   import4.ButtonElement _el_228;
-  import4.ButtonElement _el_230;
-  import4.AnchorElement _el_232;
-  import4.Element _el_234;
-  import4.Element _el_235;
-  import4.Element _el_237;
-  import4.ButtonElement _el_238;
-  import4.DivElement _el_240;
-  import10.NgClass _NgClass_240_4;
-  import4.Element _el_242;
-  import8.ViewHeroDetailComponent0 _compView_242;
-  import9.HeroDetailComponent _HeroDetailComponent_242_4;
-  import4.Element _el_243;
-  import4.Element _el_244;
-  import8.ViewHeroDetailComponent0 _compView_244;
-  import9.HeroDetailComponent _HeroDetailComponent_244_4;
-  import4.Element _el_245;
+  import4.Element _el_230;
+  import4.Element _el_231;
+  import4.ButtonElement _el_232;
+  import4.ButtonElement _el_234;
+  import4.AnchorElement _el_236;
+  import4.Element _el_238;
+  import4.Element _el_239;
+  import4.Element _el_241;
+  import4.ButtonElement _el_242;
+  import4.DivElement _el_244;
+  import10.NgClass _NgClass_244_4;
   import4.Element _el_246;
+  import8.ViewHeroDetailComponent0 _compView_246;
+  import9.HeroDetailComponent _HeroDetailComponent_246_4;
+  import4.Element _el_247;
   import4.Element _el_248;
-  import4.Element _el_251;
+  import8.ViewHeroDetailComponent0 _compView_248;
+  import9.HeroDetailComponent _HeroDetailComponent_248_4;
+  import4.Element _el_249;
+  import4.Element _el_250;
   import4.Element _el_252;
-  import4.Element _el_254;
-  import4.Element _el_257;
+  import4.Element _el_255;
+  import4.Element _el_256;
   import4.Element _el_258;
-  import4.Text _text_259;
-  import4.Element _el_260;
-  import4.Element _el_263;
-  import4.Element _el_265;
-  import4.Element _el_267;
-  import4.Element _el_270;
+  import4.Element _el_261;
+  import4.Element _el_262;
+  import4.Text _text_264;
+  import4.Element _el_266;
+  import4.Element _el_269;
   import4.Element _el_271;
-  import4.Text _text_272;
   import4.Element _el_273;
   import4.Element _el_276;
-  import4.Element _el_278;
-  import4.Element _el_280;
-  import4.AnchorElement _el_283;
-  import4.Element _el_285;
+  import4.Element _el_277;
+  import4.Text _text_279;
+  import4.Element _el_281;
+  import4.Element _el_284;
   import4.Element _el_286;
-  import4.TableElement _el_288;
-  import4.Element _el_289;
-  import4.Element _el_290;
-  import4.Element _el_291;
+  import4.Element _el_288;
+  import4.AnchorElement _el_291;
   import4.Element _el_293;
   import4.Element _el_294;
-  import4.Element _el_296;
+  import4.TableElement _el_296;
+  import4.Element _el_297;
   import4.Element _el_298;
-  import4.ButtonElement _el_299;
-  import4.Text _text_300;
+  import4.Element _el_300;
   import4.Element _el_301;
-  import4.Element _el_302;
-  import4.DivElement _el_303;
-  import4.ButtonElement _el_304;
+  import4.Element _el_303;
+  import4.Element _el_305;
   import4.ButtonElement _el_306;
-  import4.ButtonElement _el_308;
-  import4.AnchorElement _el_310;
-  import4.Element _el_312;
-  import4.Element _el_313;
-  import4.DivElement _el_315;
-  import4.DivElement _el_317;
-  import4.DivElement _el_319;
-  import4.DivElement _el_321;
+  import4.Text _text_307;
+  import4.Element _el_309;
+  import4.Element _el_310;
+  import4.DivElement _el_311;
+  import4.ButtonElement _el_312;
+  import4.ButtonElement _el_314;
+  import4.ButtonElement _el_316;
+  import4.AnchorElement _el_318;
+  import4.Element _el_320;
+  import4.Element _el_321;
   import4.DivElement _el_323;
-  import4.AnchorElement _el_325;
-  import4.Element _el_327;
-  import4.Element _el_328;
-  import4.ButtonElement _el_330;
-  import4.ButtonElement _el_332;
-  import4.ButtonElement _el_334;
-  import4.ButtonElement _el_336;
-  import4.AnchorElement _el_338;
-  import4.Element _el_340;
-  import4.Element _el_341;
-  import4.ButtonElement _el_343;
-  import4.ButtonElement _el_345;
-  import4.DivElement _el_347;
-  import4.DivElement _el_348;
-  import11.ClickDirective _ClickDirective_348_4;
-  import4.Text _text_350;
-  import4.Element _el_351;
-  import8.ViewHeroDetailComponent0 _compView_351;
-  import9.HeroDetailComponent _HeroDetailComponent_351_4;
-  import4.Element _el_352;
-  import4.Element _el_353;
-  import8.ViewBigHeroDetailComponent0 _compView_353;
-  import9.BigHeroDetailComponent _BigHeroDetailComponent_353_4;
-  import4.DivElement _el_354;
+  import4.DivElement _el_325;
+  import4.DivElement _el_327;
+  import4.DivElement _el_329;
+  import4.DivElement _el_331;
+  import4.AnchorElement _el_333;
+  import4.Element _el_335;
+  import4.Element _el_336;
+  import4.ButtonElement _el_338;
+  import4.ButtonElement _el_340;
+  import4.ButtonElement _el_342;
+  import4.ButtonElement _el_344;
+  import4.AnchorElement _el_346;
+  import4.Element _el_348;
+  import4.Element _el_349;
+  import4.ButtonElement _el_351;
+  import4.ButtonElement _el_353;
+  import4.DivElement _el_355;
   import4.DivElement _el_356;
-  import4.DivElement _el_358;
-  import4.ButtonElement _el_359;
-  import4.DivElement _el_361;
-  import4.ButtonElement _el_362;
-  import4.AnchorElement _el_364;
-  import4.Element _el_366;
-  import4.Element _el_367;
+  import11.ClickDirective _ClickDirective_356_4;
+  import4.Text _text_358;
+  import4.Element _el_359;
+  import8.ViewHeroDetailComponent0 _compView_359;
+  import9.HeroDetailComponent _HeroDetailComponent_359_4;
+  import4.Element _el_360;
+  import4.Element _el_361;
+  import8.ViewBigHeroDetailComponent0 _compView_361;
+  import9.BigHeroDetailComponent _BigHeroDetailComponent_361_4;
+  import4.DivElement _el_362;
+  import4.DivElement _el_364;
+  import4.DivElement _el_366;
+  import4.ButtonElement _el_367;
   import4.DivElement _el_369;
-  import4.Element _el_370;
-  import14.ViewSizerComponent0 _compView_370;
-  import15.SizerComponent _SizerComponent_370_4;
-  import4.DivElement _el_371;
-  import4.Element _el_373;
-  import4.InputElement _el_375;
-  import12.DefaultValueAccessor _DefaultValueAccessor_375_4;
-  List<dynamic> _NgValueAccessor_375_5;
-  import13.NgModel _NgModel_375_6;
-  import4.Text _text_376;
-  import4.Element _el_377;
-  import4.DivElement _el_378;
-  import4.Element _el_379;
+  import4.ButtonElement _el_370;
+  import4.AnchorElement _el_372;
+  import4.Element _el_374;
+  import4.Element _el_375;
+  import4.DivElement _el_377;
+  import4.Element _el_378;
+  import14.ViewSizerComponent0 _compView_378;
+  import15.SizerComponent _SizerComponent_378_4;
+  import4.DivElement _el_379;
   import4.Element _el_381;
-  import14.ViewSizerComponent0 _compView_381;
-  import15.SizerComponent _SizerComponent_381_4;
-  import4.AnchorElement _el_382;
-  import4.Element _el_384;
-  import4.Element _el_385;
-  import4.Element _el_387;
-  import4.Text _text_388;
-  import4.InputElement _el_389;
-  import4.Element _el_391;
-  import4.InputElement _el_392;
-  import12.DefaultValueAccessor _DefaultValueAccessor_392_4;
-  List<dynamic> _NgValueAccessor_392_5;
-  import13.NgModel _NgModel_392_6;
+  import4.InputElement _el_383;
+  import12.DefaultValueAccessor _DefaultValueAccessor_383_4;
+  List<dynamic> _NgValueAccessor_383_5;
+  import13.NgModel _NgModel_383_6;
+  import4.Text _text_385;
+  import4.Element _el_386;
+  import4.DivElement _el_387;
+  import4.Element _el_388;
+  import4.Element _el_390;
+  import14.ViewSizerComponent0 _compView_390;
+  import15.SizerComponent _SizerComponent_390_4;
+  import4.AnchorElement _el_391;
+  import4.Element _el_393;
   import4.Element _el_394;
-  import4.InputElement _el_395;
-  import12.DefaultValueAccessor _DefaultValueAccessor_395_4;
-  List<dynamic> _NgValueAccessor_395_5;
-  import13.NgModel _NgModel_395_6;
-  import4.Element _el_397;
-  import4.InputElement _el_398;
-  import12.DefaultValueAccessor _DefaultValueAccessor_398_4;
-  List<dynamic> _NgValueAccessor_398_5;
-  import13.NgModel _NgModel_398_6;
-  import4.Element _el_400;
-  import4.InputElement _el_401;
-  import12.DefaultValueAccessor _DefaultValueAccessor_401_4;
-  List<dynamic> _NgValueAccessor_401_5;
-  import13.NgModel _NgModel_401_6;
-  import4.AnchorElement _el_403;
-  import4.Element _el_405;
-  import4.Element _el_406;
-  import4.Element _el_408;
-  import4.Text _text_409;
-  import4.DivElement _el_410;
-  import10.NgClass _NgClass_410_4;
+  import4.Element _el_396;
+  import4.Text _text_398;
+  import4.InputElement _el_399;
+  import4.Element _el_401;
+  import4.InputElement _el_402;
+  import12.DefaultValueAccessor _DefaultValueAccessor_402_4;
+  List<dynamic> _NgValueAccessor_402_5;
+  import13.NgModel _NgModel_402_6;
+  import4.Element _el_404;
+  import4.InputElement _el_405;
+  import12.DefaultValueAccessor _DefaultValueAccessor_405_4;
+  List<dynamic> _NgValueAccessor_405_5;
+  import13.NgModel _NgModel_405_6;
+  import4.Element _el_407;
+  import4.InputElement _el_408;
+  import12.DefaultValueAccessor _DefaultValueAccessor_408_4;
+  List<dynamic> _NgValueAccessor_408_5;
+  import13.NgModel _NgModel_408_6;
+  import4.AnchorElement _el_410;
   import4.Element _el_412;
   import4.Element _el_413;
-  import4.InputElement _el_415;
-  import16.CheckboxControlValueAccessor _CheckboxControlValueAccessor_415_4;
-  List<dynamic> _NgValueAccessor_415_5;
-  import13.NgModel _NgModel_415_6;
-  import4.Element _el_417;
-  import4.InputElement _el_419;
+  import4.Element _el_415;
+  import4.Text _text_417;
+  import4.DivElement _el_418;
+  import10.NgClass _NgClass_418_4;
+  import4.Element _el_420;
   import4.Element _el_421;
   import4.InputElement _el_423;
   import16.CheckboxControlValueAccessor _CheckboxControlValueAccessor_423_4;
   List<dynamic> _NgValueAccessor_423_5;
   import13.NgModel _NgModel_423_6;
-  import4.ButtonElement _el_424;
-  import4.Element _el_426;
-  import4.Element _el_427;
-  import4.DivElement _el_428;
-  import10.NgClass _NgClass_428_4;
-  import4.Text _text_429;
-  import4.Element _el_430;
-  import4.Element _el_431;
-  import4.DivElement _el_432;
-  import10.NgClass _NgClass_432_4;
-  import4.DivElement _el_434;
+  import4.Element _el_425;
+  import4.InputElement _el_427;
+  import4.Element _el_429;
+  import4.InputElement _el_431;
+  import16.CheckboxControlValueAccessor _CheckboxControlValueAccessor_431_4;
+  List<dynamic> _NgValueAccessor_431_5;
+  import13.NgModel _NgModel_431_6;
+  import4.ButtonElement _el_432;
+  import4.Element _el_434;
+  import4.Element _el_435;
   import4.DivElement _el_436;
   import10.NgClass _NgClass_436_4;
-  import4.AnchorElement _el_438;
-  import4.Element _el_440;
-  import4.Element _el_441;
-  import4.DivElement _el_443;
+  import4.Text _text_438;
+  import4.Text _text_440;
+  import4.Text _text_442;
+  import4.Element _el_444;
   import4.Element _el_445;
-  import4.Element _el_447;
-  import4.Text _text_448;
-  import4.DivElement _el_449;
-  import17.NgStyle _NgStyle_449_4;
-  import4.Element _el_451;
-  import4.Element _el_452;
-  import4.InputElement _el_454;
-  import16.CheckboxControlValueAccessor _CheckboxControlValueAccessor_454_4;
-  List<dynamic> _NgValueAccessor_454_5;
-  import13.NgModel _NgModel_454_6;
-  import4.Element _el_456;
-  import4.InputElement _el_458;
-  import16.CheckboxControlValueAccessor _CheckboxControlValueAccessor_458_4;
-  List<dynamic> _NgValueAccessor_458_5;
-  import13.NgModel _NgModel_458_6;
-  import4.Element _el_460;
-  import4.InputElement _el_462;
-  import16.CheckboxControlValueAccessor _CheckboxControlValueAccessor_462_4;
-  List<dynamic> _NgValueAccessor_462_5;
-  import13.NgModel _NgModel_462_6;
-  import4.ButtonElement _el_463;
-  import4.Element _el_465;
+  import4.DivElement _el_446;
+  import10.NgClass _NgClass_446_4;
+  import4.DivElement _el_448;
+  import4.DivElement _el_450;
+  import10.NgClass _NgClass_450_4;
+  import4.AnchorElement _el_452;
+  import4.Element _el_454;
+  import4.Element _el_455;
+  import4.DivElement _el_457;
+  import4.Element _el_459;
+  import4.Element _el_461;
+  import4.Text _text_463;
+  import4.DivElement _el_464;
+  import17.NgStyle _NgStyle_464_4;
   import4.Element _el_466;
-  import4.DivElement _el_467;
-  import17.NgStyle _NgStyle_467_4;
-  import4.Text _text_468;
-  import4.AnchorElement _el_469;
+  import4.Element _el_467;
+  import4.InputElement _el_469;
+  import16.CheckboxControlValueAccessor _CheckboxControlValueAccessor_469_4;
+  List<dynamic> _NgValueAccessor_469_5;
+  import13.NgModel _NgModel_469_6;
   import4.Element _el_471;
-  import4.Element _el_472;
-  ViewContainer _appEl_474;
-  NgIf _NgIf_474_7;
-  ViewContainer _appEl_475;
-  NgIf _NgIf_475_7;
-  ViewContainer _appEl_476;
-  NgIf _NgIf_476_7;
-  ViewContainer _appEl_477;
-  NgIf _NgIf_477_7;
-  import4.DivElement _el_478;
-  ViewContainer _appEl_480;
-  NgIf _NgIf_480_7;
-  import4.DivElement _el_481;
-  import4.DivElement _el_483;
-  import4.Element _el_485;
-  import8.ViewHeroDetailComponent0 _compView_485;
-  import9.HeroDetailComponent _HeroDetailComponent_485_4;
-  import4.DivElement _el_486;
-  import4.DivElement _el_488;
+  import4.InputElement _el_473;
+  import16.CheckboxControlValueAccessor _CheckboxControlValueAccessor_473_4;
+  List<dynamic> _NgValueAccessor_473_5;
+  import13.NgModel _NgModel_473_6;
+  import4.Element _el_475;
+  import4.InputElement _el_477;
+  import16.CheckboxControlValueAccessor _CheckboxControlValueAccessor_477_4;
+  List<dynamic> _NgValueAccessor_477_5;
+  import13.NgModel _NgModel_477_6;
+  import4.ButtonElement _el_478;
+  import4.Element _el_480;
+  import4.Element _el_481;
+  import4.DivElement _el_482;
+  import17.NgStyle _NgStyle_482_4;
+  import4.Text _text_484;
+  import4.Text _text_486;
+  import4.Text _text_488;
   import4.AnchorElement _el_490;
   import4.Element _el_492;
   import4.Element _el_493;
-  import4.DivElement _el_495;
+  ViewContainer _appEl_495;
+  NgIf _NgIf_495_7;
   ViewContainer _appEl_496;
-  import6.NgFor _NgFor_496_7;
-  import4.Element _el_497;
-  import4.DivElement _el_498;
-  ViewContainer _appEl_499;
-  import6.NgFor _NgFor_499_7;
-  import4.AnchorElement _el_500;
-  import4.Element _el_502;
-  import4.Element _el_504;
+  NgIf _NgIf_496_7;
+  ViewContainer _appEl_497;
+  NgIf _NgIf_497_7;
+  ViewContainer _appEl_498;
+  NgIf _NgIf_498_7;
+  import4.DivElement _el_499;
+  ViewContainer _appEl_501;
+  NgIf _NgIf_501_7;
+  import4.DivElement _el_502;
+  import4.DivElement _el_504;
   import4.Element _el_506;
+  import8.ViewHeroDetailComponent0 _compView_506;
+  import9.HeroDetailComponent _HeroDetailComponent_506_4;
+  import4.DivElement _el_507;
   import4.DivElement _el_509;
-  ViewContainer _appEl_510;
-  import6.NgFor _NgFor_510_7;
-  import4.Element _el_511;
+  import4.AnchorElement _el_511;
   import4.Element _el_513;
+  import4.Element _el_514;
   import4.DivElement _el_516;
   ViewContainer _appEl_517;
   import6.NgFor _NgFor_517_7;
-  import4.AnchorElement _el_518;
-  import4.Element _el_520;
-  import4.ButtonElement _el_522;
-  import4.ButtonElement _el_524;
-  import4.ButtonElement _el_526;
-  import4.Element _el_528;
+  import4.Element _el_518;
+  import4.DivElement _el_519;
+  ViewContainer _appEl_520;
+  import6.NgFor _NgFor_520_7;
+  import4.AnchorElement _el_521;
+  import4.Element _el_523;
+  import4.DivElement _el_525;
+  ViewContainer _appEl_526;
+  import6.NgFor _NgFor_526_7;
+  import4.AnchorElement _el_527;
   import4.Element _el_529;
-  import4.DivElement _el_532;
-  ViewContainer _appEl_533;
-  import6.NgFor _NgFor_533_7;
-  ViewContainer _appEl_534;
-  NgIf _NgIf_534_7;
-  import4.Element _el_535;
-  import4.DivElement _el_537;
-  ViewContainer _appEl_538;
-  import6.NgFor _NgFor_538_7;
-  ViewContainer _appEl_539;
-  NgIf _NgIf_539_7;
-  import4.Element _el_540;
-  import4.Element _el_541;
-  import4.Element _el_542;
-  import4.Element _el_543;
-  import4.Element _el_545;
+  import4.ButtonElement _el_531;
+  import4.ButtonElement _el_533;
+  import4.ButtonElement _el_535;
+  import4.Element _el_537;
+  import4.Element _el_538;
+  import4.DivElement _el_541;
+  ViewContainer _appEl_542;
+  import6.NgFor _NgFor_542_7;
+  ViewContainer _appEl_543;
+  NgIf _NgIf_543_7;
+  import4.Element _el_544;
+  import4.Element _el_546;
   import4.DivElement _el_548;
   ViewContainer _appEl_549;
   import6.NgFor _NgFor_549_7;
-  import4.Element _el_550;
-  import4.Element _el_552;
+  ViewContainer _appEl_550;
+  NgIf _NgIf_550_7;
+  import4.Element _el_551;
+  import4.Element _el_553;
   import4.DivElement _el_555;
   ViewContainer _appEl_556;
   import6.NgFor _NgFor_556_7;
-  import4.Element _el_557;
+  import4.AnchorElement _el_557;
   import4.Element _el_559;
-  import4.DivElement _el_562;
-  ViewContainer _appEl_563;
-  import6.NgFor _NgFor_563_7;
+  import4.Element _el_560;
+  import4.Element _el_562;
   import4.Element _el_564;
+  import19.ViewMaterialRadioGroupComponent0 _compView_564;
+  import13.NgModel _NgModel_564_4;
+  dynamic _NgControl_564_5;
+  import20.MaterialRadioGroupComponent _MaterialRadioGroupComponent_564_6;
+  final import3.QueryList _query_MaterialRadioComponent_564_0 = new import3.QueryList();
+  ViewContainer _appEl_565;
+  import6.NgFor _NgFor_565_7;
   import4.Element _el_566;
-  import4.DivElement _el_569;
-  ViewContainer _appEl_570;
-  import6.NgFor _NgFor_570_7;
-  import4.AnchorElement _el_571;
-  import4.Element _el_573;
-  import4.Element _el_574;
-  import4.Element _el_576;
-  import4.Element _el_578;
-  import19.ViewMaterialRadioGroupComponent0 _compView_578;
-  import13.NgModel _NgModel_578_4;
-  dynamic _NgControl_578_5;
-  import20.MaterialRadioGroupComponent _MaterialRadioGroupComponent_578_6;
-  final import3.QueryList _query_MaterialRadioComponent_578_0 = new import3.QueryList();
-  ViewContainer _appEl_579;
-  import6.NgFor _NgFor_579_7;
+  import4.Text _text_568;
+  import4.Text _text_570;
+  import4.DivElement _el_572;
+  import21.NgSwitch _NgSwitch_572_4;
+  ViewContainer _appEl_573;
+  import21.NgSwitchWhen _NgSwitchWhen_573_7;
+  ViewContainer _appEl_574;
+  import21.NgSwitchWhen _NgSwitchWhen_574_7;
+  ViewContainer _appEl_575;
+  import21.NgSwitchWhen _NgSwitchWhen_575_7;
+  ViewContainer _appEl_576;
+  import21.NgSwitchWhen _NgSwitchWhen_576_7;
+  ViewContainer _appEl_577;
+  import21.NgSwitchDefault _NgSwitchDefault_577_7;
+  import4.AnchorElement _el_578;
   import4.Element _el_580;
-  import4.Text _text_581;
-  import4.DivElement _el_582;
-  import21.NgSwitch _NgSwitch_582_4;
-  ViewContainer _appEl_583;
-  import21.NgSwitchWhen _NgSwitchWhen_583_7;
-  ViewContainer _appEl_584;
-  import21.NgSwitchWhen _NgSwitchWhen_584_7;
-  ViewContainer _appEl_585;
-  import21.NgSwitchWhen _NgSwitchWhen_585_7;
-  ViewContainer _appEl_586;
-  import21.NgSwitchWhen _NgSwitchWhen_586_7;
-  ViewContainer _appEl_587;
-  import21.NgSwitchDefault _NgSwitchDefault_587_7;
-  import4.AnchorElement _el_588;
-  import4.Element _el_590;
-  import4.Element _el_591;
-  import4.InputElement _el_593;
-  import4.ButtonElement _el_594;
-  import4.InputElement _el_596;
-  import4.ButtonElement _el_597;
-  import4.ButtonElement _el_599;
-  import4.Element _el_600;
-  import4.Element _el_602;
-  import22.ViewHeroFormComponent0 _compView_602;
-  import23.HeroFormComponent _HeroFormComponent_602_4;
-  import4.AnchorElement _el_603;
+  import4.Element _el_581;
+  import4.InputElement _el_583;
+  import4.ButtonElement _el_584;
+  import4.ButtonElement _el_586;
+  import4.Element _el_587;
+  import4.Element _el_589;
+  import22.ViewHeroFormComponent0 _compView_589;
+  import23.HeroFormComponent _HeroFormComponent_589_4;
+  import4.AnchorElement _el_590;
+  import4.Element _el_592;
+  import4.Element _el_593;
+  import4.Element _el_595;
+  import4.ButtonElement _el_596;
+  import4.Element _el_598;
+  import8.ViewHeroDetailComponent0 _compView_598;
+  import9.HeroDetailComponent _HeroDetailComponent_598_4;
+  import4.DivElement _el_599;
+  import11.ClickDirective _ClickDirective_599_4;
+  import4.Text _text_601;
+  import4.AnchorElement _el_602;
+  import4.Element _el_604;
   import4.Element _el_605;
-  import4.Element _el_606;
-  import4.Element _el_608;
-  import4.ButtonElement _el_609;
-  import4.Element _el_611;
-  import8.ViewHeroDetailComponent0 _compView_611;
-  import9.HeroDetailComponent _HeroDetailComponent_611_4;
-  import4.DivElement _el_612;
-  import11.ClickDirective _ClickDirective_612_4;
-  import4.Text _text_614;
-  import4.AnchorElement _el_615;
-  import4.Element _el_617;
-  import4.Element _el_618;
-  import4.DivElement _el_620;
-  import4.Text _text_621;
-  import4.DivElement _el_622;
-  import4.Text _text_623;
-  import4.DivElement _el_624;
-  import4.Text _text_625;
-  import4.DivElement _el_626;
-  import4.Text _text_627;
-  import4.DivElement _el_628;
-  import4.Text _text_629;
-  import4.DivElement _el_630;
-  import4.Element _el_631;
-  import4.Text _text_633;
-  import4.AnchorElement _el_634;
-  import4.Element _el_636;
-  import4.Element _el_637;
-  import4.Element _el_639;
-  import4.DivElement _el_641;
-  import4.Text _text_642;
-  import4.DivElement _el_643;
+  import4.DivElement _el_607;
+  import4.Text _text_609;
+  import4.DivElement _el_610;
+  import4.Text _text_612;
+  import4.DivElement _el_613;
+  import4.Text _text_615;
+  import4.DivElement _el_616;
+  import4.Text _text_617;
+  import4.DivElement _el_618;
+  import4.Text _text_620;
+  import4.DivElement _el_621;
+  import4.Element _el_622;
+  import4.Text _text_624;
+  import4.AnchorElement _el_625;
+  import4.Element _el_627;
+  import4.Element _el_628;
+  import4.Element _el_630;
+  import4.DivElement _el_632;
+  import4.Text _text_634;
+  import4.DivElement _el_635;
+  import4.Text _text_637;
+  import4.DivElement _el_638;
+  import4.Text _text_640;
+  ViewContainer _appEl_641;
+  NgIf _NgIf_641_7;
+  import4.DivElement _el_642;
   import4.Text _text_644;
-  import4.DivElement _el_645;
-  import4.Text _text_646;
-  ViewContainer _appEl_647;
-  NgIf _NgIf_647_7;
-  import4.DivElement _el_648;
-  import4.Text _text_649;
-  import4.AnchorElement _el_650;
-  import4.Element _el_652;
-  import4.Element _el_653;
-  import4.Element _el_655;
+  import4.AnchorElement _el_645;
+  import4.Element _el_647;
+  import4.Element _el_648;
+  import4.Element _el_650;
+  import4.Text _text_652;
+  import4.Element _el_654;
   import4.Text _text_656;
-  import4.Element _el_657;
   import4.Text _text_658;
-  import4.Element _el_659;
-  import4.ButtonElement _el_660;
-  import4.AnchorElement _el_662;
+  import4.Element _el_660;
+  import4.ButtonElement _el_661;
+  import4.AnchorElement _el_663;
   var _expr_0;
   var _expr_1;
   var _expr_3;
@@ -656,23 +629,23 @@ class ViewAppComponent0 extends AppView<import2.AppComponent> {
   var _expr_5;
   var _expr_6;
   var _expr_7;
-  var _expr_8;
-  var _expr_10;
-  var _expr_12;
+  var _expr_9;
+  var _expr_11;
   var _map_0;
+  var _expr_12;
   var _expr_13;
-  var _expr_14;
+  var _expr_15;
   var _expr_16;
-  var _expr_17;
-  bool _expr_18;
-  var _expr_19;
+  bool _expr_17;
+  var _expr_18;
+  var _expr_23;
   var _expr_24;
   var _expr_25;
-  var _expr_26;
+  var _expr_27;
   var _expr_28;
   var _expr_29;
-  var _expr_30;
-  var _expr_32;
+  var _expr_31;
+  var _expr_35;
   var _expr_36;
   var _expr_37;
   var _expr_38;
@@ -681,11 +654,11 @@ class ViewAppComponent0 extends AppView<import2.AppComponent> {
   var _expr_41;
   var _expr_42;
   var _expr_43;
-  var _expr_44;
-  String _expr_46;
+  String _expr_45;
+  bool _expr_46;
   bool _expr_47;
   bool _expr_48;
-  bool _expr_49;
+  var _expr_49;
   var _expr_50;
   var _expr_51;
   var _expr_52;
@@ -694,14 +667,15 @@ class ViewAppComponent0 extends AppView<import2.AppComponent> {
   var _expr_55;
   var _expr_56;
   var _expr_57;
-  var _expr_58;
+  var _expr_59;
   var _expr_60;
   var _expr_61;
   var _expr_62;
-  var _expr_63;
-  var _expr_68;
+  var _expr_66;
+  var _expr_67;
   var _expr_69;
   var _expr_71;
+  var _expr_72;
   var _expr_73;
   var _expr_74;
   var _expr_75;
@@ -712,15 +686,22 @@ class ViewAppComponent0 extends AppView<import2.AppComponent> {
   var _expr_79;
   var _expr_83;
   var _expr_84;
-  bool _expr_90;
-  bool _expr_91;
+  var _expr_85;
+  var _expr_86;
   bool _expr_92;
-  var _expr_93;
-  var _expr_94;
-  var _expr_114;
-  var _expr_115;
+  bool _expr_93;
+  bool _expr_94;
+  var _expr_95;
+  var _expr_96;
+  var _expr_109;
+  var _expr_110;
+  var _expr_111;
+  var _expr_116;
+  var _expr_117;
+  var _expr_119;
   var _expr_120;
   var _expr_121;
+  var _expr_122;
   var _expr_123;
   var _expr_124;
   var _expr_125;
@@ -728,14 +709,11 @@ class ViewAppComponent0 extends AppView<import2.AppComponent> {
   var _expr_127;
   var _expr_128;
   var _expr_129;
-  var _expr_130;
   var _expr_131;
   var _expr_132;
   var _expr_133;
+  var _expr_134;
   var _expr_135;
-  var _expr_136;
-  var _expr_137;
-  var _expr_138;
   import24.UpperCasePipe _pipe_uppercase_0;
   String Function(String) _pipe_uppercase_0_0;
   String Function(String) _pipe_uppercase_0_1;
@@ -974,804 +952,796 @@ class ViewAppComponent0 extends AppView<import2.AppComponent> {
     _el_90.append(_text_91);
     _el_92 = createAndAppend(doc, 'p', parentRenderNode);
     addShimE(_el_92);
-    _text_93 = new import4.Text('');
+    import4.Text _text_93 = new import4.Text('My current hero is ');
     _el_92.append(_text_93);
-    _el_94 = createAndAppend(doc, 'h3', parentRenderNode);
-    addShimE(_el_94);
-    _text_95 = new import4.Text('');
-    _el_94.append(_text_95);
-    _el_96 = createAndAppend(doc, 'img', _el_94);
-    createAttr(_el_96, 'style', 'height:30px');
-    addShimE(_el_96);
-    _el_97 = createAndAppend(doc, 'p', parentRenderNode);
+    _text_94 = new import4.Text('');
+    _el_92.append(_text_94);
+    _el_95 = createAndAppend(doc, 'h3', parentRenderNode);
+    addShimE(_el_95);
+    _text_96 = new import4.Text('');
+    _el_95.append(_text_96);
+    _el_97 = createAndAppend(doc, 'img', _el_95);
+    createAttr(_el_97, 'style', 'height:30px');
     addShimE(_el_97);
-    _text_98 = new import4.Text('');
-    _el_97.append(_text_98);
-    _el_99 = createAndAppend(doc, 'p', parentRenderNode);
-    addShimE(_el_99);
+    _el_98 = createAndAppend(doc, 'p', parentRenderNode);
+    addShimE(_el_98);
+    import4.Text _text_99 = new import4.Text('The sum of 1 + 1 is ');
+    _el_98.append(_text_99);
     _text_100 = new import4.Text('');
-    _el_99.append(_text_100);
-    _el_101 = createAndAppend(doc, 'a', parentRenderNode);
-    _el_101.className = 'to-toc';
-    createAttr(_el_101, 'href', '#toc');
-    addShimC(_el_101);
-    import4.Text _text_102 = new import4.Text('top');
+    _el_98.append(_text_100);
+    _el_101 = createAndAppend(doc, 'p', parentRenderNode);
+    addShimE(_el_101);
+    import4.Text _text_102 = new import4.Text('The sum of 1 + 1 is not ');
     _el_101.append(_text_102);
-    _el_103 = createAndAppend(doc, 'hr', parentRenderNode);
-    addShimE(_el_103);
-    _el_104 = createAndAppend(doc, 'h2', parentRenderNode);
-    createAttr(_el_104, 'id', 'expression-context');
-    addShimE(_el_104);
-    import4.Text _text_105 = new import4.Text('Expression context');
+    _text_103 = new import4.Text('');
+    _el_101.append(_text_103);
+    _el_104 = createAndAppend(doc, 'a', parentRenderNode);
+    _el_104.className = 'to-toc';
+    createAttr(_el_104, 'href', '#toc');
+    addShimC(_el_104);
+    import4.Text _text_105 = new import4.Text('top');
     _el_104.append(_text_105);
-    _el_106 = createAndAppend(doc, 'p', parentRenderNode);
+    _el_106 = createAndAppend(doc, 'hr', parentRenderNode);
     addShimE(_el_106);
-    _text_107 = new import4.Text('');
-    _el_106.append(_text_107);
-    _el_108 = createDivAndAppend(doc, parentRenderNode);
-    _el_108.className = 'context';
-    addShimC(_el_108);
-    _text_109 = new import4.Text('');
-    _el_108.append(_text_109);
-    _el_110 = createSpanAndAppend(doc, _el_108);
-    addShimE(_el_110);
-    import4.Text _text_111 = new import4.Text('changed');
-    _el_110.append(_text_111);
-    _el_112 = createAndAppend(doc, 'p', parentRenderNode);
-    addShimE(_el_112);
-    import4.Text _text_113 = new import4.Text('Template input variable expression context (let hero)');
-    _el_112.append(_text_113);
-    var _anchor_114 = ngAnchor.clone(false);
-    parentRenderNode.append(_anchor_114);
-    _appEl_114 = new ViewContainer(114, null, this, _anchor_114);
-    TemplateRef _TemplateRef_114_5 = new TemplateRef(_appEl_114, viewFactory_AppComponent1);
+    _el_107 = createAndAppend(doc, 'h2', parentRenderNode);
+    createAttr(_el_107, 'id', 'expression-context');
+    addShimE(_el_107);
+    import4.Text _text_108 = new import4.Text('Expression context');
+    _el_107.append(_text_108);
+    _el_109 = createAndAppend(doc, 'p', parentRenderNode);
+    addShimE(_el_109);
+    import4.Text _text_110 = new import4.Text('Component expression context ({{title}}, [hidden]="isUnchanged")');
+    _el_109.append(_text_110);
+    _el_111 = createDivAndAppend(doc, parentRenderNode);
+    _el_111.className = 'context';
+    addShimC(_el_111);
+    _text_112 = new import4.Text('');
+    _el_111.append(_text_112);
+    _el_113 = createSpanAndAppend(doc, _el_111);
+    addShimE(_el_113);
+    import4.Text _text_114 = new import4.Text('changed');
+    _el_113.append(_text_114);
     _el_115 = createAndAppend(doc, 'p', parentRenderNode);
     addShimE(_el_115);
-    import4.Text _text_116 = new import4.Text('Template reference variable expression context (#heroInput)');
+    import4.Text _text_116 = new import4.Text('Template input variable expression context (let hero)');
     _el_115.append(_text_116);
-    _el_117 = createDivAndAppend(doc, parentRenderNode);
-    _el_117.className = 'context';
-    addShimC(_el_117);
-    import4.Text _text_118 = new import4.Text('Type something:');
-    _el_117.append(_text_118);
-    _el_119 = createAndAppend(doc, 'input', _el_117);
-    addShimC(_el_119);
-    _text_120 = new import4.Text('');
-    _el_117.append(_text_120);
-    _el_121 = createAndAppend(doc, 'a', parentRenderNode);
-    _el_121.className = 'to-toc';
-    createAttr(_el_121, 'href', '#toc');
-    addShimC(_el_121);
-    import4.Text _text_122 = new import4.Text('top');
-    _el_121.append(_text_122);
-    _el_123 = createAndAppend(doc, 'hr', parentRenderNode);
-    addShimE(_el_123);
-    _el_124 = createAndAppend(doc, 'h2', parentRenderNode);
-    createAttr(_el_124, 'id', 'statement-context');
-    addShimE(_el_124);
-    import4.Text _text_125 = new import4.Text('Statement context');
-    _el_124.append(_text_125);
-    _el_126 = createAndAppend(doc, 'p', parentRenderNode);
-    addShimE(_el_126);
-    import4.Text _text_127 = new import4.Text('Component statement context ( (click)="onSave() )');
-    _el_126.append(_text_127);
-    _el_128 = createDivAndAppend(doc, parentRenderNode);
-    _el_128.className = 'context';
-    addShimC(_el_128);
-    _el_129 = createAndAppend(doc, 'button', _el_128);
-    addShimC(_el_129);
-    import4.Text _text_130 = new import4.Text('Delete hero');
-    _el_129.append(_text_130);
-    _el_131 = createAndAppend(doc, 'p', parentRenderNode);
-    addShimE(_el_131);
-    import4.Text _text_132 = new import4.Text('Template \$event statement context');
-    _el_131.append(_text_132);
-    _el_133 = createDivAndAppend(doc, parentRenderNode);
-    _el_133.className = 'context';
+    var _anchor_117 = ngAnchor.clone(false);
+    parentRenderNode.append(_anchor_117);
+    _appEl_117 = new ViewContainer(117, null, this, _anchor_117);
+    TemplateRef _TemplateRef_117_5 = new TemplateRef(_appEl_117, viewFactory_AppComponent1);
+    _el_118 = createAndAppend(doc, 'p', parentRenderNode);
+    addShimE(_el_118);
+    import4.Text _text_119 = new import4.Text('Template reference variable expression context (#heroInput)');
+    _el_118.append(_text_119);
+    _el_120 = createDivAndAppend(doc, parentRenderNode);
+    _el_120.className = 'context';
+    addShimC(_el_120);
+    import4.Text _text_121 = new import4.Text('Type something:');
+    _el_120.append(_text_121);
+    _el_122 = createAndAppend(doc, 'input', _el_120);
+    addShimC(_el_122);
+    import4.Text _text_123 = new import4.Text(' ');
+    _el_120.append(_text_123);
+    _text_124 = new import4.Text('');
+    _el_120.append(_text_124);
+    _el_125 = createAndAppend(doc, 'a', parentRenderNode);
+    _el_125.className = 'to-toc';
+    createAttr(_el_125, 'href', '#toc');
+    addShimC(_el_125);
+    import4.Text _text_126 = new import4.Text('top');
+    _el_125.append(_text_126);
+    _el_127 = createAndAppend(doc, 'hr', parentRenderNode);
+    addShimE(_el_127);
+    _el_128 = createAndAppend(doc, 'h2', parentRenderNode);
+    createAttr(_el_128, 'id', 'statement-context');
+    addShimE(_el_128);
+    import4.Text _text_129 = new import4.Text('Statement context');
+    _el_128.append(_text_129);
+    _el_130 = createAndAppend(doc, 'p', parentRenderNode);
+    addShimE(_el_130);
+    import4.Text _text_131 = new import4.Text('Component statement context ( (click)="onSave() )');
+    _el_130.append(_text_131);
+    _el_132 = createDivAndAppend(doc, parentRenderNode);
+    _el_132.className = 'context';
+    addShimC(_el_132);
+    _el_133 = createAndAppend(doc, 'button', _el_132);
     addShimC(_el_133);
-    _el_134 = createAndAppend(doc, 'button', _el_133);
-    addShimC(_el_134);
-    import4.Text _text_135 = new import4.Text('Save');
-    _el_134.append(_text_135);
-    _el_136 = createAndAppend(doc, 'p', parentRenderNode);
-    addShimE(_el_136);
-    import4.Text _text_137 = new import4.Text('Template input variable statement context (let hero)');
-    _el_136.append(_text_137);
-    _el_138 = createDivAndAppend(doc, parentRenderNode);
-    _el_138.className = 'context';
+    import4.Text _text_134 = new import4.Text('Delete hero');
+    _el_133.append(_text_134);
+    _el_135 = createAndAppend(doc, 'p', parentRenderNode);
+    addShimE(_el_135);
+    import4.Text _text_136 = new import4.Text('Template \$event statement context');
+    _el_135.append(_text_136);
+    _el_137 = createDivAndAppend(doc, parentRenderNode);
+    _el_137.className = 'context';
+    addShimC(_el_137);
+    _el_138 = createAndAppend(doc, 'button', _el_137);
     addShimC(_el_138);
-    var _anchor_139 = ngAnchor.clone(false);
-    _el_138.append(_anchor_139);
-    _appEl_139 = new ViewContainer(139, 138, this, _anchor_139);
-    TemplateRef _TemplateRef_139_6 = new TemplateRef(_appEl_139, viewFactory_AppComponent3);
-    _NgFor_139_7 = new import6.NgFor(_appEl_139, _TemplateRef_139_6);
+    import4.Text _text_139 = new import4.Text('Save');
+    _el_138.append(_text_139);
     _el_140 = createAndAppend(doc, 'p', parentRenderNode);
     addShimE(_el_140);
-    import4.Text _text_141 = new import4.Text('Template reference variable statement context (#heroForm)');
+    import4.Text _text_141 = new import4.Text('Template input variable statement context (let hero)');
     _el_140.append(_text_141);
     _el_142 = createDivAndAppend(doc, parentRenderNode);
     _el_142.className = 'context';
     addShimC(_el_142);
-    _el_143 = createAndAppend(doc, 'form', _el_142);
-    addShimC(_el_143);
-    _NgForm_143_4 = new import7.NgForm(null);
-    import4.Text _text_144 = new import4.Text('...');
-    _el_143.append(_text_144);
-    _el_145 = createAndAppend(doc, 'a', parentRenderNode);
-    _el_145.className = 'to-toc';
-    createAttr(_el_145, 'href', '#toc');
-    addShimC(_el_145);
-    import4.Text _text_146 = new import4.Text('top');
-    _el_145.append(_text_146);
-    _el_147 = createAndAppend(doc, 'hr', parentRenderNode);
-    addShimE(_el_147);
-    _el_148 = createAndAppend(doc, 'h2', parentRenderNode);
-    createAttr(_el_148, 'id', 'mental-model');
-    addShimE(_el_148);
-    import4.Text _text_149 = new import4.Text('New Mental Model');
-    _el_148.append(_text_149);
-    _el_150 = createDivAndAppend(doc, parentRenderNode);
-    _el_150.className = 'special';
-    addShimC(_el_150);
-    import4.Text _text_151 = new import4.Text('Mental Model');
-    _el_150.append(_text_151);
-    _el_152 = createAndAppend(doc, 'img', parentRenderNode);
-    createAttr(_el_152, 'src', 'assets/images/hero.png');
+    var _anchor_143 = ngAnchor.clone(false);
+    _el_142.append(_anchor_143);
+    _appEl_143 = new ViewContainer(143, 142, this, _anchor_143);
+    TemplateRef _TemplateRef_143_6 = new TemplateRef(_appEl_143, viewFactory_AppComponent3);
+    _NgFor_143_7 = new import6.NgFor(_appEl_143, _TemplateRef_143_6);
+    _el_144 = createAndAppend(doc, 'p', parentRenderNode);
+    addShimE(_el_144);
+    import4.Text _text_145 = new import4.Text('Template reference variable statement context (#heroForm)');
+    _el_144.append(_text_145);
+    _el_146 = createDivAndAppend(doc, parentRenderNode);
+    _el_146.className = 'context';
+    addShimC(_el_146);
+    _el_147 = createAndAppend(doc, 'form', _el_146);
+    addShimC(_el_147);
+    _NgForm_147_4 = new import7.NgForm(null);
+    import4.Text _text_148 = new import4.Text('...');
+    _el_147.append(_text_148);
+    _el_149 = createAndAppend(doc, 'a', parentRenderNode);
+    _el_149.className = 'to-toc';
+    createAttr(_el_149, 'href', '#toc');
+    addShimC(_el_149);
+    import4.Text _text_150 = new import4.Text('top');
+    _el_149.append(_text_150);
+    _el_151 = createAndAppend(doc, 'hr', parentRenderNode);
+    addShimE(_el_151);
+    _el_152 = createAndAppend(doc, 'h2', parentRenderNode);
+    createAttr(_el_152, 'id', 'mental-model');
     addShimE(_el_152);
-    _el_153 = createAndAppend(doc, 'button', parentRenderNode);
-    createAttr(_el_153, 'disabled', '');
-    addShimC(_el_153);
-    import4.Text _text_154 = new import4.Text('Save');
-    _el_153.append(_text_154);
-    _el_155 = createAndAppend(doc, 'br', parentRenderNode);
-    addShimE(_el_155);
-    _el_156 = createAndAppend(doc, 'br', parentRenderNode);
+    import4.Text _text_153 = new import4.Text('New Mental Model');
+    _el_152.append(_text_153);
+    _el_154 = createDivAndAppend(doc, parentRenderNode);
+    _el_154.className = 'special';
+    addShimC(_el_154);
+    import4.Text _text_155 = new import4.Text('Mental Model');
+    _el_154.append(_text_155);
+    _el_156 = createAndAppend(doc, 'img', parentRenderNode);
+    createAttr(_el_156, 'src', 'assets/images/hero.png');
     addShimE(_el_156);
-    _el_157 = createDivAndAppend(doc, parentRenderNode);
+    _el_157 = createAndAppend(doc, 'button', parentRenderNode);
+    createAttr(_el_157, 'disabled', '');
     addShimC(_el_157);
-    _el_158 = createDivAndAppend(doc, _el_157);
-    _el_158.className = 'special';
-    addShimC(_el_158);
-    import4.Text _text_159 = new import4.Text('Mental Model');
-    _el_158.append(_text_159);
-    _compView_160 = new import8.ViewHeroDetailComponent0(this, 160);
-    _el_160 = _compView_160.rootEl;
-    _el_157.append(_el_160);
-    addShimC(_el_160);
-    _HeroDetailComponent_160_4 = new import9.HeroDetailComponent();
-    _compView_160.create(_HeroDetailComponent_160_4, []);
-    _el_161 = createAndAppend(doc, 'br', parentRenderNode);
-    addShimE(_el_161);
-    _el_162 = createAndAppend(doc, 'br', parentRenderNode);
-    addShimE(_el_162);
-    _el_163 = createDivAndAppend(doc, parentRenderNode);
-    addShimC(_el_163);
-    _el_164 = createAndAppend(doc, 'button', _el_163);
+    import4.Text _text_158 = new import4.Text('Save');
+    _el_157.append(_text_158);
+    _el_159 = createAndAppend(doc, 'br', parentRenderNode);
+    addShimE(_el_159);
+    _el_160 = createAndAppend(doc, 'br', parentRenderNode);
+    addShimE(_el_160);
+    _el_161 = createDivAndAppend(doc, parentRenderNode);
+    addShimC(_el_161);
+    _el_162 = createDivAndAppend(doc, _el_161);
+    _el_162.className = 'special';
+    addShimC(_el_162);
+    import4.Text _text_163 = new import4.Text('Mental Model');
+    _el_162.append(_text_163);
+    _compView_164 = new import8.ViewHeroDetailComponent0(this, 164);
+    _el_164 = _compView_164.rootEl;
+    _el_161.append(_el_164);
     addShimC(_el_164);
-    import4.Text _text_165 = new import4.Text('Save');
-    _el_164.append(_text_165);
+    _HeroDetailComponent_164_4 = new import9.HeroDetailComponent();
+    _compView_164.create(_HeroDetailComponent_164_4, []);
+    _el_165 = createAndAppend(doc, 'br', parentRenderNode);
+    addShimE(_el_165);
     _el_166 = createAndAppend(doc, 'br', parentRenderNode);
     addShimE(_el_166);
-    _el_167 = createAndAppend(doc, 'br', parentRenderNode);
-    addShimE(_el_167);
-    _el_168 = createDivAndAppend(doc, parentRenderNode);
+    _el_167 = createDivAndAppend(doc, parentRenderNode);
+    addShimC(_el_167);
+    _el_168 = createAndAppend(doc, 'button', _el_167);
     addShimC(_el_168);
-    _el_169 = createAndAppend(doc, 'img', _el_168);
-    addShimE(_el_169);
-    _compView_170 = new import8.ViewHeroDetailComponent0(this, 170);
-    _el_170 = _compView_170.rootEl;
-    _el_168.append(_el_170);
-    addShimC(_el_170);
-    _HeroDetailComponent_170_4 = new import9.HeroDetailComponent();
-    _compView_170.create(_HeroDetailComponent_170_4, []);
-    _el_171 = createDivAndAppend(doc, _el_168);
-    addShimC(_el_171);
-    _NgClass_171_4 = new import10.NgClass(_el_171);
-    _el_172 = createAndAppend(doc, 'br', parentRenderNode);
-    addShimE(_el_172);
-    _el_173 = createAndAppend(doc, 'br', parentRenderNode);
+    import4.Text _text_169 = new import4.Text('Save');
+    _el_168.append(_text_169);
+    _el_170 = createAndAppend(doc, 'br', parentRenderNode);
+    addShimE(_el_170);
+    _el_171 = createAndAppend(doc, 'br', parentRenderNode);
+    addShimE(_el_171);
+    _el_172 = createDivAndAppend(doc, parentRenderNode);
+    addShimC(_el_172);
+    _el_173 = createAndAppend(doc, 'img', _el_172);
     addShimE(_el_173);
-    _el_174 = createAndAppend(doc, 'button', parentRenderNode);
+    _compView_174 = new import8.ViewHeroDetailComponent0(this, 174);
+    _el_174 = _compView_174.rootEl;
+    _el_172.append(_el_174);
     addShimC(_el_174);
-    import4.Text _text_175 = new import4.Text('Save');
-    _el_174.append(_text_175);
-    _compView_176 = new import8.ViewHeroDetailComponent0(this, 176);
-    _el_176 = _compView_176.rootEl;
-    parentRenderNode.append(_el_176);
-    addShimC(_el_176);
-    _HeroDetailComponent_176_4 = new import9.HeroDetailComponent();
-    _compView_176.create(_HeroDetailComponent_176_4, []);
-    _el_177 = createDivAndAppend(doc, parentRenderNode);
-    createAttr(_el_177, 'clickable', '');
-    addShimC(_el_177);
-    _ClickDirective_177_4 = new import11.ClickDirective(_el_177);
-    import4.Text _text_178 = new import4.Text('click me');
-    _el_177.append(_text_178);
-    _text_179 = new import4.Text('');
-    parentRenderNode.append(_text_179);
-    _el_180 = createAndAppend(doc, 'br', parentRenderNode);
-    addShimE(_el_180);
-    _el_181 = createAndAppend(doc, 'br', parentRenderNode);
-    addShimE(_el_181);
-    _el_182 = createDivAndAppend(doc, parentRenderNode);
-    addShimC(_el_182);
-    import4.Text _text_183 = new import4.Text('Hero Name:');
-    _el_182.append(_text_183);
-    _el_184 = createAndAppend(doc, 'input', _el_182);
-    addShimC(_el_184);
-    _DefaultValueAccessor_184_4 = new import12.DefaultValueAccessor(_el_184);
-    _NgValueAccessor_184_5 = [_DefaultValueAccessor_184_4];
-    _NgModel_184_6 = new import13.NgModel(null, _NgValueAccessor_184_5);
-    _text_185 = new import4.Text('');
-    _el_182.append(_text_185);
-    _el_186 = createAndAppend(doc, 'br', parentRenderNode);
-    addShimE(_el_186);
-    _el_187 = createAndAppend(doc, 'br', parentRenderNode);
-    addShimE(_el_187);
-    _el_188 = createAndAppend(doc, 'button', parentRenderNode);
+    _HeroDetailComponent_174_4 = new import9.HeroDetailComponent();
+    _compView_174.create(_HeroDetailComponent_174_4, []);
+    _el_175 = createDivAndAppend(doc, _el_172);
+    addShimC(_el_175);
+    _NgClass_175_4 = new import10.NgClass(_el_175);
+    _el_176 = createAndAppend(doc, 'br', parentRenderNode);
+    addShimE(_el_176);
+    _el_177 = createAndAppend(doc, 'br', parentRenderNode);
+    addShimE(_el_177);
+    _el_178 = createAndAppend(doc, 'button', parentRenderNode);
+    addShimC(_el_178);
+    import4.Text _text_179 = new import4.Text('Save');
+    _el_178.append(_text_179);
+    _compView_180 = new import8.ViewHeroDetailComponent0(this, 180);
+    _el_180 = _compView_180.rootEl;
+    parentRenderNode.append(_el_180);
+    addShimC(_el_180);
+    _HeroDetailComponent_180_4 = new import9.HeroDetailComponent();
+    _compView_180.create(_HeroDetailComponent_180_4, []);
+    _el_181 = createDivAndAppend(doc, parentRenderNode);
+    createAttr(_el_181, 'clickable', '');
+    addShimC(_el_181);
+    _ClickDirective_181_4 = new import11.ClickDirective(_el_181);
+    import4.Text _text_182 = new import4.Text('click me');
+    _el_181.append(_text_182);
+    _text_183 = new import4.Text('');
+    parentRenderNode.append(_text_183);
+    _el_184 = createAndAppend(doc, 'br', parentRenderNode);
+    addShimE(_el_184);
+    _el_185 = createAndAppend(doc, 'br', parentRenderNode);
+    addShimE(_el_185);
+    _el_186 = createDivAndAppend(doc, parentRenderNode);
+    addShimC(_el_186);
+    import4.Text _text_187 = new import4.Text('Hero Name:');
+    _el_186.append(_text_187);
+    _el_188 = createAndAppend(doc, 'input', _el_186);
     addShimC(_el_188);
-    import4.Text _text_189 = new import4.Text('help');
-    _el_188.append(_text_189);
+    _DefaultValueAccessor_188_4 = new import12.DefaultValueAccessor(_el_188);
+    _NgValueAccessor_188_5 = [_DefaultValueAccessor_188_4];
+    _NgModel_188_6 = new import13.NgModel(null, _NgValueAccessor_188_5);
+    _text_189 = new import4.Text('');
+    _el_186.append(_text_189);
     _el_190 = createAndAppend(doc, 'br', parentRenderNode);
     addShimE(_el_190);
     _el_191 = createAndAppend(doc, 'br', parentRenderNode);
     addShimE(_el_191);
-    _el_192 = createDivAndAppend(doc, parentRenderNode);
+    _el_192 = createAndAppend(doc, 'button', parentRenderNode);
     addShimC(_el_192);
-    import4.Text _text_193 = new import4.Text('Special');
+    import4.Text _text_193 = new import4.Text('help');
     _el_192.append(_text_193);
     _el_194 = createAndAppend(doc, 'br', parentRenderNode);
     addShimE(_el_194);
     _el_195 = createAndAppend(doc, 'br', parentRenderNode);
     addShimE(_el_195);
-    _el_196 = createAndAppend(doc, 'button', parentRenderNode);
+    _el_196 = createDivAndAppend(doc, parentRenderNode);
     addShimC(_el_196);
-    import4.Text _text_197 = new import4.Text('button');
+    import4.Text _text_197 = new import4.Text('Special');
     _el_196.append(_text_197);
-    _el_198 = createAndAppend(doc, 'a', parentRenderNode);
-    _el_198.className = 'to-toc';
-    createAttr(_el_198, 'href', '#toc');
-    addShimC(_el_198);
-    import4.Text _text_199 = new import4.Text('top');
-    _el_198.append(_text_199);
-    _el_200 = createAndAppend(doc, 'hr', parentRenderNode);
-    addShimE(_el_200);
-    _el_201 = createAndAppend(doc, 'h2', parentRenderNode);
-    createAttr(_el_201, 'id', 'prop-vs-attrib');
-    addShimE(_el_201);
-    import4.Text _text_202 = new import4.Text('Property vs. Attribute (img examples)');
-    _el_201.append(_text_202);
-    _el_203 = createAndAppend(doc, 'img', parentRenderNode);
-    createAttr(_el_203, 'src', 'assets/images/ng-logo.png');
-    addShimE(_el_203);
-    _el_204 = createAndAppend(doc, 'br', parentRenderNode);
+    _el_198 = createAndAppend(doc, 'br', parentRenderNode);
+    addShimE(_el_198);
+    _el_199 = createAndAppend(doc, 'br', parentRenderNode);
+    addShimE(_el_199);
+    _el_200 = createAndAppend(doc, 'button', parentRenderNode);
+    addShimC(_el_200);
+    import4.Text _text_201 = new import4.Text('button');
+    _el_200.append(_text_201);
+    _el_202 = createAndAppend(doc, 'a', parentRenderNode);
+    _el_202.className = 'to-toc';
+    createAttr(_el_202, 'href', '#toc');
+    addShimC(_el_202);
+    import4.Text _text_203 = new import4.Text('top');
+    _el_202.append(_text_203);
+    _el_204 = createAndAppend(doc, 'hr', parentRenderNode);
     addShimE(_el_204);
-    _el_205 = createAndAppend(doc, 'br', parentRenderNode);
+    _el_205 = createAndAppend(doc, 'h2', parentRenderNode);
+    createAttr(_el_205, 'id', 'prop-vs-attrib');
     addShimE(_el_205);
-    _el_206 = createAndAppend(doc, 'img', parentRenderNode);
-    addShimE(_el_206);
+    import4.Text _text_206 = new import4.Text('Property vs. Attribute (img examples)');
+    _el_205.append(_text_206);
     _el_207 = createAndAppend(doc, 'img', parentRenderNode);
+    createAttr(_el_207, 'src', 'assets/images/ng-logo.png');
     addShimE(_el_207);
-    _el_208 = createAndAppend(doc, 'img', parentRenderNode);
+    _el_208 = createAndAppend(doc, 'br', parentRenderNode);
     addShimE(_el_208);
-    _el_209 = createAndAppend(doc, 'a', parentRenderNode);
-    _el_209.className = 'to-toc';
-    createAttr(_el_209, 'href', '#toc');
-    addShimC(_el_209);
-    import4.Text _text_210 = new import4.Text('top');
-    _el_209.append(_text_210);
-    _el_211 = createAndAppend(doc, 'hr', parentRenderNode);
+    _el_209 = createAndAppend(doc, 'br', parentRenderNode);
+    addShimE(_el_209);
+    _el_210 = createAndAppend(doc, 'img', parentRenderNode);
+    addShimE(_el_210);
+    _el_211 = createAndAppend(doc, 'img', parentRenderNode);
     addShimE(_el_211);
-    _el_212 = createAndAppend(doc, 'h2', parentRenderNode);
-    createAttr(_el_212, 'id', 'buttons');
+    _el_212 = createAndAppend(doc, 'img', parentRenderNode);
     addShimE(_el_212);
-    import4.Text _text_213 = new import4.Text('Buttons');
-    _el_212.append(_text_213);
-    _el_214 = createAndAppend(doc, 'button', parentRenderNode);
-    addShimC(_el_214);
-    import4.Text _text_215 = new import4.Text('Enabled (but does nothing)');
-    _el_214.append(_text_215);
-    _el_216 = createAndAppend(doc, 'button', parentRenderNode);
-    createAttr(_el_216, 'disabled', '');
-    addShimC(_el_216);
-    import4.Text _text_217 = new import4.Text('Disabled');
+    _el_213 = createAndAppend(doc, 'a', parentRenderNode);
+    _el_213.className = 'to-toc';
+    createAttr(_el_213, 'href', '#toc');
+    addShimC(_el_213);
+    import4.Text _text_214 = new import4.Text('top');
+    _el_213.append(_text_214);
+    _el_215 = createAndAppend(doc, 'hr', parentRenderNode);
+    addShimE(_el_215);
+    _el_216 = createAndAppend(doc, 'h2', parentRenderNode);
+    createAttr(_el_216, 'id', 'buttons');
+    addShimE(_el_216);
+    import4.Text _text_217 = new import4.Text('Buttons');
     _el_216.append(_text_217);
     _el_218 = createAndAppend(doc, 'button', parentRenderNode);
-    createAttr(_el_218, 'disabled', 'false');
     addShimC(_el_218);
-    import4.Text _text_219 = new import4.Text('Still disabled');
+    import4.Text _text_219 = new import4.Text('Enabled (but does nothing)');
     _el_218.append(_text_219);
-    _el_220 = createAndAppend(doc, 'br', parentRenderNode);
-    addShimE(_el_220);
-    _el_221 = createAndAppend(doc, 'br', parentRenderNode);
-    addShimE(_el_221);
+    _el_220 = createAndAppend(doc, 'button', parentRenderNode);
+    createAttr(_el_220, 'disabled', '');
+    addShimC(_el_220);
+    import4.Text _text_221 = new import4.Text('Disabled');
+    _el_220.append(_text_221);
     _el_222 = createAndAppend(doc, 'button', parentRenderNode);
-    createAttr(_el_222, 'disabled', '');
+    createAttr(_el_222, 'disabled', 'false');
     addShimC(_el_222);
-    import4.Text _text_223 = new import4.Text('disabled by attribute');
+    import4.Text _text_223 = new import4.Text('Still disabled');
     _el_222.append(_text_223);
-    _el_224 = createAndAppend(doc, 'button', parentRenderNode);
-    addShimC(_el_224);
-    import4.Text _text_225 = new import4.Text('disabled by property binding');
-    _el_224.append(_text_225);
-    _el_226 = createAndAppend(doc, 'br', parentRenderNode);
-    addShimE(_el_226);
-    _el_227 = createAndAppend(doc, 'br', parentRenderNode);
-    addShimE(_el_227);
+    _el_224 = createAndAppend(doc, 'br', parentRenderNode);
+    addShimE(_el_224);
+    _el_225 = createAndAppend(doc, 'br', parentRenderNode);
+    addShimE(_el_225);
+    _el_226 = createAndAppend(doc, 'button', parentRenderNode);
+    createAttr(_el_226, 'disabled', '');
+    addShimC(_el_226);
+    import4.Text _text_227 = new import4.Text('disabled by attribute');
+    _el_226.append(_text_227);
     _el_228 = createAndAppend(doc, 'button', parentRenderNode);
     addShimC(_el_228);
-    import4.Text _text_229 = new import4.Text('Disabled Cancel');
+    import4.Text _text_229 = new import4.Text('disabled by property binding');
     _el_228.append(_text_229);
-    _el_230 = createAndAppend(doc, 'button', parentRenderNode);
-    addShimC(_el_230);
-    import4.Text _text_231 = new import4.Text('Enabled Save');
-    _el_230.append(_text_231);
-    _el_232 = createAndAppend(doc, 'a', parentRenderNode);
-    _el_232.className = 'to-toc';
-    createAttr(_el_232, 'href', '#toc');
+    _el_230 = createAndAppend(doc, 'br', parentRenderNode);
+    addShimE(_el_230);
+    _el_231 = createAndAppend(doc, 'br', parentRenderNode);
+    addShimE(_el_231);
+    _el_232 = createAndAppend(doc, 'button', parentRenderNode);
     addShimC(_el_232);
-    import4.Text _text_233 = new import4.Text('top');
+    import4.Text _text_233 = new import4.Text('Disabled Cancel');
     _el_232.append(_text_233);
-    _el_234 = createAndAppend(doc, 'hr', parentRenderNode);
-    addShimE(_el_234);
-    _el_235 = createAndAppend(doc, 'h2', parentRenderNode);
-    createAttr(_el_235, 'id', 'property-binding');
-    addShimE(_el_235);
-    import4.Text _text_236 = new import4.Text('Property Binding');
-    _el_235.append(_text_236);
-    _el_237 = createAndAppend(doc, 'img', parentRenderNode);
-    addShimE(_el_237);
-    _el_238 = createAndAppend(doc, 'button', parentRenderNode);
-    addShimC(_el_238);
-    import4.Text _text_239 = new import4.Text('Cancel is disabled');
-    _el_238.append(_text_239);
-    _el_240 = createDivAndAppend(doc, parentRenderNode);
-    addShimC(_el_240);
-    _NgClass_240_4 = new import10.NgClass(_el_240);
-    import4.Text _text_241 = new import4.Text('[ngClass] binding to the classes property');
-    _el_240.append(_text_241);
-    _compView_242 = new import8.ViewHeroDetailComponent0(this, 242);
-    _el_242 = _compView_242.rootEl;
-    parentRenderNode.append(_el_242);
+    _el_234 = createAndAppend(doc, 'button', parentRenderNode);
+    addShimC(_el_234);
+    import4.Text _text_235 = new import4.Text('Enabled Save');
+    _el_234.append(_text_235);
+    _el_236 = createAndAppend(doc, 'a', parentRenderNode);
+    _el_236.className = 'to-toc';
+    createAttr(_el_236, 'href', '#toc');
+    addShimC(_el_236);
+    import4.Text _text_237 = new import4.Text('top');
+    _el_236.append(_text_237);
+    _el_238 = createAndAppend(doc, 'hr', parentRenderNode);
+    addShimE(_el_238);
+    _el_239 = createAndAppend(doc, 'h2', parentRenderNode);
+    createAttr(_el_239, 'id', 'property-binding');
+    addShimE(_el_239);
+    import4.Text _text_240 = new import4.Text('Property Binding');
+    _el_239.append(_text_240);
+    _el_241 = createAndAppend(doc, 'img', parentRenderNode);
+    addShimE(_el_241);
+    _el_242 = createAndAppend(doc, 'button', parentRenderNode);
     addShimC(_el_242);
-    _HeroDetailComponent_242_4 = new import9.HeroDetailComponent();
-    _compView_242.create(_HeroDetailComponent_242_4, []);
-    _el_243 = createAndAppend(doc, 'img', parentRenderNode);
-    addShimE(_el_243);
-    _compView_244 = new import8.ViewHeroDetailComponent0(this, 244);
-    _el_244 = _compView_244.rootEl;
-    parentRenderNode.append(_el_244);
-    createAttr(_el_244, 'prefix', 'You are my');
+    import4.Text _text_243 = new import4.Text('Cancel is disabled');
+    _el_242.append(_text_243);
+    _el_244 = createDivAndAppend(doc, parentRenderNode);
     addShimC(_el_244);
-    _HeroDetailComponent_244_4 = new import9.HeroDetailComponent();
-    _compView_244.create(_HeroDetailComponent_244_4, []);
-    _el_245 = createAndAppend(doc, 'p', parentRenderNode);
-    addShimE(_el_245);
-    _el_246 = createAndAppend(doc, 'img', _el_245);
-    addShimE(_el_246);
-    import4.Text _text_247 = new import4.Text('is the');
-    _el_245.append(_text_247);
-    _el_248 = createAndAppend(doc, 'i', _el_245);
-    addShimE(_el_248);
-    import4.Text _text_249 = new import4.Text('interpolated');
-    _el_248.append(_text_249);
-    import4.Text _text_250 = new import4.Text('image.');
-    _el_245.append(_text_250);
-    _el_251 = createAndAppend(doc, 'p', parentRenderNode);
-    addShimE(_el_251);
-    _el_252 = createAndAppend(doc, 'img', _el_251);
+    _NgClass_244_4 = new import10.NgClass(_el_244);
+    import4.Text _text_245 = new import4.Text('[ngClass] binding to the classes property');
+    _el_244.append(_text_245);
+    _compView_246 = new import8.ViewHeroDetailComponent0(this, 246);
+    _el_246 = _compView_246.rootEl;
+    parentRenderNode.append(_el_246);
+    addShimC(_el_246);
+    _HeroDetailComponent_246_4 = new import9.HeroDetailComponent();
+    _compView_246.create(_HeroDetailComponent_246_4, []);
+    _el_247 = createAndAppend(doc, 'img', parentRenderNode);
+    addShimE(_el_247);
+    _compView_248 = new import8.ViewHeroDetailComponent0(this, 248);
+    _el_248 = _compView_248.rootEl;
+    parentRenderNode.append(_el_248);
+    createAttr(_el_248, 'prefix', 'You are my');
+    addShimC(_el_248);
+    _HeroDetailComponent_248_4 = new import9.HeroDetailComponent();
+    _compView_248.create(_HeroDetailComponent_248_4, []);
+    _el_249 = createAndAppend(doc, 'p', parentRenderNode);
+    addShimE(_el_249);
+    _el_250 = createAndAppend(doc, 'img', _el_249);
+    addShimE(_el_250);
+    import4.Text _text_251 = new import4.Text('is the');
+    _el_249.append(_text_251);
+    _el_252 = createAndAppend(doc, 'i', _el_249);
     addShimE(_el_252);
-    import4.Text _text_253 = new import4.Text('is the');
-    _el_251.append(_text_253);
-    _el_254 = createAndAppend(doc, 'i', _el_251);
-    addShimE(_el_254);
-    import4.Text _text_255 = new import4.Text('property bound');
-    _el_254.append(_text_255);
-    import4.Text _text_256 = new import4.Text('image.');
-    _el_251.append(_text_256);
-    _el_257 = createAndAppend(doc, 'p', parentRenderNode);
-    addShimE(_el_257);
-    _el_258 = createSpanAndAppend(doc, _el_257);
+    import4.Text _text_253 = new import4.Text('interpolated');
+    _el_252.append(_text_253);
+    import4.Text _text_254 = new import4.Text('image.');
+    _el_249.append(_text_254);
+    _el_255 = createAndAppend(doc, 'p', parentRenderNode);
+    addShimE(_el_255);
+    _el_256 = createAndAppend(doc, 'img', _el_255);
+    addShimE(_el_256);
+    import4.Text _text_257 = new import4.Text('is the');
+    _el_255.append(_text_257);
+    _el_258 = createAndAppend(doc, 'i', _el_255);
     addShimE(_el_258);
-    _text_259 = new import4.Text('');
+    import4.Text _text_259 = new import4.Text('property bound');
     _el_258.append(_text_259);
-    _el_260 = createAndAppend(doc, 'i', _el_258);
-    addShimE(_el_260);
-    import4.Text _text_261 = new import4.Text('interpolated');
-    _el_260.append(_text_261);
-    import4.Text _text_262 = new import4.Text('title.');
-    _el_258.append(_text_262);
-    _el_263 = createAndAppend(doc, 'p', parentRenderNode);
-    addShimE(_el_263);
-    import4.Text _text_264 = new import4.Text('"');
-    _el_263.append(_text_264);
-    _el_265 = createSpanAndAppend(doc, _el_263);
-    addShimE(_el_265);
-    import4.Text _text_266 = new import4.Text('" is the');
-    _el_263.append(_text_266);
-    _el_267 = createAndAppend(doc, 'i', _el_263);
-    addShimE(_el_267);
-    import4.Text _text_268 = new import4.Text('property bound');
-    _el_267.append(_text_268);
-    import4.Text _text_269 = new import4.Text('title.');
-    _el_263.append(_text_269);
-    _el_270 = createAndAppend(doc, 'p', parentRenderNode);
-    addShimE(_el_270);
-    _el_271 = createSpanAndAppend(doc, _el_270);
+    import4.Text _text_260 = new import4.Text('image.');
+    _el_255.append(_text_260);
+    _el_261 = createAndAppend(doc, 'p', parentRenderNode);
+    addShimE(_el_261);
+    _el_262 = createSpanAndAppend(doc, _el_261);
+    addShimE(_el_262);
+    import4.Text _text_263 = new import4.Text('"');
+    _el_262.append(_text_263);
+    _text_264 = new import4.Text('');
+    _el_262.append(_text_264);
+    import4.Text _text_265 = new import4.Text('" is the ');
+    _el_262.append(_text_265);
+    _el_266 = createAndAppend(doc, 'i', _el_262);
+    addShimE(_el_266);
+    import4.Text _text_267 = new import4.Text('interpolated');
+    _el_266.append(_text_267);
+    import4.Text _text_268 = new import4.Text('title.');
+    _el_262.append(_text_268);
+    _el_269 = createAndAppend(doc, 'p', parentRenderNode);
+    addShimE(_el_269);
+    import4.Text _text_270 = new import4.Text('"');
+    _el_269.append(_text_270);
+    _el_271 = createSpanAndAppend(doc, _el_269);
     addShimE(_el_271);
-    _text_272 = new import4.Text('');
-    _el_271.append(_text_272);
-    _el_273 = createAndAppend(doc, 'i', _el_271);
+    import4.Text _text_272 = new import4.Text('" is the');
+    _el_269.append(_text_272);
+    _el_273 = createAndAppend(doc, 'i', _el_269);
     addShimE(_el_273);
-    import4.Text _text_274 = new import4.Text('interpolated');
+    import4.Text _text_274 = new import4.Text('property bound');
     _el_273.append(_text_274);
-    import4.Text _text_275 = new import4.Text('evil title.');
-    _el_271.append(_text_275);
+    import4.Text _text_275 = new import4.Text('title.');
+    _el_269.append(_text_275);
     _el_276 = createAndAppend(doc, 'p', parentRenderNode);
     addShimE(_el_276);
-    import4.Text _text_277 = new import4.Text('"');
-    _el_276.append(_text_277);
-    _el_278 = createSpanAndAppend(doc, _el_276);
-    addShimE(_el_278);
-    import4.Text _text_279 = new import4.Text('" is the');
-    _el_276.append(_text_279);
-    _el_280 = createAndAppend(doc, 'i', _el_276);
-    addShimE(_el_280);
-    import4.Text _text_281 = new import4.Text('property bound');
-    _el_280.append(_text_281);
-    import4.Text _text_282 = new import4.Text('evil title.');
-    _el_276.append(_text_282);
-    _el_283 = createAndAppend(doc, 'a', parentRenderNode);
-    _el_283.className = 'to-toc';
-    createAttr(_el_283, 'href', '#toc');
-    addShimC(_el_283);
-    import4.Text _text_284 = new import4.Text('top');
-    _el_283.append(_text_284);
-    _el_285 = createAndAppend(doc, 'hr', parentRenderNode);
-    addShimE(_el_285);
-    _el_286 = createAndAppend(doc, 'h2', parentRenderNode);
-    createAttr(_el_286, 'id', 'attribute-binding');
+    _el_277 = createSpanAndAppend(doc, _el_276);
+    addShimE(_el_277);
+    import4.Text _text_278 = new import4.Text('"');
+    _el_277.append(_text_278);
+    _text_279 = new import4.Text('');
+    _el_277.append(_text_279);
+    import4.Text _text_280 = new import4.Text('" is the ');
+    _el_277.append(_text_280);
+    _el_281 = createAndAppend(doc, 'i', _el_277);
+    addShimE(_el_281);
+    import4.Text _text_282 = new import4.Text('interpolated');
+    _el_281.append(_text_282);
+    import4.Text _text_283 = new import4.Text('evil title.');
+    _el_277.append(_text_283);
+    _el_284 = createAndAppend(doc, 'p', parentRenderNode);
+    addShimE(_el_284);
+    import4.Text _text_285 = new import4.Text('"');
+    _el_284.append(_text_285);
+    _el_286 = createSpanAndAppend(doc, _el_284);
     addShimE(_el_286);
-    import4.Text _text_287 = new import4.Text('Attribute Binding');
-    _el_286.append(_text_287);
-    _el_288 = createAndAppend(doc, 'table', parentRenderNode);
-    createAttr(_el_288, 'border', '1');
-    addShimC(_el_288);
-    _el_289 = createAndAppend(doc, 'tbody', _el_288);
-    addShimE(_el_289);
-    _el_290 = createAndAppend(doc, 'tr', _el_289);
-    addShimE(_el_290);
-    _el_291 = createAndAppend(doc, 'td', _el_290);
-    addShimE(_el_291);
-    import4.Text _text_292 = new import4.Text('One-Two');
+    import4.Text _text_287 = new import4.Text('" is the');
+    _el_284.append(_text_287);
+    _el_288 = createAndAppend(doc, 'i', _el_284);
+    addShimE(_el_288);
+    import4.Text _text_289 = new import4.Text('property bound');
+    _el_288.append(_text_289);
+    import4.Text _text_290 = new import4.Text('evil title.');
+    _el_284.append(_text_290);
+    _el_291 = createAndAppend(doc, 'a', parentRenderNode);
+    _el_291.className = 'to-toc';
+    createAttr(_el_291, 'href', '#toc');
+    addShimC(_el_291);
+    import4.Text _text_292 = new import4.Text('top');
     _el_291.append(_text_292);
-    _el_293 = createAndAppend(doc, 'tr', _el_289);
+    _el_293 = createAndAppend(doc, 'hr', parentRenderNode);
     addShimE(_el_293);
-    _el_294 = createAndAppend(doc, 'td', _el_293);
+    _el_294 = createAndAppend(doc, 'h2', parentRenderNode);
+    createAttr(_el_294, 'id', 'attribute-binding');
     addShimE(_el_294);
-    import4.Text _text_295 = new import4.Text('Five');
+    import4.Text _text_295 = new import4.Text('Attribute Binding');
     _el_294.append(_text_295);
-    _el_296 = createAndAppend(doc, 'td', _el_293);
-    addShimE(_el_296);
-    import4.Text _text_297 = new import4.Text('Six');
-    _el_296.append(_text_297);
-    _el_298 = createAndAppend(doc, 'br', parentRenderNode);
+    _el_296 = createAndAppend(doc, 'table', parentRenderNode);
+    createAttr(_el_296, 'border', '1');
+    addShimC(_el_296);
+    _el_297 = createAndAppend(doc, 'tr', _el_296);
+    addShimE(_el_297);
+    _el_298 = createAndAppend(doc, 'td', _el_297);
     addShimE(_el_298);
-    _el_299 = createAndAppend(doc, 'button', parentRenderNode);
-    addShimC(_el_299);
-    _text_300 = new import4.Text('');
-    _el_299.append(_text_300);
-    _el_301 = createAndAppend(doc, 'br', parentRenderNode);
+    import4.Text _text_299 = new import4.Text('One-Two');
+    _el_298.append(_text_299);
+    _el_300 = createAndAppend(doc, 'tr', _el_296);
+    addShimE(_el_300);
+    _el_301 = createAndAppend(doc, 'td', _el_300);
     addShimE(_el_301);
-    _el_302 = createAndAppend(doc, 'br', parentRenderNode);
-    addShimE(_el_302);
-    _el_303 = createDivAndAppend(doc, parentRenderNode);
-    addShimC(_el_303);
-    _el_304 = createAndAppend(doc, 'button', _el_303);
-    addShimC(_el_304);
-    import4.Text _text_305 = new import4.Text('Disabled');
-    _el_304.append(_text_305);
-    _el_306 = createAndAppend(doc, 'button', _el_303);
+    import4.Text _text_302 = new import4.Text('Five');
+    _el_301.append(_text_302);
+    _el_303 = createAndAppend(doc, 'td', _el_300);
+    addShimE(_el_303);
+    import4.Text _text_304 = new import4.Text('Six');
+    _el_303.append(_text_304);
+    _el_305 = createAndAppend(doc, 'br', parentRenderNode);
+    addShimE(_el_305);
+    _el_306 = createAndAppend(doc, 'button', parentRenderNode);
     addShimC(_el_306);
-    import4.Text _text_307 = new import4.Text('Disabled as well');
+    _text_307 = new import4.Text('');
     _el_306.append(_text_307);
-    _el_308 = createAndAppend(doc, 'button', _el_303);
-    createAttr(_el_308, 'disabled', '');
-    addShimC(_el_308);
-    import4.Text _text_309 = new import4.Text('Enabled (but inert)');
-    _el_308.append(_text_309);
-    _el_310 = createAndAppend(doc, 'a', parentRenderNode);
-    _el_310.className = 'to-toc';
-    createAttr(_el_310, 'href', '#toc');
-    addShimC(_el_310);
-    import4.Text _text_311 = new import4.Text('top');
-    _el_310.append(_text_311);
-    _el_312 = createAndAppend(doc, 'hr', parentRenderNode);
-    addShimE(_el_312);
-    _el_313 = createAndAppend(doc, 'h2', parentRenderNode);
-    createAttr(_el_313, 'id', 'class-binding');
-    addShimE(_el_313);
-    import4.Text _text_314 = new import4.Text('Class Binding');
-    _el_313.append(_text_314);
-    _el_315 = createDivAndAppend(doc, parentRenderNode);
-    _el_315.className = 'bad curly special';
-    addShimC(_el_315);
-    import4.Text _text_316 = new import4.Text('Bad curly special');
-    _el_315.append(_text_316);
-    _el_317 = createDivAndAppend(doc, parentRenderNode);
-    _el_317.className = 'bad curly special';
-    addShimC(_el_317);
-    import4.Text _text_318 = new import4.Text('Bad curly');
-    _el_317.append(_text_318);
-    _el_319 = createDivAndAppend(doc, parentRenderNode);
-    addShimC(_el_319);
-    import4.Text _text_320 = new import4.Text('The class binding is special');
-    _el_319.append(_text_320);
-    _el_321 = createDivAndAppend(doc, parentRenderNode);
-    _el_321.className = 'special';
-    addShimC(_el_321);
-    import4.Text _text_322 = new import4.Text('This one is not so special');
+    import4.Text _text_308 = new import4.Text(' with Aria');
+    _el_306.append(_text_308);
+    _el_309 = createAndAppend(doc, 'br', parentRenderNode);
+    addShimE(_el_309);
+    _el_310 = createAndAppend(doc, 'br', parentRenderNode);
+    addShimE(_el_310);
+    _el_311 = createDivAndAppend(doc, parentRenderNode);
+    addShimC(_el_311);
+    _el_312 = createAndAppend(doc, 'button', _el_311);
+    addShimC(_el_312);
+    import4.Text _text_313 = new import4.Text('Disabled');
+    _el_312.append(_text_313);
+    _el_314 = createAndAppend(doc, 'button', _el_311);
+    addShimC(_el_314);
+    import4.Text _text_315 = new import4.Text('Disabled as well');
+    _el_314.append(_text_315);
+    _el_316 = createAndAppend(doc, 'button', _el_311);
+    createAttr(_el_316, 'disabled', '');
+    addShimC(_el_316);
+    import4.Text _text_317 = new import4.Text('Enabled (but inert)');
+    _el_316.append(_text_317);
+    _el_318 = createAndAppend(doc, 'a', parentRenderNode);
+    _el_318.className = 'to-toc';
+    createAttr(_el_318, 'href', '#toc');
+    addShimC(_el_318);
+    import4.Text _text_319 = new import4.Text('top');
+    _el_318.append(_text_319);
+    _el_320 = createAndAppend(doc, 'hr', parentRenderNode);
+    addShimE(_el_320);
+    _el_321 = createAndAppend(doc, 'h2', parentRenderNode);
+    createAttr(_el_321, 'id', 'class-binding');
+    addShimE(_el_321);
+    import4.Text _text_322 = new import4.Text('Class Binding');
     _el_321.append(_text_322);
     _el_323 = createDivAndAppend(doc, parentRenderNode);
+    _el_323.className = 'bad curly special';
     addShimC(_el_323);
-    import4.Text _text_324 = new import4.Text('This class binding is special too');
+    import4.Text _text_324 = new import4.Text('Bad curly special');
     _el_323.append(_text_324);
-    _el_325 = createAndAppend(doc, 'a', parentRenderNode);
-    _el_325.className = 'to-toc';
-    createAttr(_el_325, 'href', '#toc');
+    _el_325 = createDivAndAppend(doc, parentRenderNode);
+    _el_325.className = 'bad curly special';
     addShimC(_el_325);
-    import4.Text _text_326 = new import4.Text('top');
+    import4.Text _text_326 = new import4.Text('Bad curly');
     _el_325.append(_text_326);
-    _el_327 = createAndAppend(doc, 'hr', parentRenderNode);
-    addShimE(_el_327);
-    _el_328 = createAndAppend(doc, 'h2', parentRenderNode);
-    createAttr(_el_328, 'id', 'style-binding');
-    addShimE(_el_328);
-    import4.Text _text_329 = new import4.Text('Style Binding');
-    _el_328.append(_text_329);
-    _el_330 = createAndAppend(doc, 'button', parentRenderNode);
-    addShimC(_el_330);
-    import4.Text _text_331 = new import4.Text('Red');
-    _el_330.append(_text_331);
-    _el_332 = createAndAppend(doc, 'button', parentRenderNode);
-    addShimC(_el_332);
-    import4.Text _text_333 = new import4.Text('Save');
-    _el_332.append(_text_333);
-    _el_334 = createAndAppend(doc, 'button', parentRenderNode);
-    addShimC(_el_334);
-    import4.Text _text_335 = new import4.Text('Big');
-    _el_334.append(_text_335);
-    _el_336 = createAndAppend(doc, 'button', parentRenderNode);
-    addShimC(_el_336);
-    import4.Text _text_337 = new import4.Text('Small');
+    _el_327 = createDivAndAppend(doc, parentRenderNode);
+    addShimC(_el_327);
+    import4.Text _text_328 = new import4.Text('The class binding is special');
+    _el_327.append(_text_328);
+    _el_329 = createDivAndAppend(doc, parentRenderNode);
+    _el_329.className = 'special';
+    addShimC(_el_329);
+    import4.Text _text_330 = new import4.Text('This one is not so special');
+    _el_329.append(_text_330);
+    _el_331 = createDivAndAppend(doc, parentRenderNode);
+    addShimC(_el_331);
+    import4.Text _text_332 = new import4.Text('This class binding is special too');
+    _el_331.append(_text_332);
+    _el_333 = createAndAppend(doc, 'a', parentRenderNode);
+    _el_333.className = 'to-toc';
+    createAttr(_el_333, 'href', '#toc');
+    addShimC(_el_333);
+    import4.Text _text_334 = new import4.Text('top');
+    _el_333.append(_text_334);
+    _el_335 = createAndAppend(doc, 'hr', parentRenderNode);
+    addShimE(_el_335);
+    _el_336 = createAndAppend(doc, 'h2', parentRenderNode);
+    createAttr(_el_336, 'id', 'style-binding');
+    addShimE(_el_336);
+    import4.Text _text_337 = new import4.Text('Style Binding');
     _el_336.append(_text_337);
-    _el_338 = createAndAppend(doc, 'a', parentRenderNode);
-    _el_338.className = 'to-toc';
-    createAttr(_el_338, 'href', '#toc');
+    _el_338 = createAndAppend(doc, 'button', parentRenderNode);
     addShimC(_el_338);
-    import4.Text _text_339 = new import4.Text('top');
+    import4.Text _text_339 = new import4.Text('Red');
     _el_338.append(_text_339);
-    _el_340 = createAndAppend(doc, 'hr', parentRenderNode);
-    addShimE(_el_340);
-    _el_341 = createAndAppend(doc, 'h2', parentRenderNode);
-    createAttr(_el_341, 'id', 'event-binding');
-    addShimE(_el_341);
-    import4.Text _text_342 = new import4.Text('Event Binding');
-    _el_341.append(_text_342);
-    _el_343 = createAndAppend(doc, 'button', parentRenderNode);
-    addShimC(_el_343);
-    import4.Text _text_344 = new import4.Text('Save');
-    _el_343.append(_text_344);
-    _el_345 = createAndAppend(doc, 'button', parentRenderNode);
-    addShimC(_el_345);
-    import4.Text _text_346 = new import4.Text('On Save');
-    _el_345.append(_text_346);
-    _el_347 = createDivAndAppend(doc, parentRenderNode);
-    addShimC(_el_347);
-    _el_348 = createDivAndAppend(doc, _el_347);
-    createAttr(_el_348, 'clickable', '');
-    addShimC(_el_348);
-    _ClickDirective_348_4 = new import11.ClickDirective(_el_348);
-    import4.Text _text_349 = new import4.Text('click with myClick');
-    _el_348.append(_text_349);
-    _text_350 = new import4.Text('');
-    _el_347.append(_text_350);
-    _compView_351 = new import8.ViewHeroDetailComponent0(this, 351);
-    _el_351 = _compView_351.rootEl;
-    parentRenderNode.append(_el_351);
+    _el_340 = createAndAppend(doc, 'button', parentRenderNode);
+    addShimC(_el_340);
+    import4.Text _text_341 = new import4.Text('Save');
+    _el_340.append(_text_341);
+    _el_342 = createAndAppend(doc, 'button', parentRenderNode);
+    addShimC(_el_342);
+    import4.Text _text_343 = new import4.Text('Big');
+    _el_342.append(_text_343);
+    _el_344 = createAndAppend(doc, 'button', parentRenderNode);
+    addShimC(_el_344);
+    import4.Text _text_345 = new import4.Text('Small');
+    _el_344.append(_text_345);
+    _el_346 = createAndAppend(doc, 'a', parentRenderNode);
+    _el_346.className = 'to-toc';
+    createAttr(_el_346, 'href', '#toc');
+    addShimC(_el_346);
+    import4.Text _text_347 = new import4.Text('top');
+    _el_346.append(_text_347);
+    _el_348 = createAndAppend(doc, 'hr', parentRenderNode);
+    addShimE(_el_348);
+    _el_349 = createAndAppend(doc, 'h2', parentRenderNode);
+    createAttr(_el_349, 'id', 'event-binding');
+    addShimE(_el_349);
+    import4.Text _text_350 = new import4.Text('Event Binding');
+    _el_349.append(_text_350);
+    _el_351 = createAndAppend(doc, 'button', parentRenderNode);
     addShimC(_el_351);
-    _HeroDetailComponent_351_4 = new import9.HeroDetailComponent();
-    _compView_351.create(_HeroDetailComponent_351_4, []);
-    _el_352 = createAndAppend(doc, 'br', parentRenderNode);
-    addShimE(_el_352);
-    _compView_353 = new import8.ViewBigHeroDetailComponent0(this, 353);
-    _el_353 = _compView_353.rootEl;
-    parentRenderNode.append(_el_353);
+    import4.Text _text_352 = new import4.Text('Save');
+    _el_351.append(_text_352);
+    _el_353 = createAndAppend(doc, 'button', parentRenderNode);
     addShimC(_el_353);
-    _BigHeroDetailComponent_353_4 = new import9.BigHeroDetailComponent();
-    _compView_353.create(_BigHeroDetailComponent_353_4, []);
-    _el_354 = createDivAndAppend(doc, parentRenderNode);
-    _el_354.className = 'parent-div';
-    createAttr(_el_354, 'clickable', '');
-    addShimC(_el_354);
-    import4.Text _text_355 = new import4.Text('Click me');
-    _el_354.append(_text_355);
-    _el_356 = createDivAndAppend(doc, _el_354);
-    _el_356.className = 'child-div';
+    import4.Text _text_354 = new import4.Text('On Save');
+    _el_353.append(_text_354);
+    _el_355 = createDivAndAppend(doc, parentRenderNode);
+    addShimC(_el_355);
+    _el_356 = createDivAndAppend(doc, _el_355);
+    createAttr(_el_356, 'clickable', '');
     addShimC(_el_356);
-    import4.Text _text_357 = new import4.Text('Click me too!');
+    _ClickDirective_356_4 = new import11.ClickDirective(_el_356);
+    import4.Text _text_357 = new import4.Text('click with myClick');
     _el_356.append(_text_357);
-    _el_358 = createDivAndAppend(doc, parentRenderNode);
-    createAttr(_el_358, 'clickable', '');
-    addShimC(_el_358);
-    _el_359 = createAndAppend(doc, 'button', _el_358);
+    _text_358 = new import4.Text('');
+    _el_355.append(_text_358);
+    _compView_359 = new import8.ViewHeroDetailComponent0(this, 359);
+    _el_359 = _compView_359.rootEl;
+    parentRenderNode.append(_el_359);
     addShimC(_el_359);
-    import4.Text _text_360 = new import4.Text('Save, no propagation');
-    _el_359.append(_text_360);
-    _el_361 = createDivAndAppend(doc, parentRenderNode);
-    createAttr(_el_361, 'clickable', '');
+    _HeroDetailComponent_359_4 = new import9.HeroDetailComponent();
+    _compView_359.create(_HeroDetailComponent_359_4, []);
+    _el_360 = createAndAppend(doc, 'br', parentRenderNode);
+    addShimE(_el_360);
+    _compView_361 = new import8.ViewBigHeroDetailComponent0(this, 361);
+    _el_361 = _compView_361.rootEl;
+    parentRenderNode.append(_el_361);
     addShimC(_el_361);
-    _el_362 = createAndAppend(doc, 'button', _el_361);
+    _BigHeroDetailComponent_361_4 = new import9.BigHeroDetailComponent();
+    _compView_361.create(_BigHeroDetailComponent_361_4, []);
+    _el_362 = createDivAndAppend(doc, parentRenderNode);
+    _el_362.className = 'parent-div';
+    createAttr(_el_362, 'clickable', '');
     addShimC(_el_362);
-    import4.Text _text_363 = new import4.Text('Save w/ propagation');
+    import4.Text _text_363 = new import4.Text('Click me');
     _el_362.append(_text_363);
-    _el_364 = createAndAppend(doc, 'a', parentRenderNode);
-    _el_364.className = 'to-toc';
-    createAttr(_el_364, 'href', '#toc');
+    _el_364 = createDivAndAppend(doc, _el_362);
+    _el_364.className = 'child-div';
     addShimC(_el_364);
-    import4.Text _text_365 = new import4.Text('top');
+    import4.Text _text_365 = new import4.Text('Click me too!');
     _el_364.append(_text_365);
-    _el_366 = createAndAppend(doc, 'hr', parentRenderNode);
-    addShimE(_el_366);
-    _el_367 = createAndAppend(doc, 'h2', parentRenderNode);
-    createAttr(_el_367, 'id', 'two-way');
-    addShimE(_el_367);
-    import4.Text _text_368 = new import4.Text('Two-way Binding');
+    _el_366 = createDivAndAppend(doc, parentRenderNode);
+    createAttr(_el_366, 'clickable', '');
+    addShimC(_el_366);
+    _el_367 = createAndAppend(doc, 'button', _el_366);
+    addShimC(_el_367);
+    import4.Text _text_368 = new import4.Text('Save, no propagation');
     _el_367.append(_text_368);
     _el_369 = createDivAndAppend(doc, parentRenderNode);
-    createAttr(_el_369, 'id', 'two-way-1');
+    createAttr(_el_369, 'clickable', '');
     addShimC(_el_369);
-    _compView_370 = new import14.ViewSizerComponent0(this, 370);
-    _el_370 = _compView_370.rootEl;
-    _el_369.append(_el_370);
+    _el_370 = createAndAppend(doc, 'button', _el_369);
     addShimC(_el_370);
-    _SizerComponent_370_4 = new import15.SizerComponent();
-    _compView_370.create(_SizerComponent_370_4, []);
-    _el_371 = createDivAndAppend(doc, _el_369);
-    addShimC(_el_371);
-    import4.Text _text_372 = new import4.Text('Resizable Text');
-    _el_371.append(_text_372);
-    _el_373 = createAndAppend(doc, 'label', _el_369);
-    addShimE(_el_373);
-    import4.Text _text_374 = new import4.Text('FontSize (px):');
-    _el_373.append(_text_374);
-    _el_375 = createAndAppend(doc, 'input', _el_373);
-    addShimC(_el_375);
-    _DefaultValueAccessor_375_4 = new import12.DefaultValueAccessor(_el_375);
-    _NgValueAccessor_375_5 = [_DefaultValueAccessor_375_4];
-    _NgModel_375_6 = new import13.NgModel(null, _NgValueAccessor_375_5);
-    _text_376 = new import4.Text('');
-    _el_373.append(_text_376);
-    _el_377 = createAndAppend(doc, 'br', parentRenderNode);
-    addShimE(_el_377);
-    _el_378 = createDivAndAppend(doc, parentRenderNode);
-    createAttr(_el_378, 'id', 'two-way-2');
+    import4.Text _text_371 = new import4.Text('Save w/ propagation');
+    _el_370.append(_text_371);
+    _el_372 = createAndAppend(doc, 'a', parentRenderNode);
+    _el_372.className = 'to-toc';
+    createAttr(_el_372, 'href', '#toc');
+    addShimC(_el_372);
+    import4.Text _text_373 = new import4.Text('top');
+    _el_372.append(_text_373);
+    _el_374 = createAndAppend(doc, 'hr', parentRenderNode);
+    addShimE(_el_374);
+    _el_375 = createAndAppend(doc, 'h2', parentRenderNode);
+    createAttr(_el_375, 'id', 'two-way');
+    addShimE(_el_375);
+    import4.Text _text_376 = new import4.Text('Two-way Binding');
+    _el_375.append(_text_376);
+    _el_377 = createDivAndAppend(doc, parentRenderNode);
+    createAttr(_el_377, 'id', 'two-way-1');
+    addShimC(_el_377);
+    _compView_378 = new import14.ViewSizerComponent0(this, 378);
+    _el_378 = _compView_378.rootEl;
+    _el_377.append(_el_378);
     addShimC(_el_378);
-    _el_379 = createAndAppend(doc, 'h3', _el_378);
-    addShimE(_el_379);
-    import4.Text _text_380 = new import4.Text('De-sugared two-way binding');
+    _SizerComponent_378_4 = new import15.SizerComponent();
+    _compView_378.create(_SizerComponent_378_4, []);
+    _el_379 = createDivAndAppend(doc, _el_377);
+    addShimC(_el_379);
+    import4.Text _text_380 = new import4.Text('Resizable Text');
     _el_379.append(_text_380);
-    _compView_381 = new import14.ViewSizerComponent0(this, 381);
-    _el_381 = _compView_381.rootEl;
-    _el_378.append(_el_381);
-    addShimC(_el_381);
-    _SizerComponent_381_4 = new import15.SizerComponent();
-    _compView_381.create(_SizerComponent_381_4, []);
-    _el_382 = createAndAppend(doc, 'a', parentRenderNode);
-    _el_382.className = 'to-toc';
-    createAttr(_el_382, 'href', '#toc');
-    addShimC(_el_382);
-    import4.Text _text_383 = new import4.Text('top');
-    _el_382.append(_text_383);
-    _el_384 = createAndAppend(doc, 'hr', parentRenderNode);
-    addShimE(_el_384);
-    _el_385 = createAndAppend(doc, 'h2', parentRenderNode);
-    createAttr(_el_385, 'id', 'ngModel');
-    addShimE(_el_385);
-    import4.Text _text_386 = new import4.Text('NgModel (two-way) Binding');
-    _el_385.append(_text_386);
-    _el_387 = createAndAppend(doc, 'h3', parentRenderNode);
-    addShimE(_el_387);
-    _text_388 = new import4.Text('');
-    _el_387.append(_text_388);
-    _el_389 = createAndAppend(doc, 'input', parentRenderNode);
-    addShimC(_el_389);
-    import4.Text _text_390 = new import4.Text('without NgModel');
-    parentRenderNode.append(_text_390);
-    _el_391 = createAndAppend(doc, 'br', parentRenderNode);
-    addShimE(_el_391);
-    _el_392 = createAndAppend(doc, 'input', parentRenderNode);
-    addShimC(_el_392);
-    _DefaultValueAccessor_392_4 = new import12.DefaultValueAccessor(_el_392);
-    _NgValueAccessor_392_5 = [_DefaultValueAccessor_392_4];
-    _NgModel_392_6 = new import13.NgModel(null, _NgValueAccessor_392_5);
-    import4.Text _text_393 = new import4.Text('[(ngModel)]');
-    parentRenderNode.append(_text_393);
-    _el_394 = createAndAppend(doc, 'br', parentRenderNode);
+    _el_381 = createAndAppend(doc, 'label', _el_377);
+    addShimE(_el_381);
+    import4.Text _text_382 = new import4.Text('FontSize (px):');
+    _el_381.append(_text_382);
+    _el_383 = createAndAppend(doc, 'input', _el_381);
+    addShimC(_el_383);
+    _DefaultValueAccessor_383_4 = new import12.DefaultValueAccessor(_el_383);
+    _NgValueAccessor_383_5 = [_DefaultValueAccessor_383_4];
+    _NgModel_383_6 = new import13.NgModel(null, _NgValueAccessor_383_5);
+    import4.Text _text_384 = new import4.Text(' ');
+    _el_381.append(_text_384);
+    _text_385 = new import4.Text('');
+    _el_381.append(_text_385);
+    _el_386 = createAndAppend(doc, 'br', parentRenderNode);
+    addShimE(_el_386);
+    _el_387 = createDivAndAppend(doc, parentRenderNode);
+    createAttr(_el_387, 'id', 'two-way-2');
+    addShimC(_el_387);
+    _el_388 = createAndAppend(doc, 'h3', _el_387);
+    addShimE(_el_388);
+    import4.Text _text_389 = new import4.Text('De-sugared two-way binding');
+    _el_388.append(_text_389);
+    _compView_390 = new import14.ViewSizerComponent0(this, 390);
+    _el_390 = _compView_390.rootEl;
+    _el_387.append(_el_390);
+    addShimC(_el_390);
+    _SizerComponent_390_4 = new import15.SizerComponent();
+    _compView_390.create(_SizerComponent_390_4, []);
+    _el_391 = createAndAppend(doc, 'a', parentRenderNode);
+    _el_391.className = 'to-toc';
+    createAttr(_el_391, 'href', '#toc');
+    addShimC(_el_391);
+    import4.Text _text_392 = new import4.Text('top');
+    _el_391.append(_text_392);
+    _el_393 = createAndAppend(doc, 'hr', parentRenderNode);
+    addShimE(_el_393);
+    _el_394 = createAndAppend(doc, 'h2', parentRenderNode);
+    createAttr(_el_394, 'id', 'ngModel');
     addShimE(_el_394);
-    _el_395 = createAndAppend(doc, 'input', parentRenderNode);
-    addShimC(_el_395);
-    _DefaultValueAccessor_395_4 = new import12.DefaultValueAccessor(_el_395);
-    _NgValueAccessor_395_5 = [_DefaultValueAccessor_395_4];
-    _NgModel_395_6 = new import13.NgModel(null, _NgValueAccessor_395_5);
-    import4.Text _text_396 = new import4.Text('bindon-ngModel');
-    parentRenderNode.append(_text_396);
-    _el_397 = createAndAppend(doc, 'br', parentRenderNode);
-    addShimE(_el_397);
-    _el_398 = createAndAppend(doc, 'input', parentRenderNode);
-    addShimC(_el_398);
-    _DefaultValueAccessor_398_4 = new import12.DefaultValueAccessor(_el_398);
-    _NgValueAccessor_398_5 = [_DefaultValueAccessor_398_4];
-    _NgModel_398_6 = new import13.NgModel(null, _NgValueAccessor_398_5);
-    import4.Text _text_399 = new import4.Text('(ngModelChange)="...name=\$event"');
-    parentRenderNode.append(_text_399);
-    _el_400 = createAndAppend(doc, 'br', parentRenderNode);
-    addShimE(_el_400);
-    _el_401 = createAndAppend(doc, 'input', parentRenderNode);
-    addShimC(_el_401);
-    _DefaultValueAccessor_401_4 = new import12.DefaultValueAccessor(_el_401);
-    _NgValueAccessor_401_5 = [_DefaultValueAccessor_401_4];
-    _NgModel_401_6 = new import13.NgModel(null, _NgValueAccessor_401_5);
-    import4.Text _text_402 = new import4.Text('(ngModelChange)="setUppercaseName(\$event)"');
-    parentRenderNode.append(_text_402);
-    _el_403 = createAndAppend(doc, 'a', parentRenderNode);
-    _el_403.className = 'to-toc';
-    createAttr(_el_403, 'href', '#toc');
-    addShimC(_el_403);
-    import4.Text _text_404 = new import4.Text('top');
-    _el_403.append(_text_404);
-    _el_405 = createAndAppend(doc, 'hr', parentRenderNode);
-    addShimE(_el_405);
-    _el_406 = createAndAppend(doc, 'h2', parentRenderNode);
-    createAttr(_el_406, 'id', 'ngClass');
-    addShimE(_el_406);
-    import4.Text _text_407 = new import4.Text('NgClass Binding');
-    _el_406.append(_text_407);
-    _el_408 = createAndAppend(doc, 'p', parentRenderNode);
-    addShimE(_el_408);
-    _text_409 = new import4.Text('');
-    _el_408.append(_text_409);
-    _el_410 = createDivAndAppend(doc, parentRenderNode);
+    import4.Text _text_395 = new import4.Text('NgModel (two-way) Binding');
+    _el_394.append(_text_395);
+    _el_396 = createAndAppend(doc, 'h3', parentRenderNode);
+    addShimE(_el_396);
+    import4.Text _text_397 = new import4.Text('Result: ');
+    _el_396.append(_text_397);
+    _text_398 = new import4.Text('');
+    _el_396.append(_text_398);
+    _el_399 = createAndAppend(doc, 'input', parentRenderNode);
+    addShimC(_el_399);
+    import4.Text _text_400 = new import4.Text('without NgModel');
+    parentRenderNode.append(_text_400);
+    _el_401 = createAndAppend(doc, 'br', parentRenderNode);
+    addShimE(_el_401);
+    _el_402 = createAndAppend(doc, 'input', parentRenderNode);
+    addShimC(_el_402);
+    _DefaultValueAccessor_402_4 = new import12.DefaultValueAccessor(_el_402);
+    _NgValueAccessor_402_5 = [_DefaultValueAccessor_402_4];
+    _NgModel_402_6 = new import13.NgModel(null, _NgValueAccessor_402_5);
+    import4.Text _text_403 = new import4.Text('[(ngModel)]');
+    parentRenderNode.append(_text_403);
+    _el_404 = createAndAppend(doc, 'br', parentRenderNode);
+    addShimE(_el_404);
+    _el_405 = createAndAppend(doc, 'input', parentRenderNode);
+    addShimC(_el_405);
+    _DefaultValueAccessor_405_4 = new import12.DefaultValueAccessor(_el_405);
+    _NgValueAccessor_405_5 = [_DefaultValueAccessor_405_4];
+    _NgModel_405_6 = new import13.NgModel(null, _NgValueAccessor_405_5);
+    import4.Text _text_406 = new import4.Text('(ngModelChange)="...name=\$event"');
+    parentRenderNode.append(_text_406);
+    _el_407 = createAndAppend(doc, 'br', parentRenderNode);
+    addShimE(_el_407);
+    _el_408 = createAndAppend(doc, 'input', parentRenderNode);
+    addShimC(_el_408);
+    _DefaultValueAccessor_408_4 = new import12.DefaultValueAccessor(_el_408);
+    _NgValueAccessor_408_5 = [_DefaultValueAccessor_408_4];
+    _NgModel_408_6 = new import13.NgModel(null, _NgValueAccessor_408_5);
+    import4.Text _text_409 = new import4.Text('(ngModelChange)="setUppercaseName(\$event)"');
+    parentRenderNode.append(_text_409);
+    _el_410 = createAndAppend(doc, 'a', parentRenderNode);
+    _el_410.className = 'to-toc';
+    createAttr(_el_410, 'href', '#toc');
     addShimC(_el_410);
-    _NgClass_410_4 = new import10.NgClass(_el_410);
-    import4.Text _text_411 = new import4.Text('This div is initially saveable, unchanged, and special');
+    import4.Text _text_411 = new import4.Text('top');
     _el_410.append(_text_411);
-    _el_412 = createAndAppend(doc, 'br', parentRenderNode);
+    _el_412 = createAndAppend(doc, 'hr', parentRenderNode);
     addShimE(_el_412);
-    _el_413 = createAndAppend(doc, 'label', parentRenderNode);
+    _el_413 = createAndAppend(doc, 'h2', parentRenderNode);
+    createAttr(_el_413, 'id', 'ngClass');
     addShimE(_el_413);
-    import4.Text _text_414 = new import4.Text('saveable');
+    import4.Text _text_414 = new import4.Text('NgClass Binding');
     _el_413.append(_text_414);
-    _el_415 = createAndAppend(doc, 'input', _el_413);
-    createAttr(_el_415, 'type', 'checkbox');
-    addShimC(_el_415);
-    _CheckboxControlValueAccessor_415_4 = new import16.CheckboxControlValueAccessor(_el_415);
-    _NgValueAccessor_415_5 = [_CheckboxControlValueAccessor_415_4];
-    _NgModel_415_6 = new import13.NgModel(null, _NgValueAccessor_415_5);
-    import4.Text _text_416 = new import4.Text('|');
-    parentRenderNode.append(_text_416);
-    _el_417 = createAndAppend(doc, 'label', parentRenderNode);
-    addShimE(_el_417);
-    import4.Text _text_418 = new import4.Text('modified:');
-    _el_417.append(_text_418);
-    _el_419 = createAndAppend(doc, 'input', _el_417);
-    createAttr(_el_419, 'type', 'checkbox');
-    addShimC(_el_419);
-    import4.Text _text_420 = new import4.Text('|');
-    parentRenderNode.append(_text_420);
+    _el_415 = createAndAppend(doc, 'p', parentRenderNode);
+    addShimE(_el_415);
+    import4.Text _text_416 = new import4.Text('currentClasses is ');
+    _el_415.append(_text_416);
+    _text_417 = new import4.Text('');
+    _el_415.append(_text_417);
+    _el_418 = createDivAndAppend(doc, parentRenderNode);
+    addShimC(_el_418);
+    _NgClass_418_4 = new import10.NgClass(_el_418);
+    import4.Text _text_419 = new import4.Text('This div is initially saveable, unchanged, and special');
+    _el_418.append(_text_419);
+    _el_420 = createAndAppend(doc, 'br', parentRenderNode);
+    addShimE(_el_420);
     _el_421 = createAndAppend(doc, 'label', parentRenderNode);
     addShimE(_el_421);
-    import4.Text _text_422 = new import4.Text('special:');
+    import4.Text _text_422 = new import4.Text('saveable');
     _el_421.append(_text_422);
     _el_423 = createAndAppend(doc, 'input', _el_421);
     createAttr(_el_423, 'type', 'checkbox');
@@ -1779,181 +1749,164 @@ class ViewAppComponent0 extends AppView<import2.AppComponent> {
     _CheckboxControlValueAccessor_423_4 = new import16.CheckboxControlValueAccessor(_el_423);
     _NgValueAccessor_423_5 = [_CheckboxControlValueAccessor_423_4];
     _NgModel_423_6 = new import13.NgModel(null, _NgValueAccessor_423_5);
-    _el_424 = createAndAppend(doc, 'button', parentRenderNode);
-    addShimC(_el_424);
-    import4.Text _text_425 = new import4.Text('Refresh currentClasses');
-    _el_424.append(_text_425);
-    _el_426 = createAndAppend(doc, 'br', parentRenderNode);
-    addShimE(_el_426);
-    _el_427 = createAndAppend(doc, 'br', parentRenderNode);
-    addShimE(_el_427);
-    _el_428 = createDivAndAppend(doc, parentRenderNode);
-    addShimC(_el_428);
-    _NgClass_428_4 = new import10.NgClass(_el_428);
-    _text_429 = new import4.Text('');
-    _el_428.append(_text_429);
-    _el_430 = createAndAppend(doc, 'br', parentRenderNode);
-    addShimE(_el_430);
-    _el_431 = createAndAppend(doc, 'br', parentRenderNode);
-    addShimE(_el_431);
-    _el_432 = createDivAndAppend(doc, parentRenderNode);
+    import4.Text _text_424 = new import4.Text('|');
+    parentRenderNode.append(_text_424);
+    _el_425 = createAndAppend(doc, 'label', parentRenderNode);
+    addShimE(_el_425);
+    import4.Text _text_426 = new import4.Text('modified:');
+    _el_425.append(_text_426);
+    _el_427 = createAndAppend(doc, 'input', _el_425);
+    createAttr(_el_427, 'type', 'checkbox');
+    addShimC(_el_427);
+    import4.Text _text_428 = new import4.Text('|');
+    parentRenderNode.append(_text_428);
+    _el_429 = createAndAppend(doc, 'label', parentRenderNode);
+    addShimE(_el_429);
+    import4.Text _text_430 = new import4.Text('special:');
+    _el_429.append(_text_430);
+    _el_431 = createAndAppend(doc, 'input', _el_429);
+    createAttr(_el_431, 'type', 'checkbox');
+    addShimC(_el_431);
+    _CheckboxControlValueAccessor_431_4 = new import16.CheckboxControlValueAccessor(_el_431);
+    _NgValueAccessor_431_5 = [_CheckboxControlValueAccessor_431_4];
+    _NgModel_431_6 = new import13.NgModel(null, _NgValueAccessor_431_5);
+    _el_432 = createAndAppend(doc, 'button', parentRenderNode);
     addShimC(_el_432);
-    _NgClass_432_4 = new import10.NgClass(_el_432);
-    import4.Text _text_433 = new import4.Text('This div is special');
+    import4.Text _text_433 = new import4.Text('Refresh currentClasses');
     _el_432.append(_text_433);
-    _el_434 = createDivAndAppend(doc, parentRenderNode);
-    _el_434.className = 'bad curly special';
-    addShimC(_el_434);
-    import4.Text _text_435 = new import4.Text('Bad curly special');
-    _el_434.append(_text_435);
+    _el_434 = createAndAppend(doc, 'br', parentRenderNode);
+    addShimE(_el_434);
+    _el_435 = createAndAppend(doc, 'br', parentRenderNode);
+    addShimE(_el_435);
     _el_436 = createDivAndAppend(doc, parentRenderNode);
     addShimC(_el_436);
     _NgClass_436_4 = new import10.NgClass(_el_436);
-    import4.Text _text_437 = new import4.Text('Curly special');
+    import4.Text _text_437 = new import4.Text('This div should be ');
     _el_436.append(_text_437);
-    _el_438 = createAndAppend(doc, 'a', parentRenderNode);
-    _el_438.className = 'to-toc';
-    createAttr(_el_438, 'href', '#toc');
-    addShimC(_el_438);
-    import4.Text _text_439 = new import4.Text('top');
-    _el_438.append(_text_439);
-    _el_440 = createAndAppend(doc, 'hr', parentRenderNode);
-    addShimE(_el_440);
-    _el_441 = createAndAppend(doc, 'h2', parentRenderNode);
-    createAttr(_el_441, 'id', 'ngStyle');
-    addShimE(_el_441);
-    import4.Text _text_442 = new import4.Text('NgStyle Binding');
-    _el_441.append(_text_442);
-    _el_443 = createDivAndAppend(doc, parentRenderNode);
-    addShimC(_el_443);
-    import4.Text _text_444 = new import4.Text('This div is x-large or smaller.');
-    _el_443.append(_text_444);
-    _el_445 = createAndAppend(doc, 'h3', parentRenderNode);
+    _text_438 = new import4.Text('');
+    _el_436.append(_text_438);
+    import4.Text _text_439 = new import4.Text(' saveable,\n                  ');
+    _el_436.append(_text_439);
+    _text_440 = new import4.Text('');
+    _el_436.append(_text_440);
+    import4.Text _text_441 = new import4.Text(' and,\n                  ');
+    _el_436.append(_text_441);
+    _text_442 = new import4.Text('');
+    _el_436.append(_text_442);
+    import4.Text _text_443 = new import4.Text(' special after clicking "Refresh".');
+    _el_436.append(_text_443);
+    _el_444 = createAndAppend(doc, 'br', parentRenderNode);
+    addShimE(_el_444);
+    _el_445 = createAndAppend(doc, 'br', parentRenderNode);
     addShimE(_el_445);
-    import4.Text _text_446 = new import4.Text('[ngStyle] binding to currentStyles - CSS property names');
-    _el_445.append(_text_446);
-    _el_447 = createAndAppend(doc, 'p', parentRenderNode);
-    addShimE(_el_447);
-    _text_448 = new import4.Text('');
-    _el_447.append(_text_448);
-    _el_449 = createDivAndAppend(doc, parentRenderNode);
-    addShimC(_el_449);
-    _NgStyle_449_4 = new import17.NgStyle(_el_449);
-    import4.Text _text_450 = new import4.Text('This div is initially italic, normal weight, and extra large (24px).');
-    _el_449.append(_text_450);
-    _el_451 = createAndAppend(doc, 'br', parentRenderNode);
-    addShimE(_el_451);
-    _el_452 = createAndAppend(doc, 'label', parentRenderNode);
-    addShimE(_el_452);
-    import4.Text _text_453 = new import4.Text('italic:');
+    _el_446 = createDivAndAppend(doc, parentRenderNode);
+    addShimC(_el_446);
+    _NgClass_446_4 = new import10.NgClass(_el_446);
+    import4.Text _text_447 = new import4.Text('This div is special');
+    _el_446.append(_text_447);
+    _el_448 = createDivAndAppend(doc, parentRenderNode);
+    _el_448.className = 'bad curly special';
+    addShimC(_el_448);
+    import4.Text _text_449 = new import4.Text('Bad curly special');
+    _el_448.append(_text_449);
+    _el_450 = createDivAndAppend(doc, parentRenderNode);
+    addShimC(_el_450);
+    _NgClass_450_4 = new import10.NgClass(_el_450);
+    import4.Text _text_451 = new import4.Text('Curly special');
+    _el_450.append(_text_451);
+    _el_452 = createAndAppend(doc, 'a', parentRenderNode);
+    _el_452.className = 'to-toc';
+    createAttr(_el_452, 'href', '#toc');
+    addShimC(_el_452);
+    import4.Text _text_453 = new import4.Text('top');
     _el_452.append(_text_453);
-    _el_454 = createAndAppend(doc, 'input', _el_452);
-    createAttr(_el_454, 'type', 'checkbox');
-    addShimC(_el_454);
-    _CheckboxControlValueAccessor_454_4 = new import16.CheckboxControlValueAccessor(_el_454);
-    _NgValueAccessor_454_5 = [_CheckboxControlValueAccessor_454_4];
-    _NgModel_454_6 = new import13.NgModel(null, _NgValueAccessor_454_5);
-    import4.Text _text_455 = new import4.Text('|');
-    parentRenderNode.append(_text_455);
-    _el_456 = createAndAppend(doc, 'label', parentRenderNode);
-    addShimE(_el_456);
-    import4.Text _text_457 = new import4.Text('normal:');
-    _el_456.append(_text_457);
-    _el_458 = createAndAppend(doc, 'input', _el_456);
-    createAttr(_el_458, 'type', 'checkbox');
-    addShimC(_el_458);
-    _CheckboxControlValueAccessor_458_4 = new import16.CheckboxControlValueAccessor(_el_458);
-    _NgValueAccessor_458_5 = [_CheckboxControlValueAccessor_458_4];
-    _NgModel_458_6 = new import13.NgModel(null, _NgValueAccessor_458_5);
-    import4.Text _text_459 = new import4.Text('|');
-    parentRenderNode.append(_text_459);
-    _el_460 = createAndAppend(doc, 'label', parentRenderNode);
-    addShimE(_el_460);
-    import4.Text _text_461 = new import4.Text('xlarge:');
-    _el_460.append(_text_461);
-    _el_462 = createAndAppend(doc, 'input', _el_460);
-    createAttr(_el_462, 'type', 'checkbox');
-    addShimC(_el_462);
-    _CheckboxControlValueAccessor_462_4 = new import16.CheckboxControlValueAccessor(_el_462);
-    _NgValueAccessor_462_5 = [_CheckboxControlValueAccessor_462_4];
-    _NgModel_462_6 = new import13.NgModel(null, _NgValueAccessor_462_5);
-    _el_463 = createAndAppend(doc, 'button', parentRenderNode);
-    addShimC(_el_463);
-    import4.Text _text_464 = new import4.Text('Refresh currentStyles');
-    _el_463.append(_text_464);
-    _el_465 = createAndAppend(doc, 'br', parentRenderNode);
-    addShimE(_el_465);
+    _el_454 = createAndAppend(doc, 'hr', parentRenderNode);
+    addShimE(_el_454);
+    _el_455 = createAndAppend(doc, 'h2', parentRenderNode);
+    createAttr(_el_455, 'id', 'ngStyle');
+    addShimE(_el_455);
+    import4.Text _text_456 = new import4.Text('NgStyle Binding');
+    _el_455.append(_text_456);
+    _el_457 = createDivAndAppend(doc, parentRenderNode);
+    addShimC(_el_457);
+    import4.Text _text_458 = new import4.Text('This div is x-large or smaller.');
+    _el_457.append(_text_458);
+    _el_459 = createAndAppend(doc, 'h3', parentRenderNode);
+    addShimE(_el_459);
+    import4.Text _text_460 = new import4.Text('[ngStyle] binding to currentStyles - CSS property names');
+    _el_459.append(_text_460);
+    _el_461 = createAndAppend(doc, 'p', parentRenderNode);
+    addShimE(_el_461);
+    import4.Text _text_462 = new import4.Text('currentStyles is ');
+    _el_461.append(_text_462);
+    _text_463 = new import4.Text('');
+    _el_461.append(_text_463);
+    _el_464 = createDivAndAppend(doc, parentRenderNode);
+    addShimC(_el_464);
+    _NgStyle_464_4 = new import17.NgStyle(_el_464);
+    import4.Text _text_465 = new import4.Text('This div is initially italic, normal weight, and extra large (24px).');
+    _el_464.append(_text_465);
     _el_466 = createAndAppend(doc, 'br', parentRenderNode);
     addShimE(_el_466);
-    _el_467 = createDivAndAppend(doc, parentRenderNode);
-    addShimC(_el_467);
-    _NgStyle_467_4 = new import17.NgStyle(_el_467);
-    _text_468 = new import4.Text('');
+    _el_467 = createAndAppend(doc, 'label', parentRenderNode);
+    addShimE(_el_467);
+    import4.Text _text_468 = new import4.Text('italic:');
     _el_467.append(_text_468);
-    _el_469 = createAndAppend(doc, 'a', parentRenderNode);
-    _el_469.className = 'to-toc';
-    createAttr(_el_469, 'href', '#toc');
+    _el_469 = createAndAppend(doc, 'input', _el_467);
+    createAttr(_el_469, 'type', 'checkbox');
     addShimC(_el_469);
-    import4.Text _text_470 = new import4.Text('top');
-    _el_469.append(_text_470);
-    _el_471 = createAndAppend(doc, 'hr', parentRenderNode);
+    _CheckboxControlValueAccessor_469_4 = new import16.CheckboxControlValueAccessor(_el_469);
+    _NgValueAccessor_469_5 = [_CheckboxControlValueAccessor_469_4];
+    _NgModel_469_6 = new import13.NgModel(null, _NgValueAccessor_469_5);
+    import4.Text _text_470 = new import4.Text('|');
+    parentRenderNode.append(_text_470);
+    _el_471 = createAndAppend(doc, 'label', parentRenderNode);
     addShimE(_el_471);
-    _el_472 = createAndAppend(doc, 'h2', parentRenderNode);
-    createAttr(_el_472, 'id', 'ngIf');
-    addShimE(_el_472);
-    import4.Text _text_473 = new import4.Text('NgIf Binding');
-    _el_472.append(_text_473);
-    var _anchor_474 = ngAnchor.clone(false);
-    parentRenderNode.append(_anchor_474);
-    _appEl_474 = new ViewContainer(474, null, this, _anchor_474);
-    TemplateRef _TemplateRef_474_6 = new TemplateRef(_appEl_474, viewFactory_AppComponent4);
-    _NgIf_474_7 = new NgIf(_appEl_474, _TemplateRef_474_6);
-    var _anchor_475 = ngAnchor.clone(false);
-    parentRenderNode.append(_anchor_475);
-    _appEl_475 = new ViewContainer(475, null, this, _anchor_475);
-    TemplateRef _TemplateRef_475_6 = new TemplateRef(_appEl_475, viewFactory_AppComponent5);
-    _NgIf_475_7 = new NgIf(_appEl_475, _TemplateRef_475_6);
-    var _anchor_476 = ngAnchor.clone(false);
-    parentRenderNode.append(_anchor_476);
-    _appEl_476 = new ViewContainer(476, null, this, _anchor_476);
-    TemplateRef _TemplateRef_476_6 = new TemplateRef(_appEl_476, viewFactory_AppComponent6);
-    _NgIf_476_7 = new NgIf(_appEl_476, _TemplateRef_476_6);
-    var _anchor_477 = ngAnchor.clone(false);
-    parentRenderNode.append(_anchor_477);
-    _appEl_477 = new ViewContainer(477, null, this, _anchor_477);
-    TemplateRef _TemplateRef_477_6 = new TemplateRef(_appEl_477, viewFactory_AppComponent7);
-    _NgIf_477_7 = new NgIf(_appEl_477, _TemplateRef_477_6);
-    _el_478 = createDivAndAppend(doc, parentRenderNode);
+    import4.Text _text_472 = new import4.Text('normal:');
+    _el_471.append(_text_472);
+    _el_473 = createAndAppend(doc, 'input', _el_471);
+    createAttr(_el_473, 'type', 'checkbox');
+    addShimC(_el_473);
+    _CheckboxControlValueAccessor_473_4 = new import16.CheckboxControlValueAccessor(_el_473);
+    _NgValueAccessor_473_5 = [_CheckboxControlValueAccessor_473_4];
+    _NgModel_473_6 = new import13.NgModel(null, _NgValueAccessor_473_5);
+    import4.Text _text_474 = new import4.Text('|');
+    parentRenderNode.append(_text_474);
+    _el_475 = createAndAppend(doc, 'label', parentRenderNode);
+    addShimE(_el_475);
+    import4.Text _text_476 = new import4.Text('xlarge:');
+    _el_475.append(_text_476);
+    _el_477 = createAndAppend(doc, 'input', _el_475);
+    createAttr(_el_477, 'type', 'checkbox');
+    addShimC(_el_477);
+    _CheckboxControlValueAccessor_477_4 = new import16.CheckboxControlValueAccessor(_el_477);
+    _NgValueAccessor_477_5 = [_CheckboxControlValueAccessor_477_4];
+    _NgModel_477_6 = new import13.NgModel(null, _NgValueAccessor_477_5);
+    _el_478 = createAndAppend(doc, 'button', parentRenderNode);
     addShimC(_el_478);
-    import4.Text _text_479 = new import4.Text('Hero Detail removed from DOM (via template) because isActive is false');
+    import4.Text _text_479 = new import4.Text('Refresh currentStyles');
     _el_478.append(_text_479);
-    var _anchor_480 = ngAnchor.clone(false);
-    parentRenderNode.append(_anchor_480);
-    _appEl_480 = new ViewContainer(480, null, this, _anchor_480);
-    TemplateRef _TemplateRef_480_6 = new TemplateRef(_appEl_480, viewFactory_AppComponent8);
-    _NgIf_480_7 = new NgIf(_appEl_480, _TemplateRef_480_6);
-    _el_481 = createDivAndAppend(doc, parentRenderNode);
-    addShimC(_el_481);
-    import4.Text _text_482 = new import4.Text('Show with class');
-    _el_481.append(_text_482);
-    _el_483 = createDivAndAppend(doc, parentRenderNode);
-    addShimC(_el_483);
-    import4.Text _text_484 = new import4.Text('Hide with class');
-    _el_483.append(_text_484);
-    _compView_485 = new import8.ViewHeroDetailComponent0(this, 485);
-    _el_485 = _compView_485.rootEl;
-    parentRenderNode.append(_el_485);
-    addShimC(_el_485);
-    _HeroDetailComponent_485_4 = new import9.HeroDetailComponent();
-    _compView_485.create(_HeroDetailComponent_485_4, []);
-    _el_486 = createDivAndAppend(doc, parentRenderNode);
-    addShimC(_el_486);
-    import4.Text _text_487 = new import4.Text('Show with style');
-    _el_486.append(_text_487);
-    _el_488 = createDivAndAppend(doc, parentRenderNode);
-    addShimC(_el_488);
-    import4.Text _text_489 = new import4.Text('Hide with style');
-    _el_488.append(_text_489);
+    _el_480 = createAndAppend(doc, 'br', parentRenderNode);
+    addShimE(_el_480);
+    _el_481 = createAndAppend(doc, 'br', parentRenderNode);
+    addShimE(_el_481);
+    _el_482 = createDivAndAppend(doc, parentRenderNode);
+    addShimC(_el_482);
+    _NgStyle_482_4 = new import17.NgStyle(_el_482);
+    import4.Text _text_483 = new import4.Text('This div should be ');
+    _el_482.append(_text_483);
+    _text_484 = new import4.Text('');
+    _el_482.append(_text_484);
+    import4.Text _text_485 = new import4.Text(',\n                  ');
+    _el_482.append(_text_485);
+    _text_486 = new import4.Text('');
+    _el_482.append(_text_486);
+    import4.Text _text_487 = new import4.Text(' and,\n                  ');
+    _el_482.append(_text_487);
+    _text_488 = new import4.Text('');
+    _el_482.append(_text_488);
+    import4.Text _text_489 = new import4.Text(' after clicking "Refresh".');
+    _el_482.append(_text_489);
     _el_490 = createAndAppend(doc, 'a', parentRenderNode);
     _el_490.className = 'to-toc';
     createAttr(_el_490, 'href', '#toc');
@@ -1963,537 +1916,540 @@ class ViewAppComponent0 extends AppView<import2.AppComponent> {
     _el_492 = createAndAppend(doc, 'hr', parentRenderNode);
     addShimE(_el_492);
     _el_493 = createAndAppend(doc, 'h2', parentRenderNode);
-    createAttr(_el_493, 'id', 'ngFor');
+    createAttr(_el_493, 'id', 'ngIf');
     addShimE(_el_493);
-    import4.Text _text_494 = new import4.Text('NgFor Binding');
+    import4.Text _text_494 = new import4.Text('NgIf Binding');
     _el_493.append(_text_494);
-    _el_495 = createDivAndAppend(doc, parentRenderNode);
-    _el_495.className = 'box';
-    addShimC(_el_495);
+    var _anchor_495 = ngAnchor.clone(false);
+    parentRenderNode.append(_anchor_495);
+    _appEl_495 = new ViewContainer(495, null, this, _anchor_495);
+    TemplateRef _TemplateRef_495_6 = new TemplateRef(_appEl_495, viewFactory_AppComponent4);
+    _NgIf_495_7 = new NgIf(_appEl_495, _TemplateRef_495_6);
     var _anchor_496 = ngAnchor.clone(false);
-    _el_495.append(_anchor_496);
-    _appEl_496 = new ViewContainer(496, 495, this, _anchor_496);
-    TemplateRef _TemplateRef_496_6 = new TemplateRef(_appEl_496, viewFactory_AppComponent9);
-    _NgFor_496_7 = new import6.NgFor(_appEl_496, _TemplateRef_496_6);
-    _el_497 = createAndAppend(doc, 'br', parentRenderNode);
-    addShimE(_el_497);
-    _el_498 = createDivAndAppend(doc, parentRenderNode);
-    _el_498.className = 'box';
-    addShimC(_el_498);
-    var _anchor_499 = ngAnchor.clone(false);
-    _el_498.append(_anchor_499);
-    _appEl_499 = new ViewContainer(499, 498, this, _anchor_499);
-    TemplateRef _TemplateRef_499_6 = new TemplateRef(_appEl_499, viewFactory_AppComponent10);
-    _NgFor_499_7 = new import6.NgFor(_appEl_499, _TemplateRef_499_6);
-    _el_500 = createAndAppend(doc, 'a', parentRenderNode);
-    _el_500.className = 'to-toc';
-    createAttr(_el_500, 'href', '#toc');
-    addShimC(_el_500);
-    import4.Text _text_501 = new import4.Text('top');
-    _el_500.append(_text_501);
-    _el_502 = createAndAppend(doc, 'h4', parentRenderNode);
-    createAttr(_el_502, 'id', 'ngFor-index');
-    addShimE(_el_502);
-    import4.Text _text_503 = new import4.Text('*ngFor with index');
+    parentRenderNode.append(_anchor_496);
+    _appEl_496 = new ViewContainer(496, null, this, _anchor_496);
+    TemplateRef _TemplateRef_496_6 = new TemplateRef(_appEl_496, viewFactory_AppComponent5);
+    _NgIf_496_7 = new NgIf(_appEl_496, _TemplateRef_496_6);
+    var _anchor_497 = ngAnchor.clone(false);
+    parentRenderNode.append(_anchor_497);
+    _appEl_497 = new ViewContainer(497, null, this, _anchor_497);
+    TemplateRef _TemplateRef_497_6 = new TemplateRef(_appEl_497, viewFactory_AppComponent6);
+    _NgIf_497_7 = new NgIf(_appEl_497, _TemplateRef_497_6);
+    var _anchor_498 = ngAnchor.clone(false);
+    parentRenderNode.append(_anchor_498);
+    _appEl_498 = new ViewContainer(498, null, this, _anchor_498);
+    TemplateRef _TemplateRef_498_6 = new TemplateRef(_appEl_498, viewFactory_AppComponent7);
+    _NgIf_498_7 = new NgIf(_appEl_498, _TemplateRef_498_6);
+    _el_499 = createDivAndAppend(doc, parentRenderNode);
+    addShimC(_el_499);
+    import4.Text _text_500 = new import4.Text('Hero Detail removed from DOM (via template) because isActive is false');
+    _el_499.append(_text_500);
+    var _anchor_501 = ngAnchor.clone(false);
+    parentRenderNode.append(_anchor_501);
+    _appEl_501 = new ViewContainer(501, null, this, _anchor_501);
+    TemplateRef _TemplateRef_501_6 = new TemplateRef(_appEl_501, viewFactory_AppComponent8);
+    _NgIf_501_7 = new NgIf(_appEl_501, _TemplateRef_501_6);
+    _el_502 = createDivAndAppend(doc, parentRenderNode);
+    addShimC(_el_502);
+    import4.Text _text_503 = new import4.Text('Show with class');
     _el_502.append(_text_503);
-    _el_504 = createAndAppend(doc, 'p', parentRenderNode);
-    addShimE(_el_504);
-    import4.Text _text_505 = new import4.Text('with');
+    _el_504 = createDivAndAppend(doc, parentRenderNode);
+    addShimC(_el_504);
+    import4.Text _text_505 = new import4.Text('Hide with class');
     _el_504.append(_text_505);
-    _el_506 = createAndAppend(doc, 'i', _el_504);
-    addShimE(_el_506);
-    import4.Text _text_507 = new import4.Text('semi-colon');
-    _el_506.append(_text_507);
-    import4.Text _text_508 = new import4.Text('separator');
-    _el_504.append(_text_508);
+    _compView_506 = new import8.ViewHeroDetailComponent0(this, 506);
+    _el_506 = _compView_506.rootEl;
+    parentRenderNode.append(_el_506);
+    addShimC(_el_506);
+    _HeroDetailComponent_506_4 = new import9.HeroDetailComponent();
+    _compView_506.create(_HeroDetailComponent_506_4, []);
+    _el_507 = createDivAndAppend(doc, parentRenderNode);
+    addShimC(_el_507);
+    import4.Text _text_508 = new import4.Text('Show with style');
+    _el_507.append(_text_508);
     _el_509 = createDivAndAppend(doc, parentRenderNode);
-    _el_509.className = 'box';
     addShimC(_el_509);
-    var _anchor_510 = ngAnchor.clone(false);
-    _el_509.append(_anchor_510);
-    _appEl_510 = new ViewContainer(510, 509, this, _anchor_510);
-    TemplateRef _TemplateRef_510_6 = new TemplateRef(_appEl_510, viewFactory_AppComponent11);
-    _NgFor_510_7 = new import6.NgFor(_appEl_510, _TemplateRef_510_6);
-    _el_511 = createAndAppend(doc, 'p', parentRenderNode);
-    addShimE(_el_511);
-    import4.Text _text_512 = new import4.Text('with');
+    import4.Text _text_510 = new import4.Text('Hide with style');
+    _el_509.append(_text_510);
+    _el_511 = createAndAppend(doc, 'a', parentRenderNode);
+    _el_511.className = 'to-toc';
+    createAttr(_el_511, 'href', '#toc');
+    addShimC(_el_511);
+    import4.Text _text_512 = new import4.Text('top');
     _el_511.append(_text_512);
-    _el_513 = createAndAppend(doc, 'i', _el_511);
+    _el_513 = createAndAppend(doc, 'hr', parentRenderNode);
     addShimE(_el_513);
-    import4.Text _text_514 = new import4.Text('comma');
-    _el_513.append(_text_514);
-    import4.Text _text_515 = new import4.Text('separator');
-    _el_511.append(_text_515);
+    _el_514 = createAndAppend(doc, 'h2', parentRenderNode);
+    createAttr(_el_514, 'id', 'ngFor');
+    addShimE(_el_514);
+    import4.Text _text_515 = new import4.Text('NgFor Binding');
+    _el_514.append(_text_515);
     _el_516 = createDivAndAppend(doc, parentRenderNode);
     _el_516.className = 'box';
     addShimC(_el_516);
     var _anchor_517 = ngAnchor.clone(false);
     _el_516.append(_anchor_517);
     _appEl_517 = new ViewContainer(517, 516, this, _anchor_517);
-    TemplateRef _TemplateRef_517_6 = new TemplateRef(_appEl_517, viewFactory_AppComponent12);
+    TemplateRef _TemplateRef_517_6 = new TemplateRef(_appEl_517, viewFactory_AppComponent9);
     _NgFor_517_7 = new import6.NgFor(_appEl_517, _TemplateRef_517_6);
-    _el_518 = createAndAppend(doc, 'a', parentRenderNode);
-    _el_518.className = 'to-toc';
-    createAttr(_el_518, 'href', '#toc');
-    addShimC(_el_518);
-    import4.Text _text_519 = new import4.Text('top');
-    _el_518.append(_text_519);
-    _el_520 = createAndAppend(doc, 'h4', parentRenderNode);
-    createAttr(_el_520, 'id', 'ngFor-trackBy');
-    addShimE(_el_520);
-    import4.Text _text_521 = new import4.Text('*ngFor trackBy');
-    _el_520.append(_text_521);
-    _el_522 = createAndAppend(doc, 'button', parentRenderNode);
-    addShimC(_el_522);
-    import4.Text _text_523 = new import4.Text('Reset heroes');
-    _el_522.append(_text_523);
-    _el_524 = createAndAppend(doc, 'button', parentRenderNode);
-    addShimC(_el_524);
-    import4.Text _text_525 = new import4.Text('Change ids');
-    _el_524.append(_text_525);
-    _el_526 = createAndAppend(doc, 'button', parentRenderNode);
-    addShimC(_el_526);
-    import4.Text _text_527 = new import4.Text('Clear counts');
-    _el_526.append(_text_527);
-    _el_528 = createAndAppend(doc, 'p', parentRenderNode);
-    addShimE(_el_528);
-    _el_529 = createAndAppend(doc, 'i', _el_528);
+    _el_518 = createAndAppend(doc, 'br', parentRenderNode);
+    addShimE(_el_518);
+    _el_519 = createDivAndAppend(doc, parentRenderNode);
+    _el_519.className = 'box';
+    addShimC(_el_519);
+    var _anchor_520 = ngAnchor.clone(false);
+    _el_519.append(_anchor_520);
+    _appEl_520 = new ViewContainer(520, 519, this, _anchor_520);
+    TemplateRef _TemplateRef_520_6 = new TemplateRef(_appEl_520, viewFactory_AppComponent10);
+    _NgFor_520_7 = new import6.NgFor(_appEl_520, _TemplateRef_520_6);
+    _el_521 = createAndAppend(doc, 'a', parentRenderNode);
+    _el_521.className = 'to-toc';
+    createAttr(_el_521, 'href', '#toc');
+    addShimC(_el_521);
+    import4.Text _text_522 = new import4.Text('top');
+    _el_521.append(_text_522);
+    _el_523 = createAndAppend(doc, 'h4', parentRenderNode);
+    createAttr(_el_523, 'id', 'ngFor-index');
+    addShimE(_el_523);
+    import4.Text _text_524 = new import4.Text('*ngFor with index');
+    _el_523.append(_text_524);
+    _el_525 = createDivAndAppend(doc, parentRenderNode);
+    _el_525.className = 'box';
+    addShimC(_el_525);
+    var _anchor_526 = ngAnchor.clone(false);
+    _el_525.append(_anchor_526);
+    _appEl_526 = new ViewContainer(526, 525, this, _anchor_526);
+    TemplateRef _TemplateRef_526_6 = new TemplateRef(_appEl_526, viewFactory_AppComponent11);
+    _NgFor_526_7 = new import6.NgFor(_appEl_526, _TemplateRef_526_6);
+    _el_527 = createAndAppend(doc, 'a', parentRenderNode);
+    _el_527.className = 'to-toc';
+    createAttr(_el_527, 'href', '#toc');
+    addShimC(_el_527);
+    import4.Text _text_528 = new import4.Text('top');
+    _el_527.append(_text_528);
+    _el_529 = createAndAppend(doc, 'h4', parentRenderNode);
+    createAttr(_el_529, 'id', 'ngFor-trackBy');
     addShimE(_el_529);
-    import4.Text _text_530 = new import4.Text('without');
+    import4.Text _text_530 = new import4.Text('*ngFor trackBy');
     _el_529.append(_text_530);
-    import4.Text _text_531 = new import4.Text('trackBy');
-    _el_528.append(_text_531);
-    _el_532 = createDivAndAppend(doc, parentRenderNode);
-    _el_532.className = 'box';
-    addShimC(_el_532);
-    var _anchor_533 = ngAnchor.clone(false);
-    _el_532.append(_anchor_533);
-    _appEl_533 = new ViewContainer(533, 532, this, _anchor_533);
-    TemplateRef _TemplateRef_533_6 = new TemplateRef(_appEl_533, viewFactory_AppComponent13);
-    _NgFor_533_7 = new import6.NgFor(_appEl_533, _TemplateRef_533_6);
-    var _anchor_534 = ngAnchor.clone(false);
-    _el_532.append(_anchor_534);
-    _appEl_534 = new ViewContainer(534, 532, this, _anchor_534);
-    TemplateRef _TemplateRef_534_6 = new TemplateRef(_appEl_534, viewFactory_AppComponent14);
-    _NgIf_534_7 = new NgIf(_appEl_534, _TemplateRef_534_6);
-    _el_535 = createAndAppend(doc, 'p', parentRenderNode);
-    addShimE(_el_535);
-    import4.Text _text_536 = new import4.Text('with trackBy');
+    _el_531 = createAndAppend(doc, 'button', parentRenderNode);
+    addShimC(_el_531);
+    import4.Text _text_532 = new import4.Text('Reset heroes');
+    _el_531.append(_text_532);
+    _el_533 = createAndAppend(doc, 'button', parentRenderNode);
+    addShimC(_el_533);
+    import4.Text _text_534 = new import4.Text('Change ids');
+    _el_533.append(_text_534);
+    _el_535 = createAndAppend(doc, 'button', parentRenderNode);
+    addShimC(_el_535);
+    import4.Text _text_536 = new import4.Text('Clear counts');
     _el_535.append(_text_536);
-    _el_537 = createDivAndAppend(doc, parentRenderNode);
-    _el_537.className = 'box';
-    addShimC(_el_537);
-    var _anchor_538 = ngAnchor.clone(false);
-    _el_537.append(_anchor_538);
-    _appEl_538 = new ViewContainer(538, 537, this, _anchor_538);
-    TemplateRef _TemplateRef_538_6 = new TemplateRef(_appEl_538, viewFactory_AppComponent15);
-    _NgFor_538_7 = new import6.NgFor(_appEl_538, _TemplateRef_538_6);
-    var _anchor_539 = ngAnchor.clone(false);
-    _el_537.append(_anchor_539);
-    _appEl_539 = new ViewContainer(539, 537, this, _anchor_539);
-    TemplateRef _TemplateRef_539_6 = new TemplateRef(_appEl_539, viewFactory_AppComponent16);
-    _NgIf_539_7 = new NgIf(_appEl_539, _TemplateRef_539_6);
-    _el_540 = createAndAppend(doc, 'br', parentRenderNode);
-    addShimE(_el_540);
-    _el_541 = createAndAppend(doc, 'br', parentRenderNode);
-    addShimE(_el_541);
-    _el_542 = createAndAppend(doc, 'br', parentRenderNode);
-    addShimE(_el_542);
-    _el_543 = createAndAppend(doc, 'p', parentRenderNode);
-    addShimE(_el_543);
-    import4.Text _text_544 = new import4.Text('with trackBy and');
-    _el_543.append(_text_544);
-    _el_545 = createAndAppend(doc, 'i', _el_543);
-    addShimE(_el_545);
-    import4.Text _text_546 = new import4.Text('semi-colon');
-    _el_545.append(_text_546);
-    import4.Text _text_547 = new import4.Text('separator');
-    _el_543.append(_text_547);
+    _el_537 = createAndAppend(doc, 'p', parentRenderNode);
+    addShimE(_el_537);
+    _el_538 = createAndAppend(doc, 'i', _el_537);
+    addShimE(_el_538);
+    import4.Text _text_539 = new import4.Text('without');
+    _el_538.append(_text_539);
+    import4.Text _text_540 = new import4.Text('trackBy');
+    _el_537.append(_text_540);
+    _el_541 = createDivAndAppend(doc, parentRenderNode);
+    _el_541.className = 'box';
+    addShimC(_el_541);
+    var _anchor_542 = ngAnchor.clone(false);
+    _el_541.append(_anchor_542);
+    _appEl_542 = new ViewContainer(542, 541, this, _anchor_542);
+    TemplateRef _TemplateRef_542_6 = new TemplateRef(_appEl_542, viewFactory_AppComponent12);
+    _NgFor_542_7 = new import6.NgFor(_appEl_542, _TemplateRef_542_6);
+    var _anchor_543 = ngAnchor.clone(false);
+    _el_541.append(_anchor_543);
+    _appEl_543 = new ViewContainer(543, 541, this, _anchor_543);
+    TemplateRef _TemplateRef_543_6 = new TemplateRef(_appEl_543, viewFactory_AppComponent13);
+    _NgIf_543_7 = new NgIf(_appEl_543, _TemplateRef_543_6);
+    _el_544 = createAndAppend(doc, 'p', parentRenderNode);
+    addShimE(_el_544);
+    import4.Text _text_545 = new import4.Text('with');
+    _el_544.append(_text_545);
+    _el_546 = createAndAppend(doc, 'code', _el_544);
+    addShimE(_el_546);
+    import4.Text _text_547 = new import4.Text('trackBy: trackByHeroes(int, Hero)');
+    _el_546.append(_text_547);
     _el_548 = createDivAndAppend(doc, parentRenderNode);
     _el_548.className = 'box';
     addShimC(_el_548);
     var _anchor_549 = ngAnchor.clone(false);
     _el_548.append(_anchor_549);
     _appEl_549 = new ViewContainer(549, 548, this, _anchor_549);
-    TemplateRef _TemplateRef_549_6 = new TemplateRef(_appEl_549, viewFactory_AppComponent17);
+    TemplateRef _TemplateRef_549_6 = new TemplateRef(_appEl_549, viewFactory_AppComponent14);
     _NgFor_549_7 = new import6.NgFor(_appEl_549, _TemplateRef_549_6);
-    _el_550 = createAndAppend(doc, 'p', parentRenderNode);
-    addShimE(_el_550);
-    import4.Text _text_551 = new import4.Text('with trackBy and');
-    _el_550.append(_text_551);
-    _el_552 = createAndAppend(doc, 'i', _el_550);
-    addShimE(_el_552);
-    import4.Text _text_553 = new import4.Text('comma');
-    _el_552.append(_text_553);
-    import4.Text _text_554 = new import4.Text('separator');
-    _el_550.append(_text_554);
+    var _anchor_550 = ngAnchor.clone(false);
+    _el_548.append(_anchor_550);
+    _appEl_550 = new ViewContainer(550, 548, this, _anchor_550);
+    TemplateRef _TemplateRef_550_6 = new TemplateRef(_appEl_550, viewFactory_AppComponent15);
+    _NgIf_550_7 = new NgIf(_appEl_550, _TemplateRef_550_6);
+    _el_551 = createAndAppend(doc, 'p', parentRenderNode);
+    addShimE(_el_551);
+    import4.Text _text_552 = new import4.Text('with');
+    _el_551.append(_text_552);
+    _el_553 = createAndAppend(doc, 'code', _el_551);
+    addShimE(_el_553);
+    import4.Text _text_554 = new import4.Text('trackById: trackById(int, dynamic)');
+    _el_553.append(_text_554);
     _el_555 = createDivAndAppend(doc, parentRenderNode);
     _el_555.className = 'box';
     addShimC(_el_555);
     var _anchor_556 = ngAnchor.clone(false);
     _el_555.append(_anchor_556);
     _appEl_556 = new ViewContainer(556, 555, this, _anchor_556);
-    TemplateRef _TemplateRef_556_6 = new TemplateRef(_appEl_556, viewFactory_AppComponent18);
+    TemplateRef _TemplateRef_556_6 = new TemplateRef(_appEl_556, viewFactory_AppComponent16);
     _NgFor_556_7 = new import6.NgFor(_appEl_556, _TemplateRef_556_6);
-    _el_557 = createAndAppend(doc, 'p', parentRenderNode);
-    addShimE(_el_557);
-    import4.Text _text_558 = new import4.Text('with trackBy and');
+    _el_557 = createAndAppend(doc, 'a', parentRenderNode);
+    _el_557.className = 'to-toc';
+    createAttr(_el_557, 'href', '#toc');
+    addShimC(_el_557);
+    import4.Text _text_558 = new import4.Text('top');
     _el_557.append(_text_558);
-    _el_559 = createAndAppend(doc, 'i', _el_557);
+    _el_559 = createAndAppend(doc, 'hr', parentRenderNode);
     addShimE(_el_559);
-    import4.Text _text_560 = new import4.Text('space');
-    _el_559.append(_text_560);
-    import4.Text _text_561 = new import4.Text('separator');
-    _el_557.append(_text_561);
-    _el_562 = createDivAndAppend(doc, parentRenderNode);
-    _el_562.className = 'box';
-    addShimC(_el_562);
-    var _anchor_563 = ngAnchor.clone(false);
-    _el_562.append(_anchor_563);
-    _appEl_563 = new ViewContainer(563, 562, this, _anchor_563);
-    TemplateRef _TemplateRef_563_6 = new TemplateRef(_appEl_563, viewFactory_AppComponent19);
-    _NgFor_563_7 = new import6.NgFor(_appEl_563, _TemplateRef_563_6);
-    _el_564 = createAndAppend(doc, 'p', parentRenderNode);
-    addShimE(_el_564);
-    import4.Text _text_565 = new import4.Text('with');
-    _el_564.append(_text_565);
-    _el_566 = createAndAppend(doc, 'i', _el_564);
-    addShimE(_el_566);
-    import4.Text _text_567 = new import4.Text('generic');
-    _el_566.append(_text_567);
-    import4.Text _text_568 = new import4.Text('trackById function');
-    _el_564.append(_text_568);
-    _el_569 = createDivAndAppend(doc, parentRenderNode);
-    _el_569.className = 'box';
-    addShimC(_el_569);
-    var _anchor_570 = ngAnchor.clone(false);
-    _el_569.append(_anchor_570);
-    _appEl_570 = new ViewContainer(570, 569, this, _anchor_570);
-    TemplateRef _TemplateRef_570_6 = new TemplateRef(_appEl_570, viewFactory_AppComponent20);
-    _NgFor_570_7 = new import6.NgFor(_appEl_570, _TemplateRef_570_6);
-    _el_571 = createAndAppend(doc, 'a', parentRenderNode);
-    _el_571.className = 'to-toc';
-    createAttr(_el_571, 'href', '#toc');
-    addShimC(_el_571);
-    import4.Text _text_572 = new import4.Text('top');
-    _el_571.append(_text_572);
-    _el_573 = createAndAppend(doc, 'hr', parentRenderNode);
-    addShimE(_el_573);
-    _el_574 = createAndAppend(doc, 'h2', parentRenderNode);
-    createAttr(_el_574, 'id', 'ngSwitch');
-    addShimE(_el_574);
-    import4.Text _text_575 = new import4.Text('NgSwitch Binding');
-    _el_574.append(_text_575);
-    _el_576 = createAndAppend(doc, 'p', parentRenderNode);
-    addShimE(_el_576);
-    import4.Text _text_577 = new import4.Text('Pick your favorite hero');
-    _el_576.append(_text_577);
-    _compView_578 = new import19.ViewMaterialRadioGroupComponent0(this, 578);
-    _el_578 = _compView_578.rootEl;
-    parentRenderNode.append(_el_578);
-    addShimC(_el_578);
-    _NgModel_578_4 = new import13.NgModel(null, null);
-    _NgControl_578_5 = _NgModel_578_4;
-    _MaterialRadioGroupComponent_578_6 = new import20.MaterialRadioGroupComponent(parentView.injectorGet(import36.NgZone, viewData.parentIndex), _NgControl_578_5);
-    var _anchor_579 = ngAnchor.clone(false);
-    _appEl_579 = new ViewContainer(579, 578, this, _anchor_579);
-    TemplateRef _TemplateRef_579_6 = new TemplateRef(_appEl_579, viewFactory_AppComponent21);
-    _NgFor_579_7 = new import6.NgFor(_appEl_579, _TemplateRef_579_6);
-    _compView_578.create(_MaterialRadioGroupComponent_578_6, [
-      [_appEl_579]
+    _el_560 = createAndAppend(doc, 'h2', parentRenderNode);
+    createAttr(_el_560, 'id', 'ngSwitch');
+    addShimE(_el_560);
+    import4.Text _text_561 = new import4.Text('NgSwitch Binding');
+    _el_560.append(_text_561);
+    _el_562 = createAndAppend(doc, 'p', parentRenderNode);
+    addShimE(_el_562);
+    import4.Text _text_563 = new import4.Text('Pick your favorite hero');
+    _el_562.append(_text_563);
+    _compView_564 = new import19.ViewMaterialRadioGroupComponent0(this, 564);
+    _el_564 = _compView_564.rootEl;
+    parentRenderNode.append(_el_564);
+    addShimC(_el_564);
+    _NgModel_564_4 = new import13.NgModel(null, null);
+    _NgControl_564_5 = _NgModel_564_4;
+    _MaterialRadioGroupComponent_564_6 = new import20.MaterialRadioGroupComponent(parentView.injectorGet(import36.NgZone, viewData.parentIndex), _NgControl_564_5);
+    var _anchor_565 = ngAnchor.clone(false);
+    _appEl_565 = new ViewContainer(565, 564, this, _anchor_565);
+    TemplateRef _TemplateRef_565_6 = new TemplateRef(_appEl_565, viewFactory_AppComponent17);
+    _NgFor_565_7 = new import6.NgFor(_appEl_565, _TemplateRef_565_6);
+    _compView_564.create(_MaterialRadioGroupComponent_564_6, [
+      [_appEl_565]
     ]);
-    _el_580 = createAndAppend(doc, 'p', parentRenderNode);
+    _el_566 = createAndAppend(doc, 'p', parentRenderNode);
+    addShimE(_el_566);
+    import4.Text _text_567 = new import4.Text('Current hero is: ');
+    _el_566.append(_text_567);
+    _text_568 = new import4.Text('');
+    _el_566.append(_text_568);
+    import4.Text _text_569 = new import4.Text(' (');
+    _el_566.append(_text_569);
+    _text_570 = new import4.Text('');
+    _el_566.append(_text_570);
+    import4.Text _text_571 = new import4.Text(')');
+    _el_566.append(_text_571);
+    _el_572 = createDivAndAppend(doc, parentRenderNode);
+    addShimC(_el_572);
+    _NgSwitch_572_4 = new import21.NgSwitch();
+    var _anchor_573 = ngAnchor.clone(false);
+    _el_572.append(_anchor_573);
+    _appEl_573 = new ViewContainer(573, 572, this, _anchor_573);
+    TemplateRef _TemplateRef_573_6 = new TemplateRef(_appEl_573, viewFactory_AppComponent18);
+    _NgSwitchWhen_573_7 = new import21.NgSwitchWhen(_appEl_573, _TemplateRef_573_6, _NgSwitch_572_4);
+    var _anchor_574 = ngAnchor.clone(false);
+    _el_572.append(_anchor_574);
+    _appEl_574 = new ViewContainer(574, 572, this, _anchor_574);
+    TemplateRef _TemplateRef_574_6 = new TemplateRef(_appEl_574, viewFactory_AppComponent19);
+    _NgSwitchWhen_574_7 = new import21.NgSwitchWhen(_appEl_574, _TemplateRef_574_6, _NgSwitch_572_4);
+    var _anchor_575 = ngAnchor.clone(false);
+    _el_572.append(_anchor_575);
+    _appEl_575 = new ViewContainer(575, 572, this, _anchor_575);
+    TemplateRef _TemplateRef_575_6 = new TemplateRef(_appEl_575, viewFactory_AppComponent20);
+    _NgSwitchWhen_575_7 = new import21.NgSwitchWhen(_appEl_575, _TemplateRef_575_6, _NgSwitch_572_4);
+    var _anchor_576 = ngAnchor.clone(false);
+    _el_572.append(_anchor_576);
+    _appEl_576 = new ViewContainer(576, 572, this, _anchor_576);
+    TemplateRef _TemplateRef_576_6 = new TemplateRef(_appEl_576, viewFactory_AppComponent21);
+    _NgSwitchWhen_576_7 = new import21.NgSwitchWhen(_appEl_576, _TemplateRef_576_6, _NgSwitch_572_4);
+    var _anchor_577 = ngAnchor.clone(false);
+    _el_572.append(_anchor_577);
+    _appEl_577 = new ViewContainer(577, 572, this, _anchor_577);
+    TemplateRef _TemplateRef_577_6 = new TemplateRef(_appEl_577, viewFactory_AppComponent22);
+    _NgSwitchDefault_577_7 = new import21.NgSwitchDefault(_appEl_577, _TemplateRef_577_6, _NgSwitch_572_4);
+    _el_578 = createAndAppend(doc, 'a', parentRenderNode);
+    _el_578.className = 'to-toc';
+    createAttr(_el_578, 'href', '#toc');
+    addShimC(_el_578);
+    import4.Text _text_579 = new import4.Text('top');
+    _el_578.append(_text_579);
+    _el_580 = createAndAppend(doc, 'hr', parentRenderNode);
     addShimE(_el_580);
-    _text_581 = new import4.Text('');
-    _el_580.append(_text_581);
-    _el_582 = createDivAndAppend(doc, parentRenderNode);
-    addShimC(_el_582);
-    _NgSwitch_582_4 = new import21.NgSwitch();
-    var _anchor_583 = ngAnchor.clone(false);
-    _el_582.append(_anchor_583);
-    _appEl_583 = new ViewContainer(583, 582, this, _anchor_583);
-    TemplateRef _TemplateRef_583_6 = new TemplateRef(_appEl_583, viewFactory_AppComponent22);
-    _NgSwitchWhen_583_7 = new import21.NgSwitchWhen(_appEl_583, _TemplateRef_583_6, _NgSwitch_582_4);
-    var _anchor_584 = ngAnchor.clone(false);
-    _el_582.append(_anchor_584);
-    _appEl_584 = new ViewContainer(584, 582, this, _anchor_584);
-    TemplateRef _TemplateRef_584_6 = new TemplateRef(_appEl_584, viewFactory_AppComponent23);
-    _NgSwitchWhen_584_7 = new import21.NgSwitchWhen(_appEl_584, _TemplateRef_584_6, _NgSwitch_582_4);
-    var _anchor_585 = ngAnchor.clone(false);
-    _el_582.append(_anchor_585);
-    _appEl_585 = new ViewContainer(585, 582, this, _anchor_585);
-    TemplateRef _TemplateRef_585_6 = new TemplateRef(_appEl_585, viewFactory_AppComponent24);
-    _NgSwitchWhen_585_7 = new import21.NgSwitchWhen(_appEl_585, _TemplateRef_585_6, _NgSwitch_582_4);
-    var _anchor_586 = ngAnchor.clone(false);
-    _el_582.append(_anchor_586);
-    _appEl_586 = new ViewContainer(586, 582, this, _anchor_586);
-    TemplateRef _TemplateRef_586_6 = new TemplateRef(_appEl_586, viewFactory_AppComponent25);
-    _NgSwitchWhen_586_7 = new import21.NgSwitchWhen(_appEl_586, _TemplateRef_586_6, _NgSwitch_582_4);
-    var _anchor_587 = ngAnchor.clone(false);
-    _el_582.append(_anchor_587);
-    _appEl_587 = new ViewContainer(587, 582, this, _anchor_587);
-    TemplateRef _TemplateRef_587_6 = new TemplateRef(_appEl_587, viewFactory_AppComponent26);
-    _NgSwitchDefault_587_7 = new import21.NgSwitchDefault(_appEl_587, _TemplateRef_587_6, _NgSwitch_582_4);
-    _el_588 = createAndAppend(doc, 'a', parentRenderNode);
-    _el_588.className = 'to-toc';
-    createAttr(_el_588, 'href', '#toc');
-    addShimC(_el_588);
-    import4.Text _text_589 = new import4.Text('top');
-    _el_588.append(_text_589);
-    _el_590 = createAndAppend(doc, 'hr', parentRenderNode);
-    addShimE(_el_590);
-    _el_591 = createAndAppend(doc, 'h2', parentRenderNode);
-    createAttr(_el_591, 'id', 'ref-vars');
-    addShimE(_el_591);
-    import4.Text _text_592 = new import4.Text('Template reference variables');
-    _el_591.append(_text_592);
-    _el_593 = createAndAppend(doc, 'input', parentRenderNode);
-    createAttr(_el_593, 'placeholder', 'phone number');
-    addShimC(_el_593);
-    _el_594 = createAndAppend(doc, 'button', parentRenderNode);
-    addShimC(_el_594);
-    import4.Text _text_595 = new import4.Text('Call');
-    _el_594.append(_text_595);
-    _el_596 = createAndAppend(doc, 'input', parentRenderNode);
-    createAttr(_el_596, 'placeholder', 'fax number');
+    _el_581 = createAndAppend(doc, 'h2', parentRenderNode);
+    createAttr(_el_581, 'id', 'ref-vars');
+    addShimE(_el_581);
+    import4.Text _text_582 = new import4.Text('Template reference variables');
+    _el_581.append(_text_582);
+    _el_583 = createAndAppend(doc, 'input', parentRenderNode);
+    createAttr(_el_583, 'placeholder', 'phone number');
+    addShimC(_el_583);
+    _el_584 = createAndAppend(doc, 'button', parentRenderNode);
+    addShimC(_el_584);
+    import4.Text _text_585 = new import4.Text('Call');
+    _el_584.append(_text_585);
+    _el_586 = createAndAppend(doc, 'button', parentRenderNode);
+    createAttr(_el_586, 'disabled', '');
+    addShimC(_el_586);
+    _el_587 = createAndAppend(doc, 'h4', parentRenderNode);
+    addShimE(_el_587);
+    import4.Text _text_588 = new import4.Text('Example Form');
+    _el_587.append(_text_588);
+    _compView_589 = new import22.ViewHeroFormComponent0(this, 589);
+    _el_589 = _compView_589.rootEl;
+    parentRenderNode.append(_el_589);
+    addShimC(_el_589);
+    _HeroFormComponent_589_4 = new import23.HeroFormComponent();
+    _compView_589.create(_HeroFormComponent_589_4, []);
+    _el_590 = createAndAppend(doc, 'a', parentRenderNode);
+    _el_590.className = 'to-toc';
+    createAttr(_el_590, 'href', '#toc');
+    addShimC(_el_590);
+    import4.Text _text_591 = new import4.Text('top');
+    _el_590.append(_text_591);
+    _el_592 = createAndAppend(doc, 'hr', parentRenderNode);
+    addShimE(_el_592);
+    _el_593 = createAndAppend(doc, 'h2', parentRenderNode);
+    createAttr(_el_593, 'id', 'inputs-and-outputs');
+    addShimE(_el_593);
+    import4.Text _text_594 = new import4.Text('Inputs and Outputs');
+    _el_593.append(_text_594);
+    _el_595 = createAndAppend(doc, 'img', parentRenderNode);
+    addShimE(_el_595);
+    _el_596 = createAndAppend(doc, 'button', parentRenderNode);
     addShimC(_el_596);
-    _el_597 = createAndAppend(doc, 'button', parentRenderNode);
-    addShimC(_el_597);
-    import4.Text _text_598 = new import4.Text('Fax');
-    _el_597.append(_text_598);
-    _el_599 = createAndAppend(doc, 'button', parentRenderNode);
-    createAttr(_el_599, 'disabled', '');
+    import4.Text _text_597 = new import4.Text('Save');
+    _el_596.append(_text_597);
+    _compView_598 = new import8.ViewHeroDetailComponent0(this, 598);
+    _el_598 = _compView_598.rootEl;
+    parentRenderNode.append(_el_598);
+    addShimC(_el_598);
+    _HeroDetailComponent_598_4 = new import9.HeroDetailComponent();
+    _compView_598.create(_HeroDetailComponent_598_4, []);
+    _el_599 = createDivAndAppend(doc, parentRenderNode);
+    createAttr(_el_599, 'clickable', '');
     addShimC(_el_599);
-    _el_600 = createAndAppend(doc, 'h4', parentRenderNode);
-    addShimE(_el_600);
-    import4.Text _text_601 = new import4.Text('Example Form');
-    _el_600.append(_text_601);
-    _compView_602 = new import22.ViewHeroFormComponent0(this, 602);
-    _el_602 = _compView_602.rootEl;
-    parentRenderNode.append(_el_602);
+    _ClickDirective_599_4 = new import11.ClickDirective(_el_599);
+    import4.Text _text_600 = new import4.Text('myClick2');
+    _el_599.append(_text_600);
+    _text_601 = new import4.Text('');
+    parentRenderNode.append(_text_601);
+    _el_602 = createAndAppend(doc, 'a', parentRenderNode);
+    _el_602.className = 'to-toc';
+    createAttr(_el_602, 'href', '#toc');
     addShimC(_el_602);
-    _HeroFormComponent_602_4 = new import23.HeroFormComponent();
-    _compView_602.create(_HeroFormComponent_602_4, []);
-    _el_603 = createAndAppend(doc, 'a', parentRenderNode);
-    _el_603.className = 'to-toc';
-    createAttr(_el_603, 'href', '#toc');
-    addShimC(_el_603);
-    import4.Text _text_604 = new import4.Text('top');
-    _el_603.append(_text_604);
-    _el_605 = createAndAppend(doc, 'hr', parentRenderNode);
+    import4.Text _text_603 = new import4.Text('top');
+    _el_602.append(_text_603);
+    _el_604 = createAndAppend(doc, 'hr', parentRenderNode);
+    addShimE(_el_604);
+    _el_605 = createAndAppend(doc, 'h2', parentRenderNode);
+    createAttr(_el_605, 'id', 'pipes');
     addShimE(_el_605);
-    _el_606 = createAndAppend(doc, 'h2', parentRenderNode);
-    createAttr(_el_606, 'id', 'inputs-and-outputs');
-    addShimE(_el_606);
-    import4.Text _text_607 = new import4.Text('Inputs and Outputs');
-    _el_606.append(_text_607);
-    _el_608 = createAndAppend(doc, 'img', parentRenderNode);
-    addShimE(_el_608);
-    _el_609 = createAndAppend(doc, 'button', parentRenderNode);
-    addShimC(_el_609);
-    import4.Text _text_610 = new import4.Text('Save');
-    _el_609.append(_text_610);
-    _compView_611 = new import8.ViewHeroDetailComponent0(this, 611);
-    _el_611 = _compView_611.rootEl;
-    parentRenderNode.append(_el_611);
-    addShimC(_el_611);
-    _HeroDetailComponent_611_4 = new import9.HeroDetailComponent();
-    _compView_611.create(_HeroDetailComponent_611_4, []);
-    _el_612 = createDivAndAppend(doc, parentRenderNode);
-    createAttr(_el_612, 'clickable', '');
-    addShimC(_el_612);
-    _ClickDirective_612_4 = new import11.ClickDirective(_el_612);
-    import4.Text _text_613 = new import4.Text('myClick2');
-    _el_612.append(_text_613);
-    _text_614 = new import4.Text('');
-    parentRenderNode.append(_text_614);
-    _el_615 = createAndAppend(doc, 'a', parentRenderNode);
-    _el_615.className = 'to-toc';
-    createAttr(_el_615, 'href', '#toc');
-    addShimC(_el_615);
-    import4.Text _text_616 = new import4.Text('top');
-    _el_615.append(_text_616);
-    _el_617 = createAndAppend(doc, 'hr', parentRenderNode);
-    addShimE(_el_617);
-    _el_618 = createAndAppend(doc, 'h2', parentRenderNode);
-    createAttr(_el_618, 'id', 'pipes');
-    addShimE(_el_618);
-    import4.Text _text_619 = new import4.Text('Pipes');
+    import4.Text _text_606 = new import4.Text('Pipes');
+    _el_605.append(_text_606);
+    _el_607 = createDivAndAppend(doc, parentRenderNode);
+    addShimC(_el_607);
+    import4.Text _text_608 = new import4.Text('Title through uppercase pipe: ');
+    _el_607.append(_text_608);
+    _text_609 = new import4.Text('');
+    _el_607.append(_text_609);
+    _el_610 = createDivAndAppend(doc, parentRenderNode);
+    addShimC(_el_610);
+    import4.Text _text_611 = new import4.Text('Title through a pipe chain:\n  ');
+    _el_610.append(_text_611);
+    _text_612 = new import4.Text('');
+    _el_610.append(_text_612);
+    _el_613 = createDivAndAppend(doc, parentRenderNode);
+    addShimC(_el_613);
+    import4.Text _text_614 = new import4.Text('Birthdate: ');
+    _el_613.append(_text_614);
+    _text_615 = new import4.Text('');
+    _el_613.append(_text_615);
+    _el_616 = createDivAndAppend(doc, parentRenderNode);
+    addShimC(_el_616);
+    _text_617 = new import4.Text('');
+    _el_616.append(_text_617);
+    _el_618 = createDivAndAppend(doc, parentRenderNode);
+    addShimC(_el_618);
+    import4.Text _text_619 = new import4.Text('Birthdate: ');
     _el_618.append(_text_619);
-    _el_620 = createDivAndAppend(doc, parentRenderNode);
-    addShimC(_el_620);
-    _text_621 = new import4.Text('');
-    _el_620.append(_text_621);
-    _el_622 = createDivAndAppend(doc, parentRenderNode);
-    addShimC(_el_622);
-    _text_623 = new import4.Text('');
+    _text_620 = new import4.Text('');
+    _el_618.append(_text_620);
+    _el_621 = createDivAndAppend(doc, parentRenderNode);
+    addShimC(_el_621);
+    _el_622 = createAndAppend(doc, 'label', _el_621);
+    addShimE(_el_622);
+    import4.Text _text_623 = new import4.Text('Price:');
     _el_622.append(_text_623);
-    _el_624 = createDivAndAppend(doc, parentRenderNode);
-    addShimC(_el_624);
-    _text_625 = new import4.Text('');
-    _el_624.append(_text_625);
-    _el_626 = createDivAndAppend(doc, parentRenderNode);
-    addShimC(_el_626);
-    _text_627 = new import4.Text('');
-    _el_626.append(_text_627);
-    _el_628 = createDivAndAppend(doc, parentRenderNode);
-    addShimC(_el_628);
-    _text_629 = new import4.Text('');
+    _text_624 = new import4.Text('');
+    _el_621.append(_text_624);
+    _el_625 = createAndAppend(doc, 'a', parentRenderNode);
+    _el_625.className = 'to-toc';
+    createAttr(_el_625, 'href', '#toc');
+    addShimC(_el_625);
+    import4.Text _text_626 = new import4.Text('top');
+    _el_625.append(_text_626);
+    _el_627 = createAndAppend(doc, 'hr', parentRenderNode);
+    addShimE(_el_627);
+    _el_628 = createAndAppend(doc, 'h2', parentRenderNode);
+    createAttr(_el_628, 'id', 'safe-navigation-operator');
+    addShimE(_el_628);
+    import4.Text _text_629 = new import4.Text('Safe navigation operator');
     _el_628.append(_text_629);
-    _el_630 = createDivAndAppend(doc, parentRenderNode);
-    addShimC(_el_630);
-    _el_631 = createAndAppend(doc, 'label', _el_630);
-    addShimE(_el_631);
-    import4.Text _text_632 = new import4.Text('Price:');
-    _el_631.append(_text_632);
-    _text_633 = new import4.Text('');
-    _el_630.append(_text_633);
-    _el_634 = createAndAppend(doc, 'a', parentRenderNode);
-    _el_634.className = 'to-toc';
-    createAttr(_el_634, 'href', '#toc');
-    addShimC(_el_634);
-    import4.Text _text_635 = new import4.Text('top');
-    _el_634.append(_text_635);
-    _el_636 = createAndAppend(doc, 'hr', parentRenderNode);
-    addShimE(_el_636);
-    _el_637 = createAndAppend(doc, 'h2', parentRenderNode);
-    createAttr(_el_637, 'id', 'safe-navigation-operator');
-    addShimE(_el_637);
-    import4.Text _text_638 = new import4.Text('Safe navigation operator');
-    _el_637.append(_text_638);
-    _el_639 = createAndAppend(doc, 'i', _el_637);
-    addShimE(_el_639);
-    import4.Text _text_640 = new import4.Text('?.');
-    _el_639.append(_text_640);
-    _el_641 = createDivAndAppend(doc, parentRenderNode);
-    addShimC(_el_641);
-    _text_642 = new import4.Text('');
-    _el_641.append(_text_642);
-    _el_643 = createDivAndAppend(doc, parentRenderNode);
-    addShimC(_el_643);
+    _el_630 = createAndAppend(doc, 'i', _el_628);
+    addShimE(_el_630);
+    import4.Text _text_631 = new import4.Text('?.');
+    _el_630.append(_text_631);
+    _el_632 = createDivAndAppend(doc, parentRenderNode);
+    addShimC(_el_632);
+    import4.Text _text_633 = new import4.Text('The title is ');
+    _el_632.append(_text_633);
+    _text_634 = new import4.Text('');
+    _el_632.append(_text_634);
+    _el_635 = createDivAndAppend(doc, parentRenderNode);
+    addShimC(_el_635);
+    import4.Text _text_636 = new import4.Text('The current hero\'s name is ');
+    _el_635.append(_text_636);
+    _text_637 = new import4.Text('');
+    _el_635.append(_text_637);
+    _el_638 = createDivAndAppend(doc, parentRenderNode);
+    addShimC(_el_638);
+    import4.Text _text_639 = new import4.Text('The current hero\'s name is ');
+    _el_638.append(_text_639);
+    _text_640 = new import4.Text('');
+    _el_638.append(_text_640);
+    var _anchor_641 = ngAnchor.clone(false);
+    parentRenderNode.append(_anchor_641);
+    _appEl_641 = new ViewContainer(641, null, this, _anchor_641);
+    TemplateRef _TemplateRef_641_6 = new TemplateRef(_appEl_641, viewFactory_AppComponent23);
+    _NgIf_641_7 = new NgIf(_appEl_641, _TemplateRef_641_6);
+    _el_642 = createDivAndAppend(doc, parentRenderNode);
+    addShimC(_el_642);
+    import4.Text _text_643 = new import4.Text('The null hero\'s name is ');
+    _el_642.append(_text_643);
     _text_644 = new import4.Text('');
-    _el_643.append(_text_644);
-    _el_645 = createDivAndAppend(doc, parentRenderNode);
+    _el_642.append(_text_644);
+    _el_645 = createAndAppend(doc, 'a', parentRenderNode);
+    _el_645.className = 'to-toc';
+    createAttr(_el_645, 'href', '#toc');
     addShimC(_el_645);
-    _text_646 = new import4.Text('');
+    import4.Text _text_646 = new import4.Text('top');
     _el_645.append(_text_646);
-    var _anchor_647 = ngAnchor.clone(false);
-    parentRenderNode.append(_anchor_647);
-    _appEl_647 = new ViewContainer(647, null, this, _anchor_647);
-    TemplateRef _TemplateRef_647_6 = new TemplateRef(_appEl_647, viewFactory_AppComponent27);
-    _NgIf_647_7 = new NgIf(_appEl_647, _TemplateRef_647_6);
-    _el_648 = createDivAndAppend(doc, parentRenderNode);
-    addShimC(_el_648);
-    _text_649 = new import4.Text('');
+    _el_647 = createAndAppend(doc, 'hr', parentRenderNode);
+    addShimE(_el_647);
+    _el_648 = createAndAppend(doc, 'h2', parentRenderNode);
+    createAttr(_el_648, 'id', 'enums');
+    addShimE(_el_648);
+    import4.Text _text_649 = new import4.Text('Enums in binding');
     _el_648.append(_text_649);
-    _el_650 = createAndAppend(doc, 'a', parentRenderNode);
-    _el_650.className = 'to-toc';
-    createAttr(_el_650, 'href', '#toc');
-    addShimC(_el_650);
-    import4.Text _text_651 = new import4.Text('top');
+    _el_650 = createAndAppend(doc, 'p', parentRenderNode);
+    addShimE(_el_650);
+    import4.Text _text_651 = new import4.Text('The name of the Color.red enum is ');
     _el_650.append(_text_651);
-    _el_652 = createAndAppend(doc, 'hr', parentRenderNode);
-    addShimE(_el_652);
-    _el_653 = createAndAppend(doc, 'h2', parentRenderNode);
-    createAttr(_el_653, 'id', 'enums');
-    addShimE(_el_653);
-    import4.Text _text_654 = new import4.Text('Enums in binding');
-    _el_653.append(_text_654);
-    _el_655 = createAndAppend(doc, 'p', parentRenderNode);
-    addShimE(_el_655);
+    _text_652 = new import4.Text('');
+    _el_650.append(_text_652);
+    import4.Text _text_653 = new import4.Text('.');
+    _el_650.append(_text_653);
+    _el_654 = createAndAppend(doc, 'br', _el_650);
+    addShimE(_el_654);
+    import4.Text _text_655 = new import4.Text('The current color is ');
+    _el_650.append(_text_655);
     _text_656 = new import4.Text('');
-    _el_655.append(_text_656);
-    _el_657 = createAndAppend(doc, 'br', _el_655);
-    addShimE(_el_657);
+    _el_650.append(_text_656);
+    import4.Text _text_657 = new import4.Text(' and its index is ');
+    _el_650.append(_text_657);
     _text_658 = new import4.Text('');
-    _el_655.append(_text_658);
-    _el_659 = createAndAppend(doc, 'br', _el_655);
-    addShimE(_el_659);
-    _el_660 = createAndAppend(doc, 'button', _el_655);
-    addShimC(_el_660);
-    import4.Text _text_661 = new import4.Text('Enum Toggle');
-    _el_660.append(_text_661);
-    _el_662 = createAndAppend(doc, 'a', parentRenderNode);
-    _el_662.className = 'to-toc';
-    createAttr(_el_662, 'href', '#toc');
-    addShimC(_el_662);
-    import4.Text _text_663 = new import4.Text('top');
-    _el_662.append(_text_663);
-    _el_117.addEventListener('keyup', eventHandler1(_handle_keyup_117_0));
-    _el_129.addEventListener('click', eventHandler0(ctx.deleteHero));
-    _el_134.addEventListener('click', eventHandler1(ctx.onSave));
-    import33.appViewUtils.eventManager.addEventListener(_el_143, 'submit', eventHandler1(_NgForm_143_4.onSubmit));
-    final subscription_0 = _NgForm_143_4.ngSubmit.listen(eventHandler1(_handle_ngSubmit_143_0));
+    _el_650.append(_text_658);
+    import4.Text _text_659 = new import4.Text('.');
+    _el_650.append(_text_659);
+    _el_660 = createAndAppend(doc, 'br', _el_650);
+    addShimE(_el_660);
+    _el_661 = createAndAppend(doc, 'button', _el_650);
+    addShimC(_el_661);
+    import4.Text _text_662 = new import4.Text('Enum Toggle');
+    _el_661.append(_text_662);
+    _el_663 = createAndAppend(doc, 'a', parentRenderNode);
+    _el_663.className = 'to-toc';
+    createAttr(_el_663, 'href', '#toc');
+    addShimC(_el_663);
+    import4.Text _text_664 = new import4.Text('top');
+    _el_663.append(_text_664);
+    _el_120.addEventListener('keyup', eventHandler1(_handle_keyup_120_0));
+    _el_133.addEventListener('click', eventHandler0(ctx.deleteHero));
+    _el_138.addEventListener('click', eventHandler1(ctx.onSave));
+    import33.appViewUtils.eventManager.addEventListener(_el_147, 'submit', eventHandler1(_NgForm_147_4.onSubmit));
+    final subscription_0 = _NgForm_147_4.ngSubmit.listen(eventHandler1(_handle_ngSubmit_147_0));
     _map_0 = import33.pureProxy1((p0) {
       return {'special': p0};
     });
-    _el_174.addEventListener('click', eventHandler0(ctx.onSave));
-    final subscription_1 = _HeroDetailComponent_176_4.deleteRequest.listen(eventHandler0(ctx.deleteHero));
-    final subscription_2 = _ClickDirective_177_4.clicks.listen(eventHandler1(_handle_myClick_177_0));
-    _el_184.addEventListener('input', eventHandler1(_handle_input_184_1));
-    _el_184.addEventListener('blur', eventHandler0(_DefaultValueAccessor_184_4.touchHandler));
-    final subscription_3 = _NgModel_184_6.update.listen(eventHandler1(_handle_ngModelChange_184_0));
-    _el_228.addEventListener('click', eventHandler1(ctx.onSave));
-    _el_230.addEventListener('click', eventHandler1(ctx.onSave));
-    _el_343.addEventListener('click', eventHandler0(ctx.onSave));
-    _el_345.addEventListener('click', eventHandler0(ctx.onSave));
-    final subscription_4 = _ClickDirective_348_4.clicks.listen(eventHandler1(_handle_myClick_348_0));
-    final subscription_5 = _HeroDetailComponent_351_4.deleteRequest.listen(eventHandler1(ctx.deleteHero));
-    final subscription_6 = _BigHeroDetailComponent_353_4.deleteRequest.listen(eventHandler1(ctx.deleteHero));
-    _el_354.addEventListener('click', eventHandler1(ctx.onClickMe));
-    _el_358.addEventListener('click', eventHandler0(ctx.onSave));
-    _el_359.addEventListener('click', eventHandler1(ctx.onSave));
-    _el_361.addEventListener('click', eventHandler0(ctx.onSave));
-    _el_362.addEventListener('click', eventHandler0(ctx.onSave));
-    final subscription_7 = _SizerComponent_370_4.sizeChange.listen(eventHandler1(_handle_sizeChange_370_0));
-    _el_375.addEventListener('input', eventHandler1(_handle_input_375_1));
-    _el_375.addEventListener('blur', eventHandler0(_DefaultValueAccessor_375_4.touchHandler));
-    final subscription_8 = _NgModel_375_6.update.listen(eventHandler1(_handle_ngModelChange_375_0));
-    final subscription_9 = _SizerComponent_381_4.sizeChange.listen(eventHandler1(_handle_sizeChange_381_0));
-    _el_389.addEventListener('input', eventHandler1(_handle_input_389_0));
-    _el_392.addEventListener('input', eventHandler1(_handle_input_392_1));
-    _el_392.addEventListener('blur', eventHandler0(_DefaultValueAccessor_392_4.touchHandler));
-    final subscription_10 = _NgModel_392_6.update.listen(eventHandler1(_handle_ngModelChange_392_0));
-    _el_395.addEventListener('input', eventHandler1(_handle_input_395_1));
-    _el_395.addEventListener('blur', eventHandler0(_DefaultValueAccessor_395_4.touchHandler));
-    final subscription_11 = _NgModel_395_6.update.listen(eventHandler1(_handle_ngModelChange_395_0));
-    _el_398.addEventListener('input', eventHandler1(_handle_input_398_1));
-    _el_398.addEventListener('blur', eventHandler0(_DefaultValueAccessor_398_4.touchHandler));
-    final subscription_12 = _NgModel_398_6.update.listen(eventHandler1(_handle_ngModelChange_398_0));
-    _el_401.addEventListener('input', eventHandler1(_handle_input_401_1));
-    _el_401.addEventListener('blur', eventHandler0(_DefaultValueAccessor_401_4.touchHandler));
-    final subscription_13 = _NgModel_401_6.update.listen(eventHandler1(ctx.setUppercaseName));
-    _el_415.addEventListener('change', eventHandler1(_handle_change_415_1));
-    _el_415.addEventListener('blur', eventHandler0(_CheckboxControlValueAccessor_415_4.touchHandler));
-    final subscription_14 = _NgModel_415_6.update.listen(eventHandler1(_handle_ngModelChange_415_0));
-    _el_419.addEventListener('change', eventHandler1(_handle_change_419_0));
+    _el_178.addEventListener('click', eventHandler0(ctx.onSave));
+    final subscription_1 = _HeroDetailComponent_180_4.deleteRequest.listen(eventHandler0(ctx.deleteHero));
+    final subscription_2 = _ClickDirective_181_4.clicks.listen(eventHandler1(_handle_myClick_181_0));
+    _el_188.addEventListener('input', eventHandler1(_handle_input_188_1));
+    _el_188.addEventListener('blur', eventHandler0(_DefaultValueAccessor_188_4.touchHandler));
+    final subscription_3 = _NgModel_188_6.update.listen(eventHandler1(_handle_ngModelChange_188_0));
+    _el_232.addEventListener('click', eventHandler1(ctx.onSave));
+    _el_234.addEventListener('click', eventHandler1(ctx.onSave));
+    _el_351.addEventListener('click', eventHandler0(ctx.onSave));
+    _el_353.addEventListener('click', eventHandler0(ctx.onSave));
+    final subscription_4 = _ClickDirective_356_4.clicks.listen(eventHandler1(_handle_myClick_356_0));
+    final subscription_5 = _HeroDetailComponent_359_4.deleteRequest.listen(eventHandler1(ctx.deleteHero));
+    final subscription_6 = _BigHeroDetailComponent_361_4.deleteRequest.listen(eventHandler1(ctx.deleteHero));
+    _el_362.addEventListener('click', eventHandler1(ctx.onClickMe));
+    _el_366.addEventListener('click', eventHandler0(ctx.onSave));
+    _el_367.addEventListener('click', eventHandler1(ctx.onSave));
+    _el_369.addEventListener('click', eventHandler0(ctx.onSave));
+    _el_370.addEventListener('click', eventHandler0(ctx.onSave));
+    final subscription_7 = _SizerComponent_378_4.sizeChange.listen(eventHandler1(_handle_sizeChange_378_0));
+    _el_383.addEventListener('input', eventHandler1(_handle_input_383_1));
+    _el_383.addEventListener('blur', eventHandler0(_DefaultValueAccessor_383_4.touchHandler));
+    final subscription_8 = _NgModel_383_6.update.listen(eventHandler1(_handle_ngModelChange_383_0));
+    final subscription_9 = _SizerComponent_390_4.sizeChange.listen(eventHandler1(_handle_sizeChange_390_0));
+    _el_399.addEventListener('input', eventHandler1(_handle_input_399_0));
+    _el_402.addEventListener('input', eventHandler1(_handle_input_402_1));
+    _el_402.addEventListener('blur', eventHandler0(_DefaultValueAccessor_402_4.touchHandler));
+    final subscription_10 = _NgModel_402_6.update.listen(eventHandler1(_handle_ngModelChange_402_0));
+    _el_405.addEventListener('input', eventHandler1(_handle_input_405_1));
+    _el_405.addEventListener('blur', eventHandler0(_DefaultValueAccessor_405_4.touchHandler));
+    final subscription_11 = _NgModel_405_6.update.listen(eventHandler1(_handle_ngModelChange_405_0));
+    _el_408.addEventListener('input', eventHandler1(_handle_input_408_1));
+    _el_408.addEventListener('blur', eventHandler0(_DefaultValueAccessor_408_4.touchHandler));
+    final subscription_12 = _NgModel_408_6.update.listen(eventHandler1(ctx.setUppercaseName));
     _el_423.addEventListener('change', eventHandler1(_handle_change_423_1));
     _el_423.addEventListener('blur', eventHandler0(_CheckboxControlValueAccessor_423_4.touchHandler));
-    final subscription_15 = _NgModel_423_6.update.listen(eventHandler1(_handle_ngModelChange_423_0));
-    _el_424.addEventListener('click', eventHandler0(ctx.setCurrentClasses));
+    final subscription_13 = _NgModel_423_6.update.listen(eventHandler1(_handle_ngModelChange_423_0));
+    _el_427.addEventListener('change', eventHandler1(_handle_change_427_0));
+    _el_431.addEventListener('change', eventHandler1(_handle_change_431_1));
+    _el_431.addEventListener('blur', eventHandler0(_CheckboxControlValueAccessor_431_4.touchHandler));
+    final subscription_14 = _NgModel_431_6.update.listen(eventHandler1(_handle_ngModelChange_431_0));
+    _el_432.addEventListener('click', eventHandler0(ctx.setCurrentClasses));
     _map_1 = import33.pureProxy3((p0, p1, p2) {
       return {'bad': p0, 'curly': p1, 'special': p2};
     });
-    _el_454.addEventListener('change', eventHandler1(_handle_change_454_1));
-    _el_454.addEventListener('blur', eventHandler0(_CheckboxControlValueAccessor_454_4.touchHandler));
-    final subscription_16 = _NgModel_454_6.update.listen(eventHandler1(_handle_ngModelChange_454_0));
-    _el_458.addEventListener('change', eventHandler1(_handle_change_458_1));
-    _el_458.addEventListener('blur', eventHandler0(_CheckboxControlValueAccessor_458_4.touchHandler));
-    final subscription_17 = _NgModel_458_6.update.listen(eventHandler1(_handle_ngModelChange_458_0));
-    _el_462.addEventListener('change', eventHandler1(_handle_change_462_1));
-    _el_462.addEventListener('blur', eventHandler0(_CheckboxControlValueAccessor_462_4.touchHandler));
-    final subscription_18 = _NgModel_462_6.update.listen(eventHandler1(_handle_ngModelChange_462_0));
-    _el_463.addEventListener('click', eventHandler0(ctx.setCurrentStyles));
-    _el_522.addEventListener('click', eventHandler0(ctx.resetHeroes));
-    _el_524.addEventListener('click', eventHandler0(ctx.changeIds));
-    _el_526.addEventListener('click', eventHandler0(ctx.clearTrackByCounts));
-    final subscription_19 = _NgModel_578_4.update.listen(eventHandler1(_handle_ngModelChange_578_0));
-    _el_594.addEventListener('click', eventHandler1(_handle_click_594_0));
-    _el_597.addEventListener('click', eventHandler1(_handle_click_597_0));
-    _el_609.addEventListener('click', eventHandler0(ctx.onSave));
-    final subscription_20 = _HeroDetailComponent_611_4.deleteRequest.listen(eventHandler1(ctx.deleteHero));
-    final subscription_21 = _ClickDirective_612_4.clicks.listen(eventHandler1(_handle_myClick_612_0));
-    _el_660.addEventListener('click', eventHandler0(ctx.colorToggle));
+    _el_469.addEventListener('change', eventHandler1(_handle_change_469_1));
+    _el_469.addEventListener('blur', eventHandler0(_CheckboxControlValueAccessor_469_4.touchHandler));
+    final subscription_15 = _NgModel_469_6.update.listen(eventHandler1(_handle_ngModelChange_469_0));
+    _el_473.addEventListener('change', eventHandler1(_handle_change_473_1));
+    _el_473.addEventListener('blur', eventHandler0(_CheckboxControlValueAccessor_473_4.touchHandler));
+    final subscription_16 = _NgModel_473_6.update.listen(eventHandler1(_handle_ngModelChange_473_0));
+    _el_477.addEventListener('change', eventHandler1(_handle_change_477_1));
+    _el_477.addEventListener('blur', eventHandler0(_CheckboxControlValueAccessor_477_4.touchHandler));
+    final subscription_17 = _NgModel_477_6.update.listen(eventHandler1(_handle_ngModelChange_477_0));
+    _el_478.addEventListener('click', eventHandler0(ctx.setCurrentStyles));
+    _el_531.addEventListener('click', eventHandler0(ctx.resetHeroes));
+    _el_533.addEventListener('click', eventHandler0(ctx.changeIds));
+    _el_535.addEventListener('click', eventHandler0(ctx.clearTrackByCounts));
+    final subscription_18 = _NgModel_564_4.update.listen(eventHandler1(_handle_ngModelChange_564_0));
+    _el_584.addEventListener('click', eventHandler1(_handle_click_584_0));
+    _el_596.addEventListener('click', eventHandler0(ctx.onSave));
+    final subscription_19 = _HeroDetailComponent_598_4.deleteRequest.listen(eventHandler1(ctx.deleteHero));
+    final subscription_20 = _ClickDirective_599_4.clicks.listen(eventHandler1(_handle_myClick_599_0));
+    _el_661.addEventListener('click', eventHandler0(ctx.colorToggle));
     _pipe_uppercase_0 = new import24.UpperCasePipe();
     _pipe_uppercase_0_0 = import33.pureProxy1(_pipe_uppercase_0.transform);
     _pipe_uppercase_0_1 = import33.pureProxy1(_pipe_uppercase_0.transform);
@@ -2506,110 +2462,92 @@ class ViewAppComponent0 extends AppView<import2.AppComponent> {
     _pipe_json_3 = new import28.JsonPipe();
     _pipe_currency_4 = new import29.CurrencyPipe();
     _pipe_currency_4_0 = import33.pureProxy3(_pipe_currency_4.transform);
-    init(const [], [subscription_0, subscription_1, subscription_2, subscription_3, subscription_4, subscription_5, subscription_6, subscription_7, subscription_8, subscription_9, subscription_10, subscription_11, subscription_12, subscription_13, subscription_14, subscription_15, subscription_16, subscription_17, subscription_18, subscription_19, subscription_20, subscription_21]);
+    init(const [], [subscription_0, subscription_1, subscription_2, subscription_3, subscription_4, subscription_5, subscription_6, subscription_7, subscription_8, subscription_9, subscription_10, subscription_11, subscription_12, subscription_13, subscription_14, subscription_15, subscription_16, subscription_17, subscription_18, subscription_19, subscription_20]);
     return null;
   }
 
   @override
   dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
-    if (((identical(token, import7.NgForm) || identical(token, import37.ControlContainer)) && ((143 <= nodeIndex) && (nodeIndex <= 144)))) {
-      return _NgForm_143_4;
+    if (((identical(token, import7.NgForm) || identical(token, import37.ControlContainer)) && ((147 <= nodeIndex) && (nodeIndex <= 148)))) {
+      return _NgForm_147_4;
     }
-    if ((identical(token, import9.HeroDetailComponent) && (160 == nodeIndex))) {
-      return _HeroDetailComponent_160_4;
+    if ((identical(token, import9.HeroDetailComponent) && (164 == nodeIndex))) {
+      return _HeroDetailComponent_164_4;
     }
-    if ((identical(token, import9.HeroDetailComponent) && (170 == nodeIndex))) {
-      return _HeroDetailComponent_170_4;
+    if ((identical(token, import9.HeroDetailComponent) && (174 == nodeIndex))) {
+      return _HeroDetailComponent_174_4;
     }
-    if ((identical(token, import9.HeroDetailComponent) && (176 == nodeIndex))) {
-      return _HeroDetailComponent_176_4;
+    if ((identical(token, import9.HeroDetailComponent) && (180 == nodeIndex))) {
+      return _HeroDetailComponent_180_4;
     }
-    if ((identical(token, import11.ClickDirective) && ((177 <= nodeIndex) && (nodeIndex <= 178)))) {
-      return _ClickDirective_177_4;
+    if ((identical(token, import11.ClickDirective) && ((181 <= nodeIndex) && (nodeIndex <= 182)))) {
+      return _ClickDirective_181_4;
     }
-    if ((identical(token, import12.DefaultValueAccessor) && (184 == nodeIndex))) {
-      return _DefaultValueAccessor_184_4;
+    if ((identical(token, import12.DefaultValueAccessor) && (188 == nodeIndex))) {
+      return _DefaultValueAccessor_188_4;
     }
-    if ((identical(token, const import38.OpaqueToken<import39.ControlValueAccessor<dynamic>>('NgValueAccessor')) && (184 == nodeIndex))) {
-      return _NgValueAccessor_184_5;
+    if ((identical(token, const import38.OpaqueToken<import39.ControlValueAccessor<dynamic>>('NgValueAccessor')) && (188 == nodeIndex))) {
+      return _NgValueAccessor_188_5;
     }
-    if (((identical(token, import13.NgModel) || identical(token, import40.NgControl)) && (184 == nodeIndex))) {
-      return _NgModel_184_6;
+    if (((identical(token, import13.NgModel) || identical(token, import40.NgControl)) && (188 == nodeIndex))) {
+      return _NgModel_188_6;
     }
-    if ((identical(token, import9.HeroDetailComponent) && (242 == nodeIndex))) {
-      return _HeroDetailComponent_242_4;
+    if ((identical(token, import9.HeroDetailComponent) && (246 == nodeIndex))) {
+      return _HeroDetailComponent_246_4;
     }
-    if ((identical(token, import9.HeroDetailComponent) && (244 == nodeIndex))) {
-      return _HeroDetailComponent_244_4;
+    if ((identical(token, import9.HeroDetailComponent) && (248 == nodeIndex))) {
+      return _HeroDetailComponent_248_4;
     }
-    if ((identical(token, import11.ClickDirective) && ((348 <= nodeIndex) && (nodeIndex <= 349)))) {
-      return _ClickDirective_348_4;
+    if ((identical(token, import11.ClickDirective) && ((356 <= nodeIndex) && (nodeIndex <= 357)))) {
+      return _ClickDirective_356_4;
     }
-    if ((identical(token, import9.HeroDetailComponent) && (351 == nodeIndex))) {
-      return _HeroDetailComponent_351_4;
+    if ((identical(token, import9.HeroDetailComponent) && (359 == nodeIndex))) {
+      return _HeroDetailComponent_359_4;
     }
-    if ((identical(token, import9.BigHeroDetailComponent) && (353 == nodeIndex))) {
-      return _BigHeroDetailComponent_353_4;
+    if ((identical(token, import9.BigHeroDetailComponent) && (361 == nodeIndex))) {
+      return _BigHeroDetailComponent_361_4;
     }
-    if ((identical(token, import15.SizerComponent) && (370 == nodeIndex))) {
-      return _SizerComponent_370_4;
+    if ((identical(token, import15.SizerComponent) && (378 == nodeIndex))) {
+      return _SizerComponent_378_4;
     }
-    if ((identical(token, import12.DefaultValueAccessor) && (375 == nodeIndex))) {
-      return _DefaultValueAccessor_375_4;
+    if ((identical(token, import12.DefaultValueAccessor) && (383 == nodeIndex))) {
+      return _DefaultValueAccessor_383_4;
     }
-    if ((identical(token, const import38.OpaqueToken<import39.ControlValueAccessor<dynamic>>('NgValueAccessor')) && (375 == nodeIndex))) {
-      return _NgValueAccessor_375_5;
+    if ((identical(token, const import38.OpaqueToken<import39.ControlValueAccessor<dynamic>>('NgValueAccessor')) && (383 == nodeIndex))) {
+      return _NgValueAccessor_383_5;
     }
-    if (((identical(token, import13.NgModel) || identical(token, import40.NgControl)) && (375 == nodeIndex))) {
-      return _NgModel_375_6;
+    if (((identical(token, import13.NgModel) || identical(token, import40.NgControl)) && (383 == nodeIndex))) {
+      return _NgModel_383_6;
     }
-    if ((identical(token, import15.SizerComponent) && (381 == nodeIndex))) {
-      return _SizerComponent_381_4;
+    if ((identical(token, import15.SizerComponent) && (390 == nodeIndex))) {
+      return _SizerComponent_390_4;
     }
-    if ((identical(token, import12.DefaultValueAccessor) && (392 == nodeIndex))) {
-      return _DefaultValueAccessor_392_4;
+    if ((identical(token, import12.DefaultValueAccessor) && (402 == nodeIndex))) {
+      return _DefaultValueAccessor_402_4;
     }
-    if ((identical(token, const import38.OpaqueToken<import39.ControlValueAccessor<dynamic>>('NgValueAccessor')) && (392 == nodeIndex))) {
-      return _NgValueAccessor_392_5;
+    if ((identical(token, const import38.OpaqueToken<import39.ControlValueAccessor<dynamic>>('NgValueAccessor')) && (402 == nodeIndex))) {
+      return _NgValueAccessor_402_5;
     }
-    if (((identical(token, import13.NgModel) || identical(token, import40.NgControl)) && (392 == nodeIndex))) {
-      return _NgModel_392_6;
+    if (((identical(token, import13.NgModel) || identical(token, import40.NgControl)) && (402 == nodeIndex))) {
+      return _NgModel_402_6;
     }
-    if ((identical(token, import12.DefaultValueAccessor) && (395 == nodeIndex))) {
-      return _DefaultValueAccessor_395_4;
+    if ((identical(token, import12.DefaultValueAccessor) && (405 == nodeIndex))) {
+      return _DefaultValueAccessor_405_4;
     }
-    if ((identical(token, const import38.OpaqueToken<import39.ControlValueAccessor<dynamic>>('NgValueAccessor')) && (395 == nodeIndex))) {
-      return _NgValueAccessor_395_5;
+    if ((identical(token, const import38.OpaqueToken<import39.ControlValueAccessor<dynamic>>('NgValueAccessor')) && (405 == nodeIndex))) {
+      return _NgValueAccessor_405_5;
     }
-    if (((identical(token, import13.NgModel) || identical(token, import40.NgControl)) && (395 == nodeIndex))) {
-      return _NgModel_395_6;
+    if (((identical(token, import13.NgModel) || identical(token, import40.NgControl)) && (405 == nodeIndex))) {
+      return _NgModel_405_6;
     }
-    if ((identical(token, import12.DefaultValueAccessor) && (398 == nodeIndex))) {
-      return _DefaultValueAccessor_398_4;
+    if ((identical(token, import12.DefaultValueAccessor) && (408 == nodeIndex))) {
+      return _DefaultValueAccessor_408_4;
     }
-    if ((identical(token, const import38.OpaqueToken<import39.ControlValueAccessor<dynamic>>('NgValueAccessor')) && (398 == nodeIndex))) {
-      return _NgValueAccessor_398_5;
+    if ((identical(token, const import38.OpaqueToken<import39.ControlValueAccessor<dynamic>>('NgValueAccessor')) && (408 == nodeIndex))) {
+      return _NgValueAccessor_408_5;
     }
-    if (((identical(token, import13.NgModel) || identical(token, import40.NgControl)) && (398 == nodeIndex))) {
-      return _NgModel_398_6;
-    }
-    if ((identical(token, import12.DefaultValueAccessor) && (401 == nodeIndex))) {
-      return _DefaultValueAccessor_401_4;
-    }
-    if ((identical(token, const import38.OpaqueToken<import39.ControlValueAccessor<dynamic>>('NgValueAccessor')) && (401 == nodeIndex))) {
-      return _NgValueAccessor_401_5;
-    }
-    if (((identical(token, import13.NgModel) || identical(token, import40.NgControl)) && (401 == nodeIndex))) {
-      return _NgModel_401_6;
-    }
-    if ((identical(token, import16.CheckboxControlValueAccessor) && (415 == nodeIndex))) {
-      return _CheckboxControlValueAccessor_415_4;
-    }
-    if ((identical(token, const import38.OpaqueToken<import39.ControlValueAccessor<dynamic>>('NgValueAccessor')) && (415 == nodeIndex))) {
-      return _NgValueAccessor_415_5;
-    }
-    if (((identical(token, import13.NgModel) || identical(token, import40.NgControl)) && (415 == nodeIndex))) {
-      return _NgModel_415_6;
+    if (((identical(token, import13.NgModel) || identical(token, import40.NgControl)) && (408 == nodeIndex))) {
+      return _NgModel_408_6;
     }
     if ((identical(token, import16.CheckboxControlValueAccessor) && (423 == nodeIndex))) {
       return _CheckboxControlValueAccessor_423_4;
@@ -2620,56 +2558,65 @@ class ViewAppComponent0 extends AppView<import2.AppComponent> {
     if (((identical(token, import13.NgModel) || identical(token, import40.NgControl)) && (423 == nodeIndex))) {
       return _NgModel_423_6;
     }
-    if ((identical(token, import16.CheckboxControlValueAccessor) && (454 == nodeIndex))) {
-      return _CheckboxControlValueAccessor_454_4;
+    if ((identical(token, import16.CheckboxControlValueAccessor) && (431 == nodeIndex))) {
+      return _CheckboxControlValueAccessor_431_4;
     }
-    if ((identical(token, const import38.OpaqueToken<import39.ControlValueAccessor<dynamic>>('NgValueAccessor')) && (454 == nodeIndex))) {
-      return _NgValueAccessor_454_5;
+    if ((identical(token, const import38.OpaqueToken<import39.ControlValueAccessor<dynamic>>('NgValueAccessor')) && (431 == nodeIndex))) {
+      return _NgValueAccessor_431_5;
     }
-    if (((identical(token, import13.NgModel) || identical(token, import40.NgControl)) && (454 == nodeIndex))) {
-      return _NgModel_454_6;
+    if (((identical(token, import13.NgModel) || identical(token, import40.NgControl)) && (431 == nodeIndex))) {
+      return _NgModel_431_6;
     }
-    if ((identical(token, import16.CheckboxControlValueAccessor) && (458 == nodeIndex))) {
-      return _CheckboxControlValueAccessor_458_4;
+    if ((identical(token, import16.CheckboxControlValueAccessor) && (469 == nodeIndex))) {
+      return _CheckboxControlValueAccessor_469_4;
     }
-    if ((identical(token, const import38.OpaqueToken<import39.ControlValueAccessor<dynamic>>('NgValueAccessor')) && (458 == nodeIndex))) {
-      return _NgValueAccessor_458_5;
+    if ((identical(token, const import38.OpaqueToken<import39.ControlValueAccessor<dynamic>>('NgValueAccessor')) && (469 == nodeIndex))) {
+      return _NgValueAccessor_469_5;
     }
-    if (((identical(token, import13.NgModel) || identical(token, import40.NgControl)) && (458 == nodeIndex))) {
-      return _NgModel_458_6;
+    if (((identical(token, import13.NgModel) || identical(token, import40.NgControl)) && (469 == nodeIndex))) {
+      return _NgModel_469_6;
     }
-    if ((identical(token, import16.CheckboxControlValueAccessor) && (462 == nodeIndex))) {
-      return _CheckboxControlValueAccessor_462_4;
+    if ((identical(token, import16.CheckboxControlValueAccessor) && (473 == nodeIndex))) {
+      return _CheckboxControlValueAccessor_473_4;
     }
-    if ((identical(token, const import38.OpaqueToken<import39.ControlValueAccessor<dynamic>>('NgValueAccessor')) && (462 == nodeIndex))) {
-      return _NgValueAccessor_462_5;
+    if ((identical(token, const import38.OpaqueToken<import39.ControlValueAccessor<dynamic>>('NgValueAccessor')) && (473 == nodeIndex))) {
+      return _NgValueAccessor_473_5;
     }
-    if (((identical(token, import13.NgModel) || identical(token, import40.NgControl)) && (462 == nodeIndex))) {
-      return _NgModel_462_6;
+    if (((identical(token, import13.NgModel) || identical(token, import40.NgControl)) && (473 == nodeIndex))) {
+      return _NgModel_473_6;
     }
-    if ((identical(token, import9.HeroDetailComponent) && (485 == nodeIndex))) {
-      return _HeroDetailComponent_485_4;
+    if ((identical(token, import16.CheckboxControlValueAccessor) && (477 == nodeIndex))) {
+      return _CheckboxControlValueAccessor_477_4;
     }
-    if ((identical(token, import13.NgModel) && ((578 <= nodeIndex) && (nodeIndex <= 579)))) {
-      return _NgModel_578_4;
+    if ((identical(token, const import38.OpaqueToken<import39.ControlValueAccessor<dynamic>>('NgValueAccessor')) && (477 == nodeIndex))) {
+      return _NgValueAccessor_477_5;
     }
-    if ((identical(token, import40.NgControl) && ((578 <= nodeIndex) && (nodeIndex <= 579)))) {
-      return _NgControl_578_5;
+    if (((identical(token, import13.NgModel) || identical(token, import40.NgControl)) && (477 == nodeIndex))) {
+      return _NgModel_477_6;
     }
-    if ((identical(token, import20.MaterialRadioGroupComponent) && ((578 <= nodeIndex) && (nodeIndex <= 579)))) {
-      return _MaterialRadioGroupComponent_578_6;
+    if ((identical(token, import9.HeroDetailComponent) && (506 == nodeIndex))) {
+      return _HeroDetailComponent_506_4;
     }
-    if ((identical(token, import21.NgSwitch) && ((582 <= nodeIndex) && (nodeIndex <= 587)))) {
-      return _NgSwitch_582_4;
+    if ((identical(token, import13.NgModel) && ((564 <= nodeIndex) && (nodeIndex <= 565)))) {
+      return _NgModel_564_4;
     }
-    if ((identical(token, import23.HeroFormComponent) && (602 == nodeIndex))) {
-      return _HeroFormComponent_602_4;
+    if ((identical(token, import40.NgControl) && ((564 <= nodeIndex) && (nodeIndex <= 565)))) {
+      return _NgControl_564_5;
     }
-    if ((identical(token, import9.HeroDetailComponent) && (611 == nodeIndex))) {
-      return _HeroDetailComponent_611_4;
+    if ((identical(token, import20.MaterialRadioGroupComponent) && ((564 <= nodeIndex) && (nodeIndex <= 565)))) {
+      return _MaterialRadioGroupComponent_564_6;
     }
-    if ((identical(token, import11.ClickDirective) && ((612 <= nodeIndex) && (nodeIndex <= 613)))) {
-      return _ClickDirective_612_4;
+    if ((identical(token, import21.NgSwitch) && ((572 <= nodeIndex) && (nodeIndex <= 577)))) {
+      return _NgSwitch_572_4;
+    }
+    if ((identical(token, import23.HeroFormComponent) && (589 == nodeIndex))) {
+      return _HeroFormComponent_589_4;
+    }
+    if ((identical(token, import9.HeroDetailComponent) && (598 == nodeIndex))) {
+      return _HeroDetailComponent_598_4;
+    }
+    if ((identical(token, import11.ClickDirective) && ((599 <= nodeIndex) && (nodeIndex <= 600)))) {
+      return _ClickDirective_599_4;
     }
     return notFoundResult;
   }
@@ -2679,214 +2626,190 @@ class ViewAppComponent0 extends AppView<import2.AppComponent> {
     final import2.AppComponent _ctx = ctx;
     bool changed = false;
     bool firstCheck = (this.cdState == 0);
-    final local_heroInput = _el_119;
-    final local_mySizer = _SizerComponent_370_4;
-    final local_btn = _el_599;
+    final local_heroInput = _el_122;
+    final local_mySizer = _SizerComponent_378_4;
+    final local_btn = _el_586;
     if (firstCheck) {
       if (!identical(_ctx.heroes, null)) {
-        (_NgFor_139_7.ngForOf = _ctx.heroes);
+        (_NgFor_143_7.ngForOf = _ctx.heroes);
       }
     }
-    _NgFor_139_7.ngDoCheck();
+    _NgFor_143_7.ngDoCheck();
     if (firstCheck) {
-      _HeroDetailComponent_160_4.ngOnInit();
+      _HeroDetailComponent_164_4.ngOnInit();
     }
-    final currVal_12 = _ctx.currentHero;
+    final currVal_11 = _ctx.currentHero;
+    if (!identical(_expr_11, currVal_11)) {
+      _HeroDetailComponent_174_4.hero = currVal_11;
+      _expr_11 = currVal_11;
+    }
+    if (firstCheck) {
+      _HeroDetailComponent_174_4.ngOnInit();
+    }
+    final currVal_12 = _map_0(_ctx.isSpecial);
     if (!identical(_expr_12, currVal_12)) {
-      _HeroDetailComponent_170_4.hero = currVal_12;
+      _NgClass_175_4.rawClass = currVal_12;
       _expr_12 = currVal_12;
     }
+    _NgClass_175_4.ngDoCheck();
     if (firstCheck) {
-      _HeroDetailComponent_170_4.ngOnInit();
-    }
-    final currVal_13 = _map_0(_ctx.isSpecial);
-    if (!identical(_expr_13, currVal_13)) {
-      _NgClass_171_4.rawClass = currVal_13;
-      _expr_13 = currVal_13;
-    }
-    _NgClass_171_4.ngDoCheck();
-    if (firstCheck) {
-      _HeroDetailComponent_176_4.ngOnInit();
+      _HeroDetailComponent_180_4.ngOnInit();
     }
     changed = false;
-    _NgModel_184_6.model = _ctx.name;
-    _NgModel_184_6.ngAfterChanges();
+    _NgModel_188_6.model = _ctx.name;
+    _NgModel_188_6.ngAfterChanges();
     if (firstCheck) {
-      _NgModel_184_6.ngOnInit();
+      _NgModel_188_6.ngOnInit();
     }
-    final currVal_29 = _ctx.classes;
+    final currVal_28 = _ctx.classes;
+    if (!identical(_expr_28, currVal_28)) {
+      _NgClass_244_4.rawClass = currVal_28;
+      _expr_28 = currVal_28;
+    }
+    _NgClass_244_4.ngDoCheck();
+    final currVal_29 = _ctx.currentHero;
     if (!identical(_expr_29, currVal_29)) {
-      _NgClass_240_4.rawClass = currVal_29;
+      _HeroDetailComponent_246_4.hero = currVal_29;
       _expr_29 = currVal_29;
     }
-    _NgClass_240_4.ngDoCheck();
-    final currVal_30 = _ctx.currentHero;
-    if (!identical(_expr_30, currVal_30)) {
-      _HeroDetailComponent_242_4.hero = currVal_30;
-      _expr_30 = currVal_30;
+    if (firstCheck) {
+      _HeroDetailComponent_246_4.ngOnInit();
     }
     if (firstCheck) {
-      _HeroDetailComponent_242_4.ngOnInit();
+      (_HeroDetailComponent_248_4.prefix = 'You are my');
+    }
+    final currVal_31 = _ctx.currentHero;
+    if (!identical(_expr_31, currVal_31)) {
+      _HeroDetailComponent_248_4.hero = currVal_31;
+      _expr_31 = currVal_31;
     }
     if (firstCheck) {
-      (_HeroDetailComponent_244_4.prefix = 'You are my');
+      _HeroDetailComponent_248_4.ngOnInit();
     }
-    final currVal_32 = _ctx.currentHero;
-    if (!identical(_expr_32, currVal_32)) {
-      _HeroDetailComponent_244_4.hero = currVal_32;
-      _expr_32 = currVal_32;
+    final currVal_54 = _ctx.currentHero;
+    if (!identical(_expr_54, currVal_54)) {
+      _HeroDetailComponent_359_4.hero = currVal_54;
+      _expr_54 = currVal_54;
     }
     if (firstCheck) {
-      _HeroDetailComponent_244_4.ngOnInit();
+      _HeroDetailComponent_359_4.ngOnInit();
     }
     final currVal_55 = _ctx.currentHero;
     if (!identical(_expr_55, currVal_55)) {
-      _HeroDetailComponent_351_4.hero = currVal_55;
+      _BigHeroDetailComponent_361_4.hero = currVal_55;
       _expr_55 = currVal_55;
     }
     if (firstCheck) {
-      _HeroDetailComponent_351_4.ngOnInit();
+      _BigHeroDetailComponent_361_4.ngOnInit();
     }
-    final currVal_56 = _ctx.currentHero;
+    final currVal_56 = _ctx.fontSizePx;
     if (!identical(_expr_56, currVal_56)) {
-      _BigHeroDetailComponent_353_4.hero = currVal_56;
+      _SizerComponent_378_4.size = currVal_56;
       _expr_56 = currVal_56;
     }
+    changed = false;
+    _NgModel_383_6.model = _ctx.fontSizePx;
+    _NgModel_383_6.ngAfterChanges();
     if (firstCheck) {
-      _BigHeroDetailComponent_353_4.ngOnInit();
+      _NgModel_383_6.ngOnInit();
     }
-    final currVal_57 = _ctx.fontSizePx;
-    if (!identical(_expr_57, currVal_57)) {
-      _SizerComponent_370_4.size = currVal_57;
-      _expr_57 = currVal_57;
+    final currVal_60 = _ctx.fontSizePx;
+    if (!identical(_expr_60, currVal_60)) {
+      _SizerComponent_390_4.size = currVal_60;
+      _expr_60 = currVal_60;
     }
     changed = false;
-    _NgModel_375_6.model = _ctx.fontSizePx;
-    _NgModel_375_6.ngAfterChanges();
+    _NgModel_402_6.model = _ctx.currentHero.name;
+    _NgModel_402_6.ngAfterChanges();
     if (firstCheck) {
-      _NgModel_375_6.ngOnInit();
-    }
-    final currVal_61 = _ctx.fontSizePx;
-    if (!identical(_expr_61, currVal_61)) {
-      _SizerComponent_381_4.size = currVal_61;
-      _expr_61 = currVal_61;
+      _NgModel_402_6.ngOnInit();
     }
     changed = false;
-    _NgModel_392_6.model = _ctx.currentHero.name;
-    _NgModel_392_6.ngAfterChanges();
+    _NgModel_405_6.model = _ctx.currentHero.name;
+    _NgModel_405_6.ngAfterChanges();
     if (firstCheck) {
-      _NgModel_392_6.ngOnInit();
+      _NgModel_405_6.ngOnInit();
     }
     changed = false;
-    _NgModel_395_6.model = _ctx.currentHero.name;
-    _NgModel_395_6.ngAfterChanges();
+    _NgModel_408_6.model = _ctx.currentHero.name;
+    _NgModel_408_6.ngAfterChanges();
     if (firstCheck) {
-      _NgModel_395_6.ngOnInit();
+      _NgModel_408_6.ngOnInit();
     }
+    final currVal_67 = _ctx.currentClasses;
+    if (!identical(_expr_67, currVal_67)) {
+      _NgClass_418_4.rawClass = currVal_67;
+      _expr_67 = currVal_67;
+    }
+    _NgClass_418_4.ngDoCheck();
     changed = false;
-    _NgModel_398_6.model = _ctx.currentHero.name;
-    _NgModel_398_6.ngAfterChanges();
-    if (firstCheck) {
-      _NgModel_398_6.ngOnInit();
-    }
-    changed = false;
-    _NgModel_401_6.model = _ctx.currentHero.name;
-    _NgModel_401_6.ngAfterChanges();
-    if (firstCheck) {
-      _NgModel_401_6.ngOnInit();
-    }
-    final currVal_69 = _ctx.currentClasses;
-    if (!identical(_expr_69, currVal_69)) {
-      _NgClass_410_4.rawClass = currVal_69;
-      _expr_69 = currVal_69;
-    }
-    _NgClass_410_4.ngDoCheck();
-    changed = false;
-    _NgModel_415_6.model = _ctx.canSave;
-    _NgModel_415_6.ngAfterChanges();
-    if (firstCheck) {
-      _NgModel_415_6.ngOnInit();
-    }
-    changed = false;
-    _NgModel_423_6.model = _ctx.isSpecial;
+    _NgModel_423_6.model = _ctx.canSave;
     _NgModel_423_6.ngAfterChanges();
     if (firstCheck) {
       _NgModel_423_6.ngOnInit();
     }
-    final currVal_73 = _ctx.currentClasses;
-    if (!identical(_expr_73, currVal_73)) {
-      _NgClass_428_4.rawClass = currVal_73;
-      _expr_73 = currVal_73;
+    changed = false;
+    _NgModel_431_6.model = _ctx.isSpecial;
+    _NgModel_431_6.ngAfterChanges();
+    if (firstCheck) {
+      _NgModel_431_6.ngOnInit();
     }
-    _NgClass_428_4.ngDoCheck();
-    final currVal_75 = (_ctx.isSpecial ? 'special' : '');
-    if (!identical(_expr_75, currVal_75)) {
-      _NgClass_432_4.rawClass = currVal_75;
-      _expr_75 = currVal_75;
-    }
-    _NgClass_432_4.ngDoCheck();
-    final currVal_76 = _map_1(false, true, true);
-    if (!identical(_expr_76, currVal_76)) {
-      _NgClass_436_4.rawClass = currVal_76;
-      _expr_76 = currVal_76;
+    final currVal_71 = _ctx.currentClasses;
+    if (!identical(_expr_71, currVal_71)) {
+      _NgClass_436_4.rawClass = currVal_71;
+      _expr_71 = currVal_71;
     }
     _NgClass_436_4.ngDoCheck();
+    final currVal_75 = (_ctx.isSpecial ? 'special' : '');
+    if (!identical(_expr_75, currVal_75)) {
+      _NgClass_446_4.rawClass = currVal_75;
+      _expr_75 = currVal_75;
+    }
+    _NgClass_446_4.ngDoCheck();
+    final currVal_76 = _map_1(false, true, true);
+    if (!identical(_expr_76, currVal_76)) {
+      _NgClass_450_4.rawClass = currVal_76;
+      _expr_76 = currVal_76;
+    }
+    _NgClass_450_4.ngDoCheck();
     final currVal_79 = _ctx.currentStyles;
     if (!identical(_expr_79, currVal_79)) {
-      _NgStyle_449_4.rawStyle = currVal_79;
+      _NgStyle_464_4.rawStyle = currVal_79;
       _expr_79 = currVal_79;
     }
-    _NgStyle_449_4.ngDoCheck();
+    _NgStyle_464_4.ngDoCheck();
     changed = false;
-    _NgModel_454_6.model = _ctx.canSave;
-    _NgModel_454_6.ngAfterChanges();
+    _NgModel_469_6.model = _ctx.canSave;
+    _NgModel_469_6.ngAfterChanges();
     if (firstCheck) {
-      _NgModel_454_6.ngOnInit();
+      _NgModel_469_6.ngOnInit();
     }
     changed = false;
-    _NgModel_458_6.model = _ctx.isUnchanged;
-    _NgModel_458_6.ngAfterChanges();
+    _NgModel_473_6.model = _ctx.isUnchanged;
+    _NgModel_473_6.ngAfterChanges();
     if (firstCheck) {
-      _NgModel_458_6.ngOnInit();
+      _NgModel_473_6.ngOnInit();
     }
     changed = false;
-    _NgModel_462_6.model = _ctx.isSpecial;
-    _NgModel_462_6.ngAfterChanges();
+    _NgModel_477_6.model = _ctx.isSpecial;
+    _NgModel_477_6.ngAfterChanges();
     if (firstCheck) {
-      _NgModel_462_6.ngOnInit();
+      _NgModel_477_6.ngOnInit();
     }
     final currVal_83 = _ctx.currentStyles;
     if (!identical(_expr_83, currVal_83)) {
-      _NgStyle_467_4.rawStyle = currVal_83;
+      _NgStyle_482_4.rawStyle = currVal_83;
       _expr_83 = currVal_83;
     }
-    _NgStyle_467_4.ngDoCheck();
-    _NgIf_474_7.ngIf = _ctx.isActive;
-    _NgIf_475_7.ngIf = (_ctx.currentHero != null);
-    _NgIf_476_7.ngIf = (_ctx.nullHero != null);
-    _NgIf_477_7.ngIf = (_ctx.currentHero != null);
-    _NgIf_480_7.ngIf = _ctx.isActive;
+    _NgStyle_482_4.ngDoCheck();
+    _NgIf_495_7.ngIf = _ctx.isActive;
+    _NgIf_496_7.ngIf = (_ctx.currentHero != null);
+    _NgIf_497_7.ngIf = (_ctx.nullHero != null);
+    _NgIf_498_7.ngIf = (_ctx.currentHero != null);
+    _NgIf_501_7.ngIf = _ctx.isActive;
     if (firstCheck) {
-      _HeroDetailComponent_485_4.ngOnInit();
+      _HeroDetailComponent_506_4.ngOnInit();
     }
-    if (firstCheck) {
-      if (!identical(_ctx.heroes, null)) {
-        (_NgFor_496_7.ngForOf = _ctx.heroes);
-      }
-    }
-    _NgFor_496_7.ngDoCheck();
-    if (firstCheck) {
-      if (!identical(_ctx.heroes, null)) {
-        (_NgFor_499_7.ngForOf = _ctx.heroes);
-      }
-    }
-    _NgFor_499_7.ngDoCheck();
-    if (firstCheck) {
-      if (!identical(_ctx.heroes, null)) {
-        (_NgFor_510_7.ngForOf = _ctx.heroes);
-      }
-    }
-    _NgFor_510_7.ngDoCheck();
     if (firstCheck) {
       if (!identical(_ctx.heroes, null)) {
         (_NgFor_517_7.ngForOf = _ctx.heroes);
@@ -2895,21 +2818,23 @@ class ViewAppComponent0 extends AppView<import2.AppComponent> {
     _NgFor_517_7.ngDoCheck();
     if (firstCheck) {
       if (!identical(_ctx.heroes, null)) {
-        (_NgFor_533_7.ngForOf = _ctx.heroes);
+        (_NgFor_520_7.ngForOf = _ctx.heroes);
       }
     }
-    _NgFor_533_7.ngDoCheck();
-    _NgIf_534_7.ngIf = (_ctx.heroesNoTrackByCount > 0);
+    _NgFor_520_7.ngDoCheck();
     if (firstCheck) {
       if (!identical(_ctx.heroes, null)) {
-        (_NgFor_538_7.ngForOf = _ctx.heroes);
-      }
-      if (!identical(_ctx.trackByHeroes, null)) {
-        (_NgFor_538_7.ngForTrackBy = _ctx.trackByHeroes);
+        (_NgFor_526_7.ngForOf = _ctx.heroes);
       }
     }
-    _NgFor_538_7.ngDoCheck();
-    _NgIf_539_7.ngIf = (_ctx.heroesWithTrackByCount > 0);
+    _NgFor_526_7.ngDoCheck();
+    if (firstCheck) {
+      if (!identical(_ctx.heroes, null)) {
+        (_NgFor_542_7.ngForOf = _ctx.heroes);
+      }
+    }
+    _NgFor_542_7.ngDoCheck();
+    _NgIf_543_7.ngIf = (_ctx.heroesNoTrackByCount > 0);
     if (firstCheck) {
       if (!identical(_ctx.heroes, null)) {
         (_NgFor_549_7.ngForOf = _ctx.heroes);
@@ -2919,117 +2844,96 @@ class ViewAppComponent0 extends AppView<import2.AppComponent> {
       }
     }
     _NgFor_549_7.ngDoCheck();
+    _NgIf_550_7.ngIf = (_ctx.heroesWithTrackByCount > 0);
     if (firstCheck) {
       if (!identical(_ctx.heroes, null)) {
         (_NgFor_556_7.ngForOf = _ctx.heroes);
       }
-      if (!identical(_ctx.trackByHeroes, null)) {
-        (_NgFor_556_7.ngForTrackBy = _ctx.trackByHeroes);
+      if (!identical(_ctx.trackById, null)) {
+        (_NgFor_556_7.ngForTrackBy = _ctx.trackById);
       }
     }
     _NgFor_556_7.ngDoCheck();
-    if (firstCheck) {
-      if (!identical(_ctx.heroes, null)) {
-        (_NgFor_563_7.ngForOf = _ctx.heroes);
-      }
-      if (!identical(_ctx.trackByHeroes, null)) {
-        (_NgFor_563_7.ngForTrackBy = _ctx.trackByHeroes);
-      }
-    }
-    _NgFor_563_7.ngDoCheck();
-    if (firstCheck) {
-      if (!identical(_ctx.heroes, null)) {
-        (_NgFor_570_7.ngForOf = _ctx.heroes);
-      }
-      if (!identical(_ctx.trackById, null)) {
-        (_NgFor_570_7.ngForTrackBy = _ctx.trackById);
-      }
-    }
-    _NgFor_570_7.ngDoCheck();
     changed = false;
-    _NgModel_578_4.model = _ctx.currentHero;
-    _NgModel_578_4.ngAfterChanges();
+    _NgModel_564_4.model = _ctx.currentHero;
+    _NgModel_564_4.ngAfterChanges();
     if (firstCheck) {
-      _NgModel_578_4.ngOnInit();
+      _NgModel_564_4.ngOnInit();
     }
     changed = false;
     if (changed) {
-      _compView_578.markAsCheckOnce();
+      _compView_564.markAsCheckOnce();
     }
     if (firstCheck) {
       if (!identical(_ctx.heroes, null)) {
-        (_NgFor_579_7.ngForOf = _ctx.heroes);
+        (_NgFor_565_7.ngForOf = _ctx.heroes);
       }
     }
-    _NgFor_579_7.ngDoCheck();
-    final currVal_115 = _ctx.currentHero.emotion;
-    if (!identical(_expr_115, currVal_115)) {
-      _NgSwitch_582_4.ngSwitch = currVal_115;
-      _expr_115 = currVal_115;
+    _NgFor_565_7.ngDoCheck();
+    final currVal_111 = _ctx.currentHero.emotion;
+    if (!identical(_expr_111, currVal_111)) {
+      _NgSwitch_572_4.ngSwitch = currVal_111;
+      _expr_111 = currVal_111;
     }
     if (firstCheck) {
-      (_NgSwitchWhen_583_7.ngSwitchCase = 'happy');
+      (_NgSwitchWhen_573_7.ngSwitchCase = 'happy');
     }
     if (firstCheck) {
-      (_NgSwitchWhen_584_7.ngSwitchCase = 'sad');
+      (_NgSwitchWhen_574_7.ngSwitchCase = 'sad');
     }
     if (firstCheck) {
-      (_NgSwitchWhen_585_7.ngSwitchCase = 'confused');
+      (_NgSwitchWhen_575_7.ngSwitchCase = 'confused');
     }
     if (firstCheck) {
-      (_NgSwitchWhen_586_7.ngSwitchCase = 'confused');
+      (_NgSwitchWhen_576_7.ngSwitchCase = 'confused');
     }
-    final currVal_121 = _ctx.currentHero;
-    if (!identical(_expr_121, currVal_121)) {
-      _HeroFormComponent_602_4.hero = currVal_121;
-      _expr_121 = currVal_121;
+    final currVal_117 = _ctx.currentHero;
+    if (!identical(_expr_117, currVal_117)) {
+      _HeroFormComponent_589_4.hero = currVal_117;
+      _expr_117 = currVal_117;
     }
-    final currVal_123 = _ctx.currentHero;
-    if (!identical(_expr_123, currVal_123)) {
-      _HeroDetailComponent_611_4.hero = currVal_123;
-      _expr_123 = currVal_123;
+    final currVal_119 = _ctx.currentHero;
+    if (!identical(_expr_119, currVal_119)) {
+      _HeroDetailComponent_598_4.hero = currVal_119;
+      _expr_119 = currVal_119;
     }
     if (firstCheck) {
-      _HeroDetailComponent_611_4.ngOnInit();
+      _HeroDetailComponent_598_4.ngOnInit();
     }
-    _NgIf_647_7.ngIf = (_ctx.nullHero != null);
-    _appEl_139.detectChangesInNestedViews();
-    _appEl_474.detectChangesInNestedViews();
-    _appEl_475.detectChangesInNestedViews();
-    _appEl_476.detectChangesInNestedViews();
-    _appEl_477.detectChangesInNestedViews();
-    _appEl_480.detectChangesInNestedViews();
+    _NgIf_641_7.ngIf = (_ctx.nullHero != null);
+    _appEl_143.detectChangesInNestedViews();
+    _appEl_495.detectChangesInNestedViews();
     _appEl_496.detectChangesInNestedViews();
-    _appEl_499.detectChangesInNestedViews();
-    _appEl_510.detectChangesInNestedViews();
+    _appEl_497.detectChangesInNestedViews();
+    _appEl_498.detectChangesInNestedViews();
+    _appEl_501.detectChangesInNestedViews();
     _appEl_517.detectChangesInNestedViews();
-    _appEl_533.detectChangesInNestedViews();
-    _appEl_534.detectChangesInNestedViews();
-    _appEl_538.detectChangesInNestedViews();
-    _appEl_539.detectChangesInNestedViews();
+    _appEl_520.detectChangesInNestedViews();
+    _appEl_526.detectChangesInNestedViews();
+    _appEl_542.detectChangesInNestedViews();
+    _appEl_543.detectChangesInNestedViews();
     _appEl_549.detectChangesInNestedViews();
+    _appEl_550.detectChangesInNestedViews();
     _appEl_556.detectChangesInNestedViews();
-    _appEl_563.detectChangesInNestedViews();
-    _appEl_570.detectChangesInNestedViews();
-    _appEl_579.detectChangesInNestedViews();
-    _appEl_583.detectChangesInNestedViews();
-    _appEl_584.detectChangesInNestedViews();
-    _appEl_585.detectChangesInNestedViews();
-    _appEl_586.detectChangesInNestedViews();
-    _appEl_587.detectChangesInNestedViews();
-    _appEl_647.detectChangesInNestedViews();
-    if (_query_MaterialRadioComponent_578_0.dirty) {
-      _query_MaterialRadioComponent_578_0.reset([
-        _appEl_579.mapNestedViews((_ViewAppComponent21 nestedView) {
+    _appEl_565.detectChangesInNestedViews();
+    _appEl_573.detectChangesInNestedViews();
+    _appEl_574.detectChangesInNestedViews();
+    _appEl_575.detectChangesInNestedViews();
+    _appEl_576.detectChangesInNestedViews();
+    _appEl_577.detectChangesInNestedViews();
+    _appEl_641.detectChangesInNestedViews();
+    if (_query_MaterialRadioComponent_564_0.dirty) {
+      _query_MaterialRadioComponent_564_0.reset([
+        _appEl_565.mapNestedViews((_ViewAppComponent17 nestedView) {
           return [nestedView._MaterialRadioComponent_0_4];
         })
       ]);
-      _MaterialRadioGroupComponent_578_6.list = _query_MaterialRadioComponent_578_0;
-      _query_MaterialRadioComponent_578_0.notifyOnChanges();
+      _MaterialRadioGroupComponent_564_6.list = _query_MaterialRadioComponent_564_0;
+      _query_MaterialRadioComponent_564_0.notifyOnChanges();
     }
     if (_viewQuery_noTrackBy_0.dirty) {
       _viewQuery_noTrackBy_0.reset([
-        _appEl_533.mapNestedViews((_ViewAppComponent13 nestedView) {
+        _appEl_542.mapNestedViews((_ViewAppComponent12 nestedView) {
           return [new ElementRef(nestedView._el_0)];
         })
       ]);
@@ -3038,100 +2942,85 @@ class ViewAppComponent0 extends AppView<import2.AppComponent> {
     }
     if (_viewQuery_withTrackBy_1.dirty) {
       _viewQuery_withTrackBy_1.reset([
-        _appEl_538.mapNestedViews((_ViewAppComponent15 nestedView) {
+        _appEl_549.mapNestedViews((_ViewAppComponent14 nestedView) {
           return [new ElementRef(nestedView._el_0)];
         })
       ]);
       ctx.heroesWithTrackBy = _viewQuery_withTrackBy_1;
       _viewQuery_withTrackBy_1.notifyOnChanges();
     }
-    final currVal_0 = import33.interpolate1('My current hero is ', _ctx.currentHero.name, '');
+    final currVal_0 = import33.interpolate0(_ctx.currentHero.name);
     if (!identical(_expr_0, currVal_0)) {
-      _text_93.text = currVal_0;
+      _text_94.text = currVal_0;
       _expr_0 = currVal_0;
     }
-    final currVal_1 = import33.interpolate0(_ctx.title);
+    final currVal_1 = (_ctx.title ?? '');
     if (!identical(_expr_1, currVal_1)) {
-      _text_95.text = currVal_1;
+      _text_96.text = currVal_1;
       _expr_1 = currVal_1;
     }
     if (firstCheck) {
-      setProp(_el_96, 'src', import33.appViewUtils.sanitizer.sanitizeUrl((_ctx.heroImageUrl ?? '')));
+      setProp(_el_97, 'src', import33.appViewUtils.sanitizer.sanitizeUrl((_ctx.heroImageUrl ?? '')));
     }
-    final currVal_3 = import33.interpolate1('The sum of 1 + 1 is ', (1 + 1), '');
+    final currVal_3 = import33.interpolate0((1 + 1));
     if (!identical(_expr_3, currVal_3)) {
-      _text_98.text = currVal_3;
+      _text_100.text = currVal_3;
       _expr_3 = currVal_3;
     }
-    final currVal_4 = import33.interpolate1('The sum of 1 + 1 is not ', ((1 + 1) + _ctx.getVal()), '');
+    final currVal_4 = import33.interpolate0(((1 + 1) + _ctx.getVal()));
     if (!identical(_expr_4, currVal_4)) {
-      _text_100.text = currVal_4;
+      _text_103.text = currVal_4;
       _expr_4 = currVal_4;
     }
-    final currVal_5 = import33.interpolate1('Component expression context (', _ctx.title, ', [hidden]="isUnchanged")');
+    final currVal_5 = (_ctx.title ?? '');
     if (!identical(_expr_5, currVal_5)) {
-      _text_107.text = currVal_5;
+      _text_112.text = currVal_5;
       _expr_5 = currVal_5;
     }
-    final currVal_6 = import33.interpolate0(_ctx.title);
+    final currVal_6 = _ctx.isUnchanged;
     if (!identical(_expr_6, currVal_6)) {
-      _text_109.text = currVal_6;
+      setProp(_el_113, 'hidden', currVal_6);
       _expr_6 = currVal_6;
     }
-    final currVal_7 = _ctx.isUnchanged;
+    final currVal_7 = import33.interpolate0(local_heroInput.value);
     if (!identical(_expr_7, currVal_7)) {
-      setProp(_el_110, 'hidden', currVal_7);
+      _text_124.text = currVal_7;
       _expr_7 = currVal_7;
     }
-    final currVal_8 = import33.interpolate1(' ', local_heroInput.value, '');
-    if (!identical(_expr_8, currVal_8)) {
-      _text_120.text = currVal_8;
-      _expr_8 = currVal_8;
-    }
-    final currVal_10 = _ctx.isUnchanged;
-    if (!identical(_expr_10, currVal_10)) {
-      setProp(_el_164, 'disabled', currVal_10);
-      _expr_10 = currVal_10;
+    final currVal_9 = _ctx.isUnchanged;
+    if (!identical(_expr_9, currVal_9)) {
+      setProp(_el_168, 'disabled', currVal_9);
+      _expr_9 = currVal_9;
     }
     if (firstCheck) {
       if (!identical(_ctx.heroImageUrl, null)) {
-        setProp(_el_169, 'src', import33.appViewUtils.sanitizer.sanitizeUrl(_ctx.heroImageUrl));
+        setProp(_el_173, 'src', import33.appViewUtils.sanitizer.sanitizeUrl(_ctx.heroImageUrl));
       }
     }
-    final currVal_14 = import33.interpolate0(_ctx.clicked);
-    if (!identical(_expr_14, currVal_14)) {
-      _text_179.text = currVal_14;
-      _expr_14 = currVal_14;
+    final currVal_13 = (_ctx.clicked ?? '');
+    if (!identical(_expr_13, currVal_13)) {
+      _text_183.text = currVal_13;
+      _expr_13 = currVal_13;
     }
-    final currVal_16 = import33.interpolate0(_ctx.name);
+    final currVal_15 = (_ctx.name ?? '');
+    if (!identical(_expr_15, currVal_15)) {
+      _text_189.text = currVal_15;
+      _expr_15 = currVal_15;
+    }
+    final currVal_16 = _ctx.help;
     if (!identical(_expr_16, currVal_16)) {
-      _text_185.text = currVal_16;
+      setAttr(_el_192, 'aria-label', currVal_16?.toString());
       _expr_16 = currVal_16;
     }
-    final currVal_17 = _ctx.help;
+    final currVal_17 = _ctx.isSpecial;
     if (!identical(_expr_17, currVal_17)) {
-      setAttr(_el_188, 'aria-label', currVal_17?.toString());
+      updateClass(_el_196, 'special', currVal_17);
       _expr_17 = currVal_17;
     }
-    final currVal_18 = _ctx.isSpecial;
+    final currVal_18 = (_ctx.isSpecial ? 'red' : 'green');
     if (!identical(_expr_18, currVal_18)) {
-      updateClass(_el_192, 'special', currVal_18);
+      _el_200.style.setProperty('color', currVal_18?.toString());
       _expr_18 = currVal_18;
-    }
-    final currVal_19 = (_ctx.isSpecial ? 'red' : 'green');
-    if (!identical(_expr_19, currVal_19)) {
-      _el_196.style.setProperty('color', currVal_19?.toString());
-      _expr_19 = currVal_19;
-    }
-    if (firstCheck) {
-      if (!identical(_ctx.heroImageUrl, null)) {
-        setProp(_el_203, 'src', import33.appViewUtils.sanitizer.sanitizeUrl(_ctx.heroImageUrl));
-      }
-    }
-    if (firstCheck) {
-      if (!identical(_ctx.iconUrl, null)) {
-        setProp(_el_206, 'src', import33.appViewUtils.sanitizer.sanitizeUrl(_ctx.iconUrl));
-      }
     }
     if (firstCheck) {
       if (!identical(_ctx.heroImageUrl, null)) {
@@ -3139,497 +3028,520 @@ class ViewAppComponent0 extends AppView<import2.AppComponent> {
       }
     }
     if (firstCheck) {
-      if (!identical(_ctx.villainImageUrl, null)) {
-        setAttr(_el_208, 'src', import33.appViewUtils.sanitizer.sanitizeUrl(_ctx.villainImageUrl)?.toString());
+      if (!identical(_ctx.iconUrl, null)) {
+        setProp(_el_210, 'src', import33.appViewUtils.sanitizer.sanitizeUrl(_ctx.iconUrl));
       }
+    }
+    if (firstCheck) {
+      if (!identical(_ctx.heroImageUrl, null)) {
+        setProp(_el_211, 'src', import33.appViewUtils.sanitizer.sanitizeUrl(_ctx.heroImageUrl));
+      }
+    }
+    if (firstCheck) {
+      if (!identical(_ctx.villainImageUrl, null)) {
+        setAttr(_el_212, 'src', import33.appViewUtils.sanitizer.sanitizeUrl(_ctx.villainImageUrl)?.toString());
+      }
+    }
+    final currVal_23 = _ctx.isUnchanged;
+    if (!identical(_expr_23, currVal_23)) {
+      setProp(_el_228, 'disabled', currVal_23);
+      _expr_23 = currVal_23;
     }
     final currVal_24 = _ctx.isUnchanged;
     if (!identical(_expr_24, currVal_24)) {
-      setProp(_el_224, 'disabled', currVal_24);
+      setProp(_el_232, 'disabled', currVal_24);
       _expr_24 = currVal_24;
     }
-    final currVal_25 = _ctx.isUnchanged;
+    final bool currVal_25 = !_ctx.canSave;
     if (!identical(_expr_25, currVal_25)) {
-      setProp(_el_228, 'disabled', currVal_25);
+      setProp(_el_234, 'disabled', currVal_25);
       _expr_25 = currVal_25;
     }
-    final bool currVal_26 = !_ctx.canSave;
-    if (!identical(_expr_26, currVal_26)) {
-      setProp(_el_230, 'disabled', currVal_26);
-      _expr_26 = currVal_26;
+    if (firstCheck) {
+      if (!identical(_ctx.heroImageUrl, null)) {
+        setProp(_el_241, 'src', import33.appViewUtils.sanitizer.sanitizeUrl(_ctx.heroImageUrl));
+      }
+    }
+    final currVal_27 = _ctx.isUnchanged;
+    if (!identical(_expr_27, currVal_27)) {
+      setProp(_el_242, 'disabled', currVal_27);
+      _expr_27 = currVal_27;
     }
     if (firstCheck) {
       if (!identical(_ctx.heroImageUrl, null)) {
-        setProp(_el_237, 'src', import33.appViewUtils.sanitizer.sanitizeUrl(_ctx.heroImageUrl));
+        setProp(_el_247, 'src', import33.appViewUtils.sanitizer.sanitizeUrl(_ctx.heroImageUrl));
       }
     }
-    final currVal_28 = _ctx.isUnchanged;
-    if (!identical(_expr_28, currVal_28)) {
-      setProp(_el_238, 'disabled', currVal_28);
-      _expr_28 = currVal_28;
+    if (firstCheck) {
+      setProp(_el_250, 'src', import33.appViewUtils.sanitizer.sanitizeUrl((_ctx.heroImageUrl ?? '')));
     }
     if (firstCheck) {
       if (!identical(_ctx.heroImageUrl, null)) {
-        setProp(_el_243, 'src', import33.appViewUtils.sanitizer.sanitizeUrl(_ctx.heroImageUrl));
+        setProp(_el_256, 'src', import33.appViewUtils.sanitizer.sanitizeUrl(_ctx.heroImageUrl));
       }
     }
-    if (firstCheck) {
-      setProp(_el_246, 'src', import33.appViewUtils.sanitizer.sanitizeUrl((_ctx.heroImageUrl ?? '')));
+    final currVal_35 = (_ctx.title ?? '');
+    if (!identical(_expr_35, currVal_35)) {
+      _text_264.text = currVal_35;
+      _expr_35 = currVal_35;
     }
-    if (firstCheck) {
-      if (!identical(_ctx.heroImageUrl, null)) {
-        setProp(_el_252, 'src', import33.appViewUtils.sanitizer.sanitizeUrl(_ctx.heroImageUrl));
-      }
-    }
-    final currVal_36 = import33.interpolate1('"', _ctx.title, '" is the ');
+    final currVal_36 = _ctx.title;
     if (!identical(_expr_36, currVal_36)) {
-      _text_259.text = currVal_36;
+      setProp(_el_271, 'innerHTML', import33.appViewUtils.sanitizer.sanitizeHtml(currVal_36));
       _expr_36 = currVal_36;
     }
-    final currVal_37 = _ctx.title;
+    final currVal_37 = (_ctx.evilTitle ?? '');
     if (!identical(_expr_37, currVal_37)) {
-      setProp(_el_265, 'innerHTML', import33.appViewUtils.sanitizer.sanitizeHtml(currVal_37));
+      _text_279.text = currVal_37;
       _expr_37 = currVal_37;
     }
-    final currVal_38 = import33.interpolate1('"', _ctx.evilTitle, '" is the ');
+    final currVal_38 = _ctx.evilTitle;
     if (!identical(_expr_38, currVal_38)) {
-      _text_272.text = currVal_38;
+      setProp(_el_286, 'innerHTML', import33.appViewUtils.sanitizer.sanitizeHtml(currVal_38));
       _expr_38 = currVal_38;
     }
-    final currVal_39 = _ctx.evilTitle;
+    final currVal_39 = (1 + 1);
     if (!identical(_expr_39, currVal_39)) {
-      setProp(_el_278, 'innerHTML', import33.appViewUtils.sanitizer.sanitizeHtml(currVal_39));
+      setAttr(_el_298, 'colspan', currVal_39?.toString());
       _expr_39 = currVal_39;
     }
-    final currVal_40 = (1 + 1);
+    final currVal_40 = _ctx.actionName;
     if (!identical(_expr_40, currVal_40)) {
-      setAttr(_el_291, 'colspan', currVal_40?.toString());
+      setAttr(_el_306, 'aria-label', currVal_40?.toString());
       _expr_40 = currVal_40;
     }
-    final currVal_41 = _ctx.actionName;
+    final currVal_41 = (_ctx.actionName ?? '');
     if (!identical(_expr_41, currVal_41)) {
-      setAttr(_el_299, 'aria-label', currVal_41?.toString());
+      _text_307.text = currVal_41;
       _expr_41 = currVal_41;
     }
-    final currVal_42 = import33.interpolate1('', _ctx.actionName, ' with Aria');
+    final currVal_42 = _ctx.isUnchanged;
     if (!identical(_expr_42, currVal_42)) {
-      _text_300.text = currVal_42;
+      setAttr(_el_312, 'disabled', currVal_42?.toString());
       _expr_42 = currVal_42;
     }
-    final currVal_43 = _ctx.isUnchanged;
+    final bool currVal_43 = !_ctx.isUnchanged;
     if (!identical(_expr_43, currVal_43)) {
-      setAttr(_el_304, 'disabled', currVal_43?.toString());
+      setAttr(_el_314, 'disabled', currVal_43?.toString());
       _expr_43 = currVal_43;
     }
-    final bool currVal_44 = !_ctx.isUnchanged;
-    if (!identical(_expr_44, currVal_44)) {
-      setAttr(_el_306, 'disabled', currVal_44?.toString());
-      _expr_44 = currVal_44;
-    }
     if (firstCheck) {
-      setProp(_el_308, 'disabled', false);
+      setProp(_el_316, 'disabled', false);
     }
-    final currVal_46 = _ctx.badCurly;
+    final currVal_45 = _ctx.badCurly;
+    if (!identical(_expr_45, currVal_45)) {
+      this.updateChildClass(_el_325, currVal_45);
+      _expr_45 = currVal_45;
+    }
+    final currVal_46 = _ctx.isSpecial;
     if (!identical(_expr_46, currVal_46)) {
-      this.updateChildClass(_el_317, currVal_46);
+      updateClass(_el_327, 'special', currVal_46);
       _expr_46 = currVal_46;
     }
-    final currVal_47 = _ctx.isSpecial;
+    final bool currVal_47 = !_ctx.isSpecial;
     if (!identical(_expr_47, currVal_47)) {
-      updateClass(_el_319, 'special', currVal_47);
+      updateClass(_el_329, 'special', currVal_47);
       _expr_47 = currVal_47;
     }
-    final bool currVal_48 = !_ctx.isSpecial;
+    final currVal_48 = _ctx.isSpecial;
     if (!identical(_expr_48, currVal_48)) {
-      updateClass(_el_321, 'special', currVal_48);
+      updateClass(_el_331, 'special', currVal_48);
       _expr_48 = currVal_48;
     }
-    final currVal_49 = _ctx.isSpecial;
+    final currVal_49 = (_ctx.isSpecial ? 'red' : 'green');
     if (!identical(_expr_49, currVal_49)) {
-      updateClass(_el_323, 'special', currVal_49);
+      _el_338.style.setProperty('color', currVal_49?.toString());
       _expr_49 = currVal_49;
     }
-    final currVal_50 = (_ctx.isSpecial ? 'red' : 'green');
+    final currVal_50 = (_ctx.canSave ? 'cyan' : 'grey');
     if (!identical(_expr_50, currVal_50)) {
-      _el_330.style.setProperty('color', currVal_50?.toString());
+      _el_340.style.setProperty('background-color', currVal_50?.toString());
       _expr_50 = currVal_50;
     }
-    final currVal_51 = (_ctx.canSave ? 'cyan' : 'grey');
+    final currVal_51 = (_ctx.isSpecial ? 3 : 1);
     if (!identical(_expr_51, currVal_51)) {
-      _el_332.style.setProperty('background-color', currVal_51?.toString());
+      _el_342.style.setProperty('font-size', ((currVal_51?.toString() == null) ? null : (currVal_51?.toString() + 'em')));
       _expr_51 = currVal_51;
     }
-    final currVal_52 = (_ctx.isSpecial ? 3 : 1);
+    final currVal_52 = (!_ctx.isSpecial ? 150 : 50);
     if (!identical(_expr_52, currVal_52)) {
-      _el_334.style.setProperty('font-size', ((currVal_52?.toString() == null) ? null : (currVal_52?.toString() + 'em')));
+      _el_344.style.setProperty('font-size', ((currVal_52?.toString() == null) ? null : (currVal_52?.toString() + '%')));
       _expr_52 = currVal_52;
     }
-    final currVal_53 = (!_ctx.isSpecial ? 150 : 50);
+    final currVal_53 = (_ctx.clickMessage ?? '');
     if (!identical(_expr_53, currVal_53)) {
-      _el_336.style.setProperty('font-size', ((currVal_53?.toString() == null) ? null : (currVal_53?.toString() + '%')));
+      _text_358.text = currVal_53;
       _expr_53 = currVal_53;
     }
-    final currVal_54 = import33.interpolate0(_ctx.clickMessage);
-    if (!identical(_expr_54, currVal_54)) {
-      _text_350.text = currVal_54;
-      _expr_54 = currVal_54;
+    final currVal_57 = local_mySizer.size;
+    if (!identical(_expr_57, currVal_57)) {
+      _el_379.style.setProperty('font-size', ((currVal_57?.toString() == null) ? null : (currVal_57?.toString() + 'px')));
+      _expr_57 = currVal_57;
     }
-    final currVal_58 = local_mySizer.size;
-    if (!identical(_expr_58, currVal_58)) {
-      _el_371.style.setProperty('font-size', ((currVal_58?.toString() == null) ? null : (currVal_58?.toString() + 'px')));
-      _expr_58 = currVal_58;
+    final currVal_59 = import33.interpolate0(_ctx.fontSizePx.runtimeType);
+    if (!identical(_expr_59, currVal_59)) {
+      _text_385.text = currVal_59;
+      _expr_59 = currVal_59;
     }
-    final currVal_60 = import33.interpolate1(' ', _ctx.fontSizePx.runtimeType, '');
-    if (!identical(_expr_60, currVal_60)) {
-      _text_376.text = currVal_60;
-      _expr_60 = currVal_60;
+    final currVal_61 = import33.interpolate0(_ctx.currentHero.name);
+    if (!identical(_expr_61, currVal_61)) {
+      _text_398.text = currVal_61;
+      _expr_61 = currVal_61;
     }
-    final currVal_62 = import33.interpolate1('Result: ', _ctx.currentHero.name, '');
+    final currVal_62 = _ctx.currentHero.name;
     if (!identical(_expr_62, currVal_62)) {
-      _text_388.text = currVal_62;
+      setProp(_el_399, 'value', currVal_62);
       _expr_62 = currVal_62;
     }
-    final currVal_63 = _ctx.currentHero.name;
-    if (!identical(_expr_63, currVal_63)) {
-      setProp(_el_389, 'value', currVal_63);
-      _expr_63 = currVal_63;
+    final currVal_66 = import33.interpolate0(_ctx.currentClasses);
+    if (!identical(_expr_66, currVal_66)) {
+      _text_417.text = currVal_66;
+      _expr_66 = currVal_66;
     }
-    final currVal_68 = import33.interpolate1('currentClasses is ', _ctx.currentClasses, '');
-    if (!identical(_expr_68, currVal_68)) {
-      _text_409.text = currVal_68;
-      _expr_68 = currVal_68;
+    final bool currVal_69 = !_ctx.isUnchanged;
+    if (!identical(_expr_69, currVal_69)) {
+      setProp(_el_427, 'value', currVal_69);
+      _expr_69 = currVal_69;
     }
-    final bool currVal_71 = !_ctx.isUnchanged;
-    if (!identical(_expr_71, currVal_71)) {
-      setProp(_el_419, 'value', currVal_71);
-      _expr_71 = currVal_71;
+    final currVal_72 = import33.interpolate0((_ctx.canSave ? '' : 'not'));
+    if (!identical(_expr_72, currVal_72)) {
+      _text_438.text = currVal_72;
+      _expr_72 = currVal_72;
     }
-    final currVal_74 = import33.interpolate3('This div should be ', (_ctx.canSave ? '' : 'not'), ' saveable,\n                  ', (_ctx.isUnchanged ? 'unchanged' : 'modified'), ' and,\n                  ', (_ctx.isSpecial ? '' : 'not'), ' special after clicking "Refresh".');
+    final currVal_73 = import33.interpolate0((_ctx.isUnchanged ? 'unchanged' : 'modified'));
+    if (!identical(_expr_73, currVal_73)) {
+      _text_440.text = currVal_73;
+      _expr_73 = currVal_73;
+    }
+    final currVal_74 = import33.interpolate0((_ctx.isSpecial ? '' : 'not'));
     if (!identical(_expr_74, currVal_74)) {
-      _text_429.text = currVal_74;
+      _text_442.text = currVal_74;
       _expr_74 = currVal_74;
     }
     final currVal_77 = (_ctx.isSpecial ? 'x-large' : 'smaller');
     if (!identical(_expr_77, currVal_77)) {
-      _el_443.style.setProperty('font-size', currVal_77?.toString());
+      _el_457.style.setProperty('font-size', currVal_77?.toString());
       _expr_77 = currVal_77;
     }
-    final currVal_78 = import33.interpolate1('currentStyles is ', _ctx.currentStyles, '');
+    final currVal_78 = import33.interpolate0(_ctx.currentStyles);
     if (!identical(_expr_78, currVal_78)) {
-      _text_448.text = currVal_78;
+      _text_463.text = currVal_78;
       _expr_78 = currVal_78;
     }
-    final currVal_84 = import33.interpolate3('This div should be ', (_ctx.canSave ? 'italic' : 'plain'), ',\n                  ', (_ctx.isUnchanged ? 'normal weight' : 'bold'), ' and,\n                  ', (_ctx.isSpecial ? 'extra large' : 'normal size'), ' after clicking "Refresh".');
+    final currVal_84 = import33.interpolate0((_ctx.canSave ? 'italic' : 'plain'));
     if (!identical(_expr_84, currVal_84)) {
-      _text_468.text = currVal_84;
+      _text_484.text = currVal_84;
       _expr_84 = currVal_84;
     }
-    final bool currVal_90 = !_ctx.isSpecial;
-    if (!identical(_expr_90, currVal_90)) {
-      updateClass(_el_481, 'hidden', currVal_90);
-      _expr_90 = currVal_90;
+    final currVal_85 = import33.interpolate0((_ctx.isUnchanged ? 'normal weight' : 'bold'));
+    if (!identical(_expr_85, currVal_85)) {
+      _text_486.text = currVal_85;
+      _expr_85 = currVal_85;
     }
-    final currVal_91 = _ctx.isSpecial;
-    if (!identical(_expr_91, currVal_91)) {
-      updateClass(_el_483, 'hidden', currVal_91);
-      _expr_91 = currVal_91;
+    final currVal_86 = import33.interpolate0((_ctx.isSpecial ? 'extra large' : 'normal size'));
+    if (!identical(_expr_86, currVal_86)) {
+      _text_488.text = currVal_86;
+      _expr_86 = currVal_86;
     }
-    final currVal_92 = _ctx.isSpecial;
+    final bool currVal_92 = !_ctx.isSpecial;
     if (!identical(_expr_92, currVal_92)) {
-      updateElemClass(_el_485, 'hidden', currVal_92);
+      updateClass(_el_502, 'hidden', currVal_92);
       _expr_92 = currVal_92;
     }
-    final currVal_93 = (_ctx.isSpecial ? 'block' : 'none');
+    final currVal_93 = _ctx.isSpecial;
     if (!identical(_expr_93, currVal_93)) {
-      _el_486.style.setProperty('display', currVal_93?.toString());
+      updateClass(_el_504, 'hidden', currVal_93);
       _expr_93 = currVal_93;
     }
-    final currVal_94 = (_ctx.isSpecial ? 'none' : 'block');
+    final currVal_94 = _ctx.isSpecial;
     if (!identical(_expr_94, currVal_94)) {
-      _el_488.style.setProperty('display', currVal_94?.toString());
+      updateElemClass(_el_506, 'hidden', currVal_94);
       _expr_94 = currVal_94;
     }
-    final currVal_114 = import33.interpolate2('Current hero is: ', _ctx.currentHero.name, ' (', _ctx.currentHero.id, ')');
-    if (!identical(_expr_114, currVal_114)) {
-      _text_581.text = currVal_114;
-      _expr_114 = currVal_114;
+    final currVal_95 = (_ctx.isSpecial ? 'block' : 'none');
+    if (!identical(_expr_95, currVal_95)) {
+      _el_507.style.setProperty('display', currVal_95?.toString());
+      _expr_95 = currVal_95;
     }
-    final currVal_120 = ('disabled by attribute: ' + local_btn.disabled.toString());
-    if (!identical(_expr_120, currVal_120)) {
-      setProp(_el_599, 'innerHTML', import33.appViewUtils.sanitizer.sanitizeHtml(currVal_120));
-      _expr_120 = currVal_120;
+    final currVal_96 = (_ctx.isSpecial ? 'none' : 'block');
+    if (!identical(_expr_96, currVal_96)) {
+      _el_509.style.setProperty('display', currVal_96?.toString());
+      _expr_96 = currVal_96;
+    }
+    final currVal_109 = import33.interpolate0(_ctx.currentHero.name);
+    if (!identical(_expr_109, currVal_109)) {
+      _text_568.text = currVal_109;
+      _expr_109 = currVal_109;
+    }
+    final currVal_110 = import33.interpolate0(_ctx.currentHero.id);
+    if (!identical(_expr_110, currVal_110)) {
+      _text_570.text = currVal_110;
+      _expr_110 = currVal_110;
+    }
+    final currVal_116 = ('disabled by attribute: ' + local_btn.disabled.toString());
+    if (!identical(_expr_116, currVal_116)) {
+      setProp(_el_586, 'innerHTML', import33.appViewUtils.sanitizer.sanitizeHtml(currVal_116));
+      _expr_116 = currVal_116;
     }
     if (firstCheck) {
       if (!identical(_ctx.iconUrl, null)) {
-        setProp(_el_608, 'src', import33.appViewUtils.sanitizer.sanitizeUrl(_ctx.iconUrl));
+        setProp(_el_595, 'src', import33.appViewUtils.sanitizer.sanitizeUrl(_ctx.iconUrl));
       }
     }
-    final currVal_124 = import33.interpolate0(_ctx.clickMessage2);
+    final currVal_120 = (_ctx.clickMessage2 ?? '');
+    if (!identical(_expr_120, currVal_120)) {
+      _text_601.text = currVal_120;
+      _expr_120 = currVal_120;
+    }
+    final currVal_121 = import33.interpolate0(_pipe_uppercase_0_0(_ctx.title));
+    if (!identical(_expr_121, currVal_121)) {
+      _text_609.text = currVal_121;
+      _expr_121 = currVal_121;
+    }
+    final currVal_122 = import33.interpolate0(_pipe_lowercase_1_0(_pipe_uppercase_0_1(_ctx.title)));
+    if (!identical(_expr_122, currVal_122)) {
+      _text_612.text = currVal_122;
+      _expr_122 = currVal_122;
+    }
+    final currVal_123 = import33.interpolate0(_pipe_date_2_0(((_ctx.currentHero == null) ? null : _ctx.currentHero.birthdate), 'longDate'));
+    if (!identical(_expr_123, currVal_123)) {
+      _text_615.text = currVal_123;
+      _expr_123 = currVal_123;
+    }
+    final currVal_124 = import33.interpolate0(_pipe_json_3.transform(_ctx.currentHero));
     if (!identical(_expr_124, currVal_124)) {
-      _text_614.text = currVal_124;
+      _text_617.text = currVal_124;
       _expr_124 = currVal_124;
     }
-    final currVal_125 = import33.interpolate1('Title through uppercase pipe: ', _pipe_uppercase_0_0(_ctx.title), '');
+    final currVal_125 = import33.interpolate0(_pipe_uppercase_0_2(_pipe_date_2_1(((_ctx.currentHero == null) ? null : _ctx.currentHero.birthdate), 'longDate')));
     if (!identical(_expr_125, currVal_125)) {
-      _text_621.text = currVal_125;
+      _text_620.text = currVal_125;
       _expr_125 = currVal_125;
     }
-    final currVal_126 = import33.interpolate1('Title through a pipe chain:  ', _pipe_lowercase_1_0(_pipe_uppercase_0_1(_ctx.title)), '');
+    final currVal_126 = import33.interpolate0(_pipe_currency_4_0(_ctx.product['price'], 'USD', true));
     if (!identical(_expr_126, currVal_126)) {
-      _text_623.text = currVal_126;
+      _text_624.text = currVal_126;
       _expr_126 = currVal_126;
     }
-    final currVal_127 = import33.interpolate1('Birthdate: ', _pipe_date_2_0(((_ctx.currentHero == null) ? null : _ctx.currentHero.birthdate), 'longDate'), '');
+    final currVal_127 = (_ctx.title ?? '');
     if (!identical(_expr_127, currVal_127)) {
-      _text_625.text = currVal_127;
+      _text_634.text = currVal_127;
       _expr_127 = currVal_127;
     }
-    final currVal_128 = import33.interpolate0(_pipe_json_3.transform(_ctx.currentHero));
+    final currVal_128 = import33.interpolate0(((_ctx.currentHero == null) ? null : _ctx.currentHero.name));
     if (!identical(_expr_128, currVal_128)) {
-      _text_627.text = currVal_128;
+      _text_637.text = currVal_128;
       _expr_128 = currVal_128;
     }
-    final currVal_129 = import33.interpolate1('Birthdate: ', _pipe_uppercase_0_2(_pipe_date_2_1(((_ctx.currentHero == null) ? null : _ctx.currentHero.birthdate), 'longDate')), '');
+    final currVal_129 = import33.interpolate0(_ctx.currentHero.name);
     if (!identical(_expr_129, currVal_129)) {
-      _text_629.text = currVal_129;
+      _text_640.text = currVal_129;
       _expr_129 = currVal_129;
     }
-    final currVal_130 = import33.interpolate0(_pipe_currency_4_0(_ctx.product['price'], 'USD', true));
-    if (!identical(_expr_130, currVal_130)) {
-      _text_633.text = currVal_130;
-      _expr_130 = currVal_130;
-    }
-    final currVal_131 = import33.interpolate1('The title is ', _ctx.title, '');
+    final currVal_131 = import33.interpolate0(((_ctx.nullHero == null) ? null : _ctx.nullHero.name));
     if (!identical(_expr_131, currVal_131)) {
-      _text_642.text = currVal_131;
+      _text_644.text = currVal_131;
       _expr_131 = currVal_131;
     }
-    final currVal_132 = import33.interpolate1('The current hero\'s name is ', ((_ctx.currentHero == null) ? null : _ctx.currentHero.name), '');
+    final currVal_132 = import33.interpolate0(import2.Color.red);
     if (!identical(_expr_132, currVal_132)) {
-      _text_644.text = currVal_132;
+      _text_652.text = currVal_132;
       _expr_132 = currVal_132;
     }
-    final currVal_133 = import33.interpolate1('The current hero\'s name is ', _ctx.currentHero.name, '');
+    final currVal_133 = import33.interpolate0(_ctx.color);
     if (!identical(_expr_133, currVal_133)) {
-      _text_646.text = currVal_133;
+      _text_656.text = currVal_133;
       _expr_133 = currVal_133;
     }
-    final currVal_135 = import33.interpolate1('The null hero\'s name is ', ((_ctx.nullHero == null) ? null : _ctx.nullHero.name), '');
+    final currVal_134 = import33.interpolate0(_ctx.color.index);
+    if (!identical(_expr_134, currVal_134)) {
+      _text_658.text = currVal_134;
+      _expr_134 = currVal_134;
+    }
+    final currVal_135 = _ctx.color.toString().split('.')[1];
     if (!identical(_expr_135, currVal_135)) {
-      _text_649.text = currVal_135;
+      _el_661.style.setProperty('color', currVal_135?.toString());
       _expr_135 = currVal_135;
     }
-    final currVal_136 = import33.interpolate1('The name of the Color.red enum is ', import2.Color.red, '.');
-    if (!identical(_expr_136, currVal_136)) {
-      _text_656.text = currVal_136;
-      _expr_136 = currVal_136;
-    }
-    final currVal_137 = import33.interpolate2('The current color is ', _ctx.color, ' and its index is ', _ctx.color.index, '.');
-    if (!identical(_expr_137, currVal_137)) {
-      _text_658.text = currVal_137;
-      _expr_137 = currVal_137;
-    }
-    final currVal_138 = _ctx.color.toString().split('.')[1];
-    if (!identical(_expr_138, currVal_138)) {
-      _el_660.style.setProperty('color', currVal_138?.toString());
-      _expr_138 = currVal_138;
-    }
-    _compView_160.detectChanges();
-    _compView_170.detectChanges();
-    _compView_176.detectChanges();
-    _compView_242.detectChanges();
-    _compView_244.detectChanges();
-    _compView_351.detectChanges();
-    _compView_353.detectChanges();
-    _compView_370.detectChanges();
-    _compView_381.detectChanges();
-    _compView_485.detectChanges();
-    _compView_578.detectChanges();
-    _compView_602.detectChanges();
-    _compView_611.detectChanges();
+    _compView_164.detectChanges();
+    _compView_174.detectChanges();
+    _compView_180.detectChanges();
+    _compView_246.detectChanges();
+    _compView_248.detectChanges();
+    _compView_359.detectChanges();
+    _compView_361.detectChanges();
+    _compView_378.detectChanges();
+    _compView_390.detectChanges();
+    _compView_506.detectChanges();
+    _compView_564.detectChanges();
+    _compView_589.detectChanges();
+    _compView_598.detectChanges();
   }
 
   @override
   void destroyInternal() {
-    _appEl_139?.destroyNestedViews();
-    _appEl_474?.destroyNestedViews();
-    _appEl_475?.destroyNestedViews();
-    _appEl_476?.destroyNestedViews();
-    _appEl_477?.destroyNestedViews();
-    _appEl_480?.destroyNestedViews();
+    _appEl_143?.destroyNestedViews();
+    _appEl_495?.destroyNestedViews();
     _appEl_496?.destroyNestedViews();
-    _appEl_499?.destroyNestedViews();
-    _appEl_510?.destroyNestedViews();
+    _appEl_497?.destroyNestedViews();
+    _appEl_498?.destroyNestedViews();
+    _appEl_501?.destroyNestedViews();
     _appEl_517?.destroyNestedViews();
-    _appEl_533?.destroyNestedViews();
-    _appEl_534?.destroyNestedViews();
-    _appEl_538?.destroyNestedViews();
-    _appEl_539?.destroyNestedViews();
+    _appEl_520?.destroyNestedViews();
+    _appEl_526?.destroyNestedViews();
+    _appEl_542?.destroyNestedViews();
+    _appEl_543?.destroyNestedViews();
     _appEl_549?.destroyNestedViews();
+    _appEl_550?.destroyNestedViews();
     _appEl_556?.destroyNestedViews();
-    _appEl_563?.destroyNestedViews();
-    _appEl_570?.destroyNestedViews();
-    _appEl_579?.destroyNestedViews();
-    _appEl_583?.destroyNestedViews();
-    _appEl_584?.destroyNestedViews();
-    _appEl_585?.destroyNestedViews();
-    _appEl_586?.destroyNestedViews();
-    _appEl_587?.destroyNestedViews();
-    _appEl_647?.destroyNestedViews();
-    _compView_160?.destroy();
-    _compView_170?.destroy();
-    _compView_176?.destroy();
-    _compView_242?.destroy();
-    _compView_244?.destroy();
-    _compView_351?.destroy();
-    _compView_353?.destroy();
-    _compView_370?.destroy();
-    _compView_381?.destroy();
-    _compView_485?.destroy();
-    _compView_578?.destroy();
-    _compView_602?.destroy();
-    _compView_611?.destroy();
-    _NgClass_171_4.ngOnDestroy();
-    _NgClass_240_4.ngOnDestroy();
-    _NgClass_410_4.ngOnDestroy();
-    _NgClass_428_4.ngOnDestroy();
-    _NgClass_432_4.ngOnDestroy();
+    _appEl_565?.destroyNestedViews();
+    _appEl_573?.destroyNestedViews();
+    _appEl_574?.destroyNestedViews();
+    _appEl_575?.destroyNestedViews();
+    _appEl_576?.destroyNestedViews();
+    _appEl_577?.destroyNestedViews();
+    _appEl_641?.destroyNestedViews();
+    _compView_164?.destroy();
+    _compView_174?.destroy();
+    _compView_180?.destroy();
+    _compView_246?.destroy();
+    _compView_248?.destroy();
+    _compView_359?.destroy();
+    _compView_361?.destroy();
+    _compView_378?.destroy();
+    _compView_390?.destroy();
+    _compView_506?.destroy();
+    _compView_564?.destroy();
+    _compView_589?.destroy();
+    _compView_598?.destroy();
+    _NgClass_175_4.ngOnDestroy();
+    _NgClass_244_4.ngOnDestroy();
+    _NgClass_418_4.ngOnDestroy();
     _NgClass_436_4.ngOnDestroy();
-    _MaterialRadioGroupComponent_578_6.ngOnDestroy();
+    _NgClass_446_4.ngOnDestroy();
+    _NgClass_450_4.ngOnDestroy();
+    _MaterialRadioGroupComponent_564_6.ngOnDestroy();
   }
 
-  void _handle_keyup_117_0($event) {
+  void _handle_keyup_120_0($event) {
     0;
   }
 
-  void _handle_ngSubmit_143_0($event) {
-    final local_heroForm = _el_143;
+  void _handle_ngSubmit_147_0($event) {
+    final local_heroForm = _el_147;
     ctx.onSubmit(local_heroForm);
   }
 
-  void _handle_myClick_177_0($event) {
+  void _handle_myClick_181_0($event) {
     ctx.clicked = $event;
   }
 
-  void _handle_ngModelChange_184_0($event) {
+  void _handle_ngModelChange_188_0($event) {
     ctx.name = $event;
   }
 
-  void _handle_input_184_1($event) {
-    _DefaultValueAccessor_184_4.onChange($event.target.value);
+  void _handle_input_188_1($event) {
+    _DefaultValueAccessor_188_4.onChange($event.target.value);
   }
 
-  void _handle_myClick_348_0($event) {
+  void _handle_myClick_356_0($event) {
     ctx.clickMessage = $event;
   }
 
-  void _handle_sizeChange_370_0($event) {
+  void _handle_sizeChange_378_0($event) {
     ctx.fontSizePx = $event;
   }
 
-  void _handle_ngModelChange_375_0($event) {
+  void _handle_ngModelChange_383_0($event) {
     ctx.fontSizePx = $event;
   }
 
-  void _handle_input_375_1($event) {
-    _DefaultValueAccessor_375_4.onChange($event.target.value);
+  void _handle_input_383_1($event) {
+    _DefaultValueAccessor_383_4.onChange($event.target.value);
   }
 
-  void _handle_sizeChange_381_0($event) {
+  void _handle_sizeChange_390_0($event) {
     ctx.fontSizePx = $event;
   }
 
-  void _handle_input_389_0($event) {
+  void _handle_input_399_0($event) {
     ctx.currentHero.name = $event.target.value;
   }
 
-  void _handle_ngModelChange_392_0($event) {
+  void _handle_ngModelChange_402_0($event) {
     ctx.currentHero.name = $event;
   }
 
-  void _handle_input_392_1($event) {
-    _DefaultValueAccessor_392_4.onChange($event.target.value);
+  void _handle_input_402_1($event) {
+    _DefaultValueAccessor_402_4.onChange($event.target.value);
   }
 
-  void _handle_ngModelChange_395_0($event) {
+  void _handle_ngModelChange_405_0($event) {
     ctx.currentHero.name = $event;
   }
 
-  void _handle_input_395_1($event) {
-    _DefaultValueAccessor_395_4.onChange($event.target.value);
+  void _handle_input_405_1($event) {
+    _DefaultValueAccessor_405_4.onChange($event.target.value);
   }
 
-  void _handle_ngModelChange_398_0($event) {
-    ctx.currentHero.name = $event;
-  }
-
-  void _handle_input_398_1($event) {
-    _DefaultValueAccessor_398_4.onChange($event.target.value);
-  }
-
-  void _handle_input_401_1($event) {
-    _DefaultValueAccessor_401_4.onChange($event.target.value);
-  }
-
-  void _handle_ngModelChange_415_0($event) {
-    ctx.canSave = $event;
-  }
-
-  void _handle_change_415_1($event) {
-    _CheckboxControlValueAccessor_415_4.onChange($event.target.checked);
-  }
-
-  void _handle_change_419_0($event) {
-    ctx.isUnchanged = !ctx.isUnchanged;
+  void _handle_input_408_1($event) {
+    _DefaultValueAccessor_408_4.onChange($event.target.value);
   }
 
   void _handle_ngModelChange_423_0($event) {
-    ctx.isSpecial = $event;
+    ctx.canSave = $event;
   }
 
   void _handle_change_423_1($event) {
     _CheckboxControlValueAccessor_423_4.onChange($event.target.checked);
   }
 
-  void _handle_ngModelChange_454_0($event) {
-    ctx.canSave = $event;
+  void _handle_change_427_0($event) {
+    ctx.isUnchanged = !ctx.isUnchanged;
   }
 
-  void _handle_change_454_1($event) {
-    _CheckboxControlValueAccessor_454_4.onChange($event.target.checked);
-  }
-
-  void _handle_ngModelChange_458_0($event) {
-    ctx.isUnchanged = $event;
-  }
-
-  void _handle_change_458_1($event) {
-    _CheckboxControlValueAccessor_458_4.onChange($event.target.checked);
-  }
-
-  void _handle_ngModelChange_462_0($event) {
+  void _handle_ngModelChange_431_0($event) {
     ctx.isSpecial = $event;
   }
 
-  void _handle_change_462_1($event) {
-    _CheckboxControlValueAccessor_462_4.onChange($event.target.checked);
+  void _handle_change_431_1($event) {
+    _CheckboxControlValueAccessor_431_4.onChange($event.target.checked);
   }
 
-  void _handle_ngModelChange_578_0($event) {
+  void _handle_ngModelChange_469_0($event) {
+    ctx.canSave = $event;
+  }
+
+  void _handle_change_469_1($event) {
+    _CheckboxControlValueAccessor_469_4.onChange($event.target.checked);
+  }
+
+  void _handle_ngModelChange_473_0($event) {
+    ctx.isUnchanged = $event;
+  }
+
+  void _handle_change_473_1($event) {
+    _CheckboxControlValueAccessor_473_4.onChange($event.target.checked);
+  }
+
+  void _handle_ngModelChange_477_0($event) {
+    ctx.isSpecial = $event;
+  }
+
+  void _handle_change_477_1($event) {
+    _CheckboxControlValueAccessor_477_4.onChange($event.target.checked);
+  }
+
+  void _handle_ngModelChange_564_0($event) {
     ctx.currentHero = $event;
   }
 
-  void _handle_click_594_0($event) {
-    final local_phone = _el_593;
+  void _handle_click_584_0($event) {
+    final local_phone = _el_583;
     ctx.callPhone(local_phone.value);
   }
 
-  void _handle_click_597_0($event) {
-    final local_fax = _el_596;
-    ctx.callFax(local_fax.value);
-  }
-
-  void _handle_myClick_612_0($event) {
+  void _handle_myClick_599_0($event) {
     ctx.clickMessage2 = $event;
   }
 }
@@ -3796,7 +3708,7 @@ AppView<import2.AppComponent> viewFactory_AppComponent4(AppView<dynamic> parentV
 
 class _ViewAppComponent5 extends AppView<import2.AppComponent> {
   import4.DivElement _el_0;
-  import4.Text _text_1;
+  import4.Text _text_2;
   var _expr_0;
   _ViewAppComponent5(AppView<dynamic> parentView, num parentIndex) : super(import31.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewAppComponent0._renderType;
@@ -3806,8 +3718,10 @@ class _ViewAppComponent5 extends AppView<import2.AppComponent> {
     var doc = import4.document;
     _el_0 = doc.createElement('div');
     addShimC(_el_0);
-    _text_1 = new import4.Text('');
+    import4.Text _text_1 = new import4.Text('Hello, ');
     _el_0.append(_text_1);
+    _text_2 = new import4.Text('');
+    _el_0.append(_text_2);
     init0(_el_0);
     return null;
   }
@@ -3815,9 +3729,9 @@ class _ViewAppComponent5 extends AppView<import2.AppComponent> {
   @override
   void detectChangesInternal() {
     final import2.AppComponent _ctx = ctx;
-    final currVal_0 = import33.interpolate1('Hello, ', _ctx.currentHero.name, '');
+    final currVal_0 = import33.interpolate0(_ctx.currentHero.name);
     if (!identical(_expr_0, currVal_0)) {
-      _text_1.text = currVal_0;
+      _text_2.text = currVal_0;
       _expr_0 = currVal_0;
     }
   }
@@ -3829,7 +3743,7 @@ AppView<import2.AppComponent> viewFactory_AppComponent5(AppView<dynamic> parentV
 
 class _ViewAppComponent6 extends AppView<import2.AppComponent> {
   import4.DivElement _el_0;
-  import4.Text _text_1;
+  import4.Text _text_2;
   var _expr_0;
   _ViewAppComponent6(AppView<dynamic> parentView, num parentIndex) : super(import31.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewAppComponent0._renderType;
@@ -3839,8 +3753,10 @@ class _ViewAppComponent6 extends AppView<import2.AppComponent> {
     var doc = import4.document;
     _el_0 = doc.createElement('div');
     addShimC(_el_0);
-    _text_1 = new import4.Text('');
+    import4.Text _text_1 = new import4.Text('Hello, ');
     _el_0.append(_text_1);
+    _text_2 = new import4.Text('');
+    _el_0.append(_text_2);
     init0(_el_0);
     return null;
   }
@@ -3848,9 +3764,9 @@ class _ViewAppComponent6 extends AppView<import2.AppComponent> {
   @override
   void detectChangesInternal() {
     final import2.AppComponent _ctx = ctx;
-    final currVal_0 = import33.interpolate1('Hello, ', _ctx.nullHero.name, '');
+    final currVal_0 = import33.interpolate0(_ctx.nullHero.name);
     if (!identical(_expr_0, currVal_0)) {
-      _text_1.text = currVal_0;
+      _text_2.text = currVal_0;
       _expr_0 = currVal_0;
     }
   }
@@ -3861,24 +3777,26 @@ AppView<import2.AppComponent> viewFactory_AppComponent6(AppView<dynamic> parentV
 }
 
 class _ViewAppComponent7 extends AppView<import2.AppComponent> {
-  import4.Text _text_0;
+  import4.Text _text_1;
   var _expr_0;
   _ViewAppComponent7(AppView<dynamic> parentView, num parentIndex) : super(import31.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewAppComponent0._renderType;
   }
   @override
   ComponentRef<import2.AppComponent> build() {
-    _text_0 = new import4.Text('');
-    init0(_text_0);
+    import4.Text _text_0 = new import4.Text('Add ');
+    _text_1 = new import4.Text('');
+    import4.Text _text_2 = new import4.Text(' with template');
+    init([_text_0, _text_1, _text_2], null);
     return null;
   }
 
   @override
   void detectChangesInternal() {
     final import2.AppComponent _ctx = ctx;
-    final currVal_0 = import33.interpolate1('Add ', _ctx.currentHero.name, ' with template');
+    final currVal_0 = import33.interpolate0(_ctx.currentHero.name);
     if (!identical(_expr_0, currVal_0)) {
-      _text_0.text = currVal_0;
+      _text_1.text = currVal_0;
       _expr_0 = currVal_0;
     }
   }
@@ -4021,7 +3939,9 @@ AppView<import2.AppComponent> viewFactory_AppComponent10(AppView<dynamic> parent
 class _ViewAppComponent11 extends AppView<import2.AppComponent> {
   import4.DivElement _el_0;
   import4.Text _text_1;
+  import4.Text _text_3;
   var _expr_0;
+  var _expr_1;
   _ViewAppComponent11(AppView<dynamic> parentView, num parentIndex) : super(import31.ViewType.EMBEDDED, {'\$implicit': null, 'index': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewAppComponent0._renderType;
   }
@@ -4032,6 +3952,10 @@ class _ViewAppComponent11 extends AppView<import2.AppComponent> {
     addShimC(_el_0);
     _text_1 = new import4.Text('');
     _el_0.append(_text_1);
+    import4.Text _text_2 = new import4.Text(' - ');
+    _el_0.append(_text_2);
+    _text_3 = new import4.Text('');
+    _el_0.append(_text_3);
     init0(_el_0);
     return null;
   }
@@ -4040,10 +3964,15 @@ class _ViewAppComponent11 extends AppView<import2.AppComponent> {
   void detectChangesInternal() {
     final int local_i = locals['index'];
     final import42.Hero local_hero = locals['\$implicit'];
-    final currVal_0 = import33.interpolate2('', (local_i + 1), ' - ', local_hero.name, '');
+    final currVal_0 = import33.interpolate0((local_i + 1));
     if (!identical(_expr_0, currVal_0)) {
       _text_1.text = currVal_0;
       _expr_0 = currVal_0;
+    }
+    final currVal_1 = import33.interpolate0(local_hero.name);
+    if (!identical(_expr_1, currVal_1)) {
+      _text_3.text = currVal_1;
+      _expr_1 = currVal_1;
     }
   }
 }
@@ -4054,9 +3983,11 @@ AppView<import2.AppComponent> viewFactory_AppComponent11(AppView<dynamic> parent
 
 class _ViewAppComponent12 extends AppView<import2.AppComponent> {
   import4.DivElement _el_0;
-  import4.Text _text_1;
+  import4.Text _text_2;
+  import4.Text _text_4;
   var _expr_0;
-  _ViewAppComponent12(AppView<dynamic> parentView, num parentIndex) : super(import31.ViewType.EMBEDDED, {'\$implicit': null, 'index': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  var _expr_1;
+  _ViewAppComponent12(AppView<dynamic> parentView, num parentIndex) : super(import31.ViewType.EMBEDDED, {'\$implicit': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewAppComponent0._renderType;
   }
   @override
@@ -4064,53 +3995,30 @@ class _ViewAppComponent12 extends AppView<import2.AppComponent> {
     var doc = import4.document;
     _el_0 = doc.createElement('div');
     addShimC(_el_0);
-    _text_1 = new import4.Text('');
+    import4.Text _text_1 = new import4.Text('(');
     _el_0.append(_text_1);
+    _text_2 = new import4.Text('');
+    _el_0.append(_text_2);
+    import4.Text _text_3 = new import4.Text(') ');
+    _el_0.append(_text_3);
+    _text_4 = new import4.Text('');
+    _el_0.append(_text_4);
     init0(_el_0);
     return null;
   }
 
   @override
   void detectChangesInternal() {
-    final int local_i = locals['index'];
     final import42.Hero local_hero = locals['\$implicit'];
-    final currVal_0 = import33.interpolate2('', (local_i + 1), ' - ', local_hero.name, '');
+    final currVal_0 = import33.interpolate0(local_hero.id);
     if (!identical(_expr_0, currVal_0)) {
-      _text_1.text = currVal_0;
+      _text_2.text = currVal_0;
       _expr_0 = currVal_0;
     }
-  }
-}
-
-AppView<import2.AppComponent> viewFactory_AppComponent12(AppView<dynamic> parentView, num parentIndex) {
-  return new _ViewAppComponent12(parentView, parentIndex);
-}
-
-class _ViewAppComponent13 extends AppView<import2.AppComponent> {
-  import4.DivElement _el_0;
-  import4.Text _text_1;
-  var _expr_0;
-  _ViewAppComponent13(AppView<dynamic> parentView, num parentIndex) : super(import31.ViewType.EMBEDDED, {'\$implicit': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
-    componentType = ViewAppComponent0._renderType;
-  }
-  @override
-  ComponentRef<import2.AppComponent> build() {
-    var doc = import4.document;
-    _el_0 = doc.createElement('div');
-    addShimC(_el_0);
-    _text_1 = new import4.Text('');
-    _el_0.append(_text_1);
-    init0(_el_0);
-    return null;
-  }
-
-  @override
-  void detectChangesInternal() {
-    final import42.Hero local_hero = locals['\$implicit'];
-    final currVal_0 = import33.interpolate2('(', local_hero.id, ') ', local_hero.name, '');
-    if (!identical(_expr_0, currVal_0)) {
-      _text_1.text = currVal_0;
-      _expr_0 = currVal_0;
+    final currVal_1 = import33.interpolate0(local_hero.name);
+    if (!identical(_expr_1, currVal_1)) {
+      _text_4.text = currVal_1;
+      _expr_1 = currVal_1;
     }
   }
 
@@ -4120,15 +4028,15 @@ class _ViewAppComponent13 extends AppView<import2.AppComponent> {
   }
 }
 
-AppView<import2.AppComponent> viewFactory_AppComponent13(AppView<dynamic> parentView, num parentIndex) {
-  return new _ViewAppComponent13(parentView, parentIndex);
+AppView<import2.AppComponent> viewFactory_AppComponent12(AppView<dynamic> parentView, num parentIndex) {
+  return new _ViewAppComponent12(parentView, parentIndex);
 }
 
-class _ViewAppComponent14 extends AppView<import2.AppComponent> {
+class _ViewAppComponent13 extends AppView<import2.AppComponent> {
   import4.DivElement _el_0;
-  import4.Text _text_1;
+  import4.Text _text_2;
   var _expr_0;
-  _ViewAppComponent14(AppView<dynamic> parentView, num parentIndex) : super(import31.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewAppComponent13(AppView<dynamic> parentView, num parentIndex) : super(import31.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewAppComponent0._renderType;
   }
   @override
@@ -4137,8 +4045,12 @@ class _ViewAppComponent14 extends AppView<import2.AppComponent> {
     _el_0 = doc.createElement('div');
     createAttr(_el_0, 'id', 'noTrackByCnt');
     addShimC(_el_0);
-    _text_1 = new import4.Text('');
+    import4.Text _text_1 = new import4.Text('Hero DOM elements change #');
     _el_0.append(_text_1);
+    _text_2 = new import4.Text('');
+    _el_0.append(_text_2);
+    import4.Text _text_3 = new import4.Text(' without trackBy');
+    _el_0.append(_text_3);
     init0(_el_0);
     return null;
   }
@@ -4146,23 +4058,25 @@ class _ViewAppComponent14 extends AppView<import2.AppComponent> {
   @override
   void detectChangesInternal() {
     final import2.AppComponent _ctx = ctx;
-    final currVal_0 = import33.interpolate1('Hero DOM elements change #', _ctx.heroesNoTrackByCount, ' without trackBy');
+    final currVal_0 = import33.interpolate0(_ctx.heroesNoTrackByCount);
     if (!identical(_expr_0, currVal_0)) {
-      _text_1.text = currVal_0;
+      _text_2.text = currVal_0;
       _expr_0 = currVal_0;
     }
   }
 }
 
-AppView<import2.AppComponent> viewFactory_AppComponent14(AppView<dynamic> parentView, num parentIndex) {
-  return new _ViewAppComponent14(parentView, parentIndex);
+AppView<import2.AppComponent> viewFactory_AppComponent13(AppView<dynamic> parentView, num parentIndex) {
+  return new _ViewAppComponent13(parentView, parentIndex);
 }
 
-class _ViewAppComponent15 extends AppView<import2.AppComponent> {
+class _ViewAppComponent14 extends AppView<import2.AppComponent> {
   import4.DivElement _el_0;
-  import4.Text _text_1;
+  import4.Text _text_2;
+  import4.Text _text_4;
   var _expr_0;
-  _ViewAppComponent15(AppView<dynamic> parentView, num parentIndex) : super(import31.ViewType.EMBEDDED, {'\$implicit': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  var _expr_1;
+  _ViewAppComponent14(AppView<dynamic> parentView, num parentIndex) : super(import31.ViewType.EMBEDDED, {'\$implicit': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewAppComponent0._renderType;
   }
   @override
@@ -4170,8 +4084,14 @@ class _ViewAppComponent15 extends AppView<import2.AppComponent> {
     var doc = import4.document;
     _el_0 = doc.createElement('div');
     addShimC(_el_0);
-    _text_1 = new import4.Text('');
+    import4.Text _text_1 = new import4.Text('(');
     _el_0.append(_text_1);
+    _text_2 = new import4.Text('');
+    _el_0.append(_text_2);
+    import4.Text _text_3 = new import4.Text(') ');
+    _el_0.append(_text_3);
+    _text_4 = new import4.Text('');
+    _el_0.append(_text_4);
     init0(_el_0);
     return null;
   }
@@ -4179,10 +4099,15 @@ class _ViewAppComponent15 extends AppView<import2.AppComponent> {
   @override
   void detectChangesInternal() {
     final import42.Hero local_hero = locals['\$implicit'];
-    final currVal_0 = import33.interpolate2('(', local_hero.id, ') ', local_hero.name, '');
+    final currVal_0 = import33.interpolate0(local_hero.id);
     if (!identical(_expr_0, currVal_0)) {
-      _text_1.text = currVal_0;
+      _text_2.text = currVal_0;
       _expr_0 = currVal_0;
+    }
+    final currVal_1 = import33.interpolate0(local_hero.name);
+    if (!identical(_expr_1, currVal_1)) {
+      _text_4.text = currVal_1;
+      _expr_1 = currVal_1;
     }
   }
 
@@ -4192,15 +4117,16 @@ class _ViewAppComponent15 extends AppView<import2.AppComponent> {
   }
 }
 
-AppView<import2.AppComponent> viewFactory_AppComponent15(AppView<dynamic> parentView, num parentIndex) {
-  return new _ViewAppComponent15(parentView, parentIndex);
+AppView<import2.AppComponent> viewFactory_AppComponent14(AppView<dynamic> parentView, num parentIndex) {
+  return new _ViewAppComponent14(parentView, parentIndex);
 }
 
-class _ViewAppComponent16 extends AppView<import2.AppComponent> {
+class _ViewAppComponent15 extends AppView<import2.AppComponent> {
   import4.DivElement _el_0;
-  import4.Text _text_1;
+  import4.Text _text_2;
+  import4.Element _el_4;
   var _expr_0;
-  _ViewAppComponent16(AppView<dynamic> parentView, num parentIndex) : super(import31.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewAppComponent15(AppView<dynamic> parentView, num parentIndex) : super(import31.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewAppComponent0._renderType;
   }
   @override
@@ -4209,8 +4135,16 @@ class _ViewAppComponent16 extends AppView<import2.AppComponent> {
     _el_0 = doc.createElement('div');
     createAttr(_el_0, 'id', 'withTrackByCnt');
     addShimC(_el_0);
-    _text_1 = new import4.Text('');
+    import4.Text _text_1 = new import4.Text('Hero DOM elements change #');
     _el_0.append(_text_1);
+    _text_2 = new import4.Text('');
+    _el_0.append(_text_2);
+    import4.Text _text_3 = new import4.Text(' with ');
+    _el_0.append(_text_3);
+    _el_4 = createAndAppend(doc, 'code', _el_0);
+    addShimE(_el_4);
+    import4.Text _text_5 = new import4.Text('trackBy: trackByHeroes');
+    _el_4.append(_text_5);
     init0(_el_0);
     return null;
   }
@@ -4218,10 +4152,56 @@ class _ViewAppComponent16 extends AppView<import2.AppComponent> {
   @override
   void detectChangesInternal() {
     final import2.AppComponent _ctx = ctx;
-    final currVal_0 = import33.interpolate1('Hero DOM elements change #', _ctx.heroesWithTrackByCount, ' with trackBy');
+    final currVal_0 = import33.interpolate0(_ctx.heroesWithTrackByCount);
     if (!identical(_expr_0, currVal_0)) {
-      _text_1.text = currVal_0;
+      _text_2.text = currVal_0;
       _expr_0 = currVal_0;
+    }
+  }
+}
+
+AppView<import2.AppComponent> viewFactory_AppComponent15(AppView<dynamic> parentView, num parentIndex) {
+  return new _ViewAppComponent15(parentView, parentIndex);
+}
+
+class _ViewAppComponent16 extends AppView<import2.AppComponent> {
+  import4.DivElement _el_0;
+  import4.Text _text_2;
+  import4.Text _text_4;
+  var _expr_0;
+  var _expr_1;
+  _ViewAppComponent16(AppView<dynamic> parentView, num parentIndex) : super(import31.ViewType.EMBEDDED, {'\$implicit': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+    componentType = ViewAppComponent0._renderType;
+  }
+  @override
+  ComponentRef<import2.AppComponent> build() {
+    var doc = import4.document;
+    _el_0 = doc.createElement('div');
+    addShimC(_el_0);
+    import4.Text _text_1 = new import4.Text('(');
+    _el_0.append(_text_1);
+    _text_2 = new import4.Text('');
+    _el_0.append(_text_2);
+    import4.Text _text_3 = new import4.Text(') ');
+    _el_0.append(_text_3);
+    _text_4 = new import4.Text('');
+    _el_0.append(_text_4);
+    init0(_el_0);
+    return null;
+  }
+
+  @override
+  void detectChangesInternal() {
+    final import42.Hero local_hero = locals['\$implicit'];
+    final currVal_0 = import33.interpolate0(local_hero.id);
+    if (!identical(_expr_0, currVal_0)) {
+      _text_2.text = currVal_0;
+      _expr_0 = currVal_0;
+    }
+    final currVal_1 = import33.interpolate0(local_hero.name);
+    if (!identical(_expr_1, currVal_1)) {
+      _text_4.text = currVal_1;
+      _expr_1 = currVal_1;
     }
   }
 }
@@ -4231,146 +4211,16 @@ AppView<import2.AppComponent> viewFactory_AppComponent16(AppView<dynamic> parent
 }
 
 class _ViewAppComponent17 extends AppView<import2.AppComponent> {
-  import4.DivElement _el_0;
-  import4.Text _text_1;
-  var _expr_0;
-  _ViewAppComponent17(AppView<dynamic> parentView, num parentIndex) : super(import31.ViewType.EMBEDDED, {'\$implicit': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
-    componentType = ViewAppComponent0._renderType;
-  }
-  @override
-  ComponentRef<import2.AppComponent> build() {
-    var doc = import4.document;
-    _el_0 = doc.createElement('div');
-    addShimC(_el_0);
-    _text_1 = new import4.Text('');
-    _el_0.append(_text_1);
-    init0(_el_0);
-    return null;
-  }
-
-  @override
-  void detectChangesInternal() {
-    final import42.Hero local_hero = locals['\$implicit'];
-    final currVal_0 = import33.interpolate2('(', local_hero.id, ') ', local_hero.name, '');
-    if (!identical(_expr_0, currVal_0)) {
-      _text_1.text = currVal_0;
-      _expr_0 = currVal_0;
-    }
-  }
-}
-
-AppView<import2.AppComponent> viewFactory_AppComponent17(AppView<dynamic> parentView, num parentIndex) {
-  return new _ViewAppComponent17(parentView, parentIndex);
-}
-
-class _ViewAppComponent18 extends AppView<import2.AppComponent> {
-  import4.DivElement _el_0;
-  import4.Text _text_1;
-  var _expr_0;
-  _ViewAppComponent18(AppView<dynamic> parentView, num parentIndex) : super(import31.ViewType.EMBEDDED, {'\$implicit': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
-    componentType = ViewAppComponent0._renderType;
-  }
-  @override
-  ComponentRef<import2.AppComponent> build() {
-    var doc = import4.document;
-    _el_0 = doc.createElement('div');
-    addShimC(_el_0);
-    _text_1 = new import4.Text('');
-    _el_0.append(_text_1);
-    init0(_el_0);
-    return null;
-  }
-
-  @override
-  void detectChangesInternal() {
-    final import42.Hero local_hero = locals['\$implicit'];
-    final currVal_0 = import33.interpolate2('(', local_hero.id, ') ', local_hero.name, '');
-    if (!identical(_expr_0, currVal_0)) {
-      _text_1.text = currVal_0;
-      _expr_0 = currVal_0;
-    }
-  }
-}
-
-AppView<import2.AppComponent> viewFactory_AppComponent18(AppView<dynamic> parentView, num parentIndex) {
-  return new _ViewAppComponent18(parentView, parentIndex);
-}
-
-class _ViewAppComponent19 extends AppView<import2.AppComponent> {
-  import4.DivElement _el_0;
-  import4.Text _text_1;
-  var _expr_0;
-  _ViewAppComponent19(AppView<dynamic> parentView, num parentIndex) : super(import31.ViewType.EMBEDDED, {'\$implicit': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
-    componentType = ViewAppComponent0._renderType;
-  }
-  @override
-  ComponentRef<import2.AppComponent> build() {
-    var doc = import4.document;
-    _el_0 = doc.createElement('div');
-    addShimC(_el_0);
-    _text_1 = new import4.Text('');
-    _el_0.append(_text_1);
-    init0(_el_0);
-    return null;
-  }
-
-  @override
-  void detectChangesInternal() {
-    final import42.Hero local_hero = locals['\$implicit'];
-    final currVal_0 = import33.interpolate2('(', local_hero.id, ') ', local_hero.name, '');
-    if (!identical(_expr_0, currVal_0)) {
-      _text_1.text = currVal_0;
-      _expr_0 = currVal_0;
-    }
-  }
-}
-
-AppView<import2.AppComponent> viewFactory_AppComponent19(AppView<dynamic> parentView, num parentIndex) {
-  return new _ViewAppComponent19(parentView, parentIndex);
-}
-
-class _ViewAppComponent20 extends AppView<import2.AppComponent> {
-  import4.DivElement _el_0;
-  import4.Text _text_1;
-  var _expr_0;
-  _ViewAppComponent20(AppView<dynamic> parentView, num parentIndex) : super(import31.ViewType.EMBEDDED, {'\$implicit': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
-    componentType = ViewAppComponent0._renderType;
-  }
-  @override
-  ComponentRef<import2.AppComponent> build() {
-    var doc = import4.document;
-    _el_0 = doc.createElement('div');
-    addShimC(_el_0);
-    _text_1 = new import4.Text('');
-    _el_0.append(_text_1);
-    init0(_el_0);
-    return null;
-  }
-
-  @override
-  void detectChangesInternal() {
-    final import42.Hero local_hero = locals['\$implicit'];
-    final currVal_0 = import33.interpolate2('(', local_hero.id, ') ', local_hero.name, '');
-    if (!identical(_expr_0, currVal_0)) {
-      _text_1.text = currVal_0;
-      _expr_0 = currVal_0;
-    }
-  }
-}
-
-AppView<import2.AppComponent> viewFactory_AppComponent20(AppView<dynamic> parentView, num parentIndex) {
-  return new _ViewAppComponent20(parentView, parentIndex);
-}
-
-class _ViewAppComponent21 extends AppView<import2.AppComponent> {
   import4.Element _el_0;
   import43.ViewMaterialRadioComponent0 _compView_0;
   import44.MaterialRadioComponent _MaterialRadioComponent_0_4;
   import4.Text _text_1;
+  import4.Text _text_3;
   var _expr_0;
   bool _expr_1;
   var _expr_2;
-  _ViewAppComponent21(AppView<dynamic> parentView, num parentIndex) : super(import31.ViewType.EMBEDDED, {'\$implicit': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  var _expr_3;
+  _ViewAppComponent17(AppView<dynamic> parentView, num parentIndex) : super(import31.ViewType.EMBEDDED, {'\$implicit': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewAppComponent0._renderType;
   }
   @override
@@ -4378,10 +4228,13 @@ class _ViewAppComponent21 extends AppView<import2.AppComponent> {
     _compView_0 = new import43.ViewMaterialRadioComponent0(this, 0);
     _el_0 = _compView_0.rootEl;
     addShimC(_el_0);
-    _MaterialRadioComponent_0_4 = new import44.MaterialRadioComponent(_el_0, _compView_0.ref, (parentView as ViewAppComponent0)._MaterialRadioGroupComponent_578_6, null, null);
+    _MaterialRadioComponent_0_4 = new import44.MaterialRadioComponent(_el_0, _compView_0.ref, (parentView as ViewAppComponent0)._MaterialRadioGroupComponent_564_6, null, null);
     _text_1 = new import4.Text('');
+    import4.Text _text_2 = new import4.Text(' (');
+    _text_3 = new import4.Text('');
+    import4.Text _text_4 = new import4.Text(')');
     _compView_0.create(_MaterialRadioComponent_0_4, [
-      [_text_1]
+      [_text_1, _text_2, _text_3, _text_4]
     ]);
     init0(_el_0);
     return null;
@@ -4410,17 +4263,22 @@ class _ViewAppComponent21 extends AppView<import2.AppComponent> {
       _compView_0.markAsCheckOnce();
     }
     _compView_0.detectHostChanges(firstCheck);
-    final currVal_2 = import33.interpolate2('', local_h.name, ' (', local_h.id, ')');
+    final currVal_2 = import33.interpolate0(local_h.name);
     if (!identical(_expr_2, currVal_2)) {
       _text_1.text = currVal_2;
       _expr_2 = currVal_2;
+    }
+    final currVal_3 = import33.interpolate0(local_h.id);
+    if (!identical(_expr_3, currVal_3)) {
+      _text_3.text = currVal_3;
+      _expr_3 = currVal_3;
     }
     _compView_0.detectChanges();
   }
 
   @override
   void dirtyParentQueriesInternal() {
-    (parentView as ViewAppComponent0)._query_MaterialRadioComponent_578_0.setDirty();
+    (parentView as ViewAppComponent0)._query_MaterialRadioComponent_564_0.setDirty();
   }
 
   @override
@@ -4430,16 +4288,16 @@ class _ViewAppComponent21 extends AppView<import2.AppComponent> {
   }
 }
 
-AppView<import2.AppComponent> viewFactory_AppComponent21(AppView<dynamic> parentView, num parentIndex) {
-  return new _ViewAppComponent21(parentView, parentIndex);
+AppView<import2.AppComponent> viewFactory_AppComponent17(AppView<dynamic> parentView, num parentIndex) {
+  return new _ViewAppComponent17(parentView, parentIndex);
 }
 
-class _ViewAppComponent22 extends AppView<import2.AppComponent> {
+class _ViewAppComponent18 extends AppView<import2.AppComponent> {
   import4.Element _el_0;
   import45.ViewHappyHeroComponent0 _compView_0;
   import46.HappyHeroComponent _HappyHeroComponent_0_4;
   var _expr_0;
-  _ViewAppComponent22(AppView<dynamic> parentView, num parentIndex) : super(import31.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewAppComponent18(AppView<dynamic> parentView, num parentIndex) : super(import31.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewAppComponent0._renderType;
   }
   @override
@@ -4478,16 +4336,16 @@ class _ViewAppComponent22 extends AppView<import2.AppComponent> {
   }
 }
 
-AppView<import2.AppComponent> viewFactory_AppComponent22(AppView<dynamic> parentView, num parentIndex) {
-  return new _ViewAppComponent22(parentView, parentIndex);
+AppView<import2.AppComponent> viewFactory_AppComponent18(AppView<dynamic> parentView, num parentIndex) {
+  return new _ViewAppComponent18(parentView, parentIndex);
 }
 
-class _ViewAppComponent23 extends AppView<import2.AppComponent> {
+class _ViewAppComponent19 extends AppView<import2.AppComponent> {
   import4.Element _el_0;
   import45.ViewSadHeroComponent0 _compView_0;
   import46.SadHeroComponent _SadHeroComponent_0_4;
   var _expr_0;
-  _ViewAppComponent23(AppView<dynamic> parentView, num parentIndex) : super(import31.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewAppComponent19(AppView<dynamic> parentView, num parentIndex) : super(import31.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewAppComponent0._renderType;
   }
   @override
@@ -4526,16 +4384,16 @@ class _ViewAppComponent23 extends AppView<import2.AppComponent> {
   }
 }
 
-AppView<import2.AppComponent> viewFactory_AppComponent23(AppView<dynamic> parentView, num parentIndex) {
-  return new _ViewAppComponent23(parentView, parentIndex);
+AppView<import2.AppComponent> viewFactory_AppComponent19(AppView<dynamic> parentView, num parentIndex) {
+  return new _ViewAppComponent19(parentView, parentIndex);
 }
 
-class _ViewAppComponent24 extends AppView<import2.AppComponent> {
+class _ViewAppComponent20 extends AppView<import2.AppComponent> {
   import4.Element _el_0;
   import45.ViewConfusedHeroComponent0 _compView_0;
   import46.ConfusedHeroComponent _ConfusedHeroComponent_0_4;
   var _expr_0;
-  _ViewAppComponent24(AppView<dynamic> parentView, num parentIndex) : super(import31.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewAppComponent20(AppView<dynamic> parentView, num parentIndex) : super(import31.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewAppComponent0._renderType;
   }
   @override
@@ -4574,15 +4432,15 @@ class _ViewAppComponent24 extends AppView<import2.AppComponent> {
   }
 }
 
-AppView<import2.AppComponent> viewFactory_AppComponent24(AppView<dynamic> parentView, num parentIndex) {
-  return new _ViewAppComponent24(parentView, parentIndex);
+AppView<import2.AppComponent> viewFactory_AppComponent20(AppView<dynamic> parentView, num parentIndex) {
+  return new _ViewAppComponent20(parentView, parentIndex);
 }
 
-class _ViewAppComponent25 extends AppView<import2.AppComponent> {
+class _ViewAppComponent21 extends AppView<import2.AppComponent> {
   import4.DivElement _el_0;
-  import4.Text _text_1;
+  import4.Text _text_2;
   var _expr_0;
-  _ViewAppComponent25(AppView<dynamic> parentView, num parentIndex) : super(import31.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewAppComponent21(AppView<dynamic> parentView, num parentIndex) : super(import31.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewAppComponent0._renderType;
   }
   @override
@@ -4590,8 +4448,12 @@ class _ViewAppComponent25 extends AppView<import2.AppComponent> {
     var doc = import4.document;
     _el_0 = doc.createElement('div');
     addShimC(_el_0);
-    _text_1 = new import4.Text('');
+    import4.Text _text_1 = new import4.Text('Are you as confused as ');
     _el_0.append(_text_1);
+    _text_2 = new import4.Text('');
+    _el_0.append(_text_2);
+    import4.Text _text_3 = new import4.Text('?');
+    _el_0.append(_text_3);
     init0(_el_0);
     return null;
   }
@@ -4599,24 +4461,24 @@ class _ViewAppComponent25 extends AppView<import2.AppComponent> {
   @override
   void detectChangesInternal() {
     final import2.AppComponent _ctx = ctx;
-    final currVal_0 = import33.interpolate1('Are you as confused as ', _ctx.currentHero.name, '?');
+    final currVal_0 = import33.interpolate0(_ctx.currentHero.name);
     if (!identical(_expr_0, currVal_0)) {
-      _text_1.text = currVal_0;
+      _text_2.text = currVal_0;
       _expr_0 = currVal_0;
     }
   }
 }
 
-AppView<import2.AppComponent> viewFactory_AppComponent25(AppView<dynamic> parentView, num parentIndex) {
-  return new _ViewAppComponent25(parentView, parentIndex);
+AppView<import2.AppComponent> viewFactory_AppComponent21(AppView<dynamic> parentView, num parentIndex) {
+  return new _ViewAppComponent21(parentView, parentIndex);
 }
 
-class _ViewAppComponent26 extends AppView<import2.AppComponent> {
+class _ViewAppComponent22 extends AppView<import2.AppComponent> {
   import4.Element _el_0;
   import45.ViewUnknownHeroComponent0 _compView_0;
   import46.UnknownHeroComponent _UnknownHeroComponent_0_4;
   var _expr_0;
-  _ViewAppComponent26(AppView<dynamic> parentView, num parentIndex) : super(import31.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewAppComponent22(AppView<dynamic> parentView, num parentIndex) : super(import31.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewAppComponent0._renderType;
   }
   @override
@@ -4655,15 +4517,15 @@ class _ViewAppComponent26 extends AppView<import2.AppComponent> {
   }
 }
 
-AppView<import2.AppComponent> viewFactory_AppComponent26(AppView<dynamic> parentView, num parentIndex) {
-  return new _ViewAppComponent26(parentView, parentIndex);
+AppView<import2.AppComponent> viewFactory_AppComponent22(AppView<dynamic> parentView, num parentIndex) {
+  return new _ViewAppComponent22(parentView, parentIndex);
 }
 
-class _ViewAppComponent27 extends AppView<import2.AppComponent> {
+class _ViewAppComponent23 extends AppView<import2.AppComponent> {
   import4.DivElement _el_0;
-  import4.Text _text_1;
+  import4.Text _text_2;
   var _expr_0;
-  _ViewAppComponent27(AppView<dynamic> parentView, num parentIndex) : super(import31.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewAppComponent23(AppView<dynamic> parentView, num parentIndex) : super(import31.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewAppComponent0._renderType;
   }
   @override
@@ -4671,8 +4533,10 @@ class _ViewAppComponent27 extends AppView<import2.AppComponent> {
     var doc = import4.document;
     _el_0 = doc.createElement('div');
     addShimC(_el_0);
-    _text_1 = new import4.Text('');
+    import4.Text _text_1 = new import4.Text('The null hero\'s name is ');
     _el_0.append(_text_1);
+    _text_2 = new import4.Text('');
+    _el_0.append(_text_2);
     init0(_el_0);
     return null;
   }
@@ -4680,16 +4544,16 @@ class _ViewAppComponent27 extends AppView<import2.AppComponent> {
   @override
   void detectChangesInternal() {
     final import2.AppComponent _ctx = ctx;
-    final currVal_0 = import33.interpolate1('The null hero\'s name is ', _ctx.nullHero.name, '');
+    final currVal_0 = import33.interpolate0(_ctx.nullHero.name);
     if (!identical(_expr_0, currVal_0)) {
-      _text_1.text = currVal_0;
+      _text_2.text = currVal_0;
       _expr_0 = currVal_0;
     }
   }
 }
 
-AppView<import2.AppComponent> viewFactory_AppComponent27(AppView<dynamic> parentView, num parentIndex) {
-  return new _ViewAppComponent27(parentView, parentIndex);
+AppView<import2.AppComponent> viewFactory_AppComponent23(AppView<dynamic> parentView, num parentIndex) {
+  return new _ViewAppComponent23(parentView, parentIndex);
 }
 
 const List<dynamic> styles$AppComponentHost = const [];

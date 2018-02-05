@@ -26,7 +26,7 @@ import 'package:angular/angular.dart';
 const List<dynamic> styles$HappyHeroComponent = const [];
 
 class ViewHappyHeroComponent0 extends AppView<import1.HappyHeroComponent> {
-  import2.Text _text_0;
+  import2.Text _text_1;
   var _expr_0;
   static RenderComponentType _renderType;
   ViewHappyHeroComponent0(AppView<dynamic> parentView, num parentIndex) : super(import4.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
@@ -37,8 +37,12 @@ class ViewHappyHeroComponent0 extends AppView<import1.HappyHeroComponent> {
   @override
   ComponentRef<import1.HappyHeroComponent> build() {
     final import2.HtmlElement parentRenderNode = initViewRoot(rootEl);
-    _text_0 = new import2.Text('');
+    import2.Text _text_0 = new import2.Text('Wow. You like ');
     parentRenderNode.append(_text_0);
+    _text_1 = new import2.Text('');
+    parentRenderNode.append(_text_1);
+    import2.Text _text_2 = new import2.Text('. What a happy hero ... just like you.');
+    parentRenderNode.append(_text_2);
     init(const [], null);
     return null;
   }
@@ -46,9 +50,9 @@ class ViewHappyHeroComponent0 extends AppView<import1.HappyHeroComponent> {
   @override
   void detectChangesInternal() {
     final import1.HappyHeroComponent _ctx = ctx;
-    final currVal_0 = import6.interpolate1('Wow. You like ', _ctx.hero.name, '. What a happy hero ... just like you.');
+    final currVal_0 = import6.interpolate0(_ctx.hero.name);
     if (!identical(_expr_0, currVal_0)) {
-      _text_0.text = currVal_0;
+      _text_1.text = currVal_0;
       _expr_0 = currVal_0;
     }
   }
@@ -101,7 +105,7 @@ const ComponentFactory<import1.HappyHeroComponent> HappyHeroComponentNgFactory =
 const List<dynamic> styles$SadHeroComponent = const [];
 
 class ViewSadHeroComponent0 extends AppView<import1.SadHeroComponent> {
-  import2.Text _text_0;
+  import2.Text _text_1;
   var _expr_0;
   static RenderComponentType _renderType;
   ViewSadHeroComponent0(AppView<dynamic> parentView, num parentIndex) : super(import4.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
@@ -112,8 +116,12 @@ class ViewSadHeroComponent0 extends AppView<import1.SadHeroComponent> {
   @override
   ComponentRef<import1.SadHeroComponent> build() {
     final import2.HtmlElement parentRenderNode = initViewRoot(rootEl);
-    _text_0 = new import2.Text('');
+    import2.Text _text_0 = new import2.Text('You like ');
     parentRenderNode.append(_text_0);
+    _text_1 = new import2.Text('');
+    parentRenderNode.append(_text_1);
+    import2.Text _text_2 = new import2.Text('? Such a sad hero. Are you sad too?');
+    parentRenderNode.append(_text_2);
     init(const [], null);
     return null;
   }
@@ -121,9 +129,9 @@ class ViewSadHeroComponent0 extends AppView<import1.SadHeroComponent> {
   @override
   void detectChangesInternal() {
     final import1.SadHeroComponent _ctx = ctx;
-    final currVal_0 = import6.interpolate1('You like ', _ctx.hero.name, '? Such a sad hero. Are you sad too?');
+    final currVal_0 = import6.interpolate0(_ctx.hero.name);
     if (!identical(_expr_0, currVal_0)) {
-      _text_0.text = currVal_0;
+      _text_1.text = currVal_0;
       _expr_0 = currVal_0;
     }
   }
@@ -176,7 +184,7 @@ const ComponentFactory<import1.SadHeroComponent> SadHeroComponentNgFactory = con
 const List<dynamic> styles$ConfusedHeroComponent = const [];
 
 class ViewConfusedHeroComponent0 extends AppView<import1.ConfusedHeroComponent> {
-  import2.Text _text_0;
+  import2.Text _text_1;
   var _expr_0;
   static RenderComponentType _renderType;
   ViewConfusedHeroComponent0(AppView<dynamic> parentView, num parentIndex) : super(import4.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
@@ -187,8 +195,12 @@ class ViewConfusedHeroComponent0 extends AppView<import1.ConfusedHeroComponent> 
   @override
   ComponentRef<import1.ConfusedHeroComponent> build() {
     final import2.HtmlElement parentRenderNode = initViewRoot(rootEl);
-    _text_0 = new import2.Text('');
+    import2.Text _text_0 = new import2.Text('Are you as confused as ');
     parentRenderNode.append(_text_0);
+    _text_1 = new import2.Text('');
+    parentRenderNode.append(_text_1);
+    import2.Text _text_2 = new import2.Text('?');
+    parentRenderNode.append(_text_2);
     init(const [], null);
     return null;
   }
@@ -196,9 +208,9 @@ class ViewConfusedHeroComponent0 extends AppView<import1.ConfusedHeroComponent> 
   @override
   void detectChangesInternal() {
     final import1.ConfusedHeroComponent _ctx = ctx;
-    final currVal_0 = import6.interpolate1('Are you as confused as ', _ctx.hero.name, '?');
+    final currVal_0 = import6.interpolate0(_ctx.hero.name);
     if (!identical(_expr_0, currVal_0)) {
-      _text_0.text = currVal_0;
+      _text_1.text = currVal_0;
       _expr_0 = currVal_0;
     }
   }

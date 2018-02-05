@@ -32,12 +32,6 @@ import 'interface/expression.dart';
 /// A function that takes a callback with no arguments.
 typedef Future _ScopeCallback(Future callback());
 
-/// The URL used in stack traces when no source URL is available.
-final _noSourceUrl = Uri.parse("-");
-
-/// The default URL to pass in to Node importers for previous imports.
-final _defaultPrevious = new Uri(path: 'stdin');
-
 /// Converts [stylesheet] to a plain CSS tree.
 ///
 /// If [importers] (or, on Node.js, [nodeImporter]) is passed, it's used to
@@ -56,13 +50,13 @@ Future<EvaluateResult> evaluateAsync(Stylesheet stylesheet,
         {Iterable<AsyncImporter> importers,
         NodeImporter nodeImporter,
         AsyncImporter importer,
-        AsyncEnvironment environment,
+        Iterable<AsyncCallable> functions,
         bool color: false}) =>
     new _EvaluateVisitor(
             importers: importers,
             nodeImporter: nodeImporter,
             importer: importer,
-            environment: environment,
+            functions: functions,
             color: color)
         .run(stylesheet);
 
@@ -82,7 +76,7 @@ class _EvaluateVisitor
   final bool _color;
 
   /// The current lexical environment.
-  AsyncEnvironment _environment;
+  var _environment = new AsyncEnvironment();
 
   /// The importer that's currently being used to resolve relative imports.
   ///
@@ -168,12 +162,11 @@ class _EvaluateVisitor
       {Iterable<AsyncImporter> importers,
       NodeImporter nodeImporter,
       AsyncImporter importer,
-      AsyncEnvironment environment,
+      Iterable<AsyncCallable> functions,
       bool color: false})
       : _importers = importers == null ? const [] : importers.toList(),
         _importer = importer ?? Importer.noOp,
         _nodeImporter = nodeImporter,
-        _environment = environment ?? new AsyncEnvironment(),
         _color = color {
     _environment.setFunction(
         new BuiltInCallable("global-variable-exists", r"$name", (arguments) {
@@ -232,7 +225,8 @@ class _EvaluateVisitor
               ? null
               : new ValueExpression(
                   new SassMap(mapMap(args.keywords,
-                      key: (String key, Value _) => new SassString(key),
+                      key: (String key, Value _) =>
+                          new SassString(key, quotes: false),
                       value: (String _, Value value) => value)),
                   _callableSpan));
 
@@ -258,6 +252,10 @@ class _EvaluateVisitor
             "This is probably caused by a bug in a Sass plugin.");
       }
     }));
+
+    for (var function in functions ?? const <AsyncCallable>[]) {
+      _environment.setFunction(function);
+    }
   }
 
   Future<EvaluateResult> run(Stylesheet node) async {
@@ -495,8 +493,8 @@ class _EvaluateVisitor
     return null;
   }
 
-  /// Returns whether [value] is an empty [SassList].
-  bool _isEmptyList(Value value) => value is SassList && value.contents.isEmpty;
+  /// Returns whether [value] is an empty list.
+  bool _isEmptyList(Value value) => value.asList.isEmpty;
 
   Future<Value> visitEachRule(EachRule node) async {
     var list = await node.list.accept(this);
@@ -784,8 +782,8 @@ class _EvaluateVisitor
     var url = await _interpolationToValue(import.url);
     var supports = import.supports;
     var resolvedSupports = supports is SupportsDeclaration
-        ? "(${await _evaluateToCss(supports.name)}: "
-            "${await _evaluateToCss(supports.value)})"
+        ? "${await _evaluateToCss(supports.name)}: "
+            "${await _evaluateToCss(supports.value)}"
         : (supports == null ? null : await _visitSupportsCondition(supports));
     var mediaQuery =
         import.media == null ? null : await _visitMediaQueries(import.media);
@@ -1346,7 +1344,7 @@ class _EvaluateVisitor
       }
       buffer.writeCharCode($rparen);
 
-      return new SassString(buffer.toString());
+      return new SassString(buffer.toString(), quotes: false);
     } else {
       return null;
     }
@@ -1394,8 +1392,19 @@ class _EvaluateVisitor
       positional.add(argumentList);
     }
 
-    var result = await _addExceptionSpanAsync(
-        span, () async => await callback(positional));
+    Value result;
+    try {
+      result = await callback(positional);
+      if (result == null) throw "Custom functions may not return Dart's null.";
+    } catch (error) {
+      String message;
+      try {
+        message = error.message as String;
+      } catch (_) {
+        message = error.toString();
+      }
+      throw _exception(message, span);
+    }
     _callableSpan = oldCallableSpan;
 
     if (argumentList == null) return result;

@@ -4,9 +4,12 @@
 
 import 'package:charcode/charcode.dart';
 
+import '../exception.dart';
 import '../util/character.dart';
-import '../visitor/interface/value.dart';
+import '../utils.dart';
 import '../value.dart';
+import '../visitor/interface/value.dart';
+import 'external/value.dart' as ext;
 
 /// A quoted empty string, returned by [SassString.empty].
 final _emptyQuoted = new SassString("", quotes: true);
@@ -14,27 +17,17 @@ final _emptyQuoted = new SassString("", quotes: true);
 /// An unquoted empty string, returned by [SassString.empty].
 final _emptyUnquoted = new SassString("", quotes: false);
 
-/// A SassScript string.
-///
-/// Strings can either be quoted or unquoted. Unquoted strings are usually CSS
-/// identifiers, but they may contain any text.
-class SassString extends Value {
-  /// The contents of the string.
-  ///
-  /// For quoted strings, this is the semantic content—any escape sequences that
-  /// were been written in the source text are resolved to their Unicode values.
-  /// For unquoted strings, though, escape sequences are preserved as literal
-  /// backslashes.
-  ///
-  /// This difference allows us to distinguish between identifiers with escapes,
-  /// such as `url\u28 http://example.com\u29`, and unquoted strings that
-  /// contain characters that aren't valid in identifiers, such as
-  /// `url(http://example.com)`. Unfortunately, it also means that we don't
-  /// consider `foo` and `f\6F\6F` the same string.
+class SassString extends Value implements ext.SassString {
   final String text;
 
-  /// Whether this string has quotes.
   final bool hasQuotes;
+
+  int get sassLength {
+    _sassLength ??= text.runes.length;
+    return _sassLength;
+  }
+
+  int _sassLength;
 
   bool get isSpecialNumber {
     if (hasQuotes) return false;
@@ -55,12 +48,38 @@ class SassString extends Value {
     }
   }
 
+  bool get isVar {
+    if (hasQuotes) return false;
+    if (text.length < "var(--_)".length) return false;
+
+    return equalsLetterIgnoreCase($v, text.codeUnitAt(0)) &&
+        equalsLetterIgnoreCase($a, text.codeUnitAt(1)) &&
+        equalsLetterIgnoreCase($r, text.codeUnitAt(2)) &&
+        text.codeUnitAt(3) == $lparen;
+  }
+
   bool get isBlank => !hasQuotes && text.isEmpty;
 
-  factory SassString.empty({bool quotes: false}) =>
+  factory SassString.empty({bool quotes: true}) =>
       quotes ? _emptyQuoted : _emptyUnquoted;
 
-  SassString(this.text, {bool quotes: false}) : hasQuotes = quotes;
+  SassString(this.text, {bool quotes: true}) : hasQuotes = quotes;
+
+  int sassIndexToStringIndex(ext.Value sassIndex, [String name]) =>
+      codepointIndexToCodeUnitIndex(
+          text, sassIndexToRuneIndex(sassIndex, name));
+
+  int sassIndexToRuneIndex(ext.Value sassIndex, [String name]) {
+    var index = sassIndex.assertNumber(name).assertInt(name);
+    if (index == 0) throw _exception("String index may not be 0.", name);
+    if (index.abs() > sassLength) {
+      throw _exception(
+          "Invalid index $sassIndex for a string with $sassLength characters.",
+          name);
+    }
+
+    return index < 0 ? sassLength + index : index - 1;
+  }
 
   T accept<T>(ValueVisitor<T> visitor) => visitor.visitString(this);
 
@@ -77,4 +96,8 @@ class SassString extends Value {
   bool operator ==(other) => other is SassString && text == other.text;
 
   int get hashCode => text.hashCode;
+
+  /// Throws a [SassScriptException] with the given [message].
+  SassScriptException _exception(String message, [String name]) =>
+      new SassScriptException(name == null ? message : "\$$name: $message");
 }

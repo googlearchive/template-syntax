@@ -30,7 +30,7 @@ class ViewSizerComponent0 extends AppView<import1.SizerComponent> {
   import2.ButtonElement _el_1;
   import2.ButtonElement _el_3;
   import2.Element _el_5;
-  import2.Text _text_6;
+  import2.Text _text_7;
   var _expr_0;
   var _expr_1;
   var _expr_2;
@@ -53,8 +53,12 @@ class ViewSizerComponent0 extends AppView<import1.SizerComponent> {
     import2.Text _text_4 = new import2.Text('+');
     _el_3.append(_text_4);
     _el_5 = createAndAppend(doc, 'label', _el_0);
-    _text_6 = new import2.Text('');
+    import2.Text _text_6 = new import2.Text('FontSize: ');
     _el_5.append(_text_6);
+    _text_7 = new import2.Text('');
+    _el_5.append(_text_7);
+    import2.Text _text_8 = new import2.Text('px');
+    _el_5.append(_text_8);
     _el_1.addEventListener('click', eventHandler0(ctx.dec));
     _el_3.addEventListener('click', eventHandler0(ctx.inc));
     init(const [], null);
@@ -79,9 +83,9 @@ class ViewSizerComponent0 extends AppView<import1.SizerComponent> {
       _el_5.style.setProperty('font-size', ((currVal_2?.toString() == null) ? null : (currVal_2?.toString() + 'px')));
       _expr_2 = currVal_2;
     }
-    final currVal_3 = import6.interpolate1('FontSize: ', _ctx.size, 'px');
+    final currVal_3 = import6.interpolate0(_ctx.size);
     if (!identical(_expr_3, currVal_3)) {
-      _text_6.text = currVal_3;
+      _text_7.text = currVal_3;
       _expr_3 = currVal_3;
     }
   }
