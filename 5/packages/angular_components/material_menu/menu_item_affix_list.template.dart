@@ -16,7 +16,6 @@ import 'package:angular_components/material_icon/material_icon.dart';
 import 'package:angular_components/material_menu/menu_root.dart';
 import 'package:angular_components/model/menu/menu_item_affix.dart';
 import 'package:angular_components/model/ui/icon.dart';
-// Required for initReflector().
 import 'package:angular/src/di/reflector.dart' as _ngRef;
 import 'package:angular/angular.template.dart' as _ref0;
 import 'package:angular_components/button_decorator/button_decorator.template.dart' as _ref1;
@@ -24,7 +23,6 @@ import 'package:angular_components/material_icon/material_icon.template.dart' as
 import 'package:angular_components/material_menu/menu_root.template.dart' as _ref3;
 import 'package:angular_components/model/menu/menu_item_affix.template.dart' as _ref4;
 import 'package:angular_components/model/ui/icon.template.dart' as _ref5;
-
 import 'package:angular_components/material_menu/menu_item_affix_list.scss.css.shim.dart' as import0;
 import 'package:angular/src/core/linker/app_view.dart';
 import 'menu_item_affix_list.dart' as import2;
@@ -312,7 +310,7 @@ AppView<import2.MenuItemAffixListComponent> viewFactory_MenuItemAffixListCompone
 
 class _ViewMenuItemAffixListComponent5 extends AppView<import2.MenuItemAffixListComponent> {
   import8.Element _el_0;
-  import8.Text _text_1;
+  import8.Text _text_2;
   var _expr_0;
   _ViewMenuItemAffixListComponent5(AppView<dynamic> parentView, num parentIndex) : super(import6.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMenuItemAffixListComponent0._renderType;
@@ -323,8 +321,12 @@ class _ViewMenuItemAffixListComponent5 extends AppView<import2.MenuItemAffixList
     _el_0 = doc.createElement('span');
     _el_0.className = 'material-list-item-primary caption-text';
     addShimE(_el_0);
-    _text_1 = new import8.Text('');
+    import8.Text _text_1 = new import8.Text('\n        ');
     _el_0.append(_text_1);
+    _text_2 = new import8.Text('');
+    _el_0.append(_text_2);
+    import8.Text _text_3 = new import8.Text('\n      ');
+    _el_0.append(_text_3);
     init0(_el_0);
     return null;
   }
@@ -333,9 +335,9 @@ class _ViewMenuItemAffixListComponent5 extends AppView<import2.MenuItemAffixList
   void detectChangesInternal() {
     final import2.MenuItemAffixListComponent _ctx = ctx;
     final import13.MenuItemAffix local_affix = parentView.parentView.locals['\$implicit'];
-    final currVal_0 = import9.interpolate1('\n        ', _ctx.getText(local_affix), '\n      ');
+    final currVal_0 = import9.interpolate0(_ctx.getText(local_affix));
     if (!identical(_expr_0, currVal_0)) {
-      _text_1.text = currVal_0;
+      _text_2.text = currVal_0;
       _expr_0 = currVal_0;
     }
   }
@@ -397,14 +399,12 @@ void initReflector() {
     return;
   }
   _visited = true;
+
+  _ngRef.registerComponent(MenuItemAffixListComponent, MenuItemAffixListComponentNgFactory);
   _ref0.initReflector();
   _ref1.initReflector();
   _ref2.initReflector();
   _ref3.initReflector();
   _ref4.initReflector();
   _ref5.initReflector();
-  _ngRef.registerComponent(
-    MenuItemAffixListComponent,
-    MenuItemAffixListComponentNgFactory,
-  );
 }

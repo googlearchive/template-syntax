@@ -24,7 +24,6 @@ import 'package:angular_components/mixins/track_layout_changes.dart';
 import 'package:angular_components/model/menu/menu.dart';
 import 'package:angular_components/model/observable/observable.dart';
 import 'menu_item_groups.dart';
-// Required for initReflector().
 import 'package:angular/src/di/reflector.dart' as _ngRef;
 import 'menu_item_groups.template.dart' as _ref0;
 import 'package:angular/angular.template.dart' as _ref1;
@@ -41,7 +40,6 @@ import 'package:angular_components/material_tooltip/material_tooltip.template.da
 import 'package:angular_components/mixins/track_layout_changes.template.dart' as _ref12;
 import 'package:angular_components/model/menu/menu.template.dart' as _ref13;
 import 'package:angular_components/model/observable/observable.template.dart' as _ref14;
-
 import 'package:angular_components/material_menu/material_fab_menu.scss.css.shim.dart' as import0;
 import 'package:angular/src/core/linker/app_view.dart';
 import 'material_fab_menu.dart' as import2;
@@ -75,19 +73,21 @@ import 'package:angular/src/core/zone/ng_zone.dart' as import29;
 import '../src/laminate/overlay/overlay_service.dart' as import30;
 import '../laminate/overlay/zindexer.dart' as import31;
 import 'package:angular/src/core/di/opaque_token.dart' as import32;
-import '../src/laminate/popup/popup_size_provider.dart' as import33;
-import '../mixins/material_dropdown_base.dart' as import34;
-import '../src/laminate/popup/popup_ref.dart' as import35;
+import 'dart:core';
+import '../laminate/enums/alignment.dart' as import34;
+import '../src/laminate/popup/popup_size_provider.dart' as import35;
 import '../content/deferred_content_aware.dart' as import36;
-import '../material_list/material_list_item.template.dart' as import37;
-import '../material_list/material_list_item.dart' as import38;
-import 'menu_item_groups.template.dart' as import39;
-import '../focus/focus.dart' as import40;
-import 'menu_root.dart' as import41;
-import 'menu_item_groups.dart' as import42;
-import '../utils/browser/dom_service/dom_service.dart' as import43;
-import '../laminate/components/modal/modal.dart' as import44;
-import '../utils/id_generator/id_generator.dart' as import45;
+import '../mixins/material_dropdown_base.dart' as import37;
+import '../src/laminate/popup/popup_ref.dart' as import38;
+import '../material_list/material_list_item.template.dart' as import39;
+import '../material_list/material_list_item.dart' as import40;
+import 'menu_item_groups.template.dart' as import41;
+import '../focus/focus.dart' as import42;
+import 'menu_root.dart' as import43;
+import 'menu_item_groups.dart' as import44;
+import '../utils/browser/dom_service/dom_service.dart' as import45;
+import '../laminate/components/modal/modal.dart' as import46;
+import '../utils/id_generator/id_generator.dart' as import47;
 
 const List<dynamic> styles$MaterialFabMenuComponent = const [import0.styles];
 
@@ -281,8 +281,7 @@ class _ViewMaterialFabMenuComponent1 extends AppView<import2.MaterialFabMenuComp
   import25.ViewMaterialPopupComponent0 _compView_0;
   ViewContainer _appEl_0;
   import26.MaterialPopupComponent _MaterialPopupComponent_0_6;
-  dynamic __PopupRef_0_8;
-  dynamic _DeferredContentAware_0_9;
+  dynamic __PopupRef_0_9;
   dynamic __PopupHierarchy_0_10;
   ViewContainer _appEl_2;
   import27.DeferredContentDirective _DeferredContentDirective_2_7;
@@ -293,11 +292,11 @@ class _ViewMaterialFabMenuComponent1 extends AppView<import2.MaterialFabMenuComp
   _ViewMaterialFabMenuComponent1(AppView<dynamic> parentView, num parentIndex) : super(import14.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMaterialFabMenuComponent0._renderType;
   }
-  dynamic get _PopupRef_0_8 {
-    if ((this.__PopupRef_0_8 == null)) {
-      (__PopupRef_0_8 = import26.getResolvedPopupRef(this._MaterialPopupComponent_0_6));
+  dynamic get _PopupRef_0_9 {
+    if ((this.__PopupRef_0_9 == null)) {
+      (__PopupRef_0_9 = import26.getResolvedPopupRef(this._MaterialPopupComponent_0_6));
     }
-    return this.__PopupRef_0_8;
+    return this.__PopupRef_0_9;
   }
 
   dynamic get _PopupHierarchy_0_10 {
@@ -315,13 +314,12 @@ class _ViewMaterialFabMenuComponent1 extends AppView<import2.MaterialFabMenuComp
     createAttr(_el_0, 'enforceSpaceConstraints', '');
     addShimC(_el_0);
     _appEl_0 = new ViewContainer(0, null, this, _el_0);
-    _MaterialPopupComponent_0_6 = new import26.MaterialPopupComponent(parentView.injectorGet(import28.PopupHierarchy, viewData.parentIndex, null), parentView.injectorGet(import26.MaterialPopupComponent, viewData.parentIndex, null), null, parentView.injectorGet(import29.NgZone, viewData.parentIndex), parentView.injectorGet(import30.OverlayService, viewData.parentIndex), parentView.injectorGet(import31.ZIndexer, viewData.parentIndex), parentView.injectorGet(const import32.OpaqueToken('defaultPopupPositions'), viewData.parentIndex), parentView.injectorGet(const import32.OpaqueToken('overlayRepositionLoop'), viewData.parentIndex), parentView.injectorGet(import33.PopupSizeProvider, viewData.parentIndex, null), _compView_0.ref, _appEl_0, new ElementRef(_el_0));
-    _DeferredContentAware_0_9 = _MaterialPopupComponent_0_6;
+    _MaterialPopupComponent_0_6 = new import26.MaterialPopupComponent(parentView.injectorGet(import28.PopupHierarchy, viewData.parentIndex, null), parentView.injectorGet(import26.MaterialPopupComponent, viewData.parentIndex, null), null, parentView.injectorGet(import29.NgZone, viewData.parentIndex), parentView.injectorGet(import30.OverlayService, viewData.parentIndex), parentView.injectorGet(import31.ZIndexer, viewData.parentIndex), parentView.injectorGet(const import32.OpaqueToken<List<import34.RelativePosition>>('defaultPopupPositions'), viewData.parentIndex), parentView.injectorGet(const import32.OpaqueToken('overlayRepositionLoop'), viewData.parentIndex), parentView.injectorGet(import35.PopupSizeProvider, viewData.parentIndex, null), _compView_0.ref, _appEl_0, new ElementRef(_el_0));
     import4.Text _text_1 = new import4.Text('\n  ');
     var _anchor_2 = ngAnchor.clone(false);
     _appEl_2 = new ViewContainer(2, 0, this, _anchor_2);
     TemplateRef _TemplateRef_2_6 = new TemplateRef(_appEl_2, viewFactory_MaterialFabMenuComponent2);
-    _DeferredContentDirective_2_7 = new import27.DeferredContentDirective(_appEl_2, _TemplateRef_2_6, _DeferredContentAware_0_9);
+    _DeferredContentDirective_2_7 = new import27.DeferredContentDirective(_appEl_2, _TemplateRef_2_6, _MaterialPopupComponent_0_6);
     import4.Text _text_3 = new import4.Text('\n');
     _compView_0.create(_MaterialPopupComponent_0_6, [
       const [],
@@ -336,14 +334,11 @@ class _ViewMaterialFabMenuComponent1 extends AppView<import2.MaterialFabMenuComp
 
   @override
   dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
-    if (((identical(token, import26.MaterialPopupComponent) || identical(token, import34.DropdownHandle)) && ((0 <= nodeIndex) && (nodeIndex <= 3)))) {
+    if ((((identical(token, import26.MaterialPopupComponent) || identical(token, import36.DeferredContentAware)) || identical(token, import37.DropdownHandle)) && ((0 <= nodeIndex) && (nodeIndex <= 3)))) {
       return _MaterialPopupComponent_0_6;
     }
-    if ((identical(token, import35.PopupRef) && ((0 <= nodeIndex) && (nodeIndex <= 3)))) {
-      return _PopupRef_0_8;
-    }
-    if ((identical(token, import36.DeferredContentAware) && ((0 <= nodeIndex) && (nodeIndex <= 3)))) {
-      return _DeferredContentAware_0_9;
+    if ((identical(token, import38.PopupRef) && ((0 <= nodeIndex) && (nodeIndex <= 3)))) {
+      return _PopupRef_0_9;
     }
     if ((identical(token, import28.PopupHierarchy) && ((0 <= nodeIndex) && (nodeIndex <= 3)))) {
       return _PopupHierarchy_0_10;
@@ -411,17 +406,17 @@ class _ViewMaterialFabMenuComponent2 extends AppView<import2.MaterialFabMenuComp
   import4.DivElement _el_0;
   import4.DivElement _el_2;
   import4.Element _el_4;
-  import37.ViewMaterialListItemComponent0 _compView_4;
-  import38.MaterialListItemComponent _MaterialListItemComponent_4_4;
+  import39.ViewMaterialListItemComponent0 _compView_4;
+  import40.MaterialListItemComponent _MaterialListItemComponent_4_4;
   import4.Element _el_6;
   import10.ViewMaterialIconComponent0 _compView_6;
   import11.MaterialIconComponent _MaterialIconComponent_6_4;
   import4.Element _el_9;
-  import39.ViewMenuItemGroupsComponent0 _compView_9;
-  import40.AutoFocusDirective _AutoFocusDirective_9_4;
-  import41.MenuRootDirective _MenuRootDirective_9_5;
+  import41.ViewMenuItemGroupsComponent0 _compView_9;
+  import42.AutoFocusDirective _AutoFocusDirective_9_4;
+  import43.MenuRootDirective _MenuRootDirective_9_5;
   dynamic _MenuRoot_9_6;
-  import42.MenuItemGroupsComponent _MenuItemGroupsComponent_9_7;
+  import44.MenuItemGroupsComponent _MenuItemGroupsComponent_9_7;
   bool _expr_0;
   bool _expr_1;
   bool _expr_2;
@@ -444,12 +439,12 @@ class _ViewMaterialFabMenuComponent2 extends AppView<import2.MaterialFabMenuComp
     addShimC(_el_2);
     import4.Text _text_3 = new import4.Text('\n      ');
     _el_2.append(_text_3);
-    _compView_4 = new import37.ViewMaterialListItemComponent0(this, 4);
+    _compView_4 = new import39.ViewMaterialListItemComponent0(this, 4);
     _el_4 = _compView_4.rootEl;
     _el_2.append(_el_4);
     _el_4.className = 'close-menu item';
     addShimC(_el_4);
-    _MaterialListItemComponent_4_4 = new import38.MaterialListItemComponent(_el_4, parentView.parentView.injectorGet(import43.DomService, parentView.viewData.parentIndex), (parentView as _ViewMaterialFabMenuComponent1)._MaterialPopupComponent_0_6, null, null);
+    _MaterialListItemComponent_4_4 = new import40.MaterialListItemComponent(_el_4, parentView.parentView.injectorGet(import45.DomService, parentView.viewData.parentIndex), (parentView as _ViewMaterialFabMenuComponent1)._MaterialPopupComponent_0_6, null, null);
     import4.Text _text_5 = new import4.Text('\n        ');
     _compView_6 = new import10.ViewMaterialIconComponent0(this, 6);
     _el_6 = _compView_6.rootEl;
@@ -464,7 +459,7 @@ class _ViewMaterialFabMenuComponent2 extends AppView<import2.MaterialFabMenuComp
     ]);
     import4.Text _text_8 = new import4.Text('\n      ');
     _el_2.append(_text_8);
-    _compView_9 = new import39.ViewMenuItemGroupsComponent0(this, 9);
+    _compView_9 = new import41.ViewMenuItemGroupsComponent0(this, 9);
     _el_9 = _compView_9.rootEl;
     _el_2.append(_el_9);
     createAttr(_el_9, 'autoFocus', '');
@@ -472,10 +467,10 @@ class _ViewMaterialFabMenuComponent2 extends AppView<import2.MaterialFabMenuComp
     createAttr(_el_9, 'menu-root', '');
     createAttr(_el_9, 'preventCloseOnPressLeft', '');
     addShimC(_el_9);
-    _AutoFocusDirective_9_4 = new import40.AutoFocusDirective(_el_9, parentView.parentView.injectorGet(import43.DomService, parentView.viewData.parentIndex), parentView.parentView.injectorGet(import40.Focusable, parentView.viewData.parentIndex, null), parentView.parentView.injectorGet(import44.ModalComponent, parentView.viewData.parentIndex, null), (parentView as _ViewMaterialFabMenuComponent1)._PopupRef_0_8);
-    _MenuRootDirective_9_5 = new import41.MenuRootDirective((parentView as _ViewMaterialFabMenuComponent1)._MaterialPopupComponent_0_6);
+    _AutoFocusDirective_9_4 = new import42.AutoFocusDirective(_el_9, parentView.parentView.injectorGet(import45.DomService, parentView.viewData.parentIndex), parentView.parentView.injectorGet(import42.Focusable, parentView.viewData.parentIndex, null), parentView.parentView.injectorGet(import46.ModalComponent, parentView.viewData.parentIndex, null), (parentView as _ViewMaterialFabMenuComponent1)._PopupRef_0_9);
+    _MenuRootDirective_9_5 = new import43.MenuRootDirective((parentView as _ViewMaterialFabMenuComponent1)._MaterialPopupComponent_0_6);
     _MenuRoot_9_6 = _MenuRootDirective_9_5;
-    _MenuItemGroupsComponent_9_7 = new import42.MenuItemGroupsComponent(_MenuRoot_9_6, _compView_9.ref, (parentView as _ViewMaterialFabMenuComponent1)._MaterialPopupComponent_0_6, parentView.parentView.injectorGet(import45.IdGenerator, parentView.viewData.parentIndex, null));
+    _MenuItemGroupsComponent_9_7 = new import44.MenuItemGroupsComponent(_MenuRoot_9_6, _compView_9.ref, (parentView as _ViewMaterialFabMenuComponent1)._MaterialPopupComponent_0_6, parentView.parentView.injectorGet(import47.IdGenerator, parentView.viewData.parentIndex, null));
     import4.Text _text_10 = new import4.Text('\n      ');
     _compView_9.create(_MenuItemGroupsComponent_9_7, []);
     import4.Text _text_11 = new import4.Text('\n    ');
@@ -489,16 +484,16 @@ class _ViewMaterialFabMenuComponent2 extends AppView<import2.MaterialFabMenuComp
 
   @override
   dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
-    if ((identical(token, import38.MaterialListItemComponent) && ((4 <= nodeIndex) && (nodeIndex <= 7)))) {
+    if ((identical(token, import40.MaterialListItemComponent) && ((4 <= nodeIndex) && (nodeIndex <= 7)))) {
       return _MaterialListItemComponent_4_4;
     }
-    if ((identical(token, import41.MenuRootDirective) && ((9 <= nodeIndex) && (nodeIndex <= 10)))) {
+    if ((identical(token, import43.MenuRootDirective) && ((9 <= nodeIndex) && (nodeIndex <= 10)))) {
       return _MenuRootDirective_9_5;
     }
-    if ((identical(token, import41.MenuRoot) && ((9 <= nodeIndex) && (nodeIndex <= 10)))) {
+    if ((identical(token, import43.MenuRoot) && ((9 <= nodeIndex) && (nodeIndex <= 10)))) {
       return _MenuRoot_9_6;
     }
-    if ((identical(token, import42.MenuItemGroupsComponent) && ((9 <= nodeIndex) && (nodeIndex <= 10)))) {
+    if ((identical(token, import44.MenuItemGroupsComponent) && ((9 <= nodeIndex) && (nodeIndex <= 10)))) {
       return _MenuItemGroupsComponent_9_7;
     }
     return notFoundResult;
@@ -646,6 +641,8 @@ void initReflector() {
     return;
   }
   _visited = true;
+
+  _ngRef.registerComponent(MaterialFabMenuComponent, MaterialFabMenuComponentNgFactory);
   _ref0.initReflector();
   _ref1.initReflector();
   _ref2.initReflector();
@@ -661,8 +658,4 @@ void initReflector() {
   _ref12.initReflector();
   _ref13.initReflector();
   _ref14.initReflector();
-  _ngRef.registerComponent(
-    MaterialFabMenuComponent,
-    MaterialFabMenuComponentNgFactory,
-  );
 }

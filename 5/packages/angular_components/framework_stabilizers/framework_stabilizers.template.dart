@@ -9,7 +9,6 @@ import 'framework_stabilizers.dart';
 export 'framework_stabilizers.dart';
 import 'dart:js';
 import 'package:js/js.dart';
-// No initReflector() linking required.
 
-// No initReflector() needed.
+// No initReflector() linking required.
 void initReflector() {}

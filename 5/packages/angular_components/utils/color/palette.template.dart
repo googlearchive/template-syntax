@@ -8,7 +8,6 @@
 import 'palette.dart';
 export 'palette.dart';
 import 'material.dart';
-// Required for initReflector().
 import 'material.template.dart' as _ref0;
 import 'material.template.dart' as _ref1;
 
@@ -18,6 +17,7 @@ void initReflector() {
     return;
   }
   _visited = true;
+
   _ref0.initReflector();
   _ref1.initReflector();
 }

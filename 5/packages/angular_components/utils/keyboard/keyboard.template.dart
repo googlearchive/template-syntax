@@ -8,7 +8,6 @@
 import 'keyboard.dart';
 export 'keyboard.dart';
 import 'dart:html';
-// No initReflector() linking required.
 
-// No initReflector() needed.
+// No initReflector() linking required.
 void initReflector() {}

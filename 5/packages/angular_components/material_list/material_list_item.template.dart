@@ -14,7 +14,6 @@ import 'package:angular_components/mixins/material_dropdown_base.dart';
 import 'package:angular_components/model/a11y/active_item_mixin.dart';
 import 'package:angular_components/utils/browser/dom_service/dom_service.dart';
 import 'package:angular_components/utils/disposer/disposer.dart';
-// Required for initReflector().
 import 'package:angular/src/di/reflector.dart' as _ngRef;
 import 'package:angular/angular.template.dart' as _ref0;
 import 'package:angular_components/button_decorator/button_decorator.template.dart' as _ref1;
@@ -22,7 +21,6 @@ import 'package:angular_components/mixins/material_dropdown_base.template.dart' 
 import 'package:angular_components/model/a11y/active_item_mixin.template.dart' as _ref3;
 import 'package:angular_components/utils/browser/dom_service/dom_service.template.dart' as _ref4;
 import 'package:angular_components/utils/disposer/disposer.template.dart' as _ref5;
-
 import 'package:angular_components/material_list/material_list_item.scss.css.shim.dart' as import0;
 import 'package:angular/src/core/linker/app_view.dart';
 import 'material_list_item.dart' as import2;
@@ -156,14 +154,12 @@ void initReflector() {
     return;
   }
   _visited = true;
+
+  _ngRef.registerComponent(MaterialListItemComponent, MaterialListItemComponentNgFactory);
   _ref0.initReflector();
   _ref1.initReflector();
   _ref2.initReflector();
   _ref3.initReflector();
   _ref4.initReflector();
   _ref5.initReflector();
-  _ngRef.registerComponent(
-    MaterialListItemComponent,
-    MaterialListItemComponentNgFactory,
-  );
 }

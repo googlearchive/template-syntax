@@ -11,12 +11,10 @@ import 'dart:html';
 import 'package:angular/angular.dart';
 import 'package:angular_components/material_ripple/material_ripple.dart';
 import 'material_button_base.dart';
-// Required for initReflector().
 import 'package:angular/src/di/reflector.dart' as _ngRef;
 import 'material_button_base.template.dart' as _ref0;
 import 'package:angular/angular.template.dart' as _ref1;
 import 'package:angular_components/material_ripple/material_ripple.template.dart' as _ref2;
-
 import 'package:angular_components/material_button/material_fab.scss.css.shim.dart' as import0;
 import 'package:angular/src/core/linker/app_view.dart';
 import 'material_fab.dart' as import2;
@@ -182,11 +180,9 @@ void initReflector() {
     return;
   }
   _visited = true;
+
+  _ngRef.registerComponent(MaterialFabComponent, MaterialFabComponentNgFactory);
   _ref0.initReflector();
   _ref1.initReflector();
   _ref2.initReflector();
-  _ngRef.registerComponent(
-    MaterialFabComponent,
-    MaterialFabComponentNgFactory,
-  );
 }

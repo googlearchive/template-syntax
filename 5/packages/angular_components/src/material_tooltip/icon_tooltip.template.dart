@@ -17,7 +17,6 @@ import 'package:angular_components/material_icon/material_icon.dart';
 import 'package:angular_components/theme/dark_theme.dart';
 import 'paper_tooltip.dart';
 import 'tooltip_target.dart';
-// Required for initReflector().
 import 'package:angular/src/di/reflector.dart' as _ngRef;
 import 'package:angular/angular.template.dart' as _ref0;
 import 'package:angular_components/content/deferred_content_aware.template.dart' as _ref1;
@@ -26,7 +25,6 @@ import 'package:angular_components/material_icon/material_icon.template.dart' as
 import 'package:angular_components/theme/dark_theme.template.dart' as _ref4;
 import 'paper_tooltip.template.dart' as _ref5;
 import 'tooltip_target.template.dart' as _ref6;
-
 import 'package:angular_components/src/material_tooltip/icon_tooltip.scss.css.shim.dart' as import0;
 import 'package:angular/src/core/linker/app_view.dart';
 import 'icon_tooltip.dart' as import2;
@@ -265,6 +263,8 @@ void initReflector() {
     return;
   }
   _visited = true;
+
+  _ngRef.registerComponent(MaterialIconTooltipComponent, MaterialIconTooltipComponentNgFactory);
   _ref0.initReflector();
   _ref1.initReflector();
   _ref2.initReflector();
@@ -272,8 +272,4 @@ void initReflector() {
   _ref4.initReflector();
   _ref5.initReflector();
   _ref6.initReflector();
-  _ngRef.registerComponent(
-    MaterialIconTooltipComponent,
-    MaterialIconTooltipComponentNgFactory,
-  );
 }

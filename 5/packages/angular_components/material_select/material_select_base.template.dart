@@ -12,7 +12,6 @@ import 'package:angular_components/model/selection/selection_model.dart';
 import 'package:angular_components/model/ui/accepts_width.dart';
 import 'package:angular_components/model/ui/has_renderer.dart';
 import 'package:angular_components/utils/angular/properties/properties.dart';
-// Required for initReflector().
 import 'package:angular_components/model/selection/selection_container.template.dart' as _ref0;
 import 'package:angular_components/model/selection/selection_model.template.dart' as _ref1;
 import 'package:angular_components/model/ui/accepts_width.template.dart' as _ref2;
@@ -25,6 +24,7 @@ void initReflector() {
     return;
   }
   _visited = true;
+
   _ref0.initReflector();
   _ref1.initReflector();
   _ref2.initReflector();

@@ -10,7 +10,6 @@ export 'material_drawer_base.dart';
 import 'dart:async';
 import 'package:angular/angular.dart';
 import 'package:angular_components/content/deferred_content_aware.dart';
-// Required for initReflector().
 import 'package:angular/angular.template.dart' as _ref0;
 import 'package:angular_components/content/deferred_content_aware.template.dart' as _ref1;
 
@@ -20,6 +19,7 @@ void initReflector() {
     return;
   }
   _visited = true;
+
   _ref0.initReflector();
   _ref1.initReflector();
 }

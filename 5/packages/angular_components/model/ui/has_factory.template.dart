@@ -9,7 +9,6 @@ import 'has_factory.dart';
 export 'has_factory.dart';
 import 'package:angular/angular.dart' show ComponentFactory;
 import 'has_renderer.dart';
-// Required for initReflector().
 import 'has_renderer.template.dart' as _ref0;
 import 'has_renderer.template.dart' as _ref1;
 import 'package:angular/angular.template.dart' as _ref2;
@@ -20,6 +19,7 @@ void initReflector() {
     return;
   }
   _visited = true;
+
   _ref0.initReflector();
   _ref1.initReflector();
   _ref2.initReflector();

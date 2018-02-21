@@ -10,7 +10,6 @@ export 'testability.dart';
 import 'dart:async';
 import 'package:js/js.dart';
 import 'framework_stabilizers.dart';
-// Required for initReflector().
 import 'framework_stabilizers.template.dart' as _ref0;
 import 'framework_stabilizers.template.dart' as _ref1;
 
@@ -20,6 +19,7 @@ void initReflector() {
     return;
   }
   _visited = true;
+
   _ref0.initReflector();
   _ref1.initReflector();
 }

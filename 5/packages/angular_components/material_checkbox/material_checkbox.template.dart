@@ -16,7 +16,6 @@ import 'package:angular_components/glyph/glyph.dart';
 import 'package:angular_components/material_ripple/material_ripple.dart';
 import 'package:angular_components/model/ui/icon.dart';
 import 'package:angular_components/utils/browser/events/events.dart';
-// Required for initReflector().
 import 'package:angular/src/di/reflector.dart' as _ngRef;
 import 'package:angular/angular.template.dart' as _ref0;
 import 'package:angular_components/focus/focus.template.dart' as _ref1;
@@ -25,7 +24,6 @@ import 'package:angular_components/material_ripple/material_ripple.template.dart
 import 'package:angular_components/model/ui/icon.template.dart' as _ref4;
 import 'package:angular_components/utils/browser/events/events.template.dart' as _ref5;
 import 'package:angular_forms/angular_forms.template.dart' as _ref6;
-
 import 'package:angular_components/material_checkbox/material_checkbox.scss.css.shim.dart' as import0;
 import 'package:angular/src/core/linker/app_view.dart';
 import 'material_checkbox.dart' as import2;
@@ -138,7 +136,7 @@ class ViewMaterialCheckboxComponent0 extends AppView<import2.MaterialCheckboxCom
       updateElemClass(_el_1, 'filled', currVal_2);
       _expr_2 = currVal_2;
     }
-    final currVal_5 = import11.interpolate0(_ctx.label);
+    final currVal_5 = (_ctx.label ?? '');
     if (!identical(_expr_5, currVal_5)) {
       _text_4.text = currVal_5;
       _expr_5 = currVal_5;
@@ -277,6 +275,8 @@ void initReflector() {
     return;
   }
   _visited = true;
+
+  _ngRef.registerComponent(MaterialCheckboxComponent, MaterialCheckboxComponentNgFactory);
   _ref0.initReflector();
   _ref1.initReflector();
   _ref2.initReflector();
@@ -284,8 +284,4 @@ void initReflector() {
   _ref4.initReflector();
   _ref5.initReflector();
   _ref6.initReflector();
-  _ngRef.registerComponent(
-    MaterialCheckboxComponent,
-    MaterialCheckboxComponentNgFactory,
-  );
 }

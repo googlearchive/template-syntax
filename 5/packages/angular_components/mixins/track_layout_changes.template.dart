@@ -8,7 +8,6 @@
 import 'track_layout_changes.dart';
 export 'track_layout_changes.dart';
 import 'package:angular/angular.dart';
-// Required for initReflector().
 import 'package:angular/angular.template.dart' as _ref0;
 
 var _visited = false;
@@ -17,5 +16,6 @@ void initReflector() {
     return;
   }
   _visited = true;
+
   _ref0.initReflector();
 }

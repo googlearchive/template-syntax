@@ -8,7 +8,6 @@
 import 'simple_stream.dart';
 export 'simple_stream.dart';
 import 'dart:async';
-// No initReflector() linking required.
 
-// No initReflector() needed.
+// No initReflector() linking required.
 void initReflector() {}

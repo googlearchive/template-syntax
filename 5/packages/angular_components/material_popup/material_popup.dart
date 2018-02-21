@@ -6,11 +6,12 @@ import 'dart:async';
 import 'dart:html';
 import 'dart:math';
 
-import 'package:angular/angular.dart' hide Visibility;
+import 'package:angular/angular.dart';
 import 'package:meta/meta.dart';
 import 'package:angular_components/content/deferred_content_aware.dart';
 import 'package:angular_components/laminate/enums/alignment.dart';
-import 'package:angular_components/laminate/enums/visibility.dart';
+import 'package:angular_components/laminate/enums/visibility.dart'
+    as visibility;
 import 'package:angular_components/laminate/overlay/module.dart';
 import 'package:angular_components/laminate/overlay/overlay.dart';
 import 'package:angular_components/laminate/overlay/zindexer.dart';
@@ -82,19 +83,15 @@ export 'package:angular_components/laminate/popup/popup.dart'
   providers: const [
     const Provider(DeferredContentAware, useExisting: MaterialPopupComponent),
     const Provider(DropdownHandle, useExisting: MaterialPopupComponent),
-    const Provider(
-      PopupHierarchy,
-      useFactory: getHierarchy,
-    ),
-    const Provider(
-      PopupRef,
-      useFactory: getResolvedPopupRef,
-    ),
+    const Provider(PopupHierarchy, useFactory: getHierarchy),
+    const Provider(PopupRef, useFactory: getResolvedPopupRef),
   ],
   templateUrl: 'material_popup.html',
   styleUrls: const ['material_popup.scss.css'],
   // TODO(google): Change preserveWhitespace to false to improve codesize.
   preserveWhitespace: true,
+  // TODO(google): Change to `Visibility.local` to reduce code size.
+  visibility: Visibility.all,
 )
 class MaterialPopupComponent extends Object
     with PopupBase, PopupEvents, PopupHierarchyElement
@@ -105,7 +102,7 @@ class MaterialPopupComponent extends Object
         OnDestroy,
         DropdownHandle {
   // Visible for testing.
-  static const Duration SLIDE_DELAY = const Duration(milliseconds: 218);
+  static const Duration SLIDE_DELAY = const Duration(milliseconds: 150);
 
   /// Stream on which an event is fired after the popup has finished opening.
   @Output('opened')
@@ -381,7 +378,7 @@ class MaterialPopupComponent extends Object
   }
 
   @override
-  Element get container => _overlayRef.overlayElement;
+  Element get container => _overlayRef?.overlayElement;
 
   @override
   set source(PopupSource source) {
@@ -440,7 +437,7 @@ class MaterialPopupComponent extends Object
     _updatePopupMaxSize();
 
     // Put the overlay in the live DOM so we can measure its size.
-    _overlayRef.state.visibility = Visibility.Hidden;
+    _overlayRef.state.visibility = visibility.Visibility.Hidden;
     _overlayRef.overlayElement.style
       ..display = ''
       ..visibility = 'hidden';
@@ -584,7 +581,7 @@ class MaterialPopupComponent extends Object
     _changeDetector.markForCheck();
 
     // Set the overlay .pane to display: none.
-    _overlayRef.state.visibility = Visibility.None;
+    _overlayRef.state.visibility = visibility.Visibility.None;
     _overlayRef.overlayElement.style..display = 'none';
 
     // Notify listeners that the popup is not visible.
@@ -823,7 +820,7 @@ class MaterialPopupComponent extends Object
           offsetX
       ..top = position.originY.calcTop(sourceClientRect, contentClientRect) +
           offsetY
-      ..visibility = Visibility.Visible;
+      ..visibility = visibility.Visibility.Visible;
     _overlayRef.overlayElement.style
       ..visibility = 'visible'
       ..display = '';
@@ -921,6 +918,9 @@ Rectangle _shiftRectangle(Rectangle rect, {num top: 0, num left: 0}) =>
 /// Returns a transformation which, when applied to [rect], will cause [rect] to
 /// be entirely within [container].
 ///
+/// If [rect] is larger than the container, this function will prefer to keep
+/// the top left corner visible.
+///
 /// Currently only handles translation, not scale.
 Rectangle _shiftRectangleToFitWithin(Rectangle rect, Rectangle container) {
   num x = 0;
@@ -928,12 +928,12 @@ Rectangle _shiftRectangleToFitWithin(Rectangle rect, Rectangle container) {
   if (rect.left < container.left) {
     x = container.left - rect.left;
   } else if (rect.right > container.right) {
-    x = container.right - rect.right;
+    x = max(container.right - rect.right, container.left - rect.left);
   }
   if (rect.top < container.top) {
     y = container.top - rect.top;
   } else if (rect.bottom > container.bottom) {
-    y = container.bottom - rect.bottom;
+    y = max(container.bottom - rect.bottom, container.top - rect.top);
   }
   return new Rectangle(x.round(), y.round(), 0, 0);
 }

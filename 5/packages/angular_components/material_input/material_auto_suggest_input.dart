@@ -154,6 +154,8 @@ typedef String _InputChangeCallback(String inputText);
     'material_auto_suggest_input.scss.css',
     'material_input_wrapper.scss.css'
   ],
+  // TODO(google): Change to `Visibility.local` to reduce code size.
+  visibility: Visibility.all,
 )
 class MaterialAutoSuggestInputComponent extends MaterialSelectBase
     with MaterialInputWrapper, KeyboardHandlerMixin, HighlightAssistantMixin
@@ -200,6 +202,11 @@ class MaterialAutoSuggestInputComponent extends MaterialSelectBase
   /// Whether to hide the checkbox before the selection item for multi-select.
   @Input()
   bool hideCheckbox = false;
+
+  /// Whether the popup should automatically reposition itself based on space
+  /// available relative to the viewport.
+  @Input()
+  bool enforceSpaceConstraints = true;
 
   bool _showPopup = false;
   bool _focusPending = false;

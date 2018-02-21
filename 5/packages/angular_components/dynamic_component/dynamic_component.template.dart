@@ -10,11 +10,9 @@ export 'dynamic_component.dart';
 import 'dart:async';
 import 'package:angular/angular.dart';
 import 'package:angular_components/model/ui/has_renderer.dart';
-// Required for initReflector().
 import 'package:angular/src/di/reflector.dart' as _ngRef;
 import 'package:angular/angular.template.dart' as _ref0;
 import 'package:angular_components/model/ui/has_renderer.template.dart' as _ref1;
-
 import 'package:angular/src/core/linker/app_view.dart';
 import 'dynamic_component.dart' as import1;
 import 'package:angular/src/core/linker/query_list.dart' as import2;
@@ -135,10 +133,8 @@ void initReflector() {
     return;
   }
   _visited = true;
+
+  _ngRef.registerComponent(DynamicComponent, DynamicComponentNgFactory);
   _ref0.initReflector();
   _ref1.initReflector();
-  _ngRef.registerComponent(
-    DynamicComponent,
-    DynamicComponentNgFactory,
-  );
 }

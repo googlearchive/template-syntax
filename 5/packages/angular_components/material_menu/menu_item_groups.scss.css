@@ -3,7 +3,7 @@
   outline: none;
 }
 
-.group-label {
+.group-header {
   display: block;
   font-family: inherit;
   font-size: 15px;
@@ -16,26 +16,32 @@
   color: rgba(0, 0, 0, 0.54);
   height: 24px;
   line-height: 24px;
+  display: flex;
+  justify-content: space-between;
 }
-.group-label.disabled {
+.group-header.disabled {
   pointer-events: none;
 }
-.group-label ::ng-deep .material-list-item-primary {
+.group-header ::ng-deep .material-list-item-primary {
   color: rgba(0, 0, 0, 0.54);
   width: 40px;
 }
-.group-label.disabled ::ng-deep .material-list-item-primary {
+.group-header.disabled ::ng-deep .material-list-item-primary {
   color: rgba(0, 0, 0, 0.38);
 }
-.group-label ::ng-deep .material-list-item-secondary {
+.group-header ::ng-deep .material-list-item-secondary {
   color: rgba(0, 0, 0, 0.54);
   margin-left: auto;
 }
-.group-label.disabled ::ng-deep .material-list-item-secondary {
+.group-header.disabled ::ng-deep .material-list-item-secondary {
   color: rgba(0, 0, 0, 0.38);
 }
-.group-label ::ng-deep .submenu-icon {
+.group-header ::ng-deep .submenu-icon {
   transform: rotate(-90deg);
+}
+
+.expansion-icon {
+  cursor: pointer;
 }
 
 .menu-item {
@@ -85,7 +91,7 @@
   color: rgba(0, 0, 0, 0.38);
 }
 
-:host-context(body[dir=rtl]) .group-label ::ng-deep .submenu-icon, :host-context(body[dir=rtl]) .menu-item ::ng-deep .submenu-icon {
+:host-context(body[dir=rtl]) .group-header ::ng-deep .submenu-icon, :host-context(body[dir=rtl]) .menu-item ::ng-deep .submenu-icon {
   transform: rotate(90deg);
 }
 

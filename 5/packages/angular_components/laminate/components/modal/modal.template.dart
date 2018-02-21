@@ -15,7 +15,6 @@ import 'package:angular_components/src/laminate/components/modal/modal_controlle
 import 'package:angular_components/laminate/overlay/overlay.dart';
 import 'package:angular_components/model/action/async_action.dart';
 import 'package:angular_components/utils/disposer/disposer.dart';
-// Required for initReflector().
 import 'package:angular/src/di/reflector.dart' as _ngRef;
 import 'package:angular/angular.template.dart' as _ref0;
 import 'package:angular_components/content/deferred_content_aware.template.dart' as _ref1;
@@ -23,7 +22,6 @@ import 'package:angular_components/laminate/overlay/overlay.template.dart' as _r
 import 'package:angular_components/model/action/async_action.template.dart' as _ref3;
 import 'package:angular_components/src/laminate/components/modal/modal_controller_directive.template.dart' as _ref4;
 import 'package:angular_components/utils/disposer/disposer.template.dart' as _ref5;
-
 import 'package:angular/src/core/linker/app_view.dart';
 import 'modal.dart' as import1;
 import 'package:angular/src/core/linker/view_container.dart';
@@ -172,19 +170,13 @@ void initReflector() {
     return;
   }
   _visited = true;
+
+  _ngRef.registerFactory(GlobalModalStack, () => new GlobalModalStack());
+  _ngRef.registerComponent(ModalComponent, ModalComponentNgFactory);
   _ref0.initReflector();
   _ref1.initReflector();
   _ref2.initReflector();
   _ref3.initReflector();
   _ref4.initReflector();
   _ref5.initReflector();
-  _ngRef.registerFactory(
-    GlobalModalStack,
-    () => new GlobalModalStack(),
-  );
-
-  _ngRef.registerComponent(
-    ModalComponent,
-    ModalComponentNgFactory,
-  );
 }

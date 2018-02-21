@@ -11,7 +11,6 @@ import 'dart:async';
 import 'dart:math';
 import 'package:angular_components/laminate/enums/position.dart';
 import 'package:angular_components/laminate/enums/visibility.dart';
-// Required for initReflector().
 import 'package:angular_components/laminate/enums/position.template.dart' as _ref0;
 import 'package:angular_components/laminate/enums/visibility.template.dart' as _ref1;
 
@@ -21,6 +20,7 @@ void initReflector() {
     return;
   }
   _visited = true;
+
   _ref0.initReflector();
   _ref1.initReflector();
 }

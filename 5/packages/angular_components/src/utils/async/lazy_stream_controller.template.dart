@@ -8,7 +8,6 @@
 import 'lazy_stream_controller.dart';
 export 'lazy_stream_controller.dart';
 import 'dart:async';
-// No initReflector() linking required.
 
-// No initReflector() needed.
+// No initReflector() linking required.
 void initReflector() {}

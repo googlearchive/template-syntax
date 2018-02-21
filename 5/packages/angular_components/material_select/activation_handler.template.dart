@@ -8,7 +8,6 @@
 import 'activation_handler.dart';
 export 'activation_handler.dart';
 import 'dart:html';
-// No initReflector() linking required.
 
-// No initReflector() needed.
+// No initReflector() linking required.
 void initReflector() {}

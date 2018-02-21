@@ -11,7 +11,6 @@ import 'package:built_collection/built_collection.dart';
 import 'package:observable/observable.dart';
 import 'package:angular_components/model/menu/menu.dart';
 import 'package:angular_components/model/ui/icon.dart';
-// Required for initReflector().
 import 'package:angular_components/model/menu/menu.template.dart' as _ref0;
 import 'package:angular_components/model/ui/icon.template.dart' as _ref1;
 
@@ -21,6 +20,7 @@ void initReflector() {
     return;
   }
   _visited = true;
+
   _ref0.initReflector();
   _ref1.initReflector();
 }

@@ -9,11 +9,9 @@ import 'hero_switch_components.dart';
 export 'hero_switch_components.dart';
 import 'package:angular/angular.dart';
 import 'hero.dart';
-// Required for initReflector().
 import 'package:angular/src/di/reflector.dart' as _ngRef;
 import 'hero.template.dart' as _ref0;
 import 'package:angular/angular.template.dart' as _ref1;
-
 import 'package:angular/src/core/linker/app_view.dart';
 import 'hero_switch_components.dart' as import1;
 import 'dart:html' as import2;
@@ -345,22 +343,11 @@ void initReflector() {
     return;
   }
   _visited = true;
+
+  _ngRef.registerComponent(HappyHeroComponent, HappyHeroComponentNgFactory);
+  _ngRef.registerComponent(SadHeroComponent, SadHeroComponentNgFactory);
+  _ngRef.registerComponent(ConfusedHeroComponent, ConfusedHeroComponentNgFactory);
+  _ngRef.registerComponent(UnknownHeroComponent, UnknownHeroComponentNgFactory);
   _ref0.initReflector();
   _ref1.initReflector();
-  _ngRef.registerComponent(
-    HappyHeroComponent,
-    HappyHeroComponentNgFactory,
-  );
-  _ngRef.registerComponent(
-    SadHeroComponent,
-    SadHeroComponentNgFactory,
-  );
-  _ngRef.registerComponent(
-    ConfusedHeroComponent,
-    ConfusedHeroComponentNgFactory,
-  );
-  _ngRef.registerComponent(
-    UnknownHeroComponent,
-    UnknownHeroComponentNgFactory,
-  );
 }

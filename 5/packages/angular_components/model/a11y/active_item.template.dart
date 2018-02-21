@@ -11,7 +11,6 @@ import 'dart:async';
 import 'dart:collection';
 import 'package:collection/collection.dart';
 import 'package:angular_components/utils/id_generator/id_generator.dart';
-// Required for initReflector().
 import 'package:angular_components/utils/id_generator/id_generator.template.dart' as _ref0;
 
 var _visited = false;
@@ -20,5 +19,6 @@ void initReflector() {
     return;
   }
   _visited = true;
+
   _ref0.initReflector();
 }

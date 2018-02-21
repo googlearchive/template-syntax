@@ -13,7 +13,6 @@ import 'package:angular/angular.dart';
 import 'package:angular_components/annotations/rtl_annotation.dart';
 import 'package:angular_components/utils/browser/dom_service/angular_2.dart';
 import 'package:angular_components/utils/disposer/disposer.dart';
-// Required for initReflector().
 import 'package:angular/angular.template.dart' as _ref0;
 import 'package:angular_components/annotations/rtl_annotation.template.dart' as _ref1;
 import 'package:angular_components/utils/browser/dom_service/angular_2.template.dart' as _ref2;
@@ -25,6 +24,7 @@ void initReflector() {
     return;
   }
   _visited = true;
+
   _ref0.initReflector();
   _ref1.initReflector();
   _ref2.initReflector();

@@ -11,7 +11,6 @@ import 'package:angular/angular.dart';
 import 'package:angular_components/model/action/async_action.dart';
 import 'package:angular_components/utils/disposer/disposer.dart';
 import 'material_expansionpanel.dart';
-// Required for initReflector().
 import 'material_expansionpanel.template.dart' as _ref0;
 import 'package:angular/angular.template.dart' as _ref1;
 import 'package:angular_components/model/action/async_action.template.dart' as _ref2;
@@ -23,6 +22,7 @@ void initReflector() {
     return;
   }
   _visited = true;
+
   _ref0.initReflector();
   _ref1.initReflector();
   _ref2.initReflector();

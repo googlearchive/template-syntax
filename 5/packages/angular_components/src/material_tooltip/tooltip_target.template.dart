@@ -15,7 +15,6 @@ import 'package:angular_components/src/material_tooltip/tooltip_controller.dart'
 import 'package:angular_components/model/action/delayed_action.dart';
 import 'package:angular_components/utils/browser/events/events.dart';
 import 'tooltip_source.dart' show tooltipShowDelay;
-// Required for initReflector().
 import 'package:angular/angular.template.dart' as _ref0;
 import 'package:angular_components/laminate/popup/popup.template.dart' as _ref1;
 import 'package:angular_components/model/action/delayed_action.template.dart' as _ref2;
@@ -29,6 +28,7 @@ void initReflector() {
     return;
   }
   _visited = true;
+
   _ref0.initReflector();
   _ref1.initReflector();
   _ref2.initReflector();

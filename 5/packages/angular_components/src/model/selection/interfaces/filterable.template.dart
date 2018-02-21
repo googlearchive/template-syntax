@@ -8,7 +8,6 @@
 import 'filterable.dart';
 export 'filterable.dart';
 import 'dart:async';
-// No initReflector() linking required.
 
-// No initReflector() needed.
+// No initReflector() linking required.
 void initReflector() {}

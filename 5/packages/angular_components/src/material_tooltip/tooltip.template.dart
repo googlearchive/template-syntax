@@ -20,7 +20,6 @@ import 'ink_tooltip.template.dart' as ng;
 import 'tooltip_controller.dart';
 import 'tooltip_source.dart' show tooltipShowDelay;
 import 'tooltip_target.dart';
-// Required for initReflector().
 import 'ink_tooltip.template.dart' as _ref0;
 import 'ink_tooltip.template.dart' as _ref1;
 import 'package:angular/angular.template.dart' as _ref2;
@@ -40,6 +39,7 @@ void initReflector() {
     return;
   }
   _visited = true;
+
   _ref0.initReflector();
   _ref1.initReflector();
   _ref2.initReflector();

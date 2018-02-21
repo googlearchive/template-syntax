@@ -78,7 +78,6 @@ import 'scorecard/scoreboard.dart';
 import 'scorecard/scorecard.dart';
 import 'stop_propagation/stop_propagation.dart';
 import 'theme/dark_theme.dart';
-// Required for initReflector().
 import 'annotations/rtl_annotation.template.dart' as _ref0;
 import 'app_layout/material_drawer_base.template.dart' as _ref1;
 import 'app_layout/material_persistent_drawer.template.dart' as _ref2;
@@ -261,6 +260,7 @@ void initReflector() {
     return;
   }
   _visited = true;
+
   _ref0.initReflector();
   _ref1.initReflector();
   _ref2.initReflector();

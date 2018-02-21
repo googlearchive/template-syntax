@@ -1,6 +1,7 @@
 .paper-container {
   background-color: #fff;
   font-size: 13px;
+  line-height: 20px;
   max-height: 400px;
   max-width: 400px;
   min-width: 160px;

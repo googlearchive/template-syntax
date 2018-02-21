@@ -8,7 +8,6 @@
 import 'visibility.dart';
 export 'visibility.dart';
 import 'package:angular_components/src/laminate/enums/base.dart';
-// Required for initReflector().
 import 'package:angular_components/src/laminate/enums/base.template.dart' as _ref0;
 import 'package:angular_components/src/laminate/enums/base.template.dart' as _ref1;
 
@@ -18,6 +17,7 @@ void initReflector() {
     return;
   }
   _visited = true;
+
   _ref0.initReflector();
   _ref1.initReflector();
 }

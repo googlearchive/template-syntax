@@ -10,7 +10,6 @@ export 'dark_theme.dart';
 import 'dart:html';
 import 'package:angular/angular.dart';
 import 'package:angular_components/theme/module.dart';
-// Required for initReflector().
 import 'package:angular/src/di/reflector.dart' as _ngRef;
 import 'package:angular/angular.template.dart' as _ref0;
 import 'package:angular_components/theme/module.template.dart' as _ref1;
@@ -21,19 +20,11 @@ void initReflector() {
     return;
   }
   _visited = true;
+
+  _ngRef.registerFactory(AcxDarkTheme, (bool p0) => new AcxDarkTheme(p0));
+  _ngRef.registerDependencies(AcxDarkTheme, const [
+    const [const _ngRef.Inject(const _ngRef.OpaqueToken<dynamic>('acxDarkTheme')), const _ngRef.Optional()]
+  ]);
   _ref0.initReflector();
   _ref1.initReflector();
-  _ngRef.registerFactory(
-    AcxDarkTheme,
-    (bool p0) => new AcxDarkTheme(p0),
-  );
-  _ngRef.registerDependencies(
-    AcxDarkTheme,
-    const [
-      const [
-        const _ngRef.Inject(const _ngRef.OpaqueToken<dynamic>(r'acxDarkTheme')),
-        const _ngRef.Optional(),
-      ],
-    ],
-  );
 }

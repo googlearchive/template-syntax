@@ -8,7 +8,6 @@
 import 'deferred_content_aware.dart';
 export 'deferred_content_aware.dart';
 import 'dart:async';
-// No initReflector() linking required.
 
-// No initReflector() needed.
+// No initReflector() linking required.
 void initReflector() {}

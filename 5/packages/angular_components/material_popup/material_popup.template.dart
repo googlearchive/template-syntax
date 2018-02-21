@@ -10,11 +10,11 @@ export 'material_popup.dart';
 import 'dart:async';
 import 'dart:html';
 import 'dart:math';
-import 'package:angular/angular.dart' hide Visibility;
+import 'package:angular/angular.dart';
 import 'package:meta/meta.dart';
 import 'package:angular_components/content/deferred_content_aware.dart';
 import 'package:angular_components/laminate/enums/alignment.dart';
-import 'package:angular_components/laminate/enums/visibility.dart';
+import 'package:angular_components/laminate/enums/visibility.dart' as visibility;
 import 'package:angular_components/laminate/overlay/module.dart';
 import 'package:angular_components/laminate/overlay/overlay.dart';
 import 'package:angular_components/laminate/overlay/zindexer.dart';
@@ -25,7 +25,6 @@ import 'package:angular_components/model/ui/toggle.dart';
 import 'package:angular_components/utils/async/async.dart';
 import 'package:angular_components/utils/disposer/disposer.dart';
 import 'package:angular_components/utils/id_generator/id_generator.dart';
-// Required for initReflector().
 import 'package:angular/src/di/reflector.dart' as _ngRef;
 import 'package:angular/angular.template.dart' as _ref0;
 import 'package:angular_components/content/deferred_content_aware.template.dart' as _ref1;
@@ -42,7 +41,7 @@ import 'package:angular_components/model/ui/toggle.template.dart' as _ref11;
 import 'package:angular_components/utils/async/async.template.dart' as _ref12;
 import 'package:angular_components/utils/disposer/disposer.template.dart' as _ref13;
 import 'package:angular_components/utils/id_generator/id_generator.template.dart' as _ref14;
-
+import 'package:angular_components/material_popup/material_popup.dart' as _i1;
 import 'package:angular_components/material_popup/material_popup.scss.css.shim.dart' as import0;
 import 'package:angular/src/core/linker/app_view.dart';
 import 'material_popup.dart' as import2;
@@ -60,11 +59,13 @@ import 'package:angular/src/core/zone/ng_zone.dart' as import13;
 import '../src/laminate/overlay/overlay_service.dart' as import14;
 import '../laminate/overlay/zindexer.dart' as import15;
 import 'package:angular/src/core/di/opaque_token.dart' as import16;
-import '../src/laminate/popup/popup_size_provider.dart' as import17;
+import 'dart:core';
+import '../laminate/enums/alignment.dart' as import18;
+import '../src/laminate/popup/popup_size_provider.dart' as import19;
 import 'package:angular/src/core/linker/element_ref.dart';
-import '../content/deferred_content_aware.dart' as import19;
-import '../mixins/material_dropdown_base.dart' as import20;
-import '../src/laminate/popup/popup_ref.dart' as import21;
+import '../content/deferred_content_aware.dart' as import21;
+import '../mixins/material_dropdown_base.dart' as import22;
+import '../src/laminate/popup/popup_ref.dart' as import23;
 
 const List<dynamic> styles$MaterialPopupComponent = const [import0.styles];
 
@@ -117,14 +118,14 @@ class _ViewMaterialPopupComponent1 extends AppView<import2.MaterialPopupComponen
   import9.Element _el_11;
   import9.Element _el_15;
   var _expr_0;
-  var _expr_1;
+  bool _expr_1;
+  bool _expr_2;
   bool _expr_3;
-  bool _expr_4;
-  bool _expr_5;
+  var _expr_4;
+  var _expr_5;
   var _expr_6;
-  var _expr_7;
+  bool _expr_7;
   var _expr_8;
-  bool _expr_9;
   var _expr_10;
   var _expr_11;
   _ViewMaterialPopupComponent1(AppView<dynamic> parentView, num parentIndex) : super(import7.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
@@ -197,45 +198,45 @@ class _ViewMaterialPopupComponent1 extends AppView<import2.MaterialPopupComponen
       setAttr(_el_1, 'elevation', currVal_0?.toString());
       _expr_0 = currVal_0;
     }
-    final currVal_1 = (_ctx.uniqueId ?? '');
+    final currVal_1 = _ctx.hasBox;
     if (!identical(_expr_1, currVal_1)) {
-      setProp(_el_1, 'id', currVal_1);
+      updateClass(_el_1, 'shadow', currVal_1);
       _expr_1 = currVal_1;
     }
-    final currVal_3 = _ctx.hasBox;
+    final currVal_2 = _ctx.matchMinSourceWidth;
+    if (!identical(_expr_2, currVal_2)) {
+      updateClass(_el_1, 'full-width', currVal_2);
+      _expr_2 = currVal_2;
+    }
+    final currVal_3 = _ctx.inkBackground;
     if (!identical(_expr_3, currVal_3)) {
-      updateClass(_el_1, 'shadow', currVal_3);
+      updateClass(_el_1, 'ink', currVal_3);
       _expr_3 = currVal_3;
     }
-    final currVal_4 = _ctx.matchMinSourceWidth;
+    final currVal_4 = _ctx.slide;
     if (!identical(_expr_4, currVal_4)) {
-      updateClass(_el_1, 'full-width', currVal_4);
+      setAttr(_el_1, 'slide', currVal_4?.toString());
       _expr_4 = currVal_4;
     }
-    final currVal_5 = _ctx.inkBackground;
+    final currVal_5 = _ctx.zIndex;
     if (!identical(_expr_5, currVal_5)) {
-      updateClass(_el_1, 'ink', currVal_5);
+      setAttr(_el_1, 'z-index', currVal_5?.toString());
       _expr_5 = currVal_5;
     }
-    final currVal_6 = _ctx.slide;
+    final currVal_6 = _ctx.transformOrigin;
     if (!identical(_expr_6, currVal_6)) {
-      setAttr(_el_1, 'slide', currVal_6?.toString());
+      _el_1.style.setProperty('transform-origin', currVal_6?.toString());
       _expr_6 = currVal_6;
     }
-    final currVal_7 = _ctx.zIndex;
+    final currVal_7 = _ctx.showPopup;
     if (!identical(_expr_7, currVal_7)) {
-      setAttr(_el_1, 'z-index', currVal_7?.toString());
+      updateClass(_el_1, 'visible', currVal_7);
       _expr_7 = currVal_7;
     }
-    final currVal_8 = _ctx.transformOrigin;
+    final currVal_8 = (_ctx.uniqueId ?? '');
     if (!identical(_expr_8, currVal_8)) {
-      _el_1.style.setProperty('transform-origin', currVal_8?.toString());
+      setProp(_el_1, 'id', currVal_8);
       _expr_8 = currVal_8;
-    }
-    final currVal_9 = _ctx.showPopup;
-    if (!identical(_expr_9, currVal_9)) {
-      updateClass(_el_1, 'visible', currVal_9);
-      _expr_9 = currVal_9;
     }
     final currVal_10 = _ctx.maxHeight;
     if (!identical(_expr_10, currVal_10)) {
@@ -282,7 +283,7 @@ class _ViewMaterialPopupComponentHost0 extends AppView<dynamic> {
     _compView_0 = new ViewMaterialPopupComponent0(this, 0);
     rootEl = _compView_0.rootEl;
     _appEl_0 = new ViewContainer(0, null, this, rootEl);
-    _MaterialPopupComponent_0_6 = new import2.MaterialPopupComponent(this.injectorGet(import12.PopupHierarchy, viewData.parentIndex, null), this.injectorGet(import2.MaterialPopupComponent, viewData.parentIndex, null), null, this.injectorGet(import13.NgZone, viewData.parentIndex), this.injectorGet(import14.OverlayService, viewData.parentIndex), this.injectorGet(import15.ZIndexer, viewData.parentIndex), this.injectorGet(const import16.OpaqueToken('defaultPopupPositions'), viewData.parentIndex), this.injectorGet(const import16.OpaqueToken('overlayRepositionLoop'), viewData.parentIndex), this.injectorGet(import17.PopupSizeProvider, viewData.parentIndex, null), _compView_0.ref, _appEl_0, new ElementRef(rootEl));
+    _MaterialPopupComponent_0_6 = new import2.MaterialPopupComponent(this.injectorGet(import12.PopupHierarchy, viewData.parentIndex, null), this.injectorGet(import2.MaterialPopupComponent, viewData.parentIndex, null), null, this.injectorGet(import13.NgZone, viewData.parentIndex), this.injectorGet(import14.OverlayService, viewData.parentIndex), this.injectorGet(import15.ZIndexer, viewData.parentIndex), this.injectorGet(const import16.OpaqueToken<List<import18.RelativePosition>>('defaultPopupPositions'), viewData.parentIndex), this.injectorGet(const import16.OpaqueToken('overlayRepositionLoop'), viewData.parentIndex), this.injectorGet(import19.PopupSizeProvider, viewData.parentIndex, null), _compView_0.ref, _appEl_0, new ElementRef(rootEl));
     _compView_0.create(_MaterialPopupComponent_0_6, projectableNodes);
     init0(_appEl_0);
     return new ComponentRef<import2.MaterialPopupComponent>(0, this, rootEl, _MaterialPopupComponent_0_6);
@@ -290,13 +291,13 @@ class _ViewMaterialPopupComponentHost0 extends AppView<dynamic> {
 
   @override
   dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
-    if ((((identical(token, import2.MaterialPopupComponent) || identical(token, import19.DeferredContentAware)) || identical(token, import20.DropdownHandle)) && (0 == nodeIndex))) {
+    if ((((identical(token, import2.MaterialPopupComponent) || identical(token, import21.DeferredContentAware)) || identical(token, import22.DropdownHandle)) && (0 == nodeIndex))) {
       return _MaterialPopupComponent_0_6;
     }
     if ((identical(token, import12.PopupHierarchy) && (0 == nodeIndex))) {
       return _PopupHierarchy_0_9;
     }
-    if ((identical(token, import21.PopupRef) && (0 == nodeIndex))) {
+    if ((identical(token, import23.PopupRef) && (0 == nodeIndex))) {
       return _PopupRef_0_10;
     }
     return notFoundResult;
@@ -333,6 +334,14 @@ void initReflector() {
     return;
   }
   _visited = true;
+
+  _ngRef.registerComponent(MaterialPopupComponent, MaterialPopupComponentNgFactory);
+  _ngRef.registerDependencies(getHierarchy, const [
+    const [_i1.MaterialPopupComponent]
+  ]);
+  _ngRef.registerDependencies(getResolvedPopupRef, const [
+    const [_i1.MaterialPopupComponent]
+  ]);
   _ref0.initReflector();
   _ref1.initReflector();
   _ref2.initReflector();
@@ -348,26 +357,4 @@ void initReflector() {
   _ref12.initReflector();
   _ref13.initReflector();
   _ref14.initReflector();
-  _ngRef.registerDependencies(
-    getHierarchy,
-    const [
-      const [
-        MaterialPopupComponent,
-      ],
-    ],
-  );
-
-  _ngRef.registerDependencies(
-    getResolvedPopupRef,
-    const [
-      const [
-        MaterialPopupComponent,
-      ],
-    ],
-  );
-
-  _ngRef.registerComponent(
-    MaterialPopupComponent,
-    MaterialPopupComponentNgFactory,
-  );
 }

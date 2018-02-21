@@ -18,7 +18,6 @@ import 'package:angular_components/material_ripple/material_ripple.dart';
 import 'package:angular_components/model/ui/icon.dart';
 import 'package:angular_components/utils/browser/events/events.dart';
 import 'package:angular_components/utils/disposer/disposer.dart';
-// Required for initReflector().
 import 'package:angular/src/di/reflector.dart' as _ngRef;
 import 'package:angular/angular.template.dart' as _ref0;
 import 'package:angular_components/focus/focus.template.dart' as _ref1;
@@ -29,7 +28,6 @@ import 'package:angular_components/model/ui/icon.template.dart' as _ref5;
 import 'package:angular_components/utils/browser/events/events.template.dart' as _ref6;
 import 'package:angular_components/utils/disposer/disposer.template.dart' as _ref7;
 import 'package:angular_forms/angular_forms.template.dart' as _ref8;
-
 import 'package:angular_components/material_radio/material_radio.scss.css.shim.dart' as import0;
 import 'package:angular/src/core/linker/app_view.dart';
 import 'material_radio.dart' as import2;
@@ -261,6 +259,8 @@ void initReflector() {
     return;
   }
   _visited = true;
+
+  _ngRef.registerComponent(MaterialRadioComponent, MaterialRadioComponentNgFactory);
   _ref0.initReflector();
   _ref1.initReflector();
   _ref2.initReflector();
@@ -270,8 +270,4 @@ void initReflector() {
   _ref6.initReflector();
   _ref7.initReflector();
   _ref8.initReflector();
-  _ngRef.registerComponent(
-    MaterialRadioComponent,
-    MaterialRadioComponentNgFactory,
-  );
 }

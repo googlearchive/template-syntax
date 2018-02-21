@@ -15,7 +15,6 @@ import 'package:angular_components/material_popup/material_popup.dart';
 import 'package:angular_components/material_tooltip/module.dart';
 import 'tooltip_controller.dart';
 import 'tooltip_target.dart';
-// Required for initReflector().
 import 'package:angular/src/di/reflector.dart' as _ngRef;
 import 'package:angular/angular.template.dart' as _ref0;
 import 'package:angular_components/content/deferred_content.template.dart' as _ref1;
@@ -25,7 +24,6 @@ import 'package:angular_components/material_popup/material_popup.template.dart' 
 import 'package:angular_components/material_tooltip/module.template.dart' as _ref5;
 import 'tooltip_controller.template.dart' as _ref6;
 import 'tooltip_target.template.dart' as _ref7;
-
 import 'package:angular_components/src/material_tooltip/ink_tooltip.scss.css.shim.dart' as import0;
 import 'package:angular/src/core/linker/app_view.dart';
 import 'ink_tooltip.dart' as import2;
@@ -46,14 +44,16 @@ import 'package:angular/src/core/zone/ng_zone.dart' as import16;
 import '../laminate/overlay/overlay_service.dart' as import17;
 import '../../laminate/overlay/zindexer.dart' as import18;
 import 'package:angular/src/core/di/opaque_token.dart' as import19;
-import '../laminate/popup/popup_size_provider.dart' as import20;
+import 'dart:core';
+import '../../laminate/enums/alignment.dart' as import21;
+import '../laminate/popup/popup_size_provider.dart' as import22;
 import 'package:angular/src/core/linker/element_ref.dart';
-import '../../mixins/material_dropdown_base.dart' as import22;
-import '../../content/deferred_content_aware.dart' as import23;
-import '../laminate/popup/popup_ref.dart' as import24;
-import '../../material_tooltip/module.dart' as import25;
-import 'tooltip_controller.dart' as import26;
-import '../../utils/disposer/disposer.dart' as import27;
+import '../../content/deferred_content_aware.dart' as import24;
+import '../../mixins/material_dropdown_base.dart' as import25;
+import '../laminate/popup/popup_ref.dart' as import26;
+import '../../material_tooltip/module.dart' as import27;
+import 'tooltip_controller.dart' as import28;
+import '../../utils/disposer/disposer.dart' as import29;
 
 const List<dynamic> styles$MaterialInkTooltipComponent = const [import0.styles];
 
@@ -102,7 +102,6 @@ class _ViewMaterialInkTooltipComponent1 extends AppView<import2.MaterialInkToolt
   import12.ViewMaterialPopupComponent0 _compView_0;
   ViewContainer _appEl_0;
   import13.MaterialPopupComponent _MaterialPopupComponent_0_6;
-  dynamic _DeferredContentAware_0_7;
   dynamic __PopupHierarchy_0_9;
   dynamic __PopupRef_0_10;
   ViewContainer _appEl_2;
@@ -138,13 +137,12 @@ class _ViewMaterialInkTooltipComponent1 extends AppView<import2.MaterialInkToolt
     createAttr(_el_0, 'trackLayoutChanges', '');
     addShimC(_el_0);
     _appEl_0 = new ViewContainer(0, null, this, _el_0);
-    _MaterialPopupComponent_0_6 = new import13.MaterialPopupComponent(parentView.injectorGet(import15.PopupHierarchy, viewData.parentIndex, null), parentView.injectorGet(import13.MaterialPopupComponent, viewData.parentIndex, null), 'tooltip', parentView.injectorGet(import16.NgZone, viewData.parentIndex), parentView.injectorGet(import17.OverlayService, viewData.parentIndex), parentView.injectorGet(import18.ZIndexer, viewData.parentIndex), parentView.injectorGet(const import19.OpaqueToken('defaultPopupPositions'), viewData.parentIndex), parentView.injectorGet(const import19.OpaqueToken('overlayRepositionLoop'), viewData.parentIndex), parentView.injectorGet(import20.PopupSizeProvider, viewData.parentIndex, null), _compView_0.ref, _appEl_0, new ElementRef(_el_0));
-    _DeferredContentAware_0_7 = _MaterialPopupComponent_0_6;
+    _MaterialPopupComponent_0_6 = new import13.MaterialPopupComponent(parentView.injectorGet(import15.PopupHierarchy, viewData.parentIndex, null), parentView.injectorGet(import13.MaterialPopupComponent, viewData.parentIndex, null), 'tooltip', parentView.injectorGet(import16.NgZone, viewData.parentIndex), parentView.injectorGet(import17.OverlayService, viewData.parentIndex), parentView.injectorGet(import18.ZIndexer, viewData.parentIndex), parentView.injectorGet(const import19.OpaqueToken<List<import21.RelativePosition>>('defaultPopupPositions'), viewData.parentIndex), parentView.injectorGet(const import19.OpaqueToken('overlayRepositionLoop'), viewData.parentIndex), parentView.injectorGet(import22.PopupSizeProvider, viewData.parentIndex, null), _compView_0.ref, _appEl_0, new ElementRef(_el_0));
     import8.Text _text_1 = new import8.Text('\n          ');
     var _anchor_2 = ngAnchor.clone(false);
     _appEl_2 = new ViewContainer(2, 0, this, _anchor_2);
     TemplateRef _TemplateRef_2_6 = new TemplateRef(_appEl_2, viewFactory_MaterialInkTooltipComponent2);
-    _DeferredContentDirective_2_7 = new import14.DeferredContentDirective(_appEl_2, _TemplateRef_2_6, _DeferredContentAware_0_7);
+    _DeferredContentDirective_2_7 = new import14.DeferredContentDirective(_appEl_2, _TemplateRef_2_6, _MaterialPopupComponent_0_6);
     import8.Text _text_3 = new import8.Text('\n        ');
     _compView_0.create(_MaterialPopupComponent_0_6, [
       const [],
@@ -157,16 +155,13 @@ class _ViewMaterialInkTooltipComponent1 extends AppView<import2.MaterialInkToolt
 
   @override
   dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
-    if (((identical(token, import13.MaterialPopupComponent) || identical(token, import22.DropdownHandle)) && ((0 <= nodeIndex) && (nodeIndex <= 3)))) {
+    if ((((identical(token, import13.MaterialPopupComponent) || identical(token, import24.DeferredContentAware)) || identical(token, import25.DropdownHandle)) && ((0 <= nodeIndex) && (nodeIndex <= 3)))) {
       return _MaterialPopupComponent_0_6;
-    }
-    if ((identical(token, import23.DeferredContentAware) && ((0 <= nodeIndex) && (nodeIndex <= 3)))) {
-      return _DeferredContentAware_0_7;
     }
     if ((identical(token, import15.PopupHierarchy) && ((0 <= nodeIndex) && (nodeIndex <= 3)))) {
       return _PopupHierarchy_0_9;
     }
-    if ((identical(token, import24.PopupRef) && ((0 <= nodeIndex) && (nodeIndex <= 3)))) {
+    if ((identical(token, import26.PopupRef) && ((0 <= nodeIndex) && (nodeIndex <= 3)))) {
       return _PopupRef_0_10;
     }
     return notFoundResult;
@@ -198,6 +193,9 @@ class _ViewMaterialInkTooltipComponent1 extends AppView<import2.MaterialInkToolt
       _MaterialPopupComponent_0_6.visible = currVal_6;
       _expr_6 = currVal_6;
     }
+    if (firstCheck) {
+      (_DeferredContentDirective_2_7.preserveDimensions = true);
+    }
     _appEl_0.detectChangesInNestedViews();
     _appEl_2.detectChangesInNestedViews();
     _compView_0.detectHostChanges(firstCheck);
@@ -223,7 +221,7 @@ AppView<import2.MaterialInkTooltipComponent> viewFactory_MaterialInkTooltipCompo
 
 class _ViewMaterialInkTooltipComponent2 extends AppView<import2.MaterialInkTooltipComponent> {
   import8.DivElement _el_0;
-  import8.Text _text_1;
+  import8.Text _text_2;
   var _expr_0;
   _ViewMaterialInkTooltipComponent2(AppView<dynamic> parentView, num parentIndex) : super(import6.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMaterialInkTooltipComponent0._renderType;
@@ -234,11 +232,13 @@ class _ViewMaterialInkTooltipComponent2 extends AppView<import2.MaterialInkToolt
     _el_0 = doc.createElement('div');
     _el_0.className = 'ink-container';
     addShimC(_el_0);
-    _text_1 = new import8.Text('');
+    import8.Text _text_1 = new import8.Text('\n            ');
     _el_0.append(_text_1);
-    project(_el_0, 0);
-    import8.Text _text_2 = new import8.Text('\n          ');
+    _text_2 = new import8.Text('');
     _el_0.append(_text_2);
+    project(_el_0, 0);
+    import8.Text _text_3 = new import8.Text('\n          ');
+    _el_0.append(_text_3);
     init0(_el_0);
     return null;
   }
@@ -246,9 +246,9 @@ class _ViewMaterialInkTooltipComponent2 extends AppView<import2.MaterialInkToolt
   @override
   void detectChangesInternal() {
     final import2.MaterialInkTooltipComponent _ctx = ctx;
-    final currVal_0 = import9.interpolate1('\n            ', _ctx.text, '');
+    final currVal_0 = (_ctx.text ?? '');
     if (!identical(_expr_0, currVal_0)) {
-      _text_1.text = currVal_0;
+      _text_2.text = currVal_0;
       _expr_0 = currVal_0;
     }
   }
@@ -269,7 +269,7 @@ class _ViewMaterialInkTooltipComponentHost0 extends AppView<dynamic> {
   ComponentRef build() {
     _compView_0 = new ViewMaterialInkTooltipComponent0(this, 0);
     rootEl = _compView_0.rootEl;
-    _TooltipController_0_4 = import25.createTooltipController(this.injectorGet(import26.TooltipController, viewData.parentIndex, null), this.injectorGet(import27.Disposer, viewData.parentIndex, null));
+    _TooltipController_0_4 = import27.createTooltipController(this.injectorGet(import28.TooltipController, viewData.parentIndex, null), this.injectorGet(import29.Disposer, viewData.parentIndex, null));
     _MaterialInkTooltipComponent_0_5 = new import2.MaterialInkTooltipComponent(_TooltipController_0_4, _compView_0.ref);
     _compView_0.create(_MaterialInkTooltipComponent_0_5, projectableNodes);
     init0(rootEl);
@@ -278,7 +278,7 @@ class _ViewMaterialInkTooltipComponentHost0 extends AppView<dynamic> {
 
   @override
   dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
-    if ((identical(token, import26.TooltipController) && (0 == nodeIndex))) {
+    if ((identical(token, import28.TooltipController) && (0 == nodeIndex))) {
       return _TooltipController_0_4;
     }
     return notFoundResult;
@@ -311,6 +311,8 @@ void initReflector() {
     return;
   }
   _visited = true;
+
+  _ngRef.registerComponent(MaterialInkTooltipComponent, MaterialInkTooltipComponentNgFactory);
   _ref0.initReflector();
   _ref1.initReflector();
   _ref2.initReflector();
@@ -319,8 +321,4 @@ void initReflector() {
   _ref5.initReflector();
   _ref6.initReflector();
   _ref7.initReflector();
-  _ngRef.registerComponent(
-    MaterialInkTooltipComponent,
-    MaterialInkTooltipComponentNgFactory,
-  );
 }

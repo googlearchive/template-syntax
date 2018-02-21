@@ -1,1 +1,1 @@
-{"p":["observable","lib/src/change_notifier.dart"],"s":[["observable","lib/src/observable.dart"],["observable","lib/src/change_notifier.dart"]],"d":[["meta","lib/meta.dart"],["observable","lib/src/records.dart"],["observable","lib/src/internal.dart"]]}
+{"p":["observable","lib/src/change_notifier.dart"],"s":[["observable","lib/src/change_notifier.dart"],["observable","lib/src/observable.dart"]],"d":[["meta","lib/meta.dart"],["observable","lib/src/internal.dart"],["observable","lib/src/records.dart"]]}

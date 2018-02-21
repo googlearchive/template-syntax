@@ -12,7 +12,6 @@ import 'package:angular/angular.dart';
 import 'package:intl/intl.dart';
 import 'package:angular_components/material_input/material_input.dart';
 import 'package:angular_components/material_input/material_input_error_keys.dart';
-// Required for initReflector().
 import 'package:angular/angular.template.dart' as _ref0;
 import 'package:angular_components/material_input/material_input.template.dart' as _ref1;
 import 'package:angular_components/material_input/material_input_error_keys.template.dart' as _ref2;
@@ -24,6 +23,7 @@ void initReflector() {
     return;
   }
   _visited = true;
+
   _ref0.initReflector();
   _ref1.initReflector();
   _ref2.initReflector();

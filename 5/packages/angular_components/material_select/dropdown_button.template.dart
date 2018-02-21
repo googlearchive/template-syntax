@@ -14,14 +14,12 @@ import 'package:angular_components/button_decorator/button_decorator.dart';
 import 'package:angular_components/focus/keyboard_only_focus_indicator.dart';
 import 'package:angular_components/glyph/glyph.dart';
 import 'package:angular_components/mixins/button_wrapper.dart';
-// Required for initReflector().
 import 'package:angular/src/di/reflector.dart' as _ngRef;
 import 'package:angular/angular.template.dart' as _ref0;
 import 'package:angular_components/button_decorator/button_decorator.template.dart' as _ref1;
 import 'package:angular_components/focus/keyboard_only_focus_indicator.template.dart' as _ref2;
 import 'package:angular_components/glyph/glyph.template.dart' as _ref3;
 import 'package:angular_components/mixins/button_wrapper.template.dart' as _ref4;
-
 import 'package:angular_components/button_decorator/button_decorator.scss.css.shim.dart' as import0;
 import 'package:angular_components/material_select/dropdown_button.scss.css.shim.dart' as import1;
 import 'package:angular/src/core/linker/app_view.dart';
@@ -255,8 +253,8 @@ AppView<import3.DropdownButtonComponent> viewFactory_DropdownButtonComponent2(Ap
 class _ViewDropdownButtonComponent3 extends AppView<import3.DropdownButtonComponent> {
   import5.DivElement _el_0;
   import5.Text _text_1;
-  var _expr_0;
-  bool _expr_1;
+  bool _expr_0;
+  var _expr_1;
   var _expr_2;
   _ViewDropdownButtonComponent3(AppView<dynamic> parentView, num parentIndex) : super(import11.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewDropdownButtonComponent0._renderType;
@@ -277,17 +275,17 @@ class _ViewDropdownButtonComponent3 extends AppView<import3.DropdownButtonCompon
   @override
   void detectChangesInternal() {
     final import3.DropdownButtonComponent _ctx = ctx;
-    final currVal_0 = import13.interpolate0(!_ctx.invalid);
+    final currVal_0 = _ctx.invalid;
     if (!identical(_expr_0, currVal_0)) {
-      setAttr(_el_0, 'aria-hidden', currVal_0?.toString());
+      updateClass(_el_0, 'invalid', currVal_0);
       _expr_0 = currVal_0;
     }
-    final currVal_1 = _ctx.invalid;
+    final currVal_1 = import13.interpolate0(!_ctx.invalid);
     if (!identical(_expr_1, currVal_1)) {
-      updateClass(_el_0, 'invalid', currVal_1);
+      setAttr(_el_0, 'aria-hidden', currVal_1?.toString());
       _expr_1 = currVal_1;
     }
-    final currVal_2 = import13.interpolate0(_ctx.error);
+    final currVal_2 = (_ctx.error ?? '');
     if (!identical(_expr_2, currVal_2)) {
       _text_1.text = currVal_2;
       _expr_2 = currVal_2;
@@ -350,13 +348,11 @@ void initReflector() {
     return;
   }
   _visited = true;
+
+  _ngRef.registerComponent(DropdownButtonComponent, DropdownButtonComponentNgFactory);
   _ref0.initReflector();
   _ref1.initReflector();
   _ref2.initReflector();
   _ref3.initReflector();
   _ref4.initReflector();
-  _ngRef.registerComponent(
-    DropdownButtonComponent,
-    DropdownButtonComponentNgFactory,
-  );
 }

@@ -17,7 +17,6 @@ import 'package:angular_components/utils/browser/dom_service/dom_service.dart';
 import 'package:angular_components/utils/browser/events/events.dart';
 import 'package:angular_components/utils/color/color.dart';
 import 'package:angular_components/utils/color/palette.dart';
-// Required for initReflector().
 import 'package:angular/src/di/reflector.dart' as _ngRef;
 import 'package:angular/angular.template.dart' as _ref0;
 import 'package:angular_components/focus/keyboard_only_focus_indicator.template.dart' as _ref1;
@@ -27,7 +26,6 @@ import 'package:angular_components/utils/browser/dom_service/dom_service.templat
 import 'package:angular_components/utils/browser/events/events.template.dart' as _ref5;
 import 'package:angular_components/utils/color/color.template.dart' as _ref6;
 import 'package:angular_components/utils/color/palette.template.dart' as _ref7;
-
 import 'package:angular_components/scorecard/scorecard.scss.css.shim.dart' as import0;
 import 'package:angular/src/core/linker/app_view.dart';
 import 'scorecard.dart' as import2;
@@ -285,7 +283,7 @@ class _ViewScorecardComponent3 extends AppView<import2.ScorecardComponent> {
   import5.Element _el_0;
   ViewContainer _appEl_1;
   NgIf _NgIf_1_7;
-  import5.Text _text_2;
+  import5.Text _text_3;
   var _expr_1;
   _ViewScorecardComponent3(AppView<dynamic> parentView, num parentIndex) : super(import7.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewScorecardComponent0._renderType;
@@ -301,8 +299,12 @@ class _ViewScorecardComponent3 extends AppView<import2.ScorecardComponent> {
     _appEl_1 = new ViewContainer(1, 0, this, _anchor_1);
     TemplateRef _TemplateRef_1_6 = new TemplateRef(_appEl_1, viewFactory_ScorecardComponent4);
     _NgIf_1_7 = new NgIf(_appEl_1, _TemplateRef_1_6);
-    _text_2 = new import5.Text('');
+    import5.Text _text_2 = new import5.Text('\n   ');
     _el_0.append(_text_2);
+    _text_3 = new import5.Text('');
+    _el_0.append(_text_3);
+    import5.Text _text_4 = new import5.Text(' \n  ');
+    _el_0.append(_text_4);
     project(_el_0, 2);
     init0(_el_0);
     return null;
@@ -313,9 +315,9 @@ class _ViewScorecardComponent3 extends AppView<import2.ScorecardComponent> {
     final import2.ScorecardComponent _ctx = ctx;
     _NgIf_1_7.ngIf = ((_ctx.changeGlyph && (_ctx.description != '')) && !_ctx.isChangeNeutral);
     _appEl_1.detectChangesInNestedViews();
-    final currVal_1 = import9.interpolate1('\n   ', _ctx.description, ' \n  ');
+    final currVal_1 = (_ctx.description ?? '');
     if (!identical(_expr_1, currVal_1)) {
-      _text_2.text = currVal_1;
+      _text_3.text = currVal_1;
       _expr_1 = currVal_1;
     }
   }
@@ -457,6 +459,8 @@ void initReflector() {
     return;
   }
   _visited = true;
+
+  _ngRef.registerComponent(ScorecardComponent, ScorecardComponentNgFactory);
   _ref0.initReflector();
   _ref1.initReflector();
   _ref2.initReflector();
@@ -465,8 +469,4 @@ void initReflector() {
   _ref5.initReflector();
   _ref6.initReflector();
   _ref7.initReflector();
-  _ngRef.registerComponent(
-    ScorecardComponent,
-    ScorecardComponentNgFactory,
-  );
 }

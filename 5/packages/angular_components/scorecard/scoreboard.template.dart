@@ -19,7 +19,6 @@ import 'package:angular_components/utils/color/palette.dart';
 import 'package:angular_components/utils/disposer/disposer.dart';
 import 'scorecard.dart';
 import 'package:angular_components/src/scorecard/scorecard_bar.dart';
-// Required for initReflector().
 import 'package:angular/src/di/reflector.dart' as _ngRef;
 import 'package:angular/angular.template.dart' as _ref0;
 import 'package:angular_components/material_button/material_button.template.dart' as _ref1;
@@ -30,7 +29,6 @@ import 'package:angular_components/utils/browser/dom_service/angular_2.template.
 import 'package:angular_components/utils/color/palette.template.dart' as _ref6;
 import 'package:angular_components/utils/disposer/disposer.template.dart' as _ref7;
 import 'scorecard.template.dart' as _ref8;
-
 import 'package:angular_components/scorecard/scoreboard.scss.css.shim.dart' as import0;
 import 'package:angular/src/core/linker/app_view.dart';
 import 'scoreboard.dart' as import2;
@@ -389,6 +387,8 @@ void initReflector() {
     return;
   }
   _visited = true;
+
+  _ngRef.registerComponent(ScoreboardComponent, ScoreboardComponentNgFactory);
   _ref0.initReflector();
   _ref1.initReflector();
   _ref2.initReflector();
@@ -398,8 +398,4 @@ void initReflector() {
   _ref6.initReflector();
   _ref7.initReflector();
   _ref8.initReflector();
-  _ngRef.registerComponent(
-    ScoreboardComponent,
-    ScoreboardComponentNgFactory,
-  );
 }

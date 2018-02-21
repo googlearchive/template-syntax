@@ -13,12 +13,10 @@ import 'package:intl/intl.dart';
 import 'package:angular_components/laminate/popup/popup.dart' show DomPopupSourceFactory, PopupSourceDirective, PopupRef;
 import 'package:angular_components/model/action/delayed_action.dart';
 import 'package:angular_components/model/ui/toggle.dart';
-// Required for initReflector().
 import 'package:angular/angular.template.dart' as _ref0;
 import 'package:angular_components/laminate/popup/popup.template.dart' as _ref1;
 import 'package:angular_components/model/action/delayed_action.template.dart' as _ref2;
 import 'package:angular_components/model/ui/toggle.template.dart' as _ref3;
-
 import 'package:angular/src/core/change_detection/directive_change_detector.dart' as import0;
 import 'tooltip_source.dart' as import1;
 import 'package:angular/src/core/linker/app_view.dart';
@@ -42,6 +40,7 @@ void initReflector() {
     return;
   }
   _visited = true;
+
   _ref0.initReflector();
   _ref1.initReflector();
   _ref2.initReflector();

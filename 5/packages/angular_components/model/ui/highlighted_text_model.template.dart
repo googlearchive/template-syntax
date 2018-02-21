@@ -10,7 +10,6 @@ export 'highlighted_text_model.dart';
 import 'dart:math' show max;
 import 'package:meta/meta.dart';
 import 'package:quiver/core.dart' show hash2;
-// No initReflector() linking required.
 
-// No initReflector() needed.
+// No initReflector() linking required.
 void initReflector() {}

@@ -13,13 +13,11 @@ import 'package:angular/angular.dart';
 import 'package:angular_components/content/deferred_content_aware.dart';
 import 'package:angular_components/focus/focus.dart';
 import 'package:angular_components/utils/id_generator/id_generator.dart';
-// Required for initReflector().
 import 'package:angular/src/di/reflector.dart' as _ngRef;
 import 'package:angular/angular.template.dart' as _ref0;
 import 'package:angular_components/content/deferred_content_aware.template.dart' as _ref1;
 import 'package:angular_components/focus/focus.template.dart' as _ref2;
 import 'package:angular_components/utils/id_generator/id_generator.template.dart' as _ref3;
-
 import 'package:angular_components/material_tab/material_tab.scss.css.shim.dart' as import0;
 import 'package:angular/src/core/linker/app_view.dart';
 import 'material_tab.dart' as import2;
@@ -167,12 +165,10 @@ void initReflector() {
     return;
   }
   _visited = true;
+
+  _ngRef.registerComponent(MaterialTabComponent, MaterialTabComponentNgFactory);
   _ref0.initReflector();
   _ref1.initReflector();
   _ref2.initReflector();
   _ref3.initReflector();
-  _ngRef.registerComponent(
-    MaterialTabComponent,
-    MaterialTabComponentNgFactory,
-  );
 }

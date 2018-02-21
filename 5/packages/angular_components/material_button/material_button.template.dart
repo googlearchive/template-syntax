@@ -13,14 +13,12 @@ import 'package:angular_components/button_decorator/button_decorator.dart';
 import 'package:angular_components/material_ripple/material_ripple.dart';
 import 'package:angular_components/theme/dark_theme.dart';
 import 'material_button_base.dart';
-// Required for initReflector().
 import 'package:angular/src/di/reflector.dart' as _ngRef;
 import 'material_button_base.template.dart' as _ref0;
 import 'package:angular/angular.template.dart' as _ref1;
 import 'package:angular_components/button_decorator/button_decorator.template.dart' as _ref2;
 import 'package:angular_components/material_ripple/material_ripple.template.dart' as _ref3;
 import 'package:angular_components/theme/dark_theme.template.dart' as _ref4;
-
 import 'package:angular_components/material_button/material_button.scss.css.shim.dart' as import0;
 import 'package:angular/src/core/linker/app_view.dart';
 import 'material_button.dart' as import2;
@@ -202,13 +200,11 @@ void initReflector() {
     return;
   }
   _visited = true;
+
+  _ngRef.registerComponent(MaterialButtonComponent, MaterialButtonComponentNgFactory);
   _ref0.initReflector();
   _ref1.initReflector();
   _ref2.initReflector();
   _ref3.initReflector();
   _ref4.initReflector();
-  _ngRef.registerComponent(
-    MaterialButtonComponent,
-    MaterialButtonComponentNgFactory,
-  );
 }

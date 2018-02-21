@@ -8,7 +8,6 @@
 import 'popup_ref.dart';
 export 'popup_ref.dart';
 import 'dart:async';
-// No initReflector() linking required.
 
-// No initReflector() needed.
+// No initReflector() linking required.
 void initReflector() {}

@@ -9,7 +9,6 @@ import 'delegating_selection_options.dart';
 export 'delegating_selection_options.dart';
 import 'dart:async';
 import 'package:angular_components/model/selection/selection_options.dart';
-// Required for initReflector().
 import 'package:angular_components/model/selection/selection_options.template.dart' as _ref0;
 
 var _visited = false;
@@ -18,5 +17,6 @@ void initReflector() {
     return;
   }
   _visited = true;
+
   _ref0.initReflector();
 }

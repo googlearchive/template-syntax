@@ -11,7 +11,6 @@ import 'dart:collection';
 import 'package:meta/meta.dart';
 import 'package:angular_components/model/selection/select.dart';
 import 'package:angular_components/model/selection/selection_options.dart';
-// Required for initReflector().
 import 'package:angular_components/model/selection/select.template.dart' as _ref0;
 import 'package:angular_components/model/selection/selection_options.template.dart' as _ref1;
 
@@ -21,6 +20,7 @@ void initReflector() {
     return;
   }
   _visited = true;
+
   _ref0.initReflector();
   _ref1.initReflector();
 }

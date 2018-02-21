@@ -19,7 +19,6 @@ import 'package:angular_components/model/ui/template_support.dart';
 import 'package:angular_components/utils/angular/properties/properties.dart';
 import 'material_select_base.dart';
 import 'material_select_item.dart';
-// Required for initReflector().
 import 'package:angular/src/di/reflector.dart' as _ngRef;
 import 'material_select_base.template.dart' as _ref0;
 import 'material_select_item.template.dart' as _ref1;
@@ -32,7 +31,6 @@ import 'package:angular_components/model/selection/selection_options.template.da
 import 'package:angular_components/model/ui/has_renderer.template.dart' as _ref8;
 import 'package:angular_components/model/ui/template_support.template.dart' as _ref9;
 import 'package:angular_components/utils/angular/properties/properties.template.dart' as _ref10;
-
 import 'package:angular_components/material_select/material_select.scss.css.shim.dart' as import0;
 import 'package:angular/src/core/linker/app_view.dart';
 import 'material_select.dart' as import2;
@@ -452,6 +450,8 @@ void initReflector() {
     return;
   }
   _visited = true;
+
+  _ngRef.registerComponent(MaterialSelectComponent, MaterialSelectComponentNgFactory);
   _ref0.initReflector();
   _ref1.initReflector();
   _ref2.initReflector();
@@ -463,8 +463,4 @@ void initReflector() {
   _ref8.initReflector();
   _ref9.initReflector();
   _ref10.initReflector();
-  _ngRef.registerComponent(
-    MaterialSelectComponent,
-    MaterialSelectComponentNgFactory,
-  );
 }

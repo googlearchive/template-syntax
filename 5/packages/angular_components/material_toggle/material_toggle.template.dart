@@ -11,11 +11,9 @@ import 'dart:async';
 import 'dart:html';
 import 'package:angular/angular.dart';
 import 'package:angular_components/utils/browser/events/events.dart';
-// Required for initReflector().
 import 'package:angular/src/di/reflector.dart' as _ngRef;
 import 'package:angular/angular.template.dart' as _ref0;
 import 'package:angular_components/utils/browser/events/events.template.dart' as _ref1;
-
 import 'package:angular_components/material_toggle/material_toggle.scss.css.shim.dart' as import0;
 import 'package:angular/src/core/linker/app_view.dart';
 import 'material_toggle.dart' as import2;
@@ -39,11 +37,11 @@ class ViewMaterialToggleComponent0 extends AppView<import2.MaterialToggleCompone
   import3.DivElement _el_3;
   import3.DivElement _el_4;
   import3.DivElement _el_5;
-  var _expr_0;
-  var _expr_1;
+  bool _expr_0;
+  bool _expr_1;
   var _expr_2;
-  bool _expr_3;
-  bool _expr_4;
+  var _expr_3;
+  var _expr_4;
   var _expr_5;
   var _expr_7;
   var _expr_8;
@@ -98,34 +96,34 @@ class ViewMaterialToggleComponent0 extends AppView<import2.MaterialToggleCompone
     final import2.MaterialToggleComponent _ctx = ctx;
     _NgIf_1_7.ngIf = _ctx.hasLabel;
     _appEl_1.detectChangesInNestedViews();
-    final currVal_0 = import9.interpolate0(_ctx.checked);
+    final currVal_0 = _ctx.checked;
     if (!identical(_expr_0, currVal_0)) {
-      setAttr(_el_0, 'aria-pressed', currVal_0?.toString());
+      updateClass(_el_0, 'checked', currVal_0);
       _expr_0 = currVal_0;
     }
-    final currVal_1 = import9.interpolate0(_ctx.disabled);
+    final currVal_1 = _ctx.disabled;
     if (!identical(_expr_1, currVal_1)) {
-      setAttr(_el_0, 'aria-disabled', currVal_1?.toString());
+      updateClass(_el_0, 'disabled', currVal_1);
       _expr_1 = currVal_1;
     }
-    final currVal_2 = (_ctx.ariaLabel ?? '');
+    final currVal_2 = (_ctx.disabled ? '-1' : '0');
     if (!identical(_expr_2, currVal_2)) {
-      setAttr(_el_0, 'aria-label', currVal_2?.toString());
+      setAttr(_el_0, 'tabindex', currVal_2?.toString());
       _expr_2 = currVal_2;
     }
-    final currVal_3 = _ctx.checked;
+    final currVal_3 = import9.interpolate0(_ctx.checked);
     if (!identical(_expr_3, currVal_3)) {
-      updateClass(_el_0, 'checked', currVal_3);
+      setAttr(_el_0, 'aria-pressed', currVal_3?.toString());
       _expr_3 = currVal_3;
     }
-    final currVal_4 = _ctx.disabled;
+    final currVal_4 = import9.interpolate0(_ctx.disabled);
     if (!identical(_expr_4, currVal_4)) {
-      updateClass(_el_0, 'disabled', currVal_4);
+      setAttr(_el_0, 'aria-disabled', currVal_4?.toString());
       _expr_4 = currVal_4;
     }
-    final currVal_5 = (_ctx.disabled ? '-1' : '0');
+    final currVal_5 = (_ctx.ariaLabel ?? '');
     if (!identical(_expr_5, currVal_5)) {
-      setAttr(_el_0, 'tabindex', currVal_5?.toString());
+      setAttr(_el_0, 'aria-label', currVal_5?.toString());
       _expr_5 = currVal_5;
     }
     final currVal_7 = import9.interpolate0(_ctx.shadow_z);
@@ -243,10 +241,8 @@ void initReflector() {
     return;
   }
   _visited = true;
+
+  _ngRef.registerComponent(MaterialToggleComponent, MaterialToggleComponentNgFactory);
   _ref0.initReflector();
   _ref1.initReflector();
-  _ngRef.registerComponent(
-    MaterialToggleComponent,
-    MaterialToggleComponentNgFactory,
-  );
 }

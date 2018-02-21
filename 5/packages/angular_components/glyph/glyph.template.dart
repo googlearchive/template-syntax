@@ -10,11 +10,9 @@ export 'glyph.dart';
 import 'dart:html';
 import 'package:angular/angular.dart';
 import 'package:angular_components/model/ui/icon.dart';
-// Required for initReflector().
 import 'package:angular/src/di/reflector.dart' as _ngRef;
 import 'package:angular/angular.template.dart' as _ref0;
 import 'package:angular_components/model/ui/icon.template.dart' as _ref1;
-
 import 'package:angular_components/glyph/glyph.scss.css.shim.dart' as import0;
 import 'package:angular/src/core/linker/app_view.dart';
 import 'glyph.dart' as import2;
@@ -60,7 +58,7 @@ class ViewGlyphComponent0 extends AppView<import2.GlyphComponent> {
       updateClass(_el_0, 'material-icons', currVal_0);
       _expr_0 = currVal_0;
     }
-    final currVal_1 = import7.interpolate0(_ctx.iconName);
+    final currVal_1 = (_ctx.iconName ?? '');
     if (!identical(_expr_1, currVal_1)) {
       _text_1.text = currVal_1;
       _expr_1 = currVal_1;
@@ -115,10 +113,8 @@ void initReflector() {
     return;
   }
   _visited = true;
+
+  _ngRef.registerComponent(GlyphComponent, GlyphComponentNgFactory);
   _ref0.initReflector();
   _ref1.initReflector();
-  _ngRef.registerComponent(
-    GlyphComponent,
-    GlyphComponentNgFactory,
-  );
 }

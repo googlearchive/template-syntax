@@ -9,7 +9,6 @@ import 'popup_size_provider_directive.dart';
 export 'popup_size_provider_directive.dart';
 import 'package:angular/angular.dart';
 import 'package:angular_components/src/laminate/popup/popup_size_provider.dart';
-// Required for initReflector().
 import 'package:angular/angular.template.dart' as _ref0;
 import 'package:angular_components/src/laminate/popup/popup_size_provider.template.dart' as _ref1;
 
@@ -19,6 +18,7 @@ void initReflector() {
     return;
   }
   _visited = true;
+
   _ref0.initReflector();
   _ref1.initReflector();
 }

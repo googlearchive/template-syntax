@@ -9,7 +9,6 @@ import 'color.dart';
 export 'color.dart';
 import 'dart:math' as math;
 import 'package:quiver/core.dart';
-// No initReflector() linking required.
 
-// No initReflector() needed.
+// No initReflector() linking required.
 void initReflector() {}

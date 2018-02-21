@@ -17,6 +17,11 @@ bool supportsHover(Window window) =>
     !((window.matchMedia("(hover: none)")?.matches ?? false) ||
         window.navigator.userAgent.contains("Nexus 9"));
 
+/// Whether the primary input mechanism on this system is touch.
+final bool isTouchInterface =
+    (window.matchMedia('(pointer: coarse)').matches ?? false) ||
+        js.context.hasProperty('__acxForceTouchEnabled');
+
 /// Returns true if Hammer.js is loaded in the current browser.
 ///
 /// Hammer provides support for detection of additional touch gestures.
@@ -29,6 +34,10 @@ bool isHammerLoaded() => js.context.hasProperty('Hammer');
 final bool supportsAnimationApi =
     js_util.hasProperty(new DivElement(), 'animate') &&
         !js.context.hasProperty('__acxDisableWebAnimationsApi');
+
+/// Whether the browser supports IntersectionObserver.
+final bool supportsIntersectionObserver =
+    js.context.hasProperty('IntersectionObserver');
 
 /// Whether the browser supports ResizeObserver.
 final bool supportsResizeObserver = js.context.hasProperty('ResizeObserver');

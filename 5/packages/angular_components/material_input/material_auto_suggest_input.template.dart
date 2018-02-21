@@ -43,7 +43,6 @@ import 'package:angular_components/utils/angular/properties/properties.dart';
 import 'package:angular_components/utils/async/async.dart';
 import 'package:angular_components/utils/id_generator/id_generator.dart';
 import 'material_input.dart';
-// Required for initReflector().
 import 'package:angular/src/di/reflector.dart' as _ngRef;
 import 'material_input.template.dart' as _ref0;
 import 'package:angular/angular.template.dart' as _ref1;
@@ -79,7 +78,6 @@ import 'package:angular_components/utils/angular/properties/properties.template.
 import 'package:angular_components/utils/async/async.template.dart' as _ref31;
 import 'package:angular_components/utils/id_generator/id_generator.template.dart' as _ref32;
 import 'package:angular_forms/angular_forms.template.dart' as _ref33;
-
 import 'package:angular_components/material_input/material_auto_suggest_input.scss.css.shim.dart' as import0;
 import 'package:angular_components/material_input/material_input_wrapper.scss.css.shim.dart' as import1;
 import 'package:angular/src/core/linker/app_view.dart';
@@ -110,42 +108,44 @@ import 'package:angular/src/core/zone/ng_zone.dart' as import26;
 import '../src/laminate/overlay/overlay_service.dart' as import27;
 import '../laminate/overlay/zindexer.dart' as import28;
 import 'package:angular/src/core/di/opaque_token.dart' as import29;
-import '../src/laminate/popup/popup_size_provider.dart' as import30;
+import 'dart:core';
+import '../laminate/enums/alignment.dart' as import31;
+import '../src/laminate/popup/popup_size_provider.dart' as import32;
 import 'package:angular/src/core/linker/element_ref.dart';
-import '../utils/browser/dom_service/dom_service.dart' as import32;
-import 'package:angular_forms/src/directives/ng_control.dart' as import33;
-import '../focus/focus.dart' as import34;
-import 'base_material_input.dart' as import35;
-import '../utils/angular/reference/reference.dart' as import36;
-import '../mixins/material_dropdown_base.dart' as import37;
-import '../content/deferred_content_aware.dart' as import38;
-import '../src/laminate/popup/popup_ref.dart' as import39;
-import '../material_icon/material_icon.template.dart' as import40;
-import '../button_decorator/button_decorator.template.dart' as import41;
-import '../material_icon/material_icon.dart' as import42;
-import '../src/material_tooltip/tooltip.dart' as import43;
-import '../stop_propagation/stop_propagation.dart' as import44;
-import '../material_tooltip/module.dart' as import45;
-import '../src/material_tooltip/tooltip_controller.dart' as import46;
-import '../utils/disposer/disposer.dart' as import47;
-import '../button_decorator/button_decorator.dart' as import48;
-import '../material_spinner/material_spinner.template.dart' as import49;
-import '../material_spinner/material_spinner.dart' as import50;
-import '../material_list/material_list.template.dart' as import51;
-import '../material_list/material_list.dart' as import52;
-import 'package:angular/src/common/directives/ng_for.dart' as import53;
-import '../model/selection/selection_options.dart' as import54;
-import '../dynamic_component/dynamic_component.template.dart' as import55;
-import '../dynamic_component/dynamic_component.dart' as import56;
-import 'package:angular/src/core/linker/dynamic_component_loader.dart' as import57;
-import '../material_select/material_select_dropdown_item.template.dart' as import58;
-import '../material_select/material_select_dropdown_item.dart' as import59;
-import '../material_select/activation_handler.dart' as import60;
-import '../model/selection/selection_container.dart' as import61;
-import '../model/ui/has_renderer.dart' as import62;
-import '../utils/id_generator/id_generator.dart' as import63;
-import '../model/ui/highlight_provider.dart' as import64;
-import '../model/ui/has_factory.dart' as import65;
+import '../utils/browser/dom_service/dom_service.dart' as import34;
+import 'package:angular_forms/src/directives/ng_control.dart' as import35;
+import '../focus/focus.dart' as import36;
+import 'base_material_input.dart' as import37;
+import '../utils/angular/reference/reference.dart' as import38;
+import '../content/deferred_content_aware.dart' as import39;
+import '../mixins/material_dropdown_base.dart' as import40;
+import '../src/laminate/popup/popup_ref.dart' as import41;
+import '../material_icon/material_icon.template.dart' as import42;
+import '../button_decorator/button_decorator.template.dart' as import43;
+import '../material_icon/material_icon.dart' as import44;
+import '../src/material_tooltip/tooltip.dart' as import45;
+import '../stop_propagation/stop_propagation.dart' as import46;
+import '../material_tooltip/module.dart' as import47;
+import '../src/material_tooltip/tooltip_controller.dart' as import48;
+import '../utils/disposer/disposer.dart' as import49;
+import '../button_decorator/button_decorator.dart' as import50;
+import '../material_spinner/material_spinner.template.dart' as import51;
+import '../material_spinner/material_spinner.dart' as import52;
+import '../material_list/material_list.template.dart' as import53;
+import '../material_list/material_list.dart' as import54;
+import 'package:angular/src/common/directives/ng_for.dart' as import55;
+import '../model/selection/selection_options.dart' as import56;
+import '../dynamic_component/dynamic_component.template.dart' as import57;
+import '../dynamic_component/dynamic_component.dart' as import58;
+import 'package:angular/src/core/linker/dynamic_component_loader.dart' as import59;
+import '../material_select/material_select_dropdown_item.template.dart' as import60;
+import '../material_select/material_select_dropdown_item.dart' as import61;
+import '../material_select/activation_handler.dart' as import62;
+import '../model/selection/selection_container.dart' as import63;
+import '../model/ui/has_renderer.dart' as import64;
+import '../utils/id_generator/id_generator.dart' as import65;
+import '../model/ui/highlight_provider.dart' as import66;
+import '../model/ui/has_factory.dart' as import67;
 
 const List<dynamic> styles$MaterialAutoSuggestInputComponent = const [import0.styles, import1.styles];
 
@@ -169,7 +169,6 @@ class ViewMaterialAutoSuggestInputComponent0 extends AppView<import3.MaterialAut
   import14.ViewMaterialPopupComponent0 _compView_3;
   ViewContainer _appEl_3;
   import15.MaterialPopupComponent _MaterialPopupComponent_3_6;
-  dynamic _DeferredContentAware_3_7;
   dynamic __PopupHierarchy_3_9;
   dynamic __PopupRef_3_10;
   import5.DivElement _el_4;
@@ -199,6 +198,7 @@ class ViewMaterialAutoSuggestInputComponent0 extends AppView<import3.MaterialAut
   bool _expr_21;
   String _expr_24;
   bool _expr_25;
+  bool _expr_26;
   bool _expr_27;
   var _expr_28;
   var _expr_29;
@@ -260,29 +260,27 @@ class ViewMaterialAutoSuggestInputComponent0 extends AppView<import3.MaterialAut
     _compView_3 = new import14.ViewMaterialPopupComponent0(this, 3);
     _el_3 = _compView_3.rootEl;
     parentRenderNode.append(_el_3);
-    createAttr(_el_3, 'enforceSpaceConstraints', '');
     createAttr(_el_3, 'trackLayoutChanges', '');
     addShimC(_el_3);
     _appEl_3 = new ViewContainer(3, null, this, _el_3);
-    _MaterialPopupComponent_3_6 = new import15.MaterialPopupComponent(parentView.injectorGet(import25.PopupHierarchy, viewData.parentIndex, null), parentView.injectorGet(import15.MaterialPopupComponent, viewData.parentIndex, null), null, parentView.injectorGet(import26.NgZone, viewData.parentIndex), parentView.injectorGet(import27.OverlayService, viewData.parentIndex), parentView.injectorGet(import28.ZIndexer, viewData.parentIndex), parentView.injectorGet(const import29.OpaqueToken('defaultPopupPositions'), viewData.parentIndex), parentView.injectorGet(const import29.OpaqueToken('overlayRepositionLoop'), viewData.parentIndex), parentView.injectorGet(import30.PopupSizeProvider, viewData.parentIndex, null), _compView_3.ref, _appEl_3, new ElementRef(_el_3));
-    _DeferredContentAware_3_7 = _MaterialPopupComponent_3_6;
+    _MaterialPopupComponent_3_6 = new import15.MaterialPopupComponent(parentView.injectorGet(import25.PopupHierarchy, viewData.parentIndex, null), parentView.injectorGet(import15.MaterialPopupComponent, viewData.parentIndex, null), null, parentView.injectorGet(import26.NgZone, viewData.parentIndex), parentView.injectorGet(import27.OverlayService, viewData.parentIndex), parentView.injectorGet(import28.ZIndexer, viewData.parentIndex), parentView.injectorGet(const import29.OpaqueToken<List<import31.RelativePosition>>('defaultPopupPositions'), viewData.parentIndex), parentView.injectorGet(const import29.OpaqueToken('overlayRepositionLoop'), viewData.parentIndex), parentView.injectorGet(import32.PopupSizeProvider, viewData.parentIndex, null), _compView_3.ref, _appEl_3, new ElementRef(_el_3));
     _el_4 = doc.createElement('div');
     createAttr(_el_4, 'header', '');
     createAttr(_el_4, 'keyboardOnlyFocusIndicator', '');
     createAttr(_el_4, 'tabIndex', '-1');
     addShimC(_el_4);
-    _KeyboardOnlyFocusIndicatorDirective_4_4 = new import16.KeyboardOnlyFocusIndicatorDirective(_el_4, parentView.injectorGet(import32.DomService, viewData.parentIndex));
+    _KeyboardOnlyFocusIndicatorDirective_4_4 = new import16.KeyboardOnlyFocusIndicatorDirective(_el_4, parentView.injectorGet(import34.DomService, viewData.parentIndex));
     project(_el_4, 1);
     var _anchor_5 = ngAnchor.clone(false);
     _appEl_5 = new ViewContainer(5, 3, this, _anchor_5);
     TemplateRef _TemplateRef_5_6 = new TemplateRef(_appEl_5, viewFactory_MaterialAutoSuggestInputComponent2);
-    _CachingDeferredContentDirective_5_7 = new import17.CachingDeferredContentDirective(_appEl_5, _TemplateRef_5_6, _DeferredContentAware_3_7);
+    _CachingDeferredContentDirective_5_7 = new import17.CachingDeferredContentDirective(_appEl_5, _TemplateRef_5_6, _MaterialPopupComponent_3_6);
     _el_6 = doc.createElement('div');
     createAttr(_el_6, 'footer', '');
     createAttr(_el_6, 'keyboardOnlyFocusIndicator', '');
     createAttr(_el_6, 'tabIndex', '-1');
     addShimC(_el_6);
-    _KeyboardOnlyFocusIndicatorDirective_6_4 = new import16.KeyboardOnlyFocusIndicatorDirective(_el_6, parentView.injectorGet(import32.DomService, viewData.parentIndex));
+    _KeyboardOnlyFocusIndicatorDirective_6_4 = new import16.KeyboardOnlyFocusIndicatorDirective(_el_6, parentView.injectorGet(import34.DomService, viewData.parentIndex));
     project(_el_6, 2);
     _compView_3.create(_MaterialPopupComponent_3_6, [
       [_el_4],
@@ -322,19 +320,19 @@ class ViewMaterialAutoSuggestInputComponent0 extends AppView<import3.MaterialAut
     if ((identical(token, import8.NgModel) && ((0 <= nodeIndex) && (nodeIndex <= 2)))) {
       return _NgModel_0_6;
     }
-    if ((identical(token, import33.NgControl) && ((0 <= nodeIndex) && (nodeIndex <= 2)))) {
+    if ((identical(token, import35.NgControl) && ((0 <= nodeIndex) && (nodeIndex <= 2)))) {
       return _NgControl_0_7;
     }
-    if (((identical(token, import9.MaterialInputComponent) || identical(token, import34.Focusable)) && ((0 <= nodeIndex) && (nodeIndex <= 2)))) {
+    if (((identical(token, import9.MaterialInputComponent) || identical(token, import36.Focusable)) && ((0 <= nodeIndex) && (nodeIndex <= 2)))) {
       return _MaterialInputComponent_0_8;
     }
-    if ((identical(token, import35.BaseMaterialInput) && ((0 <= nodeIndex) && (nodeIndex <= 2)))) {
+    if ((identical(token, import37.BaseMaterialInput) && ((0 <= nodeIndex) && (nodeIndex <= 2)))) {
       return _BaseMaterialInput_0_9;
     }
     if ((identical(token, import10.MaterialInputDefaultValueAccessor) && ((0 <= nodeIndex) && (nodeIndex <= 2)))) {
       return _MaterialInputDefaultValueAccessor_0_10;
     }
-    if ((identical(token, import36.ReferenceDirective) && ((0 <= nodeIndex) && (nodeIndex <= 2)))) {
+    if ((identical(token, import38.ReferenceDirective) && ((0 <= nodeIndex) && (nodeIndex <= 2)))) {
       return _ReferenceDirective_0_11;
     }
     if ((identical(token, import11.PopupSourceDirective) && ((0 <= nodeIndex) && (nodeIndex <= 2)))) {
@@ -346,16 +344,13 @@ class ViewMaterialAutoSuggestInputComponent0 extends AppView<import3.MaterialAut
     if ((identical(token, import16.KeyboardOnlyFocusIndicatorDirective) && (6 == nodeIndex))) {
       return _KeyboardOnlyFocusIndicatorDirective_6_4;
     }
-    if (((identical(token, import15.MaterialPopupComponent) || identical(token, import37.DropdownHandle)) && ((3 <= nodeIndex) && (nodeIndex <= 6)))) {
+    if ((((identical(token, import15.MaterialPopupComponent) || identical(token, import39.DeferredContentAware)) || identical(token, import40.DropdownHandle)) && ((3 <= nodeIndex) && (nodeIndex <= 6)))) {
       return _MaterialPopupComponent_3_6;
-    }
-    if ((identical(token, import38.DeferredContentAware) && ((3 <= nodeIndex) && (nodeIndex <= 6)))) {
-      return _DeferredContentAware_3_7;
     }
     if ((identical(token, import25.PopupHierarchy) && ((3 <= nodeIndex) && (nodeIndex <= 6)))) {
       return _PopupHierarchy_3_9;
     }
-    if ((identical(token, import39.PopupRef) && ((3 <= nodeIndex) && (nodeIndex <= 6)))) {
+    if ((identical(token, import41.PopupRef) && ((3 <= nodeIndex) && (nodeIndex <= 6)))) {
       return _PopupRef_3_10;
     }
     return notFoundResult;
@@ -484,13 +479,17 @@ class ViewMaterialAutoSuggestInputComponent0 extends AppView<import3.MaterialAut
     }
     _NgIf_2_7.ngIf = _ctx.showClearIcon;
     if (firstCheck) {
-      _MaterialPopupComponent_3_6.enforceSpaceConstraints = true;
-      _MaterialPopupComponent_3_6.trackLayoutChanges = true;
+      (_MaterialPopupComponent_3_6.trackLayoutChanges = true);
     }
     final currVal_25 = _ctx.autoDismiss;
     if (!identical(_expr_25, currVal_25)) {
       _MaterialPopupComponent_3_6.autoDismiss = currVal_25;
       _expr_25 = currVal_25;
+    }
+    final currVal_26 = _ctx.enforceSpaceConstraints;
+    if (!identical(_expr_26, currVal_26)) {
+      _MaterialPopupComponent_3_6.enforceSpaceConstraints = currVal_26;
+      _expr_26 = currVal_26;
     }
     final currVal_27 = _ctx.popupMatchInputWidth;
     if (!identical(_expr_27, currVal_27)) {
@@ -592,13 +591,13 @@ AppView<import3.MaterialAutoSuggestInputComponent> viewFactory_MaterialAutoSugge
 
 class _ViewMaterialAutoSuggestInputComponent1 extends AppView<import3.MaterialAutoSuggestInputComponent> {
   import5.Element _el_0;
-  import40.ViewMaterialIconComponent0 _compView_0;
+  import42.ViewMaterialIconComponent0 _compView_0;
   ViewContainer _appEl_0;
-  import41.ButtonDirectiveNgCd _ButtonDirective_0_6;
+  import43.ButtonDirectiveNgCd _ButtonDirective_0_6;
   import16.KeyboardOnlyFocusIndicatorDirective _KeyboardOnlyFocusIndicatorDirective_0_7;
-  import42.MaterialIconComponent _MaterialIconComponent_0_8;
-  import43.MaterialTooltipDirective _MaterialTooltipDirective_0_9;
-  import44.StopPropagationDirective _StopPropagationDirective_0_10;
+  import44.MaterialIconComponent _MaterialIconComponent_0_8;
+  import45.MaterialTooltipDirective _MaterialTooltipDirective_0_9;
+  import46.StopPropagationDirective _StopPropagationDirective_0_10;
   dynamic __TooltipController_0_11;
   String _expr_1;
   bool _expr_2;
@@ -607,14 +606,14 @@ class _ViewMaterialAutoSuggestInputComponent1 extends AppView<import3.MaterialAu
   }
   dynamic get _TooltipController_0_11 {
     if ((this.__TooltipController_0_11 == null)) {
-      (__TooltipController_0_11 = import45.createTooltipController(this.parentView.parentView.injectorGet(import46.TooltipController, this.parentView.viewData.parentIndex, null), this.parentView.parentView.injectorGet(import47.Disposer, this.parentView.viewData.parentIndex, null)));
+      (__TooltipController_0_11 = import47.createTooltipController(this.parentView.parentView.injectorGet(import48.TooltipController, this.parentView.viewData.parentIndex, null), this.parentView.parentView.injectorGet(import49.Disposer, this.parentView.viewData.parentIndex, null)));
     }
     return this.__TooltipController_0_11;
   }
 
   @override
   ComponentRef<import3.MaterialAutoSuggestInputComponent> build() {
-    _compView_0 = new import40.ViewMaterialIconComponent0(this, 0);
+    _compView_0 = new import42.ViewMaterialIconComponent0(this, 0);
     _el_0 = _compView_0.rootEl;
     createAttr(_el_0, 'buttonDecorator', '');
     _el_0.className = 'clear-icon';
@@ -624,11 +623,11 @@ class _ViewMaterialAutoSuggestInputComponent1 extends AppView<import3.MaterialAu
     createAttr(_el_0, 'stopPropagation', '');
     addShimC(_el_0);
     _appEl_0 = new ViewContainer(0, null, this, _el_0);
-    _ButtonDirective_0_6 = new import41.ButtonDirectiveNgCd(new import48.ButtonDirective(_el_0));
-    _KeyboardOnlyFocusIndicatorDirective_0_7 = new import16.KeyboardOnlyFocusIndicatorDirective(_el_0, parentView.parentView.injectorGet(import32.DomService, parentView.viewData.parentIndex));
-    _MaterialIconComponent_0_8 = new import42.MaterialIconComponent(_el_0);
-    _MaterialTooltipDirective_0_9 = new import43.MaterialTooltipDirective(parentView.parentView.injectorGet(import23.DomPopupSourceFactory, parentView.viewData.parentIndex), _appEl_0, _el_0, _appEl_0, ref, parentView.parentView.injectorGet(import5.Window, parentView.viewData.parentIndex));
-    _StopPropagationDirective_0_10 = new import44.StopPropagationDirective(_el_0);
+    _ButtonDirective_0_6 = new import43.ButtonDirectiveNgCd(new import50.ButtonDirective(_el_0));
+    _KeyboardOnlyFocusIndicatorDirective_0_7 = new import16.KeyboardOnlyFocusIndicatorDirective(_el_0, parentView.parentView.injectorGet(import34.DomService, parentView.viewData.parentIndex));
+    _MaterialIconComponent_0_8 = new import44.MaterialIconComponent(_el_0);
+    _MaterialTooltipDirective_0_9 = new import45.MaterialTooltipDirective(parentView.parentView.injectorGet(import23.DomPopupSourceFactory, parentView.viewData.parentIndex), _appEl_0, _el_0, _appEl_0, ref, parentView.parentView.injectorGet(import5.Window, parentView.viewData.parentIndex));
+    _StopPropagationDirective_0_10 = new import46.StopPropagationDirective(_el_0);
     _compView_0.create(_MaterialIconComponent_0_8, []);
     _el_0.addEventListener('click', eventHandler1(_handle_click_0_1));
     _el_0.addEventListener('keypress', eventHandler1(_ButtonDirective_0_6.instance.handleKeyPress));
@@ -642,13 +641,13 @@ class _ViewMaterialAutoSuggestInputComponent1 extends AppView<import3.MaterialAu
 
   @override
   dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
-    if ((identical(token, import48.ButtonDirective) && (0 == nodeIndex))) {
+    if ((identical(token, import50.ButtonDirective) && (0 == nodeIndex))) {
       return _ButtonDirective_0_6.instance;
     }
     if ((identical(token, import16.KeyboardOnlyFocusIndicatorDirective) && (0 == nodeIndex))) {
       return _KeyboardOnlyFocusIndicatorDirective_0_7;
     }
-    if ((identical(token, import46.TooltipController) && (0 == nodeIndex))) {
+    if ((identical(token, import48.TooltipController) && (0 == nodeIndex))) {
       return _TooltipController_0_11;
     }
     return notFoundResult;
@@ -760,8 +759,8 @@ AppView<import3.MaterialAutoSuggestInputComponent> viewFactory_MaterialAutoSugge
 class _ViewMaterialAutoSuggestInputComponent3 extends AppView<import3.MaterialAutoSuggestInputComponent> {
   import5.DivElement _el_0;
   import5.Element _el_1;
-  import49.ViewMaterialSpinnerComponent0 _compView_1;
-  import50.MaterialSpinnerComponent _MaterialSpinnerComponent_1_4;
+  import51.ViewMaterialSpinnerComponent0 _compView_1;
+  import52.MaterialSpinnerComponent _MaterialSpinnerComponent_1_4;
   _ViewMaterialAutoSuggestInputComponent3(AppView<dynamic> parentView, num parentIndex) : super(import19.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMaterialAutoSuggestInputComponent0._renderType;
   }
@@ -771,11 +770,11 @@ class _ViewMaterialAutoSuggestInputComponent3 extends AppView<import3.MaterialAu
     _el_0 = doc.createElement('div');
     _el_0.className = 'loading';
     addShimC(_el_0);
-    _compView_1 = new import49.ViewMaterialSpinnerComponent0(this, 1);
+    _compView_1 = new import51.ViewMaterialSpinnerComponent0(this, 1);
     _el_1 = _compView_1.rootEl;
     _el_0.append(_el_1);
     addShimC(_el_1);
-    _MaterialSpinnerComponent_1_4 = new import50.MaterialSpinnerComponent();
+    _MaterialSpinnerComponent_1_4 = new import52.MaterialSpinnerComponent();
     _compView_1.create(_MaterialSpinnerComponent_1_4, []);
     init0(_el_0);
     return null;
@@ -818,7 +817,7 @@ class _ViewMaterialAutoSuggestInputComponent4 extends AppView<import3.MaterialAu
   @override
   void detectChangesInternal() {
     final import3.MaterialAutoSuggestInputComponent _ctx = ctx;
-    final currVal_0 = import21.interpolate0(_ctx.emptyPlaceholder);
+    final currVal_0 = (_ctx.emptyPlaceholder ?? '');
     if (!identical(_expr_0, currVal_0)) {
       _text_1.text = currVal_0;
       _expr_0 = currVal_0;
@@ -832,11 +831,11 @@ AppView<import3.MaterialAutoSuggestInputComponent> viewFactory_MaterialAutoSugge
 
 class _ViewMaterialAutoSuggestInputComponent5 extends AppView<import3.MaterialAutoSuggestInputComponent> {
   import5.Element _el_0;
-  import51.ViewMaterialListComponent0 _compView_0;
+  import53.ViewMaterialListComponent0 _compView_0;
   import16.KeyboardOnlyFocusIndicatorDirective _KeyboardOnlyFocusIndicatorDirective_0_4;
-  import52.MaterialListComponent _MaterialListComponent_0_5;
+  import54.MaterialListComponent _MaterialListComponent_0_5;
   ViewContainer _appEl_1;
-  import53.NgFor _NgFor_1_7;
+  import55.NgFor _NgFor_1_7;
   var _expr_0;
   var _expr_3;
   var _expr_4;
@@ -845,19 +844,19 @@ class _ViewMaterialAutoSuggestInputComponent5 extends AppView<import3.MaterialAu
   }
   @override
   ComponentRef<import3.MaterialAutoSuggestInputComponent> build() {
-    _compView_0 = new import51.ViewMaterialListComponent0(this, 0);
+    _compView_0 = new import53.ViewMaterialListComponent0(this, 0);
     _el_0 = _compView_0.rootEl;
     _el_0.className = 'suggestion-list';
     createAttr(_el_0, 'keyboardOnlyFocusIndicator', '');
     createAttr(_el_0, 'role', 'listbox');
     createAttr(_el_0, 'tabIndex', '-1');
     addShimC(_el_0);
-    _KeyboardOnlyFocusIndicatorDirective_0_4 = new import16.KeyboardOnlyFocusIndicatorDirective(_el_0, parentView.parentView.parentView.injectorGet(import32.DomService, parentView.parentView.viewData.parentIndex));
-    _MaterialListComponent_0_5 = new import52.MaterialListComponent();
+    _KeyboardOnlyFocusIndicatorDirective_0_4 = new import16.KeyboardOnlyFocusIndicatorDirective(_el_0, parentView.parentView.parentView.injectorGet(import34.DomService, parentView.parentView.viewData.parentIndex));
+    _MaterialListComponent_0_5 = new import54.MaterialListComponent();
     var _anchor_1 = ngAnchor.clone(false);
     _appEl_1 = new ViewContainer(1, 0, this, _anchor_1);
     TemplateRef _TemplateRef_1_6 = new TemplateRef(_appEl_1, viewFactory_MaterialAutoSuggestInputComponent6);
-    _NgFor_1_7 = new import53.NgFor(_appEl_1, _TemplateRef_1_6);
+    _NgFor_1_7 = new import55.NgFor(_appEl_1, _TemplateRef_1_6);
     _compView_0.create(_MaterialListComponent_0_5, [
       [_appEl_1]
     ]);
@@ -875,7 +874,7 @@ class _ViewMaterialAutoSuggestInputComponent5 extends AppView<import3.MaterialAu
     if ((identical(token, import16.KeyboardOnlyFocusIndicatorDirective) && ((0 <= nodeIndex) && (nodeIndex <= 1)))) {
       return _KeyboardOnlyFocusIndicatorDirective_0_4;
     }
-    if ((identical(token, import52.MaterialListComponent) && ((0 <= nodeIndex) && (nodeIndex <= 1)))) {
+    if ((identical(token, import54.MaterialListComponent) && ((0 <= nodeIndex) && (nodeIndex <= 1)))) {
       return _MaterialListComponent_0_5;
     }
     return notFoundResult;
@@ -949,7 +948,7 @@ class _ViewMaterialAutoSuggestInputComponent6 extends AppView<import3.MaterialAu
   ViewContainer _appEl_3;
   NgIf _NgIf_3_7;
   ViewContainer _appEl_4;
-  import53.NgFor _NgFor_4_7;
+  import55.NgFor _NgFor_4_7;
   var _expr_3;
   _ViewMaterialAutoSuggestInputComponent6(AppView<dynamic> parentView, num parentIndex) : super(import19.ViewType.EMBEDDED, {'\$implicit': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMaterialAutoSuggestInputComponent0._renderType;
@@ -980,7 +979,7 @@ class _ViewMaterialAutoSuggestInputComponent6 extends AppView<import3.MaterialAu
     _el_0.append(_anchor_4);
     _appEl_4 = new ViewContainer(4, 0, this, _anchor_4);
     TemplateRef _TemplateRef_4_6 = new TemplateRef(_appEl_4, viewFactory_MaterialAutoSuggestInputComponent10);
-    _NgFor_4_7 = new import53.NgFor(_appEl_4, _TemplateRef_4_6);
+    _NgFor_4_7 = new import55.NgFor(_appEl_4, _TemplateRef_4_6);
     init0(_el_0);
     return null;
   }
@@ -988,7 +987,7 @@ class _ViewMaterialAutoSuggestInputComponent6 extends AppView<import3.MaterialAu
   @override
   void detectChangesInternal() {
     final import3.MaterialAutoSuggestInputComponent _ctx = ctx;
-    final import54.OptionGroup<dynamic> local_suggestionGroup = locals['\$implicit'];
+    final import56.OptionGroup<dynamic> local_suggestionGroup = locals['\$implicit'];
     _NgIf_1_7.ngIf = (local_suggestionGroup.hasLabel && !_ctx.hasCustomLabelRenderer);
     _NgIf_2_7.ngIf = _ctx.hasCustomLabelRenderer;
     _NgIf_3_7.ngIf = (local_suggestionGroup.isEmpty && local_suggestionGroup.hasEmptyLabel);
@@ -1040,7 +1039,7 @@ class _ViewMaterialAutoSuggestInputComponent7 extends AppView<import3.MaterialAu
 
   @override
   void detectChangesInternal() {
-    final import54.OptionGroup<dynamic> local_suggestionGroup = parentView.locals['\$implicit'];
+    final import56.OptionGroup<dynamic> local_suggestionGroup = parentView.locals['\$implicit'];
     final currVal_0 = import21.interpolate0(local_suggestionGroup.uiDisplayName);
     if (!identical(_expr_0, currVal_0)) {
       _text_1.text = currVal_0;
@@ -1059,9 +1058,9 @@ AppView<import3.MaterialAutoSuggestInputComponent> viewFactory_MaterialAutoSugge
 
 class _ViewMaterialAutoSuggestInputComponent8 extends AppView<import3.MaterialAutoSuggestInputComponent> {
   import5.Element _el_0;
-  import55.ViewDynamicComponent0 _compView_0;
+  import57.ViewDynamicComponent0 _compView_0;
   ViewContainer _appEl_0;
-  import56.DynamicComponent _DynamicComponent_0_6;
+  import58.DynamicComponent _DynamicComponent_0_6;
   var _expr_0;
   var _expr_1;
   var _expr_2;
@@ -1070,11 +1069,11 @@ class _ViewMaterialAutoSuggestInputComponent8 extends AppView<import3.MaterialAu
   }
   @override
   ComponentRef<import3.MaterialAutoSuggestInputComponent> build() {
-    _compView_0 = new import55.ViewDynamicComponent0(this, 0);
+    _compView_0 = new import57.ViewDynamicComponent0(this, 0);
     _el_0 = _compView_0.rootEl;
     addShimC(_el_0);
     _appEl_0 = new ViewContainer(0, null, this, _el_0);
-    _DynamicComponent_0_6 = new import56.DynamicComponent(parentView.parentView.parentView.parentView.parentView.injectorGet(import57.SlowComponentLoader, parentView.parentView.parentView.parentView.viewData.parentIndex), _compView_0.ref, _appEl_0);
+    _DynamicComponent_0_6 = new import58.DynamicComponent(parentView.parentView.parentView.parentView.parentView.injectorGet(import59.SlowComponentLoader, parentView.parentView.parentView.parentView.viewData.parentIndex), _compView_0.ref, _appEl_0);
     _compView_0.create(_DynamicComponent_0_6, []);
     _el_0.addEventListener('mouseenter', eventHandler1(_handle_mouseenter_0_0));
     init0(_appEl_0);
@@ -1083,7 +1082,7 @@ class _ViewMaterialAutoSuggestInputComponent8 extends AppView<import3.MaterialAu
 
   @override
   dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
-    if ((identical(token, import56.DynamicComponent) && (0 == nodeIndex))) {
+    if ((identical(token, import58.DynamicComponent) && (0 == nodeIndex))) {
       return _DynamicComponent_0_6;
     }
     return notFoundResult;
@@ -1093,7 +1092,7 @@ class _ViewMaterialAutoSuggestInputComponent8 extends AppView<import3.MaterialAu
   void detectChangesInternal() {
     final import3.MaterialAutoSuggestInputComponent _ctx = ctx;
     bool changed = false;
-    final import54.OptionGroup<dynamic> local_suggestionGroup = parentView.locals['\$implicit'];
+    final import56.OptionGroup<dynamic> local_suggestionGroup = parentView.locals['\$implicit'];
     changed = false;
     final currVal_0 = ((_ctx.labelRenderer != null) ? _ctx.labelRenderer(local_suggestionGroup) : null);
     if (!identical(_expr_0, currVal_0)) {
@@ -1138,21 +1137,21 @@ AppView<import3.MaterialAutoSuggestInputComponent> viewFactory_MaterialAutoSugge
 
 class _ViewMaterialAutoSuggestInputComponent9 extends AppView<import3.MaterialAutoSuggestInputComponent> {
   import5.Element _el_0;
-  import58.ViewMaterialSelectDropdownItemComponent0 _compView_0;
+  import60.ViewMaterialSelectDropdownItemComponent0 _compView_0;
   import16.KeyboardOnlyFocusIndicatorDirective _KeyboardOnlyFocusIndicatorDirective_0_4;
-  import59.MaterialSelectDropdownItemComponent _MaterialSelectDropdownItemComponent_0_5;
+  import61.MaterialSelectDropdownItemComponent _MaterialSelectDropdownItemComponent_0_5;
   var _expr_1;
   _ViewMaterialAutoSuggestInputComponent9(AppView<dynamic> parentView, num parentIndex) : super(import19.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMaterialAutoSuggestInputComponent0._renderType;
   }
   @override
   ComponentRef<import3.MaterialAutoSuggestInputComponent> build() {
-    _compView_0 = new import58.ViewMaterialSelectDropdownItemComponent0(this, 0);
+    _compView_0 = new import60.ViewMaterialSelectDropdownItemComponent0(this, 0);
     _el_0 = _compView_0.rootEl;
     createAttr(_el_0, 'keyboardOnlyFocusIndicator', '');
     addShimC(_el_0);
-    _KeyboardOnlyFocusIndicatorDirective_0_4 = new import16.KeyboardOnlyFocusIndicatorDirective(_el_0, parentView.parentView.parentView.parentView.parentView.injectorGet(import32.DomService, parentView.parentView.parentView.parentView.viewData.parentIndex));
-    _MaterialSelectDropdownItemComponent_0_5 = new import59.MaterialSelectDropdownItemComponent(_el_0, parentView.parentView.parentView.parentView.parentView.injectorGet(import32.DomService, parentView.parentView.parentView.parentView.viewData.parentIndex), null, (parentView.parentView.parentView.parentView as ViewMaterialAutoSuggestInputComponent0)._MaterialPopupComponent_3_6, parentView.parentView.parentView.parentView.parentView.injectorGet(import60.ActivationHandler, parentView.parentView.parentView.parentView.viewData.parentIndex, null), _compView_0.ref);
+    _KeyboardOnlyFocusIndicatorDirective_0_4 = new import16.KeyboardOnlyFocusIndicatorDirective(_el_0, parentView.parentView.parentView.parentView.parentView.injectorGet(import34.DomService, parentView.parentView.parentView.parentView.viewData.parentIndex));
+    _MaterialSelectDropdownItemComponent_0_5 = new import61.MaterialSelectDropdownItemComponent(_el_0, parentView.parentView.parentView.parentView.parentView.injectorGet(import34.DomService, parentView.parentView.parentView.parentView.viewData.parentIndex), null, (parentView.parentView.parentView.parentView as ViewMaterialAutoSuggestInputComponent0)._MaterialPopupComponent_3_6, parentView.parentView.parentView.parentView.parentView.injectorGet(import62.ActivationHandler, parentView.parentView.parentView.parentView.viewData.parentIndex, null), _compView_0.ref);
     _compView_0.create(_MaterialSelectDropdownItemComponent_0_5, [const []]);
     _el_0.addEventListener('keyup', eventHandler0(_KeyboardOnlyFocusIndicatorDirective_0_4.resetOutline));
     _el_0.addEventListener('blur', eventHandler0(_KeyboardOnlyFocusIndicatorDirective_0_4.resetOutline));
@@ -1167,7 +1166,7 @@ class _ViewMaterialAutoSuggestInputComponent9 extends AppView<import3.MaterialAu
     if ((identical(token, import16.KeyboardOnlyFocusIndicatorDirective) && (0 == nodeIndex))) {
       return _KeyboardOnlyFocusIndicatorDirective_0_4;
     }
-    if ((((identical(token, import59.MaterialSelectDropdownItemComponent) || identical(token, import61.SelectionItem)) || identical(token, import62.HasRenderer)) && (0 == nodeIndex))) {
+    if ((((identical(token, import61.MaterialSelectDropdownItemComponent) || identical(token, import63.SelectionItem)) || identical(token, import64.HasRenderer)) && (0 == nodeIndex))) {
       return _MaterialSelectDropdownItemComponent_0_5;
     }
     return notFoundResult;
@@ -1176,7 +1175,7 @@ class _ViewMaterialAutoSuggestInputComponent9 extends AppView<import3.MaterialAu
   @override
   void detectChangesInternal() {
     bool firstCheck = (this.cdState == 0);
-    final import54.OptionGroup<dynamic> local_suggestionGroup = parentView.locals['\$implicit'];
+    final import56.OptionGroup<dynamic> local_suggestionGroup = parentView.locals['\$implicit'];
     if (firstCheck) {
       (_MaterialSelectDropdownItemComponent_0_5.disabled = true);
     }
@@ -1202,9 +1201,9 @@ AppView<import3.MaterialAutoSuggestInputComponent> viewFactory_MaterialAutoSugge
 
 class _ViewMaterialAutoSuggestInputComponent10 extends AppView<import3.MaterialAutoSuggestInputComponent> {
   import5.Element _el_0;
-  import58.ViewMaterialSelectDropdownItemComponent0 _compView_0;
+  import60.ViewMaterialSelectDropdownItemComponent0 _compView_0;
   import16.KeyboardOnlyFocusIndicatorDirective _KeyboardOnlyFocusIndicatorDirective_0_4;
-  import59.MaterialSelectDropdownItemComponent _MaterialSelectDropdownItemComponent_0_5;
+  import61.MaterialSelectDropdownItemComponent _MaterialSelectDropdownItemComponent_0_5;
   var _expr_0;
   bool _expr_1;
   bool _expr_2;
@@ -1221,13 +1220,13 @@ class _ViewMaterialAutoSuggestInputComponent10 extends AppView<import3.MaterialA
   }
   @override
   ComponentRef<import3.MaterialAutoSuggestInputComponent> build() {
-    _compView_0 = new import58.ViewMaterialSelectDropdownItemComponent0(this, 0);
+    _compView_0 = new import60.ViewMaterialSelectDropdownItemComponent0(this, 0);
     _el_0 = _compView_0.rootEl;
     _el_0.className = 'list-item item';
     createAttr(_el_0, 'keyboardOnlyFocusIndicator', '');
     addShimC(_el_0);
-    _KeyboardOnlyFocusIndicatorDirective_0_4 = new import16.KeyboardOnlyFocusIndicatorDirective(_el_0, parentView.parentView.parentView.parentView.parentView.injectorGet(import32.DomService, parentView.parentView.parentView.parentView.viewData.parentIndex));
-    _MaterialSelectDropdownItemComponent_0_5 = new import59.MaterialSelectDropdownItemComponent(_el_0, parentView.parentView.parentView.parentView.parentView.injectorGet(import32.DomService, parentView.parentView.parentView.parentView.viewData.parentIndex), null, (parentView.parentView.parentView.parentView as ViewMaterialAutoSuggestInputComponent0)._MaterialPopupComponent_3_6, parentView.parentView.parentView.parentView.parentView.injectorGet(import60.ActivationHandler, parentView.parentView.parentView.parentView.viewData.parentIndex, null), _compView_0.ref);
+    _KeyboardOnlyFocusIndicatorDirective_0_4 = new import16.KeyboardOnlyFocusIndicatorDirective(_el_0, parentView.parentView.parentView.parentView.parentView.injectorGet(import34.DomService, parentView.parentView.parentView.parentView.viewData.parentIndex));
+    _MaterialSelectDropdownItemComponent_0_5 = new import61.MaterialSelectDropdownItemComponent(_el_0, parentView.parentView.parentView.parentView.parentView.injectorGet(import34.DomService, parentView.parentView.parentView.parentView.viewData.parentIndex), null, (parentView.parentView.parentView.parentView as ViewMaterialAutoSuggestInputComponent0)._MaterialPopupComponent_3_6, parentView.parentView.parentView.parentView.parentView.injectorGet(import62.ActivationHandler, parentView.parentView.parentView.parentView.viewData.parentIndex, null), _compView_0.ref);
     _compView_0.create(_MaterialSelectDropdownItemComponent_0_5, [const []]);
     _el_0.addEventListener('mouseenter', eventHandler1(_handle_mouseenter_0_0));
     _el_0.addEventListener('keyup', eventHandler0(_KeyboardOnlyFocusIndicatorDirective_0_4.resetOutline));
@@ -1243,7 +1242,7 @@ class _ViewMaterialAutoSuggestInputComponent10 extends AppView<import3.MaterialA
     if ((identical(token, import16.KeyboardOnlyFocusIndicatorDirective) && (0 == nodeIndex))) {
       return _KeyboardOnlyFocusIndicatorDirective_0_4;
     }
-    if ((((identical(token, import59.MaterialSelectDropdownItemComponent) || identical(token, import61.SelectionItem)) || identical(token, import62.HasRenderer)) && (0 == nodeIndex))) {
+    if ((((identical(token, import61.MaterialSelectDropdownItemComponent) || identical(token, import63.SelectionItem)) || identical(token, import64.HasRenderer)) && (0 == nodeIndex))) {
       return _MaterialSelectDropdownItemComponent_0_5;
     }
     return notFoundResult;
@@ -1340,7 +1339,7 @@ class _ViewMaterialAutoSuggestInputComponentHost0 extends AppView<dynamic> {
   ComponentRef build() {
     _compView_0 = new ViewMaterialAutoSuggestInputComponent0(this, 0);
     rootEl = _compView_0.rootEl;
-    _MaterialAutoSuggestInputComponent_0_4 = new import3.MaterialAutoSuggestInputComponent(null, this.injectorGet(import63.IdGenerator, viewData.parentIndex, null), this.injectorGet(import30.PopupSizeProvider, viewData.parentIndex, null));
+    _MaterialAutoSuggestInputComponent_0_4 = new import3.MaterialAutoSuggestInputComponent(null, this.injectorGet(import65.IdGenerator, viewData.parentIndex, null), this.injectorGet(import32.PopupSizeProvider, viewData.parentIndex, null));
     _compView_0.create(_MaterialAutoSuggestInputComponent_0_4, projectableNodes);
     init0(rootEl);
     return new ComponentRef<import3.MaterialAutoSuggestInputComponent>(0, this, rootEl, _MaterialAutoSuggestInputComponent_0_4);
@@ -1348,7 +1347,7 @@ class _ViewMaterialAutoSuggestInputComponentHost0 extends AppView<dynamic> {
 
   @override
   dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
-    if ((((((((((identical(token, import3.MaterialAutoSuggestInputComponent) || identical(token, import62.HasRenderer)) || identical(token, import61.SelectionContainer)) || identical(token, import64.HighlightProvider)) || identical(token, import37.DropdownHandle)) || identical(token, import62.HasComponentRenderer)) || identical(token, import65.HasFactoryRenderer)) || identical(token, import34.Focusable)) || identical(token, import30.PopupSizeProvider)) && (0 == nodeIndex))) {
+    if ((((((((((identical(token, import3.MaterialAutoSuggestInputComponent) || identical(token, import64.HasRenderer)) || identical(token, import63.SelectionContainer)) || identical(token, import66.HighlightProvider)) || identical(token, import40.DropdownHandle)) || identical(token, import64.HasComponentRenderer)) || identical(token, import67.HasFactoryRenderer)) || identical(token, import36.Focusable)) || identical(token, import32.PopupSizeProvider)) && (0 == nodeIndex))) {
       return _MaterialAutoSuggestInputComponent_0_4;
     }
     return notFoundResult;
@@ -1382,6 +1381,8 @@ void initReflector() {
     return;
   }
   _visited = true;
+
+  _ngRef.registerComponent(MaterialAutoSuggestInputComponent, MaterialAutoSuggestInputComponentNgFactory);
   _ref0.initReflector();
   _ref1.initReflector();
   _ref2.initReflector();
@@ -1416,8 +1417,4 @@ void initReflector() {
   _ref31.initReflector();
   _ref32.initReflector();
   _ref33.initReflector();
-  _ngRef.registerComponent(
-    MaterialAutoSuggestInputComponent,
-    MaterialAutoSuggestInputComponentNgFactory,
-  );
 }

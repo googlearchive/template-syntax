@@ -10,7 +10,6 @@ export 'feature_detector.dart';
 import 'dart:html';
 import 'dart:js' as js;
 import 'package:js/js_util.dart' as js_util;
-// No initReflector() linking required.
 
-// No initReflector() needed.
+// No initReflector() linking required.
 void initReflector() {}

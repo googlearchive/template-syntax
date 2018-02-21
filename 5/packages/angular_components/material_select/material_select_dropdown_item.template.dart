@@ -18,7 +18,6 @@ import 'package:angular_components/mixins/material_dropdown_base.dart';
 import 'package:angular_components/model/selection/selection_container.dart';
 import 'package:angular_components/model/ui/has_renderer.dart';
 import 'package:angular_components/utils/browser/dom_service/dom_service.dart';
-// Required for initReflector().
 import 'package:angular/src/di/reflector.dart' as _ngRef;
 import 'package:angular/angular.template.dart' as _ref0;
 import 'package:angular_components/dynamic_component/dynamic_component.template.dart' as _ref1;
@@ -30,7 +29,6 @@ import 'package:angular_components/mixins/material_dropdown_base.template.dart' 
 import 'package:angular_components/model/selection/selection_container.template.dart' as _ref7;
 import 'package:angular_components/model/ui/has_renderer.template.dart' as _ref8;
 import 'package:angular_components/utils/browser/dom_service/dom_service.template.dart' as _ref9;
-
 import 'package:angular_components/material_select/material_select_dropdown_item.scss.css.shim.dart' as import0;
 import 'package:angular/src/core/linker/app_view.dart';
 import 'material_select_dropdown_item.dart' as import2;
@@ -583,6 +581,8 @@ void initReflector() {
     return;
   }
   _visited = true;
+
+  _ngRef.registerComponent(MaterialSelectDropdownItemComponent, MaterialSelectDropdownItemComponentNgFactory);
   _ref0.initReflector();
   _ref1.initReflector();
   _ref2.initReflector();
@@ -593,8 +593,4 @@ void initReflector() {
   _ref7.initReflector();
   _ref8.initReflector();
   _ref9.initReflector();
-  _ngRef.registerComponent(
-    MaterialSelectDropdownItemComponent,
-    MaterialSelectDropdownItemComponentNgFactory,
-  );
 }

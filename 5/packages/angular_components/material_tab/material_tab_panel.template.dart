@@ -12,13 +12,11 @@ import 'package:angular/angular.dart';
 import 'fixed_material_tab_strip.dart';
 import 'material_tab.dart';
 import 'tab_change_event.dart';
-// Required for initReflector().
 import 'package:angular/src/di/reflector.dart' as _ngRef;
 import 'fixed_material_tab_strip.template.dart' as _ref0;
 import 'material_tab.template.dart' as _ref1;
 import 'package:angular/angular.template.dart' as _ref2;
 import 'tab_change_event.template.dart' as _ref3;
-
 import 'package:angular_components/material_tab/material_tab_panel.scss.css.shim.dart' as import0;
 import 'package:angular/src/core/linker/app_view.dart';
 import 'material_tab_panel.dart' as import2;
@@ -169,12 +167,10 @@ void initReflector() {
     return;
   }
   _visited = true;
+
+  _ngRef.registerComponent(MaterialTabPanelComponent, MaterialTabPanelComponentNgFactory);
   _ref0.initReflector();
   _ref1.initReflector();
   _ref2.initReflector();
   _ref3.initReflector();
-  _ngRef.registerComponent(
-    MaterialTabPanelComponent,
-    MaterialTabPanelComponentNgFactory,
-  );
 }

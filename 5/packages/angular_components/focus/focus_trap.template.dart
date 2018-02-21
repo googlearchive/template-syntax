@@ -12,13 +12,11 @@ import 'package:angular/angular.dart';
 import 'package:angular_components/focus/focus.dart';
 import 'package:angular_components/utils/browser/dom_iterator/dom_iterator.dart';
 import 'package:angular_components/utils/disposer/disposer.dart';
-// Required for initReflector().
 import 'package:angular/src/di/reflector.dart' as _ngRef;
 import 'package:angular/angular.template.dart' as _ref0;
 import 'package:angular_components/focus/focus.template.dart' as _ref1;
 import 'package:angular_components/utils/browser/dom_iterator/dom_iterator.template.dart' as _ref2;
 import 'package:angular_components/utils/disposer/disposer.template.dart' as _ref3;
-
 import 'package:angular_components/focus/focus_trap.scss.css.shim.dart' as import0;
 import 'package:angular/src/core/linker/app_view.dart';
 import 'focus_trap.dart' as import2;
@@ -133,12 +131,10 @@ void initReflector() {
     return;
   }
   _visited = true;
+
+  _ngRef.registerComponent(FocusTrapComponent, FocusTrapComponentNgFactory);
   _ref0.initReflector();
   _ref1.initReflector();
   _ref2.initReflector();
   _ref3.initReflector();
-  _ngRef.registerComponent(
-    FocusTrapComponent,
-    FocusTrapComponentNgFactory,
-  );
 }

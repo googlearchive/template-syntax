@@ -11,11 +11,9 @@ import 'dart:async';
 import 'dart:html';
 import 'package:angular/angular.dart';
 import 'package:angular_components/utils/browser/feature_detector/feature_detector.dart' show supportsAnimationApi;
-// Required for initReflector().
 import 'package:angular/src/di/reflector.dart' as _ngRef;
 import 'package:angular/angular.template.dart' as _ref0;
 import 'package:angular_components/utils/browser/feature_detector/feature_detector.template.dart' as _ref1;
-
 import 'package:angular_components/material_progress/material_progress.scss.css.shim.dart' as import0;
 import 'package:angular/src/core/linker/app_view.dart';
 import 'material_progress.dart' as import2;
@@ -36,10 +34,10 @@ class ViewMaterialProgressComponent0 extends AppView<import2.MaterialProgressCom
   import4.DivElement _el_1;
   import4.DivElement _el_2;
   var _expr_0;
-  var _expr_1;
-  var _expr_2;
-  bool _expr_3;
-  bool _expr_4;
+  bool _expr_1;
+  bool _expr_2;
+  var _expr_3;
+  var _expr_4;
   var _expr_5;
   var _expr_6;
   static RenderComponentType _renderType;
@@ -73,29 +71,29 @@ class ViewMaterialProgressComponent0 extends AppView<import2.MaterialProgressCom
   @override
   void detectChangesInternal() {
     final import2.MaterialProgressComponent _ctx = ctx;
-    final currVal_0 = import8.interpolate0(_ctx.min);
+    final currVal_0 = _ctx.ariaValue;
     if (!identical(_expr_0, currVal_0)) {
-      setAttr(_el_0, 'aria-valuemin', currVal_0?.toString());
+      setAttr(_el_0, 'aria-valuenow', currVal_0?.toString());
       _expr_0 = currVal_0;
     }
-    final currVal_1 = import8.interpolate0(_ctx.max);
+    final currVal_1 = _ctx.indeterminate;
     if (!identical(_expr_1, currVal_1)) {
-      setAttr(_el_0, 'aria-valuemax', currVal_1?.toString());
+      updateClass(_el_0, 'indeterminate', currVal_1);
       _expr_1 = currVal_1;
     }
-    final currVal_2 = _ctx.ariaValue;
+    final currVal_2 = _ctx.useFallbackAnimation;
     if (!identical(_expr_2, currVal_2)) {
-      setAttr(_el_0, 'aria-valuenow', currVal_2?.toString());
+      updateClass(_el_0, 'fallback', currVal_2);
       _expr_2 = currVal_2;
     }
-    final currVal_3 = _ctx.indeterminate;
+    final currVal_3 = import8.interpolate0(_ctx.min);
     if (!identical(_expr_3, currVal_3)) {
-      updateClass(_el_0, 'indeterminate', currVal_3);
+      setAttr(_el_0, 'aria-valuemin', currVal_3?.toString());
       _expr_3 = currVal_3;
     }
-    final currVal_4 = _ctx.useFallbackAnimation;
+    final currVal_4 = import8.interpolate0(_ctx.max);
     if (!identical(_expr_4, currVal_4)) {
-      updateClass(_el_0, 'fallback', currVal_4);
+      setAttr(_el_0, 'aria-valuemax', currVal_4?.toString());
       _expr_4 = currVal_4;
     }
     final currVal_5 = _ctx.secondaryTransform;
@@ -171,10 +169,8 @@ void initReflector() {
     return;
   }
   _visited = true;
+
+  _ngRef.registerComponent(MaterialProgressComponent, MaterialProgressComponentNgFactory);
   _ref0.initReflector();
   _ref1.initReflector();
-  _ngRef.registerComponent(
-    MaterialProgressComponent,
-    MaterialProgressComponentNgFactory,
-  );
 }

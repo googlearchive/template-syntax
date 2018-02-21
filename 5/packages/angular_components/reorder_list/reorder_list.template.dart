@@ -15,14 +15,12 @@ import 'package:quiver/iterables.dart' show range;
 import 'package:angular_components/reorder_list/reorder_events.dart';
 import 'package:angular_components/utils/disposer/disposer.dart';
 import 'package:angular_components/utils/keyboard/keyboard.dart';
-// Required for initReflector().
 import 'package:angular/src/di/reflector.dart' as _ngRef;
 import 'package:angular/angular.template.dart' as _ref0;
 import 'package:angular_components/reorder_list/reorder_events.template.dart' as _ref1;
 import 'package:angular_components/utils/disposer/disposer.template.dart' as _ref2;
 import 'package:angular_components/utils/keyboard/keyboard.template.dart' as _ref3;
 import 'reorder_events.template.dart' as _ref4;
-
 import 'package:angular_components/reorder_list/reorder_list.scss.css.shim.dart' as import0;
 import 'package:angular/src/core/linker/app_view.dart';
 import 'reorder_list.dart' as import2;
@@ -151,13 +149,11 @@ void initReflector() {
     return;
   }
   _visited = true;
+
+  _ngRef.registerComponent(ReorderListComponent, ReorderListComponentNgFactory);
   _ref0.initReflector();
   _ref1.initReflector();
   _ref2.initReflector();
   _ref3.initReflector();
   _ref4.initReflector();
-  _ngRef.registerComponent(
-    ReorderListComponent,
-    ReorderListComponentNgFactory,
-  );
 }

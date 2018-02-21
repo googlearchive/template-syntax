@@ -14,7 +14,6 @@ import 'package:angular/angular.dart';
 import 'package:angular_components/utils/async/async.dart';
 import 'package:angular_components/utils/disposer/disposable_callback.dart';
 import 'package:angular_components/utils/disposer/disposer.dart';
-// Required for initReflector().
 import 'package:angular/angular.template.dart' as _ref0;
 import 'package:angular_components/utils/async/async.template.dart' as _ref1;
 import 'package:angular_components/utils/disposer/disposable_callback.template.dart' as _ref2;
@@ -26,6 +25,7 @@ void initReflector() {
     return;
   }
   _visited = true;
+
   _ref0.initReflector();
   _ref1.initReflector();
   _ref2.initReflector();

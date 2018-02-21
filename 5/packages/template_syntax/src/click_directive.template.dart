@@ -10,7 +10,6 @@ export 'click_directive.dart';
 import 'dart:async';
 import 'dart:html';
 import 'package:angular/angular.dart';
-// Required for initReflector().
 import 'package:angular/angular.template.dart' as _ref0;
 
 var _visited = false;
@@ -19,5 +18,6 @@ void initReflector() {
     return;
   }
   _visited = true;
+
   _ref0.initReflector();
 }

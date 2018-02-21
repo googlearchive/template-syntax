@@ -7,6 +7,7 @@ import 'dart:html';
 
 import 'package:angular/angular.dart';
 import 'package:quiver/core.dart' as qc show Optional;
+import 'package:angular_components/button_decorator/button_decorator.dart';
 import 'package:angular_components/content/deferred_content.dart';
 import 'package:angular_components/focus/focus.dart';
 import 'package:angular_components/focus/focus_activable_item.dart';
@@ -37,6 +38,7 @@ import 'package:angular_components/utils/id_generator/id_generator.dart';
   selector: 'menu-item-groups',
   directives: const [
     AutoFocusDirective,
+    ButtonDirective,
     DeferredContentDirective,
     FocusActivableItemDirective,
     FocusableDirective,
@@ -61,6 +63,8 @@ import 'package:angular_components/utils/id_generator/id_generator.dart';
   changeDetection: ChangeDetectionStrategy.OnPush,
   // TODO(google): Change preserveWhitespace to false to improve codesize.
   preserveWhitespace: true,
+  // TODO(google): Change to `Visibility.local` to reduce code size.
+  visibility: Visibility.all,
 )
 class MenuItemGroupsComponent implements OnInit, OnDestroy {
   final IdGenerator _idGenerator;

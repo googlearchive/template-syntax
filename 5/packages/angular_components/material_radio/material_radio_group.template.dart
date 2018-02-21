@@ -14,7 +14,6 @@ import 'package:angular_components/focus/focus.dart';
 import 'package:angular_components/material_radio/material_radio.dart';
 import 'package:angular_components/model/selection/selection_model.dart';
 import 'package:angular_components/utils/disposer/disposer.dart';
-// Required for initReflector().
 import 'package:angular/src/di/reflector.dart' as _ngRef;
 import 'package:angular/angular.template.dart' as _ref0;
 import 'package:angular_components/focus/focus.template.dart' as _ref1;
@@ -22,7 +21,6 @@ import 'package:angular_components/material_radio/material_radio.template.dart' 
 import 'package:angular_components/model/selection/selection_model.template.dart' as _ref3;
 import 'package:angular_components/utils/disposer/disposer.template.dart' as _ref4;
 import 'package:angular_forms/angular_forms.template.dart' as _ref5;
-
 import 'package:angular_components/material_radio/material_radio_group.scss.css.shim.dart' as import0;
 import 'package:angular/src/core/linker/app_view.dart';
 import 'material_radio_group.dart' as import2;
@@ -32,8 +30,7 @@ import 'package:angular/src/core/change_detection/change_detection.dart';
 import 'dart:html' as import6;
 import 'package:angular/src/core/linker/app_view_utils.dart' as import7;
 import 'package:angular/angular.dart';
-import 'package:angular/src/core/linker/query_list.dart' as import9;
-import 'package:angular/src/core/zone/ng_zone.dart' as import10;
+import 'package:angular/src/core/zone/ng_zone.dart' as import9;
 
 const List<dynamic> styles$MaterialRadioGroupComponent = const [import0.styles];
 
@@ -64,13 +61,14 @@ const List<dynamic> styles$MaterialRadioGroupComponentHost = const [];
 class _ViewMaterialRadioGroupComponentHost0 extends AppView<dynamic> {
   ViewMaterialRadioGroupComponent0 _compView_0;
   import2.MaterialRadioGroupComponent _MaterialRadioGroupComponent_0_4;
-  final import9.QueryList _query_MaterialRadioComponent_0_0 = new import9.QueryList();
+  bool _query_MaterialRadioComponent_0_0_isDirty = true;
   _ViewMaterialRadioGroupComponentHost0(AppView<dynamic> parentView, num parentIndex) : super(import4.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewMaterialRadioGroupComponent0(this, 0);
     rootEl = _compView_0.rootEl;
-    _MaterialRadioGroupComponent_0_4 = new import2.MaterialRadioGroupComponent(this.injectorGet(import10.NgZone, viewData.parentIndex), null);
+    _MaterialRadioGroupComponent_0_4 = new import2.MaterialRadioGroupComponent(this.injectorGet(import9.NgZone, viewData.parentIndex), null);
+    _MaterialRadioGroupComponent_0_4.list = [];
     _compView_0.create(_MaterialRadioGroupComponent_0_4, projectableNodes);
     init0(rootEl);
     return new ComponentRef<import2.MaterialRadioGroupComponent>(0, this, rootEl, _MaterialRadioGroupComponent_0_4);
@@ -87,13 +85,16 @@ class _ViewMaterialRadioGroupComponentHost0 extends AppView<dynamic> {
   @override
   void detectChangesInternal() {
     bool changed = false;
+    bool firstCheck = (this.cdState == 0);
     if (changed) {
       _compView_0.markAsCheckOnce();
     }
-    if (_query_MaterialRadioComponent_0_0.dirty) {
-      _query_MaterialRadioComponent_0_0.reset([]);
-      _MaterialRadioGroupComponent_0_4.list = _query_MaterialRadioComponent_0_0;
-      _query_MaterialRadioComponent_0_0.notifyOnChanges();
+    if (_query_MaterialRadioComponent_0_0_isDirty) {
+      _MaterialRadioGroupComponent_0_4.list = [];
+      _query_MaterialRadioComponent_0_0_isDirty = false;
+    }
+    if (firstCheck) {
+      _MaterialRadioGroupComponent_0_4.ngAfterContentInit();
     }
     _compView_0.detectChanges();
   }
@@ -117,14 +118,12 @@ void initReflector() {
     return;
   }
   _visited = true;
+
+  _ngRef.registerComponent(MaterialRadioGroupComponent, MaterialRadioGroupComponentNgFactory);
   _ref0.initReflector();
   _ref1.initReflector();
   _ref2.initReflector();
   _ref3.initReflector();
   _ref4.initReflector();
   _ref5.initReflector();
-  _ngRef.registerComponent(
-    MaterialRadioGroupComponent,
-    MaterialRadioGroupComponentNgFactory,
-  );
 }

@@ -10,11 +10,9 @@ export 'material_icon.dart';
 import 'dart:html';
 import 'package:angular/angular.dart';
 import 'package:angular_components/model/ui/icon.dart';
-// Required for initReflector().
 import 'package:angular/src/di/reflector.dart' as _ngRef;
 import 'package:angular/angular.template.dart' as _ref0;
 import 'package:angular_components/model/ui/icon.template.dart' as _ref1;
-
 import 'package:angular_components/material_icon/material_icon.scss.css.shim.dart' as import0;
 import 'package:angular/src/core/linker/app_view.dart';
 import 'material_icon.dart' as import2;
@@ -54,7 +52,7 @@ class ViewMaterialIconComponent0 extends AppView<import2.MaterialIconComponent> 
   @override
   void detectChangesInternal() {
     final import2.MaterialIconComponent _ctx = ctx;
-    final currVal_0 = import7.interpolate0(_ctx.iconName);
+    final currVal_0 = (_ctx.iconName ?? '');
     if (!identical(_expr_0, currVal_0)) {
       _text_1.text = currVal_0;
       _expr_0 = currVal_0;
@@ -109,10 +107,8 @@ void initReflector() {
     return;
   }
   _visited = true;
+
+  _ngRef.registerComponent(MaterialIconComponent, MaterialIconComponentNgFactory);
   _ref0.initReflector();
   _ref1.initReflector();
-  _ngRef.registerComponent(
-    MaterialIconComponent,
-    MaterialIconComponentNgFactory,
-  );
 }

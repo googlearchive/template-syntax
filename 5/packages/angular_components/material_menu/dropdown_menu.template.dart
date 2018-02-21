@@ -13,7 +13,6 @@ import 'package:angular_components/material_menu/menu_popup_wrapper.dart';
 import 'package:angular_components/material_popup/material_popup.dart';
 import 'package:angular_components/material_select/dropdown_button.dart';
 import 'package:angular_components/utils/disposer/disposer.dart';
-// Required for initReflector().
 import 'package:angular/src/di/reflector.dart' as _ngRef;
 import 'package:angular/angular.template.dart' as _ref0;
 import 'package:angular_components/material_menu/menu_popup.template.dart' as _ref1;
@@ -21,7 +20,6 @@ import 'package:angular_components/material_menu/menu_popup_wrapper.template.dar
 import 'package:angular_components/material_popup/material_popup.template.dart' as _ref3;
 import 'package:angular_components/material_select/dropdown_button.template.dart' as _ref4;
 import 'package:angular_components/utils/disposer/disposer.template.dart' as _ref5;
-
 import 'package:angular/src/core/linker/app_view.dart';
 import 'dropdown_menu.dart' as import1;
 import 'dart:html' as import2;
@@ -254,14 +252,12 @@ void initReflector() {
     return;
   }
   _visited = true;
+
+  _ngRef.registerComponent(DropdownMenuComponent, DropdownMenuComponentNgFactory);
   _ref0.initReflector();
   _ref1.initReflector();
   _ref2.initReflector();
   _ref3.initReflector();
   _ref4.initReflector();
   _ref5.initReflector();
-  _ngRef.registerComponent(
-    DropdownMenuComponent,
-    DropdownMenuComponentNgFactory,
-  );
 }

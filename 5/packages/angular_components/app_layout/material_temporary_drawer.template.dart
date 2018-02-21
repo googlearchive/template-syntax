@@ -10,12 +10,10 @@ export 'material_temporary_drawer.dart';
 import 'package:angular/angular.dart';
 import 'package:angular_components/content/deferred_content_aware.dart';
 import 'material_drawer_base.dart';
-// Required for initReflector().
 import 'package:angular/src/di/reflector.dart' as _ngRef;
 import 'material_drawer_base.template.dart' as _ref0;
 import 'package:angular/angular.template.dart' as _ref1;
 import 'package:angular_components/content/deferred_content_aware.template.dart' as _ref2;
-
 import 'package:angular_components/app_layout/material_temporary_drawer.scss.css.shim.dart' as import0;
 import 'package:angular/src/core/linker/app_view.dart';
 import 'material_temporary_drawer.dart' as import2;
@@ -132,11 +130,9 @@ void initReflector() {
     return;
   }
   _visited = true;
+
+  _ngRef.registerComponent(MaterialTemporaryDrawerComponent, MaterialTemporaryDrawerComponentNgFactory);
   _ref0.initReflector();
   _ref1.initReflector();
   _ref2.initReflector();
-  _ngRef.registerComponent(
-    MaterialTemporaryDrawerComponent,
-    MaterialTemporaryDrawerComponentNgFactory,
-  );
 }

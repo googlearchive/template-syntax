@@ -9,7 +9,6 @@ import 'dom_iterator.dart';
 export 'dom_iterator.dart';
 import 'dart:collection';
 import 'dart:html';
-// No initReflector() linking required.
 
-// No initReflector() needed.
+// No initReflector() linking required.
 void initReflector() {}

@@ -11,7 +11,6 @@ import 'dart:async';
 import 'dart:html';
 import 'dart:math';
 import 'package:angular_components/laminate/enums/alignment.dart';
-// Required for initReflector().
 import 'package:angular_components/laminate/enums/alignment.template.dart' as _ref0;
 
 var _visited = false;
@@ -20,5 +19,6 @@ void initReflector() {
     return;
   }
   _visited = true;
+
   _ref0.initReflector();
 }

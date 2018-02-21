@@ -18,7 +18,6 @@ import 'base_material_input.dart';
 import 'deferred_validator.dart';
 import 'material_input_default_value_accessor.dart';
 import 'material_input_multiline.dart';
-// Required for initReflector().
 import 'package:angular/src/di/reflector.dart' as _ngRef;
 import 'base_material_input.template.dart' as _ref0;
 import 'base_material_input.template.dart' as _ref1;
@@ -34,7 +33,6 @@ import 'package:angular_components/utils/angular/properties/properties.template.
 import 'package:angular_components/utils/angular/reference/reference.template.dart' as _ref11;
 import 'package:angular_forms/angular_forms.template.dart' as _ref12;
 import 'package:angular_forms/angular_forms.template.dart' as _ref13;
-
 import 'package:angular_components/material_input/material_input.scss.css.shim.dart' as import0;
 import 'package:angular/src/core/linker/app_view.dart';
 import 'material_input.dart' as import2;
@@ -310,19 +308,19 @@ class ViewMaterialInputComponent0 extends AppView<import2.MaterialInputComponent
       setProp(_el_8, 'multiple', currVal_14);
       _expr_14 = currVal_14;
     }
-    final currVal_15 = import13.interpolate0(_ctx.invalid);
+    final currVal_15 = _ctx.ariaLabel;
     if (!identical(_expr_15, currVal_15)) {
-      setAttr(_el_8, 'aria-invalid', currVal_15?.toString());
+      setAttr(_el_8, 'aria-label', currVal_15?.toString());
       _expr_15 = currVal_15;
     }
-    final currVal_16 = _ctx.ariaLabel;
+    final currVal_16 = _ctx.disabled;
     if (!identical(_expr_16, currVal_16)) {
-      setAttr(_el_8, 'aria-label', currVal_16?.toString());
+      setProp(_el_8, 'disabled', currVal_16);
       _expr_16 = currVal_16;
     }
-    final currVal_17 = _ctx.disabled;
+    final currVal_17 = import13.interpolate0(_ctx.invalid);
     if (!identical(_expr_17, currVal_17)) {
-      setProp(_el_8, 'disabled', currVal_17);
+      setAttr(_el_8, 'aria-invalid', currVal_17?.toString());
       _expr_17 = currVal_17;
     }
     final bool currVal_21 = !_ctx.disabled;
@@ -482,7 +480,7 @@ class _ViewMaterialInputComponent2 extends AppView<import2.MaterialInputComponen
       updateClass(_el_0, 'floated-label', currVal_0);
       _expr_0 = currVal_0;
     }
-    final currVal_1 = import13.interpolate0(_ctx.leadingText);
+    final currVal_1 = (_ctx.leadingText ?? '');
     if (!identical(_expr_1, currVal_1)) {
       _text_1.text = currVal_1;
       _expr_1 = currVal_1;
@@ -522,7 +520,7 @@ class _ViewMaterialInputComponent3 extends AppView<import2.MaterialInputComponen
       updateClass(_el_0, 'floated-label', currVal_0);
       _expr_0 = currVal_0;
     }
-    final currVal_1 = import13.interpolate0(_ctx.trailingText);
+    final currVal_1 = (_ctx.trailingText ?? '');
     if (!identical(_expr_1, currVal_1)) {
       _text_1.text = currVal_1;
       _expr_1 = currVal_1;
@@ -702,9 +700,9 @@ AppView<import2.MaterialInputComponent> viewFactory_MaterialInputComponent5(AppV
 class _ViewMaterialInputComponent6 extends AppView<import2.MaterialInputComponent> {
   import4.DivElement _el_0;
   import4.Text _text_1;
-  var _expr_0;
+  bool _expr_0;
   bool _expr_1;
-  bool _expr_2;
+  var _expr_2;
   var _expr_3;
   _ViewMaterialInputComponent6(AppView<dynamic> parentView, num parentIndex) : super(import11.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMaterialInputComponent0._renderType;
@@ -725,19 +723,19 @@ class _ViewMaterialInputComponent6 extends AppView<import2.MaterialInputComponen
   @override
   void detectChangesInternal() {
     final import2.MaterialInputComponent _ctx = ctx;
-    final currVal_0 = import13.interpolate0(!_ctx.invalid);
+    final currVal_0 = _ctx.focused;
     if (!identical(_expr_0, currVal_0)) {
-      setAttr(_el_0, 'aria-hidden', currVal_0?.toString());
+      updateClass(_el_0, 'focused', currVal_0);
       _expr_0 = currVal_0;
     }
-    final currVal_1 = _ctx.focused;
+    final currVal_1 = _ctx.invalid;
     if (!identical(_expr_1, currVal_1)) {
-      updateClass(_el_0, 'focused', currVal_1);
+      updateClass(_el_0, 'invalid', currVal_1);
       _expr_1 = currVal_1;
     }
-    final currVal_2 = _ctx.invalid;
+    final currVal_2 = import13.interpolate0(!_ctx.invalid);
     if (!identical(_expr_2, currVal_2)) {
-      updateClass(_el_0, 'invalid', currVal_2);
+      setAttr(_el_0, 'aria-hidden', currVal_2?.toString());
       _expr_2 = currVal_2;
     }
     final currVal_3 = import13.interpolate0(_ctx.errorMessage);
@@ -927,6 +925,8 @@ void initReflector() {
     return;
   }
   _visited = true;
+
+  _ngRef.registerComponent(MaterialInputComponent, MaterialInputComponentNgFactory);
   _ref0.initReflector();
   _ref1.initReflector();
   _ref2.initReflector();
@@ -941,8 +941,4 @@ void initReflector() {
   _ref11.initReflector();
   _ref12.initReflector();
   _ref13.initReflector();
-  _ngRef.registerComponent(
-    MaterialInputComponent,
-    MaterialInputComponentNgFactory,
-  );
 }

@@ -11,7 +11,6 @@ import 'dart:async';
 import 'package:angular/angular.dart';
 import 'package:angular_components/src/laminate/popup/popup_source.dart';
 import 'package:angular_components/src/laminate/popup/popup_state.dart';
-// Required for initReflector().
 import 'package:angular/angular.template.dart' as _ref0;
 import 'package:angular_components/src/laminate/popup/popup_source.template.dart' as _ref1;
 import 'package:angular_components/src/laminate/popup/popup_state.template.dart' as _ref2;
@@ -22,6 +21,7 @@ void initReflector() {
     return;
   }
   _visited = true;
+
   _ref0.initReflector();
   _ref1.initReflector();
   _ref2.initReflector();

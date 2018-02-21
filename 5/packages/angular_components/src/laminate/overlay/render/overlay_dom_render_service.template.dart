@@ -18,7 +18,6 @@ import 'package:angular_components/laminate/portal/portal.dart';
 import 'package:angular_components/laminate/ruler/dom_ruler.dart';
 import 'package:angular_components/utils/angular/imperative_view/imperative_view.dart';
 import 'package:angular_components/utils/browser/dom_service/dom_service.dart';
-// Required for initReflector().
 import 'package:angular/src/di/reflector.dart' as _ngRef;
 import 'package:angular/angular.template.dart' as _ref0;
 import 'package:angular_components/laminate/enums/visibility.template.dart' as _ref1;
@@ -29,6 +28,12 @@ import 'package:angular_components/src/laminate/overlay/overlay_state.template.d
 import 'package:angular_components/src/laminate/overlay/render/overlay_style_config.template.dart' as _ref6;
 import 'package:angular_components/utils/angular/imperative_view/imperative_view.template.dart' as _ref7;
 import 'package:angular_components/utils/browser/dom_service/dom_service.template.dart' as _ref8;
+import 'package:angular_components/src/laminate/overlay/render/overlay_style_config.dart' as _i1;
+import 'dart:html' as _i2;
+import 'package:angular_components/laminate/ruler/dom_ruler.dart' as _i3;
+import 'package:angular_components/utils/browser/dom_service/dom_service.dart' as _i4;
+import 'package:angular_components/utils/angular/imperative_view/imperative_view.dart' as _i5;
+import 'package:angular_components/laminate/overlay/zindexer.dart' as _i6;
 
 var _visited = false;
 void initReflector() {
@@ -36,6 +41,19 @@ void initReflector() {
     return;
   }
   _visited = true;
+
+  _ngRef.registerFactory(OverlayDomRenderService, (_i1.OverlayStyleConfig p0, _i2.HtmlElement p1, String p2, _i3.DomRuler p3, _i4.DomService p4, _i5.AcxImperativeViewUtils p5, bool p6, bool p7, _i6.ZIndexer p8) => new OverlayDomRenderService(p0, p1, p2, p3, p4, p5, p6, p7, p8));
+  _ngRef.registerDependencies(OverlayDomRenderService, const [
+    const [_i1.OverlayStyleConfig],
+    const [const _ngRef.Inject(const _ngRef.OpaqueToken<dynamic>('overlayContainer'))],
+    const [const _ngRef.Inject(const _ngRef.OpaqueToken<dynamic>('overlayContainerName'))],
+    const [_i3.DomRuler],
+    const [_i4.DomService],
+    const [_i5.AcxImperativeViewUtils],
+    const [const _ngRef.Inject(const _ngRef.OpaqueToken<dynamic>('overlaySyncDom'))],
+    const [const _ngRef.Inject(const _ngRef.OpaqueToken<dynamic>('overlayRepositionLoop'))],
+    const [_i6.ZIndexer]
+  ]);
   _ref0.initReflector();
   _ref1.initReflector();
   _ref2.initReflector();
@@ -45,40 +63,4 @@ void initReflector() {
   _ref6.initReflector();
   _ref7.initReflector();
   _ref8.initReflector();
-  _ngRef.registerFactory(
-    OverlayDomRenderService,
-    (OverlayStyleConfig p0, HtmlElement p1, String p2, DomRuler p3, DomService p4, AcxImperativeViewUtils p5, bool p6, bool p7, ZIndexer p8) => new OverlayDomRenderService(p0, p1, p2, p3, p4, p5, p6, p7, p8),
-  );
-  _ngRef.registerDependencies(
-    OverlayDomRenderService,
-    const [
-      const [
-        OverlayStyleConfig,
-      ],
-      const [
-        const _ngRef.Inject(const _ngRef.OpaqueToken<dynamic>(r'overlayContainer')),
-      ],
-      const [
-        const _ngRef.Inject(const _ngRef.OpaqueToken<dynamic>(r'overlayContainerName')),
-      ],
-      const [
-        DomRuler,
-      ],
-      const [
-        DomService,
-      ],
-      const [
-        AcxImperativeViewUtils,
-      ],
-      const [
-        const _ngRef.Inject(const _ngRef.OpaqueToken<dynamic>(r'overlaySyncDom')),
-      ],
-      const [
-        const _ngRef.Inject(const _ngRef.OpaqueToken<dynamic>(r'overlayRepositionLoop')),
-      ],
-      const [
-        ZIndexer,
-      ],
-    ],
-  );
 }

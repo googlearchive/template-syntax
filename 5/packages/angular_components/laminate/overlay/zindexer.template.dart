@@ -9,7 +9,6 @@ import 'zindexer.dart';
 export 'zindexer.dart';
 import 'package:angular/angular.dart';
 import 'package:js/js.dart';
-// Required for initReflector().
 import 'package:angular/src/di/reflector.dart' as _ngRef;
 import 'package:angular/angular.template.dart' as _ref0;
 
@@ -19,9 +18,7 @@ void initReflector() {
     return;
   }
   _visited = true;
+
+  _ngRef.registerFactory(ZIndexer, () => new ZIndexer());
   _ref0.initReflector();
-  _ngRef.registerFactory(
-    ZIndexer,
-    () => new ZIndexer(),
-  );
 }

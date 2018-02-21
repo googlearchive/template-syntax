@@ -18,7 +18,6 @@ import 'material_input.dart';
 import 'material_input_default_value_accessor.dart';
 import 'material_input_error_keys.dart';
 import 'material_number_validators.dart';
-// Required for initReflector().
 import 'base_material_input.template.dart' as _ref0;
 import 'material_input.template.dart' as _ref1;
 import 'material_input.template.dart' as _ref2;
@@ -36,6 +35,7 @@ void initReflector() {
     return;
   }
   _visited = true;
+
   _ref0.initReflector();
   _ref1.initReflector();
   _ref2.initReflector();

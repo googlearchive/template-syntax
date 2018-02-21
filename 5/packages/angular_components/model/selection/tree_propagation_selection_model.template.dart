@@ -9,7 +9,6 @@ import 'tree_propagation_selection_model.dart';
 export 'tree_propagation_selection_model.dart';
 import 'package:angular_components/model/selection/selection_model.dart';
 import 'package:angular_components/model/selection/tree_selection_options.dart';
-// Required for initReflector().
 import 'package:angular_components/model/selection/selection_model.template.dart' as _ref0;
 import 'package:angular_components/model/selection/tree_selection_options.template.dart' as _ref1;
 
@@ -19,6 +18,7 @@ void initReflector() {
     return;
   }
   _visited = true;
+
   _ref0.initReflector();
   _ref1.initReflector();
 }

@@ -13,13 +13,11 @@ import 'package:angular/angular.dart';
 import 'package:angular_components/utils/browser/events/events.dart';
 import 'package:angular_components/utils/browser/feature_detector/feature_detector.dart' show supportsAnimationApi;
 import 'package:angular_components/utils/color/material.dart' show rippleOpacity;
-// Required for initReflector().
 import 'package:angular/src/di/reflector.dart' as _ngRef;
 import 'package:angular/angular.template.dart' as _ref0;
 import 'package:angular_components/utils/browser/events/events.template.dart' as _ref1;
 import 'package:angular_components/utils/browser/feature_detector/feature_detector.template.dart' as _ref2;
 import 'package:angular_components/utils/color/material.template.dart' as _ref3;
-
 import 'package:angular_components/material_ripple/material_ripple.scss.css.dart' as import0;
 import 'package:angular/src/core/linker/app_view.dart';
 import 'material_ripple.dart' as import2;
@@ -95,12 +93,10 @@ void initReflector() {
     return;
   }
   _visited = true;
+
+  _ngRef.registerComponent(MaterialRippleComponent, MaterialRippleComponentNgFactory);
   _ref0.initReflector();
   _ref1.initReflector();
   _ref2.initReflector();
   _ref3.initReflector();
-  _ngRef.registerComponent(
-    MaterialRippleComponent,
-    MaterialRippleComponentNgFactory,
-  );
 }

@@ -8,7 +8,6 @@
 import 'combined_list.dart';
 export 'combined_list.dart';
 import 'dart:collection';
-// No initReflector() linking required.
 
-// No initReflector() needed.
+// No initReflector() linking required.
 void initReflector() {}

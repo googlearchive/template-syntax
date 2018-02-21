@@ -88,3 +88,12 @@ ul .material-tree-item .disabled-item {
 ul .material-tree-item material-icon {
   opacity: 0.54;
 }
+
+.view-more-link-item {
+  padding: 8px 0;
+}
+
+.view-more-link {
+  color: #4285f4;
+  text-decoration: none;
+}

@@ -1,7 +1,7 @@
 .shadow {
   background: #fff;
   border-radius: 2px;
-  transition: transform 218ms cubic-bezier(0.4, 0, 1, 1);
+  transition: transform 150ms cubic-bezier(0.4, 0, 1, 1);
   /*! @noflip */
   transform-origin: top left;
   transform: scale3d(0, 0, 1);
@@ -43,7 +43,7 @@
   transform: scale3d(1, 0, 1);
 }
 .shadow.visible {
-  transition: transform 218ms cubic-bezier(0, 0, 0.2, 1);
+  transition: transform 150ms cubic-bezier(0, 0, 0.2, 1);
   transform: scale3d(1, 1, 1);
 }
 .shadow.ink {

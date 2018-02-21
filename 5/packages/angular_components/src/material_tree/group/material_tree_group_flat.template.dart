@@ -17,7 +17,6 @@ import 'package:angular_components/src/material_tree/material_tree_node.dart';
 import 'package:angular_components/src/material_tree/material_tree_root.dart';
 import 'package:angular_components/mixins/material_dropdown_base.dart';
 import 'package:angular_components/model/selection/selection_model.dart';
-// Required for initReflector().
 import 'package:angular/src/di/reflector.dart' as _ngRef;
 import 'package:angular/angular.template.dart' as _ref0;
 import 'package:angular_components/button_decorator/button_decorator.template.dart' as _ref1;
@@ -29,7 +28,6 @@ import 'package:angular_components/mixins/material_dropdown_base.template.dart' 
 import 'package:angular_components/model/selection/selection_model.template.dart' as _ref7;
 import 'package:angular_components/src/material_tree/material_tree_node.template.dart' as _ref8;
 import 'package:angular_components/src/material_tree/material_tree_root.template.dart' as _ref9;
-
 import 'package:angular_components/src/material_tree/group/material_tree_group_flat_list.scss.css.shim.dart' as import0;
 import 'package:angular/src/core/linker/app_view.dart';
 import 'material_tree_group_flat.dart' as import2;
@@ -50,14 +48,13 @@ import '../material_tree_root.dart' as import16;
 import 'package:angular_components/src/material_tree/group/material_tree_group_flat_radio.scss.css.shim.dart' as import17;
 import '../../../material_radio/material_radio_group.template.dart' as import18;
 import '../../../material_radio/material_radio_group.dart' as import19;
-import 'package:angular/src/core/linker/query_list.dart' as import20;
-import 'package:angular/src/core/zone/ng_zone.dart' as import21;
-import '../../../material_radio/material_radio.template.dart' as import22;
-import '../../../material_radio/material_radio.dart' as import23;
-import '../../../mixins/material_dropdown_base.dart' as import24;
-import 'package:angular_components/src/material_tree/group/material_tree_group_flat_check.scss.css.shim.dart' as import25;
-import '../../../material_checkbox/material_checkbox.template.dart' as import26;
-import '../../../material_checkbox/material_checkbox.dart' as import27;
+import 'package:angular/src/core/zone/ng_zone.dart' as import20;
+import '../../../material_radio/material_radio.template.dart' as import21;
+import '../../../material_radio/material_radio.dart' as import22;
+import '../../../mixins/material_dropdown_base.dart' as import23;
+import 'package:angular_components/src/material_tree/group/material_tree_group_flat_check.scss.css.shim.dart' as import24;
+import '../../../material_checkbox/material_checkbox.template.dart' as import25;
+import '../../../material_checkbox/material_checkbox.dart' as import26;
 
 const List<dynamic> styles$MaterialTreeGroupFlatListComponent = const [import0.styles];
 
@@ -320,7 +317,7 @@ class ViewMaterialTreeGroupFlatRadioComponent0 extends AppView<import2.MaterialT
   import8.Element _el_0;
   import18.ViewMaterialRadioGroupComponent0 _compView_0;
   import19.MaterialRadioGroupComponent _MaterialRadioGroupComponent_0_4;
-  final import20.QueryList _query_MaterialRadioComponent_0_0 = new import20.QueryList();
+  bool _query_MaterialRadioComponent_0_0_isDirty = true;
   ViewContainer _appEl_1;
   import4.NgFor _NgFor_1_7;
   var _expr_1;
@@ -337,7 +334,7 @@ class ViewMaterialTreeGroupFlatRadioComponent0 extends AppView<import2.MaterialT
     _el_0 = _compView_0.rootEl;
     parentRenderNode.append(_el_0);
     addShimC(_el_0);
-    _MaterialRadioGroupComponent_0_4 = new import19.MaterialRadioGroupComponent(parentView.injectorGet(import21.NgZone, viewData.parentIndex), null);
+    _MaterialRadioGroupComponent_0_4 = new import19.MaterialRadioGroupComponent(parentView.injectorGet(import20.NgZone, viewData.parentIndex), null);
     var _anchor_1 = ngAnchor.clone(false);
     _appEl_1 = new ViewContainer(1, 0, this, _anchor_1);
     TemplateRef _TemplateRef_1_6 = new TemplateRef(_appEl_1, viewFactory_MaterialTreeGroupFlatRadioComponent1);
@@ -379,14 +376,14 @@ class ViewMaterialTreeGroupFlatRadioComponent0 extends AppView<import2.MaterialT
     }
     _NgFor_1_7.ngDoCheck();
     _appEl_1.detectChangesInNestedViews();
-    if (_query_MaterialRadioComponent_0_0.dirty) {
-      _query_MaterialRadioComponent_0_0.reset([
-        _appEl_1.mapNestedViews((_ViewMaterialTreeGroupFlatRadioComponent1 nestedView) {
-          return [nestedView._MaterialRadioComponent_0_4];
-        })
-      ]);
-      _MaterialRadioGroupComponent_0_4.list = _query_MaterialRadioComponent_0_0;
-      _query_MaterialRadioComponent_0_0.notifyOnChanges();
+    if (_query_MaterialRadioComponent_0_0_isDirty) {
+      _MaterialRadioGroupComponent_0_4.list = _appEl_1.mapNestedViews((_ViewMaterialTreeGroupFlatRadioComponent1 nestedView) {
+        return [nestedView._MaterialRadioComponent_0_4];
+      });
+      _query_MaterialRadioComponent_0_0_isDirty = false;
+    }
+    if (firstCheck) {
+      _MaterialRadioGroupComponent_0_4.ngAfterContentInit();
     }
     _compView_0.detectChanges();
   }
@@ -413,8 +410,8 @@ AppView<import2.MaterialTreeGroupFlatRadioComponent> viewFactory_MaterialTreeGro
 
 class _ViewMaterialTreeGroupFlatRadioComponent1 extends AppView<import2.MaterialTreeGroupFlatRadioComponent> {
   import8.Element _el_0;
-  import22.ViewMaterialRadioComponent0 _compView_0;
-  import23.MaterialRadioComponent _MaterialRadioComponent_0_4;
+  import21.ViewMaterialRadioComponent0 _compView_0;
+  import22.MaterialRadioComponent _MaterialRadioComponent_0_4;
   ViewContainer _appEl_1;
   NgIf _NgIf_1_7;
   ViewContainer _appEl_2;
@@ -428,12 +425,12 @@ class _ViewMaterialTreeGroupFlatRadioComponent1 extends AppView<import2.Material
   }
   @override
   ComponentRef<import2.MaterialTreeGroupFlatRadioComponent> build() {
-    _compView_0 = new import22.ViewMaterialRadioComponent0(this, 0);
+    _compView_0 = new import21.ViewMaterialRadioComponent0(this, 0);
     _el_0 = _compView_0.rootEl;
     _el_0.className = 'material-tree-option tree-selection-state themeable';
     createAttr(_el_0, 'role', 'option');
     addShimC(_el_0);
-    _MaterialRadioComponent_0_4 = new import23.MaterialRadioComponent(_el_0, _compView_0.ref, (parentView as ViewMaterialTreeGroupFlatRadioComponent0)._MaterialRadioGroupComponent_0_4, null, 'option');
+    _MaterialRadioComponent_0_4 = new import22.MaterialRadioComponent(_el_0, _compView_0.ref, (parentView as ViewMaterialTreeGroupFlatRadioComponent0)._MaterialRadioGroupComponent_0_4, null, 'option');
     var _anchor_1 = ngAnchor.clone(false);
     _appEl_1 = new ViewContainer(1, 0, this, _anchor_1);
     TemplateRef _TemplateRef_1_6 = new TemplateRef(_appEl_1, viewFactory_MaterialTreeGroupFlatRadioComponent2);
@@ -491,7 +488,7 @@ class _ViewMaterialTreeGroupFlatRadioComponent1 extends AppView<import2.Material
 
   @override
   void dirtyParentQueriesInternal() {
-    (parentView as ViewMaterialTreeGroupFlatRadioComponent0)._query_MaterialRadioComponent_0_0.setDirty();
+    (parentView as ViewMaterialTreeGroupFlatRadioComponent0)._query_MaterialRadioComponent_0_0_isDirty = true;
   }
 
   @override
@@ -627,7 +624,7 @@ class _ViewMaterialTreeGroupFlatRadioComponentHost0 extends AppView<dynamic> {
   ComponentRef build() {
     _compView_0 = new ViewMaterialTreeGroupFlatRadioComponent0(this, 0);
     rootEl = _compView_0.rootEl;
-    _MaterialTreeGroupFlatRadioComponent_0_4 = new import2.MaterialTreeGroupFlatRadioComponent(this.injectorGet(import16.MaterialTreeRoot, viewData.parentIndex), _compView_0.ref, this.injectorGet(import24.DropdownHandle, viewData.parentIndex, null));
+    _MaterialTreeGroupFlatRadioComponent_0_4 = new import2.MaterialTreeGroupFlatRadioComponent(this.injectorGet(import16.MaterialTreeRoot, viewData.parentIndex), _compView_0.ref, this.injectorGet(import23.DropdownHandle, viewData.parentIndex, null));
     _compView_0.create(_MaterialTreeGroupFlatRadioComponent_0_4, projectableNodes);
     init0(rootEl);
     return new ComponentRef<import2.MaterialTreeGroupFlatRadioComponent>(0, this, rootEl, _MaterialTreeGroupFlatRadioComponent_0_4);
@@ -659,7 +656,7 @@ AppView viewFactory_MaterialTreeGroupFlatRadioComponentHost0(AppView<dynamic> pa
 }
 
 const ComponentFactory<import2.MaterialTreeGroupFlatRadioComponent> MaterialTreeGroupFlatRadioComponentNgFactory = const ComponentFactory<import2.MaterialTreeGroupFlatRadioComponent>('material-tree-group-flat-radio', viewFactory_MaterialTreeGroupFlatRadioComponentHost0, _MaterialTreeGroupFlatRadioComponentMetadata);
-const List<dynamic> styles$MaterialTreeGroupFlatCheckComponent = const [import25.styles];
+const List<dynamic> styles$MaterialTreeGroupFlatCheckComponent = const [import24.styles];
 
 class ViewMaterialTreeGroupFlatCheckComponent0 extends AppView<import2.MaterialTreeGroupFlatCheckComponent> {
   ViewContainer _appEl_0;
@@ -715,8 +712,8 @@ AppView<import2.MaterialTreeGroupFlatCheckComponent> viewFactory_MaterialTreeGro
 
 class _ViewMaterialTreeGroupFlatCheckComponent1 extends AppView<import2.MaterialTreeGroupFlatCheckComponent> {
   import8.Element _el_0;
-  import26.ViewMaterialCheckboxComponent0 _compView_0;
-  import27.MaterialCheckboxComponent _MaterialCheckboxComponent_0_4;
+  import25.ViewMaterialCheckboxComponent0 _compView_0;
+  import26.MaterialCheckboxComponent _MaterialCheckboxComponent_0_4;
   ViewContainer _appEl_1;
   NgIf _NgIf_1_7;
   ViewContainer _appEl_2;
@@ -730,12 +727,12 @@ class _ViewMaterialTreeGroupFlatCheckComponent1 extends AppView<import2.Material
   }
   @override
   ComponentRef<import2.MaterialTreeGroupFlatCheckComponent> build() {
-    _compView_0 = new import26.ViewMaterialCheckboxComponent0(this, 0);
+    _compView_0 = new import25.ViewMaterialCheckboxComponent0(this, 0);
     _el_0 = _compView_0.rootEl;
     _el_0.className = 'material-tree-option tree-selection-state themeable';
     createAttr(_el_0, 'role', 'option');
     addShimC(_el_0);
-    _MaterialCheckboxComponent_0_4 = new import27.MaterialCheckboxComponent(_el_0, _compView_0.ref, null, null, 'option');
+    _MaterialCheckboxComponent_0_4 = new import26.MaterialCheckboxComponent(_el_0, _compView_0.ref, null, null, 'option');
     var _anchor_1 = ngAnchor.clone(false);
     _appEl_1 = new ViewContainer(1, 0, this, _anchor_1);
     TemplateRef _TemplateRef_1_6 = new TemplateRef(_appEl_1, viewFactory_MaterialTreeGroupFlatCheckComponent2);
@@ -929,7 +926,7 @@ class _ViewMaterialTreeGroupFlatCheckComponentHost0 extends AppView<dynamic> {
   ComponentRef build() {
     _compView_0 = new ViewMaterialTreeGroupFlatCheckComponent0(this, 0);
     rootEl = _compView_0.rootEl;
-    _MaterialTreeGroupFlatCheckComponent_0_4 = new import2.MaterialTreeGroupFlatCheckComponent(this.injectorGet(import16.MaterialTreeRoot, viewData.parentIndex), _compView_0.ref, this.injectorGet(import24.DropdownHandle, viewData.parentIndex, null));
+    _MaterialTreeGroupFlatCheckComponent_0_4 = new import2.MaterialTreeGroupFlatCheckComponent(this.injectorGet(import16.MaterialTreeRoot, viewData.parentIndex), _compView_0.ref, this.injectorGet(import23.DropdownHandle, viewData.parentIndex, null));
     _compView_0.create(_MaterialTreeGroupFlatCheckComponent_0_4, projectableNodes);
     init0(rootEl);
     return new ComponentRef<import2.MaterialTreeGroupFlatCheckComponent>(0, this, rootEl, _MaterialTreeGroupFlatCheckComponent_0_4);
@@ -970,6 +967,10 @@ void initReflector() {
     return;
   }
   _visited = true;
+
+  _ngRef.registerComponent(MaterialTreeGroupFlatListComponent, MaterialTreeGroupFlatListComponentNgFactory);
+  _ngRef.registerComponent(MaterialTreeGroupFlatRadioComponent, MaterialTreeGroupFlatRadioComponentNgFactory);
+  _ngRef.registerComponent(MaterialTreeGroupFlatCheckComponent, MaterialTreeGroupFlatCheckComponentNgFactory);
   _ref0.initReflector();
   _ref1.initReflector();
   _ref2.initReflector();
@@ -980,16 +981,4 @@ void initReflector() {
   _ref7.initReflector();
   _ref8.initReflector();
   _ref9.initReflector();
-  _ngRef.registerComponent(
-    MaterialTreeGroupFlatListComponent,
-    MaterialTreeGroupFlatListComponentNgFactory,
-  );
-  _ngRef.registerComponent(
-    MaterialTreeGroupFlatRadioComponent,
-    MaterialTreeGroupFlatRadioComponentNgFactory,
-  );
-  _ngRef.registerComponent(
-    MaterialTreeGroupFlatCheckComponent,
-    MaterialTreeGroupFlatCheckComponentNgFactory,
-  );
 }

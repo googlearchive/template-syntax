@@ -15,7 +15,6 @@ import 'package:angular_components/laminate/enums/alignment.dart';
 import 'package:angular_components/src/laminate/popup/dom_popup_source.dart';
 import 'package:angular_components/src/laminate/popup/popup_source.dart';
 import 'package:angular_components/utils/angular/reference/reference.dart';
-// Required for initReflector().
 import 'package:angular/angular.template.dart' as _ref0;
 import 'package:angular_components/laminate/enums/alignment.template.dart' as _ref1;
 import 'package:angular_components/src/laminate/popup/dom_popup_source.template.dart' as _ref2;
@@ -28,6 +27,7 @@ void initReflector() {
     return;
   }
   _visited = true;
+
   _ref0.initReflector();
   _ref1.initReflector();
   _ref2.initReflector();

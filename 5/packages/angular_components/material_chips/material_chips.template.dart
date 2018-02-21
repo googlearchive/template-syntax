@@ -12,14 +12,12 @@ import 'package:angular_components/material_chips/material_chip.dart';
 import 'package:angular_components/model/selection/selection_model.dart';
 import 'package:angular_components/model/ui/has_renderer.dart';
 import 'package:angular_components/utils/disposer/disposer.dart';
-// Required for initReflector().
 import 'package:angular/src/di/reflector.dart' as _ngRef;
 import 'package:angular/angular.template.dart' as _ref0;
 import 'package:angular_components/material_chips/material_chip.template.dart' as _ref1;
 import 'package:angular_components/model/selection/selection_model.template.dart' as _ref2;
 import 'package:angular_components/model/ui/has_renderer.template.dart' as _ref3;
 import 'package:angular_components/utils/disposer/disposer.template.dart' as _ref4;
-
 import 'package:angular_components/material_chips/material_chips.scss.css.shim.dart' as import0;
 import 'package:angular/src/core/linker/app_view.dart';
 import 'material_chips.dart' as import2;
@@ -194,13 +192,11 @@ void initReflector() {
     return;
   }
   _visited = true;
+
+  _ngRef.registerComponent(MaterialChipsComponent, MaterialChipsComponentNgFactory);
   _ref0.initReflector();
   _ref1.initReflector();
   _ref2.initReflector();
   _ref3.initReflector();
   _ref4.initReflector();
-  _ngRef.registerComponent(
-    MaterialChipsComponent,
-    MaterialChipsComponentNgFactory,
-  );
 }

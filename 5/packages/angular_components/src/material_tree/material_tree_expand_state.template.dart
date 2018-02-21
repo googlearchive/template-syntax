@@ -8,7 +8,6 @@
 import 'material_tree_expand_state.dart';
 export 'material_tree_expand_state.dart';
 import 'dart:async';
-// No initReflector() linking required.
 
-// No initReflector() needed.
+// No initReflector() linking required.
 void initReflector() {}

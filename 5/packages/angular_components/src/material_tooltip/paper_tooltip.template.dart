@@ -17,7 +17,6 @@ import 'package:angular_components/material_popup/material_popup.dart';
 import 'package:angular_components/material_tooltip/module.dart';
 import 'tooltip_controller.dart';
 import 'tooltip_target.dart';
-// Required for initReflector().
 import 'package:angular/src/di/reflector.dart' as _ngRef;
 import 'package:angular/angular.template.dart' as _ref0;
 import 'package:angular_components/content/deferred_content.template.dart' as _ref1;
@@ -28,7 +27,7 @@ import 'package:angular_components/material_popup/material_popup.template.dart' 
 import 'package:angular_components/material_tooltip/module.template.dart' as _ref6;
 import 'tooltip_controller.template.dart' as _ref7;
 import 'tooltip_target.template.dart' as _ref8;
-
+import 'package:angular_components/src/material_tooltip/paper_tooltip.dart' as _i1;
 import 'package:angular_components/src/material_tooltip/paper_tooltip.scss.css.shim.dart' as import0;
 import 'package:angular/src/core/linker/app_view.dart';
 import 'paper_tooltip.dart' as import2;
@@ -49,14 +48,16 @@ import 'package:angular/src/core/zone/ng_zone.dart' as import16;
 import '../laminate/overlay/overlay_service.dart' as import17;
 import '../../laminate/overlay/zindexer.dart' as import18;
 import 'package:angular/src/core/di/opaque_token.dart' as import19;
-import '../laminate/popup/popup_size_provider.dart' as import20;
+import 'dart:core';
+import '../../laminate/enums/alignment.dart' as import21;
+import '../laminate/popup/popup_size_provider.dart' as import22;
 import 'package:angular/src/core/linker/element_ref.dart';
-import '../../content/deferred_content_aware.dart' as import22;
-import '../../mixins/material_dropdown_base.dart' as import23;
-import '../laminate/popup/popup_ref.dart' as import24;
-import '../../material_tooltip/module.dart' as import25;
-import 'tooltip_controller.dart' as import26;
-import '../../utils/disposer/disposer.dart' as import27;
+import '../../content/deferred_content_aware.dart' as import24;
+import '../../mixins/material_dropdown_base.dart' as import25;
+import '../laminate/popup/popup_ref.dart' as import26;
+import '../../material_tooltip/module.dart' as import27;
+import 'tooltip_controller.dart' as import28;
+import '../../utils/disposer/disposer.dart' as import29;
 
 const List<dynamic> styles$MaterialPaperTooltipComponent = const [import0.styles];
 
@@ -149,7 +150,7 @@ class _ViewMaterialPaperTooltipComponent1 extends AppView<import2.MaterialPaperT
     createAttr(_el_0, 'trackLayoutChanges', '');
     addShimC(_el_0);
     _appEl_0 = new ViewContainer(0, null, this, _el_0);
-    _MaterialPopupComponent_0_6 = new import14.MaterialPopupComponent(parentView.injectorGet(import15.PopupHierarchy, viewData.parentIndex, null), parentView.injectorGet(import14.MaterialPopupComponent, viewData.parentIndex, null), 'tooltip', parentView.injectorGet(import16.NgZone, viewData.parentIndex), parentView.injectorGet(import17.OverlayService, viewData.parentIndex), parentView.injectorGet(import18.ZIndexer, viewData.parentIndex), parentView.injectorGet(const import19.OpaqueToken('defaultPopupPositions'), viewData.parentIndex), parentView.injectorGet(const import19.OpaqueToken('overlayRepositionLoop'), viewData.parentIndex), parentView.injectorGet(import20.PopupSizeProvider, viewData.parentIndex, null), _compView_0.ref, _appEl_0, new ElementRef(_el_0));
+    _MaterialPopupComponent_0_6 = new import14.MaterialPopupComponent(parentView.injectorGet(import15.PopupHierarchy, viewData.parentIndex, null), parentView.injectorGet(import14.MaterialPopupComponent, viewData.parentIndex, null), 'tooltip', parentView.injectorGet(import16.NgZone, viewData.parentIndex), parentView.injectorGet(import17.OverlayService, viewData.parentIndex), parentView.injectorGet(import18.ZIndexer, viewData.parentIndex), parentView.injectorGet(const import19.OpaqueToken<List<import21.RelativePosition>>('defaultPopupPositions'), viewData.parentIndex), parentView.injectorGet(const import19.OpaqueToken('overlayRepositionLoop'), viewData.parentIndex), parentView.injectorGet(import22.PopupSizeProvider, viewData.parentIndex, null), _compView_0.ref, _appEl_0, new ElementRef(_el_0));
     import9.Text _text_1 = new import9.Text('\n  ');
     var doc = import9.document;
     _el_2 = doc.createElement('div');
@@ -189,13 +190,13 @@ class _ViewMaterialPaperTooltipComponent1 extends AppView<import2.MaterialPaperT
 
   @override
   dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
-    if ((((identical(token, import14.MaterialPopupComponent) || identical(token, import22.DeferredContentAware)) || identical(token, import23.DropdownHandle)) && ((0 <= nodeIndex) && (nodeIndex <= 10)))) {
+    if ((((identical(token, import14.MaterialPopupComponent) || identical(token, import24.DeferredContentAware)) || identical(token, import25.DropdownHandle)) && ((0 <= nodeIndex) && (nodeIndex <= 10)))) {
       return _MaterialPopupComponent_0_6;
     }
     if ((identical(token, import15.PopupHierarchy) && ((0 <= nodeIndex) && (nodeIndex <= 10)))) {
       return _PopupHierarchy_0_9;
     }
-    if ((identical(token, import24.PopupRef) && ((0 <= nodeIndex) && (nodeIndex <= 10)))) {
+    if ((identical(token, import26.PopupRef) && ((0 <= nodeIndex) && (nodeIndex <= 10)))) {
       return _PopupRef_0_10;
     }
     return notFoundResult;
@@ -279,7 +280,7 @@ class _ViewMaterialPaperTooltipComponentHost0 extends AppView<dynamic> {
   ComponentRef build() {
     _compView_0 = new ViewMaterialPaperTooltipComponent0(this, 0);
     rootEl = _compView_0.rootEl;
-    _TooltipController_0_4 = import25.createTooltipController(this.injectorGet(import26.TooltipController, viewData.parentIndex, null), this.injectorGet(import27.Disposer, viewData.parentIndex, null));
+    _TooltipController_0_4 = import27.createTooltipController(this.injectorGet(import28.TooltipController, viewData.parentIndex, null), this.injectorGet(import29.Disposer, viewData.parentIndex, null));
     _MaterialPaperTooltipComponent_0_5 = new import2.MaterialPaperTooltipComponent(_TooltipController_0_4, _compView_0.ref);
     _compView_0.create(_MaterialPaperTooltipComponent_0_5, projectableNodes);
     init0(rootEl);
@@ -288,13 +289,13 @@ class _ViewMaterialPaperTooltipComponentHost0 extends AppView<dynamic> {
 
   @override
   dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
-    if ((identical(token, import26.TooltipController) && (0 == nodeIndex))) {
+    if ((identical(token, import28.TooltipController) && (0 == nodeIndex))) {
       return _TooltipController_0_4;
     }
-    if (((identical(token, import2.MaterialPaperTooltipComponent) || identical(token, import22.DeferredContentAware)) && (0 == nodeIndex))) {
+    if (((identical(token, import2.MaterialPaperTooltipComponent) || identical(token, import24.DeferredContentAware)) && (0 == nodeIndex))) {
       return _MaterialPaperTooltipComponent_0_5;
     }
-    if ((identical(token, import26.Tooltip) && (0 == nodeIndex))) {
+    if ((identical(token, import28.Tooltip) && (0 == nodeIndex))) {
       return _Tooltip_0_6;
     }
     return notFoundResult;
@@ -327,6 +328,11 @@ void initReflector() {
     return;
   }
   _visited = true;
+
+  _ngRef.registerComponent(MaterialPaperTooltipComponent, MaterialPaperTooltipComponentNgFactory);
+  _ngRef.registerDependencies(getTooltipHandle, const [
+    const [_i1.MaterialPaperTooltipComponent]
+  ]);
   _ref0.initReflector();
   _ref1.initReflector();
   _ref2.initReflector();
@@ -336,17 +342,4 @@ void initReflector() {
   _ref6.initReflector();
   _ref7.initReflector();
   _ref8.initReflector();
-  _ngRef.registerDependencies(
-    getTooltipHandle,
-    const [
-      const [
-        MaterialPaperTooltipComponent,
-      ],
-    ],
-  );
-
-  _ngRef.registerComponent(
-    MaterialPaperTooltipComponent,
-    MaterialPaperTooltipComponentNgFactory,
-  );
 }

@@ -9,7 +9,6 @@ import 'new_window_opener.dart';
 export 'new_window_opener.dart';
 import 'dart:html';
 import 'package:angular/angular.dart';
-// Required for initReflector().
 import 'package:angular/src/di/reflector.dart' as _ngRef;
 import 'package:angular/angular.template.dart' as _ref0;
 
@@ -19,9 +18,7 @@ void initReflector() {
     return;
   }
   _visited = true;
+
+  _ngRef.registerFactory(NewWindowOpener, () => new NewWindowOpener());
   _ref0.initReflector();
-  _ngRef.registerFactory(
-    NewWindowOpener,
-    () => new NewWindowOpener(),
-  );
 }

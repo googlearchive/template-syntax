@@ -16,7 +16,6 @@ import 'package:angular_components/model/ui/has_factory.dart';
 import 'package:angular_components/model/ui/highlight_assistant.dart';
 import 'package:angular_components/model/ui/highlight_provider.dart';
 import 'package:angular_components/model/ui/highlighted_text_model.dart';
-// Required for initReflector().
 import 'package:angular/angular.template.dart' as _ref0;
 import 'package:angular_components/highlighted_text/highlighted_value.template.dart' as _ref1;
 import 'package:angular_components/highlighted_text/highlighted_value.template.dart' as _ref2;
@@ -33,6 +32,7 @@ void initReflector() {
     return;
   }
   _visited = true;
+
   _ref0.initReflector();
   _ref1.initReflector();
   _ref2.initReflector();

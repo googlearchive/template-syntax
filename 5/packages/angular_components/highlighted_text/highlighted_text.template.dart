@@ -9,11 +9,9 @@ import 'highlighted_text.dart';
 export 'highlighted_text.dart';
 import 'package:angular/angular.dart';
 import 'package:angular_components/model/ui/highlighted_text_model.dart';
-// Required for initReflector().
 import 'package:angular/src/di/reflector.dart' as _ngRef;
 import 'package:angular/angular.template.dart' as _ref0;
 import 'package:angular_components/model/ui/highlighted_text_model.template.dart' as _ref1;
-
 import 'package:angular_components/highlighted_text/highlighted_text.scss.css.shim.dart' as import0;
 import 'package:angular/src/core/linker/app_view.dart';
 import 'highlighted_text.dart' as import2;
@@ -165,10 +163,8 @@ void initReflector() {
     return;
   }
   _visited = true;
+
+  _ngRef.registerComponent(HighlightedTextComponent, HighlightedTextComponentNgFactory);
   _ref0.initReflector();
   _ref1.initReflector();
-  _ngRef.registerComponent(
-    HighlightedTextComponent,
-    HighlightedTextComponentNgFactory,
-  );
 }

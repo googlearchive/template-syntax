@@ -9,7 +9,6 @@ import 'builder.dart';
 export 'builder.dart';
 import 'package:build/build.dart';
 import 'package:sass_builder/sass_builder.dart';
-// No initReflector() linking required.
 
-// No initReflector() needed.
+// No initReflector() linking required.
 void initReflector() {}

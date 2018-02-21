@@ -18,7 +18,6 @@ import 'package:angular_components/forms/error_renderer.dart' show ErrorFn;
 import 'package:angular_components/mixins/focusable_mixin.dart';
 import 'package:angular_components/utils/disposer/disposer.dart';
 import 'deferred_validator.dart';
-// Required for initReflector().
 import 'deferred_validator.template.dart' as _ref0;
 import 'package:angular/angular.template.dart' as _ref1;
 import 'package:angular_components/focus/focus.template.dart' as _ref2;
@@ -34,6 +33,7 @@ void initReflector() {
     return;
   }
   _visited = true;
+
   _ref0.initReflector();
   _ref1.initReflector();
   _ref2.initReflector();

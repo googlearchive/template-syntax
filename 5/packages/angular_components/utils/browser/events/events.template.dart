@@ -13,7 +13,6 @@ import 'package:angular/angular.dart';
 import 'package:js/js.dart';
 import 'package:js/js_util.dart' as js_util;
 import 'package:angular_components/utils/browser/feature_detector/feature_detector.dart';
-// Required for initReflector().
 import 'package:angular/angular.template.dart' as _ref0;
 import 'package:angular_components/utils/browser/feature_detector/feature_detector.template.dart' as _ref1;
 
@@ -23,6 +22,7 @@ void initReflector() {
     return;
   }
   _visited = true;
+
   _ref0.initReflector();
   _ref1.initReflector();
 }

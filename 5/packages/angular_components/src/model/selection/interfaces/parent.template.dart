@@ -8,7 +8,6 @@
 import 'parent.dart';
 export 'parent.dart';
 import 'dart:async';
-// No initReflector() linking required.
 
-// No initReflector() needed.
+// No initReflector() linking required.
 void initReflector() {}

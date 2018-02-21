@@ -9,7 +9,6 @@ import 'list_differ.dart';
 export 'list_differ.dart';
 import 'dart:collection';
 import 'package:observable/observable.dart';
-// No initReflector() linking required.
 
-// No initReflector() needed.
+// No initReflector() linking required.
 void initReflector() {}

@@ -17,7 +17,8 @@ import 'package:angular_components/material_icon/material_icon.dart';
 import 'package:angular_components/src/material_tree/material_tree_node.dart';
 import 'package:angular_components/src/material_tree/material_tree_root.dart';
 import 'package:angular_components/mixins/material_dropdown_base.dart';
-// Required for initReflector().
+import 'package:angular_components/model/selection/selection_options.dart';
+import 'package:intl/intl.dart';
 import 'package:angular/src/di/reflector.dart' as _ngRef;
 import 'package:angular/angular.template.dart' as _ref0;
 import 'package:angular_components/button_decorator/button_decorator.template.dart' as _ref1;
@@ -26,24 +27,24 @@ import 'package:angular_components/focus/keyboard_only_focus_indicator.template.
 import 'package:angular_components/material_checkbox/material_checkbox.template.dart' as _ref4;
 import 'package:angular_components/material_icon/material_icon.template.dart' as _ref5;
 import 'package:angular_components/mixins/material_dropdown_base.template.dart' as _ref6;
-import 'package:angular_components/src/material_tree/material_tree_node.template.dart' as _ref7;
-import 'package:angular_components/src/material_tree/material_tree_root.template.dart' as _ref8;
-
+import 'package:angular_components/model/selection/selection_options.template.dart' as _ref7;
+import 'package:angular_components/src/material_tree/material_tree_node.template.dart' as _ref8;
+import 'package:angular_components/src/material_tree/material_tree_root.template.dart' as _ref9;
 import 'package:angular_components/src/material_tree/group/material_tree_group.scss.css.shim.dart' as import0;
 import 'package:angular/src/core/linker/app_view.dart';
 import 'material_tree_group.dart' as import2;
 import 'dart:html' as import3;
 import 'package:angular/src/core/linker/view_container.dart';
 import 'package:angular/src/common/directives/ng_for.dart' as import5;
+import 'package:angular/src/common/directives/ng_if.dart';
 import 'package:angular/src/core/render/api.dart';
-import 'package:angular/src/core/linker/view_type.dart' as import7;
+import 'package:angular/src/core/linker/view_type.dart' as import8;
 import 'package:angular/src/core/change_detection/change_detection.dart';
-import 'package:angular/src/core/linker/app_view_utils.dart' as import9;
+import 'package:angular/src/core/linker/app_view_utils.dart' as import10;
 import 'package:angular/angular.dart';
 import 'package:angular/src/core/linker/template_ref.dart';
-import '../../../button_decorator/button_decorator.template.dart' as import12;
-import '../../../focus/keyboard_only_focus_indicator.dart' as import13;
-import 'package:angular/src/common/directives/ng_if.dart';
+import '../../../button_decorator/button_decorator.template.dart' as import13;
+import '../../../focus/keyboard_only_focus_indicator.dart' as import14;
 import '../../../button_decorator/button_decorator.dart' as import15;
 import '../../../utils/browser/dom_service/dom_service.dart' as import16;
 import '../../../material_checkbox/material_checkbox.template.dart' as import17;
@@ -64,12 +65,14 @@ class ViewMaterialTreeGroupComponent0 extends AppView<import2.MaterialTreeGroupC
   import3.UListElement _el_0;
   ViewContainer _appEl_1;
   import5.NgFor _NgFor_1_7;
+  ViewContainer _appEl_2;
+  NgIf _NgIf_2_7;
   var _expr_0;
   static RenderComponentType _renderType;
-  ViewMaterialTreeGroupComponent0(AppView<dynamic> parentView, num parentIndex) : super(import7.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  ViewMaterialTreeGroupComponent0(AppView<dynamic> parentView, num parentIndex) : super(import8.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     rootEl = import3.document.createElement('material-tree-group');
     createAttr(rootEl, 'role', 'group');
-    _renderType ??= import9.appViewUtils.createRenderType('', ViewEncapsulation.Emulated, styles$MaterialTreeGroupComponent);
+    _renderType ??= import10.appViewUtils.createRenderType('', ViewEncapsulation.Emulated, styles$MaterialTreeGroupComponent);
     setupComponentType(_renderType);
   }
   @override
@@ -83,6 +86,11 @@ class ViewMaterialTreeGroupComponent0 extends AppView<import2.MaterialTreeGroupC
     _appEl_1 = new ViewContainer(1, 0, this, _anchor_1);
     TemplateRef _TemplateRef_1_6 = new TemplateRef(_appEl_1, viewFactory_MaterialTreeGroupComponent1);
     _NgFor_1_7 = new import5.NgFor(_appEl_1, _TemplateRef_1_6);
+    var _anchor_2 = ngAnchor.clone(false);
+    _el_0.append(_anchor_2);
+    _appEl_2 = new ViewContainer(2, 0, this, _anchor_2);
+    TemplateRef _TemplateRef_2_6 = new TemplateRef(_appEl_2, viewFactory_MaterialTreeGroupComponent9);
+    _NgIf_2_7 = new NgIf(_appEl_2, _TemplateRef_2_6);
     init(const [], null);
     return null;
   }
@@ -90,18 +98,21 @@ class ViewMaterialTreeGroupComponent0 extends AppView<import2.MaterialTreeGroupC
   @override
   void detectChangesInternal() {
     final import2.MaterialTreeGroupComponent _ctx = ctx;
-    final currVal_0 = _ctx.group;
+    final currVal_0 = _ctx.visibleGroup;
     if (!identical(_expr_0, currVal_0)) {
       _NgFor_1_7.ngForOf = currVal_0;
       _expr_0 = currVal_0;
     }
     _NgFor_1_7.ngDoCheck();
+    _NgIf_2_7.ngIf = _ctx.viewMoreLinkVisible;
     _appEl_1.detectChangesInNestedViews();
+    _appEl_2.detectChangesInNestedViews();
   }
 
   @override
   void destroyInternal() {
     _appEl_1?.destroyNestedViews();
+    _appEl_2?.destroyNestedViews();
   }
 
   void detectHostChanges(bool firstCheck) {
@@ -119,8 +130,8 @@ AppView<import2.MaterialTreeGroupComponent> viewFactory_MaterialTreeGroupCompone
 
 class _ViewMaterialTreeGroupComponent1 extends AppView<import2.MaterialTreeGroupComponent> {
   import3.Element _el_0;
-  import12.ButtonDirectiveNgCd _ButtonDirective_0_4;
-  import13.KeyboardOnlyFocusIndicatorDirective _KeyboardOnlyFocusIndicatorDirective_0_5;
+  import13.ButtonDirectiveNgCd _ButtonDirective_0_4;
+  import14.KeyboardOnlyFocusIndicatorDirective _KeyboardOnlyFocusIndicatorDirective_0_5;
   import3.DivElement _el_1;
   import3.DivElement _el_2;
   ViewContainer _appEl_3;
@@ -142,7 +153,7 @@ class _ViewMaterialTreeGroupComponent1 extends AppView<import2.MaterialTreeGroup
   bool _expr_7;
   bool _expr_8;
   var _expr_12;
-  _ViewMaterialTreeGroupComponent1(AppView<dynamic> parentView, num parentIndex) : super(import7.ViewType.EMBEDDED, {'\$implicit': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMaterialTreeGroupComponent1(AppView<dynamic> parentView, num parentIndex) : super(import8.ViewType.EMBEDDED, {'\$implicit': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMaterialTreeGroupComponent0._renderType;
   }
   @override
@@ -154,8 +165,8 @@ class _ViewMaterialTreeGroupComponent1 extends AppView<import2.MaterialTreeGroup
     createAttr(_el_0, 'keyboardOnlyFocusIndicator', '');
     createAttr(_el_0, 'role', 'button');
     addShimE(_el_0);
-    _ButtonDirective_0_4 = new import12.ButtonDirectiveNgCd(new import15.ButtonDirective(_el_0));
-    _KeyboardOnlyFocusIndicatorDirective_0_5 = new import13.KeyboardOnlyFocusIndicatorDirective(_el_0, parentView.parentView.injectorGet(import16.DomService, parentView.viewData.parentIndex));
+    _ButtonDirective_0_4 = new import13.ButtonDirectiveNgCd(new import15.ButtonDirective(_el_0));
+    _KeyboardOnlyFocusIndicatorDirective_0_5 = new import14.KeyboardOnlyFocusIndicatorDirective(_el_0, parentView.parentView.injectorGet(import16.DomService, parentView.viewData.parentIndex));
     _el_1 = createDivAndAppend(doc, _el_0);
     _el_1.className = 'material-tree-item';
     createAttr(_el_1, 'role', 'treeitem');
@@ -206,7 +217,7 @@ class _ViewMaterialTreeGroupComponent1 extends AppView<import2.MaterialTreeGroup
     if ((identical(token, import15.ButtonDirective) && ((0 <= nodeIndex) && (nodeIndex <= 8)))) {
       return _ButtonDirective_0_4.instance;
     }
-    if ((identical(token, import13.KeyboardOnlyFocusIndicatorDirective) && ((0 <= nodeIndex) && (nodeIndex <= 8)))) {
+    if ((identical(token, import14.KeyboardOnlyFocusIndicatorDirective) && ((0 <= nodeIndex) && (nodeIndex <= 8)))) {
       return _KeyboardOnlyFocusIndicatorDirective_0_5;
     }
     return notFoundResult;
@@ -248,7 +259,7 @@ class _ViewMaterialTreeGroupComponent1 extends AppView<import2.MaterialTreeGroup
       _el_1.style.setProperty('padding-left', currVal_2?.toString());
       _expr_2 = currVal_2;
     }
-    final currVal_3 = import9.interpolate0(_ctx.isSelected(local_option));
+    final currVal_3 = import10.interpolate0(_ctx.isSelected(local_option));
     if (!identical(_expr_3, currVal_3)) {
       setAttr(_el_1, 'aria-selected', currVal_3?.toString());
       _expr_3 = currVal_3;
@@ -305,7 +316,7 @@ class _ViewMaterialTreeGroupComponent2 extends AppView<import2.MaterialTreeGroup
   NgIf _NgIf_1_7;
   ViewContainer _appEl_2;
   NgIf _NgIf_2_7;
-  _ViewMaterialTreeGroupComponent2(AppView<dynamic> parentView, num parentIndex) : super(import7.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMaterialTreeGroupComponent2(AppView<dynamic> parentView, num parentIndex) : super(import8.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMaterialTreeGroupComponent0._renderType;
   }
   @override
@@ -355,7 +366,7 @@ class _ViewMaterialTreeGroupComponent3 extends AppView<import2.MaterialTreeGroup
   import18.MaterialCheckboxComponent _MaterialCheckboxComponent_0_4;
   bool _expr_0;
   bool _expr_2;
-  _ViewMaterialTreeGroupComponent3(AppView<dynamic> parentView, num parentIndex) : super(import7.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMaterialTreeGroupComponent3(AppView<dynamic> parentView, num parentIndex) : super(import8.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMaterialTreeGroupComponent0._renderType;
   }
   @override
@@ -414,7 +425,7 @@ class _ViewMaterialTreeGroupComponent4 extends AppView<import2.MaterialTreeGroup
   import3.Element _el_0;
   import19.ViewMaterialIconComponent0 _compView_0;
   import20.MaterialIconComponent _MaterialIconComponent_0_4;
-  _ViewMaterialTreeGroupComponent4(AppView<dynamic> parentView, num parentIndex) : super(import7.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMaterialTreeGroupComponent4(AppView<dynamic> parentView, num parentIndex) : super(import8.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMaterialTreeGroupComponent0._renderType;
   }
   @override
@@ -463,7 +474,7 @@ class _ViewMaterialTreeGroupComponent5 extends AppView<import2.MaterialTreeGroup
   var _expr_0;
   var _expr_1;
   var _expr_2;
-  _ViewMaterialTreeGroupComponent5(AppView<dynamic> parentView, num parentIndex) : super(import7.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMaterialTreeGroupComponent5(AppView<dynamic> parentView, num parentIndex) : super(import8.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMaterialTreeGroupComponent0._renderType;
   }
   @override
@@ -536,7 +547,7 @@ class _ViewMaterialTreeGroupComponent6 extends AppView<import2.MaterialTreeGroup
   bool _expr_0;
   bool _expr_1;
   var _expr_2;
-  _ViewMaterialTreeGroupComponent6(AppView<dynamic> parentView, num parentIndex) : super(import7.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMaterialTreeGroupComponent6(AppView<dynamic> parentView, num parentIndex) : super(import8.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMaterialTreeGroupComponent0._renderType;
   }
   @override
@@ -565,7 +576,7 @@ class _ViewMaterialTreeGroupComponent6 extends AppView<import2.MaterialTreeGroup
       updateClass(_el_0, 'disabled-item', currVal_1);
       _expr_1 = currVal_1;
     }
-    final currVal_2 = import9.interpolate0(_ctx.getOptionAsText(local_option));
+    final currVal_2 = import10.interpolate0(_ctx.getOptionAsText(local_option));
     if (!identical(_expr_2, currVal_2)) {
       _text_1.text = currVal_2;
       _expr_2 = currVal_2;
@@ -580,11 +591,11 @@ AppView<import2.MaterialTreeGroupComponent> viewFactory_MaterialTreeGroupCompone
 class _ViewMaterialTreeGroupComponent7 extends AppView<import2.MaterialTreeGroupComponent> {
   import3.Element _el_0;
   import19.ViewMaterialIconComponent0 _compView_0;
-  import12.ButtonDirectiveNgCd _ButtonDirective_0_4;
+  import13.ButtonDirectiveNgCd _ButtonDirective_0_4;
   import20.MaterialIconComponent _MaterialIconComponent_0_5;
   bool _expr_0;
   var _expr_1;
-  _ViewMaterialTreeGroupComponent7(AppView<dynamic> parentView, num parentIndex) : super(import7.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMaterialTreeGroupComponent7(AppView<dynamic> parentView, num parentIndex) : super(import8.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMaterialTreeGroupComponent0._renderType;
   }
   @override
@@ -595,7 +606,7 @@ class _ViewMaterialTreeGroupComponent7 extends AppView<import2.MaterialTreeGroup
     _el_0.className = 'tree-expansion-state';
     createAttr(_el_0, 'role', 'button');
     addShimC(_el_0);
-    _ButtonDirective_0_4 = new import12.ButtonDirectiveNgCd(new import15.ButtonDirective(_el_0));
+    _ButtonDirective_0_4 = new import13.ButtonDirectiveNgCd(new import15.ButtonDirective(_el_0));
     _MaterialIconComponent_0_5 = new import20.MaterialIconComponent(_el_0);
     _compView_0.create(_MaterialIconComponent_0_5, []);
     _el_0.addEventListener('click', eventHandler1(_ButtonDirective_0_4.instance.handleClick));
@@ -659,8 +670,9 @@ class _ViewMaterialTreeGroupComponent8 extends AppView<import2.MaterialTreeGroup
   var _expr_0;
   int _expr_1;
   bool _expr_2;
-  bool _expr_3;
-  _ViewMaterialTreeGroupComponent8(AppView<dynamic> parentView, num parentIndex) : super(import7.ViewType.EMBEDDED, {'\$implicit': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  int _expr_3;
+  bool _expr_4;
+  _ViewMaterialTreeGroupComponent8(AppView<dynamic> parentView, num parentIndex) : super(import8.ViewType.EMBEDDED, {'\$implicit': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMaterialTreeGroupComponent0._renderType;
   }
   @override
@@ -704,10 +716,15 @@ class _ViewMaterialTreeGroupComponent8 extends AppView<import2.MaterialTreeGroup
       _MaterialTreeGroupComponent_0_4.parentHasCheckbox = currVal_2;
       _expr_2 = currVal_2;
     }
-    final currVal_3 = _ctx.expandAll;
+    final currVal_3 = _ctx.maxInitialOptionsShown;
     if (!identical(_expr_3, currVal_3)) {
-      _MaterialTreeGroupComponent_0_4.expandAll = currVal_3;
+      _MaterialTreeGroupComponent_0_4.maxInitialOptionsShown = currVal_3;
       _expr_3 = currVal_3;
+    }
+    final currVal_4 = _ctx.expandAll;
+    if (!identical(_expr_4, currVal_4)) {
+      _MaterialTreeGroupComponent_0_4.expandAll = currVal_4;
+      _expr_4 = currVal_4;
     }
     _compView_0.detectHostChanges(firstCheck);
     _compView_0.detectChanges();
@@ -724,12 +741,83 @@ AppView<import2.MaterialTreeGroupComponent> viewFactory_MaterialTreeGroupCompone
   return new _ViewMaterialTreeGroupComponent8(parentView, parentIndex);
 }
 
+class _ViewMaterialTreeGroupComponent9 extends AppView<import2.MaterialTreeGroupComponent> {
+  import3.Element _el_0;
+  import3.DivElement _el_1;
+  import3.DivElement _el_2;
+  import3.AnchorElement _el_3;
+  import13.ButtonDirectiveNgCd _ButtonDirective_3_4;
+  import3.Text _text_4;
+  var _expr_0;
+  _ViewMaterialTreeGroupComponent9(AppView<dynamic> parentView, num parentIndex) : super(import8.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+    componentType = ViewMaterialTreeGroupComponent0._renderType;
+  }
+  @override
+  ComponentRef<import2.MaterialTreeGroupComponent> build() {
+    var doc = import3.document;
+    _el_0 = doc.createElement('li');
+    addShimE(_el_0);
+    _el_1 = createDivAndAppend(doc, _el_0);
+    _el_1.className = 'view-more-link-item';
+    addShimC(_el_1);
+    _el_2 = createDivAndAppend(doc, _el_1);
+    _el_2.className = 'material-tree-shift';
+    addShimC(_el_2);
+    _el_3 = createAndAppend(doc, 'a', _el_2);
+    createAttr(_el_3, 'buttonDecorator', '');
+    _el_3.className = 'view-more-link';
+    createAttr(_el_3, 'href', '#');
+    createAttr(_el_3, 'role', 'button');
+    addShimC(_el_3);
+    _ButtonDirective_3_4 = new import13.ButtonDirectiveNgCd(new import15.ButtonDirective(_el_3));
+    _text_4 = new import3.Text('');
+    _el_3.append(_text_4);
+    _el_3.addEventListener('click', eventHandler1(_ButtonDirective_3_4.instance.handleClick));
+    _el_3.addEventListener('keypress', eventHandler1(_ButtonDirective_3_4.instance.handleKeyPress));
+    final subscription_0 = _ButtonDirective_3_4.instance.trigger.listen(eventHandler1(ctx.viewMoreOptions));
+    init([_el_0], [subscription_0]);
+    return null;
+  }
+
+  @override
+  dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
+    if ((identical(token, import15.ButtonDirective) && ((3 <= nodeIndex) && (nodeIndex <= 4)))) {
+      return _ButtonDirective_3_4.instance;
+    }
+    return notFoundResult;
+  }
+
+  @override
+  void detectChangesInternal() {
+    final import2.MaterialTreeGroupComponent _ctx = ctx;
+    bool firstCheck = (this.cdState == 0);
+    final currVal_0 = _ctx.getIndent(_ctx.visibleGroup.last);
+    if (!identical(_expr_0, currVal_0)) {
+      _el_1.style.setProperty('padding-left', currVal_0?.toString());
+      _expr_0 = currVal_0;
+    }
+    if (firstCheck) {
+      if (!identical(_ctx.fixedPadding, null)) {
+        _el_2.style.setProperty('padding-left', _ctx.fixedPadding?.toString());
+      }
+    }
+    _ButtonDirective_3_4.detectHostChanges(this, _el_3);
+    if (firstCheck) {
+      (_text_4.text = (_ctx.viewMoreMsg ?? ''));
+    }
+  }
+}
+
+AppView<import2.MaterialTreeGroupComponent> viewFactory_MaterialTreeGroupComponent9(AppView<dynamic> parentView, num parentIndex) {
+  return new _ViewMaterialTreeGroupComponent9(parentView, parentIndex);
+}
+
 const List<dynamic> styles$MaterialTreeGroupComponentHost = const [];
 
 class _ViewMaterialTreeGroupComponentHost0 extends AppView<dynamic> {
   ViewMaterialTreeGroupComponent0 _compView_0;
   import2.MaterialTreeGroupComponent _MaterialTreeGroupComponent_0_4;
-  _ViewMaterialTreeGroupComponentHost0(AppView<dynamic> parentView, num parentIndex) : super(import7.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
+  _ViewMaterialTreeGroupComponentHost0(AppView<dynamic> parentView, num parentIndex) : super(import8.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewMaterialTreeGroupComponent0(this, 0);
@@ -774,6 +862,8 @@ void initReflector() {
     return;
   }
   _visited = true;
+
+  _ngRef.registerComponent(MaterialTreeGroupComponent, MaterialTreeGroupComponentNgFactory);
   _ref0.initReflector();
   _ref1.initReflector();
   _ref2.initReflector();
@@ -783,8 +873,5 @@ void initReflector() {
   _ref6.initReflector();
   _ref7.initReflector();
   _ref8.initReflector();
-  _ngRef.registerComponent(
-    MaterialTreeGroupComponent,
-    MaterialTreeGroupComponentNgFactory,
-  );
+  _ref9.initReflector();
 }

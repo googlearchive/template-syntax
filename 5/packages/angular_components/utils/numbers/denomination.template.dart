@@ -8,7 +8,6 @@
 import 'denomination.dart';
 export 'denomination.dart';
 import 'package:fixnum/fixnum.dart';
-// No initReflector() linking required.
 
-// No initReflector() needed.
+// No initReflector() linking required.
 void initReflector() {}

@@ -8,7 +8,6 @@
 import 'zoned_async.dart';
 export 'zoned_async.dart';
 import 'dart:async';
-// No initReflector() linking required.
 
-// No initReflector() needed.
+// No initReflector() linking required.
 void initReflector() {}

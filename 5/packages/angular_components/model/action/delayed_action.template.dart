@@ -8,7 +8,6 @@
 import 'delayed_action.dart';
 export 'delayed_action.dart';
 import 'dart:async';
-// No initReflector() linking required.
 
-// No initReflector() needed.
+// No initReflector() linking required.
 void initReflector() {}

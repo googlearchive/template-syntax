@@ -8,7 +8,6 @@
 import 'select.dart';
 export 'select.dart';
 import 'package:angular_components/utils/async/async.dart';
-// Required for initReflector().
 import 'package:angular_components/src/model/selection/interfaces/selectable.template.dart' as _ref0;
 import 'package:angular_components/utils/async/async.template.dart' as _ref1;
 
@@ -18,6 +17,7 @@ void initReflector() {
     return;
   }
   _visited = true;
+
   _ref0.initReflector();
   _ref1.initReflector();
 }

@@ -13,12 +13,10 @@ import 'package:angular/angular.dart';
 import 'package:intl/intl.dart';
 import 'package:angular_components/material_button/material_button.dart';
 import 'package:angular_components/material_spinner/material_spinner.dart';
-// Required for initReflector().
 import 'package:angular/src/di/reflector.dart' as _ngRef;
 import 'package:angular/angular.template.dart' as _ref0;
 import 'package:angular_components/material_button/material_button.template.dart' as _ref1;
 import 'package:angular_components/material_spinner/material_spinner.template.dart' as _ref2;
-
 import 'package:angular_components/material_yes_no_buttons/material_yes_no_buttons.scss.css.shim.dart' as import0;
 import 'package:angular/src/core/linker/app_view.dart';
 import 'material_yes_no_buttons.dart' as import2;
@@ -225,7 +223,7 @@ class _ViewMaterialYesNoButtonsComponent2 extends AppView<import2.MaterialYesNoB
       _expr_0 = currVal_0;
     }
     _compView_0.detectHostChanges(firstCheck);
-    final currVal_3 = import10.interpolate0(_ctx.yesText);
+    final currVal_3 = (_ctx.yesText ?? '');
     if (!identical(_expr_3, currVal_3)) {
       _text_1.text = currVal_3;
       _expr_3 = currVal_3;
@@ -310,7 +308,7 @@ class _ViewMaterialYesNoButtonsComponent3 extends AppView<import2.MaterialYesNoB
       _compView_0.markAsCheckOnce();
     }
     _compView_0.detectHostChanges(firstCheck);
-    final currVal_2 = import10.interpolate0(_ctx.noText);
+    final currVal_2 = (_ctx.noText ?? '');
     if (!identical(_expr_2, currVal_2)) {
       _text_1.text = currVal_2;
       _expr_2 = currVal_2;
@@ -384,11 +382,9 @@ void initReflector() {
     return;
   }
   _visited = true;
+
+  _ngRef.registerComponent(MaterialYesNoButtonsComponent, MaterialYesNoButtonsComponentNgFactory);
   _ref0.initReflector();
   _ref1.initReflector();
   _ref2.initReflector();
-  _ngRef.registerComponent(
-    MaterialYesNoButtonsComponent,
-    MaterialYesNoButtonsComponentNgFactory,
-  );
 }

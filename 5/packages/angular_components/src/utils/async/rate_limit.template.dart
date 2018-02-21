@@ -9,7 +9,6 @@ import 'rate_limit.dart';
 export 'rate_limit.dart';
 import 'dart:async';
 import 'package:angular_components/utils/rate_limit_utils/rate_limit_utils.dart' show RateLimitStrategy;
-// Required for initReflector().
 import 'package:angular_components/utils/rate_limit_utils/rate_limit_utils.template.dart' as _ref0;
 
 var _visited = false;
@@ -18,5 +17,6 @@ void initReflector() {
     return;
   }
   _visited = true;
+
   _ref0.initReflector();
 }

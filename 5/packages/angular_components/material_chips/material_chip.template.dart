@@ -16,7 +16,6 @@ import 'package:angular_components/focus/focus.dart';
 import 'package:angular_components/model/selection/selection_model.dart';
 import 'package:angular_components/model/ui/has_renderer.dart';
 import 'package:angular_components/utils/id_generator/id_generator.dart';
-// Required for initReflector().
 import 'package:angular/src/di/reflector.dart' as _ngRef;
 import 'package:angular/angular.template.dart' as _ref0;
 import 'package:angular_components/button_decorator/button_decorator.template.dart' as _ref1;
@@ -24,7 +23,6 @@ import 'package:angular_components/focus/focus.template.dart' as _ref2;
 import 'package:angular_components/model/selection/selection_model.template.dart' as _ref3;
 import 'package:angular_components/model/ui/has_renderer.template.dart' as _ref4;
 import 'package:angular_components/utils/id_generator/id_generator.template.dart' as _ref5;
-
 import 'package:angular_components/material_chips/material_chip.scss.css.shim.dart' as import0;
 import 'package:angular/src/core/linker/app_view.dart';
 import 'material_chip.dart' as import2;
@@ -94,7 +92,7 @@ class ViewMaterialChipComponent0 extends AppView<import2.MaterialChipComponent> 
       setProp(_el_1, 'id', currVal_1);
       _expr_1 = currVal_1;
     }
-    final currVal_2 = import9.interpolate0(_ctx.label);
+    final currVal_2 = (_ctx.label ?? '');
     if (!identical(_expr_2, currVal_2)) {
       _text_2.text = currVal_2;
       _expr_2 = currVal_2;
@@ -238,14 +236,12 @@ void initReflector() {
     return;
   }
   _visited = true;
+
+  _ngRef.registerComponent(MaterialChipComponent, MaterialChipComponentNgFactory);
   _ref0.initReflector();
   _ref1.initReflector();
   _ref2.initReflector();
   _ref3.initReflector();
   _ref4.initReflector();
   _ref5.initReflector();
-  _ngRef.registerComponent(
-    MaterialChipComponent,
-    MaterialChipComponentNgFactory,
-  );
 }

@@ -25,7 +25,6 @@ import 'package:angular_components/model/selection/selection_options.dart';
 import 'package:angular_components/model/ui/has_renderer.dart';
 import 'package:angular_components/utils/browser/dom_service/dom_service.dart';
 import 'material_tree_impl.dart';
-// Required for initReflector().
 import 'package:angular/src/di/reflector.dart' as _ngRef;
 import 'material_tree_impl.template.dart' as _ref0;
 import 'package:angular/angular.template.dart' as _ref1;
@@ -44,7 +43,6 @@ import 'package:angular_components/model/ui/has_renderer.template.dart' as _ref1
 import 'package:angular_components/src/material_tree/material_tree_filter.template.dart' as _ref14;
 import 'package:angular_components/src/material_tree/material_tree_root.template.dart' as _ref15;
 import 'package:angular_components/utils/browser/dom_service/dom_service.template.dart' as _ref16;
-
 import 'package:angular_components/src/material_tree/material_tree_dropdown.scss.css.shim.dart' as import0;
 import 'package:angular/src/core/linker/app_view.dart';
 import 'material_tree_dropdown.dart' as import2;
@@ -71,19 +69,21 @@ import 'package:angular/src/core/zone/ng_zone.dart' as import22;
 import '../laminate/overlay/overlay_service.dart' as import23;
 import '../../laminate/overlay/zindexer.dart' as import24;
 import 'package:angular/src/core/di/opaque_token.dart' as import25;
-import '../laminate/popup/popup_size_provider.dart' as import26;
+import 'dart:core';
+import '../../laminate/enums/alignment.dart' as import27;
+import '../laminate/popup/popup_size_provider.dart' as import28;
 import 'package:angular/src/core/linker/element_ref.dart';
-import '../../mixins/material_dropdown_base.dart' as import28;
-import '../../content/deferred_content_aware.dart' as import29;
-import '../laminate/popup/popup_ref.dart' as import30;
-import '../../material_icon/material_icon.template.dart' as import31;
-import '../../material_icon/material_icon.dart' as import32;
-import 'material_tree_filter.template.dart' as import33;
-import 'material_tree_filter.dart' as import34;
-import 'material_tree_root.dart' as import35;
-import 'material_tree_impl.template.dart' as import36;
-import 'material_tree_impl.dart' as import37;
-import '../../focus/focus.dart' as import38;
+import '../../content/deferred_content_aware.dart' as import30;
+import '../../mixins/material_dropdown_base.dart' as import31;
+import '../laminate/popup/popup_ref.dart' as import32;
+import '../../material_icon/material_icon.template.dart' as import33;
+import '../../material_icon/material_icon.dart' as import34;
+import 'material_tree_filter.template.dart' as import35;
+import 'material_tree_filter.dart' as import36;
+import 'material_tree_root.dart' as import37;
+import 'material_tree_impl.template.dart' as import38;
+import 'material_tree_impl.dart' as import39;
+import '../../focus/focus.dart' as import40;
 
 const List<dynamic> styles$MaterialTreeDropdownComponent = const [import0.styles];
 
@@ -102,7 +102,6 @@ class ViewMaterialTreeDropdownComponent0 extends AppView<import2.MaterialTreeDro
   import9.ViewMaterialPopupComponent0 _compView_4;
   ViewContainer _appEl_4;
   import10.MaterialPopupComponent _MaterialPopupComponent_4_6;
-  dynamic _DeferredContentAware_4_7;
   dynamic __PopupHierarchy_4_9;
   dynamic __PopupRef_4_10;
   import4.DivElement _el_5;
@@ -167,8 +166,7 @@ class ViewMaterialTreeDropdownComponent0 extends AppView<import2.MaterialTreeDro
     createAttr(_el_4, 'trackLayoutChanges', '');
     addShimC(_el_4);
     _appEl_4 = new ViewContainer(4, null, this, _el_4);
-    _MaterialPopupComponent_4_6 = new import10.MaterialPopupComponent(parentView.injectorGet(import21.PopupHierarchy, viewData.parentIndex, null), parentView.injectorGet(import10.MaterialPopupComponent, viewData.parentIndex, null), null, parentView.injectorGet(import22.NgZone, viewData.parentIndex), parentView.injectorGet(import23.OverlayService, viewData.parentIndex), parentView.injectorGet(import24.ZIndexer, viewData.parentIndex), parentView.injectorGet(const import25.OpaqueToken('defaultPopupPositions'), viewData.parentIndex), parentView.injectorGet(const import25.OpaqueToken('overlayRepositionLoop'), viewData.parentIndex), parentView.injectorGet(import26.PopupSizeProvider, viewData.parentIndex, null), _compView_4.ref, _appEl_4, new ElementRef(_el_4));
-    _DeferredContentAware_4_7 = _MaterialPopupComponent_4_6;
+    _MaterialPopupComponent_4_6 = new import10.MaterialPopupComponent(parentView.injectorGet(import21.PopupHierarchy, viewData.parentIndex, null), parentView.injectorGet(import10.MaterialPopupComponent, viewData.parentIndex, null), null, parentView.injectorGet(import22.NgZone, viewData.parentIndex), parentView.injectorGet(import23.OverlayService, viewData.parentIndex), parentView.injectorGet(import24.ZIndexer, viewData.parentIndex), parentView.injectorGet(const import25.OpaqueToken<List<import27.RelativePosition>>('defaultPopupPositions'), viewData.parentIndex), parentView.injectorGet(const import25.OpaqueToken('overlayRepositionLoop'), viewData.parentIndex), parentView.injectorGet(import28.PopupSizeProvider, viewData.parentIndex, null), _compView_4.ref, _appEl_4, new ElementRef(_el_4));
     _el_5 = doc.createElement('div');
     createAttr(_el_5, 'header', '');
     addShimC(_el_5);
@@ -181,7 +179,7 @@ class ViewMaterialTreeDropdownComponent0 extends AppView<import2.MaterialTreeDro
     var _anchor_7 = ngAnchor.clone(false);
     _appEl_7 = new ViewContainer(7, 4, this, _anchor_7);
     TemplateRef _TemplateRef_7_6 = new TemplateRef(_appEl_7, viewFactory_MaterialTreeDropdownComponent5);
-    _DeferredContentDirective_7_7 = new import11.DeferredContentDirective(_appEl_7, _TemplateRef_7_6, _DeferredContentAware_4_7);
+    _DeferredContentDirective_7_7 = new import11.DeferredContentDirective(_appEl_7, _TemplateRef_7_6, _MaterialPopupComponent_4_6);
     _compView_4.create(_MaterialPopupComponent_4_6, [
       [_el_5],
       [_appEl_7],
@@ -192,7 +190,7 @@ class ViewMaterialTreeDropdownComponent0 extends AppView<import2.MaterialTreeDro
     _el_0.addEventListener('keyup', eventHandler0(_KeyboardOnlyFocusIndicatorDirective_0_4.resetOutline));
     _el_0.addEventListener('blur', eventHandler0(_KeyboardOnlyFocusIndicatorDirective_0_4.resetOutline));
     _el_0.addEventListener('mousedown', eventHandler0(_KeyboardOnlyFocusIndicatorDirective_0_4.hideOutline));
-    final subscription_0 = _MaterialPopupComponent_4_6.onVisible.listen(eventHandler1(_handle_visibleChange_4_0));
+    final subscription_0 = _MaterialPopupComponent_4_6.onVisible.listen(eventHandler1(_handle_visibleChange_4_1));
     final subscription_1 = _MaterialPopupComponent_4_6.onOpened.listen(eventHandler0(ctx.focus));
     init(const [], [subscription_0, subscription_1]);
     return null;
@@ -206,16 +204,13 @@ class ViewMaterialTreeDropdownComponent0 extends AppView<import2.MaterialTreeDro
     if ((identical(token, import6.PopupSourceDirective) && ((0 <= nodeIndex) && (nodeIndex <= 3)))) {
       return _PopupSourceDirective_0_5;
     }
-    if (((identical(token, import10.MaterialPopupComponent) || identical(token, import28.DropdownHandle)) && ((4 <= nodeIndex) && (nodeIndex <= 7)))) {
+    if ((((identical(token, import10.MaterialPopupComponent) || identical(token, import30.DeferredContentAware)) || identical(token, import31.DropdownHandle)) && ((4 <= nodeIndex) && (nodeIndex <= 7)))) {
       return _MaterialPopupComponent_4_6;
-    }
-    if ((identical(token, import29.DeferredContentAware) && ((4 <= nodeIndex) && (nodeIndex <= 7)))) {
-      return _DeferredContentAware_4_7;
     }
     if ((identical(token, import21.PopupHierarchy) && ((4 <= nodeIndex) && (nodeIndex <= 7)))) {
       return _PopupHierarchy_4_9;
     }
-    if ((identical(token, import30.PopupRef) && ((4 <= nodeIndex) && (nodeIndex <= 7)))) {
+    if ((identical(token, import32.PopupRef) && ((4 <= nodeIndex) && (nodeIndex <= 7)))) {
       return _PopupRef_4_10;
     }
     return notFoundResult;
@@ -249,6 +244,9 @@ class ViewMaterialTreeDropdownComponent0 extends AppView<import2.MaterialTreeDro
       _expr_8 = currVal_8;
     }
     _NgIf_6_7.ngIf = (_ctx.supportsFiltering && _ctx.showFilterInsidePopup);
+    if (firstCheck) {
+      (_DeferredContentDirective_7_7.preserveDimensions = true);
+    }
     _appEl_1.detectChangesInNestedViews();
     _appEl_2.detectChangesInNestedViews();
     _appEl_3.detectChangesInNestedViews();
@@ -304,7 +302,7 @@ class ViewMaterialTreeDropdownComponent0 extends AppView<import2.MaterialTreeDro
     _KeyboardOnlyFocusIndicatorDirective_0_4.hideOutline();
   }
 
-  void _handle_visibleChange_4_0($event) {
+  void _handle_visibleChange_4_1($event) {
     ctx.visible = $event;
   }
 }
@@ -335,7 +333,7 @@ class _ViewMaterialTreeDropdownComponent1 extends AppView<import2.MaterialTreeDr
   @override
   void detectChangesInternal() {
     final import2.MaterialTreeDropdownComponent _ctx = ctx;
-    final currVal_0 = import15.interpolate0(_ctx.placeholder);
+    final currVal_0 = (_ctx.placeholder ?? '');
     if (!identical(_expr_0, currVal_0)) {
       _text_1.text = currVal_0;
       _expr_0 = currVal_0;
@@ -349,19 +347,19 @@ AppView<import2.MaterialTreeDropdownComponent> viewFactory_MaterialTreeDropdownC
 
 class _ViewMaterialTreeDropdownComponent2 extends AppView<import2.MaterialTreeDropdownComponent> {
   import4.Element _el_0;
-  import31.ViewMaterialIconComponent0 _compView_0;
-  import32.MaterialIconComponent _MaterialIconComponent_0_4;
+  import33.ViewMaterialIconComponent0 _compView_0;
+  import34.MaterialIconComponent _MaterialIconComponent_0_4;
   _ViewMaterialTreeDropdownComponent2(AppView<dynamic> parentView, num parentIndex) : super(import13.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMaterialTreeDropdownComponent0._renderType;
   }
   @override
   ComponentRef<import2.MaterialTreeDropdownComponent> build() {
-    _compView_0 = new import31.ViewMaterialIconComponent0(this, 0);
+    _compView_0 = new import33.ViewMaterialIconComponent0(this, 0);
     _el_0 = _compView_0.rootEl;
     _el_0.className = 'icon';
     createAttr(_el_0, 'icon', 'arrow_drop_down');
     addShimC(_el_0);
-    _MaterialIconComponent_0_4 = new import32.MaterialIconComponent(_el_0);
+    _MaterialIconComponent_0_4 = new import34.MaterialIconComponent(_el_0);
     _compView_0.create(_MaterialIconComponent_0_4, []);
     init0(_el_0);
     return null;
@@ -394,8 +392,8 @@ AppView<import2.MaterialTreeDropdownComponent> viewFactory_MaterialTreeDropdownC
 
 class _ViewMaterialTreeDropdownComponent3 extends AppView<import2.MaterialTreeDropdownComponent> {
   import4.Element _el_0;
-  import33.ViewMaterialTreeFilterComponent0 _compView_0;
-  import34.MaterialTreeFilterComponent _MaterialTreeFilterComponent_0_4;
+  import35.ViewMaterialTreeFilterComponent0 _compView_0;
+  import36.MaterialTreeFilterComponent _MaterialTreeFilterComponent_0_4;
   String _expr_0;
   var _expr_1;
   _ViewMaterialTreeDropdownComponent3(AppView<dynamic> parentView, num parentIndex) : super(import13.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
@@ -403,10 +401,10 @@ class _ViewMaterialTreeDropdownComponent3 extends AppView<import2.MaterialTreeDr
   }
   @override
   ComponentRef<import2.MaterialTreeDropdownComponent> build() {
-    _compView_0 = new import33.ViewMaterialTreeFilterComponent0(this, 0);
+    _compView_0 = new import35.ViewMaterialTreeFilterComponent0(this, 0);
     _el_0 = _compView_0.rootEl;
     addShimC(_el_0);
-    _MaterialTreeFilterComponent_0_4 = new import34.MaterialTreeFilterComponent(parentView.parentView.injectorGet(import35.MaterialTreeRoot, parentView.viewData.parentIndex, null));
+    _MaterialTreeFilterComponent_0_4 = new import36.MaterialTreeFilterComponent(parentView.parentView.injectorGet(import37.MaterialTreeRoot, parentView.viewData.parentIndex, null));
     _compView_0.create(_MaterialTreeFilterComponent_0_4, []);
     final subscription_0 = _MaterialTreeFilterComponent_0_4.onFiltered.listen(eventHandler1(_handle_filter_0_0));
     init([_el_0], [subscription_0]);
@@ -450,8 +448,8 @@ AppView<import2.MaterialTreeDropdownComponent> viewFactory_MaterialTreeDropdownC
 
 class _ViewMaterialTreeDropdownComponent4 extends AppView<import2.MaterialTreeDropdownComponent> {
   import4.Element _el_0;
-  import33.ViewMaterialTreeFilterComponent0 _compView_0;
-  import34.MaterialTreeFilterComponent _MaterialTreeFilterComponent_0_4;
+  import35.ViewMaterialTreeFilterComponent0 _compView_0;
+  import36.MaterialTreeFilterComponent _MaterialTreeFilterComponent_0_4;
   String _expr_1;
   var _expr_2;
   _ViewMaterialTreeDropdownComponent4(AppView<dynamic> parentView, num parentIndex) : super(import13.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
@@ -459,12 +457,12 @@ class _ViewMaterialTreeDropdownComponent4 extends AppView<import2.MaterialTreeDr
   }
   @override
   ComponentRef<import2.MaterialTreeDropdownComponent> build() {
-    _compView_0 = new import33.ViewMaterialTreeFilterComponent0(this, 0);
+    _compView_0 = new import35.ViewMaterialTreeFilterComponent0(this, 0);
     _el_0 = _compView_0.rootEl;
     _el_0.className = 'search-box';
     createAttr(_el_0, 'leadingGlyph', 'search');
     addShimC(_el_0);
-    _MaterialTreeFilterComponent_0_4 = new import34.MaterialTreeFilterComponent(parentView.parentView.injectorGet(import35.MaterialTreeRoot, parentView.viewData.parentIndex, null));
+    _MaterialTreeFilterComponent_0_4 = new import36.MaterialTreeFilterComponent(parentView.parentView.injectorGet(import37.MaterialTreeRoot, parentView.viewData.parentIndex, null));
     _compView_0.create(_MaterialTreeFilterComponent_0_4, []);
     init0(_el_0);
     return null;
@@ -507,8 +505,8 @@ AppView<import2.MaterialTreeDropdownComponent> viewFactory_MaterialTreeDropdownC
 
 class _ViewMaterialTreeDropdownComponent5 extends AppView<import2.MaterialTreeDropdownComponent> {
   import4.Element _el_0;
-  import36.ViewMaterialTreeComponent0 _compView_0;
-  import37.MaterialTreeComponent _MaterialTreeComponent_0_4;
+  import38.ViewMaterialTreeComponent0 _compView_0;
+  import39.MaterialTreeComponent _MaterialTreeComponent_0_4;
   bool _expr_0;
   var _expr_1;
   var _expr_2;
@@ -519,10 +517,10 @@ class _ViewMaterialTreeDropdownComponent5 extends AppView<import2.MaterialTreeDr
   }
   @override
   ComponentRef<import2.MaterialTreeDropdownComponent> build() {
-    _compView_0 = new import36.ViewMaterialTreeComponent0(this, 0);
+    _compView_0 = new import38.ViewMaterialTreeComponent0(this, 0);
     _el_0 = _compView_0.rootEl;
     addShimC(_el_0);
-    _MaterialTreeComponent_0_4 = new import37.MaterialTreeComponent(parentView.parentView.injectorGet(import35.MaterialTreeRoot, parentView.viewData.parentIndex, null));
+    _MaterialTreeComponent_0_4 = new import39.MaterialTreeComponent(parentView.parentView.injectorGet(import37.MaterialTreeRoot, parentView.viewData.parentIndex, null), null);
     _compView_0.create(_MaterialTreeComponent_0_4, []);
     init0(_el_0);
     return null;
@@ -530,7 +528,7 @@ class _ViewMaterialTreeDropdownComponent5 extends AppView<import2.MaterialTreeDr
 
   @override
   dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
-    if (((identical(token, import37.MaterialTreeComponent) || identical(token, import35.MaterialTreeRoot)) && (0 == nodeIndex))) {
+    if (((identical(token, import39.MaterialTreeComponent) || identical(token, import37.MaterialTreeRoot)) && (0 == nodeIndex))) {
       return _MaterialTreeComponent_0_4;
     }
     return notFoundResult;
@@ -597,7 +595,7 @@ class _ViewMaterialTreeDropdownComponentHost0 extends AppView<dynamic> {
 
   @override
   dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
-    if ((((identical(token, import2.MaterialTreeDropdownComponent) || identical(token, import38.Focusable)) || identical(token, import35.MaterialTreeRoot)) && (0 == nodeIndex))) {
+    if ((((identical(token, import2.MaterialTreeDropdownComponent) || identical(token, import40.Focusable)) || identical(token, import37.MaterialTreeRoot)) && (0 == nodeIndex))) {
       return _MaterialTreeDropdownComponent_0_4;
     }
     return notFoundResult;
@@ -630,6 +628,8 @@ void initReflector() {
     return;
   }
   _visited = true;
+
+  _ngRef.registerComponent(MaterialTreeDropdownComponent, MaterialTreeDropdownComponentNgFactory);
   _ref0.initReflector();
   _ref1.initReflector();
   _ref2.initReflector();
@@ -647,8 +647,4 @@ void initReflector() {
   _ref14.initReflector();
   _ref15.initReflector();
   _ref16.initReflector();
-  _ngRef.registerComponent(
-    MaterialTreeDropdownComponent,
-    MaterialTreeDropdownComponentNgFactory,
-  );
 }

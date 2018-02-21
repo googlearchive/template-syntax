@@ -9,7 +9,6 @@ import 'rate_limit_utils.dart';
 export 'rate_limit_utils.dart';
 import 'dart:async';
 import 'package:meta/meta.dart';
-// No initReflector() linking required.
 
-// No initReflector() needed.
+// No initReflector() linking required.
 void initReflector() {}

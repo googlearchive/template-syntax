@@ -9,7 +9,6 @@ import 'display_name.dart';
 export 'display_name.dart';
 import 'package:quiver/core.dart';
 import 'package:angular_components/model/formatters/formatter.dart';
-// Required for initReflector().
 import 'package:angular_components/model/formatters/formatter.template.dart' as _ref0;
 
 var _visited = false;
@@ -18,5 +17,6 @@ void initReflector() {
     return;
   }
   _visited = true;
+
   _ref0.initReflector();
 }

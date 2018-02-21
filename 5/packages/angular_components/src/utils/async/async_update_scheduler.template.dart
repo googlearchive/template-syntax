@@ -8,7 +8,6 @@
 import 'async_update_scheduler.dart';
 export 'async_update_scheduler.dart';
 import 'dart:async';
-// No initReflector() linking required.
 
-// No initReflector() needed.
+// No initReflector() linking required.
 void initReflector() {}

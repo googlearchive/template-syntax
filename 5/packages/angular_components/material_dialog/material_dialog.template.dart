@@ -13,14 +13,12 @@ import 'package:angular_components/focus/focus_trap.dart';
 import 'package:angular_components/laminate/components/modal/modal.dart';
 import 'package:angular_components/utils/browser/dom_service/dom_service.dart';
 import 'package:angular_components/utils/disposer/disposer.dart';
-// Required for initReflector().
 import 'package:angular/src/di/reflector.dart' as _ngRef;
 import 'package:angular/angular.template.dart' as _ref0;
 import 'package:angular_components/focus/focus_trap.template.dart' as _ref1;
 import 'package:angular_components/laminate/components/modal/modal.template.dart' as _ref2;
 import 'package:angular_components/utils/browser/dom_service/dom_service.template.dart' as _ref3;
 import 'package:angular_components/utils/disposer/disposer.template.dart' as _ref4;
-
 import 'package:angular_components/material_dialog/material_dialog.scss.css.shim.dart' as import0;
 import 'package:angular/src/core/linker/app_view.dart';
 import 'material_dialog.dart' as import2;
@@ -251,13 +249,11 @@ void initReflector() {
     return;
   }
   _visited = true;
+
+  _ngRef.registerComponent(MaterialDialogComponent, MaterialDialogComponentNgFactory);
   _ref0.initReflector();
   _ref1.initReflector();
   _ref2.initReflector();
   _ref3.initReflector();
   _ref4.initReflector();
-  _ngRef.registerComponent(
-    MaterialDialogComponent,
-    MaterialDialogComponentNgFactory,
-  );
 }
