@@ -1,7 +1,5 @@
-// GENERATED CODE - DO NOT MODIFY BY HAND
-
 // **************************************************************************
-// Generator: TemplateGenerator
+// Generator: Instance of 'Compiler'
 // **************************************************************************
 
 // ignore_for_file: cancel_subscriptions,constant_identifier_names,duplicate_import,non_constant_identifier_names,library_prefixes,UNUSED_IMPORT,UNUSED_SHOWN_NAME
@@ -45,54 +43,52 @@ import 'package:angular_components/material_popup/material_popup.dart' as _i1;
 import 'package:angular_components/material_popup/material_popup.scss.css.shim.dart' as import0;
 import 'package:angular/src/core/linker/app_view.dart';
 import 'material_popup.dart' as import2;
-import 'package:angular/src/core/linker/query_list.dart' as import3;
 import 'package:angular/src/core/linker/view_container.dart';
 import 'package:angular/src/core/linker/template_ref.dart';
 import 'package:angular/src/core/render/api.dart';
-import 'package:angular/src/core/linker/view_type.dart' as import7;
+import 'package:angular/src/core/linker/view_type.dart' as import6;
 import 'package:angular/src/core/change_detection/change_detection.dart';
-import 'dart:html' as import9;
-import 'package:angular/src/core/linker/app_view_utils.dart' as import10;
+import 'dart:html' as import8;
+import 'package:angular/src/core/linker/app_view_utils.dart' as import9;
 import 'package:angular/angular.dart';
-import '../src/laminate/popup/popup_hierarchy.dart' as import12;
-import 'package:angular/src/core/zone/ng_zone.dart' as import13;
-import '../src/laminate/overlay/overlay_service.dart' as import14;
-import '../laminate/overlay/zindexer.dart' as import15;
-import 'package:angular/src/core/di/opaque_token.dart' as import16;
+import '../src/laminate/popup/popup_hierarchy.dart' as import11;
+import 'package:angular/src/core/zone/ng_zone.dart' as import12;
+import '../src/laminate/overlay/overlay_service.dart' as import13;
+import '../laminate/overlay/zindexer.dart' as import14;
+import 'package:angular/src/core/di/opaque_token.dart' as import15;
 import 'dart:core';
-import '../laminate/enums/alignment.dart' as import18;
-import '../src/laminate/popup/popup_size_provider.dart' as import19;
+import 'package:angular_components/laminate/enums/alignment.dart' as import17;
+import '../src/laminate/popup/popup_size_provider.dart' as import18;
 import 'package:angular/src/core/linker/element_ref.dart';
-import '../content/deferred_content_aware.dart' as import21;
-import '../mixins/material_dropdown_base.dart' as import22;
-import '../src/laminate/popup/popup_ref.dart' as import23;
+import '../content/deferred_content_aware.dart' as import20;
+import '../mixins/material_dropdown_base.dart' as import21;
+import '../src/laminate/popup/popup_ref.dart' as import22;
 
 const List<dynamic> styles$MaterialPopupComponent = const [import0.styles];
 
 class ViewMaterialPopupComponent0 extends AppView<import2.MaterialPopupComponent> {
-  final import3.QueryList _viewQuery_template_0 = new import3.QueryList();
+  bool _query_template_1_0_isDirty = true;
   ViewContainer _appEl_1;
-  TemplateRef _TemplateRef_1_5;
+  TemplateRef _TemplateRef_1_7;
   var _expr_0;
   static RenderComponentType _renderType;
-  ViewMaterialPopupComponent0(AppView<dynamic> parentView, num parentIndex) : super(import7.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
-    rootEl = import9.document.createElement('material-popup');
-    _renderType ??= import10.appViewUtils.createRenderType('', ViewEncapsulation.Emulated, styles$MaterialPopupComponent);
+  ViewMaterialPopupComponent0(AppView<dynamic> parentView, num parentIndex) : super(import6.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+    rootEl = import8.document.createElement('material-popup');
+    _renderType ??= import9.appViewUtils.createRenderType('', ViewEncapsulation.Emulated, styles$MaterialPopupComponent);
     setupComponentType(_renderType);
   }
   @override
   ComponentRef<import2.MaterialPopupComponent> build() {
-    final import9.HtmlElement parentRenderNode = initViewRoot(rootEl);
-    import9.Text _text_0 = new import9.Text('\n');
+    final import8.HtmlElement parentRenderNode = initViewRoot(rootEl);
+    import8.Text _text_0 = new import8.Text('\n');
     parentRenderNode.append(_text_0);
     var _anchor_1 = ngAnchor.clone(false);
     parentRenderNode.append(_anchor_1);
     _appEl_1 = new ViewContainer(1, null, this, _anchor_1);
-    _TemplateRef_1_5 = new TemplateRef(_appEl_1, viewFactory_MaterialPopupComponent1);
-    import9.Text _text_2 = new import9.Text('\n');
+    _TemplateRef_1_7 = new TemplateRef(_appEl_1, viewFactory_MaterialPopupComponent1);
+    import8.Text _text_2 = new import8.Text('\n');
     parentRenderNode.append(_text_2);
-    _viewQuery_template_0.reset([_TemplateRef_1_5]);
-    ctx.templateRef = _viewQuery_template_0.first;
+    ctx.templateRef = _TemplateRef_1_7;
     init(const [], null);
     return null;
   }
@@ -111,12 +107,12 @@ AppView<import2.MaterialPopupComponent> viewFactory_MaterialPopupComponent0(AppV
 }
 
 class _ViewMaterialPopupComponent1 extends AppView<import2.MaterialPopupComponent> {
-  import9.DivElement _el_1;
-  import9.DivElement _el_3;
-  import9.DivElement _el_5;
-  import9.Element _el_7;
-  import9.Element _el_11;
-  import9.Element _el_15;
+  import8.DivElement _el_1;
+  import8.DivElement _el_3;
+  import8.DivElement _el_5;
+  import8.Element _el_7;
+  import8.Element _el_11;
+  import8.Element _el_15;
   var _expr_0;
   bool _expr_1;
   bool _expr_2;
@@ -128,60 +124,60 @@ class _ViewMaterialPopupComponent1 extends AppView<import2.MaterialPopupComponen
   var _expr_8;
   var _expr_10;
   var _expr_11;
-  _ViewMaterialPopupComponent1(AppView<dynamic> parentView, num parentIndex) : super(import7.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMaterialPopupComponent1(AppView<dynamic> parentView, num parentIndex) : super(import6.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMaterialPopupComponent0._renderType;
   }
   @override
   ComponentRef<import2.MaterialPopupComponent> build() {
-    import9.Text _text_0 = new import9.Text('\n  ');
-    var doc = import9.document;
+    import8.Text _text_0 = new import8.Text('\n  ');
+    var doc = import8.document;
     _el_1 = doc.createElement('div');
     _el_1.className = 'popup-wrapper mixin';
     addShimC(_el_1);
-    import9.Text _text_2 = new import9.Text('\n      ');
+    import8.Text _text_2 = new import8.Text('\n      ');
     _el_1.append(_text_2);
     _el_3 = createDivAndAppend(doc, _el_1);
     _el_3.className = 'popup';
     addShimC(_el_3);
-    import9.Text _text_4 = new import9.Text('\n          ');
+    import8.Text _text_4 = new import8.Text('\n          ');
     _el_3.append(_text_4);
     _el_5 = createDivAndAppend(doc, _el_3);
     _el_5.className = 'material-popup-content content';
     addShimC(_el_5);
-    import9.Text _text_6 = new import9.Text('\n              ');
+    import8.Text _text_6 = new import8.Text('\n              ');
     _el_5.append(_text_6);
     _el_7 = createAndAppend(doc, 'header', _el_5);
     addShimE(_el_7);
-    import9.Text _text_8 = new import9.Text('\n                  ');
+    import8.Text _text_8 = new import8.Text('\n                  ');
     _el_7.append(_text_8);
     project(_el_7, 0);
-    import9.Text _text_9 = new import9.Text('\n              ');
+    import8.Text _text_9 = new import8.Text('\n              ');
     _el_7.append(_text_9);
-    import9.Text _text_10 = new import9.Text('\n              ');
+    import8.Text _text_10 = new import8.Text('\n              ');
     _el_5.append(_text_10);
     _el_11 = createAndAppend(doc, 'main', _el_5);
     addShimE(_el_11);
-    import9.Text _text_12 = new import9.Text('\n                  ');
+    import8.Text _text_12 = new import8.Text('\n                  ');
     _el_11.append(_text_12);
     project(_el_11, 1);
-    import9.Text _text_13 = new import9.Text('\n              ');
+    import8.Text _text_13 = new import8.Text('\n              ');
     _el_11.append(_text_13);
-    import9.Text _text_14 = new import9.Text('\n              ');
+    import8.Text _text_14 = new import8.Text('\n              ');
     _el_5.append(_text_14);
     _el_15 = createAndAppend(doc, 'footer', _el_5);
     addShimE(_el_15);
-    import9.Text _text_16 = new import9.Text('\n                  ');
+    import8.Text _text_16 = new import8.Text('\n                  ');
     _el_15.append(_text_16);
     project(_el_15, 2);
-    import9.Text _text_17 = new import9.Text('\n              ');
+    import8.Text _text_17 = new import8.Text('\n              ');
     _el_15.append(_text_17);
-    import9.Text _text_18 = new import9.Text('\n          ');
+    import8.Text _text_18 = new import8.Text('\n          ');
     _el_5.append(_text_18);
-    import9.Text _text_19 = new import9.Text('\n      ');
+    import8.Text _text_19 = new import8.Text('\n      ');
     _el_3.append(_text_19);
-    import9.Text _text_20 = new import9.Text('\n  ');
+    import8.Text _text_20 = new import8.Text('\n  ');
     _el_1.append(_text_20);
-    import9.Text _text_21 = new import9.Text('\n');
+    import8.Text _text_21 = new import8.Text('\n');
     init([_text_0, _el_1, _text_21], null);
     return null;
   }
@@ -260,22 +256,22 @@ const List<dynamic> styles$MaterialPopupComponentHost = const [];
 class _ViewMaterialPopupComponentHost0 extends AppView<dynamic> {
   ViewMaterialPopupComponent0 _compView_0;
   ViewContainer _appEl_0;
-  import2.MaterialPopupComponent _MaterialPopupComponent_0_6;
-  dynamic __PopupHierarchy_0_9;
-  dynamic __PopupRef_0_10;
-  _ViewMaterialPopupComponentHost0(AppView<dynamic> parentView, num parentIndex) : super(import7.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
-  dynamic get _PopupHierarchy_0_9 {
-    if ((this.__PopupHierarchy_0_9 == null)) {
-      (__PopupHierarchy_0_9 = import2.getHierarchy(this._MaterialPopupComponent_0_6));
+  import2.MaterialPopupComponent _MaterialPopupComponent_0_8;
+  dynamic __PopupHierarchy_0_11;
+  dynamic __PopupRef_0_12;
+  _ViewMaterialPopupComponentHost0(AppView<dynamic> parentView, num parentIndex) : super(import6.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
+  dynamic get _PopupHierarchy_0_11 {
+    if ((this.__PopupHierarchy_0_11 == null)) {
+      (__PopupHierarchy_0_11 = import2.getHierarchy(this._MaterialPopupComponent_0_8));
     }
-    return this.__PopupHierarchy_0_9;
+    return this.__PopupHierarchy_0_11;
   }
 
-  dynamic get _PopupRef_0_10 {
-    if ((this.__PopupRef_0_10 == null)) {
-      (__PopupRef_0_10 = import2.getResolvedPopupRef(this._MaterialPopupComponent_0_6));
+  dynamic get _PopupRef_0_12 {
+    if ((this.__PopupRef_0_12 == null)) {
+      (__PopupRef_0_12 = import2.getResolvedPopupRef(this._MaterialPopupComponent_0_8));
     }
-    return this.__PopupRef_0_10;
+    return this.__PopupRef_0_12;
   }
 
   @override
@@ -283,22 +279,22 @@ class _ViewMaterialPopupComponentHost0 extends AppView<dynamic> {
     _compView_0 = new ViewMaterialPopupComponent0(this, 0);
     rootEl = _compView_0.rootEl;
     _appEl_0 = new ViewContainer(0, null, this, rootEl);
-    _MaterialPopupComponent_0_6 = new import2.MaterialPopupComponent(this.injectorGet(import12.PopupHierarchy, viewData.parentIndex, null), this.injectorGet(import2.MaterialPopupComponent, viewData.parentIndex, null), null, this.injectorGet(import13.NgZone, viewData.parentIndex), this.injectorGet(import14.OverlayService, viewData.parentIndex), this.injectorGet(import15.ZIndexer, viewData.parentIndex), this.injectorGet(const import16.OpaqueToken<List<import18.RelativePosition>>('defaultPopupPositions'), viewData.parentIndex), this.injectorGet(const import16.OpaqueToken('overlayRepositionLoop'), viewData.parentIndex), this.injectorGet(import19.PopupSizeProvider, viewData.parentIndex, null), _compView_0.ref, _appEl_0, new ElementRef(rootEl));
-    _compView_0.create(_MaterialPopupComponent_0_6, projectableNodes);
+    _MaterialPopupComponent_0_8 = new import2.MaterialPopupComponent(this.injectorGet(import11.PopupHierarchy, viewData.parentIndex, null), this.injectorGet(import2.MaterialPopupComponent, viewData.parentIndex, null), null, this.injectorGet(import12.NgZone, viewData.parentIndex), this.injectorGet(import13.OverlayService, viewData.parentIndex), this.injectorGet(import14.ZIndexer, viewData.parentIndex), this.injectorGet(const import15.OpaqueToken<List<import17.RelativePosition>>('defaultPopupPositions'), viewData.parentIndex), this.injectorGet(const import15.OpaqueToken('overlayRepositionLoop'), viewData.parentIndex), this.injectorGet(import18.PopupSizeProvider, viewData.parentIndex, null), _compView_0.ref, _appEl_0, new ElementRef(rootEl));
+    _compView_0.create(_MaterialPopupComponent_0_8, projectableNodes);
     init0(_appEl_0);
-    return new ComponentRef<import2.MaterialPopupComponent>(0, this, rootEl, _MaterialPopupComponent_0_6);
+    return new ComponentRef<import2.MaterialPopupComponent>(0, this, rootEl, _MaterialPopupComponent_0_8);
   }
 
   @override
   dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
-    if ((((identical(token, import2.MaterialPopupComponent) || identical(token, import21.DeferredContentAware)) || identical(token, import22.DropdownHandle)) && (0 == nodeIndex))) {
-      return _MaterialPopupComponent_0_6;
+    if ((((identical(token, import2.MaterialPopupComponent) || identical(token, import20.DeferredContentAware)) || identical(token, import21.DropdownHandle)) && (0 == nodeIndex))) {
+      return _MaterialPopupComponent_0_8;
     }
-    if ((identical(token, import12.PopupHierarchy) && (0 == nodeIndex))) {
-      return _PopupHierarchy_0_9;
+    if ((identical(token, import11.PopupHierarchy) && (0 == nodeIndex))) {
+      return _PopupHierarchy_0_11;
     }
-    if ((identical(token, import23.PopupRef) && (0 == nodeIndex))) {
-      return _PopupRef_0_10;
+    if ((identical(token, import22.PopupRef) && (0 == nodeIndex))) {
+      return _PopupRef_0_12;
     }
     return notFoundResult;
   }
@@ -310,7 +306,7 @@ class _ViewMaterialPopupComponentHost0 extends AppView<dynamic> {
     _compView_0.detectHostChanges(firstCheck);
     _compView_0.detectChanges();
     if (firstCheck) {
-      _MaterialPopupComponent_0_6.ngAfterViewInit();
+      _MaterialPopupComponent_0_8.ngAfterViewInit();
     }
   }
 
@@ -318,7 +314,7 @@ class _ViewMaterialPopupComponentHost0 extends AppView<dynamic> {
   void destroyInternal() {
     _appEl_0?.destroyNestedViews();
     _compView_0?.destroy();
-    _MaterialPopupComponent_0_6.ngOnDestroy();
+    _MaterialPopupComponent_0_8.ngOnDestroy();
   }
 }
 

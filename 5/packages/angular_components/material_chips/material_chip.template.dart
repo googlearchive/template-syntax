@@ -1,7 +1,5 @@
-// GENERATED CODE - DO NOT MODIFY BY HAND
-
 // **************************************************************************
-// Generator: TemplateGenerator
+// Generator: Instance of 'Compiler'
 // **************************************************************************
 
 // ignore_for_file: cancel_subscriptions,constant_identifier_names,duplicate_import,non_constant_identifier_names,library_prefixes,UNUSED_IMPORT,UNUSED_SHOWN_NAME
@@ -37,16 +35,17 @@ import 'package:angular/angular.dart';
 import 'package:angular/src/core/linker/template_ref.dart';
 import '../button_decorator/button_decorator.template.dart' as import12;
 import '../button_decorator/button_decorator.dart' as import13;
+import '../model/ui/has_renderer.dart' as import14;
 
 const List<dynamic> styles$MaterialChipComponent = const [import0.styles];
 
 class ViewMaterialChipComponent0 extends AppView<import2.MaterialChipComponent> {
   ViewContainer _appEl_0;
-  NgIf _NgIf_0_7;
+  NgIf _NgIf_0_9;
   import5.DivElement _el_1;
   import5.Text _text_2;
   ViewContainer _appEl_3;
-  NgIf _NgIf_3_7;
+  NgIf _NgIf_3_9;
   var _expr_1;
   var _expr_2;
   static RenderComponentType _renderType;
@@ -62,8 +61,8 @@ class ViewMaterialChipComponent0 extends AppView<import2.MaterialChipComponent> 
     var _anchor_0 = ngAnchor.clone(false);
     parentRenderNode.append(_anchor_0);
     _appEl_0 = new ViewContainer(0, null, this, _anchor_0);
-    TemplateRef _TemplateRef_0_6 = new TemplateRef(_appEl_0, viewFactory_MaterialChipComponent1);
-    _NgIf_0_7 = new NgIf(_appEl_0, _TemplateRef_0_6);
+    TemplateRef _TemplateRef_0_8 = new TemplateRef(_appEl_0, viewFactory_MaterialChipComponent1);
+    _NgIf_0_9 = new NgIf(_appEl_0, _TemplateRef_0_8);
     var doc = import5.document;
     _el_1 = createDivAndAppend(doc, parentRenderNode);
     _el_1.className = 'content';
@@ -74,8 +73,8 @@ class ViewMaterialChipComponent0 extends AppView<import2.MaterialChipComponent> 
     var _anchor_3 = ngAnchor.clone(false);
     parentRenderNode.append(_anchor_3);
     _appEl_3 = new ViewContainer(3, null, this, _anchor_3);
-    TemplateRef _TemplateRef_3_6 = new TemplateRef(_appEl_3, viewFactory_MaterialChipComponent2);
-    _NgIf_3_7 = new NgIf(_appEl_3, _TemplateRef_3_6);
+    TemplateRef _TemplateRef_3_8 = new TemplateRef(_appEl_3, viewFactory_MaterialChipComponent2);
+    _NgIf_3_9 = new NgIf(_appEl_3, _TemplateRef_3_8);
     init(const [], null);
     return null;
   }
@@ -83,8 +82,8 @@ class ViewMaterialChipComponent0 extends AppView<import2.MaterialChipComponent> 
   @override
   void detectChangesInternal() {
     final import2.MaterialChipComponent _ctx = ctx;
-    _NgIf_0_7.ngIf = _ctx.hasLeftIcon;
-    _NgIf_3_7.ngIf = _ctx.removable;
+    _NgIf_0_9.ngIf = _ctx.hasLeftIcon;
+    _NgIf_3_9.ngIf = _ctx.removable;
     _appEl_0.detectChangesInNestedViews();
     _appEl_3.detectChangesInNestedViews();
     final currVal_1 = _ctx.uuid;
@@ -133,7 +132,7 @@ AppView<import2.MaterialChipComponent> viewFactory_MaterialChipComponent1(AppVie
 
 class _ViewMaterialChipComponent2 extends AppView<import2.MaterialChipComponent> {
   import5.Element _el_0;
-  import12.ButtonDirectiveNgCd _ButtonDirective_0_4;
+  import12.ButtonDirectiveNgCd _ButtonDirective_0_5;
   import5.Element _el_1;
   var _expr_0;
   var _expr_1;
@@ -152,14 +151,14 @@ class _ViewMaterialChipComponent2 extends AppView<import2.MaterialChipComponent>
     createAttr(_el_0, 'width', '24');
     createAttr(_el_0, 'xmlns', 'http://www.w3.org/2000/svg');
     addShimE(_el_0);
-    _ButtonDirective_0_4 = new import12.ButtonDirectiveNgCd(new import13.ButtonDirective(_el_0));
+    _ButtonDirective_0_5 = new import12.ButtonDirectiveNgCd(new import13.ButtonDirective(_el_0));
     _el_1 = doc.createElementNS('http://www.w3.org/2000/svg', 'path');
     _el_0.append(_el_1);
     createAttr(_el_1, 'd', 'M12 2c-5.53 0-10 4.47-10 10s4.47 10 10 10 10-4.47 10-10-4.47-10-10-10zm5\n               13.59l-1.41 1.41-3.59-3.59-3.59 3.59-1.41-1.41 3.59-3.59-3.59-3.59 1.41-1.41 3.59\n               3.59 3.59-3.59 1.41 1.41-3.59 3.59 3.59 3.59z');
     addShimE(_el_1);
-    _el_0.addEventListener('click', eventHandler1(_ButtonDirective_0_4.instance.handleClick));
-    _el_0.addEventListener('keypress', eventHandler1(_ButtonDirective_0_4.instance.handleKeyPress));
-    final subscription_0 = _ButtonDirective_0_4.instance.trigger.listen(eventHandler1(ctx.removeChip));
+    _el_0.addEventListener('click', eventHandler1(_ButtonDirective_0_5.instance.handleClick));
+    _el_0.addEventListener('keypress', eventHandler1(_ButtonDirective_0_5.instance.handleKeyPress));
+    final subscription_0 = _ButtonDirective_0_5.instance.trigger.listen(eventHandler1(ctx.removeChip));
     init([_el_0], [subscription_0]);
     return null;
   }
@@ -167,7 +166,7 @@ class _ViewMaterialChipComponent2 extends AppView<import2.MaterialChipComponent>
   @override
   dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
     if ((identical(token, import13.ButtonDirective) && ((0 <= nodeIndex) && (nodeIndex <= 1)))) {
-      return _ButtonDirective_0_4.instance;
+      return _ButtonDirective_0_5.instance;
     }
     return notFoundResult;
   }
@@ -185,7 +184,7 @@ class _ViewMaterialChipComponent2 extends AppView<import2.MaterialChipComponent>
       setAttr(_el_0, 'aria-describedby', currVal_1?.toString());
       _expr_1 = currVal_1;
     }
-    _ButtonDirective_0_4.detectHostChanges(this, _el_0);
+    _ButtonDirective_0_5.detectHostChanges(this, _el_0);
   }
 }
 
@@ -197,16 +196,24 @@ const List<dynamic> styles$MaterialChipComponentHost = const [];
 
 class _ViewMaterialChipComponentHost0 extends AppView<dynamic> {
   ViewMaterialChipComponent0 _compView_0;
-  import2.MaterialChipComponent _MaterialChipComponent_0_4;
+  import2.MaterialChipComponent _MaterialChipComponent_0_5;
   _ViewMaterialChipComponentHost0(AppView<dynamic> parentView, num parentIndex) : super(import7.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewMaterialChipComponent0(this, 0);
     rootEl = _compView_0.rootEl;
-    _MaterialChipComponent_0_4 = new import2.MaterialChipComponent(rootEl);
-    _compView_0.create(_MaterialChipComponent_0_4, projectableNodes);
+    _MaterialChipComponent_0_5 = new import2.MaterialChipComponent(rootEl);
+    _compView_0.create(_MaterialChipComponent_0_5, projectableNodes);
     init0(rootEl);
-    return new ComponentRef<import2.MaterialChipComponent>(0, this, rootEl, _MaterialChipComponent_0_4);
+    return new ComponentRef<import2.MaterialChipComponent>(0, this, rootEl, _MaterialChipComponent_0_5);
+  }
+
+  @override
+  dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
+    if ((identical(token, import14.HasRenderer) && (0 == nodeIndex))) {
+      return _MaterialChipComponent_0_5;
+    }
+    return notFoundResult;
   }
 
   @override

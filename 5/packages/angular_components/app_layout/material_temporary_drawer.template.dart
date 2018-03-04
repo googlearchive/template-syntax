@@ -1,7 +1,5 @@
-// GENERATED CODE - DO NOT MODIFY BY HAND
-
 // **************************************************************************
-// Generator: TemplateGenerator
+// Generator: Instance of 'Compiler'
 // **************************************************************************
 
 // ignore_for_file: cancel_subscriptions,constant_identifier_names,duplicate_import,non_constant_identifier_names,library_prefixes,UNUSED_IMPORT,UNUSED_SHOWN_NAME
@@ -78,22 +76,22 @@ const List<dynamic> styles$MaterialTemporaryDrawerComponentHost = const [];
 
 class _ViewMaterialTemporaryDrawerComponentHost0 extends AppView<dynamic> {
   ViewMaterialTemporaryDrawerComponent0 _compView_0;
-  import2.MaterialTemporaryDrawerComponent _MaterialTemporaryDrawerComponent_0_4;
+  import2.MaterialTemporaryDrawerComponent _MaterialTemporaryDrawerComponent_0_5;
   _ViewMaterialTemporaryDrawerComponentHost0(AppView<dynamic> parentView, num parentIndex) : super(import5.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewMaterialTemporaryDrawerComponent0(this, 0);
     rootEl = _compView_0.rootEl;
-    _MaterialTemporaryDrawerComponent_0_4 = new import2.MaterialTemporaryDrawerComponent();
-    _compView_0.create(_MaterialTemporaryDrawerComponent_0_4, projectableNodes);
+    _MaterialTemporaryDrawerComponent_0_5 = new import2.MaterialTemporaryDrawerComponent();
+    _compView_0.create(_MaterialTemporaryDrawerComponent_0_5, projectableNodes);
     init0(rootEl);
-    return new ComponentRef<import2.MaterialTemporaryDrawerComponent>(0, this, rootEl, _MaterialTemporaryDrawerComponent_0_4);
+    return new ComponentRef<import2.MaterialTemporaryDrawerComponent>(0, this, rootEl, _MaterialTemporaryDrawerComponent_0_5);
   }
 
   @override
   dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
     if (((identical(token, import2.MaterialTemporaryDrawerComponent) || identical(token, import9.DeferredContentAware)) && (0 == nodeIndex))) {
-      return _MaterialTemporaryDrawerComponent_0_4;
+      return _MaterialTemporaryDrawerComponent_0_5;
     }
     return notFoundResult;
   }
@@ -106,7 +104,7 @@ class _ViewMaterialTemporaryDrawerComponentHost0 extends AppView<dynamic> {
       _compView_0.markAsCheckOnce();
     }
     if (firstCheck) {
-      _MaterialTemporaryDrawerComponent_0_4.ngOnInit();
+      _MaterialTemporaryDrawerComponent_0_5.ngOnInit();
     }
     _compView_0.detectHostChanges(firstCheck);
     _compView_0.detectChanges();

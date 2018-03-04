@@ -1,7 +1,5 @@
-// GENERATED CODE - DO NOT MODIFY BY HAND
-
 // **************************************************************************
-// Generator: TemplateGenerator
+// Generator: Instance of 'Compiler'
 // **************************************************************************
 
 // ignore_for_file: cancel_subscriptions,constant_identifier_names,duplicate_import,non_constant_identifier_names,library_prefixes,UNUSED_IMPORT,UNUSED_SHOWN_NAME
@@ -36,12 +34,12 @@ import 'package:angular_forms/angular_forms.template.dart' as _ref13;
 import 'package:angular_components/material_input/material_input.scss.css.shim.dart' as import0;
 import 'package:angular/src/core/linker/app_view.dart';
 import 'material_input.dart' as import2;
-import 'package:angular/src/core/linker/query_list.dart' as import3;
-import 'dart:html' as import4;
+import 'dart:html' as import3;
 import 'package:angular/src/core/linker/view_container.dart';
 import 'package:angular/src/common/directives/ng_if.dart';
-import 'package:angular_forms/src/directives/default_value_accessor.dart' as import7;
-import '../focus/focus.dart' as import8;
+import 'package:angular_forms/src/directives/default_value_accessor.dart' as import6;
+import '../focus/focus.dart' as import7;
+import 'package:angular_forms/src/directives/control_value_accessor.dart' as import8;
 import 'package:angular_forms/src/directives/ng_model.dart' as import9;
 import 'package:angular/src/core/render/api.dart';
 import 'package:angular/src/core/linker/view_type.dart' as import11;
@@ -63,34 +61,34 @@ import 'base_material_input.dart' as import25;
 const List<dynamic> styles$MaterialInputComponent = const [import0.styles];
 
 class ViewMaterialInputComponent0 extends AppView<import2.MaterialInputComponent> {
-  final import3.QueryList _viewQuery_FocusableDirective_0 = new import3.QueryList();
-  final import3.QueryList _viewQuery_inputEl_1 = new import3.QueryList();
-  final import3.QueryList _viewQuery_popupSourceEl_2 = new import3.QueryList();
-  import4.DivElement _el_0;
-  import4.DivElement _el_1;
+  bool _query_FocusableDirective_1_0_isDirty = true;
+  bool _query_inputEl_1_1_isDirty = true;
+  bool _query_popupSourceEl_1_2_isDirty = true;
+  import3.DivElement _el_0;
+  import3.DivElement _el_1;
   ViewContainer _appEl_2;
-  NgIf _NgIf_2_7;
+  NgIf _NgIf_2_9;
   ViewContainer _appEl_3;
-  NgIf _NgIf_3_7;
-  import4.Element _el_4;
-  import4.DivElement _el_5;
-  import4.Element _el_6;
-  import4.Text _text_7;
-  import4.InputElement _el_8;
-  import7.DefaultValueAccessor _DefaultValueAccessor_8_4;
-  import8.FocusableDirective _FocusableDirective_8_5;
-  List<dynamic> _NgValueAccessor_8_6;
-  import9.NgModel _NgModel_8_7;
+  NgIf _NgIf_3_9;
+  import3.Element _el_4;
+  import3.DivElement _el_5;
+  import3.Element _el_6;
+  import3.Text _text_7;
+  import3.InputElement _el_8;
+  import6.DefaultValueAccessor _DefaultValueAccessor_8_5;
+  import7.FocusableDirective _FocusableDirective_8_6;
+  List<import8.ControlValueAccessor<dynamic>> _NgValueAccessor_8_7;
+  import9.NgModel _NgModel_8_8;
   ViewContainer _appEl_9;
-  NgIf _NgIf_9_7;
+  NgIf _NgIf_9_9;
   ViewContainer _appEl_10;
-  NgIf _NgIf_10_7;
-  import4.DivElement _el_11;
-  import4.DivElement _el_12;
-  import4.DivElement _el_13;
-  import4.DivElement _el_14;
+  NgIf _NgIf_10_9;
+  import3.DivElement _el_11;
+  import3.DivElement _el_12;
+  import3.DivElement _el_13;
+  import3.DivElement _el_14;
   ViewContainer _appEl_15;
-  NgIf _NgIf_15_7;
+  NgIf _NgIf_15_9;
   bool _expr_2;
   bool _expr_3;
   bool _expr_4;
@@ -115,7 +113,7 @@ class ViewMaterialInputComponent0 extends AppView<import2.MaterialInputComponent
   bool _expr_26;
   static RenderComponentType _renderType;
   ViewMaterialInputComponent0(AppView<dynamic> parentView, num parentIndex) : super(import11.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckOnce) {
-    rootEl = import4.document.createElement('material-input');
+    rootEl = import3.document.createElement('material-input');
     rootEl.className = 'themeable';
     createAttr(rootEl, 'tabIndex', '-1');
     _renderType ??= import13.appViewUtils.createRenderType('', ViewEncapsulation.Emulated, styles$MaterialInputComponent);
@@ -124,8 +122,8 @@ class ViewMaterialInputComponent0 extends AppView<import2.MaterialInputComponent
   @override
   ComponentRef<import2.MaterialInputComponent> build() {
     final import2.MaterialInputComponent _ctx = ctx;
-    final import4.HtmlElement parentRenderNode = initViewRoot(rootEl);
-    var doc = import4.document;
+    final import3.HtmlElement parentRenderNode = initViewRoot(rootEl);
+    var doc = import3.document;
     _el_0 = createDivAndAppend(doc, parentRenderNode);
     _el_0.className = 'baseline';
     addShimC(_el_0);
@@ -135,13 +133,13 @@ class ViewMaterialInputComponent0 extends AppView<import2.MaterialInputComponent
     var _anchor_2 = ngAnchor.clone(false);
     _el_1.append(_anchor_2);
     _appEl_2 = new ViewContainer(2, 1, this, _anchor_2);
-    TemplateRef _TemplateRef_2_6 = new TemplateRef(_appEl_2, viewFactory_MaterialInputComponent1);
-    _NgIf_2_7 = new NgIf(_appEl_2, _TemplateRef_2_6);
+    TemplateRef _TemplateRef_2_8 = new TemplateRef(_appEl_2, viewFactory_MaterialInputComponent1);
+    _NgIf_2_9 = new NgIf(_appEl_2, _TemplateRef_2_8);
     var _anchor_3 = ngAnchor.clone(false);
     _el_1.append(_anchor_3);
     _appEl_3 = new ViewContainer(3, 1, this, _anchor_3);
-    TemplateRef _TemplateRef_3_6 = new TemplateRef(_appEl_3, viewFactory_MaterialInputComponent2);
-    _NgIf_3_7 = new NgIf(_appEl_3, _TemplateRef_3_6);
+    TemplateRef _TemplateRef_3_8 = new TemplateRef(_appEl_3, viewFactory_MaterialInputComponent2);
+    _NgIf_3_9 = new NgIf(_appEl_3, _TemplateRef_3_8);
     _el_4 = createAndAppend(doc, 'label', _el_1);
     _el_4.className = 'input-container';
     addShimE(_el_4);
@@ -152,26 +150,26 @@ class ViewMaterialInputComponent0 extends AppView<import2.MaterialInputComponent
     _el_6 = createSpanAndAppend(doc, _el_5);
     _el_6.className = 'label-text';
     addShimE(_el_6);
-    _text_7 = new import4.Text('');
+    _text_7 = new import3.Text('');
     _el_6.append(_text_7);
     _el_8 = createAndAppend(doc, 'input', _el_4);
     _el_8.className = 'input';
     createAttr(_el_8, 'focusableElement', '');
     addShimC(_el_8);
-    _DefaultValueAccessor_8_4 = new import7.DefaultValueAccessor(_el_8);
-    _FocusableDirective_8_5 = new import8.FocusableDirective(_el_8);
-    _NgValueAccessor_8_6 = [_DefaultValueAccessor_8_4];
-    _NgModel_8_7 = new import9.NgModel(null, _NgValueAccessor_8_6);
+    _DefaultValueAccessor_8_5 = new import6.DefaultValueAccessor(_el_8);
+    _FocusableDirective_8_6 = new import7.FocusableDirective(_el_8);
+    _NgValueAccessor_8_7 = [_DefaultValueAccessor_8_5];
+    _NgModel_8_8 = new import9.NgModel(null, _NgValueAccessor_8_7);
     var _anchor_9 = ngAnchor.clone(false);
     _el_1.append(_anchor_9);
     _appEl_9 = new ViewContainer(9, 1, this, _anchor_9);
-    TemplateRef _TemplateRef_9_6 = new TemplateRef(_appEl_9, viewFactory_MaterialInputComponent3);
-    _NgIf_9_7 = new NgIf(_appEl_9, _TemplateRef_9_6);
+    TemplateRef _TemplateRef_9_8 = new TemplateRef(_appEl_9, viewFactory_MaterialInputComponent3);
+    _NgIf_9_9 = new NgIf(_appEl_9, _TemplateRef_9_8);
     var _anchor_10 = ngAnchor.clone(false);
     _el_1.append(_anchor_10);
     _appEl_10 = new ViewContainer(10, 1, this, _anchor_10);
-    TemplateRef _TemplateRef_10_6 = new TemplateRef(_appEl_10, viewFactory_MaterialInputComponent4);
-    _NgIf_10_7 = new NgIf(_appEl_10, _TemplateRef_10_6);
+    TemplateRef _TemplateRef_10_8 = new TemplateRef(_appEl_10, viewFactory_MaterialInputComponent4);
+    _NgIf_10_9 = new NgIf(_appEl_10, _TemplateRef_10_8);
     project(_el_1, 0);
     _el_11 = createDivAndAppend(doc, _el_0);
     _el_11.className = 'underline';
@@ -188,18 +186,15 @@ class ViewMaterialInputComponent0 extends AppView<import2.MaterialInputComponent
     var _anchor_15 = ngAnchor.clone(false);
     parentRenderNode.append(_anchor_15);
     _appEl_15 = new ViewContainer(15, null, this, _anchor_15);
-    TemplateRef _TemplateRef_15_6 = new TemplateRef(_appEl_15, viewFactory_MaterialInputComponent5);
-    _NgIf_15_7 = new NgIf(_appEl_15, _TemplateRef_15_6);
+    TemplateRef _TemplateRef_15_8 = new TemplateRef(_appEl_15, viewFactory_MaterialInputComponent5);
+    _NgIf_15_9 = new NgIf(_appEl_15, _TemplateRef_15_8);
     _el_8.addEventListener('blur', eventHandler1(_handle_blur_8_0));
     _el_8.addEventListener('change', eventHandler1(_handle_change_8_1));
     _el_8.addEventListener('focus', eventHandler1(ctx.inputFocusAction));
     _el_8.addEventListener('input', eventHandler1(_handle_input_8_3));
-    _viewQuery_FocusableDirective_0.reset([_FocusableDirective_8_5]);
-    ctx.focusable = _viewQuery_FocusableDirective_0.first;
-    _viewQuery_inputEl_1.reset([new ElementRef(_el_8)]);
-    ctx.inputEl = _viewQuery_inputEl_1.first;
-    _viewQuery_popupSourceEl_2.reset([new ElementRef(_el_0)]);
-    ctx.popupSourceEl = _viewQuery_popupSourceEl_2.first;
+    ctx.focusable = _FocusableDirective_8_6;
+    ctx.inputEl = new ElementRef(_el_8);
+    ctx.popupSourceEl = new ElementRef(_el_0);
     init(const [], null);
     rootEl.addEventListener('focus', eventHandler0(_ctx.focus));
     return null;
@@ -207,17 +202,17 @@ class ViewMaterialInputComponent0 extends AppView<import2.MaterialInputComponent
 
   @override
   dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
-    if ((identical(token, import7.DefaultValueAccessor) && (8 == nodeIndex))) {
-      return _DefaultValueAccessor_8_4;
+    if ((identical(token, import6.DefaultValueAccessor) && (8 == nodeIndex))) {
+      return _DefaultValueAccessor_8_5;
     }
-    if ((identical(token, import8.FocusableDirective) && (8 == nodeIndex))) {
-      return _FocusableDirective_8_5;
+    if ((identical(token, import7.FocusableDirective) && (8 == nodeIndex))) {
+      return _FocusableDirective_8_6;
     }
-    if ((identical(token, const import17.OpaqueToken<import18.ControlValueAccessor<dynamic>>('NgValueAccessor')) && (8 == nodeIndex))) {
-      return _NgValueAccessor_8_6;
+    if ((identical(token, const import17.MultiToken<import18.ControlValueAccessor>('NgValueAccessor')) && (8 == nodeIndex))) {
+      return _NgValueAccessor_8_7;
     }
     if (((identical(token, import9.NgModel) || identical(token, import19.NgControl)) && (8 == nodeIndex))) {
-      return _NgModel_8_7;
+      return _NgModel_8_8;
     }
     return notFoundResult;
   }
@@ -227,17 +222,17 @@ class ViewMaterialInputComponent0 extends AppView<import2.MaterialInputComponent
     final import2.MaterialInputComponent _ctx = ctx;
     bool changed = false;
     bool firstCheck = (this.cdState == 0);
-    _NgIf_2_7.ngIf = _ctx.hasLeadingGlyph;
-    _NgIf_3_7.ngIf = _ctx.hasLeadingText;
+    _NgIf_2_9.ngIf = _ctx.hasLeadingGlyph;
+    _NgIf_3_9.ngIf = _ctx.hasLeadingText;
     changed = false;
-    _NgModel_8_7.model = _ctx.inputText;
-    _NgModel_8_7.ngAfterChanges();
+    _NgModel_8_8.model = _ctx.inputText;
+    _NgModel_8_8.ngAfterChanges();
     if (firstCheck) {
-      _NgModel_8_7.ngOnInit();
+      _NgModel_8_8.ngOnInit();
     }
-    _NgIf_9_7.ngIf = _ctx.hasTrailingText;
-    _NgIf_10_7.ngIf = _ctx.hasTrailingGlyph;
-    _NgIf_15_7.ngIf = _ctx.displayBottomPanel;
+    _NgIf_9_9.ngIf = _ctx.hasTrailingText;
+    _NgIf_10_9.ngIf = _ctx.hasTrailingGlyph;
+    _NgIf_15_9.ngIf = _ctx.displayBottomPanel;
     _appEl_2.detectChangesInNestedViews();
     _appEl_3.detectChangesInNestedViews();
     _appEl_9.detectChangesInNestedViews();
@@ -367,7 +362,7 @@ class ViewMaterialInputComponent0 extends AppView<import2.MaterialInputComponent
   void _handle_blur_8_0($event) {
     final local_inputEl = _el_8;
     ctx.inputBlurAction($event, local_inputEl.validity.valid, local_inputEl.validationMessage);
-    _DefaultValueAccessor_8_4.touchHandler();
+    _DefaultValueAccessor_8_5.touchHandler();
   }
 
   void _handle_change_8_1($event) {
@@ -379,7 +374,7 @@ class ViewMaterialInputComponent0 extends AppView<import2.MaterialInputComponent
   void _handle_input_8_3($event) {
     final local_inputEl = _el_8;
     ctx.inputKeypress(local_inputEl.value, local_inputEl.validity.valid, local_inputEl.validationMessage);
-    _DefaultValueAccessor_8_4.onChange($event.target.value);
+    _DefaultValueAccessor_8_5.onChange($event.target.value);
   }
 }
 
@@ -388,10 +383,10 @@ AppView<import2.MaterialInputComponent> viewFactory_MaterialInputComponent0(AppV
 }
 
 class _ViewMaterialInputComponent1 extends AppView<import2.MaterialInputComponent> {
-  import4.Element _el_0;
-  import4.Element _el_1;
+  import3.Element _el_0;
+  import3.Element _el_1;
   import20.ViewMaterialIconComponent0 _compView_1;
-  import21.MaterialIconComponent _MaterialIconComponent_1_4;
+  import21.MaterialIconComponent _MaterialIconComponent_1_5;
   bool _expr_0;
   var _expr_1;
   var _expr_2;
@@ -400,7 +395,7 @@ class _ViewMaterialInputComponent1 extends AppView<import2.MaterialInputComponen
   }
   @override
   ComponentRef<import2.MaterialInputComponent> build() {
-    var doc = import4.document;
+    var doc = import3.document;
     _el_0 = doc.createElement('span');
     _el_0.className = 'leading-text';
     addShimE(_el_0);
@@ -409,8 +404,8 @@ class _ViewMaterialInputComponent1 extends AppView<import2.MaterialInputComponen
     _el_0.append(_el_1);
     _el_1.className = 'glyph leading';
     addShimC(_el_1);
-    _MaterialIconComponent_1_4 = new import21.MaterialIconComponent(_el_1);
-    _compView_1.create(_MaterialIconComponent_1_4, []);
+    _MaterialIconComponent_1_5 = new import21.MaterialIconComponent(_el_1);
+    _compView_1.create(_MaterialIconComponent_1_5, []);
     init0(_el_0);
     return null;
   }
@@ -422,7 +417,7 @@ class _ViewMaterialInputComponent1 extends AppView<import2.MaterialInputComponen
     changed = false;
     final currVal_2 = (_ctx.leadingGlyph ?? '');
     if (!identical(_expr_2, currVal_2)) {
-      _MaterialIconComponent_1_4.icon = currVal_2;
+      _MaterialIconComponent_1_5.icon = currVal_2;
       changed = true;
       _expr_2 = currVal_2;
     }
@@ -453,8 +448,8 @@ AppView<import2.MaterialInputComponent> viewFactory_MaterialInputComponent1(AppV
 }
 
 class _ViewMaterialInputComponent2 extends AppView<import2.MaterialInputComponent> {
-  import4.Element _el_0;
-  import4.Text _text_1;
+  import3.Element _el_0;
+  import3.Text _text_1;
   bool _expr_0;
   var _expr_1;
   _ViewMaterialInputComponent2(AppView<dynamic> parentView, num parentIndex) : super(import11.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
@@ -462,11 +457,11 @@ class _ViewMaterialInputComponent2 extends AppView<import2.MaterialInputComponen
   }
   @override
   ComponentRef<import2.MaterialInputComponent> build() {
-    var doc = import4.document;
+    var doc = import3.document;
     _el_0 = doc.createElement('span');
     _el_0.className = 'leading-text';
     addShimE(_el_0);
-    _text_1 = new import4.Text('');
+    _text_1 = new import3.Text('');
     _el_0.append(_text_1);
     init0(_el_0);
     return null;
@@ -493,8 +488,8 @@ AppView<import2.MaterialInputComponent> viewFactory_MaterialInputComponent2(AppV
 }
 
 class _ViewMaterialInputComponent3 extends AppView<import2.MaterialInputComponent> {
-  import4.Element _el_0;
-  import4.Text _text_1;
+  import3.Element _el_0;
+  import3.Text _text_1;
   bool _expr_0;
   var _expr_1;
   _ViewMaterialInputComponent3(AppView<dynamic> parentView, num parentIndex) : super(import11.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
@@ -502,11 +497,11 @@ class _ViewMaterialInputComponent3 extends AppView<import2.MaterialInputComponen
   }
   @override
   ComponentRef<import2.MaterialInputComponent> build() {
-    var doc = import4.document;
+    var doc = import3.document;
     _el_0 = doc.createElement('span');
     _el_0.className = 'trailing-text';
     addShimE(_el_0);
-    _text_1 = new import4.Text('');
+    _text_1 = new import3.Text('');
     _el_0.append(_text_1);
     init0(_el_0);
     return null;
@@ -533,10 +528,10 @@ AppView<import2.MaterialInputComponent> viewFactory_MaterialInputComponent3(AppV
 }
 
 class _ViewMaterialInputComponent4 extends AppView<import2.MaterialInputComponent> {
-  import4.Element _el_0;
-  import4.Element _el_1;
+  import3.Element _el_0;
+  import3.Element _el_1;
   import20.ViewMaterialIconComponent0 _compView_1;
-  import21.MaterialIconComponent _MaterialIconComponent_1_4;
+  import21.MaterialIconComponent _MaterialIconComponent_1_5;
   bool _expr_0;
   var _expr_1;
   var _expr_2;
@@ -545,7 +540,7 @@ class _ViewMaterialInputComponent4 extends AppView<import2.MaterialInputComponen
   }
   @override
   ComponentRef<import2.MaterialInputComponent> build() {
-    var doc = import4.document;
+    var doc = import3.document;
     _el_0 = doc.createElement('span');
     _el_0.className = 'trailing-text';
     addShimE(_el_0);
@@ -554,8 +549,8 @@ class _ViewMaterialInputComponent4 extends AppView<import2.MaterialInputComponen
     _el_0.append(_el_1);
     _el_1.className = 'glyph trailing';
     addShimC(_el_1);
-    _MaterialIconComponent_1_4 = new import21.MaterialIconComponent(_el_1);
-    _compView_1.create(_MaterialIconComponent_1_4, []);
+    _MaterialIconComponent_1_5 = new import21.MaterialIconComponent(_el_1);
+    _compView_1.create(_MaterialIconComponent_1_5, []);
     init0(_el_0);
     return null;
   }
@@ -567,7 +562,7 @@ class _ViewMaterialInputComponent4 extends AppView<import2.MaterialInputComponen
     changed = false;
     final currVal_2 = (_ctx.trailingGlyph ?? '');
     if (!identical(_expr_2, currVal_2)) {
-      _MaterialIconComponent_1_4.icon = currVal_2;
+      _MaterialIconComponent_1_5.icon = currVal_2;
       changed = true;
       _expr_2 = currVal_2;
     }
@@ -598,16 +593,16 @@ AppView<import2.MaterialInputComponent> viewFactory_MaterialInputComponent4(AppV
 }
 
 class _ViewMaterialInputComponent5 extends AppView<import2.MaterialInputComponent> {
-  import4.DivElement _el_0;
-  import22.NgSwitch _NgSwitch_0_4;
+  import3.DivElement _el_0;
+  import22.NgSwitch _NgSwitch_0_5;
   ViewContainer _appEl_1;
-  import22.NgSwitchWhen _NgSwitchWhen_1_7;
+  import22.NgSwitchWhen _NgSwitchWhen_1_9;
   ViewContainer _appEl_2;
-  import22.NgSwitchWhen _NgSwitchWhen_2_7;
+  import22.NgSwitchWhen _NgSwitchWhen_2_9;
   ViewContainer _appEl_3;
-  import22.NgSwitchWhen _NgSwitchWhen_3_7;
+  import22.NgSwitchWhen _NgSwitchWhen_3_9;
   ViewContainer _appEl_4;
-  NgIf _NgIf_4_7;
+  NgIf _NgIf_4_9;
   var _expr_0;
   var _expr_1;
   var _expr_2;
@@ -617,31 +612,31 @@ class _ViewMaterialInputComponent5 extends AppView<import2.MaterialInputComponen
   }
   @override
   ComponentRef<import2.MaterialInputComponent> build() {
-    var doc = import4.document;
+    var doc = import3.document;
     _el_0 = doc.createElement('div');
     _el_0.className = 'bottom-section';
     addShimC(_el_0);
-    _NgSwitch_0_4 = new import22.NgSwitch();
+    _NgSwitch_0_5 = new import22.NgSwitch();
     var _anchor_1 = ngAnchor.clone(false);
     _el_0.append(_anchor_1);
     _appEl_1 = new ViewContainer(1, 0, this, _anchor_1);
-    TemplateRef _TemplateRef_1_6 = new TemplateRef(_appEl_1, viewFactory_MaterialInputComponent6);
-    _NgSwitchWhen_1_7 = new import22.NgSwitchWhen(_appEl_1, _TemplateRef_1_6, _NgSwitch_0_4);
+    TemplateRef _TemplateRef_1_8 = new TemplateRef(_appEl_1, viewFactory_MaterialInputComponent6);
+    _NgSwitchWhen_1_9 = new import22.NgSwitchWhen(_appEl_1, _TemplateRef_1_8, _NgSwitch_0_5);
     var _anchor_2 = ngAnchor.clone(false);
     _el_0.append(_anchor_2);
     _appEl_2 = new ViewContainer(2, 0, this, _anchor_2);
-    TemplateRef _TemplateRef_2_6 = new TemplateRef(_appEl_2, viewFactory_MaterialInputComponent7);
-    _NgSwitchWhen_2_7 = new import22.NgSwitchWhen(_appEl_2, _TemplateRef_2_6, _NgSwitch_0_4);
+    TemplateRef _TemplateRef_2_8 = new TemplateRef(_appEl_2, viewFactory_MaterialInputComponent7);
+    _NgSwitchWhen_2_9 = new import22.NgSwitchWhen(_appEl_2, _TemplateRef_2_8, _NgSwitch_0_5);
     var _anchor_3 = ngAnchor.clone(false);
     _el_0.append(_anchor_3);
     _appEl_3 = new ViewContainer(3, 0, this, _anchor_3);
-    TemplateRef _TemplateRef_3_6 = new TemplateRef(_appEl_3, viewFactory_MaterialInputComponent8);
-    _NgSwitchWhen_3_7 = new import22.NgSwitchWhen(_appEl_3, _TemplateRef_3_6, _NgSwitch_0_4);
+    TemplateRef _TemplateRef_3_8 = new TemplateRef(_appEl_3, viewFactory_MaterialInputComponent8);
+    _NgSwitchWhen_3_9 = new import22.NgSwitchWhen(_appEl_3, _TemplateRef_3_8, _NgSwitch_0_5);
     var _anchor_4 = ngAnchor.clone(false);
     _el_0.append(_anchor_4);
     _appEl_4 = new ViewContainer(4, 0, this, _anchor_4);
-    TemplateRef _TemplateRef_4_6 = new TemplateRef(_appEl_4, viewFactory_MaterialInputComponent9);
-    _NgIf_4_7 = new NgIf(_appEl_4, _TemplateRef_4_6);
+    TemplateRef _TemplateRef_4_8 = new TemplateRef(_appEl_4, viewFactory_MaterialInputComponent9);
+    _NgIf_4_9 = new NgIf(_appEl_4, _TemplateRef_4_8);
     init0(_el_0);
     return null;
   }
@@ -649,7 +644,7 @@ class _ViewMaterialInputComponent5 extends AppView<import2.MaterialInputComponen
   @override
   dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
     if ((identical(token, import22.NgSwitch) && ((0 <= nodeIndex) && (nodeIndex <= 4)))) {
-      return _NgSwitch_0_4;
+      return _NgSwitch_0_5;
     }
     return notFoundResult;
   }
@@ -659,25 +654,25 @@ class _ViewMaterialInputComponent5 extends AppView<import2.MaterialInputComponen
     final import2.MaterialInputComponent _ctx = ctx;
     final currVal_0 = _ctx.bottomPanelState;
     if (!identical(_expr_0, currVal_0)) {
-      _NgSwitch_0_4.ngSwitch = currVal_0;
+      _NgSwitch_0_5.ngSwitch = currVal_0;
       _expr_0 = currVal_0;
     }
     final currVal_1 = _ctx.errorState;
     if (!identical(_expr_1, currVal_1)) {
-      _NgSwitchWhen_1_7.ngSwitchWhen = currVal_1;
+      _NgSwitchWhen_1_9.ngSwitchWhen = currVal_1;
       _expr_1 = currVal_1;
     }
     final currVal_2 = _ctx.hintState;
     if (!identical(_expr_2, currVal_2)) {
-      _NgSwitchWhen_2_7.ngSwitchWhen = currVal_2;
+      _NgSwitchWhen_2_9.ngSwitchWhen = currVal_2;
       _expr_2 = currVal_2;
     }
     final currVal_3 = _ctx.emptyState;
     if (!identical(_expr_3, currVal_3)) {
-      _NgSwitchWhen_3_7.ngSwitchWhen = currVal_3;
+      _NgSwitchWhen_3_9.ngSwitchWhen = currVal_3;
       _expr_3 = currVal_3;
     }
-    _NgIf_4_7.ngIf = (_ctx.maxCount != null);
+    _NgIf_4_9.ngIf = ((_ctx.maxCount != null) || _ctx.showCharacterCount);
     _appEl_1.detectChangesInNestedViews();
     _appEl_2.detectChangesInNestedViews();
     _appEl_3.detectChangesInNestedViews();
@@ -698,8 +693,8 @@ AppView<import2.MaterialInputComponent> viewFactory_MaterialInputComponent5(AppV
 }
 
 class _ViewMaterialInputComponent6 extends AppView<import2.MaterialInputComponent> {
-  import4.DivElement _el_0;
-  import4.Text _text_1;
+  import3.DivElement _el_0;
+  import3.Text _text_1;
   bool _expr_0;
   bool _expr_1;
   var _expr_2;
@@ -709,12 +704,12 @@ class _ViewMaterialInputComponent6 extends AppView<import2.MaterialInputComponen
   }
   @override
   ComponentRef<import2.MaterialInputComponent> build() {
-    var doc = import4.document;
+    var doc = import3.document;
     _el_0 = doc.createElement('div');
     _el_0.className = 'error-text';
     createAttr(_el_0, 'role', 'alert');
     addShimC(_el_0);
-    _text_1 = new import4.Text('');
+    _text_1 = new import3.Text('');
     _el_0.append(_text_1);
     init0(_el_0);
     return null;
@@ -751,19 +746,19 @@ AppView<import2.MaterialInputComponent> viewFactory_MaterialInputComponent6(AppV
 }
 
 class _ViewMaterialInputComponent7 extends AppView<import2.MaterialInputComponent> {
-  import4.DivElement _el_0;
-  import4.Text _text_1;
+  import3.DivElement _el_0;
+  import3.Text _text_1;
   var _expr_0;
   _ViewMaterialInputComponent7(AppView<dynamic> parentView, num parentIndex) : super(import11.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMaterialInputComponent0._renderType;
   }
   @override
   ComponentRef<import2.MaterialInputComponent> build() {
-    var doc = import4.document;
+    var doc = import3.document;
     _el_0 = doc.createElement('div');
     _el_0.className = 'hint-text';
     addShimC(_el_0);
-    _text_1 = new import4.Text('');
+    _text_1 = new import3.Text('');
     _el_0.append(_text_1);
     init0(_el_0);
     return null;
@@ -785,18 +780,18 @@ AppView<import2.MaterialInputComponent> viewFactory_MaterialInputComponent7(AppV
 }
 
 class _ViewMaterialInputComponent8 extends AppView<import2.MaterialInputComponent> {
-  import4.DivElement _el_0;
+  import3.DivElement _el_0;
   _ViewMaterialInputComponent8(AppView<dynamic> parentView, num parentIndex) : super(import11.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMaterialInputComponent0._renderType;
   }
   @override
   ComponentRef<import2.MaterialInputComponent> build() {
-    var doc = import4.document;
+    var doc = import3.document;
     _el_0 = doc.createElement('div');
     _el_0.className = 'spaceholder';
     _el_0.tabIndex = -1;
     addShimC(_el_0);
-    import4.Text _text_1 = new import4.Text('\n     \n  ');
+    import3.Text _text_1 = new import3.Text('\n     \n  ');
     _el_0.append(_text_1);
     _el_0.addEventListener('focus', eventHandler1(_handle_focus_0_0));
     init0(_el_0);
@@ -813,8 +808,8 @@ AppView<import2.MaterialInputComponent> viewFactory_MaterialInputComponent8(AppV
 }
 
 class _ViewMaterialInputComponent9 extends AppView<import2.MaterialInputComponent> {
-  import4.DivElement _el_0;
-  import4.Text _text_1;
+  import3.DivElement _el_0;
+  import3.Text _text_1;
   bool _expr_0;
   var _expr_1;
   _ViewMaterialInputComponent9(AppView<dynamic> parentView, num parentIndex) : super(import11.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
@@ -822,12 +817,12 @@ class _ViewMaterialInputComponent9 extends AppView<import2.MaterialInputComponen
   }
   @override
   ComponentRef<import2.MaterialInputComponent> build() {
-    var doc = import4.document;
+    var doc = import3.document;
     _el_0 = doc.createElement('div');
     createAttr(_el_0, 'aria-hidden', 'true');
     _el_0.className = 'counter';
     addShimC(_el_0);
-    _text_1 = new import4.Text('');
+    _text_1 = new import3.Text('');
     _el_0.append(_text_1);
     init0(_el_0);
     return null;
@@ -857,38 +852,38 @@ const List<dynamic> styles$MaterialInputComponentHost = const [];
 
 class _ViewMaterialInputComponentHost0 extends AppView<dynamic> {
   ViewMaterialInputComponent0 _compView_0;
-  import23.DeferredValidator _DeferredValidator_0_4;
-  import2.MaterialInputComponent _MaterialInputComponent_0_5;
-  List<dynamic> __NgValidators_0_6;
+  import23.DeferredValidator _DeferredValidator_0_5;
+  import2.MaterialInputComponent _MaterialInputComponent_0_6;
+  List<dynamic> __NgValidators_0_7;
   _ViewMaterialInputComponentHost0(AppView<dynamic> parentView, num parentIndex) : super(import11.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
-  List<dynamic> get _NgValidators_0_6 {
-    if ((this.__NgValidators_0_6 == null)) {
-      (__NgValidators_0_6 = [this._DeferredValidator_0_4]);
+  List<dynamic> get _NgValidators_0_7 {
+    if ((this.__NgValidators_0_7 == null)) {
+      (__NgValidators_0_7 = [this._DeferredValidator_0_5]);
     }
-    return this.__NgValidators_0_6;
+    return this.__NgValidators_0_7;
   }
 
   @override
   ComponentRef build() {
     _compView_0 = new ViewMaterialInputComponent0(this, 0);
     rootEl = _compView_0.rootEl;
-    _DeferredValidator_0_4 = new import23.DeferredValidator();
-    _MaterialInputComponent_0_5 = new import2.MaterialInputComponent(null, null, null, _compView_0.ref, _DeferredValidator_0_4);
-    _compView_0.create(_MaterialInputComponent_0_5, projectableNodes);
+    _DeferredValidator_0_5 = new import23.DeferredValidator();
+    _MaterialInputComponent_0_6 = new import2.MaterialInputComponent(null, null, null, _compView_0.ref, _DeferredValidator_0_5);
+    _compView_0.create(_MaterialInputComponent_0_6, projectableNodes);
     init0(rootEl);
-    return new ComponentRef<import2.MaterialInputComponent>(0, this, rootEl, _MaterialInputComponent_0_5);
+    return new ComponentRef<import2.MaterialInputComponent>(0, this, rootEl, _MaterialInputComponent_0_6);
   }
 
   @override
   dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
     if ((identical(token, import23.DeferredValidator) && (0 == nodeIndex))) {
-      return _DeferredValidator_0_4;
+      return _DeferredValidator_0_5;
     }
-    if (((((identical(token, import2.MaterialInputComponent) || identical(token, import24.ReferenceDirective)) || identical(token, import8.Focusable)) || identical(token, import25.BaseMaterialInput)) && (0 == nodeIndex))) {
-      return _MaterialInputComponent_0_5;
+    if (((((identical(token, import2.MaterialInputComponent) || identical(token, import24.ReferenceDirective)) || identical(token, import7.Focusable)) || identical(token, import25.BaseMaterialInput)) && (0 == nodeIndex))) {
+      return _MaterialInputComponent_0_6;
     }
-    if ((identical(token, const import17.OpaqueToken('NgValidators')) && (0 == nodeIndex))) {
-      return _NgValidators_0_6;
+    if ((identical(token, const import17.MultiToken('NgValidators')) && (0 == nodeIndex))) {
+      return _NgValidators_0_7;
     }
     return notFoundResult;
   }
@@ -902,14 +897,14 @@ class _ViewMaterialInputComponentHost0 extends AppView<dynamic> {
     }
     _compView_0.detectChanges();
     if (firstCheck) {
-      _MaterialInputComponent_0_5.ngAfterViewInit();
+      _MaterialInputComponent_0_6.ngAfterViewInit();
     }
   }
 
   @override
   void destroyInternal() {
     _compView_0?.destroy();
-    _MaterialInputComponent_0_5.ngOnDestroy();
+    _MaterialInputComponent_0_6.ngOnDestroy();
   }
 }
 

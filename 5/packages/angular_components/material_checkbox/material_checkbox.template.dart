@@ -1,7 +1,5 @@
-// GENERATED CODE - DO NOT MODIFY BY HAND
-
 // **************************************************************************
-// Generator: TemplateGenerator
+// Generator: Instance of 'Compiler'
 // **************************************************************************
 
 // ignore_for_file: cancel_subscriptions,constant_identifier_names,duplicate_import,non_constant_identifier_names,library_prefixes,UNUSED_IMPORT,UNUSED_SHOWN_NAME
@@ -47,9 +45,9 @@ class ViewMaterialCheckboxComponent0 extends AppView<import2.MaterialCheckboxCom
   import3.DivElement _el_0;
   import3.Element _el_1;
   import4.ViewGlyphComponent0 _compView_1;
-  import5.GlyphComponent _GlyphComponent_1_4;
+  import5.GlyphComponent _GlyphComponent_1_5;
   ViewContainer _appEl_2;
-  NgIf _NgIf_2_7;
+  NgIf _NgIf_2_9;
   import3.DivElement _el_3;
   import3.Text _text_4;
   bool _expr_0;
@@ -82,13 +80,13 @@ class ViewMaterialCheckboxComponent0 extends AppView<import2.MaterialCheckboxCom
     createAttr(_el_1, 'aria-hidden', 'true');
     _el_1.className = 'icon';
     addShimC(_el_1);
-    _GlyphComponent_1_4 = new import5.GlyphComponent(_el_1);
-    _compView_1.create(_GlyphComponent_1_4, []);
+    _GlyphComponent_1_5 = new import5.GlyphComponent(_el_1);
+    _compView_1.create(_GlyphComponent_1_5, []);
     var _anchor_2 = ngAnchor.clone(false);
     _el_0.append(_anchor_2);
     _appEl_2 = new ViewContainer(2, 0, this, _anchor_2);
-    TemplateRef _TemplateRef_2_6 = new TemplateRef(_appEl_2, viewFactory_MaterialCheckboxComponent1);
-    _NgIf_2_7 = new NgIf(_appEl_2, _TemplateRef_2_6);
+    TemplateRef _TemplateRef_2_8 = new TemplateRef(_appEl_2, viewFactory_MaterialCheckboxComponent1);
+    _NgIf_2_9 = new NgIf(_appEl_2, _TemplateRef_2_8);
     _el_3 = createDivAndAppend(doc, parentRenderNode);
     _el_3.className = 'content';
     addShimC(_el_3);
@@ -112,14 +110,14 @@ class ViewMaterialCheckboxComponent0 extends AppView<import2.MaterialCheckboxCom
     changed = false;
     final currVal_3 = _ctx.icon;
     if (!identical(_expr_3, currVal_3)) {
-      _GlyphComponent_1_4.icon = currVal_3;
+      _GlyphComponent_1_5.icon = currVal_3;
       changed = true;
       _expr_3 = currVal_3;
     }
     if (changed) {
       _compView_1.markAsCheckOnce();
     }
-    _NgIf_2_7.ngIf = !_ctx.disabled;
+    _NgIf_2_9.ngIf = !_ctx.disabled;
     _appEl_2.detectChangesInNestedViews();
     final currVal_0 = _ctx.showFocus;
     if (!identical(_expr_0, currVal_0)) {
@@ -186,7 +184,7 @@ AppView<import2.MaterialCheckboxComponent> viewFactory_MaterialCheckboxComponent
 class _ViewMaterialCheckboxComponent1 extends AppView<import2.MaterialCheckboxComponent> {
   import3.Element _el_0;
   import14.ViewMaterialRippleComponent0 _compView_0;
-  import15.MaterialRippleComponent _MaterialRippleComponent_0_4;
+  import15.MaterialRippleComponent _MaterialRippleComponent_0_5;
   var _expr_0;
   _ViewMaterialCheckboxComponent1(AppView<dynamic> parentView, num parentIndex) : super(import9.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMaterialCheckboxComponent0._renderType;
@@ -197,8 +195,8 @@ class _ViewMaterialCheckboxComponent1 extends AppView<import2.MaterialCheckboxCo
     _el_0 = _compView_0.rootEl;
     _el_0.className = 'ripple';
     addShimC(_el_0);
-    _MaterialRippleComponent_0_4 = new import15.MaterialRippleComponent(_el_0);
-    _compView_0.create(_MaterialRippleComponent_0_4, []);
+    _MaterialRippleComponent_0_5 = new import15.MaterialRippleComponent(_el_0);
+    _compView_0.create(_MaterialRippleComponent_0_5, []);
     init0(_el_0);
     return null;
   }
@@ -222,7 +220,7 @@ class _ViewMaterialCheckboxComponent1 extends AppView<import2.MaterialCheckboxCo
   @override
   void destroyInternal() {
     _compView_0?.destroy();
-    _MaterialRippleComponent_0_4.ngOnDestroy();
+    _MaterialRippleComponent_0_5.ngOnDestroy();
   }
 }
 
@@ -234,16 +232,16 @@ const List<dynamic> styles$MaterialCheckboxComponentHost = const [];
 
 class _ViewMaterialCheckboxComponentHost0 extends AppView<dynamic> {
   ViewMaterialCheckboxComponent0 _compView_0;
-  import2.MaterialCheckboxComponent _MaterialCheckboxComponent_0_4;
+  import2.MaterialCheckboxComponent _MaterialCheckboxComponent_0_5;
   _ViewMaterialCheckboxComponentHost0(AppView<dynamic> parentView, num parentIndex) : super(import9.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewMaterialCheckboxComponent0(this, 0);
     rootEl = _compView_0.rootEl;
-    _MaterialCheckboxComponent_0_4 = new import2.MaterialCheckboxComponent(rootEl, _compView_0.ref, null, null, null);
-    _compView_0.create(_MaterialCheckboxComponent_0_4, projectableNodes);
+    _MaterialCheckboxComponent_0_5 = new import2.MaterialCheckboxComponent(rootEl, _compView_0.ref, null, null, null);
+    _compView_0.create(_MaterialCheckboxComponent_0_5, projectableNodes);
     init0(rootEl);
-    return new ComponentRef<import2.MaterialCheckboxComponent>(0, this, rootEl, _MaterialCheckboxComponent_0_4);
+    return new ComponentRef<import2.MaterialCheckboxComponent>(0, this, rootEl, _MaterialCheckboxComponent_0_5);
   }
 
   @override

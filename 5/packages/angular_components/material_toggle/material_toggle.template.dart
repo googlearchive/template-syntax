@@ -1,7 +1,5 @@
-// GENERATED CODE - DO NOT MODIFY BY HAND
-
 // **************************************************************************
-// Generator: TemplateGenerator
+// Generator: Instance of 'Compiler'
 // **************************************************************************
 
 // ignore_for_file: cancel_subscriptions,constant_identifier_names,duplicate_import,non_constant_identifier_names,library_prefixes,UNUSED_IMPORT,UNUSED_SHOWN_NAME
@@ -32,7 +30,7 @@ const List<dynamic> styles$MaterialToggleComponent = const [import0.styles];
 class ViewMaterialToggleComponent0 extends AppView<import2.MaterialToggleComponent> {
   import3.DivElement _el_0;
   ViewContainer _appEl_1;
-  NgIf _NgIf_1_7;
+  NgIf _NgIf_1_9;
   import3.DivElement _el_2;
   import3.DivElement _el_3;
   import3.DivElement _el_4;
@@ -64,8 +62,8 @@ class ViewMaterialToggleComponent0 extends AppView<import2.MaterialToggleCompone
     var _anchor_1 = ngAnchor.clone(false);
     _el_0.append(_anchor_1);
     _appEl_1 = new ViewContainer(1, 0, this, _anchor_1);
-    TemplateRef _TemplateRef_1_6 = new TemplateRef(_appEl_1, viewFactory_MaterialToggleComponent1);
-    _NgIf_1_7 = new NgIf(_appEl_1, _TemplateRef_1_6);
+    TemplateRef _TemplateRef_1_8 = new TemplateRef(_appEl_1, viewFactory_MaterialToggleComponent1);
+    _NgIf_1_9 = new NgIf(_appEl_1, _TemplateRef_1_8);
     _el_2 = createDivAndAppend(doc, _el_0);
     _el_2.className = 'tgl-container';
     addShimC(_el_2);
@@ -94,7 +92,7 @@ class ViewMaterialToggleComponent0 extends AppView<import2.MaterialToggleCompone
   @override
   void detectChangesInternal() {
     final import2.MaterialToggleComponent _ctx = ctx;
-    _NgIf_1_7.ngIf = _ctx.hasLabel;
+    _NgIf_1_9.ngIf = _ctx.hasLabel;
     _appEl_1.detectChangesInNestedViews();
     final currVal_0 = _ctx.checked;
     if (!identical(_expr_0, currVal_0)) {
@@ -202,16 +200,16 @@ const List<dynamic> styles$MaterialToggleComponentHost = const [];
 
 class _ViewMaterialToggleComponentHost0 extends AppView<dynamic> {
   ViewMaterialToggleComponent0 _compView_0;
-  import2.MaterialToggleComponent _MaterialToggleComponent_0_4;
+  import2.MaterialToggleComponent _MaterialToggleComponent_0_5;
   _ViewMaterialToggleComponentHost0(AppView<dynamic> parentView, num parentIndex) : super(import7.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewMaterialToggleComponent0(this, 0);
     rootEl = _compView_0.rootEl;
-    _MaterialToggleComponent_0_4 = new import2.MaterialToggleComponent();
-    _compView_0.create(_MaterialToggleComponent_0_4, projectableNodes);
+    _MaterialToggleComponent_0_5 = new import2.MaterialToggleComponent();
+    _compView_0.create(_MaterialToggleComponent_0_5, projectableNodes);
     init0(rootEl);
-    return new ComponentRef<import2.MaterialToggleComponent>(0, this, rootEl, _MaterialToggleComponent_0_4);
+    return new ComponentRef<import2.MaterialToggleComponent>(0, this, rootEl, _MaterialToggleComponent_0_5);
   }
 
   @override

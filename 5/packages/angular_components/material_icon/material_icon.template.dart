@@ -1,7 +1,5 @@
-// GENERATED CODE - DO NOT MODIFY BY HAND
-
 // **************************************************************************
-// Generator: TemplateGenerator
+// Generator: Instance of 'Compiler'
 // **************************************************************************
 
 // ignore_for_file: cancel_subscriptions,constant_identifier_names,duplicate_import,non_constant_identifier_names,library_prefixes,UNUSED_IMPORT,UNUSED_SHOWN_NAME
@@ -68,16 +66,16 @@ const List<dynamic> styles$MaterialIconComponentHost = const [];
 
 class _ViewMaterialIconComponentHost0 extends AppView<dynamic> {
   ViewMaterialIconComponent0 _compView_0;
-  import2.MaterialIconComponent _MaterialIconComponent_0_4;
+  import2.MaterialIconComponent _MaterialIconComponent_0_5;
   _ViewMaterialIconComponentHost0(AppView<dynamic> parentView, num parentIndex) : super(import5.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewMaterialIconComponent0(this, 0);
     rootEl = _compView_0.rootEl;
-    _MaterialIconComponent_0_4 = new import2.MaterialIconComponent(rootEl);
-    _compView_0.create(_MaterialIconComponent_0_4, projectableNodes);
+    _MaterialIconComponent_0_5 = new import2.MaterialIconComponent(rootEl);
+    _compView_0.create(_MaterialIconComponent_0_5, projectableNodes);
     init0(rootEl);
-    return new ComponentRef<import2.MaterialIconComponent>(0, this, rootEl, _MaterialIconComponent_0_4);
+    return new ComponentRef<import2.MaterialIconComponent>(0, this, rootEl, _MaterialIconComponent_0_5);
   }
 
   @override

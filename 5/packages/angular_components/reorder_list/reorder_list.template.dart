@@ -1,7 +1,5 @@
-// GENERATED CODE - DO NOT MODIFY BY HAND
-
 // **************************************************************************
-// Generator: TemplateGenerator
+// Generator: Instance of 'Compiler'
 // **************************************************************************
 
 // ignore_for_file: cancel_subscriptions,constant_identifier_names,duplicate_import,non_constant_identifier_names,library_prefixes,UNUSED_IMPORT,UNUSED_SHOWN_NAME
@@ -24,43 +22,41 @@ import 'reorder_events.template.dart' as _ref4;
 import 'package:angular_components/reorder_list/reorder_list.scss.css.shim.dart' as import0;
 import 'package:angular/src/core/linker/app_view.dart';
 import 'reorder_list.dart' as import2;
-import 'package:angular/src/core/linker/query_list.dart' as import3;
-import 'dart:html' as import4;
+import 'dart:html' as import3;
 import 'package:angular/src/core/render/api.dart';
-import 'package:angular/src/core/linker/view_type.dart' as import6;
+import 'package:angular/src/core/linker/view_type.dart' as import5;
 import 'package:angular/src/core/change_detection/change_detection.dart';
-import 'package:angular/src/core/linker/app_view_utils.dart' as import8;
+import 'package:angular/src/core/linker/app_view_utils.dart' as import7;
 import 'package:angular/angular.dart';
 import 'package:angular/src/core/linker/element_ref.dart';
-import 'package:angular/src/core/zone/ng_zone.dart' as import11;
+import 'package:angular/src/core/zone/ng_zone.dart' as import10;
 
 const List<dynamic> styles$ReorderListComponent = const [import0.styles];
 
 class ViewReorderListComponent0 extends AppView<import2.ReorderListComponent> {
-  final import3.QueryList _viewQuery_placeholder_0 = new import3.QueryList();
-  import4.DivElement _el_0;
+  bool _query_placeholder_1_0_isDirty = true;
+  import3.DivElement _el_0;
   bool _expr_0;
   bool _expr_1;
   bool _expr_2;
   static RenderComponentType _renderType;
-  ViewReorderListComponent0(AppView<dynamic> parentView, num parentIndex) : super(import6.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
-    rootEl = import4.document.createElement('reorder-list');
+  ViewReorderListComponent0(AppView<dynamic> parentView, num parentIndex) : super(import5.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+    rootEl = import3.document.createElement('reorder-list');
     createAttr(rootEl, 'role', 'list');
     rootEl.className = 'themeable';
-    _renderType ??= import8.appViewUtils.createRenderType('', ViewEncapsulation.Emulated, styles$ReorderListComponent);
+    _renderType ??= import7.appViewUtils.createRenderType('', ViewEncapsulation.Emulated, styles$ReorderListComponent);
     setupComponentType(_renderType);
   }
   @override
   ComponentRef<import2.ReorderListComponent> build() {
-    final import4.HtmlElement parentRenderNode = initViewRoot(rootEl);
+    final import3.HtmlElement parentRenderNode = initViewRoot(rootEl);
     project(parentRenderNode, 0);
-    var doc = import4.document;
+    var doc = import3.document;
     _el_0 = createDivAndAppend(doc, parentRenderNode);
     _el_0.className = 'placeholder';
     addShimC(_el_0);
     project(_el_0, 1);
-    _viewQuery_placeholder_0.reset([new ElementRef(_el_0)]);
-    ctx.placeholder = _viewQuery_placeholder_0.first;
+    ctx.placeholder = new ElementRef(_el_0);
     init(const [], null);
     return null;
   }
@@ -97,23 +93,24 @@ const List<dynamic> styles$ReorderListComponentHost = const [];
 
 class _ViewReorderListComponentHost0 extends AppView<dynamic> {
   ViewReorderListComponent0 _compView_0;
-  import2.ReorderListComponent _ReorderListComponent_0_4;
-  final import3.QueryList _query_ReorderItemDirective_0_0 = new import3.QueryList();
-  _ViewReorderListComponentHost0(AppView<dynamic> parentView, num parentIndex) : super(import6.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
+  import2.ReorderListComponent _ReorderListComponent_0_5;
+  bool _query_ReorderItemDirective_0_0_isDirty = true;
+  _ViewReorderListComponentHost0(AppView<dynamic> parentView, num parentIndex) : super(import5.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewReorderListComponent0(this, 0);
     rootEl = _compView_0.rootEl;
-    _ReorderListComponent_0_4 = new import2.ReorderListComponent(this.injectorGet(import11.NgZone, viewData.parentIndex));
-    _compView_0.create(_ReorderListComponent_0_4, projectableNodes);
+    _ReorderListComponent_0_5 = new import2.ReorderListComponent(this.injectorGet(import10.NgZone, viewData.parentIndex));
+    _ReorderListComponent_0_5.items = [];
+    _compView_0.create(_ReorderListComponent_0_5, projectableNodes);
     init0(rootEl);
-    return new ComponentRef<import2.ReorderListComponent>(0, this, rootEl, _ReorderListComponent_0_4);
+    return new ComponentRef<import2.ReorderListComponent>(0, this, rootEl, _ReorderListComponent_0_5);
   }
 
   @override
   dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
     if ((identical(token, import2.ReorderListComponent) && (0 == nodeIndex))) {
-      return _ReorderListComponent_0_4;
+      return _ReorderListComponent_0_5;
     }
     return notFoundResult;
   }
@@ -121,11 +118,6 @@ class _ViewReorderListComponentHost0 extends AppView<dynamic> {
   @override
   void detectChangesInternal() {
     bool firstCheck = (this.cdState == 0);
-    if (_query_ReorderItemDirective_0_0.dirty) {
-      _query_ReorderItemDirective_0_0.reset([]);
-      _ReorderListComponent_0_4.items = _query_ReorderItemDirective_0_0;
-      _query_ReorderItemDirective_0_0.notifyOnChanges();
-    }
     _compView_0.detectHostChanges(firstCheck);
     _compView_0.detectChanges();
   }
@@ -133,7 +125,7 @@ class _ViewReorderListComponentHost0 extends AppView<dynamic> {
   @override
   void destroyInternal() {
     _compView_0?.destroy();
-    _ReorderListComponent_0_4.ngOnDestroy();
+    _ReorderListComponent_0_5.ngOnDestroy();
   }
 }
 

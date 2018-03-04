@@ -1,7 +1,5 @@
-// GENERATED CODE - DO NOT MODIFY BY HAND
-
 // **************************************************************************
-// Generator: TemplateGenerator
+// Generator: Instance of 'Compiler'
 // **************************************************************************
 
 // ignore_for_file: cancel_subscriptions,constant_identifier_names,duplicate_import,non_constant_identifier_names,library_prefixes,UNUSED_IMPORT,UNUSED_SHOWN_NAME
@@ -41,12 +39,12 @@ const List<dynamic> styles$DropdownMenuComponent = const [];
 class ViewDropdownMenuComponent0 extends AppView<import1.DropdownMenuComponent> {
   import2.Element _el_1;
   import3.ViewDropdownButtonComponent0 _compView_1;
-  import4.DropdownButtonComponent _DropdownButtonComponent_1_4;
-  import5.PopupSourceDirective _PopupSourceDirective_1_5;
+  import4.DropdownButtonComponent _DropdownButtonComponent_1_5;
+  import5.PopupSourceDirective _PopupSourceDirective_1_6;
   import2.Element _el_5;
   import6.ViewMenuPopupComponent0 _compView_5;
-  import7.MenuPopupComponent _MenuPopupComponent_5_4;
-  import5.PopupSourceDirective _PopupSourceDirective_5_5;
+  import7.MenuPopupComponent _MenuPopupComponent_5_5;
+  import5.PopupSourceDirective _PopupSourceDirective_5_6;
   String _expr_0;
   bool _expr_1;
   var _expr_2;
@@ -69,11 +67,11 @@ class ViewDropdownMenuComponent0 extends AppView<import1.DropdownMenuComponent> 
     _el_1 = _compView_1.rootEl;
     parentRenderNode.append(_el_1);
     createAttr(_el_1, 'popupSource', '');
-    _DropdownButtonComponent_1_4 = new import4.DropdownButtonComponent();
-    _PopupSourceDirective_1_5 = new import5.PopupSourceDirective(parentView.injectorGet(import13.DomPopupSourceFactory, viewData.parentIndex), _el_1, parentView.injectorGet(import14.ReferenceDirective, viewData.parentIndex, null));
+    _DropdownButtonComponent_1_5 = new import4.DropdownButtonComponent();
+    _PopupSourceDirective_1_6 = new import5.PopupSourceDirective(parentView.injectorGet(import13.DomPopupSourceFactory, viewData.parentIndex), _el_1, parentView.injectorGet(import14.ReferenceDirective, viewData.parentIndex, null));
     import2.Text _text_2 = new import2.Text('\n  ');
     import2.Text _text_3 = new import2.Text('\n');
-    _compView_1.create(_DropdownButtonComponent_1_4, [
+    _compView_1.create(_DropdownButtonComponent_1_5, [
       <dynamic>[_text_2]..addAll(projectableNodes[0])..addAll([_text_3])
     ]);
     import2.Text _text_4 = new import2.Text('\n');
@@ -81,17 +79,17 @@ class ViewDropdownMenuComponent0 extends AppView<import1.DropdownMenuComponent> 
     _compView_5 = new import6.ViewMenuPopupComponent0(this, 5);
     _el_5 = _compView_5.rootEl;
     parentRenderNode.append(_el_5);
-    _MenuPopupComponent_5_4 = new import7.MenuPopupComponent();
-    _PopupSourceDirective_5_5 = new import5.PopupSourceDirective(parentView.injectorGet(import13.DomPopupSourceFactory, viewData.parentIndex), _el_5, parentView.injectorGet(import14.ReferenceDirective, viewData.parentIndex, null));
+    _MenuPopupComponent_5_5 = new import7.MenuPopupComponent();
+    _PopupSourceDirective_5_6 = new import5.PopupSourceDirective(parentView.injectorGet(import13.DomPopupSourceFactory, viewData.parentIndex), _el_5, parentView.injectorGet(import14.ReferenceDirective, viewData.parentIndex, null));
     import2.Text _text_6 = new import2.Text('\n  ');
     import2.Text _text_7 = new import2.Text('\n');
-    _compView_5.create(_MenuPopupComponent_5_4, [
+    _compView_5.create(_MenuPopupComponent_5_5, [
       <dynamic>[_text_6]..addAll(projectableNodes[1])..addAll([_text_7])
     ]);
     import2.Text _text_8 = new import2.Text('\n');
     parentRenderNode.append(_text_8);
-    final subscription_0 = _DropdownButtonComponent_1_4.trigger.listen(eventHandler1(_handle_trigger_1_0));
-    final subscription_1 = _MenuPopupComponent_5_4.isExpandedChange.listen(eventHandler1(_handle_isExpandedChange_5_0));
+    final subscription_0 = _DropdownButtonComponent_1_5.trigger.listen(eventHandler1(_handle_trigger_1_0));
+    final subscription_1 = _MenuPopupComponent_5_5.isExpandedChange.listen(eventHandler1(_handle_isExpandedChange_5_0));
     init(const [], [subscription_0, subscription_1]);
     return null;
   }
@@ -99,16 +97,16 @@ class ViewDropdownMenuComponent0 extends AppView<import1.DropdownMenuComponent> 
   @override
   dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
     if ((identical(token, import4.DropdownButtonComponent) && ((1 <= nodeIndex) && (nodeIndex <= 3)))) {
-      return _DropdownButtonComponent_1_4;
+      return _DropdownButtonComponent_1_5;
     }
     if ((identical(token, import5.PopupSourceDirective) && ((1 <= nodeIndex) && (nodeIndex <= 3)))) {
-      return _PopupSourceDirective_1_5;
+      return _PopupSourceDirective_1_6;
     }
     if ((identical(token, import7.MenuPopupComponent) && ((5 <= nodeIndex) && (nodeIndex <= 7)))) {
-      return _MenuPopupComponent_5_4;
+      return _MenuPopupComponent_5_5;
     }
     if ((identical(token, import5.PopupSourceDirective) && ((5 <= nodeIndex) && (nodeIndex <= 7)))) {
-      return _PopupSourceDirective_5_5;
+      return _PopupSourceDirective_5_6;
     }
     return notFoundResult;
   }
@@ -118,17 +116,17 @@ class ViewDropdownMenuComponent0 extends AppView<import1.DropdownMenuComponent> 
     final import1.DropdownMenuComponent _ctx = ctx;
     bool changed = false;
     bool firstCheck = (this.cdState == 0);
-    final local_toggle = _PopupSourceDirective_1_5;
+    final import5.PopupSourceDirective local_toggle = _PopupSourceDirective_1_6;
     changed = false;
     final currVal_0 = _ctx.buttonText;
     if (!identical(_expr_0, currVal_0)) {
-      _DropdownButtonComponent_1_4.buttonText = currVal_0;
+      _DropdownButtonComponent_1_5.buttonText = currVal_0;
       changed = true;
       _expr_0 = currVal_0;
     }
     final currVal_1 = _ctx.disabled;
     if (!identical(_expr_1, currVal_1)) {
-      _DropdownButtonComponent_1_4.disabled = currVal_1;
+      _DropdownButtonComponent_1_5.disabled = currVal_1;
       changed = true;
       _expr_1 = currVal_1;
     }
@@ -138,31 +136,31 @@ class ViewDropdownMenuComponent0 extends AppView<import1.DropdownMenuComponent> 
     changed = false;
     final currVal_2 = _ctx.menu;
     if (!identical(_expr_2, currVal_2)) {
-      _MenuPopupComponent_5_4.menu = currVal_2;
+      _MenuPopupComponent_5_5.menu = currVal_2;
       changed = true;
       _expr_2 = currVal_2;
     }
     final currVal_3 = _ctx.preferredPositions;
     if (!identical(_expr_3, currVal_3)) {
-      _MenuPopupComponent_5_4.preferredPositions = currVal_3;
+      _MenuPopupComponent_5_5.preferredPositions = currVal_3;
       changed = true;
       _expr_3 = currVal_3;
     }
     final currVal_4 = _ctx.isExpanded;
     if (!identical(_expr_4, currVal_4)) {
-      _MenuPopupComponent_5_4.isExpanded = currVal_4;
+      _MenuPopupComponent_5_5.isExpanded = currVal_4;
       changed = true;
       _expr_4 = currVal_4;
     }
     final currVal_5 = _ctx.width;
     if (!identical(_expr_5, currVal_5)) {
-      _MenuPopupComponent_5_4.width = currVal_5;
+      _MenuPopupComponent_5_5.width = currVal_5;
       changed = true;
       _expr_5 = currVal_5;
     }
     final currVal_6 = local_toggle;
     if (!identical(_expr_6, currVal_6)) {
-      _MenuPopupComponent_5_4.popupSource = currVal_6;
+      _MenuPopupComponent_5_5.popupSource = currVal_6;
       changed = true;
       _expr_6 = currVal_6;
     }
@@ -172,10 +170,10 @@ class ViewDropdownMenuComponent0 extends AppView<import1.DropdownMenuComponent> 
     _compView_1.detectChanges();
     _compView_5.detectChanges();
     if (firstCheck) {
-      _PopupSourceDirective_1_5.ngAfterViewInit();
+      _PopupSourceDirective_1_6.ngAfterViewInit();
     }
     if (firstCheck) {
-      _PopupSourceDirective_5_5.ngAfterViewInit();
+      _PopupSourceDirective_5_6.ngAfterViewInit();
     }
   }
 
@@ -183,8 +181,8 @@ class ViewDropdownMenuComponent0 extends AppView<import1.DropdownMenuComponent> 
   void destroyInternal() {
     _compView_1?.destroy();
     _compView_5?.destroy();
-    _PopupSourceDirective_1_5.ngOnDestroy();
-    _PopupSourceDirective_5_5.ngOnDestroy();
+    _PopupSourceDirective_1_6.ngOnDestroy();
+    _PopupSourceDirective_5_6.ngOnDestroy();
   }
 
   void _handle_trigger_1_0($event) {
@@ -204,22 +202,22 @@ const List<dynamic> styles$DropdownMenuComponentHost = const [];
 
 class _ViewDropdownMenuComponentHost0 extends AppView<dynamic> {
   ViewDropdownMenuComponent0 _compView_0;
-  import1.DropdownMenuComponent _DropdownMenuComponent_0_4;
+  import1.DropdownMenuComponent _DropdownMenuComponent_0_5;
   _ViewDropdownMenuComponentHost0(AppView<dynamic> parentView, num parentIndex) : super(import9.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewDropdownMenuComponent0(this, 0);
     rootEl = _compView_0.rootEl;
-    _DropdownMenuComponent_0_4 = new import1.DropdownMenuComponent(_compView_0.ref);
-    _compView_0.create(_DropdownMenuComponent_0_4, projectableNodes);
+    _DropdownMenuComponent_0_5 = new import1.DropdownMenuComponent(_compView_0.ref);
+    _compView_0.create(_DropdownMenuComponent_0_5, projectableNodes);
     init0(rootEl);
-    return new ComponentRef<import1.DropdownMenuComponent>(0, this, rootEl, _DropdownMenuComponent_0_4);
+    return new ComponentRef<import1.DropdownMenuComponent>(0, this, rootEl, _DropdownMenuComponent_0_5);
   }
 
   @override
   dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
     if ((identical(token, import1.DropdownMenuComponent) && (0 == nodeIndex))) {
-      return _DropdownMenuComponent_0_4;
+      return _DropdownMenuComponent_0_5;
     }
     return notFoundResult;
   }
@@ -236,7 +234,7 @@ class _ViewDropdownMenuComponentHost0 extends AppView<dynamic> {
   @override
   void destroyInternal() {
     _compView_0?.destroy();
-    _DropdownMenuComponent_0_4.ngOnDestroy();
+    _DropdownMenuComponent_0_5.ngOnDestroy();
   }
 }
 

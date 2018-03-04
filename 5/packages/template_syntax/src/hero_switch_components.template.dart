@@ -1,7 +1,5 @@
-// GENERATED CODE - DO NOT MODIFY BY HAND
-
 // **************************************************************************
-// Generator: TemplateGenerator
+// Generator: Instance of 'Compiler'
 // **************************************************************************
 
 // ignore_for_file: cancel_subscriptions,constant_identifier_names,duplicate_import,non_constant_identifier_names,library_prefixes,UNUSED_IMPORT,UNUSED_SHOWN_NAME
@@ -64,24 +62,16 @@ const List<dynamic> styles$HappyHeroComponentHost = const [];
 
 class _ViewHappyHeroComponentHost0 extends AppView<dynamic> {
   ViewHappyHeroComponent0 _compView_0;
-  import1.HappyHeroComponent _HappyHeroComponent_0_4;
+  import1.HappyHeroComponent _HappyHeroComponent_0_5;
   _ViewHappyHeroComponentHost0(AppView<dynamic> parentView, num parentIndex) : super(import4.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewHappyHeroComponent0(this, 0);
     rootEl = _compView_0.rootEl;
-    _HappyHeroComponent_0_4 = new import1.HappyHeroComponent();
-    _compView_0.create(_HappyHeroComponent_0_4, projectableNodes);
+    _HappyHeroComponent_0_5 = new import1.HappyHeroComponent();
+    _compView_0.create(_HappyHeroComponent_0_5, projectableNodes);
     init0(rootEl);
-    return new ComponentRef<import1.HappyHeroComponent>(0, this, rootEl, _HappyHeroComponent_0_4);
-  }
-
-  @override
-  dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
-    if ((identical(token, import1.HappyHeroComponent) && (0 == nodeIndex))) {
-      return _HappyHeroComponent_0_4;
-    }
-    return notFoundResult;
+    return new ComponentRef<import1.HappyHeroComponent>(0, this, rootEl, _HappyHeroComponent_0_5);
   }
 
   @override
@@ -143,24 +133,16 @@ const List<dynamic> styles$SadHeroComponentHost = const [];
 
 class _ViewSadHeroComponentHost0 extends AppView<dynamic> {
   ViewSadHeroComponent0 _compView_0;
-  import1.SadHeroComponent _SadHeroComponent_0_4;
+  import1.SadHeroComponent _SadHeroComponent_0_5;
   _ViewSadHeroComponentHost0(AppView<dynamic> parentView, num parentIndex) : super(import4.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewSadHeroComponent0(this, 0);
     rootEl = _compView_0.rootEl;
-    _SadHeroComponent_0_4 = new import1.SadHeroComponent();
-    _compView_0.create(_SadHeroComponent_0_4, projectableNodes);
+    _SadHeroComponent_0_5 = new import1.SadHeroComponent();
+    _compView_0.create(_SadHeroComponent_0_5, projectableNodes);
     init0(rootEl);
-    return new ComponentRef<import1.SadHeroComponent>(0, this, rootEl, _SadHeroComponent_0_4);
-  }
-
-  @override
-  dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
-    if ((identical(token, import1.SadHeroComponent) && (0 == nodeIndex))) {
-      return _SadHeroComponent_0_4;
-    }
-    return notFoundResult;
+    return new ComponentRef<import1.SadHeroComponent>(0, this, rootEl, _SadHeroComponent_0_5);
   }
 
   @override
@@ -222,24 +204,16 @@ const List<dynamic> styles$ConfusedHeroComponentHost = const [];
 
 class _ViewConfusedHeroComponentHost0 extends AppView<dynamic> {
   ViewConfusedHeroComponent0 _compView_0;
-  import1.ConfusedHeroComponent _ConfusedHeroComponent_0_4;
+  import1.ConfusedHeroComponent _ConfusedHeroComponent_0_5;
   _ViewConfusedHeroComponentHost0(AppView<dynamic> parentView, num parentIndex) : super(import4.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewConfusedHeroComponent0(this, 0);
     rootEl = _compView_0.rootEl;
-    _ConfusedHeroComponent_0_4 = new import1.ConfusedHeroComponent();
-    _compView_0.create(_ConfusedHeroComponent_0_4, projectableNodes);
+    _ConfusedHeroComponent_0_5 = new import1.ConfusedHeroComponent();
+    _compView_0.create(_ConfusedHeroComponent_0_5, projectableNodes);
     init0(rootEl);
-    return new ComponentRef<import1.ConfusedHeroComponent>(0, this, rootEl, _ConfusedHeroComponent_0_4);
-  }
-
-  @override
-  dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
-    if ((identical(token, import1.ConfusedHeroComponent) && (0 == nodeIndex))) {
-      return _ConfusedHeroComponent_0_4;
-    }
-    return notFoundResult;
+    return new ComponentRef<import1.ConfusedHeroComponent>(0, this, rootEl, _ConfusedHeroComponent_0_5);
   }
 
   @override
@@ -297,24 +271,16 @@ const List<dynamic> styles$UnknownHeroComponentHost = const [];
 
 class _ViewUnknownHeroComponentHost0 extends AppView<dynamic> {
   ViewUnknownHeroComponent0 _compView_0;
-  import1.UnknownHeroComponent _UnknownHeroComponent_0_4;
+  import1.UnknownHeroComponent _UnknownHeroComponent_0_5;
   _ViewUnknownHeroComponentHost0(AppView<dynamic> parentView, num parentIndex) : super(import4.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewUnknownHeroComponent0(this, 0);
     rootEl = _compView_0.rootEl;
-    _UnknownHeroComponent_0_4 = new import1.UnknownHeroComponent();
-    _compView_0.create(_UnknownHeroComponent_0_4, projectableNodes);
+    _UnknownHeroComponent_0_5 = new import1.UnknownHeroComponent();
+    _compView_0.create(_UnknownHeroComponent_0_5, projectableNodes);
     init0(rootEl);
-    return new ComponentRef<import1.UnknownHeroComponent>(0, this, rootEl, _UnknownHeroComponent_0_4);
-  }
-
-  @override
-  dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
-    if ((identical(token, import1.UnknownHeroComponent) && (0 == nodeIndex))) {
-      return _UnknownHeroComponent_0_4;
-    }
-    return notFoundResult;
+    return new ComponentRef<import1.UnknownHeroComponent>(0, this, rootEl, _UnknownHeroComponent_0_5);
   }
 
   @override

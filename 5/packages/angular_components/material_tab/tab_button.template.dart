@@ -1,7 +1,5 @@
-// GENERATED CODE - DO NOT MODIFY BY HAND
-
 // **************************************************************************
-// Generator: TemplateGenerator
+// Generator: Instance of 'Compiler'
 // **************************************************************************
 
 // ignore_for_file: cancel_subscriptions,constant_identifier_names,duplicate_import,non_constant_identifier_names,library_prefixes,UNUSED_IMPORT,UNUSED_SHOWN_NAME
@@ -36,7 +34,7 @@ class ViewTabButtonComponent0 extends AppView<import2.TabButtonComponent> {
   import3.Text _text_1;
   import3.Element _el_2;
   import4.ViewMaterialRippleComponent0 _compView_2;
-  import5.MaterialRippleComponent _MaterialRippleComponent_2_4;
+  import5.MaterialRippleComponent _MaterialRippleComponent_2_5;
   var _expr_0;
   var _expr_1;
   var _expr_2;
@@ -64,8 +62,8 @@ class ViewTabButtonComponent0 extends AppView<import2.TabButtonComponent> {
     _el_2 = _compView_2.rootEl;
     parentRenderNode.append(_el_2);
     addShimC(_el_2);
-    _MaterialRippleComponent_2_4 = new import5.MaterialRippleComponent(_el_2);
-    _compView_2.create(_MaterialRippleComponent_2_4, []);
+    _MaterialRippleComponent_2_5 = new import5.MaterialRippleComponent(_el_2);
+    _compView_2.create(_MaterialRippleComponent_2_5, []);
     init(const [], null);
     rootEl.addEventListener('click', eventHandler1(_ctx.handleClick));
     rootEl.addEventListener('keypress', eventHandler1(_ctx.handleKeyPress));
@@ -95,7 +93,7 @@ class ViewTabButtonComponent0 extends AppView<import2.TabButtonComponent> {
   @override
   void destroyInternal() {
     _compView_2?.destroy();
-    _MaterialRippleComponent_2_4.ngOnDestroy();
+    _MaterialRippleComponent_2_5.ngOnDestroy();
   }
 
   void detectHostChanges(bool firstCheck) {
@@ -135,22 +133,22 @@ const List<dynamic> styles$TabButtonComponentHost = const [];
 
 class _ViewTabButtonComponentHost0 extends AppView<dynamic> {
   ViewTabButtonComponent0 _compView_0;
-  import2.TabButtonComponent _TabButtonComponent_0_4;
+  import2.TabButtonComponent _TabButtonComponent_0_5;
   _ViewTabButtonComponentHost0(AppView<dynamic> parentView, num parentIndex) : super(import7.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewTabButtonComponent0(this, 0);
     rootEl = _compView_0.rootEl;
-    _TabButtonComponent_0_4 = new import2.TabButtonComponent(rootEl);
-    _compView_0.create(_TabButtonComponent_0_4, projectableNodes);
+    _TabButtonComponent_0_5 = new import2.TabButtonComponent(rootEl);
+    _compView_0.create(_TabButtonComponent_0_5, projectableNodes);
     init0(rootEl);
-    return new ComponentRef<import2.TabButtonComponent>(0, this, rootEl, _TabButtonComponent_0_4);
+    return new ComponentRef<import2.TabButtonComponent>(0, this, rootEl, _TabButtonComponent_0_5);
   }
 
   @override
   dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
     if ((identical(token, import2.TabButtonComponent) && (0 == nodeIndex))) {
-      return _TabButtonComponent_0_4;
+      return _TabButtonComponent_0_5;
     }
     return notFoundResult;
   }

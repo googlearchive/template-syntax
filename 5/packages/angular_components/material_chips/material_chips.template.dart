@@ -1,7 +1,5 @@
-// GENERATED CODE - DO NOT MODIFY BY HAND
-
 // **************************************************************************
-// Generator: TemplateGenerator
+// Generator: Instance of 'Compiler'
 // **************************************************************************
 
 // ignore_for_file: cancel_subscriptions,constant_identifier_names,duplicate_import,non_constant_identifier_names,library_prefixes,UNUSED_IMPORT,UNUSED_SHOWN_NAME
@@ -32,12 +30,13 @@ import 'package:angular/angular.dart';
 import 'package:angular/src/core/linker/template_ref.dart';
 import 'material_chip.template.dart' as import12;
 import 'material_chip.dart' as import13;
+import '../model/ui/has_renderer.dart' as import14;
 
 const List<dynamic> styles$MaterialChipsComponent = const [import0.styles];
 
 class ViewMaterialChipsComponent0 extends AppView<import2.MaterialChipsComponent> {
   ViewContainer _appEl_0;
-  import4.NgFor _NgFor_0_7;
+  import4.NgFor _NgFor_0_9;
   var _expr_0;
   static RenderComponentType _renderType;
   ViewMaterialChipsComponent0(AppView<dynamic> parentView, num parentIndex) : super(import6.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckOnce) {
@@ -51,8 +50,8 @@ class ViewMaterialChipsComponent0 extends AppView<import2.MaterialChipsComponent
     var _anchor_0 = ngAnchor.clone(false);
     parentRenderNode.append(_anchor_0);
     _appEl_0 = new ViewContainer(0, null, this, _anchor_0);
-    TemplateRef _TemplateRef_0_6 = new TemplateRef(_appEl_0, viewFactory_MaterialChipsComponent1);
-    _NgFor_0_7 = new import4.NgFor(_appEl_0, _TemplateRef_0_6);
+    TemplateRef _TemplateRef_0_8 = new TemplateRef(_appEl_0, viewFactory_MaterialChipsComponent1);
+    _NgFor_0_9 = new import4.NgFor(_appEl_0, _TemplateRef_0_8);
     project(parentRenderNode, 0);
     init(const [], null);
     return null;
@@ -63,10 +62,10 @@ class ViewMaterialChipsComponent0 extends AppView<import2.MaterialChipsComponent
     final import2.MaterialChipsComponent _ctx = ctx;
     final currVal_0 = _ctx.selectedItems;
     if (!identical(_expr_0, currVal_0)) {
-      _NgFor_0_7.ngForOf = currVal_0;
+      _NgFor_0_9.ngForOf = currVal_0;
       _expr_0 = currVal_0;
     }
-    _NgFor_0_7.ngDoCheck();
+    _NgFor_0_9.ngDoCheck();
     _appEl_0.detectChangesInNestedViews();
   }
 
@@ -83,7 +82,7 @@ AppView<import2.MaterialChipsComponent> viewFactory_MaterialChipsComponent0(AppV
 class _ViewMaterialChipsComponent1 extends AppView<import2.MaterialChipsComponent> {
   import8.Element _el_0;
   import12.ViewMaterialChipComponent0 _compView_0;
-  import13.MaterialChipComponent _MaterialChipComponent_0_4;
+  import13.MaterialChipComponent _MaterialChipComponent_0_5;
   var _expr_0;
   bool _expr_1;
   var _expr_2;
@@ -96,10 +95,18 @@ class _ViewMaterialChipsComponent1 extends AppView<import2.MaterialChipsComponen
     _compView_0 = new import12.ViewMaterialChipComponent0(this, 0);
     _el_0 = _compView_0.rootEl;
     addShimC(_el_0);
-    _MaterialChipComponent_0_4 = new import13.MaterialChipComponent(_el_0);
-    _compView_0.create(_MaterialChipComponent_0_4, [const [], const []]);
+    _MaterialChipComponent_0_5 = new import13.MaterialChipComponent(_el_0);
+    _compView_0.create(_MaterialChipComponent_0_5, [const [], const []]);
     init0(_el_0);
     return null;
+  }
+
+  @override
+  dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
+    if ((identical(token, import14.HasRenderer) && (0 == nodeIndex))) {
+      return _MaterialChipComponent_0_5;
+    }
+    return notFoundResult;
   }
 
   @override
@@ -110,25 +117,25 @@ class _ViewMaterialChipsComponent1 extends AppView<import2.MaterialChipsComponen
     changed = false;
     final currVal_0 = _ctx.selectionModel;
     if (!identical(_expr_0, currVal_0)) {
-      _MaterialChipComponent_0_4.selectionModel = currVal_0;
+      _MaterialChipComponent_0_5.selectionModel = currVal_0;
       changed = true;
       _expr_0 = currVal_0;
     }
     final currVal_1 = _ctx.removable;
     if (!identical(_expr_1, currVal_1)) {
-      _MaterialChipComponent_0_4.removable = currVal_1;
+      _MaterialChipComponent_0_5.removable = currVal_1;
       changed = true;
       _expr_1 = currVal_1;
     }
     final currVal_2 = _ctx.itemRenderer;
     if (!identical(_expr_2, currVal_2)) {
-      _MaterialChipComponent_0_4.itemRenderer = currVal_2;
+      _MaterialChipComponent_0_5.itemRenderer = currVal_2;
       changed = true;
       _expr_2 = currVal_2;
     }
     final currVal_3 = local_chip;
     if (!identical(_expr_3, currVal_3)) {
-      _MaterialChipComponent_0_4.value = currVal_3;
+      _MaterialChipComponent_0_5.value = currVal_3;
       changed = true;
       _expr_3 = currVal_3;
     }
@@ -152,16 +159,24 @@ const List<dynamic> styles$MaterialChipsComponentHost = const [];
 
 class _ViewMaterialChipsComponentHost0 extends AppView<dynamic> {
   ViewMaterialChipsComponent0 _compView_0;
-  import2.MaterialChipsComponent _MaterialChipsComponent_0_4;
+  import2.MaterialChipsComponent _MaterialChipsComponent_0_5;
   _ViewMaterialChipsComponentHost0(AppView<dynamic> parentView, num parentIndex) : super(import6.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewMaterialChipsComponent0(this, 0);
     rootEl = _compView_0.rootEl;
-    _MaterialChipsComponent_0_4 = new import2.MaterialChipsComponent(_compView_0.ref);
-    _compView_0.create(_MaterialChipsComponent_0_4, projectableNodes);
+    _MaterialChipsComponent_0_5 = new import2.MaterialChipsComponent(_compView_0.ref);
+    _compView_0.create(_MaterialChipsComponent_0_5, projectableNodes);
     init0(rootEl);
-    return new ComponentRef<import2.MaterialChipsComponent>(0, this, rootEl, _MaterialChipsComponent_0_4);
+    return new ComponentRef<import2.MaterialChipsComponent>(0, this, rootEl, _MaterialChipsComponent_0_5);
+  }
+
+  @override
+  dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
+    if ((identical(token, import14.HasRenderer) && (0 == nodeIndex))) {
+      return _MaterialChipsComponent_0_5;
+    }
+    return notFoundResult;
   }
 
   @override
@@ -176,7 +191,7 @@ class _ViewMaterialChipsComponentHost0 extends AppView<dynamic> {
   @override
   void destroyInternal() {
     _compView_0?.destroy();
-    _MaterialChipsComponent_0_4.ngOnDestroy();
+    _MaterialChipsComponent_0_5.ngOnDestroy();
   }
 }
 

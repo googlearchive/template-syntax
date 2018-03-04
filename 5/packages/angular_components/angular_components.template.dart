@@ -1,13 +1,10 @@
-// GENERATED CODE - DO NOT MODIFY BY HAND
-
 // **************************************************************************
-// Generator: TemplateGenerator
+// Generator: Instance of 'Compiler'
 // **************************************************************************
 
 // ignore_for_file: cancel_subscriptions,constant_identifier_names,duplicate_import,non_constant_identifier_names,library_prefixes,UNUSED_IMPORT,UNUSED_SHOWN_NAME
 import 'angular_components.dart';
 export 'angular_components.dart';
-import 'package:angular/angular.dart' show Provider;
 import 'app_layout/material_persistent_drawer.dart';
 import 'app_layout/material_temporary_drawer.dart';
 import 'auto_dismiss/auto_dismiss.dart';
@@ -239,20 +236,19 @@ import 'model/selection/string_selection_options.template.dart' as _ref157;
 import 'model/ui/display_name.template.dart' as _ref158;
 import 'model/ui/has_renderer.template.dart' as _ref159;
 import 'model/ui/icon.template.dart' as _ref160;
-import 'package:angular/angular.template.dart' as _ref161;
-import 'reorder_list/reorder_events.template.dart' as _ref162;
+import 'reorder_list/reorder_events.template.dart' as _ref161;
+import 'reorder_list/reorder_list.template.dart' as _ref162;
 import 'reorder_list/reorder_list.template.dart' as _ref163;
-import 'reorder_list/reorder_list.template.dart' as _ref164;
+import 'scorecard/scoreboard.template.dart' as _ref164;
 import 'scorecard/scoreboard.template.dart' as _ref165;
-import 'scorecard/scoreboard.template.dart' as _ref166;
+import 'scorecard/scorecard.template.dart' as _ref166;
 import 'scorecard/scorecard.template.dart' as _ref167;
-import 'scorecard/scorecard.template.dart' as _ref168;
+import 'stop_propagation/stop_propagation.template.dart' as _ref168;
 import 'stop_propagation/stop_propagation.template.dart' as _ref169;
-import 'stop_propagation/stop_propagation.template.dart' as _ref170;
+import 'theme/dark_theme.template.dart' as _ref170;
 import 'theme/dark_theme.template.dart' as _ref171;
-import 'theme/dark_theme.template.dart' as _ref172;
-import 'theme/module.template.dart' as _ref173;
-import 'utils/async/async.template.dart' as _ref174;
+import 'theme/module.template.dart' as _ref172;
+import 'utils/async/async.template.dart' as _ref173;
 
 var _visited = false;
 void initReflector() {
@@ -435,5 +431,4 @@ void initReflector() {
   _ref171.initReflector();
   _ref172.initReflector();
   _ref173.initReflector();
-  _ref174.initReflector();
 }

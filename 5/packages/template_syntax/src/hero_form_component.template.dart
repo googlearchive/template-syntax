@@ -1,7 +1,5 @@
-// GENERATED CODE - DO NOT MODIFY BY HAND
-
 // **************************************************************************
-// Generator: TemplateGenerator
+// Generator: Instance of 'Compiler'
 // **************************************************************************
 
 // ignore_for_file: cancel_subscriptions,constant_identifier_names,duplicate_import,non_constant_identifier_names,library_prefixes,UNUSED_IMPORT,UNUSED_SHOWN_NAME
@@ -16,10 +14,10 @@ import 'package:angular/angular.template.dart' as _ref1;
 import 'package:angular_forms/angular_forms.template.dart' as _ref2;
 import 'package:angular/src/core/linker/app_view.dart';
 import 'hero_form_component.dart' as import1;
-import 'package:angular/src/core/linker/query_list.dart' as import2;
-import 'dart:html' as import3;
-import 'package:angular_forms/src/directives/ng_form.dart' as import4;
-import 'package:angular_forms/src/directives/default_value_accessor.dart' as import5;
+import 'dart:html' as import2;
+import 'package:angular_forms/src/directives/ng_form.dart' as import3;
+import 'package:angular_forms/src/directives/default_value_accessor.dart' as import4;
+import 'package:angular_forms/src/directives/control_value_accessor.dart' as import5;
 import 'package:angular_forms/src/directives/ng_control_name.dart' as import6;
 import 'package:angular_forms/src/directives/validators.dart' as import7;
 import 'package:angular/src/core/render/api.dart';
@@ -36,103 +34,102 @@ import 'package:angular_forms/src/directives/control_container.dart' as import17
 const List<dynamic> styles$HeroFormComponent = const ['button._ngcontent-%COMP% { margin:6px 0; } #heroForm._ngcontent-%COMP% { border:1px solid black; margin:20px 0; padding:8px; max-width:350px; }'];
 
 class ViewHeroFormComponent0 extends AppView<import1.HeroFormComponent> {
-  final import2.QueryList _viewQuery_heroForm_0 = new import2.QueryList();
-  import3.DivElement _el_0;
-  import3.FormElement _el_1;
-  import4.NgForm _NgForm_1_4;
-  dynamic _ControlContainer_1_5;
-  import3.DivElement _el_2;
-  import3.Element _el_3;
-  import3.InputElement _el_5;
-  List<dynamic> _NgValidators_5_4;
-  import5.DefaultValueAccessor _DefaultValueAccessor_5_5;
-  List<dynamic> _NgValueAccessor_5_6;
-  import6.NgControlName _NgControlName_5_7;
-  import7.RequiredValidator _RequiredValidator_5_8;
-  import3.ButtonElement _el_6;
-  import3.DivElement _el_8;
-  import3.Text _text_9;
+  bool _query_heroForm_1_0_isDirty = true;
+  import2.DivElement _el_0;
+  import2.FormElement _el_1;
+  import3.NgForm _NgForm_1_5;
+  import3.NgForm _ControlContainer_1_6;
+  import2.DivElement _el_2;
+  import2.Element _el_3;
+  import2.InputElement _el_5;
+  List<dynamic> _NgValidators_5_5;
+  import4.DefaultValueAccessor _DefaultValueAccessor_5_6;
+  List<import5.ControlValueAccessor<dynamic>> _NgValueAccessor_5_7;
+  import6.NgControlName _NgControlName_5_8;
+  import7.RequiredValidator _RequiredValidator_5_9;
+  import2.ButtonElement _el_6;
+  import2.DivElement _el_8;
+  import2.Text _text_9;
   var _expr_0;
   var _expr_2;
   var _expr_3;
   var _expr_4;
   static RenderComponentType _renderType;
   ViewHeroFormComponent0(AppView<dynamic> parentView, num parentIndex) : super(import9.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
-    rootEl = import3.document.createElement('hero-form');
+    rootEl = import2.document.createElement('hero-form');
     _renderType ??= import11.appViewUtils.createRenderType('', ViewEncapsulation.Emulated, styles$HeroFormComponent);
     setupComponentType(_renderType);
   }
   @override
   ComponentRef<import1.HeroFormComponent> build() {
-    final import3.HtmlElement parentRenderNode = initViewRoot(rootEl);
-    var doc = import3.document;
+    final import2.HtmlElement parentRenderNode = initViewRoot(rootEl);
+    var doc = import2.document;
     _el_0 = createDivAndAppend(doc, parentRenderNode);
     createAttr(_el_0, 'id', 'heroForm');
     addShimC(_el_0);
     _el_1 = createAndAppend(doc, 'form', _el_0);
     addShimC(_el_1);
-    _NgForm_1_4 = new import4.NgForm(null);
-    _ControlContainer_1_5 = _NgForm_1_4;
+    _NgForm_1_5 = new import3.NgForm(null);
+    _ControlContainer_1_6 = _NgForm_1_5;
     _el_2 = createDivAndAppend(doc, _el_1);
     _el_2.className = 'form-group';
     addShimC(_el_2);
     _el_3 = createAndAppend(doc, 'label', _el_2);
     createAttr(_el_3, 'for', 'name');
     addShimE(_el_3);
-    import3.Text _text_4 = new import3.Text('Name');
+    import2.Text _text_4 = new import2.Text('Name');
     _el_3.append(_text_4);
     _el_5 = createAndAppend(doc, 'input', _el_3);
     _el_5.className = 'form-control';
     createAttr(_el_5, 'ngControl', 'name');
     createAttr(_el_5, 'required', '');
     addShimC(_el_5);
-    _NgValidators_5_4 = [import13.Validators.required];
-    _DefaultValueAccessor_5_5 = new import5.DefaultValueAccessor(_el_5);
-    _NgValueAccessor_5_6 = [_DefaultValueAccessor_5_5];
-    _NgControlName_5_7 = new import6.NgControlName(_ControlContainer_1_5, _NgValidators_5_4, _NgValueAccessor_5_6);
-    _RequiredValidator_5_8 = new import7.RequiredValidator();
+    _NgValidators_5_5 = [import13.Validators.required];
+    _DefaultValueAccessor_5_6 = new import4.DefaultValueAccessor(_el_5);
+    _NgValueAccessor_5_7 = [_DefaultValueAccessor_5_6];
+    _NgControlName_5_8 = new import6.NgControlName(_ControlContainer_1_6, _NgValidators_5_5, _NgValueAccessor_5_7);
+    _RequiredValidator_5_9 = new import7.RequiredValidator();
     _el_6 = createAndAppend(doc, 'button', _el_1);
     createAttr(_el_6, 'type', 'submit');
     addShimC(_el_6);
-    import3.Text _text_7 = new import3.Text('Submit');
+    import2.Text _text_7 = new import2.Text('Submit');
     _el_6.append(_text_7);
     _el_8 = createDivAndAppend(doc, _el_0);
     addShimC(_el_8);
-    _text_9 = new import3.Text('');
+    _text_9 = new import2.Text('');
     _el_8.append(_text_9);
-    import11.appViewUtils.eventManager.addEventListener(_el_1, 'submit', eventHandler1(_NgForm_1_4.onSubmit));
-    final subscription_0 = _NgForm_1_4.ngSubmit.listen(eventHandler1(_handle_ngSubmit_1_0));
+    import11.appViewUtils.eventManager.addEventListener(_el_1, 'submit', eventHandler1(_NgForm_1_5.onSubmit));
+    final subscription_0 = _NgForm_1_5.ngSubmit.listen(eventHandler1(_handle_ngSubmit_1_0));
     _el_5.addEventListener('input', eventHandler1(_handle_input_5_1));
-    _el_5.addEventListener('blur', eventHandler0(_DefaultValueAccessor_5_5.touchHandler));
-    final subscription_1 = _NgControlName_5_7.update.listen(eventHandler1(_handle_ngModelChange_5_0));
-    _viewQuery_heroForm_0.reset([_NgForm_1_4]);
-    ctx.form = _viewQuery_heroForm_0.first;
+    _el_5.addEventListener('blur', eventHandler0(_DefaultValueAccessor_5_6.touchHandler));
+    final subscription_1 = _NgControlName_5_8.update.listen(eventHandler1(_handle_ngModelChange_5_0));
+    ctx.form = _NgForm_1_5;
     init(const [], [subscription_0, subscription_1]);
     return null;
   }
 
   @override
   dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
-    if ((identical(token, const import14.OpaqueToken('NgValidators')) && (5 == nodeIndex))) {
-      return _NgValidators_5_4;
+    if ((identical(token, const import14.MultiToken('NgValidators')) && (5 == nodeIndex))) {
+      return _NgValidators_5_5;
     }
-    if ((identical(token, import5.DefaultValueAccessor) && (5 == nodeIndex))) {
-      return _DefaultValueAccessor_5_5;
+    if ((identical(token, import4.DefaultValueAccessor) && (5 == nodeIndex))) {
+      return _DefaultValueAccessor_5_6;
     }
-    if ((identical(token, const import14.OpaqueToken<import15.ControlValueAccessor<dynamic>>('NgValueAccessor')) && (5 == nodeIndex))) {
-      return _NgValueAccessor_5_6;
+    if ((identical(token, const import14.MultiToken<import15.ControlValueAccessor>('NgValueAccessor')) && (5 == nodeIndex))) {
+      return _NgValueAccessor_5_7;
     }
     if (((identical(token, import6.NgControlName) || identical(token, import16.NgControl)) && (5 == nodeIndex))) {
-      return _NgControlName_5_7;
+      return _NgControlName_5_8;
     }
     if ((identical(token, import7.RequiredValidator) && (5 == nodeIndex))) {
-      return _RequiredValidator_5_8;
+      return _RequiredValidator_5_9;
     }
-    if ((identical(token, import4.NgForm) && ((1 <= nodeIndex) && (nodeIndex <= 7)))) {
-      return _NgForm_1_4;
+    if ((identical(token, import3.NgForm) && ((1 <= nodeIndex) && (nodeIndex <= 7)))) {
+      return _NgForm_1_5;
     }
     if ((identical(token, import17.ControlContainer) && ((1 <= nodeIndex) && (nodeIndex <= 7)))) {
-      return _ControlContainer_1_5;
+      return _ControlContainer_1_6;
     }
     return notFoundResult;
   }
@@ -142,20 +139,20 @@ class ViewHeroFormComponent0 extends AppView<import1.HeroFormComponent> {
     final import1.HeroFormComponent _ctx = ctx;
     bool changed = false;
     bool firstCheck = (this.cdState == 0);
-    final local_heroForm = _NgForm_1_4;
+    final import3.NgForm local_heroForm = _NgForm_1_5;
     changed = false;
     if (firstCheck) {
-      _NgControlName_5_7.name = 'name';
+      _NgControlName_5_8.name = 'name';
       changed = true;
     }
     final currVal_0 = _ctx.hero.name;
     if (!identical(_expr_0, currVal_0)) {
-      _NgControlName_5_7.model = currVal_0;
+      _NgControlName_5_8.model = currVal_0;
       changed = true;
       _expr_0 = currVal_0;
     }
     if (changed) {
-      _NgControlName_5_7.ngAfterChanges();
+      _NgControlName_5_8.ngAfterChanges();
     }
     final bool currVal_2 = !local_heroForm.form.valid;
     if (!identical(_expr_2, currVal_2)) {
@@ -176,11 +173,11 @@ class ViewHeroFormComponent0 extends AppView<import1.HeroFormComponent> {
 
   @override
   void destroyInternal() {
-    _NgControlName_5_7.ngOnDestroy();
+    _NgControlName_5_8.ngOnDestroy();
   }
 
   void _handle_ngSubmit_1_0($event) {
-    final local_heroForm = _NgForm_1_4;
+    final import3.NgForm local_heroForm = _NgForm_1_5;
     ctx.onSubmit(local_heroForm);
   }
 
@@ -189,7 +186,7 @@ class ViewHeroFormComponent0 extends AppView<import1.HeroFormComponent> {
   }
 
   void _handle_input_5_1($event) {
-    _DefaultValueAccessor_5_5.onChange($event.target.value);
+    _DefaultValueAccessor_5_6.onChange($event.target.value);
   }
 }
 
@@ -201,24 +198,16 @@ const List<dynamic> styles$HeroFormComponentHost = const [];
 
 class _ViewHeroFormComponentHost0 extends AppView<dynamic> {
   ViewHeroFormComponent0 _compView_0;
-  import1.HeroFormComponent _HeroFormComponent_0_4;
+  import1.HeroFormComponent _HeroFormComponent_0_5;
   _ViewHeroFormComponentHost0(AppView<dynamic> parentView, num parentIndex) : super(import9.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewHeroFormComponent0(this, 0);
     rootEl = _compView_0.rootEl;
-    _HeroFormComponent_0_4 = new import1.HeroFormComponent();
-    _compView_0.create(_HeroFormComponent_0_4, projectableNodes);
+    _HeroFormComponent_0_5 = new import1.HeroFormComponent();
+    _compView_0.create(_HeroFormComponent_0_5, projectableNodes);
     init0(rootEl);
-    return new ComponentRef<import1.HeroFormComponent>(0, this, rootEl, _HeroFormComponent_0_4);
-  }
-
-  @override
-  dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
-    if ((identical(token, import1.HeroFormComponent) && (0 == nodeIndex))) {
-      return _HeroFormComponent_0_4;
-    }
-    return notFoundResult;
+    return new ComponentRef<import1.HeroFormComponent>(0, this, rootEl, _HeroFormComponent_0_5);
   }
 
   @override

@@ -1,7 +1,5 @@
-// GENERATED CODE - DO NOT MODIFY BY HAND
-
 // **************************************************************************
-// Generator: TemplateGenerator
+// Generator: Instance of 'Compiler'
 // **************************************************************************
 
 // ignore_for_file: cancel_subscriptions,constant_identifier_names,duplicate_import,non_constant_identifier_names,library_prefixes,UNUSED_IMPORT,UNUSED_SHOWN_NAME
@@ -48,17 +46,17 @@ const List<dynamic> styles$ScorecardComponent = const [import0.styles];
 
 class ViewScorecardComponent0 extends AppView<import2.ScorecardComponent> {
   ViewContainer _appEl_0;
-  NgIf _NgIf_0_7;
+  NgIf _NgIf_0_9;
   import5.Element _el_1;
   import5.Text _text_2;
   import5.Element _el_3;
   import5.Text _text_4;
   ViewContainer _appEl_5;
-  NgIf _NgIf_5_7;
+  NgIf _NgIf_5_9;
   ViewContainer _appEl_6;
-  NgIf _NgIf_6_7;
+  NgIf _NgIf_6_9;
   ViewContainer _appEl_7;
-  NgIf _NgIf_7_7;
+  NgIf _NgIf_7_9;
   var _expr_1;
   var _expr_2;
   var _expr_3;
@@ -84,8 +82,8 @@ class ViewScorecardComponent0 extends AppView<import2.ScorecardComponent> {
     var _anchor_0 = ngAnchor.clone(false);
     parentRenderNode.append(_anchor_0);
     _appEl_0 = new ViewContainer(0, null, this, _anchor_0);
-    TemplateRef _TemplateRef_0_6 = new TemplateRef(_appEl_0, viewFactory_ScorecardComponent1);
-    _NgIf_0_7 = new NgIf(_appEl_0, _TemplateRef_0_6);
+    TemplateRef _TemplateRef_0_8 = new TemplateRef(_appEl_0, viewFactory_ScorecardComponent1);
+    _NgIf_0_9 = new NgIf(_appEl_0, _TemplateRef_0_8);
     var doc = import5.document;
     _el_1 = createAndAppend(doc, 'h3', parentRenderNode);
     addShimE(_el_1);
@@ -100,18 +98,18 @@ class ViewScorecardComponent0 extends AppView<import2.ScorecardComponent> {
     var _anchor_5 = ngAnchor.clone(false);
     parentRenderNode.append(_anchor_5);
     _appEl_5 = new ViewContainer(5, null, this, _anchor_5);
-    TemplateRef _TemplateRef_5_6 = new TemplateRef(_appEl_5, viewFactory_ScorecardComponent2);
-    _NgIf_5_7 = new NgIf(_appEl_5, _TemplateRef_5_6);
+    TemplateRef _TemplateRef_5_8 = new TemplateRef(_appEl_5, viewFactory_ScorecardComponent2);
+    _NgIf_5_9 = new NgIf(_appEl_5, _TemplateRef_5_8);
     var _anchor_6 = ngAnchor.clone(false);
     parentRenderNode.append(_anchor_6);
     _appEl_6 = new ViewContainer(6, null, this, _anchor_6);
-    TemplateRef _TemplateRef_6_6 = new TemplateRef(_appEl_6, viewFactory_ScorecardComponent3);
-    _NgIf_6_7 = new NgIf(_appEl_6, _TemplateRef_6_6);
+    TemplateRef _TemplateRef_6_8 = new TemplateRef(_appEl_6, viewFactory_ScorecardComponent3);
+    _NgIf_6_9 = new NgIf(_appEl_6, _TemplateRef_6_8);
     var _anchor_7 = ngAnchor.clone(false);
     parentRenderNode.append(_anchor_7);
     _appEl_7 = new ViewContainer(7, null, this, _anchor_7);
-    TemplateRef _TemplateRef_7_6 = new TemplateRef(_appEl_7, viewFactory_ScorecardComponent5);
-    _NgIf_7_7 = new NgIf(_appEl_7, _TemplateRef_7_6);
+    TemplateRef _TemplateRef_7_8 = new TemplateRef(_appEl_7, viewFactory_ScorecardComponent5);
+    _NgIf_7_9 = new NgIf(_appEl_7, _TemplateRef_7_8);
     project(parentRenderNode, 3);
     init(const [], null);
     rootEl.addEventListener('keyup', eventHandler0(_ctx.resetOutline));
@@ -125,10 +123,10 @@ class ViewScorecardComponent0 extends AppView<import2.ScorecardComponent> {
   @override
   void detectChangesInternal() {
     final import2.ScorecardComponent _ctx = ctx;
-    _NgIf_0_7.ngIf = _ctx.selectable;
-    _NgIf_5_7.ngIf = (_ctx.suggestionBefore != null);
-    _NgIf_6_7.ngIf = (_ctx.description != null);
-    _NgIf_7_7.ngIf = (_ctx.suggestionAfter != null);
+    _NgIf_0_9.ngIf = _ctx.selectable;
+    _NgIf_5_9.ngIf = (_ctx.suggestionBefore != null);
+    _NgIf_6_9.ngIf = (_ctx.description != null);
+    _NgIf_7_9.ngIf = (_ctx.suggestionAfter != null);
     _appEl_0.detectChangesInNestedViews();
     _appEl_5.detectChangesInNestedViews();
     _appEl_6.detectChangesInNestedViews();
@@ -209,7 +207,7 @@ AppView<import2.ScorecardComponent> viewFactory_ScorecardComponent0(AppView<dyna
 class _ViewScorecardComponent1 extends AppView<import2.ScorecardComponent> {
   import5.Element _el_0;
   import12.ViewMaterialRippleComponent0 _compView_0;
-  import13.MaterialRippleComponent _MaterialRippleComponent_0_4;
+  import13.MaterialRippleComponent _MaterialRippleComponent_0_5;
   _ViewScorecardComponent1(AppView<dynamic> parentView, num parentIndex) : super(import7.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewScorecardComponent0._renderType;
   }
@@ -218,8 +216,8 @@ class _ViewScorecardComponent1 extends AppView<import2.ScorecardComponent> {
     _compView_0 = new import12.ViewMaterialRippleComponent0(this, 0);
     _el_0 = _compView_0.rootEl;
     addShimC(_el_0);
-    _MaterialRippleComponent_0_4 = new import13.MaterialRippleComponent(_el_0);
-    _compView_0.create(_MaterialRippleComponent_0_4, []);
+    _MaterialRippleComponent_0_5 = new import13.MaterialRippleComponent(_el_0);
+    _compView_0.create(_MaterialRippleComponent_0_5, []);
     init0(_el_0);
     return null;
   }
@@ -237,7 +235,7 @@ class _ViewScorecardComponent1 extends AppView<import2.ScorecardComponent> {
   @override
   void destroyInternal() {
     _compView_0?.destroy();
-    _MaterialRippleComponent_0_4.ngOnDestroy();
+    _MaterialRippleComponent_0_5.ngOnDestroy();
   }
 }
 
@@ -282,7 +280,7 @@ AppView<import2.ScorecardComponent> viewFactory_ScorecardComponent2(AppView<dyna
 class _ViewScorecardComponent3 extends AppView<import2.ScorecardComponent> {
   import5.Element _el_0;
   ViewContainer _appEl_1;
-  NgIf _NgIf_1_7;
+  NgIf _NgIf_1_9;
   import5.Text _text_3;
   var _expr_1;
   _ViewScorecardComponent3(AppView<dynamic> parentView, num parentIndex) : super(import7.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
@@ -297,8 +295,8 @@ class _ViewScorecardComponent3 extends AppView<import2.ScorecardComponent> {
     var _anchor_1 = ngAnchor.clone(false);
     _el_0.append(_anchor_1);
     _appEl_1 = new ViewContainer(1, 0, this, _anchor_1);
-    TemplateRef _TemplateRef_1_6 = new TemplateRef(_appEl_1, viewFactory_ScorecardComponent4);
-    _NgIf_1_7 = new NgIf(_appEl_1, _TemplateRef_1_6);
+    TemplateRef _TemplateRef_1_8 = new TemplateRef(_appEl_1, viewFactory_ScorecardComponent4);
+    _NgIf_1_9 = new NgIf(_appEl_1, _TemplateRef_1_8);
     import5.Text _text_2 = new import5.Text('\n   ');
     _el_0.append(_text_2);
     _text_3 = new import5.Text('');
@@ -313,7 +311,7 @@ class _ViewScorecardComponent3 extends AppView<import2.ScorecardComponent> {
   @override
   void detectChangesInternal() {
     final import2.ScorecardComponent _ctx = ctx;
-    _NgIf_1_7.ngIf = ((_ctx.changeGlyph && (_ctx.description != '')) && !_ctx.isChangeNeutral);
+    _NgIf_1_9.ngIf = ((_ctx.changeGlyph && (_ctx.description != '')) && !_ctx.isChangeNeutral);
     _appEl_1.detectChangesInNestedViews();
     final currVal_1 = (_ctx.description ?? '');
     if (!identical(_expr_1, currVal_1)) {
@@ -335,7 +333,7 @@ AppView<import2.ScorecardComponent> viewFactory_ScorecardComponent3(AppView<dyna
 class _ViewScorecardComponent4 extends AppView<import2.ScorecardComponent> {
   import5.Element _el_0;
   import14.ViewMaterialIconComponent0 _compView_0;
-  import15.MaterialIconComponent _MaterialIconComponent_0_4;
+  import15.MaterialIconComponent _MaterialIconComponent_0_5;
   var _expr_0;
   _ViewScorecardComponent4(AppView<dynamic> parentView, num parentIndex) : super(import7.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewScorecardComponent0._renderType;
@@ -347,8 +345,8 @@ class _ViewScorecardComponent4 extends AppView<import2.ScorecardComponent> {
     _el_0.className = 'change-glyph';
     createAttr(_el_0, 'size', 'small');
     addShimC(_el_0);
-    _MaterialIconComponent_0_4 = new import15.MaterialIconComponent(_el_0);
-    _compView_0.create(_MaterialIconComponent_0_4, []);
+    _MaterialIconComponent_0_5 = new import15.MaterialIconComponent(_el_0);
+    _compView_0.create(_MaterialIconComponent_0_5, []);
     init0(_el_0);
     return null;
   }
@@ -360,7 +358,7 @@ class _ViewScorecardComponent4 extends AppView<import2.ScorecardComponent> {
     changed = false;
     final currVal_0 = _ctx.changeGlyphIcon;
     if (!identical(_expr_0, currVal_0)) {
-      _MaterialIconComponent_0_4.icon = currVal_0;
+      _MaterialIconComponent_0_5.icon = currVal_0;
       changed = true;
       _expr_0 = currVal_0;
     }
@@ -418,16 +416,16 @@ const List<dynamic> styles$ScorecardComponentHost = const [];
 
 class _ViewScorecardComponentHost0 extends AppView<dynamic> {
   ViewScorecardComponent0 _compView_0;
-  import2.ScorecardComponent _ScorecardComponent_0_4;
+  import2.ScorecardComponent _ScorecardComponent_0_5;
   _ViewScorecardComponentHost0(AppView<dynamic> parentView, num parentIndex) : super(import7.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewScorecardComponent0(this, 0);
     rootEl = _compView_0.rootEl;
-    _ScorecardComponent_0_4 = new import2.ScorecardComponent(_compView_0.ref, rootEl, this.injectorGet(import16.DomService, viewData.parentIndex));
-    _compView_0.create(_ScorecardComponent_0_4, projectableNodes);
+    _ScorecardComponent_0_5 = new import2.ScorecardComponent(_compView_0.ref, rootEl, this.injectorGet(import16.DomService, viewData.parentIndex));
+    _compView_0.create(_ScorecardComponent_0_5, projectableNodes);
     init0(rootEl);
-    return new ComponentRef<import2.ScorecardComponent>(0, this, rootEl, _ScorecardComponent_0_4);
+    return new ComponentRef<import2.ScorecardComponent>(0, this, rootEl, _ScorecardComponent_0_5);
   }
 
   @override

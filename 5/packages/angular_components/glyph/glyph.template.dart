@@ -1,7 +1,5 @@
-// GENERATED CODE - DO NOT MODIFY BY HAND
-
 // **************************************************************************
-// Generator: TemplateGenerator
+// Generator: Instance of 'Compiler'
 // **************************************************************************
 
 // ignore_for_file: cancel_subscriptions,constant_identifier_names,duplicate_import,non_constant_identifier_names,library_prefixes,UNUSED_IMPORT,UNUSED_SHOWN_NAME
@@ -74,16 +72,16 @@ const List<dynamic> styles$GlyphComponentHost = const [];
 
 class _ViewGlyphComponentHost0 extends AppView<dynamic> {
   ViewGlyphComponent0 _compView_0;
-  import2.GlyphComponent _GlyphComponent_0_4;
+  import2.GlyphComponent _GlyphComponent_0_5;
   _ViewGlyphComponentHost0(AppView<dynamic> parentView, num parentIndex) : super(import5.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewGlyphComponent0(this, 0);
     rootEl = _compView_0.rootEl;
-    _GlyphComponent_0_4 = new import2.GlyphComponent(rootEl);
-    _compView_0.create(_GlyphComponent_0_4, projectableNodes);
+    _GlyphComponent_0_5 = new import2.GlyphComponent(rootEl);
+    _compView_0.create(_GlyphComponent_0_5, projectableNodes);
     init0(rootEl);
-    return new ComponentRef<import2.GlyphComponent>(0, this, rootEl, _GlyphComponent_0_4);
+    return new ComponentRef<import2.GlyphComponent>(0, this, rootEl, _GlyphComponent_0_5);
   }
 
   @override

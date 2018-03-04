@@ -112,7 +112,7 @@
   right: 0;
   bottom: 0;
   background-color: currentColor;
-  opacity: 0.14;
+  opacity: 0.16;
   pointer-events: none;
 }
 :host.text-wrap {

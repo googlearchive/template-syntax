@@ -1,7 +1,5 @@
-// GENERATED CODE - DO NOT MODIFY BY HAND
-
 // **************************************************************************
-// Generator: TemplateGenerator
+// Generator: Instance of 'Compiler'
 // **************************************************************************
 
 // ignore_for_file: cancel_subscriptions,constant_identifier_names,duplicate_import,non_constant_identifier_names,library_prefixes,UNUSED_IMPORT,UNUSED_SHOWN_NAME
@@ -17,22 +15,21 @@ import 'package:angular_components/utils/browser/feature_detector/feature_detect
 import 'package:angular_components/material_progress/material_progress.scss.css.shim.dart' as import0;
 import 'package:angular/src/core/linker/app_view.dart';
 import 'material_progress.dart' as import2;
-import 'package:angular/src/core/linker/query_list.dart' as import3;
-import 'dart:html' as import4;
+import 'dart:html' as import3;
 import 'package:angular/src/core/render/api.dart';
-import 'package:angular/src/core/linker/view_type.dart' as import6;
+import 'package:angular/src/core/linker/view_type.dart' as import5;
 import 'package:angular/src/core/change_detection/change_detection.dart';
-import 'package:angular/src/core/linker/app_view_utils.dart' as import8;
+import 'package:angular/src/core/linker/app_view_utils.dart' as import7;
 import 'package:angular/angular.dart';
 
 const List<dynamic> styles$MaterialProgressComponent = const [import0.styles];
 
 class ViewMaterialProgressComponent0 extends AppView<import2.MaterialProgressComponent> {
-  final import3.QueryList _viewQuery_primary_0 = new import3.QueryList();
-  final import3.QueryList _viewQuery_secondary_1 = new import3.QueryList();
-  import4.DivElement _el_0;
-  import4.DivElement _el_1;
-  import4.DivElement _el_2;
+  bool _query_primary_1_0_isDirty = true;
+  bool _query_secondary_1_1_isDirty = true;
+  import3.DivElement _el_0;
+  import3.DivElement _el_1;
+  import3.DivElement _el_2;
   var _expr_0;
   bool _expr_1;
   bool _expr_2;
@@ -41,15 +38,15 @@ class ViewMaterialProgressComponent0 extends AppView<import2.MaterialProgressCom
   var _expr_5;
   var _expr_6;
   static RenderComponentType _renderType;
-  ViewMaterialProgressComponent0(AppView<dynamic> parentView, num parentIndex) : super(import6.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckOnce) {
-    rootEl = import4.document.createElement('material-progress');
-    _renderType ??= import8.appViewUtils.createRenderType('', ViewEncapsulation.Emulated, styles$MaterialProgressComponent);
+  ViewMaterialProgressComponent0(AppView<dynamic> parentView, num parentIndex) : super(import5.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckOnce) {
+    rootEl = import3.document.createElement('material-progress');
+    _renderType ??= import7.appViewUtils.createRenderType('', ViewEncapsulation.Emulated, styles$MaterialProgressComponent);
     setupComponentType(_renderType);
   }
   @override
   ComponentRef<import2.MaterialProgressComponent> build() {
-    final import4.HtmlElement parentRenderNode = initViewRoot(rootEl);
-    var doc = import4.document;
+    final import3.HtmlElement parentRenderNode = initViewRoot(rootEl);
+    var doc = import3.document;
     _el_0 = createDivAndAppend(doc, parentRenderNode);
     _el_0.className = 'progress-container';
     createAttr(_el_0, 'role', 'progressbar');
@@ -60,10 +57,8 @@ class ViewMaterialProgressComponent0 extends AppView<import2.MaterialProgressCom
     _el_2 = createDivAndAppend(doc, _el_0);
     _el_2.className = 'active-progress';
     addShimC(_el_2);
-    _viewQuery_primary_0.reset([_el_2]);
-    ctx.primary = _viewQuery_primary_0.first;
-    _viewQuery_secondary_1.reset([_el_1]);
-    ctx.secondary = _viewQuery_secondary_1.first;
+    ctx.primary = _el_2;
+    ctx.secondary = _el_1;
     init(const [], null);
     return null;
   }
@@ -86,12 +81,12 @@ class ViewMaterialProgressComponent0 extends AppView<import2.MaterialProgressCom
       updateClass(_el_0, 'fallback', currVal_2);
       _expr_2 = currVal_2;
     }
-    final currVal_3 = import8.interpolate0(_ctx.min);
+    final currVal_3 = import7.interpolate0(_ctx.min);
     if (!identical(_expr_3, currVal_3)) {
       setAttr(_el_0, 'aria-valuemin', currVal_3?.toString());
       _expr_3 = currVal_3;
     }
-    final currVal_4 = import8.interpolate0(_ctx.max);
+    final currVal_4 = import7.interpolate0(_ctx.max);
     if (!identical(_expr_4, currVal_4)) {
       setAttr(_el_0, 'aria-valuemax', currVal_4?.toString());
       _expr_4 = currVal_4;
@@ -117,22 +112,22 @@ const List<dynamic> styles$MaterialProgressComponentHost = const [];
 
 class _ViewMaterialProgressComponentHost0 extends AppView<dynamic> {
   ViewMaterialProgressComponent0 _compView_0;
-  import2.MaterialProgressComponent _MaterialProgressComponent_0_4;
-  _ViewMaterialProgressComponentHost0(AppView<dynamic> parentView, num parentIndex) : super(import6.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
+  import2.MaterialProgressComponent _MaterialProgressComponent_0_5;
+  _ViewMaterialProgressComponentHost0(AppView<dynamic> parentView, num parentIndex) : super(import5.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewMaterialProgressComponent0(this, 0);
     rootEl = _compView_0.rootEl;
-    _MaterialProgressComponent_0_4 = new import2.MaterialProgressComponent(null, _compView_0.ref, rootEl);
-    _compView_0.create(_MaterialProgressComponent_0_4, projectableNodes);
+    _MaterialProgressComponent_0_5 = new import2.MaterialProgressComponent(null, _compView_0.ref, rootEl);
+    _compView_0.create(_MaterialProgressComponent_0_5, projectableNodes);
     init0(rootEl);
-    return new ComponentRef<import2.MaterialProgressComponent>(0, this, rootEl, _MaterialProgressComponent_0_4);
+    return new ComponentRef<import2.MaterialProgressComponent>(0, this, rootEl, _MaterialProgressComponent_0_5);
   }
 
   @override
   dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
     if ((identical(token, import2.MaterialProgressComponent) && (0 == nodeIndex))) {
-      return _MaterialProgressComponent_0_4;
+      return _MaterialProgressComponent_0_5;
     }
     return notFoundResult;
   }
@@ -146,14 +141,14 @@ class _ViewMaterialProgressComponentHost0 extends AppView<dynamic> {
     }
     _compView_0.detectChanges();
     if (firstCheck) {
-      _MaterialProgressComponent_0_4.ngAfterViewInit();
+      _MaterialProgressComponent_0_5.ngAfterViewInit();
     }
   }
 
   @override
   void destroyInternal() {
     _compView_0?.destroy();
-    _MaterialProgressComponent_0_4.ngOnDestroy();
+    _MaterialProgressComponent_0_5.ngOnDestroy();
   }
 }
 

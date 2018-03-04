@@ -1,7 +1,5 @@
-// GENERATED CODE - DO NOT MODIFY BY HAND
-
 // **************************************************************************
-// Generator: TemplateGenerator
+// Generator: Instance of 'Compiler'
 // **************************************************************************
 
 // ignore_for_file: cancel_subscriptions,constant_identifier_names,duplicate_import,non_constant_identifier_names,library_prefixes,UNUSED_IMPORT,UNUSED_SHOWN_NAME
@@ -30,7 +28,8 @@ import 'package:angular_components/utils/angular/imperative_view/imperative_view
 import 'package:angular_components/utils/angular/managed_zone/angular_2.template.dart' as _ref8;
 import 'package:angular_components/utils/browser/dom_service/angular_2.template.dart' as _ref9;
 import 'package:angular_components/utils/browser/window/module.template.dart' as _ref10;
-import 'dart:html' as _i1;
+import 'package:angular/src/core/di/opaque_token.dart' as _i1;
+import 'dart:html' as _i2;
 
 var _visited = false;
 void initReflector() {
@@ -40,20 +39,20 @@ void initReflector() {
   _visited = true;
 
   _ngRef.registerDependencies(getDefaultContainer, const [
-    const [const _ngRef.Inject(const _ngRef.OpaqueToken<dynamic>('overlayContainerName'))],
-    const [const _ngRef.Inject(const _ngRef.OpaqueToken<dynamic>('overlayContainerParent'))],
-    const [const _ngRef.Inject(const _ngRef.OpaqueToken<dynamic>('overlayContainer')), const _ngRef.SkipSelf(), const _ngRef.Optional()]
+    const [const _ngRef.Inject(const _i1.OpaqueToken<dynamic>('overlayContainerName'))],
+    const [const _ngRef.Inject(const _i1.OpaqueToken<dynamic>('overlayContainerParent'))],
+    const [const _ngRef.Inject(const _i1.OpaqueToken<dynamic>('overlayContainer')), const _ngRef.SkipSelf(), const _ngRef.Optional()]
   ]);
   _ngRef.registerDependencies(getDefaultContainerName, const [
-    const [const _ngRef.Inject(const _ngRef.OpaqueToken<dynamic>('overlayContainerName')), const _ngRef.SkipSelf(), const _ngRef.Optional()]
+    const [const _ngRef.Inject(const _i1.OpaqueToken<dynamic>('overlayContainerName')), const _ngRef.SkipSelf(), const _ngRef.Optional()]
   ]);
   _ngRef.registerDependencies(getDebugContainer, const [
-    const [const _ngRef.Inject(const _ngRef.OpaqueToken<dynamic>('overlayContainerName'))],
-    const [const _ngRef.Inject(const _ngRef.OpaqueToken<dynamic>('overlayContainerParent'))]
+    const [const _ngRef.Inject(const _i1.OpaqueToken<dynamic>('overlayContainerName'))],
+    const [const _ngRef.Inject(const _i1.OpaqueToken<dynamic>('overlayContainerParent'))]
   ]);
   _ngRef.registerDependencies(getOverlayContainerParent, const [
-    const [_i1.Document],
-    const [const _ngRef.Inject(const _ngRef.OpaqueToken<dynamic>('overlayContainerParent')), const _ngRef.SkipSelf(), const _ngRef.Optional()]
+    const [_i2.Document],
+    const [const _ngRef.Inject(const _i1.OpaqueToken<dynamic>('overlayContainerParent')), const _ngRef.SkipSelf(), const _ngRef.Optional()]
   ]);
   _ref0.initReflector();
   _ref1.initReflector();

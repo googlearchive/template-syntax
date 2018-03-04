@@ -96,7 +96,7 @@
 }
 :host:not([icon]) {
   border-radius: 2px;
-  min-width: 5.14em;
+  min-width: 64px;
 }
 :host:not([icon]) .content {
   padding: 0.7em 0.57em;

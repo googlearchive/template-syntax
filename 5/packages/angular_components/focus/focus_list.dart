@@ -4,7 +4,6 @@
 
 import 'package:angular/angular.dart';
 import 'package:angular_components/focus/focus.dart';
-
 import 'package:angular_components/utils/disposer/disposer.dart';
 
 /// `FocusListDirective`, used in conjunction with [FocusItemDirective] or
@@ -30,12 +29,14 @@ import 'package:angular_components/utils/disposer/disposer.dart';
 ///     </div>
 ///
 @Directive(
-  selector: '[focusList]', host: const {'[attr.role]': 'role'},
+  selector: '[focusList]',
   // TODO(google): Change to `Visibility.local` to reduce code size.
   visibility: Visibility.all,
 )
 class FocusListDirective implements OnDestroy {
   final NgZone _ngZone;
+
+  @HostBinding('attr.role')
   final String role;
   final _disposer = new Disposer.multi();
   final _children = <FocusableItem>[];
@@ -50,7 +51,7 @@ class FocusListDirective implements OnDestroy {
   bool loop = false;
 
   @ContentChildren(FocusableItem)
-  set listItems(QueryList<FocusableItem> listItems) {
+  set listItems(List<FocusableItem> listItems) {
     _children.clear();
     _disposer.dispose();
     listItems.forEach((i) {

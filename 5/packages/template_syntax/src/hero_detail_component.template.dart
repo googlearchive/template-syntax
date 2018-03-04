@@ -1,7 +1,5 @@
-// GENERATED CODE - DO NOT MODIFY BY HAND
-
 // **************************************************************************
-// Generator: TemplateGenerator
+// Generator: Instance of 'Compiler'
 // **************************************************************************
 
 // ignore_for_file: cancel_subscriptions,constant_identifier_names,duplicate_import,non_constant_identifier_names,library_prefixes,UNUSED_IMPORT,UNUSED_SHOWN_NAME
@@ -103,31 +101,23 @@ const List<dynamic> styles$HeroDetailComponentHost = const [];
 
 class _ViewHeroDetailComponentHost0 extends AppView<dynamic> {
   ViewHeroDetailComponent0 _compView_0;
-  import1.HeroDetailComponent _HeroDetailComponent_0_4;
+  import1.HeroDetailComponent _HeroDetailComponent_0_5;
   _ViewHeroDetailComponentHost0(AppView<dynamic> parentView, num parentIndex) : super(import4.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewHeroDetailComponent0(this, 0);
     rootEl = _compView_0.rootEl;
-    _HeroDetailComponent_0_4 = new import1.HeroDetailComponent();
-    _compView_0.create(_HeroDetailComponent_0_4, projectableNodes);
+    _HeroDetailComponent_0_5 = new import1.HeroDetailComponent();
+    _compView_0.create(_HeroDetailComponent_0_5, projectableNodes);
     init0(rootEl);
-    return new ComponentRef<import1.HeroDetailComponent>(0, this, rootEl, _HeroDetailComponent_0_4);
-  }
-
-  @override
-  dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
-    if ((identical(token, import1.HeroDetailComponent) && (0 == nodeIndex))) {
-      return _HeroDetailComponent_0_4;
-    }
-    return notFoundResult;
+    return new ComponentRef<import1.HeroDetailComponent>(0, this, rootEl, _HeroDetailComponent_0_5);
   }
 
   @override
   void detectChangesInternal() {
     bool firstCheck = (this.cdState == 0);
     if (firstCheck) {
-      _HeroDetailComponent_0_4.ngOnInit();
+      _HeroDetailComponent_0_5.ngOnInit();
     }
     _compView_0.detectChanges();
   }
@@ -300,31 +290,23 @@ const List<dynamic> styles$BigHeroDetailComponentHost = const [];
 
 class _ViewBigHeroDetailComponentHost0 extends AppView<dynamic> {
   ViewBigHeroDetailComponent0 _compView_0;
-  import1.BigHeroDetailComponent _BigHeroDetailComponent_0_4;
+  import1.BigHeroDetailComponent _BigHeroDetailComponent_0_5;
   _ViewBigHeroDetailComponentHost0(AppView<dynamic> parentView, num parentIndex) : super(import4.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewBigHeroDetailComponent0(this, 0);
     rootEl = _compView_0.rootEl;
-    _BigHeroDetailComponent_0_4 = new import1.BigHeroDetailComponent();
-    _compView_0.create(_BigHeroDetailComponent_0_4, projectableNodes);
+    _BigHeroDetailComponent_0_5 = new import1.BigHeroDetailComponent();
+    _compView_0.create(_BigHeroDetailComponent_0_5, projectableNodes);
     init0(rootEl);
-    return new ComponentRef<import1.BigHeroDetailComponent>(0, this, rootEl, _BigHeroDetailComponent_0_4);
-  }
-
-  @override
-  dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
-    if ((identical(token, import1.BigHeroDetailComponent) && (0 == nodeIndex))) {
-      return _BigHeroDetailComponent_0_4;
-    }
-    return notFoundResult;
+    return new ComponentRef<import1.BigHeroDetailComponent>(0, this, rootEl, _BigHeroDetailComponent_0_5);
   }
 
   @override
   void detectChangesInternal() {
     bool firstCheck = (this.cdState == 0);
     if (firstCheck) {
-      _BigHeroDetailComponent_0_4.ngOnInit();
+      _BigHeroDetailComponent_0_5.ngOnInit();
     }
     _compView_0.detectChanges();
   }

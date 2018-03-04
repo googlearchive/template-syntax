@@ -1,7 +1,5 @@
-// GENERATED CODE - DO NOT MODIFY BY HAND
-
 // **************************************************************************
-// Generator: TemplateGenerator
+// Generator: Instance of 'Compiler'
 // **************************************************************************
 
 // ignore_for_file: cancel_subscriptions,constant_identifier_names,duplicate_import,non_constant_identifier_names,library_prefixes,UNUSED_IMPORT,UNUSED_SHOWN_NAME
@@ -37,7 +35,7 @@ const List<dynamic> styles$HighlightedValueComponent = const [import0.styles];
 
 class ViewHighlightedValueComponent0 extends AppView<import2.HighlightedValueComponent> {
   ViewContainer _appEl_0;
-  import4.NgFor _NgFor_0_7;
+  import4.NgFor _NgFor_0_9;
   var _expr_0;
   static RenderComponentType _renderType;
   ViewHighlightedValueComponent0(AppView<dynamic> parentView, num parentIndex) : super(import6.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
@@ -51,8 +49,8 @@ class ViewHighlightedValueComponent0 extends AppView<import2.HighlightedValueCom
     var _anchor_0 = ngAnchor.clone(false);
     parentRenderNode.append(_anchor_0);
     _appEl_0 = new ViewContainer(0, null, this, _anchor_0);
-    TemplateRef _TemplateRef_0_6 = new TemplateRef(_appEl_0, viewFactory_HighlightedValueComponent1);
-    _NgFor_0_7 = new import4.NgFor(_appEl_0, _TemplateRef_0_6);
+    TemplateRef _TemplateRef_0_8 = new TemplateRef(_appEl_0, viewFactory_HighlightedValueComponent1);
+    _NgFor_0_9 = new import4.NgFor(_appEl_0, _TemplateRef_0_8);
     init(const [], null);
     return null;
   }
@@ -62,10 +60,10 @@ class ViewHighlightedValueComponent0 extends AppView<import2.HighlightedValueCom
     final import2.HighlightedValueComponent _ctx = ctx;
     final currVal_0 = _ctx.segments;
     if (!identical(_expr_0, currVal_0)) {
-      _NgFor_0_7.ngForOf = currVal_0;
+      _NgFor_0_9.ngForOf = currVal_0;
       _expr_0 = currVal_0;
     }
-    _NgFor_0_7.ngDoCheck();
+    _NgFor_0_9.ngDoCheck();
     _appEl_0.detectChangesInNestedViews();
   }
 
@@ -123,22 +121,22 @@ const List<dynamic> styles$HighlightedValueComponentHost = const [];
 
 class _ViewHighlightedValueComponentHost0 extends AppView<dynamic> {
   ViewHighlightedValueComponent0 _compView_0;
-  import2.HighlightedValueComponent _HighlightedValueComponent_0_4;
+  import2.HighlightedValueComponent _HighlightedValueComponent_0_5;
   _ViewHighlightedValueComponentHost0(AppView<dynamic> parentView, num parentIndex) : super(import6.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewHighlightedValueComponent0(this, 0);
     rootEl = _compView_0.rootEl;
-    _HighlightedValueComponent_0_4 = new import2.HighlightedValueComponent(this.injectorGet(import13.HighlightProvider, viewData.parentIndex));
-    _compView_0.create(_HighlightedValueComponent_0_4, projectableNodes);
+    _HighlightedValueComponent_0_5 = new import2.HighlightedValueComponent(this.injectorGet(import13.HighlightProvider, viewData.parentIndex));
+    _compView_0.create(_HighlightedValueComponent_0_5, projectableNodes);
     init0(rootEl);
-    return new ComponentRef<import2.HighlightedValueComponent>(0, this, rootEl, _HighlightedValueComponent_0_4);
+    return new ComponentRef<import2.HighlightedValueComponent>(0, this, rootEl, _HighlightedValueComponent_0_5);
   }
 
   @override
   dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
     if ((identical(token, import2.HighlightedValueComponent) && (0 == nodeIndex))) {
-      return _HighlightedValueComponent_0_4;
+      return _HighlightedValueComponent_0_5;
     }
     return notFoundResult;
   }

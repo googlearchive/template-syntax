@@ -1,7 +1,5 @@
-// GENERATED CODE - DO NOT MODIFY BY HAND
-
 // **************************************************************************
-// Generator: TemplateGenerator
+// Generator: Instance of 'Compiler'
 // **************************************************************************
 
 // ignore_for_file: cancel_subscriptions,constant_identifier_names,duplicate_import,non_constant_identifier_names,library_prefixes,UNUSED_IMPORT,UNUSED_SHOWN_NAME
@@ -40,7 +38,7 @@ const List<dynamic> styles$ModalComponent = const [];
 
 class ViewModalComponent0 extends AppView<import1.ModalComponent> {
   ViewContainer _appEl_1;
-  import3.ModalControllerDirective _ModalControllerDirective_1_7;
+  import3.ModalControllerDirective _ModalControllerDirective_1_9;
   var _expr_0;
   var _expr_1;
   static RenderComponentType _renderType;
@@ -57,8 +55,8 @@ class ViewModalComponent0 extends AppView<import1.ModalComponent> {
     var _anchor_1 = ngAnchor.clone(false);
     parentRenderNode.append(_anchor_1);
     _appEl_1 = new ViewContainer(1, null, this, _anchor_1);
-    TemplateRef _TemplateRef_1_6 = new TemplateRef(_appEl_1, viewFactory_ModalComponent1);
-    _ModalControllerDirective_1_7 = new import3.ModalControllerDirective(_TemplateRef_1_6, _appEl_1);
+    TemplateRef _TemplateRef_1_8 = new TemplateRef(_appEl_1, viewFactory_ModalComponent1);
+    _ModalControllerDirective_1_9 = new import3.ModalControllerDirective(_TemplateRef_1_8, _appEl_1);
     import7.Text _text_2 = new import7.Text('\n  ');
     parentRenderNode.append(_text_2);
     init(const [], null);
@@ -68,7 +66,7 @@ class ViewModalComponent0 extends AppView<import1.ModalComponent> {
   @override
   dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
     if ((identical(token, import3.ModalControllerDirective) && (1 == nodeIndex))) {
-      return _ModalControllerDirective_1_7;
+      return _ModalControllerDirective_1_9;
     }
     return notFoundResult;
   }
@@ -78,7 +76,7 @@ class ViewModalComponent0 extends AppView<import1.ModalComponent> {
     final import1.ModalComponent _ctx = ctx;
     final currVal_0 = _ctx.resolvedOverlayRef;
     if (!identical(_expr_0, currVal_0)) {
-      _ModalControllerDirective_1_7.overlay = currVal_0;
+      _ModalControllerDirective_1_9.overlay = currVal_0;
       _expr_0 = currVal_0;
     }
     _appEl_1.detectChangesInNestedViews();
@@ -87,7 +85,7 @@ class ViewModalComponent0 extends AppView<import1.ModalComponent> {
   @override
   void destroyInternal() {
     _appEl_1?.destroyNestedViews();
-    _ModalControllerDirective_1_7.ngOnDestroy();
+    _ModalControllerDirective_1_9.ngOnDestroy();
   }
 
   void detectHostChanges(bool firstCheck) {
@@ -124,22 +122,22 @@ const List<dynamic> styles$ModalComponentHost = const [];
 
 class _ViewModalComponentHost0 extends AppView<dynamic> {
   ViewModalComponent0 _compView_0;
-  import1.ModalComponent _ModalComponent_0_4;
+  import1.ModalComponent _ModalComponent_0_5;
   _ViewModalComponentHost0(AppView<dynamic> parentView, num parentIndex) : super(import5.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewModalComponent0(this, 0);
     rootEl = _compView_0.rootEl;
-    _ModalComponent_0_4 = new import1.ModalComponent(this.injectorGet(import11.OverlayService, viewData.parentIndex), this.injectorGet(import1.Modal, viewData.parentIndex, null), this.injectorGet(import1.GlobalModalStack, viewData.parentIndex, null));
-    _compView_0.create(_ModalComponent_0_4, projectableNodes);
+    _ModalComponent_0_5 = new import1.ModalComponent(this.injectorGet(import11.OverlayService, viewData.parentIndex), this.injectorGet(import1.Modal, viewData.parentIndex, null), this.injectorGet(import1.GlobalModalStack, viewData.parentIndex, null));
+    _compView_0.create(_ModalComponent_0_5, projectableNodes);
     init0(rootEl);
-    return new ComponentRef<import1.ModalComponent>(0, this, rootEl, _ModalComponent_0_4);
+    return new ComponentRef<import1.ModalComponent>(0, this, rootEl, _ModalComponent_0_5);
   }
 
   @override
   dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
     if ((((identical(token, import1.ModalComponent) || identical(token, import12.DeferredContentAware)) || identical(token, import1.Modal)) && (0 == nodeIndex))) {
-      return _ModalComponent_0_4;
+      return _ModalComponent_0_5;
     }
     return notFoundResult;
   }
@@ -154,7 +152,7 @@ class _ViewModalComponentHost0 extends AppView<dynamic> {
   @override
   void destroyInternal() {
     _compView_0?.destroy();
-    _ModalComponent_0_4.ngOnDestroy();
+    _ModalComponent_0_5.ngOnDestroy();
   }
 }
 

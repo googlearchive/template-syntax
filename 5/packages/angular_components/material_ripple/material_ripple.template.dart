@@ -1,7 +1,5 @@
-// GENERATED CODE - DO NOT MODIFY BY HAND
-
 // **************************************************************************
-// Generator: TemplateGenerator
+// Generator: Instance of 'Compiler'
 // **************************************************************************
 
 // ignore_for_file: cancel_subscriptions,constant_identifier_names,duplicate_import,non_constant_identifier_names,library_prefixes,UNUSED_IMPORT,UNUSED_SHOWN_NAME
@@ -53,16 +51,16 @@ const List<dynamic> styles$MaterialRippleComponentHost = const [];
 
 class _ViewMaterialRippleComponentHost0 extends AppView<dynamic> {
   ViewMaterialRippleComponent0 _compView_0;
-  import2.MaterialRippleComponent _MaterialRippleComponent_0_4;
+  import2.MaterialRippleComponent _MaterialRippleComponent_0_5;
   _ViewMaterialRippleComponentHost0(AppView<dynamic> parentView, num parentIndex) : super(import4.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewMaterialRippleComponent0(this, 0);
     rootEl = _compView_0.rootEl;
-    _MaterialRippleComponent_0_4 = new import2.MaterialRippleComponent(rootEl);
-    _compView_0.create(_MaterialRippleComponent_0_4, projectableNodes);
+    _MaterialRippleComponent_0_5 = new import2.MaterialRippleComponent(rootEl);
+    _compView_0.create(_MaterialRippleComponent_0_5, projectableNodes);
     init0(rootEl);
-    return new ComponentRef<import2.MaterialRippleComponent>(0, this, rootEl, _MaterialRippleComponent_0_4);
+    return new ComponentRef<import2.MaterialRippleComponent>(0, this, rootEl, _MaterialRippleComponent_0_5);
   }
 
   @override
@@ -77,7 +75,7 @@ class _ViewMaterialRippleComponentHost0 extends AppView<dynamic> {
   @override
   void destroyInternal() {
     _compView_0?.destroy();
-    _MaterialRippleComponent_0_4.ngOnDestroy();
+    _MaterialRippleComponent_0_5.ngOnDestroy();
   }
 }
 

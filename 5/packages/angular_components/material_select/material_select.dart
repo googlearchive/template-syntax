@@ -11,6 +11,7 @@ import 'package:angular_components/model/selection/selection_container.dart';
 import 'package:angular_components/model/selection/selection_model.dart';
 import 'package:angular_components/model/selection/selection_options.dart';
 import 'package:angular_components/model/ui/has_renderer.dart';
+import 'package:angular_components/model/ui/has_factory.dart';
 import 'package:angular_components/model/ui/template_support.dart';
 import 'package:angular_components/utils/angular/properties/properties.dart';
 
@@ -51,9 +52,8 @@ import 'material_select_item.dart';
   // TODO(google): Change to `Visibility.local` to reduce code size.
   visibility: Visibility.all,
 )
-class MaterialSelectComponent extends MaterialSelectBase implements OnDestroy {
-  QueryList<SelectionItem> _selectItems;
-  StreamSubscription _selectItemsSub;
+class MaterialSelectComponent extends MaterialSelectBase {
+  List<SelectionItem> _selectItems;
 
   /// Function for use by NgFor for optionGroup to avoid recreating the
   /// DOM for the optionGroup.
@@ -77,6 +77,12 @@ class MaterialSelectComponent extends MaterialSelectBase implements OnDestroy {
   @override
   set componentRenderer(ComponentRenderer value) {
     super.componentRenderer = value;
+  }
+
+  @Input()
+  @override
+  set factoryRenderer(FactoryRenderer value) {
+    super.factoryRenderer = value;
   }
 
   /// The [SelectionModel] for this container.
@@ -120,27 +126,15 @@ class MaterialSelectComponent extends MaterialSelectBase implements OnDestroy {
   }
 
   @ContentChildren(SelectionItem)
-  set selectItems(QueryList<SelectionItem> value) {
-    _cancelSelectItemSub();
+  set selectItems(List<SelectionItem> value) {
     if (value != null) {
       // ContentChildren call is inside change detection. We can't alter
       // state inside change detector therefore schedule a microtask.
       scheduleMicrotask(() {
         _selectItems = value;
-        _selectItemsSub = _selectItems.changes.listen((_) => _refreshItems());
         _refreshItems();
       });
     }
-  }
-
-  @override
-  void ngOnDestroy() {
-    _cancelSelectItemSub();
-  }
-
-  void _cancelSelectItemSub() {
-    _selectItemsSub?.cancel();
-    _selectItemsSub = null;
   }
 
   void _refreshItems() {

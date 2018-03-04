@@ -1,7 +1,5 @@
-// GENERATED CODE - DO NOT MODIFY BY HAND
-
 // **************************************************************************
-// Generator: TemplateGenerator
+// Generator: Instance of 'Compiler'
 // **************************************************************************
 
 // ignore_for_file: cancel_subscriptions,constant_identifier_names,duplicate_import,non_constant_identifier_names,library_prefixes,UNUSED_IMPORT,UNUSED_SHOWN_NAME
@@ -47,7 +45,7 @@ const List<dynamic> styles$MenuItemAffixListComponent = const [import0.styles];
 
 class ViewMenuItemAffixListComponent0 extends AppView<import2.MenuItemAffixListComponent> {
   ViewContainer _appEl_1;
-  NgIf _NgIf_1_7;
+  NgIf _NgIf_1_9;
   static RenderComponentType _renderType;
   ViewMenuItemAffixListComponent0(AppView<dynamic> parentView, num parentIndex) : super(import6.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckOnce) {
     rootEl = import8.document.createElement('menu-item-affix-list');
@@ -62,8 +60,8 @@ class ViewMenuItemAffixListComponent0 extends AppView<import2.MenuItemAffixListC
     var _anchor_1 = ngAnchor.clone(false);
     parentRenderNode.append(_anchor_1);
     _appEl_1 = new ViewContainer(1, null, this, _anchor_1);
-    TemplateRef _TemplateRef_1_6 = new TemplateRef(_appEl_1, viewFactory_MenuItemAffixListComponent1);
-    _NgIf_1_7 = new NgIf(_appEl_1, _TemplateRef_1_6);
+    TemplateRef _TemplateRef_1_8 = new TemplateRef(_appEl_1, viewFactory_MenuItemAffixListComponent1);
+    _NgIf_1_9 = new NgIf(_appEl_1, _TemplateRef_1_8);
     import8.Text _text_2 = new import8.Text('\n');
     parentRenderNode.append(_text_2);
     init(const [], null);
@@ -73,7 +71,7 @@ class ViewMenuItemAffixListComponent0 extends AppView<import2.MenuItemAffixListC
   @override
   void detectChangesInternal() {
     final import2.MenuItemAffixListComponent _ctx = ctx;
-    _NgIf_1_7.ngIf = _ctx.hasAffixes;
+    _NgIf_1_9.ngIf = _ctx.hasAffixes;
     _appEl_1.detectChangesInNestedViews();
   }
 
@@ -89,7 +87,7 @@ AppView<import2.MenuItemAffixListComponent> viewFactory_MenuItemAffixListCompone
 
 class _ViewMenuItemAffixListComponent1 extends AppView<import2.MenuItemAffixListComponent> {
   ViewContainer _appEl_1;
-  import12.NgFor _NgFor_1_7;
+  import12.NgFor _NgFor_1_9;
   var _expr_0;
   _ViewMenuItemAffixListComponent1(AppView<dynamic> parentView, num parentIndex) : super(import6.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMenuItemAffixListComponent0._renderType;
@@ -99,8 +97,8 @@ class _ViewMenuItemAffixListComponent1 extends AppView<import2.MenuItemAffixList
     import8.Text _text_0 = new import8.Text('\n  ');
     var _anchor_1 = ngAnchor.clone(false);
     _appEl_1 = new ViewContainer(1, null, this, _anchor_1);
-    TemplateRef _TemplateRef_1_6 = new TemplateRef(_appEl_1, viewFactory_MenuItemAffixListComponent2);
-    _NgFor_1_7 = new import12.NgFor(_appEl_1, _TemplateRef_1_6);
+    TemplateRef _TemplateRef_1_8 = new TemplateRef(_appEl_1, viewFactory_MenuItemAffixListComponent2);
+    _NgFor_1_9 = new import12.NgFor(_appEl_1, _TemplateRef_1_8);
     import8.Text _text_2 = new import8.Text('\n');
     init([_text_0, _appEl_1, _text_2], null);
     return null;
@@ -111,10 +109,10 @@ class _ViewMenuItemAffixListComponent1 extends AppView<import2.MenuItemAffixList
     final import2.MenuItemAffixListComponent _ctx = ctx;
     final currVal_0 = _ctx.affixes;
     if (!identical(_expr_0, currVal_0)) {
-      _NgFor_1_7.ngForOf = currVal_0;
+      _NgFor_1_9.ngForOf = currVal_0;
       _expr_0 = currVal_0;
     }
-    _NgFor_1_7.ngDoCheck();
+    _NgFor_1_9.ngDoCheck();
     _appEl_1.detectChangesInNestedViews();
   }
 
@@ -130,7 +128,7 @@ AppView<import2.MenuItemAffixListComponent> viewFactory_MenuItemAffixListCompone
 
 class _ViewMenuItemAffixListComponent2 extends AppView<import2.MenuItemAffixListComponent> {
   ViewContainer _appEl_1;
-  NgIf _NgIf_1_7;
+  NgIf _NgIf_1_9;
   _ViewMenuItemAffixListComponent2(AppView<dynamic> parentView, num parentIndex) : super(import6.ViewType.EMBEDDED, {'\$implicit': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMenuItemAffixListComponent0._renderType;
   }
@@ -139,8 +137,8 @@ class _ViewMenuItemAffixListComponent2 extends AppView<import2.MenuItemAffixList
     import8.Text _text_0 = new import8.Text('\n    ');
     var _anchor_1 = ngAnchor.clone(false);
     _appEl_1 = new ViewContainer(1, null, this, _anchor_1);
-    TemplateRef _TemplateRef_1_6 = new TemplateRef(_appEl_1, viewFactory_MenuItemAffixListComponent3);
-    _NgIf_1_7 = new NgIf(_appEl_1, _TemplateRef_1_6);
+    TemplateRef _TemplateRef_1_8 = new TemplateRef(_appEl_1, viewFactory_MenuItemAffixListComponent3);
+    _NgIf_1_9 = new NgIf(_appEl_1, _TemplateRef_1_8);
     import8.Text _text_2 = new import8.Text('\n  ');
     init([_text_0, _appEl_1, _text_2], null);
     return null;
@@ -149,7 +147,7 @@ class _ViewMenuItemAffixListComponent2 extends AppView<import2.MenuItemAffixList
   @override
   void detectChangesInternal() {
     final import13.MenuItemAffix local_affix = locals['\$implicit'];
-    _NgIf_1_7.ngIf = local_affix.isVisible;
+    _NgIf_1_9.ngIf = local_affix.isVisible;
     _appEl_1.detectChangesInNestedViews();
   }
 
@@ -165,9 +163,9 @@ AppView<import2.MenuItemAffixListComponent> viewFactory_MenuItemAffixListCompone
 
 class _ViewMenuItemAffixListComponent3 extends AppView<import2.MenuItemAffixListComponent> {
   ViewContainer _appEl_1;
-  NgIf _NgIf_1_7;
+  NgIf _NgIf_1_9;
   ViewContainer _appEl_3;
-  NgIf _NgIf_3_7;
+  NgIf _NgIf_3_9;
   _ViewMenuItemAffixListComponent3(AppView<dynamic> parentView, num parentIndex) : super(import6.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMenuItemAffixListComponent0._renderType;
   }
@@ -176,13 +174,13 @@ class _ViewMenuItemAffixListComponent3 extends AppView<import2.MenuItemAffixList
     import8.Text _text_0 = new import8.Text('\n      ');
     var _anchor_1 = ngAnchor.clone(false);
     _appEl_1 = new ViewContainer(1, null, this, _anchor_1);
-    TemplateRef _TemplateRef_1_6 = new TemplateRef(_appEl_1, viewFactory_MenuItemAffixListComponent4);
-    _NgIf_1_7 = new NgIf(_appEl_1, _TemplateRef_1_6);
+    TemplateRef _TemplateRef_1_8 = new TemplateRef(_appEl_1, viewFactory_MenuItemAffixListComponent4);
+    _NgIf_1_9 = new NgIf(_appEl_1, _TemplateRef_1_8);
     import8.Text _text_2 = new import8.Text('\n      ');
     var _anchor_3 = ngAnchor.clone(false);
     _appEl_3 = new ViewContainer(3, null, this, _anchor_3);
-    TemplateRef _TemplateRef_3_6 = new TemplateRef(_appEl_3, viewFactory_MenuItemAffixListComponent5);
-    _NgIf_3_7 = new NgIf(_appEl_3, _TemplateRef_3_6);
+    TemplateRef _TemplateRef_3_8 = new TemplateRef(_appEl_3, viewFactory_MenuItemAffixListComponent5);
+    _NgIf_3_9 = new NgIf(_appEl_3, _TemplateRef_3_8);
     import8.Text _text_4 = new import8.Text('\n    ');
     init([_text_0, _appEl_1, _text_2, _appEl_3, _text_4], null);
     return null;
@@ -192,8 +190,8 @@ class _ViewMenuItemAffixListComponent3 extends AppView<import2.MenuItemAffixList
   void detectChangesInternal() {
     final import2.MenuItemAffixListComponent _ctx = ctx;
     final import13.MenuItemAffix local_affix = parentView.locals['\$implicit'];
-    _NgIf_1_7.ngIf = _ctx.isIconAffix(local_affix);
-    _NgIf_3_7.ngIf = _ctx.isCaptionAffix(local_affix);
+    _NgIf_1_9.ngIf = _ctx.isIconAffix(local_affix);
+    _NgIf_3_9.ngIf = _ctx.isCaptionAffix(local_affix);
     _appEl_1.detectChangesInNestedViews();
     _appEl_3.detectChangesInNestedViews();
   }
@@ -212,8 +210,8 @@ AppView<import2.MenuItemAffixListComponent> viewFactory_MenuItemAffixListCompone
 class _ViewMenuItemAffixListComponent4 extends AppView<import2.MenuItemAffixListComponent> {
   import8.Element _el_0;
   import14.ViewMaterialIconComponent0 _compView_0;
-  import15.ButtonDirectiveNgCd _ButtonDirective_0_4;
-  import16.MaterialIconComponent _MaterialIconComponent_0_5;
+  import15.ButtonDirectiveNgCd _ButtonDirective_0_5;
+  import16.MaterialIconComponent _MaterialIconComponent_0_6;
   var _expr_0;
   bool _expr_2;
   bool _expr_3;
@@ -231,13 +229,13 @@ class _ViewMenuItemAffixListComponent4 extends AppView<import2.MenuItemAffixList
     _el_0.className = 'material-list-item-primary secondary-icon';
     createAttr(_el_0, 'role', 'button');
     addShimC(_el_0);
-    _ButtonDirective_0_4 = new import15.ButtonDirectiveNgCd(new import17.ButtonDirective(_el_0));
-    _MaterialIconComponent_0_5 = new import16.MaterialIconComponent(_el_0);
+    _ButtonDirective_0_5 = new import15.ButtonDirectiveNgCd(new import17.ButtonDirective(_el_0));
+    _MaterialIconComponent_0_6 = new import16.MaterialIconComponent(_el_0);
     import8.Text _text_1 = new import8.Text('\n      ');
-    _compView_0.create(_MaterialIconComponent_0_5, []);
-    _el_0.addEventListener('click', eventHandler1(_ButtonDirective_0_4.instance.handleClick));
-    _el_0.addEventListener('keypress', eventHandler1(_ButtonDirective_0_4.instance.handleKeyPress));
-    final subscription_0 = _ButtonDirective_0_4.instance.trigger.listen(eventHandler1(_handle_trigger_0_0));
+    _compView_0.create(_MaterialIconComponent_0_6, []);
+    _el_0.addEventListener('click', eventHandler1(_ButtonDirective_0_5.instance.handleClick));
+    _el_0.addEventListener('keypress', eventHandler1(_ButtonDirective_0_5.instance.handleKeyPress));
+    final subscription_0 = _ButtonDirective_0_5.instance.trigger.listen(eventHandler1(_handle_trigger_0_0));
     init([_el_0], [subscription_0]);
     return null;
   }
@@ -245,7 +243,7 @@ class _ViewMenuItemAffixListComponent4 extends AppView<import2.MenuItemAffixList
   @override
   dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
     if ((identical(token, import17.ButtonDirective) && ((0 <= nodeIndex) && (nodeIndex <= 1)))) {
-      return _ButtonDirective_0_4.instance;
+      return _ButtonDirective_0_5.instance;
     }
     return notFoundResult;
   }
@@ -258,13 +256,13 @@ class _ViewMenuItemAffixListComponent4 extends AppView<import2.MenuItemAffixList
     final import13.MenuItemAffix local_affix = parentView.parentView.locals['\$implicit'];
     final bool currVal_4 = !_ctx.isActionIconAffix(local_affix);
     if (!identical(_expr_4, currVal_4)) {
-      _ButtonDirective_0_4.instance.disabled = currVal_4;
+      _ButtonDirective_0_5.instance.disabled = currVal_4;
       _expr_4 = currVal_4;
     }
     changed = false;
     final currVal_5 = _ctx.getIcon(local_affix);
     if (!identical(_expr_5, currVal_5)) {
-      _MaterialIconComponent_0_5.icon = currVal_5;
+      _MaterialIconComponent_0_6.icon = currVal_5;
       changed = true;
       _expr_5 = currVal_5;
     }
@@ -289,7 +287,7 @@ class _ViewMenuItemAffixListComponent4 extends AppView<import2.MenuItemAffixList
       updateElemClass(_el_0, 'hover-icon', currVal_3);
       _expr_3 = currVal_3;
     }
-    _ButtonDirective_0_4.detectHostChanges(_compView_0, _el_0);
+    _ButtonDirective_0_5.detectHostChanges(_compView_0, _el_0);
     _compView_0.detectChanges();
   }
 
@@ -351,22 +349,22 @@ const List<dynamic> styles$MenuItemAffixListComponentHost = const [];
 
 class _ViewMenuItemAffixListComponentHost0 extends AppView<dynamic> {
   ViewMenuItemAffixListComponent0 _compView_0;
-  import2.MenuItemAffixListComponent _MenuItemAffixListComponent_0_4;
+  import2.MenuItemAffixListComponent _MenuItemAffixListComponent_0_5;
   _ViewMenuItemAffixListComponentHost0(AppView<dynamic> parentView, num parentIndex) : super(import6.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewMenuItemAffixListComponent0(this, 0);
     rootEl = _compView_0.rootEl;
-    _MenuItemAffixListComponent_0_4 = new import2.MenuItemAffixListComponent(_compView_0.ref, this.injectorGet(import18.MenuRoot, viewData.parentIndex, null));
-    _compView_0.create(_MenuItemAffixListComponent_0_4, projectableNodes);
+    _MenuItemAffixListComponent_0_5 = new import2.MenuItemAffixListComponent(_compView_0.ref, this.injectorGet(import18.MenuRoot, viewData.parentIndex, null));
+    _compView_0.create(_MenuItemAffixListComponent_0_5, projectableNodes);
     init0(rootEl);
-    return new ComponentRef<import2.MenuItemAffixListComponent>(0, this, rootEl, _MenuItemAffixListComponent_0_4);
+    return new ComponentRef<import2.MenuItemAffixListComponent>(0, this, rootEl, _MenuItemAffixListComponent_0_5);
   }
 
   @override
   dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
     if ((identical(token, import2.MenuItemAffixListComponent) && (0 == nodeIndex))) {
-      return _MenuItemAffixListComponent_0_4;
+      return _MenuItemAffixListComponent_0_5;
     }
     return notFoundResult;
   }
@@ -383,7 +381,7 @@ class _ViewMenuItemAffixListComponentHost0 extends AppView<dynamic> {
   @override
   void destroyInternal() {
     _compView_0?.destroy();
-    _MenuItemAffixListComponent_0_4.ngOnDestroy();
+    _MenuItemAffixListComponent_0_5.ngOnDestroy();
   }
 }
 

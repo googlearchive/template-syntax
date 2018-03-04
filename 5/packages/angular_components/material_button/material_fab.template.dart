@@ -1,7 +1,5 @@
-// GENERATED CODE - DO NOT MODIFY BY HAND
-
 // **************************************************************************
-// Generator: TemplateGenerator
+// Generator: Instance of 'Compiler'
 // **************************************************************************
 
 // ignore_for_file: cancel_subscriptions,constant_identifier_names,duplicate_import,non_constant_identifier_names,library_prefixes,UNUSED_IMPORT,UNUSED_SHOWN_NAME
@@ -33,7 +31,7 @@ class ViewMaterialFabComponent0 extends AppView<import2.MaterialFabComponent> {
   import3.DivElement _el_0;
   import3.Element _el_1;
   import4.ViewMaterialRippleComponent0 _compView_1;
-  import5.MaterialRippleComponent _MaterialRippleComponent_1_4;
+  import5.MaterialRippleComponent _MaterialRippleComponent_1_5;
   var _expr_0;
   var _expr_1;
   bool _expr_2;
@@ -62,8 +60,8 @@ class ViewMaterialFabComponent0 extends AppView<import2.MaterialFabComponent> {
     _el_1 = _compView_1.rootEl;
     parentRenderNode.append(_el_1);
     addShimC(_el_1);
-    _MaterialRippleComponent_1_4 = new import5.MaterialRippleComponent(_el_1);
-    _compView_1.create(_MaterialRippleComponent_1_4, []);
+    _MaterialRippleComponent_1_5 = new import5.MaterialRippleComponent(_el_1);
+    _compView_1.create(_MaterialRippleComponent_1_5, []);
     _el_1.addEventListener('mousedown', eventHandler1(ctx.onMouseDown));
     _el_1.addEventListener('mouseup', eventHandler1(ctx.onMouseUp));
     init(const [], null);
@@ -89,7 +87,7 @@ class ViewMaterialFabComponent0 extends AppView<import2.MaterialFabComponent> {
   @override
   void destroyInternal() {
     _compView_1?.destroy();
-    _MaterialRippleComponent_1_4.ngOnDestroy();
+    _MaterialRippleComponent_1_5.ngOnDestroy();
   }
 
   void detectHostChanges(bool firstCheck) {
@@ -139,16 +137,16 @@ const List<dynamic> styles$MaterialFabComponentHost = const [];
 
 class _ViewMaterialFabComponentHost0 extends AppView<dynamic> {
   ViewMaterialFabComponent0 _compView_0;
-  import2.MaterialFabComponent _MaterialFabComponent_0_4;
+  import2.MaterialFabComponent _MaterialFabComponent_0_5;
   _ViewMaterialFabComponentHost0(AppView<dynamic> parentView, num parentIndex) : super(import7.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewMaterialFabComponent0(this, 0);
     rootEl = _compView_0.rootEl;
-    _MaterialFabComponent_0_4 = new import2.MaterialFabComponent(rootEl, _compView_0.ref);
-    _compView_0.create(_MaterialFabComponent_0_4, projectableNodes);
+    _MaterialFabComponent_0_5 = new import2.MaterialFabComponent(rootEl, _compView_0.ref);
+    _compView_0.create(_MaterialFabComponent_0_5, projectableNodes);
     init0(rootEl);
-    return new ComponentRef<import2.MaterialFabComponent>(0, this, rootEl, _MaterialFabComponent_0_4);
+    return new ComponentRef<import2.MaterialFabComponent>(0, this, rootEl, _MaterialFabComponent_0_5);
   }
 
   @override

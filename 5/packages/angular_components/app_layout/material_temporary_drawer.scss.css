@@ -24,23 +24,20 @@
   transition: background-color 195ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.drawer-content {
+:host > .drawer-content {
   background-color: #fff;
   bottom: 0;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
-  left: 0;
   overflow: hidden;
   position: absolute;
   top: 0;
-  width: 256px;
   box-shadow: none;
   transform: translateX(0);
-  left: -256px;
   pointer-events: auto;
-  transition-property: transform, box-shadow, width;
+  transition-property: box-shadow, left, right, transform, width;
   transition-duration: 195ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.6, 1);
 }
@@ -48,16 +45,24 @@
 :host(.mat-drawer-expanded) > .drawer-content {
   /*! @noflip */
   box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
-  transform: translateX(256px);
   transition-duration: 225ms;
   transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
 }
 
-:host([end]) > .drawer-content {
+:host ::ng-deep > .drawer-content {
+  left: -256px;
+  width: 256px;
+}
+
+:host(.mat-drawer-expanded) ::ng-deep > .drawer-content {
+  transform: translateX(100%);
+}
+
+:host([end]) ::ng-deep > .drawer-content {
   left: initial;
   right: -256px;
 }
 
-:host([end].mat-drawer-expanded) > .drawer-content {
-  transform: translateX(-256px);
+:host([end].mat-drawer-expanded) ::ng-deep > .drawer-content {
+  transform: translateX(-100%);
 }

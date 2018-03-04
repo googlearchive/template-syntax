@@ -1,7 +1,5 @@
-// GENERATED CODE - DO NOT MODIFY BY HAND
-
 // **************************************************************************
-// Generator: TemplateGenerator
+// Generator: Instance of 'Compiler'
 // **************************************************************************
 
 // ignore_for_file: cancel_subscriptions,constant_identifier_names,duplicate_import,non_constant_identifier_names,library_prefixes,UNUSED_IMPORT,UNUSED_SHOWN_NAME
@@ -23,6 +21,7 @@ import 'package:angular_components/src/laminate/overlay/render/overlay_dom_rende
 import 'package:angular/src/core/zone/ng_zone.dart' as _i1;
 import 'package:angular_components/src/laminate/overlay/render/overlay_dom_render_service.dart' as _i2;
 import 'package:angular_components/src/laminate/overlay/overlay_service.dart' as _i3;
+import 'package:angular/src/core/di/opaque_token.dart' as _i4;
 
 var _visited = false;
 void initReflector() {
@@ -34,7 +33,7 @@ void initReflector() {
   _ngRef.registerFactory(OverlayService, (_i1.NgZone p0, bool p1, _i2.OverlayDomRenderService p2, _i3.OverlayService p3) => new OverlayService(p0, p1, p2, p3));
   _ngRef.registerDependencies(OverlayService, const [
     const [_i1.NgZone],
-    const [const _ngRef.Inject(const _ngRef.OpaqueToken<dynamic>('overlaySyncDom'))],
+    const [const _ngRef.Inject(const _i4.OpaqueToken<dynamic>('overlaySyncDom'))],
     const [_i2.OverlayDomRenderService],
     const [_i3.OverlayService, const _ngRef.SkipSelf(), const _ngRef.Optional()]
   ]);

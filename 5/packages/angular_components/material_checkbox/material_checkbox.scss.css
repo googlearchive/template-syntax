@@ -43,12 +43,10 @@
 
 .icon {
   opacity: 0.54;
-  margin-top: -1px;
 }
 .icon.filled {
   color: #4285f4;
   opacity: 0.87;
-  margin-top: -1px;
 }
 
 .content {

@@ -1,7 +1,5 @@
-// GENERATED CODE - DO NOT MODIFY BY HAND
-
 // **************************************************************************
-// Generator: TemplateGenerator
+// Generator: Instance of 'Compiler'
 // **************************************************************************
 
 // ignore_for_file: cancel_subscriptions,constant_identifier_names,duplicate_import,non_constant_identifier_names,library_prefixes,UNUSED_IMPORT,UNUSED_SHOWN_NAME
@@ -37,7 +35,7 @@ const List<dynamic> styles$MaterialTabComponent = const [import0.styles];
 
 class ViewMaterialTabComponent0 extends AppView<import2.MaterialTabComponent> {
   ViewContainer _appEl_0;
-  NgIf _NgIf_0_7;
+  NgIf _NgIf_0_9;
   var _expr_1;
   var _expr_2;
   bool _expr_3;
@@ -54,8 +52,8 @@ class ViewMaterialTabComponent0 extends AppView<import2.MaterialTabComponent> {
     var _anchor_0 = ngAnchor.clone(false);
     parentRenderNode.append(_anchor_0);
     _appEl_0 = new ViewContainer(0, null, this, _anchor_0);
-    TemplateRef _TemplateRef_0_6 = new TemplateRef(_appEl_0, viewFactory_MaterialTabComponent1);
-    _NgIf_0_7 = new NgIf(_appEl_0, _TemplateRef_0_6);
+    TemplateRef _TemplateRef_0_8 = new TemplateRef(_appEl_0, viewFactory_MaterialTabComponent1);
+    _NgIf_0_9 = new NgIf(_appEl_0, _TemplateRef_0_8);
     init(const [], null);
     return null;
   }
@@ -63,7 +61,7 @@ class ViewMaterialTabComponent0 extends AppView<import2.MaterialTabComponent> {
   @override
   void detectChangesInternal() {
     final import2.MaterialTabComponent _ctx = ctx;
-    _NgIf_0_7.ngIf = _ctx.active;
+    _NgIf_0_9.ngIf = _ctx.active;
     _appEl_0.detectChangesInNestedViews();
   }
 
@@ -120,22 +118,22 @@ const List<dynamic> styles$MaterialTabComponentHost = const [];
 
 class _ViewMaterialTabComponentHost0 extends AppView<dynamic> {
   ViewMaterialTabComponent0 _compView_0;
-  import2.MaterialTabComponent _MaterialTabComponent_0_4;
+  import2.MaterialTabComponent _MaterialTabComponent_0_5;
   _ViewMaterialTabComponentHost0(AppView<dynamic> parentView, num parentIndex) : super(import6.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewMaterialTabComponent0(this, 0);
     rootEl = _compView_0.rootEl;
-    _MaterialTabComponent_0_4 = new import2.MaterialTabComponent(rootEl, this.injectorGet(import12.IdGenerator, viewData.parentIndex, null));
-    _compView_0.create(_MaterialTabComponent_0_4, projectableNodes);
+    _MaterialTabComponent_0_5 = new import2.MaterialTabComponent(rootEl, this.injectorGet(import12.IdGenerator, viewData.parentIndex, null));
+    _compView_0.create(_MaterialTabComponent_0_5, projectableNodes);
     init0(rootEl);
-    return new ComponentRef<import2.MaterialTabComponent>(0, this, rootEl, _MaterialTabComponent_0_4);
+    return new ComponentRef<import2.MaterialTabComponent>(0, this, rootEl, _MaterialTabComponent_0_5);
   }
 
   @override
   dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
     if ((((identical(token, import2.MaterialTabComponent) || identical(token, import2.Tab)) || identical(token, import13.DeferredContentAware)) && (0 == nodeIndex))) {
-      return _MaterialTabComponent_0_4;
+      return _MaterialTabComponent_0_5;
     }
     return notFoundResult;
   }

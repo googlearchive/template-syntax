@@ -1,7 +1,5 @@
-// GENERATED CODE - DO NOT MODIFY BY HAND
-
 // **************************************************************************
-// Generator: TemplateGenerator
+// Generator: Instance of 'Compiler'
 // **************************************************************************
 
 // ignore_for_file: cancel_subscriptions,constant_identifier_names,duplicate_import,non_constant_identifier_names,library_prefixes,UNUSED_IMPORT,UNUSED_SHOWN_NAME
@@ -20,7 +18,7 @@ import 'dart:html' as import3;
 
 class FocusItemDirectiveNgCd extends import0.DirectiveChangeDetector {
   final import1.FocusItemDirective instance;
-  var _expr_0;
+  var _expr_1;
   FocusItemDirectiveNgCd(this.instance);
   void detectHostChanges(AppView<dynamic> view, import3.Element el) {
     bool firstCheck = (view.cdState == 0);
@@ -29,10 +27,10 @@ class FocusItemDirectiveNgCd extends import0.DirectiveChangeDetector {
         setAttr(el, 'role', instance.role?.toString());
       }
     }
-    final currVal_0 = instance.tabIndex;
-    if (!identical(_expr_0, currVal_0)) {
-      setAttr(el, 'tabindex', currVal_0?.toString());
-      _expr_0 = currVal_0;
+    final currVal_1 = instance.tabIndex;
+    if (!identical(_expr_1, currVal_1)) {
+      setAttr(el, 'tabindex', currVal_1?.toString());
+      _expr_1 = currVal_1;
     }
   }
 }

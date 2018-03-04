@@ -84,6 +84,11 @@ class BaseMaterialInput extends FocusableMixin
   @Input()
   String label;
 
+  /// The label to be used for screen readers. Use [label] instead of this
+  /// when a visible label is desired.
+  @Input()
+  String inputAriaLabel;
+
   /// The hint text to be shown on the input. Not shown during an error.
   String _hintText;
   String get hintText => _hintText;
@@ -107,6 +112,8 @@ class BaseMaterialInput extends FocusableMixin
   }
 
   /// Maximum allowed characters for character counting input box.
+  ///
+  /// Always shows character count if the field is non-null.
   @Input()
   int maxCount;
 
@@ -169,6 +176,10 @@ class BaseMaterialInput extends FocusableMixin
           : _inputText.length;
     }
   }
+
+  /// Displays character count even if maxCount is not defined.
+  @Input()
+  bool showCharacterCount = false;
 
   BaseMaterialInput(@Self() @Optional() this._cd, this._changeDetector,
       DeferredValidator validator) {
@@ -316,7 +327,7 @@ class BaseMaterialInput extends FocusableMixin
 
   bool get labelVisible => floatingLabelVisible || !hasVisibleText;
 
-  String get ariaLabel => label;
+  String get ariaLabel => inputAriaLabel ?? label;
 
   String get errorMessage {
     if (_error?.isNotEmpty ?? false) return _error;
@@ -421,12 +432,20 @@ class BaseMaterialInput extends FocusableMixin
     inputRef.nativeElement.select();
   }
 
-  String msgCharacterCounter(int currentCount, int maxCount) => Intl.message(
-      '$currentCount / $maxCount',
-      name: 'BaseMaterialInput_msgCharacterCounter',
-      args: [currentCount, maxCount],
-      desc: 'Character counter shown below a text box in the format "12 / 25"',
-      examples: const {'currentCount': 12, 'maxCount': 25});
+  /// The message to display when character counter is shown.
+  ///
+  /// Always shows [currentCount] but will ignore [maxCount] if it is null.
+  String msgCharacterCounter(int currentCount, int maxCount) => maxCount == null
+      ? '$currentCount'
+      : _msgCharacterCounter(currentCount, maxCount);
+
+  static String _msgCharacterCounter(int currentCount, int maxCount) =>
+      Intl.message('$currentCount / $maxCount',
+          name: 'BaseMaterialInput__msgCharacterCounter',
+          args: [currentCount, maxCount],
+          desc:
+              'Character counter shown below a text box in the format "12 / 25"',
+          examples: const {'currentCount': 12, 'maxCount': 25});
 
   static String get defaultEmptyMessage => Intl.message('Enter a value',
       desc: 'Error message when the input is empty and required.');

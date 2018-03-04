@@ -1,7 +1,5 @@
-// GENERATED CODE - DO NOT MODIFY BY HAND
-
 // **************************************************************************
-// Generator: TemplateGenerator
+// Generator: Instance of 'Compiler'
 // **************************************************************************
 
 // ignore_for_file: cancel_subscriptions,constant_identifier_names,duplicate_import,non_constant_identifier_names,library_prefixes,UNUSED_IMPORT,UNUSED_SHOWN_NAME
@@ -40,7 +38,7 @@ class ViewMaterialButtonComponent0 extends AppView<import2.MaterialButtonCompone
   import3.DivElement _el_0;
   import3.Element _el_1;
   import4.ViewMaterialRippleComponent0 _compView_1;
-  import5.MaterialRippleComponent _MaterialRippleComponent_1_4;
+  import5.MaterialRippleComponent _MaterialRippleComponent_1_5;
   var _expr_0;
   var _expr_1;
   bool _expr_2;
@@ -69,8 +67,8 @@ class ViewMaterialButtonComponent0 extends AppView<import2.MaterialButtonCompone
     _el_1 = _compView_1.rootEl;
     parentRenderNode.append(_el_1);
     addShimC(_el_1);
-    _MaterialRippleComponent_1_4 = new import5.MaterialRippleComponent(_el_1);
-    _compView_1.create(_MaterialRippleComponent_1_4, []);
+    _MaterialRippleComponent_1_5 = new import5.MaterialRippleComponent(_el_1);
+    _compView_1.create(_MaterialRippleComponent_1_5, []);
     _el_1.addEventListener('mousedown', eventHandler1(ctx.onMouseDown));
     _el_1.addEventListener('mouseup', eventHandler1(ctx.onMouseUp));
     init(const [], null);
@@ -96,7 +94,7 @@ class ViewMaterialButtonComponent0 extends AppView<import2.MaterialButtonCompone
   @override
   void destroyInternal() {
     _compView_1?.destroy();
-    _MaterialRippleComponent_1_4.ngOnDestroy();
+    _MaterialRippleComponent_1_5.ngOnDestroy();
   }
 
   void detectHostChanges(bool firstCheck) {
@@ -146,27 +144,27 @@ const List<dynamic> styles$MaterialButtonComponentHost = const [];
 
 class _ViewMaterialButtonComponentHost0 extends AppView<dynamic> {
   ViewMaterialButtonComponent0 _compView_0;
-  import11.AcxDarkTheme _AcxDarkTheme_0_4;
-  import2.MaterialButtonComponent _MaterialButtonComponent_0_5;
+  import11.AcxDarkTheme _AcxDarkTheme_0_5;
+  import2.MaterialButtonComponent _MaterialButtonComponent_0_6;
   _ViewMaterialButtonComponentHost0(AppView<dynamic> parentView, num parentIndex) : super(import7.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewMaterialButtonComponent0(this, 0);
     rootEl = _compView_0.rootEl;
-    _AcxDarkTheme_0_4 = new import11.AcxDarkTheme(this.injectorGet(const import12.OpaqueToken('acxDarkTheme'), viewData.parentIndex, null));
-    _MaterialButtonComponent_0_5 = new import2.MaterialButtonComponent(rootEl, _AcxDarkTheme_0_4, _compView_0.ref);
-    _compView_0.create(_MaterialButtonComponent_0_5, projectableNodes);
+    _AcxDarkTheme_0_5 = new import11.AcxDarkTheme(this.injectorGet(const import12.OpaqueToken('acxDarkTheme'), viewData.parentIndex, null));
+    _MaterialButtonComponent_0_6 = new import2.MaterialButtonComponent(rootEl, _AcxDarkTheme_0_5, _compView_0.ref);
+    _compView_0.create(_MaterialButtonComponent_0_6, projectableNodes);
     init0(rootEl);
-    return new ComponentRef<import2.MaterialButtonComponent>(0, this, rootEl, _MaterialButtonComponent_0_5);
+    return new ComponentRef<import2.MaterialButtonComponent>(0, this, rootEl, _MaterialButtonComponent_0_6);
   }
 
   @override
   dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
     if ((identical(token, import11.AcxDarkTheme) && (0 == nodeIndex))) {
-      return _AcxDarkTheme_0_4;
+      return _AcxDarkTheme_0_5;
     }
     if (((identical(token, import2.MaterialButtonComponent) || identical(token, import13.ButtonDirective)) && (0 == nodeIndex))) {
-      return _MaterialButtonComponent_0_5;
+      return _MaterialButtonComponent_0_6;
     }
     return notFoundResult;
   }

@@ -1,7 +1,5 @@
-// GENERATED CODE - DO NOT MODIFY BY HAND
-
 // **************************************************************************
-// Generator: TemplateGenerator
+// Generator: Instance of 'Compiler'
 // **************************************************************************
 
 // ignore_for_file: cancel_subscriptions,constant_identifier_names,duplicate_import,non_constant_identifier_names,library_prefixes,UNUSED_IMPORT,UNUSED_SHOWN_NAME
@@ -62,22 +60,22 @@ const List<dynamic> styles$MaterialListComponentHost = const [];
 
 class _ViewMaterialListComponentHost0 extends AppView<dynamic> {
   ViewMaterialListComponent0 _compView_0;
-  import2.MaterialListComponent _MaterialListComponent_0_4;
+  import2.MaterialListComponent _MaterialListComponent_0_5;
   _ViewMaterialListComponentHost0(AppView<dynamic> parentView, num parentIndex) : super(import4.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewMaterialListComponent0(this, 0);
     rootEl = _compView_0.rootEl;
-    _MaterialListComponent_0_4 = new import2.MaterialListComponent();
-    _compView_0.create(_MaterialListComponent_0_4, projectableNodes);
+    _MaterialListComponent_0_5 = new import2.MaterialListComponent();
+    _compView_0.create(_MaterialListComponent_0_5, projectableNodes);
     init0(rootEl);
-    return new ComponentRef<import2.MaterialListComponent>(0, this, rootEl, _MaterialListComponent_0_4);
+    return new ComponentRef<import2.MaterialListComponent>(0, this, rootEl, _MaterialListComponent_0_5);
   }
 
   @override
   dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
     if ((identical(token, import2.MaterialListComponent) && (0 == nodeIndex))) {
-      return _MaterialListComponent_0_4;
+      return _MaterialListComponent_0_5;
     }
     return notFoundResult;
   }

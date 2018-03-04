@@ -1,7 +1,5 @@
-// GENERATED CODE - DO NOT MODIFY BY HAND
-
 // **************************************************************************
-// Generator: TemplateGenerator
+// Generator: Instance of 'Compiler'
 // **************************************************************************
 
 // ignore_for_file: cancel_subscriptions,constant_identifier_names,duplicate_import,non_constant_identifier_names,library_prefixes,UNUSED_IMPORT,UNUSED_SHOWN_NAME
@@ -66,105 +64,104 @@ import 'package:angular_components/utils/id_generator/id_generator.template.dart
 import 'package:angular_components/material_menu/menu_item_groups.scss.css.shim.dart' as import0;
 import 'package:angular/src/core/linker/app_view.dart';
 import 'menu_item_groups.dart' as import2;
-import 'package:angular/src/core/linker/query_list.dart' as import3;
-import 'dart:html' as import4;
-import '../focus/focus_trap.template.dart' as import5;
-import '../focus/focus_trap.dart' as import6;
+import 'dart:html' as import3;
+import '../focus/focus_trap.template.dart' as import4;
+import '../focus/focus_trap.dart' as import5;
 import 'package:angular/src/core/linker/view_container.dart';
-import 'package:angular/src/common/directives/ng_for.dart' as import8;
+import 'package:angular/src/common/directives/ng_for.dart' as import7;
 import 'package:angular/src/core/render/api.dart';
-import 'package:angular/src/core/linker/view_type.dart' as import10;
+import 'package:angular/src/core/linker/view_type.dart' as import9;
 import 'package:angular/src/core/change_detection/change_detection.dart';
-import 'package:angular/src/core/linker/app_view_utils.dart' as import12;
+import 'package:angular/src/core/linker/app_view_utils.dart' as import11;
 import 'package:angular/angular.dart';
 import 'package:angular/src/core/linker/template_ref.dart';
 import 'package:angular/src/common/directives/ng_if.dart';
-import '../model/menu/menu.dart' as import16;
-import '../material_icon/material_icon.template.dart' as import17;
-import '../button_decorator/button_decorator.template.dart' as import18;
+import '../model/menu/menu.dart' as import15;
+import '../button_decorator/button_decorator.template.dart' as import16;
+import '../button_decorator/button_decorator.dart' as import17;
+import '../material_icon/material_icon.template.dart' as import18;
 import '../material_icon/material_icon.dart' as import19;
-import '../button_decorator/button_decorator.dart' as import20;
-import '../material_select/material_select_item.template.dart' as import21;
-import '../focus/focus.dart' as import22;
-import '../focus/focus_activable_item.dart' as import23;
-import '../src/material_tooltip/tooltip.dart' as import24;
-import '../material_select/material_select_item.dart' as import25;
-import 'package:angular/src/common/directives/ng_class.dart' as import26;
-import '../src/laminate/popup/popup_source_directive.dart' as import27;
-import '../material_tooltip/module.dart' as import28;
-import '../src/material_tooltip/tooltip_controller.dart' as import29;
-import '../utils/disposer/disposer.dart' as import30;
-import '../utils/browser/dom_service/dom_service.dart' as import31;
-import '../laminate/components/modal/modal.dart' as import32;
-import '../src/laminate/popup/popup_ref.dart' as import33;
-import '../src/laminate/popup/dom_popup_source.dart' as import34;
-import '../mixins/material_dropdown_base.dart' as import35;
-import '../material_select/activation_handler.dart' as import36;
-import '../utils/angular/reference/reference.dart' as import37;
-import '../model/selection/selection_container.dart' as import38;
-import '../model/ui/has_renderer.dart' as import39;
-import '../highlighted_text/highlighted_text.template.dart' as import40;
-import '../highlighted_text/highlighted_text.dart' as import41;
-import 'menu_item_affix_list.template.dart' as import42;
-import 'menu_item_affix_list.dart' as import43;
-import 'menu_root.dart' as import44;
-import '../material_popup/material_popup.template.dart' as import45;
-import '../material_popup/material_popup.dart' as import46;
-import '../content/deferred_content.dart' as import47;
-import '../src/laminate/popup/popup_hierarchy.dart' as import48;
-import 'package:angular/src/core/zone/ng_zone.dart' as import49;
-import '../src/laminate/overlay/overlay_service.dart' as import50;
-import '../laminate/overlay/zindexer.dart' as import51;
-import 'package:angular/src/core/di/opaque_token.dart' as import52;
+import '../material_select/material_select_item.template.dart' as import20;
+import '../focus/focus.dart' as import21;
+import '../focus/focus_activable_item.dart' as import22;
+import '../src/material_tooltip/tooltip.dart' as import23;
+import '../material_select/material_select_item.dart' as import24;
+import 'package:angular/src/common/directives/ng_class.dart' as import25;
+import '../src/laminate/popup/popup_source_directive.dart' as import26;
+import '../material_tooltip/module.dart' as import27;
+import '../src/material_tooltip/tooltip_controller.dart' as import28;
+import '../utils/disposer/disposer.dart' as import29;
+import '../utils/browser/dom_service/dom_service.dart' as import30;
+import '../laminate/components/modal/modal.dart' as import31;
+import '../src/laminate/popup/popup_ref.dart' as import32;
+import '../src/laminate/popup/dom_popup_source.dart' as import33;
+import '../mixins/material_dropdown_base.dart' as import34;
+import '../material_select/activation_handler.dart' as import35;
+import '../utils/angular/reference/reference.dart' as import36;
+import '../model/selection/selection_container.dart' as import37;
+import '../model/ui/has_renderer.dart' as import38;
+import '../highlighted_text/highlighted_text.template.dart' as import39;
+import '../highlighted_text/highlighted_text.dart' as import40;
+import 'menu_item_affix_list.template.dart' as import41;
+import 'menu_item_affix_list.dart' as import42;
+import 'menu_root.dart' as import43;
+import '../material_popup/material_popup.template.dart' as import44;
+import '../material_popup/material_popup.dart' as import45;
+import '../content/deferred_content.dart' as import46;
+import '../src/laminate/popup/popup_hierarchy.dart' as import47;
+import 'package:angular/src/core/zone/ng_zone.dart' as import48;
+import '../src/laminate/overlay/overlay_service.dart' as import49;
+import '../laminate/overlay/zindexer.dart' as import50;
+import 'package:angular/src/core/di/opaque_token.dart' as import51;
 import 'dart:core';
-import '../laminate/enums/alignment.dart' as import54;
-import '../src/laminate/popup/popup_size_provider.dart' as import55;
+import 'package:angular_components/laminate/enums/alignment.dart' as import53;
+import '../src/laminate/popup/popup_size_provider.dart' as import54;
 import 'package:angular/src/core/linker/element_ref.dart';
-import '../content/deferred_content_aware.dart' as import57;
-import '../material_list/material_list.template.dart' as import58;
-import '../material_list/material_list.dart' as import59;
-import '../utils/id_generator/id_generator.dart' as import60;
+import '../content/deferred_content_aware.dart' as import56;
+import '../material_list/material_list.template.dart' as import57;
+import '../material_list/material_list.dart' as import58;
+import '../utils/id_generator/id_generator.dart' as import59;
 
 const List<dynamic> styles$MenuItemGroupsComponent = const [import0.styles];
 
 class ViewMenuItemGroupsComponent0 extends AppView<import2.MenuItemGroupsComponent> {
-  final import3.QueryList _viewQuery_FocusableActivateItem_0 = new import3.QueryList();
-  import4.Element _el_1;
-  import5.ViewFocusTrapComponent0 _compView_1;
-  import6.FocusTrapComponent _FocusTrapComponent_1_4;
-  final import3.QueryList _query_AutoFocusDirective_1_0 = new import3.QueryList();
+  bool _query_FocusableActivateItem_1_0_isDirty = true;
+  import3.Element _el_1;
+  import4.ViewFocusTrapComponent0 _compView_1;
+  import5.FocusTrapComponent _FocusTrapComponent_1_5;
+  bool _query_AutoFocusDirective_1_0_isDirty = true;
   ViewContainer _appEl_3;
-  import8.NgFor _NgFor_3_7;
+  import7.NgFor _NgFor_3_9;
   bool _expr_0;
   bool _expr_1;
   var _expr_2;
   static RenderComponentType _renderType;
-  ViewMenuItemGroupsComponent0(AppView<dynamic> parentView, num parentIndex) : super(import10.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckOnce) {
-    rootEl = import4.document.createElement('menu-item-groups');
-    _renderType ??= import12.appViewUtils.createRenderType('', ViewEncapsulation.Emulated, styles$MenuItemGroupsComponent);
+  ViewMenuItemGroupsComponent0(AppView<dynamic> parentView, num parentIndex) : super(import9.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckOnce) {
+    rootEl = import3.document.createElement('menu-item-groups');
+    _renderType ??= import11.appViewUtils.createRenderType('', ViewEncapsulation.Emulated, styles$MenuItemGroupsComponent);
     setupComponentType(_renderType);
   }
   @override
   ComponentRef<import2.MenuItemGroupsComponent> build() {
     final import2.MenuItemGroupsComponent _ctx = ctx;
-    final import4.HtmlElement parentRenderNode = initViewRoot(rootEl);
-    import4.Text _text_0 = new import4.Text('\n');
+    final import3.HtmlElement parentRenderNode = initViewRoot(rootEl);
+    import3.Text _text_0 = new import3.Text('\n');
     parentRenderNode.append(_text_0);
-    _compView_1 = new import5.ViewFocusTrapComponent0(this, 1);
+    _compView_1 = new import4.ViewFocusTrapComponent0(this, 1);
     _el_1 = _compView_1.rootEl;
     parentRenderNode.append(_el_1);
     addShimC(_el_1);
-    _FocusTrapComponent_1_4 = new import6.FocusTrapComponent();
-    import4.Text _text_2 = new import4.Text('\n  ');
+    _FocusTrapComponent_1_5 = new import5.FocusTrapComponent();
+    import3.Text _text_2 = new import3.Text('\n  ');
     var _anchor_3 = ngAnchor.clone(false);
     _appEl_3 = new ViewContainer(3, 1, this, _anchor_3);
-    TemplateRef _TemplateRef_3_6 = new TemplateRef(_appEl_3, viewFactory_MenuItemGroupsComponent1);
-    _NgFor_3_7 = new import8.NgFor(_appEl_3, _TemplateRef_3_6);
-    import4.Text _text_4 = new import4.Text('\n');
-    _compView_1.create(_FocusTrapComponent_1_4, [
+    TemplateRef _TemplateRef_3_8 = new TemplateRef(_appEl_3, viewFactory_MenuItemGroupsComponent1);
+    _NgFor_3_9 = new import7.NgFor(_appEl_3, _TemplateRef_3_8);
+    import3.Text _text_4 = new import3.Text('\n');
+    _compView_1.create(_FocusTrapComponent_1_5, [
       [_text_2, _appEl_3, _text_4]
     ]);
-    import4.Text _text_5 = new import4.Text('\n');
+    import3.Text _text_5 = new import3.Text('\n');
     parentRenderNode.append(_text_5);
     _el_1.addEventListener('focus', eventHandler1(ctx.onFocus));
     init(const [], null);
@@ -176,8 +173,8 @@ class ViewMenuItemGroupsComponent0 extends AppView<import2.MenuItemGroupsCompone
 
   @override
   dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
-    if ((identical(token, import6.FocusTrapComponent) && ((1 <= nodeIndex) && (nodeIndex <= 4)))) {
-      return _FocusTrapComponent_1_4;
+    if ((identical(token, import5.FocusTrapComponent) && ((1 <= nodeIndex) && (nodeIndex <= 4)))) {
+      return _FocusTrapComponent_1_5;
     }
     return notFoundResult;
   }
@@ -187,46 +184,58 @@ class ViewMenuItemGroupsComponent0 extends AppView<import2.MenuItemGroupsCompone
     final import2.MenuItemGroupsComponent _ctx = ctx;
     final currVal_2 = _ctx.menu.itemGroups;
     if (!identical(_expr_2, currVal_2)) {
-      _NgFor_3_7.ngForOf = currVal_2;
+      _NgFor_3_9.ngForOf = currVal_2;
       _expr_2 = currVal_2;
     }
-    _NgFor_3_7.ngDoCheck();
+    _NgFor_3_9.ngDoCheck();
     _appEl_3.detectChangesInNestedViews();
-    if (_query_AutoFocusDirective_1_0.dirty) {
-      _query_AutoFocusDirective_1_0.reset([
-        _appEl_3.mapNestedViews((_ViewMenuItemGroupsComponent1 nestedView) {
-          return nestedView._appEl_4.mapNestedViews((_ViewMenuItemGroupsComponent4 nestedView) {
-            return nestedView._appEl_1.mapNestedViews((_ViewMenuItemGroupsComponent5 nestedView) {
-              return nestedView._appEl_1.mapNestedViews((_ViewMenuItemGroupsComponent6 nestedView) {
-                return [
-                  [nestedView._AutoFocusDirective_1_6],
-                  nestedView._appEl_14.mapNestedViews((_ViewMenuItemGroupsComponent12 nestedView) {
-                    return nestedView._appEl_2.mapNestedViews((_ViewMenuItemGroupsComponent13 nestedView) {
-                      return [nestedView._AutoFocusDirective_2_4];
-                    });
-                  })
-                ];
-              });
+    if (_query_AutoFocusDirective_1_0_isDirty) {
+      _FocusTrapComponent_1_5.autoFocus = (_appEl_3.mapNestedViews((_ViewMenuItemGroupsComponent1 nestedView) {
+        return nestedView._appEl_4.mapNestedViews((_ViewMenuItemGroupsComponent4 nestedView) {
+          return nestedView._appEl_1.mapNestedViews((_ViewMenuItemGroupsComponent5 nestedView) {
+            return nestedView._appEl_1.mapNestedViews((_ViewMenuItemGroupsComponent6 nestedView) {
+              return import11.flattenNodes([
+                [nestedView._AutoFocusDirective_1_8],
+                nestedView._appEl_14.mapNestedViews((_ViewMenuItemGroupsComponent12 nestedView) {
+                  return nestedView._appEl_2.mapNestedViews((_ViewMenuItemGroupsComponent13 nestedView) {
+                    return [nestedView._AutoFocusDirective_2_5];
+                  });
+                })
+              ]);
             });
           });
-        })
-      ]);
-      _FocusTrapComponent_1_4.autoFocus = _query_AutoFocusDirective_1_0.first;
+        });
+      }).isNotEmpty
+          ? _appEl_3.mapNestedViews((_ViewMenuItemGroupsComponent1 nestedView) {
+              return nestedView._appEl_4.mapNestedViews((_ViewMenuItemGroupsComponent4 nestedView) {
+                return nestedView._appEl_1.mapNestedViews((_ViewMenuItemGroupsComponent5 nestedView) {
+                  return nestedView._appEl_1.mapNestedViews((_ViewMenuItemGroupsComponent6 nestedView) {
+                    return import11.flattenNodes([
+                      [nestedView._AutoFocusDirective_1_8],
+                      nestedView._appEl_14.mapNestedViews((_ViewMenuItemGroupsComponent12 nestedView) {
+                        return nestedView._appEl_2.mapNestedViews((_ViewMenuItemGroupsComponent13 nestedView) {
+                          return [nestedView._AutoFocusDirective_2_5];
+                        });
+                      })
+                    ]);
+                  });
+                });
+              });
+            }).first
+          : null);
+      _query_AutoFocusDirective_1_0_isDirty = false;
     }
-    if (_viewQuery_FocusableActivateItem_0.dirty) {
-      _viewQuery_FocusableActivateItem_0.reset([
-        _appEl_3.mapNestedViews((_ViewMenuItemGroupsComponent1 nestedView) {
-          return nestedView._appEl_4.mapNestedViews((_ViewMenuItemGroupsComponent4 nestedView) {
-            return nestedView._appEl_1.mapNestedViews((_ViewMenuItemGroupsComponent5 nestedView) {
-              return nestedView._appEl_1.mapNestedViews((_ViewMenuItemGroupsComponent6 nestedView) {
-                return [nestedView._FocusableActivateItem_1_12];
-              });
+    if (_query_FocusableActivateItem_1_0_isDirty) {
+      ctx.focusableItems = _appEl_3.mapNestedViews((_ViewMenuItemGroupsComponent1 nestedView) {
+        return nestedView._appEl_4.mapNestedViews((_ViewMenuItemGroupsComponent4 nestedView) {
+          return nestedView._appEl_1.mapNestedViews((_ViewMenuItemGroupsComponent5 nestedView) {
+            return nestedView._appEl_1.mapNestedViews((_ViewMenuItemGroupsComponent6 nestedView) {
+              return [nestedView._FocusableActivateItem_1_14];
             });
           });
-        })
-      ]);
-      ctx.focusableItems = _viewQuery_FocusableActivateItem_0;
-      _viewQuery_FocusableActivateItem_0.notifyOnChanges();
+        });
+      });
+      _query_FocusableActivateItem_1_0_isDirty = false;
     }
     final currVal_0 = _ctx.isMouseDriven;
     if (!identical(_expr_0, currVal_0)) {
@@ -245,7 +254,7 @@ class ViewMenuItemGroupsComponent0 extends AppView<import2.MenuItemGroupsCompone
   void destroyInternal() {
     _appEl_3?.destroyNestedViews();
     _compView_1?.destroy();
-    _FocusTrapComponent_1_4.ngOnDestroy();
+    _FocusTrapComponent_1_5.ngOnDestroy();
   }
 }
 
@@ -254,37 +263,37 @@ AppView<import2.MenuItemGroupsComponent> viewFactory_MenuItemGroupsComponent0(Ap
 }
 
 class _ViewMenuItemGroupsComponent1 extends AppView<import2.MenuItemGroupsComponent> {
-  import4.DivElement _el_0;
+  import3.DivElement _el_0;
   ViewContainer _appEl_2;
-  NgIf _NgIf_2_7;
+  NgIf _NgIf_2_9;
   ViewContainer _appEl_4;
-  NgIf _NgIf_4_7;
-  _ViewMenuItemGroupsComponent1(AppView<dynamic> parentView, num parentIndex) : super(import10.ViewType.EMBEDDED, {'\$implicit': null, 'index': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  NgIf _NgIf_4_9;
+  _ViewMenuItemGroupsComponent1(AppView<dynamic> parentView, num parentIndex) : super(import9.ViewType.EMBEDDED, {'\$implicit': null, 'index': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMenuItemGroupsComponent0._renderType;
   }
   @override
   ComponentRef<import2.MenuItemGroupsComponent> build() {
-    var doc = import4.document;
+    var doc = import3.document;
     _el_0 = doc.createElement('div');
     _el_0.className = 'group';
     createAttr(_el_0, 'group', '');
     createAttr(_el_0, 'role', 'menu');
     addShimC(_el_0);
-    import4.Text _text_1 = new import4.Text('\n    ');
+    import3.Text _text_1 = new import3.Text('\n    ');
     _el_0.append(_text_1);
     var _anchor_2 = ngAnchor.clone(false);
     _el_0.append(_anchor_2);
     _appEl_2 = new ViewContainer(2, 0, this, _anchor_2);
-    TemplateRef _TemplateRef_2_6 = new TemplateRef(_appEl_2, viewFactory_MenuItemGroupsComponent2);
-    _NgIf_2_7 = new NgIf(_appEl_2, _TemplateRef_2_6);
-    import4.Text _text_3 = new import4.Text('\n    ');
+    TemplateRef _TemplateRef_2_8 = new TemplateRef(_appEl_2, viewFactory_MenuItemGroupsComponent2);
+    _NgIf_2_9 = new NgIf(_appEl_2, _TemplateRef_2_8);
+    import3.Text _text_3 = new import3.Text('\n    ');
     _el_0.append(_text_3);
     var _anchor_4 = ngAnchor.clone(false);
     _el_0.append(_anchor_4);
     _appEl_4 = new ViewContainer(4, 0, this, _anchor_4);
-    TemplateRef _TemplateRef_4_6 = new TemplateRef(_appEl_4, viewFactory_MenuItemGroupsComponent4);
-    _NgIf_4_7 = new NgIf(_appEl_4, _TemplateRef_4_6);
-    import4.Text _text_5 = new import4.Text('\n  ');
+    TemplateRef _TemplateRef_4_8 = new TemplateRef(_appEl_4, viewFactory_MenuItemGroupsComponent4);
+    _NgIf_4_9 = new NgIf(_appEl_4, _TemplateRef_4_8);
+    import3.Text _text_5 = new import3.Text('\n  ');
     _el_0.append(_text_5);
     init0(_el_0);
     return null;
@@ -292,9 +301,9 @@ class _ViewMenuItemGroupsComponent1 extends AppView<import2.MenuItemGroupsCompon
 
   @override
   void detectChangesInternal() {
-    final import16.MenuItemGroup<dynamic> local_group = locals['\$implicit'];
-    _NgIf_2_7.ngIf = local_group.hasLabel;
-    _NgIf_4_7.ngIf = (!local_group.isCollapsible || local_group.isExpanded);
+    final import15.MenuItemGroup<dynamic> local_group = locals['\$implicit'];
+    _NgIf_2_9.ngIf = local_group.hasLabel;
+    _NgIf_4_9.ngIf = (!local_group.isCollapsible || local_group.isExpanded);
     _appEl_2.detectChangesInNestedViews();
     _appEl_4.detectChangesInNestedViews();
   }
@@ -311,51 +320,67 @@ AppView<import2.MenuItemGroupsComponent> viewFactory_MenuItemGroupsComponent1(Ap
 }
 
 class _ViewMenuItemGroupsComponent2 extends AppView<import2.MenuItemGroupsComponent> {
-  import4.DivElement _el_0;
-  import4.DivElement _el_2;
-  import4.Text _text_4;
+  import3.DivElement _el_0;
+  import16.ButtonDirectiveNgCd _ButtonDirective_0_5;
+  import3.DivElement _el_2;
+  import3.Text _text_4;
   ViewContainer _appEl_7;
-  NgIf _NgIf_7_7;
+  NgIf _NgIf_7_9;
   var _expr_0;
-  _ViewMenuItemGroupsComponent2(AppView<dynamic> parentView, num parentIndex) : super(import10.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMenuItemGroupsComponent2(AppView<dynamic> parentView, num parentIndex) : super(import9.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMenuItemGroupsComponent0._renderType;
   }
   @override
   ComponentRef<import2.MenuItemGroupsComponent> build() {
-    var doc = import4.document;
+    var doc = import3.document;
     _el_0 = doc.createElement('div');
+    createAttr(_el_0, 'buttonDecorator', '');
     _el_0.className = 'group-header';
+    createAttr(_el_0, 'role', 'button');
     addShimC(_el_0);
-    import4.Text _text_1 = new import4.Text('\n      ');
+    _ButtonDirective_0_5 = new import16.ButtonDirectiveNgCd(new import17.ButtonDirective(_el_0));
+    import3.Text _text_1 = new import3.Text('\n      ');
     _el_0.append(_text_1);
     _el_2 = createDivAndAppend(doc, _el_0);
     _el_2.className = 'group-label';
     addShimC(_el_2);
-    import4.Text _text_3 = new import4.Text('\n        ');
+    import3.Text _text_3 = new import3.Text('\n        ');
     _el_2.append(_text_3);
-    _text_4 = new import4.Text('');
+    _text_4 = new import3.Text('');
     _el_2.append(_text_4);
-    import4.Text _text_5 = new import4.Text('\n      ');
+    import3.Text _text_5 = new import3.Text('\n      ');
     _el_2.append(_text_5);
-    import4.Text _text_6 = new import4.Text('\n      ');
+    import3.Text _text_6 = new import3.Text('\n      ');
     _el_0.append(_text_6);
     var _anchor_7 = ngAnchor.clone(false);
     _el_0.append(_anchor_7);
     _appEl_7 = new ViewContainer(7, 0, this, _anchor_7);
-    TemplateRef _TemplateRef_7_6 = new TemplateRef(_appEl_7, viewFactory_MenuItemGroupsComponent3);
-    _NgIf_7_7 = new NgIf(_appEl_7, _TemplateRef_7_6);
-    import4.Text _text_8 = new import4.Text('\n    ');
+    TemplateRef _TemplateRef_7_8 = new TemplateRef(_appEl_7, viewFactory_MenuItemGroupsComponent3);
+    _NgIf_7_9 = new NgIf(_appEl_7, _TemplateRef_7_8);
+    import3.Text _text_8 = new import3.Text('\n    ');
     _el_0.append(_text_8);
-    init0(_el_0);
+    _el_0.addEventListener('click', eventHandler1(_ButtonDirective_0_5.instance.handleClick));
+    _el_0.addEventListener('keypress', eventHandler1(_ButtonDirective_0_5.instance.handleKeyPress));
+    final subscription_0 = _ButtonDirective_0_5.instance.trigger.listen(eventHandler1(_handle_trigger_0_0));
+    init([_el_0], [subscription_0]);
     return null;
   }
 
   @override
+  dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
+    if ((identical(token, import17.ButtonDirective) && ((0 <= nodeIndex) && (nodeIndex <= 8)))) {
+      return _ButtonDirective_0_5.instance;
+    }
+    return notFoundResult;
+  }
+
+  @override
   void detectChangesInternal() {
-    final import16.MenuItemGroup<dynamic> local_group = parentView.locals['\$implicit'];
-    _NgIf_7_7.ngIf = local_group.isCollapsible;
+    final import15.MenuItemGroup<dynamic> local_group = parentView.locals['\$implicit'];
+    _NgIf_7_9.ngIf = local_group.isCollapsible;
     _appEl_7.detectChangesInNestedViews();
-    final currVal_0 = import12.interpolate0(local_group.uiDisplayName);
+    _ButtonDirective_0_5.detectHostChanges(this, _el_0);
+    final currVal_0 = import11.interpolate0(local_group.uiDisplayName);
     if (!identical(_expr_0, currVal_0)) {
       _text_4.text = currVal_0;
       _expr_0 = currVal_0;
@@ -366,6 +391,11 @@ class _ViewMenuItemGroupsComponent2 extends AppView<import2.MenuItemGroupsCompon
   void destroyInternal() {
     _appEl_7?.destroyNestedViews();
   }
+
+  void _handle_trigger_0_0($event) {
+    final import15.MenuItemGroup<dynamic> local_group = parentView.locals['\$implicit'];
+    ctx.toggleExpansionIfCollapsible(local_group);
+  }
 }
 
 AppView<import2.MenuItemGroupsComponent> viewFactory_MenuItemGroupsComponent2(AppView<dynamic> parentView, num parentIndex) {
@@ -373,46 +403,31 @@ AppView<import2.MenuItemGroupsComponent> viewFactory_MenuItemGroupsComponent2(Ap
 }
 
 class _ViewMenuItemGroupsComponent3 extends AppView<import2.MenuItemGroupsComponent> {
-  import4.Element _el_0;
-  import17.ViewMaterialIconComponent0 _compView_0;
-  import18.ButtonDirectiveNgCd _ButtonDirective_0_4;
+  import3.Element _el_0;
+  import18.ViewMaterialIconComponent0 _compView_0;
   import19.MaterialIconComponent _MaterialIconComponent_0_5;
   bool _expr_0;
   var _expr_1;
-  _ViewMenuItemGroupsComponent3(AppView<dynamic> parentView, num parentIndex) : super(import10.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMenuItemGroupsComponent3(AppView<dynamic> parentView, num parentIndex) : super(import9.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMenuItemGroupsComponent0._renderType;
   }
   @override
   ComponentRef<import2.MenuItemGroupsComponent> build() {
-    _compView_0 = new import17.ViewMaterialIconComponent0(this, 0);
+    _compView_0 = new import18.ViewMaterialIconComponent0(this, 0);
     _el_0 = _compView_0.rootEl;
-    createAttr(_el_0, 'buttonDecorator', '');
     _el_0.className = 'expansion-icon';
-    createAttr(_el_0, 'role', 'button');
     addShimC(_el_0);
-    _ButtonDirective_0_4 = new import18.ButtonDirectiveNgCd(new import20.ButtonDirective(_el_0));
     _MaterialIconComponent_0_5 = new import19.MaterialIconComponent(_el_0);
-    import4.Text _text_1 = new import4.Text('\n      ');
+    import3.Text _text_1 = new import3.Text('\n      ');
     _compView_0.create(_MaterialIconComponent_0_5, []);
-    _el_0.addEventListener('click', eventHandler1(_ButtonDirective_0_4.instance.handleClick));
-    _el_0.addEventListener('keypress', eventHandler1(_ButtonDirective_0_4.instance.handleKeyPress));
-    final subscription_0 = _ButtonDirective_0_4.instance.trigger.listen(eventHandler1(_handle_trigger_0_0));
-    init([_el_0], [subscription_0]);
+    init0(_el_0);
     return null;
-  }
-
-  @override
-  dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
-    if ((identical(token, import20.ButtonDirective) && ((0 <= nodeIndex) && (nodeIndex <= 1)))) {
-      return _ButtonDirective_0_4.instance;
-    }
-    return notFoundResult;
   }
 
   @override
   void detectChangesInternal() {
     bool changed = false;
-    final import16.MenuItemGroup<dynamic> local_group = parentView.parentView.locals['\$implicit'];
+    final import15.MenuItemGroup<dynamic> local_group = parentView.parentView.locals['\$implicit'];
     changed = false;
     final currVal_1 = (local_group.isExpanded ? 'expand_less' : 'expand_more');
     if (!identical(_expr_1, currVal_1)) {
@@ -428,18 +443,12 @@ class _ViewMenuItemGroupsComponent3 extends AppView<import2.MenuItemGroupsCompon
       updateElemClass(_el_0, 'expanded', currVal_0);
       _expr_0 = currVal_0;
     }
-    _ButtonDirective_0_4.detectHostChanges(_compView_0, _el_0);
     _compView_0.detectChanges();
   }
 
   @override
   void destroyInternal() {
     _compView_0?.destroy();
-  }
-
-  void _handle_trigger_0_0($event) {
-    final import16.MenuItemGroup<dynamic> local_group = parentView.parentView.locals['\$implicit'];
-    local_group.isExpanded = !local_group.isExpanded;
   }
 }
 
@@ -449,32 +458,32 @@ AppView<import2.MenuItemGroupsComponent> viewFactory_MenuItemGroupsComponent3(Ap
 
 class _ViewMenuItemGroupsComponent4 extends AppView<import2.MenuItemGroupsComponent> {
   ViewContainer _appEl_1;
-  import8.NgFor _NgFor_1_7;
+  import7.NgFor _NgFor_1_9;
   var _expr_0;
-  _ViewMenuItemGroupsComponent4(AppView<dynamic> parentView, num parentIndex) : super(import10.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMenuItemGroupsComponent4(AppView<dynamic> parentView, num parentIndex) : super(import9.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMenuItemGroupsComponent0._renderType;
   }
   @override
   ComponentRef<import2.MenuItemGroupsComponent> build() {
-    import4.Text _text_0 = new import4.Text('\n      ');
+    import3.Text _text_0 = new import3.Text('\n      ');
     var _anchor_1 = ngAnchor.clone(false);
     _appEl_1 = new ViewContainer(1, null, this, _anchor_1);
-    TemplateRef _TemplateRef_1_6 = new TemplateRef(_appEl_1, viewFactory_MenuItemGroupsComponent5);
-    _NgFor_1_7 = new import8.NgFor(_appEl_1, _TemplateRef_1_6);
-    import4.Text _text_2 = new import4.Text('\n    ');
+    TemplateRef _TemplateRef_1_8 = new TemplateRef(_appEl_1, viewFactory_MenuItemGroupsComponent5);
+    _NgFor_1_9 = new import7.NgFor(_appEl_1, _TemplateRef_1_8);
+    import3.Text _text_2 = new import3.Text('\n    ');
     init([_text_0, _appEl_1, _text_2], null);
     return null;
   }
 
   @override
   void detectChangesInternal() {
-    final import16.MenuItemGroup<dynamic> local_group = parentView.locals['\$implicit'];
+    final import15.MenuItemGroup<dynamic> local_group = parentView.locals['\$implicit'];
     final currVal_0 = local_group;
     if (!identical(_expr_0, currVal_0)) {
-      _NgFor_1_7.ngForOf = currVal_0;
+      _NgFor_1_9.ngForOf = currVal_0;
       _expr_0 = currVal_0;
     }
-    _NgFor_1_7.ngDoCheck();
+    _NgFor_1_9.ngDoCheck();
     _appEl_1.detectChangesInNestedViews();
   }
 
@@ -490,18 +499,18 @@ AppView<import2.MenuItemGroupsComponent> viewFactory_MenuItemGroupsComponent4(Ap
 
 class _ViewMenuItemGroupsComponent5 extends AppView<import2.MenuItemGroupsComponent> {
   ViewContainer _appEl_1;
-  NgIf _NgIf_1_7;
-  _ViewMenuItemGroupsComponent5(AppView<dynamic> parentView, num parentIndex) : super(import10.ViewType.EMBEDDED, {'\$implicit': null, 'index': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  NgIf _NgIf_1_9;
+  _ViewMenuItemGroupsComponent5(AppView<dynamic> parentView, num parentIndex) : super(import9.ViewType.EMBEDDED, {'\$implicit': null, 'index': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMenuItemGroupsComponent0._renderType;
   }
   @override
   ComponentRef<import2.MenuItemGroupsComponent> build() {
-    import4.Text _text_0 = new import4.Text('\n        ');
+    import3.Text _text_0 = new import3.Text('\n        ');
     var _anchor_1 = ngAnchor.clone(false);
     _appEl_1 = new ViewContainer(1, null, this, _anchor_1);
-    TemplateRef _TemplateRef_1_6 = new TemplateRef(_appEl_1, viewFactory_MenuItemGroupsComponent6);
-    _NgIf_1_7 = new NgIf(_appEl_1, _TemplateRef_1_6);
-    import4.Text _text_2 = new import4.Text('\n      ');
+    TemplateRef _TemplateRef_1_8 = new TemplateRef(_appEl_1, viewFactory_MenuItemGroupsComponent6);
+    _NgIf_1_9 = new NgIf(_appEl_1, _TemplateRef_1_8);
+    import3.Text _text_2 = new import3.Text('\n      ');
     init([_text_0, _appEl_1, _text_2], null);
     return null;
   }
@@ -510,7 +519,7 @@ class _ViewMenuItemGroupsComponent5 extends AppView<import2.MenuItemGroupsCompon
   void detectChangesInternal() {
     final import2.MenuItemGroupsComponent _ctx = ctx;
     final local_item = locals['\$implicit'];
-    _NgIf_1_7.ngIf = _ctx.isItemVisible(local_item);
+    _NgIf_1_9.ngIf = _ctx.isItemVisible(local_item);
     _appEl_1.detectChangesInNestedViews();
   }
 
@@ -525,29 +534,29 @@ AppView<import2.MenuItemGroupsComponent> viewFactory_MenuItemGroupsComponent5(Ap
 }
 
 class _ViewMenuItemGroupsComponent6 extends AppView<import2.MenuItemGroupsComponent> {
-  import4.Element _el_1;
-  import21.ViewMaterialSelectItemComponent0 _compView_1;
+  import3.Element _el_1;
+  import20.ViewMaterialSelectItemComponent0 _compView_1;
   ViewContainer _appEl_1;
-  import22.AutoFocusDirective _AutoFocusDirective_1_6;
-  import23.FocusActivableItemDirective _FocusActivableItemDirective_1_7;
-  import24.MaterialTooltipDirective _MaterialTooltipDirective_1_8;
-  import25.MaterialSelectItemComponent _MaterialSelectItemComponent_1_9;
-  import26.NgClass _NgClass_1_10;
-  import27.PopupSourceDirective _PopupSourceDirective_1_11;
-  dynamic _FocusableActivateItem_1_12;
-  dynamic __TooltipController_1_15;
+  import21.AutoFocusDirective _AutoFocusDirective_1_8;
+  import22.FocusActivableItemDirective _FocusActivableItemDirective_1_9;
+  import23.MaterialTooltipDirective _MaterialTooltipDirective_1_10;
+  import24.MaterialSelectItemComponent _MaterialSelectItemComponent_1_11;
+  import25.NgClass _NgClass_1_12;
+  import26.PopupSourceDirective _PopupSourceDirective_1_13;
+  import22.FocusActivableItemDirective _FocusableActivateItem_1_14;
+  dynamic __TooltipController_1_17;
   ViewContainer _appEl_3;
-  NgIf _NgIf_3_7;
+  NgIf _NgIf_3_9;
   ViewContainer _appEl_5;
-  NgIf _NgIf_5_7;
+  NgIf _NgIf_5_9;
   ViewContainer _appEl_7;
-  NgIf _NgIf_7_7;
+  NgIf _NgIf_7_9;
   ViewContainer _appEl_9;
-  NgIf _NgIf_9_7;
+  NgIf _NgIf_9_9;
   ViewContainer _appEl_11;
-  NgIf _NgIf_11_7;
+  NgIf _NgIf_11_9;
   ViewContainer _appEl_14;
-  NgIf _NgIf_14_7;
+  NgIf _NgIf_14_9;
   var _expr_0;
   var _expr_1;
   var _expr_2;
@@ -565,20 +574,20 @@ class _ViewMenuItemGroupsComponent6 extends AppView<import2.MenuItemGroupsCompon
   bool _expr_15;
   var _expr_16;
   var _expr_19;
-  _ViewMenuItemGroupsComponent6(AppView<dynamic> parentView, num parentIndex) : super(import10.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMenuItemGroupsComponent6(AppView<dynamic> parentView, num parentIndex) : super(import9.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMenuItemGroupsComponent0._renderType;
   }
-  dynamic get _TooltipController_1_15 {
-    if ((this.__TooltipController_1_15 == null)) {
-      (__TooltipController_1_15 = import28.createTooltipController(this.parentView.parentView.parentView.parentView.parentView.injectorGet(import29.TooltipController, this.parentView.parentView.parentView.parentView.viewData.parentIndex, null), this.parentView.parentView.parentView.parentView.parentView.injectorGet(import30.Disposer, this.parentView.parentView.parentView.parentView.viewData.parentIndex, null)));
+  dynamic get _TooltipController_1_17 {
+    if ((this.__TooltipController_1_17 == null)) {
+      (__TooltipController_1_17 = import27.createTooltipController(this.parentView.parentView.parentView.parentView.parentView.injectorGet(import28.TooltipController, this.parentView.parentView.parentView.parentView.viewData.parentIndex, null), this.parentView.parentView.parentView.parentView.parentView.injectorGet(import29.Disposer, this.parentView.parentView.parentView.parentView.viewData.parentIndex, null)));
     }
-    return this.__TooltipController_1_15;
+    return this.__TooltipController_1_17;
   }
 
   @override
   ComponentRef<import2.MenuItemGroupsComponent> build() {
-    import4.Text _text_0 = new import4.Text('\n          ');
-    _compView_1 = new import21.ViewMaterialSelectItemComponent0(this, 1);
+    import3.Text _text_0 = new import3.Text('\n          ');
+    _compView_1 = new import20.ViewMaterialSelectItemComponent0(this, 1);
     _el_1 = _compView_1.rootEl;
     _el_1.className = 'menu-item item';
     createAttr(_el_1, 'closeOnActivate', 'false');
@@ -587,69 +596,69 @@ class _ViewMenuItemGroupsComponent6 extends AppView<import2.MenuItemGroupsCompon
     createAttr(_el_1, 'useCheckMarks', 'true');
     addShimC(_el_1);
     _appEl_1 = new ViewContainer(1, null, this, _el_1);
-    _AutoFocusDirective_1_6 = new import22.AutoFocusDirective(_el_1, parentView.parentView.parentView.parentView.parentView.injectorGet(import31.DomService, parentView.parentView.parentView.parentView.viewData.parentIndex), parentView.parentView.parentView.parentView.parentView.injectorGet(import22.Focusable, parentView.parentView.parentView.parentView.viewData.parentIndex, null), parentView.parentView.parentView.parentView.parentView.injectorGet(import32.ModalComponent, parentView.parentView.parentView.parentView.viewData.parentIndex, null), parentView.parentView.parentView.parentView.parentView.injectorGet(import33.PopupRef, parentView.parentView.parentView.parentView.viewData.parentIndex, null));
-    _FocusActivableItemDirective_1_7 = new import23.FocusActivableItemDirective(_el_1);
-    _MaterialTooltipDirective_1_8 = new import24.MaterialTooltipDirective(parentView.parentView.parentView.parentView.parentView.injectorGet(import34.DomPopupSourceFactory, parentView.parentView.parentView.parentView.viewData.parentIndex), _appEl_1, _el_1, _appEl_1, ref, parentView.parentView.parentView.parentView.parentView.injectorGet(import4.Window, parentView.parentView.parentView.parentView.viewData.parentIndex));
-    _MaterialSelectItemComponent_1_9 = new import25.MaterialSelectItemComponent(_el_1, parentView.parentView.parentView.parentView.parentView.injectorGet(import31.DomService, parentView.parentView.parentView.parentView.viewData.parentIndex), parentView.parentView.parentView.parentView.parentView.injectorGet(import35.DropdownHandle, parentView.parentView.parentView.parentView.viewData.parentIndex, null), parentView.parentView.parentView.parentView.parentView.injectorGet(import36.ActivationHandler, parentView.parentView.parentView.parentView.viewData.parentIndex, null), _compView_1.ref);
-    _NgClass_1_10 = new import26.NgClass(_el_1);
-    _PopupSourceDirective_1_11 = new import27.PopupSourceDirective(parentView.parentView.parentView.parentView.parentView.injectorGet(import34.DomPopupSourceFactory, parentView.parentView.parentView.parentView.viewData.parentIndex), _el_1, parentView.parentView.parentView.parentView.parentView.injectorGet(import37.ReferenceDirective, parentView.parentView.parentView.parentView.viewData.parentIndex, null));
-    _FocusableActivateItem_1_12 = _FocusActivableItemDirective_1_7;
-    import4.Text _text_2 = new import4.Text('\n            ');
+    _AutoFocusDirective_1_8 = new import21.AutoFocusDirective(_el_1, parentView.parentView.parentView.parentView.parentView.injectorGet(import30.DomService, parentView.parentView.parentView.parentView.viewData.parentIndex), parentView.parentView.parentView.parentView.parentView.injectorGet(import21.Focusable, parentView.parentView.parentView.parentView.viewData.parentIndex, null), parentView.parentView.parentView.parentView.parentView.injectorGet(import31.ModalComponent, parentView.parentView.parentView.parentView.viewData.parentIndex, null), parentView.parentView.parentView.parentView.parentView.injectorGet(import32.PopupRef, parentView.parentView.parentView.parentView.viewData.parentIndex, null));
+    _FocusActivableItemDirective_1_9 = new import22.FocusActivableItemDirective(_el_1);
+    _MaterialTooltipDirective_1_10 = new import23.MaterialTooltipDirective(parentView.parentView.parentView.parentView.parentView.injectorGet(import33.DomPopupSourceFactory, parentView.parentView.parentView.parentView.viewData.parentIndex), _appEl_1, _el_1, _appEl_1, _compView_1.ref, parentView.parentView.parentView.parentView.parentView.injectorGet(import3.Window, parentView.parentView.parentView.parentView.viewData.parentIndex));
+    _MaterialSelectItemComponent_1_11 = new import24.MaterialSelectItemComponent(_el_1, parentView.parentView.parentView.parentView.parentView.injectorGet(import30.DomService, parentView.parentView.parentView.parentView.viewData.parentIndex), parentView.parentView.parentView.parentView.parentView.injectorGet(import34.DropdownHandle, parentView.parentView.parentView.parentView.viewData.parentIndex, null), parentView.parentView.parentView.parentView.parentView.injectorGet(import35.ActivationHandler, parentView.parentView.parentView.parentView.viewData.parentIndex, null), _compView_1.ref);
+    _NgClass_1_12 = new import25.NgClass(_el_1);
+    _PopupSourceDirective_1_13 = new import26.PopupSourceDirective(parentView.parentView.parentView.parentView.parentView.injectorGet(import33.DomPopupSourceFactory, parentView.parentView.parentView.parentView.viewData.parentIndex), _el_1, parentView.parentView.parentView.parentView.parentView.injectorGet(import36.ReferenceDirective, parentView.parentView.parentView.parentView.viewData.parentIndex, null));
+    _FocusableActivateItem_1_14 = _FocusActivableItemDirective_1_9;
+    import3.Text _text_2 = new import3.Text('\n            ');
     var _anchor_3 = ngAnchor.clone(false);
     _appEl_3 = new ViewContainer(3, 1, this, _anchor_3);
-    TemplateRef _TemplateRef_3_6 = new TemplateRef(_appEl_3, viewFactory_MenuItemGroupsComponent7);
-    _NgIf_3_7 = new NgIf(_appEl_3, _TemplateRef_3_6);
-    import4.Text _text_4 = new import4.Text('\n            ');
+    TemplateRef _TemplateRef_3_8 = new TemplateRef(_appEl_3, viewFactory_MenuItemGroupsComponent7);
+    _NgIf_3_9 = new NgIf(_appEl_3, _TemplateRef_3_8);
+    import3.Text _text_4 = new import3.Text('\n            ');
     var _anchor_5 = ngAnchor.clone(false);
     _appEl_5 = new ViewContainer(5, 1, this, _anchor_5);
-    TemplateRef _TemplateRef_5_6 = new TemplateRef(_appEl_5, viewFactory_MenuItemGroupsComponent8);
-    _NgIf_5_7 = new NgIf(_appEl_5, _TemplateRef_5_6);
-    import4.Text _text_6 = new import4.Text('\n            ');
+    TemplateRef _TemplateRef_5_8 = new TemplateRef(_appEl_5, viewFactory_MenuItemGroupsComponent8);
+    _NgIf_5_9 = new NgIf(_appEl_5, _TemplateRef_5_8);
+    import3.Text _text_6 = new import3.Text('\n            ');
     var _anchor_7 = ngAnchor.clone(false);
     _appEl_7 = new ViewContainer(7, 1, this, _anchor_7);
-    TemplateRef _TemplateRef_7_6 = new TemplateRef(_appEl_7, viewFactory_MenuItemGroupsComponent9);
-    _NgIf_7_7 = new NgIf(_appEl_7, _TemplateRef_7_6);
-    import4.Text _text_8 = new import4.Text('\n            ');
+    TemplateRef _TemplateRef_7_8 = new TemplateRef(_appEl_7, viewFactory_MenuItemGroupsComponent9);
+    _NgIf_7_9 = new NgIf(_appEl_7, _TemplateRef_7_8);
+    import3.Text _text_8 = new import3.Text('\n            ');
     var _anchor_9 = ngAnchor.clone(false);
     _appEl_9 = new ViewContainer(9, 1, this, _anchor_9);
-    TemplateRef _TemplateRef_9_6 = new TemplateRef(_appEl_9, viewFactory_MenuItemGroupsComponent10);
-    _NgIf_9_7 = new NgIf(_appEl_9, _TemplateRef_9_6);
-    import4.Text _text_10 = new import4.Text('\n            ');
+    TemplateRef _TemplateRef_9_8 = new TemplateRef(_appEl_9, viewFactory_MenuItemGroupsComponent10);
+    _NgIf_9_9 = new NgIf(_appEl_9, _TemplateRef_9_8);
+    import3.Text _text_10 = new import3.Text('\n            ');
     var _anchor_11 = ngAnchor.clone(false);
     _appEl_11 = new ViewContainer(11, 1, this, _anchor_11);
-    TemplateRef _TemplateRef_11_6 = new TemplateRef(_appEl_11, viewFactory_MenuItemGroupsComponent11);
-    _NgIf_11_7 = new NgIf(_appEl_11, _TemplateRef_11_6);
-    import4.Text _text_12 = new import4.Text('\n          ');
-    _compView_1.create(_MaterialSelectItemComponent_1_9, [
+    TemplateRef _TemplateRef_11_8 = new TemplateRef(_appEl_11, viewFactory_MenuItemGroupsComponent11);
+    _NgIf_11_9 = new NgIf(_appEl_11, _TemplateRef_11_8);
+    import3.Text _text_12 = new import3.Text('\n          ');
+    _compView_1.create(_MaterialSelectItemComponent_1_11, [
       [_text_2, _appEl_3, _text_4, _appEl_5, _text_6, _appEl_7, _text_8, _appEl_9, _text_10, _appEl_11, _text_12]
     ]);
-    import4.Text _text_13 = new import4.Text('\n          ');
+    import3.Text _text_13 = new import3.Text('\n          ');
     var _anchor_14 = ngAnchor.clone(false);
     _appEl_14 = new ViewContainer(14, null, this, _anchor_14);
-    TemplateRef _TemplateRef_14_6 = new TemplateRef(_appEl_14, viewFactory_MenuItemGroupsComponent12);
-    _NgIf_14_7 = new NgIf(_appEl_14, _TemplateRef_14_6);
-    import4.Text _text_15 = new import4.Text('\n        ');
-    final subscription_0 = _MaterialSelectItemComponent_1_9.trigger.listen(eventHandler1(_handle_trigger_1_0));
+    TemplateRef _TemplateRef_14_8 = new TemplateRef(_appEl_14, viewFactory_MenuItemGroupsComponent12);
+    _NgIf_14_9 = new NgIf(_appEl_14, _TemplateRef_14_8);
+    import3.Text _text_15 = new import3.Text('\n        ');
+    final subscription_0 = _MaterialSelectItemComponent_1_11.trigger.listen(eventHandler1(_handle_trigger_1_0));
     init([_text_0, _appEl_1, _text_13, _appEl_14, _text_15], [subscription_0]);
     return null;
   }
 
   @override
   dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
-    if ((identical(token, import23.FocusActivableItemDirective) && ((1 <= nodeIndex) && (nodeIndex <= 12)))) {
-      return _FocusActivableItemDirective_1_7;
+    if ((identical(token, import22.FocusActivableItemDirective) && ((1 <= nodeIndex) && (nodeIndex <= 12)))) {
+      return _FocusActivableItemDirective_1_9;
     }
-    if ((((identical(token, import25.MaterialSelectItemComponent) || identical(token, import38.SelectionItem)) || identical(token, import39.HasRenderer)) && ((1 <= nodeIndex) && (nodeIndex <= 12)))) {
-      return _MaterialSelectItemComponent_1_9;
+    if ((((identical(token, import24.MaterialSelectItemComponent) || identical(token, import37.SelectionItem)) || identical(token, import38.HasRenderer)) && ((1 <= nodeIndex) && (nodeIndex <= 12)))) {
+      return _MaterialSelectItemComponent_1_11;
     }
-    if ((identical(token, import27.PopupSourceDirective) && ((1 <= nodeIndex) && (nodeIndex <= 12)))) {
-      return _PopupSourceDirective_1_11;
+    if ((identical(token, import26.PopupSourceDirective) && ((1 <= nodeIndex) && (nodeIndex <= 12)))) {
+      return _PopupSourceDirective_1_13;
     }
-    if ((identical(token, import23.FocusableActivateItem) && ((1 <= nodeIndex) && (nodeIndex <= 12)))) {
-      return _FocusableActivateItem_1_12;
+    if ((identical(token, import22.FocusableActivateItem) && ((1 <= nodeIndex) && (nodeIndex <= 12)))) {
+      return _FocusableActivateItem_1_14;
     }
-    if ((identical(token, import29.TooltipController) && ((1 <= nodeIndex) && (nodeIndex <= 12)))) {
-      return _TooltipController_1_15;
+    if ((identical(token, import28.TooltipController) && ((1 <= nodeIndex) && (nodeIndex <= 12)))) {
+      return _TooltipController_1_17;
     }
     return notFoundResult;
   }
@@ -661,82 +670,82 @@ class _ViewMenuItemGroupsComponent6 extends AppView<import2.MenuItemGroupsCompon
     final int local_i = parentView.parentView.parentView.locals['index'];
     final int local_j = parentView.locals['index'];
     final local_item = parentView.locals['\$implicit'];
-    final import16.MenuItemGroup<dynamic> local_group = parentView.parentView.parentView.locals['\$implicit'];
+    final import15.MenuItemGroup<dynamic> local_group = parentView.parentView.parentView.locals['\$implicit'];
     final currVal_6 = _ctx.hasAutoFocus(((_ctx.activeModel == null) ? null : _ctx.activeModel.id(local_item)));
     if (!identical(_expr_6, currVal_6)) {
-      _AutoFocusDirective_1_6.autoFocus = currVal_6;
+      _AutoFocusDirective_1_8.autoFocus = currVal_6;
       _expr_6 = currVal_6;
     }
     if (firstCheck) {
-      _AutoFocusDirective_1_6.ngOnInit();
+      _AutoFocusDirective_1_8.ngOnInit();
     }
     final currVal_7 = ((_ctx.activeModel == null) ? null : _ctx.activeModel.id(local_item));
     if (!identical(_expr_7, currVal_7)) {
-      _FocusActivableItemDirective_1_7.key = currVal_7;
+      _FocusActivableItemDirective_1_9.key = currVal_7;
       _expr_7 = currVal_7;
     }
     final currVal_8 = _ctx.tooltipPositions;
     if (!identical(_expr_8, currVal_8)) {
-      _MaterialTooltipDirective_1_8.positions = currVal_8;
+      _MaterialTooltipDirective_1_10.positions = currVal_8;
       _expr_8 = currVal_8;
     }
     final currVal_9 = local_item.tooltip;
     if (!identical(_expr_9, currVal_9)) {
-      _MaterialTooltipDirective_1_8.text = currVal_9;
+      _MaterialTooltipDirective_1_10.text = currVal_9;
       _expr_9 = currVal_9;
     }
     final currVal_10 = local_item.showTooltip;
     if (!identical(_expr_10, currVal_10)) {
-      _MaterialTooltipDirective_1_8.canShow = currVal_10;
+      _MaterialTooltipDirective_1_10.canShow = currVal_10;
       _expr_10 = currVal_10;
     }
     if (firstCheck) {
-      _MaterialTooltipDirective_1_8.ngOnInit();
+      _MaterialTooltipDirective_1_10.ngOnInit();
     }
     if (firstCheck) {
-      _MaterialSelectItemComponent_1_9.useCheckMarks = 'true';
-      _MaterialSelectItemComponent_1_9.closeOnActivate = 'false';
+      _MaterialSelectItemComponent_1_11.useCheckMarks = 'true';
+      _MaterialSelectItemComponent_1_11.closeOnActivate = 'false';
     }
     final currVal_11 = _ctx.isItemActive(local_item);
     if (!identical(_expr_11, currVal_11)) {
-      _MaterialSelectItemComponent_1_9.active = currVal_11;
+      _MaterialSelectItemComponent_1_11.active = currVal_11;
       _expr_11 = currVal_11;
     }
     final bool currVal_12 = !local_item.enabled;
     if (!identical(_expr_12, currVal_12)) {
-      _MaterialSelectItemComponent_1_9.disabled = currVal_12;
+      _MaterialSelectItemComponent_1_11.disabled = currVal_12;
       _expr_12 = currVal_12;
     }
     final currVal_13 = _ctx.getItemValue(local_item);
     if (!identical(_expr_13, currVal_13)) {
-      _MaterialSelectItemComponent_1_9.value = currVal_13;
+      _MaterialSelectItemComponent_1_11.value = currVal_13;
       _expr_13 = currVal_13;
     }
     final currVal_15 = _ctx.shouldSelectItemOnClick(local_item);
     if (!identical(_expr_15, currVal_15)) {
-      _MaterialSelectItemComponent_1_9.selectOnActivate = currVal_15;
+      _MaterialSelectItemComponent_1_11.selectOnActivate = currVal_15;
       _expr_15 = currVal_15;
     }
     final currVal_16 = _ctx.getSelectionModel(local_group);
     if (!identical(_expr_16, currVal_16)) {
-      _MaterialSelectItemComponent_1_9.selection = currVal_16;
+      _MaterialSelectItemComponent_1_11.selection = currVal_16;
       _expr_16 = currVal_16;
     }
     if (firstCheck) {
-      (_NgClass_1_10.initialClasses = 'menu-item');
+      (_NgClass_1_12.initialClasses = 'menu-item');
     }
     final currVal_19 = local_item.cssClasses;
     if (!identical(_expr_19, currVal_19)) {
-      _NgClass_1_10.rawClass = currVal_19;
+      _NgClass_1_12.rawClass = currVal_19;
       _expr_19 = currVal_19;
     }
-    _NgClass_1_10.ngDoCheck();
-    _NgIf_3_7.ngIf = local_item.hasIcon;
-    _NgIf_5_7.ngIf = _ctx.hasHighlight;
-    _NgIf_7_7.ngIf = !_ctx.hasHighlight;
-    _NgIf_9_7.ngIf = local_item.itemSuffixes.isNotEmpty;
-    _NgIf_11_7.ngIf = local_item.hasSubMenu;
-    _NgIf_14_7.ngIf = local_item.hasSubMenu;
+    _NgClass_1_12.ngDoCheck();
+    _NgIf_3_9.ngIf = local_item.hasIcon;
+    _NgIf_5_9.ngIf = _ctx.hasHighlight;
+    _NgIf_7_9.ngIf = !_ctx.hasHighlight;
+    _NgIf_9_9.ngIf = local_item.itemSuffixes.isNotEmpty;
+    _NgIf_11_9.ngIf = local_item.hasSubMenu;
+    _NgIf_14_9.ngIf = local_item.hasSubMenu;
     _appEl_1.detectChangesInNestedViews();
     _appEl_3.detectChangesInNestedViews();
     _appEl_5.detectChangesInNestedViews();
@@ -777,17 +786,17 @@ class _ViewMenuItemGroupsComponent6 extends AppView<import2.MenuItemGroupsCompon
     _compView_1.detectHostChanges(firstCheck);
     _compView_1.detectChanges();
     if (firstCheck) {
-      _MaterialTooltipDirective_1_8.ngAfterViewInit();
+      _MaterialTooltipDirective_1_10.ngAfterViewInit();
     }
     if (firstCheck) {
-      _PopupSourceDirective_1_11.ngAfterViewInit();
+      _PopupSourceDirective_1_13.ngAfterViewInit();
     }
   }
 
   @override
   void dirtyParentQueriesInternal() {
-    (parentView.parentView.parentView.parentView as ViewMenuItemGroupsComponent0)._query_AutoFocusDirective_1_0.setDirty();
-    (parentView.parentView.parentView.parentView as ViewMenuItemGroupsComponent0)._viewQuery_FocusableActivateItem_0.setDirty();
+    (parentView.parentView.parentView.parentView as ViewMenuItemGroupsComponent0)._query_AutoFocusDirective_1_0_isDirty = true;
+    (parentView.parentView.parentView.parentView as ViewMenuItemGroupsComponent0)._query_FocusableActivateItem_1_0_isDirty = true;
   }
 
   @override
@@ -800,16 +809,16 @@ class _ViewMenuItemGroupsComponent6 extends AppView<import2.MenuItemGroupsCompon
     _appEl_11?.destroyNestedViews();
     _appEl_14?.destroyNestedViews();
     _compView_1?.destroy();
-    _AutoFocusDirective_1_6.ngOnDestroy();
-    _MaterialTooltipDirective_1_8.ngOnDestroy();
-    _MaterialSelectItemComponent_1_9.ngOnDestroy();
-    _NgClass_1_10.ngOnDestroy();
-    _PopupSourceDirective_1_11.ngOnDestroy();
+    _AutoFocusDirective_1_8.ngOnDestroy();
+    _MaterialTooltipDirective_1_10.ngOnDestroy();
+    _MaterialSelectItemComponent_1_11.ngOnDestroy();
+    _NgClass_1_12.ngOnDestroy();
+    _PopupSourceDirective_1_13.ngOnDestroy();
   }
 
   void _handle_trigger_1_0($event) {
     final local_item = parentView.locals['\$implicit'];
-    final import16.MenuItemGroup<dynamic> local_group = parentView.parentView.parentView.locals['\$implicit'];
+    final import15.MenuItemGroup<dynamic> local_group = parentView.parentView.parentView.locals['\$implicit'];
     ctx.handleSelectItemTrigger(local_item, local_group, $event);
   }
 }
@@ -819,22 +828,22 @@ AppView<import2.MenuItemGroupsComponent> viewFactory_MenuItemGroupsComponent6(Ap
 }
 
 class _ViewMenuItemGroupsComponent7 extends AppView<import2.MenuItemGroupsComponent> {
-  import4.Element _el_0;
-  import17.ViewMaterialIconComponent0 _compView_0;
-  import19.MaterialIconComponent _MaterialIconComponent_0_4;
+  import3.Element _el_0;
+  import18.ViewMaterialIconComponent0 _compView_0;
+  import19.MaterialIconComponent _MaterialIconComponent_0_5;
   var _expr_0;
-  _ViewMenuItemGroupsComponent7(AppView<dynamic> parentView, num parentIndex) : super(import10.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMenuItemGroupsComponent7(AppView<dynamic> parentView, num parentIndex) : super(import9.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMenuItemGroupsComponent0._renderType;
   }
   @override
   ComponentRef<import2.MenuItemGroupsComponent> build() {
-    _compView_0 = new import17.ViewMaterialIconComponent0(this, 0);
+    _compView_0 = new import18.ViewMaterialIconComponent0(this, 0);
     _el_0 = _compView_0.rootEl;
     _el_0.className = 'material-list-item-primary';
     addShimC(_el_0);
-    _MaterialIconComponent_0_4 = new import19.MaterialIconComponent(_el_0);
-    import4.Text _text_1 = new import4.Text('\n            ');
-    _compView_0.create(_MaterialIconComponent_0_4, []);
+    _MaterialIconComponent_0_5 = new import19.MaterialIconComponent(_el_0);
+    import3.Text _text_1 = new import3.Text('\n            ');
+    _compView_0.create(_MaterialIconComponent_0_5, []);
     init0(_el_0);
     return null;
   }
@@ -846,7 +855,7 @@ class _ViewMenuItemGroupsComponent7 extends AppView<import2.MenuItemGroupsCompon
     changed = false;
     final currVal_0 = local_item.icon;
     if (!identical(_expr_0, currVal_0)) {
-      _MaterialIconComponent_0_4.icon = currVal_0;
+      _MaterialIconComponent_0_5.icon = currVal_0;
       changed = true;
       _expr_0 = currVal_0;
     }
@@ -867,30 +876,30 @@ AppView<import2.MenuItemGroupsComponent> viewFactory_MenuItemGroupsComponent7(Ap
 }
 
 class _ViewMenuItemGroupsComponent8 extends AppView<import2.MenuItemGroupsComponent> {
-  import4.Element _el_0;
-  import4.Element _el_2;
-  import40.ViewHighlightedTextComponent0 _compView_2;
-  import41.HighlightedTextComponent _HighlightedTextComponent_2_4;
+  import3.Element _el_0;
+  import3.Element _el_2;
+  import39.ViewHighlightedTextComponent0 _compView_2;
+  import40.HighlightedTextComponent _HighlightedTextComponent_2_5;
   var _expr_0;
-  _ViewMenuItemGroupsComponent8(AppView<dynamic> parentView, num parentIndex) : super(import10.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMenuItemGroupsComponent8(AppView<dynamic> parentView, num parentIndex) : super(import9.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMenuItemGroupsComponent0._renderType;
   }
   @override
   ComponentRef<import2.MenuItemGroupsComponent> build() {
-    var doc = import4.document;
+    var doc = import3.document;
     _el_0 = doc.createElement('span');
     _el_0.className = 'menu-item-label';
     addShimE(_el_0);
-    import4.Text _text_1 = new import4.Text('\n              ');
+    import3.Text _text_1 = new import3.Text('\n              ');
     _el_0.append(_text_1);
-    _compView_2 = new import40.ViewHighlightedTextComponent0(this, 2);
+    _compView_2 = new import39.ViewHighlightedTextComponent0(this, 2);
     _el_2 = _compView_2.rootEl;
     _el_0.append(_el_2);
     addShimC(_el_2);
-    _HighlightedTextComponent_2_4 = new import41.HighlightedTextComponent();
-    import4.Text _text_3 = new import4.Text('\n              ');
-    _compView_2.create(_HighlightedTextComponent_2_4, []);
-    import4.Text _text_4 = new import4.Text('\n            ');
+    _HighlightedTextComponent_2_5 = new import40.HighlightedTextComponent();
+    import3.Text _text_3 = new import3.Text('\n              ');
+    _compView_2.create(_HighlightedTextComponent_2_5, []);
+    import3.Text _text_4 = new import3.Text('\n            ');
     _el_0.append(_text_4);
     init0(_el_0);
     return null;
@@ -898,8 +907,8 @@ class _ViewMenuItemGroupsComponent8 extends AppView<import2.MenuItemGroupsCompon
 
   @override
   dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
-    if ((identical(token, import41.HighlightedTextComponent) && ((2 <= nodeIndex) && (nodeIndex <= 3)))) {
-      return _HighlightedTextComponent_2_4;
+    if ((identical(token, import40.HighlightedTextComponent) && ((2 <= nodeIndex) && (nodeIndex <= 3)))) {
+      return _HighlightedTextComponent_2_5;
     }
     return notFoundResult;
   }
@@ -912,7 +921,7 @@ class _ViewMenuItemGroupsComponent8 extends AppView<import2.MenuItemGroupsCompon
     changed = false;
     final currVal_0 = _ctx.highlighted(local_item.uiDisplayName);
     if (!identical(_expr_0, currVal_0)) {
-      _HighlightedTextComponent_2_4.segments = currVal_0;
+      _HighlightedTextComponent_2_5.segments = currVal_0;
       changed = true;
       _expr_0 = currVal_0;
     }
@@ -933,23 +942,23 @@ AppView<import2.MenuItemGroupsComponent> viewFactory_MenuItemGroupsComponent8(Ap
 }
 
 class _ViewMenuItemGroupsComponent9 extends AppView<import2.MenuItemGroupsComponent> {
-  import4.Element _el_0;
-  import4.Text _text_2;
+  import3.Element _el_0;
+  import3.Text _text_2;
   var _expr_0;
-  _ViewMenuItemGroupsComponent9(AppView<dynamic> parentView, num parentIndex) : super(import10.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMenuItemGroupsComponent9(AppView<dynamic> parentView, num parentIndex) : super(import9.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMenuItemGroupsComponent0._renderType;
   }
   @override
   ComponentRef<import2.MenuItemGroupsComponent> build() {
-    var doc = import4.document;
+    var doc = import3.document;
     _el_0 = doc.createElement('span');
     _el_0.className = 'menu-item-label';
     addShimE(_el_0);
-    import4.Text _text_1 = new import4.Text('\n              ');
+    import3.Text _text_1 = new import3.Text('\n              ');
     _el_0.append(_text_1);
-    _text_2 = new import4.Text('');
+    _text_2 = new import3.Text('');
     _el_0.append(_text_2);
-    import4.Text _text_3 = new import4.Text('\n            ');
+    import3.Text _text_3 = new import3.Text('\n            ');
     _el_0.append(_text_3);
     init0(_el_0);
     return null;
@@ -958,7 +967,7 @@ class _ViewMenuItemGroupsComponent9 extends AppView<import2.MenuItemGroupsCompon
   @override
   void detectChangesInternal() {
     final local_item = parentView.parentView.locals['\$implicit'];
-    final currVal_0 = import12.interpolate0(local_item.uiDisplayName);
+    final currVal_0 = import11.interpolate0(local_item.uiDisplayName);
     if (!identical(_expr_0, currVal_0)) {
       _text_2.text = currVal_0;
       _expr_0 = currVal_0;
@@ -971,31 +980,31 @@ AppView<import2.MenuItemGroupsComponent> viewFactory_MenuItemGroupsComponent9(Ap
 }
 
 class _ViewMenuItemGroupsComponent10 extends AppView<import2.MenuItemGroupsComponent> {
-  import4.Element _el_0;
-  import42.ViewMenuItemAffixListComponent0 _compView_0;
-  import43.MenuItemAffixListComponent _MenuItemAffixListComponent_0_4;
+  import3.Element _el_0;
+  import41.ViewMenuItemAffixListComponent0 _compView_0;
+  import42.MenuItemAffixListComponent _MenuItemAffixListComponent_0_5;
   bool _expr_0;
   var _expr_1;
-  _ViewMenuItemGroupsComponent10(AppView<dynamic> parentView, num parentIndex) : super(import10.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMenuItemGroupsComponent10(AppView<dynamic> parentView, num parentIndex) : super(import9.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMenuItemGroupsComponent0._renderType;
   }
   @override
   ComponentRef<import2.MenuItemGroupsComponent> build() {
-    _compView_0 = new import42.ViewMenuItemAffixListComponent0(this, 0);
+    _compView_0 = new import41.ViewMenuItemAffixListComponent0(this, 0);
     _el_0 = _compView_0.rootEl;
     _el_0.className = 'suffix-list';
     addShimC(_el_0);
-    _MenuItemAffixListComponent_0_4 = new import43.MenuItemAffixListComponent(_compView_0.ref, parentView.parentView.parentView.parentView.parentView.parentView.injectorGet(import44.MenuRoot, parentView.parentView.parentView.parentView.parentView.viewData.parentIndex, null));
-    import4.Text _text_1 = new import4.Text('\n            ');
-    _compView_0.create(_MenuItemAffixListComponent_0_4, []);
+    _MenuItemAffixListComponent_0_5 = new import42.MenuItemAffixListComponent(_compView_0.ref, parentView.parentView.parentView.parentView.parentView.parentView.injectorGet(import43.MenuRoot, parentView.parentView.parentView.parentView.parentView.viewData.parentIndex, null));
+    import3.Text _text_1 = new import3.Text('\n            ');
+    _compView_0.create(_MenuItemAffixListComponent_0_5, []);
     init0(_el_0);
     return null;
   }
 
   @override
   dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
-    if ((identical(token, import43.MenuItemAffixListComponent) && ((0 <= nodeIndex) && (nodeIndex <= 1)))) {
-      return _MenuItemAffixListComponent_0_4;
+    if ((identical(token, import42.MenuItemAffixListComponent) && ((0 <= nodeIndex) && (nodeIndex <= 1)))) {
+      return _MenuItemAffixListComponent_0_5;
     }
     return notFoundResult;
   }
@@ -1007,13 +1016,13 @@ class _ViewMenuItemGroupsComponent10 extends AppView<import2.MenuItemGroupsCompo
     changed = false;
     final bool currVal_0 = !local_item.enabled;
     if (!identical(_expr_0, currVal_0)) {
-      _MenuItemAffixListComponent_0_4.disabled = currVal_0;
+      _MenuItemAffixListComponent_0_5.disabled = currVal_0;
       changed = true;
       _expr_0 = currVal_0;
     }
     final currVal_1 = local_item.itemSuffixes;
     if (!identical(_expr_1, currVal_1)) {
-      _MenuItemAffixListComponent_0_4.items = currVal_1;
+      _MenuItemAffixListComponent_0_5.items = currVal_1;
       changed = true;
       _expr_1 = currVal_1;
     }
@@ -1026,7 +1035,7 @@ class _ViewMenuItemGroupsComponent10 extends AppView<import2.MenuItemGroupsCompo
   @override
   void destroyInternal() {
     _compView_0?.destroy();
-    _MenuItemAffixListComponent_0_4.ngOnDestroy();
+    _MenuItemAffixListComponent_0_5.ngOnDestroy();
   }
 }
 
@@ -1035,22 +1044,22 @@ AppView<import2.MenuItemGroupsComponent> viewFactory_MenuItemGroupsComponent10(A
 }
 
 class _ViewMenuItemGroupsComponent11 extends AppView<import2.MenuItemGroupsComponent> {
-  import4.Element _el_0;
-  import17.ViewMaterialIconComponent0 _compView_0;
-  import19.MaterialIconComponent _MaterialIconComponent_0_4;
-  _ViewMenuItemGroupsComponent11(AppView<dynamic> parentView, num parentIndex) : super(import10.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  import3.Element _el_0;
+  import18.ViewMaterialIconComponent0 _compView_0;
+  import19.MaterialIconComponent _MaterialIconComponent_0_5;
+  _ViewMenuItemGroupsComponent11(AppView<dynamic> parentView, num parentIndex) : super(import9.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMenuItemGroupsComponent0._renderType;
   }
   @override
   ComponentRef<import2.MenuItemGroupsComponent> build() {
-    _compView_0 = new import17.ViewMaterialIconComponent0(this, 0);
+    _compView_0 = new import18.ViewMaterialIconComponent0(this, 0);
     _el_0 = _compView_0.rootEl;
     _el_0.className = 'material-list-item-secondary submenu-icon';
     createAttr(_el_0, 'icon', 'arrow_drop_down');
     addShimC(_el_0);
-    _MaterialIconComponent_0_4 = new import19.MaterialIconComponent(_el_0);
-    import4.Text _text_1 = new import4.Text('\n            ');
-    _compView_0.create(_MaterialIconComponent_0_4, []);
+    _MaterialIconComponent_0_5 = new import19.MaterialIconComponent(_el_0);
+    import3.Text _text_1 = new import3.Text('\n            ');
+    _compView_0.create(_MaterialIconComponent_0_5, []);
     init0(_el_0);
     return null;
   }
@@ -1061,7 +1070,7 @@ class _ViewMenuItemGroupsComponent11 extends AppView<import2.MenuItemGroupsCompo
     bool firstCheck = (this.cdState == 0);
     changed = false;
     if (firstCheck) {
-      _MaterialIconComponent_0_4.icon = 'arrow_drop_down';
+      _MaterialIconComponent_0_5.icon = 'arrow_drop_down';
       changed = true;
     }
     if (changed) {
@@ -1081,68 +1090,68 @@ AppView<import2.MenuItemGroupsComponent> viewFactory_MenuItemGroupsComponent11(A
 }
 
 class _ViewMenuItemGroupsComponent12 extends AppView<import2.MenuItemGroupsComponent> {
-  import4.Element _el_0;
-  import45.ViewMaterialPopupComponent0 _compView_0;
+  import3.Element _el_0;
+  import44.ViewMaterialPopupComponent0 _compView_0;
   ViewContainer _appEl_0;
-  import46.MaterialPopupComponent _MaterialPopupComponent_0_6;
-  dynamic __PopupRef_0_8;
-  dynamic __PopupHierarchy_0_10;
+  import45.MaterialPopupComponent _MaterialPopupComponent_0_8;
+  dynamic __PopupRef_0_10;
+  dynamic __PopupHierarchy_0_12;
   ViewContainer _appEl_2;
-  import47.DeferredContentDirective _DeferredContentDirective_2_7;
+  import46.DeferredContentDirective _DeferredContentDirective_2_9;
   var _expr_2;
   var _expr_3;
   bool _expr_4;
-  _ViewMenuItemGroupsComponent12(AppView<dynamic> parentView, num parentIndex) : super(import10.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMenuItemGroupsComponent12(AppView<dynamic> parentView, num parentIndex) : super(import9.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMenuItemGroupsComponent0._renderType;
   }
-  dynamic get _PopupRef_0_8 {
-    if ((this.__PopupRef_0_8 == null)) {
-      (__PopupRef_0_8 = import46.getResolvedPopupRef(this._MaterialPopupComponent_0_6));
+  dynamic get _PopupRef_0_10 {
+    if ((this.__PopupRef_0_10 == null)) {
+      (__PopupRef_0_10 = import45.getResolvedPopupRef(this._MaterialPopupComponent_0_8));
     }
-    return this.__PopupRef_0_8;
+    return this.__PopupRef_0_10;
   }
 
-  dynamic get _PopupHierarchy_0_10 {
-    if ((this.__PopupHierarchy_0_10 == null)) {
-      (__PopupHierarchy_0_10 = import46.getHierarchy(this._MaterialPopupComponent_0_6));
+  dynamic get _PopupHierarchy_0_12 {
+    if ((this.__PopupHierarchy_0_12 == null)) {
+      (__PopupHierarchy_0_12 = import45.getHierarchy(this._MaterialPopupComponent_0_8));
     }
-    return this.__PopupHierarchy_0_10;
+    return this.__PopupHierarchy_0_12;
   }
 
   @override
   ComponentRef<import2.MenuItemGroupsComponent> build() {
-    _compView_0 = new import45.ViewMaterialPopupComponent0(this, 0);
+    _compView_0 = new import44.ViewMaterialPopupComponent0(this, 0);
     _el_0 = _compView_0.rootEl;
     createAttr(_el_0, 'enforceSpaceConstraints', '');
     addShimC(_el_0);
     _appEl_0 = new ViewContainer(0, null, this, _el_0);
-    _MaterialPopupComponent_0_6 = new import46.MaterialPopupComponent(parentView.parentView.parentView.parentView.parentView.parentView.injectorGet(import48.PopupHierarchy, parentView.parentView.parentView.parentView.parentView.viewData.parentIndex, null), parentView.parentView.parentView.parentView.parentView.parentView.injectorGet(import46.MaterialPopupComponent, parentView.parentView.parentView.parentView.parentView.viewData.parentIndex, null), null, parentView.parentView.parentView.parentView.parentView.parentView.injectorGet(import49.NgZone, parentView.parentView.parentView.parentView.parentView.viewData.parentIndex), parentView.parentView.parentView.parentView.parentView.parentView.injectorGet(import50.OverlayService, parentView.parentView.parentView.parentView.parentView.viewData.parentIndex), parentView.parentView.parentView.parentView.parentView.parentView.injectorGet(import51.ZIndexer, parentView.parentView.parentView.parentView.parentView.viewData.parentIndex), parentView.parentView.parentView.parentView.parentView.parentView.injectorGet(const import52.OpaqueToken<List<import54.RelativePosition>>('defaultPopupPositions'), parentView.parentView.parentView.parentView.parentView.viewData.parentIndex), parentView.parentView.parentView.parentView.parentView.parentView.injectorGet(const import52.OpaqueToken('overlayRepositionLoop'), parentView.parentView.parentView.parentView.parentView.viewData.parentIndex), parentView.parentView.parentView.parentView.parentView.parentView.injectorGet(import55.PopupSizeProvider, parentView.parentView.parentView.parentView.parentView.viewData.parentIndex, null), _compView_0.ref, _appEl_0, new ElementRef(_el_0));
-    import4.Text _text_1 = new import4.Text('\n            ');
+    _MaterialPopupComponent_0_8 = new import45.MaterialPopupComponent(parentView.parentView.parentView.parentView.parentView.parentView.injectorGet(import47.PopupHierarchy, parentView.parentView.parentView.parentView.parentView.viewData.parentIndex, null), parentView.parentView.parentView.parentView.parentView.parentView.injectorGet(import45.MaterialPopupComponent, parentView.parentView.parentView.parentView.parentView.viewData.parentIndex, null), null, parentView.parentView.parentView.parentView.parentView.parentView.injectorGet(import48.NgZone, parentView.parentView.parentView.parentView.parentView.viewData.parentIndex), parentView.parentView.parentView.parentView.parentView.parentView.injectorGet(import49.OverlayService, parentView.parentView.parentView.parentView.parentView.viewData.parentIndex), parentView.parentView.parentView.parentView.parentView.parentView.injectorGet(import50.ZIndexer, parentView.parentView.parentView.parentView.parentView.viewData.parentIndex), parentView.parentView.parentView.parentView.parentView.parentView.injectorGet(const import51.OpaqueToken<List<import53.RelativePosition>>('defaultPopupPositions'), parentView.parentView.parentView.parentView.parentView.viewData.parentIndex), parentView.parentView.parentView.parentView.parentView.parentView.injectorGet(const import51.OpaqueToken('overlayRepositionLoop'), parentView.parentView.parentView.parentView.parentView.viewData.parentIndex), parentView.parentView.parentView.parentView.parentView.parentView.injectorGet(import54.PopupSizeProvider, parentView.parentView.parentView.parentView.parentView.viewData.parentIndex, null), _compView_0.ref, _appEl_0, new ElementRef(_el_0));
+    import3.Text _text_1 = new import3.Text('\n            ');
     var _anchor_2 = ngAnchor.clone(false);
     _appEl_2 = new ViewContainer(2, 0, this, _anchor_2);
-    TemplateRef _TemplateRef_2_6 = new TemplateRef(_appEl_2, viewFactory_MenuItemGroupsComponent13);
-    _DeferredContentDirective_2_7 = new import47.DeferredContentDirective(_appEl_2, _TemplateRef_2_6, _MaterialPopupComponent_0_6);
-    import4.Text _text_3 = new import4.Text('\n          ');
-    _compView_0.create(_MaterialPopupComponent_0_6, [
+    TemplateRef _TemplateRef_2_8 = new TemplateRef(_appEl_2, viewFactory_MenuItemGroupsComponent13);
+    _DeferredContentDirective_2_9 = new import46.DeferredContentDirective(_appEl_2, _TemplateRef_2_8, _MaterialPopupComponent_0_8);
+    import3.Text _text_3 = new import3.Text('\n          ');
+    _compView_0.create(_MaterialPopupComponent_0_8, [
       const [],
       [_text_1, _appEl_2, _text_3],
       const []
     ]);
-    final subscription_0 = _MaterialPopupComponent_0_6.onVisible.listen(eventHandler1(_handle_visibleChange_0_0));
+    final subscription_0 = _MaterialPopupComponent_0_8.onVisible.listen(eventHandler1(_handle_visibleChange_0_0));
     init([_appEl_0], [subscription_0]);
     return null;
   }
 
   @override
   dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
-    if ((((identical(token, import46.MaterialPopupComponent) || identical(token, import57.DeferredContentAware)) || identical(token, import35.DropdownHandle)) && ((0 <= nodeIndex) && (nodeIndex <= 3)))) {
-      return _MaterialPopupComponent_0_6;
+    if ((((identical(token, import45.MaterialPopupComponent) || identical(token, import56.DeferredContentAware)) || identical(token, import34.DropdownHandle)) && ((0 <= nodeIndex) && (nodeIndex <= 3)))) {
+      return _MaterialPopupComponent_0_8;
     }
-    if ((identical(token, import33.PopupRef) && ((0 <= nodeIndex) && (nodeIndex <= 3)))) {
-      return _PopupRef_0_8;
+    if ((identical(token, import32.PopupRef) && ((0 <= nodeIndex) && (nodeIndex <= 3)))) {
+      return _PopupRef_0_10;
     }
-    if ((identical(token, import48.PopupHierarchy) && ((0 <= nodeIndex) && (nodeIndex <= 3)))) {
-      return _PopupHierarchy_0_10;
+    if ((identical(token, import47.PopupHierarchy) && ((0 <= nodeIndex) && (nodeIndex <= 3)))) {
+      return _PopupHierarchy_0_12;
     }
     return notFoundResult;
   }
@@ -1151,36 +1160,36 @@ class _ViewMenuItemGroupsComponent12 extends AppView<import2.MenuItemGroupsCompo
   void detectChangesInternal() {
     final import2.MenuItemGroupsComponent _ctx = ctx;
     bool firstCheck = (this.cdState == 0);
-    final local_subMenuSource = (parentView as _ViewMenuItemGroupsComponent6)._PopupSourceDirective_1_11;
+    final local_subMenuSource = (parentView as _ViewMenuItemGroupsComponent6)._PopupSourceDirective_1_13;
     final local_item = parentView.parentView.locals['\$implicit'];
     if (firstCheck) {
-      _MaterialPopupComponent_0_6.autoDismiss = false;
-      _MaterialPopupComponent_0_6.enforceSpaceConstraints = true;
+      _MaterialPopupComponent_0_8.autoDismiss = false;
+      _MaterialPopupComponent_0_8.enforceSpaceConstraints = true;
     }
     final currVal_2 = _ctx.preferredSubMenuPositions;
     if (!identical(_expr_2, currVal_2)) {
-      _MaterialPopupComponent_0_6.preferredPositions = currVal_2;
+      _MaterialPopupComponent_0_8.preferredPositions = currVal_2;
       _expr_2 = currVal_2;
     }
     final currVal_3 = local_subMenuSource;
     if (!identical(_expr_3, currVal_3)) {
-      _MaterialPopupComponent_0_6.source = currVal_3;
+      _MaterialPopupComponent_0_8.source = currVal_3;
       _expr_3 = currVal_3;
     }
     final currVal_4 = _ctx.isSubMenuVisible(local_item);
     if (!identical(_expr_4, currVal_4)) {
-      _MaterialPopupComponent_0_6.visible = currVal_4;
+      _MaterialPopupComponent_0_8.visible = currVal_4;
       _expr_4 = currVal_4;
     }
     if (firstCheck) {
-      (_DeferredContentDirective_2_7.preserveDimensions = true);
+      (_DeferredContentDirective_2_9.preserveDimensions = true);
     }
     _appEl_0.detectChangesInNestedViews();
     _appEl_2.detectChangesInNestedViews();
     _compView_0.detectHostChanges(firstCheck);
     _compView_0.detectChanges();
     if (firstCheck) {
-      _MaterialPopupComponent_0_6.ngAfterViewInit();
+      _MaterialPopupComponent_0_8.ngAfterViewInit();
     }
   }
 
@@ -1189,8 +1198,8 @@ class _ViewMenuItemGroupsComponent12 extends AppView<import2.MenuItemGroupsCompo
     _appEl_0?.destroyNestedViews();
     _appEl_2?.destroyNestedViews();
     _compView_0?.destroy();
-    _DeferredContentDirective_2_7.ngOnDestroy();
-    _MaterialPopupComponent_0_6.ngOnDestroy();
+    _DeferredContentDirective_2_9.ngOnDestroy();
+    _MaterialPopupComponent_0_8.ngOnDestroy();
   }
 
   void _handle_visibleChange_0_0($event) {
@@ -1204,37 +1213,37 @@ AppView<import2.MenuItemGroupsComponent> viewFactory_MenuItemGroupsComponent12(A
 }
 
 class _ViewMenuItemGroupsComponent13 extends AppView<import2.MenuItemGroupsComponent> {
-  import4.Element _el_0;
-  import58.ViewMaterialListComponent0 _compView_0;
-  import59.MaterialListComponent _MaterialListComponent_0_4;
-  import4.Element _el_2;
+  import3.Element _el_0;
+  import57.ViewMaterialListComponent0 _compView_0;
+  import58.MaterialListComponent _MaterialListComponent_0_5;
+  import3.Element _el_2;
   ViewMenuItemGroupsComponent0 _compView_2;
-  import22.AutoFocusDirective _AutoFocusDirective_2_4;
-  import2.MenuItemGroupsComponent _MenuItemGroupsComponent_2_5;
+  import21.AutoFocusDirective _AutoFocusDirective_2_5;
+  import2.MenuItemGroupsComponent _MenuItemGroupsComponent_2_6;
   var _expr_0;
   var _expr_2;
   var _expr_3;
-  _ViewMenuItemGroupsComponent13(AppView<dynamic> parentView, num parentIndex) : super(import10.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMenuItemGroupsComponent13(AppView<dynamic> parentView, num parentIndex) : super(import9.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMenuItemGroupsComponent0._renderType;
   }
   @override
   ComponentRef<import2.MenuItemGroupsComponent> build() {
-    _compView_0 = new import58.ViewMaterialListComponent0(this, 0);
+    _compView_0 = new import57.ViewMaterialListComponent0(this, 0);
     _el_0 = _compView_0.rootEl;
     _el_0.className = 'item-group-list';
     addShimC(_el_0);
-    _MaterialListComponent_0_4 = new import59.MaterialListComponent();
-    import4.Text _text_1 = new import4.Text('\n              ');
+    _MaterialListComponent_0_5 = new import58.MaterialListComponent();
+    import3.Text _text_1 = new import3.Text('\n              ');
     _compView_2 = new ViewMenuItemGroupsComponent0(this, 2);
     _el_2 = _compView_2.rootEl;
     createAttr(_el_2, 'autoFocus', '');
     addShimC(_el_2);
-    _AutoFocusDirective_2_4 = new import22.AutoFocusDirective(_el_2, parentView.parentView.parentView.parentView.parentView.parentView.parentView.injectorGet(import31.DomService, parentView.parentView.parentView.parentView.parentView.parentView.viewData.parentIndex), parentView.parentView.parentView.parentView.parentView.parentView.parentView.injectorGet(import22.Focusable, parentView.parentView.parentView.parentView.parentView.parentView.viewData.parentIndex, null), parentView.parentView.parentView.parentView.parentView.parentView.parentView.injectorGet(import32.ModalComponent, parentView.parentView.parentView.parentView.parentView.parentView.viewData.parentIndex, null), (parentView as _ViewMenuItemGroupsComponent12)._PopupRef_0_8);
-    _MenuItemGroupsComponent_2_5 = new import2.MenuItemGroupsComponent(parentView.parentView.parentView.parentView.parentView.parentView.parentView.injectorGet(import44.MenuRoot, parentView.parentView.parentView.parentView.parentView.parentView.viewData.parentIndex), _compView_2.ref, (parentView as _ViewMenuItemGroupsComponent12)._MaterialPopupComponent_0_6, parentView.parentView.parentView.parentView.parentView.parentView.parentView.injectorGet(import60.IdGenerator, parentView.parentView.parentView.parentView.parentView.parentView.viewData.parentIndex, null));
-    import4.Text _text_3 = new import4.Text('\n              ');
-    _compView_2.create(_MenuItemGroupsComponent_2_5, []);
-    import4.Text _text_4 = new import4.Text('\n            ');
-    _compView_0.create(_MaterialListComponent_0_4, [
+    _AutoFocusDirective_2_5 = new import21.AutoFocusDirective(_el_2, parentView.parentView.parentView.parentView.parentView.parentView.parentView.injectorGet(import30.DomService, parentView.parentView.parentView.parentView.parentView.parentView.viewData.parentIndex), parentView.parentView.parentView.parentView.parentView.parentView.parentView.injectorGet(import21.Focusable, parentView.parentView.parentView.parentView.parentView.parentView.viewData.parentIndex, null), parentView.parentView.parentView.parentView.parentView.parentView.parentView.injectorGet(import31.ModalComponent, parentView.parentView.parentView.parentView.parentView.parentView.viewData.parentIndex, null), (parentView as _ViewMenuItemGroupsComponent12)._PopupRef_0_10);
+    _MenuItemGroupsComponent_2_6 = new import2.MenuItemGroupsComponent(parentView.parentView.parentView.parentView.parentView.parentView.parentView.injectorGet(import43.MenuRoot, parentView.parentView.parentView.parentView.parentView.parentView.viewData.parentIndex), _compView_2.ref, (parentView as _ViewMenuItemGroupsComponent12)._MaterialPopupComponent_0_8, parentView.parentView.parentView.parentView.parentView.parentView.parentView.injectorGet(import59.IdGenerator, parentView.parentView.parentView.parentView.parentView.parentView.viewData.parentIndex, null));
+    import3.Text _text_3 = new import3.Text('\n              ');
+    _compView_2.create(_MenuItemGroupsComponent_2_6, []);
+    import3.Text _text_4 = new import3.Text('\n            ');
+    _compView_0.create(_MaterialListComponent_0_5, [
       [_text_1, _el_2, _text_4]
     ]);
     init0(_el_0);
@@ -1244,10 +1253,10 @@ class _ViewMenuItemGroupsComponent13 extends AppView<import2.MenuItemGroupsCompo
   @override
   dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
     if ((identical(token, import2.MenuItemGroupsComponent) && ((2 <= nodeIndex) && (nodeIndex <= 3)))) {
-      return _MenuItemGroupsComponent_2_5;
+      return _MenuItemGroupsComponent_2_6;
     }
-    if ((identical(token, import59.MaterialListComponent) && ((0 <= nodeIndex) && (nodeIndex <= 4)))) {
-      return _MaterialListComponent_0_4;
+    if ((identical(token, import58.MaterialListComponent) && ((0 <= nodeIndex) && (nodeIndex <= 4)))) {
+      return _MaterialListComponent_0_5;
     }
     return notFoundResult;
   }
@@ -1261,7 +1270,7 @@ class _ViewMenuItemGroupsComponent13 extends AppView<import2.MenuItemGroupsCompo
     changed = false;
     final currVal_0 = _ctx.menu.width;
     if (!identical(_expr_0, currVal_0)) {
-      _MaterialListComponent_0_4.width = currVal_0;
+      _MaterialListComponent_0_5.width = currVal_0;
       changed = true;
       _expr_0 = currVal_0;
     }
@@ -1269,21 +1278,21 @@ class _ViewMenuItemGroupsComponent13 extends AppView<import2.MenuItemGroupsCompo
       _compView_0.markAsCheckOnce();
     }
     if (firstCheck) {
-      (_AutoFocusDirective_2_4.autoFocus = true);
+      (_AutoFocusDirective_2_5.autoFocus = true);
     }
     if (firstCheck) {
-      _AutoFocusDirective_2_4.ngOnInit();
+      _AutoFocusDirective_2_5.ngOnInit();
     }
     changed = false;
     final currVal_2 = local_item.subMenu;
     if (!identical(_expr_2, currVal_2)) {
-      _MenuItemGroupsComponent_2_5.menu = currVal_2;
+      _MenuItemGroupsComponent_2_6.menu = currVal_2;
       changed = true;
       _expr_2 = currVal_2;
     }
     final currVal_3 = _ctx.isKeyboardOpenedSubmenu;
     if (!identical(_expr_3, currVal_3)) {
-      _MenuItemGroupsComponent_2_5.activateFirstItemOnInit = currVal_3;
+      _MenuItemGroupsComponent_2_6.activateFirstItemOnInit = currVal_3;
       changed = true;
       _expr_3 = currVal_3;
     }
@@ -1291,7 +1300,7 @@ class _ViewMenuItemGroupsComponent13 extends AppView<import2.MenuItemGroupsCompo
       _compView_2.markAsCheckOnce();
     }
     if (firstCheck) {
-      _MenuItemGroupsComponent_2_5.ngOnInit();
+      _MenuItemGroupsComponent_2_6.ngOnInit();
     }
     _compView_0.detectHostChanges(firstCheck);
     _compView_0.detectChanges();
@@ -1300,15 +1309,15 @@ class _ViewMenuItemGroupsComponent13 extends AppView<import2.MenuItemGroupsCompo
 
   @override
   void dirtyParentQueriesInternal() {
-    (parentView.parentView.parentView.parentView.parentView.parentView as ViewMenuItemGroupsComponent0)._query_AutoFocusDirective_1_0.setDirty();
+    (parentView.parentView.parentView.parentView.parentView.parentView as ViewMenuItemGroupsComponent0)._query_AutoFocusDirective_1_0_isDirty = true;
   }
 
   @override
   void destroyInternal() {
     _compView_0?.destroy();
     _compView_2?.destroy();
-    _AutoFocusDirective_2_4.ngOnDestroy();
-    _MenuItemGroupsComponent_2_5.ngOnDestroy();
+    _AutoFocusDirective_2_5.ngOnDestroy();
+    _MenuItemGroupsComponent_2_6.ngOnDestroy();
   }
 }
 
@@ -1320,22 +1329,22 @@ const List<dynamic> styles$MenuItemGroupsComponentHost = const [];
 
 class _ViewMenuItemGroupsComponentHost0 extends AppView<dynamic> {
   ViewMenuItemGroupsComponent0 _compView_0;
-  import2.MenuItemGroupsComponent _MenuItemGroupsComponent_0_4;
-  _ViewMenuItemGroupsComponentHost0(AppView<dynamic> parentView, num parentIndex) : super(import10.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
+  import2.MenuItemGroupsComponent _MenuItemGroupsComponent_0_5;
+  _ViewMenuItemGroupsComponentHost0(AppView<dynamic> parentView, num parentIndex) : super(import9.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewMenuItemGroupsComponent0(this, 0);
     rootEl = _compView_0.rootEl;
-    _MenuItemGroupsComponent_0_4 = new import2.MenuItemGroupsComponent(this.injectorGet(import44.MenuRoot, viewData.parentIndex), _compView_0.ref, this.injectorGet(import35.DropdownHandle, viewData.parentIndex, null), this.injectorGet(import60.IdGenerator, viewData.parentIndex, null));
-    _compView_0.create(_MenuItemGroupsComponent_0_4, projectableNodes);
+    _MenuItemGroupsComponent_0_5 = new import2.MenuItemGroupsComponent(this.injectorGet(import43.MenuRoot, viewData.parentIndex), _compView_0.ref, this.injectorGet(import34.DropdownHandle, viewData.parentIndex, null), this.injectorGet(import59.IdGenerator, viewData.parentIndex, null));
+    _compView_0.create(_MenuItemGroupsComponent_0_5, projectableNodes);
     init0(rootEl);
-    return new ComponentRef<import2.MenuItemGroupsComponent>(0, this, rootEl, _MenuItemGroupsComponent_0_4);
+    return new ComponentRef<import2.MenuItemGroupsComponent>(0, this, rootEl, _MenuItemGroupsComponent_0_5);
   }
 
   @override
   dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
     if ((identical(token, import2.MenuItemGroupsComponent) && (0 == nodeIndex))) {
-      return _MenuItemGroupsComponent_0_4;
+      return _MenuItemGroupsComponent_0_5;
     }
     return notFoundResult;
   }
@@ -1348,7 +1357,7 @@ class _ViewMenuItemGroupsComponentHost0 extends AppView<dynamic> {
       _compView_0.markAsCheckOnce();
     }
     if (firstCheck) {
-      _MenuItemGroupsComponent_0_4.ngOnInit();
+      _MenuItemGroupsComponent_0_5.ngOnInit();
     }
     _compView_0.detectChanges();
   }
@@ -1356,7 +1365,7 @@ class _ViewMenuItemGroupsComponentHost0 extends AppView<dynamic> {
   @override
   void destroyInternal() {
     _compView_0?.destroy();
-    _MenuItemGroupsComponent_0_4.ngOnDestroy();
+    _MenuItemGroupsComponent_0_5.ngOnDestroy();
   }
 }
 

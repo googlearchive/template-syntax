@@ -11,7 +11,7 @@ import 'hero.dart';
       #heroForm { border: 1px solid black; margin: 20px 0; padding: 8px; max-width: 350px; }
     '''
   ],
-  directives: const [CORE_DIRECTIVES, formDirectives],
+  directives: const [coreDirectives, formDirectives],
 )
 class HeroFormComponent {
   @Input()

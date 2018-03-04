@@ -1,7 +1,5 @@
-// GENERATED CODE - DO NOT MODIFY BY HAND
-
 // **************************************************************************
-// Generator: TemplateGenerator
+// Generator: Instance of 'Compiler'
 // **************************************************************************
 
 // ignore_for_file: cancel_subscriptions,constant_identifier_names,duplicate_import,non_constant_identifier_names,library_prefixes,UNUSED_IMPORT,UNUSED_SHOWN_NAME
@@ -31,54 +29,53 @@ import 'package:angular_components/src/material_tooltip/paper_tooltip.dart' as _
 import 'package:angular_components/src/material_tooltip/paper_tooltip.scss.css.shim.dart' as import0;
 import 'package:angular/src/core/linker/app_view.dart';
 import 'paper_tooltip.dart' as import2;
-import 'package:angular/src/core/linker/query_list.dart' as import3;
 import 'package:angular/src/core/linker/view_container.dart';
 import 'package:angular/src/common/directives/ng_if.dart';
 import 'package:angular/src/core/render/api.dart';
-import 'package:angular/src/core/linker/view_type.dart' as import7;
+import 'package:angular/src/core/linker/view_type.dart' as import6;
 import 'package:angular/src/core/change_detection/change_detection.dart';
-import 'dart:html' as import9;
-import 'package:angular/src/core/linker/app_view_utils.dart' as import10;
+import 'dart:html' as import8;
+import 'package:angular/src/core/linker/app_view_utils.dart' as import9;
 import 'package:angular/angular.dart';
 import 'package:angular/src/core/linker/template_ref.dart';
-import '../../material_popup/material_popup.template.dart' as import13;
-import '../../material_popup/material_popup.dart' as import14;
-import '../laminate/popup/popup_hierarchy.dart' as import15;
-import 'package:angular/src/core/zone/ng_zone.dart' as import16;
-import '../laminate/overlay/overlay_service.dart' as import17;
-import '../../laminate/overlay/zindexer.dart' as import18;
-import 'package:angular/src/core/di/opaque_token.dart' as import19;
+import '../../material_popup/material_popup.template.dart' as import12;
+import '../../material_popup/material_popup.dart' as import13;
+import '../laminate/popup/popup_hierarchy.dart' as import14;
+import 'package:angular/src/core/zone/ng_zone.dart' as import15;
+import '../laminate/overlay/overlay_service.dart' as import16;
+import '../../laminate/overlay/zindexer.dart' as import17;
+import 'package:angular/src/core/di/opaque_token.dart' as import18;
 import 'dart:core';
-import '../../laminate/enums/alignment.dart' as import21;
-import '../laminate/popup/popup_size_provider.dart' as import22;
+import 'package:angular_components/laminate/enums/alignment.dart' as import20;
+import '../laminate/popup/popup_size_provider.dart' as import21;
 import 'package:angular/src/core/linker/element_ref.dart';
-import '../../content/deferred_content_aware.dart' as import24;
-import '../../mixins/material_dropdown_base.dart' as import25;
-import '../laminate/popup/popup_ref.dart' as import26;
-import '../../material_tooltip/module.dart' as import27;
-import 'tooltip_controller.dart' as import28;
-import '../../utils/disposer/disposer.dart' as import29;
+import '../../content/deferred_content_aware.dart' as import23;
+import '../../mixins/material_dropdown_base.dart' as import24;
+import '../laminate/popup/popup_ref.dart' as import25;
+import '../../material_tooltip/module.dart' as import26;
+import 'tooltip_controller.dart' as import27;
+import '../../utils/disposer/disposer.dart' as import28;
 
 const List<dynamic> styles$MaterialPaperTooltipComponent = const [import0.styles];
 
 class ViewMaterialPaperTooltipComponent0 extends AppView<import2.MaterialPaperTooltipComponent> {
-  final import3.QueryList _viewQuery_MaterialPopupComponent_0 = new import3.QueryList();
+  bool _query_MaterialPopupComponent_1_0_isDirty = true;
   ViewContainer _appEl_0;
-  NgIf _NgIf_0_7;
+  NgIf _NgIf_0_9;
   static RenderComponentType _renderType;
-  ViewMaterialPaperTooltipComponent0(AppView<dynamic> parentView, num parentIndex) : super(import7.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckOnce) {
-    rootEl = import9.document.createElement('material-tooltip-card');
-    _renderType ??= import10.appViewUtils.createRenderType('', ViewEncapsulation.Emulated, styles$MaterialPaperTooltipComponent);
+  ViewMaterialPaperTooltipComponent0(AppView<dynamic> parentView, num parentIndex) : super(import6.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckOnce) {
+    rootEl = import8.document.createElement('material-tooltip-card');
+    _renderType ??= import9.appViewUtils.createRenderType('', ViewEncapsulation.Emulated, styles$MaterialPaperTooltipComponent);
     setupComponentType(_renderType);
   }
   @override
   ComponentRef<import2.MaterialPaperTooltipComponent> build() {
-    final import9.HtmlElement parentRenderNode = initViewRoot(rootEl);
+    final import8.HtmlElement parentRenderNode = initViewRoot(rootEl);
     var _anchor_0 = ngAnchor.clone(false);
     parentRenderNode.append(_anchor_0);
     _appEl_0 = new ViewContainer(0, null, this, _anchor_0);
-    TemplateRef _TemplateRef_0_6 = new TemplateRef(_appEl_0, viewFactory_MaterialPaperTooltipComponent1);
-    _NgIf_0_7 = new NgIf(_appEl_0, _TemplateRef_0_6);
+    TemplateRef _TemplateRef_0_8 = new TemplateRef(_appEl_0, viewFactory_MaterialPaperTooltipComponent1);
+    _NgIf_0_9 = new NgIf(_appEl_0, _TemplateRef_0_8);
     init(const [], null);
     return null;
   }
@@ -86,15 +83,17 @@ class ViewMaterialPaperTooltipComponent0 extends AppView<import2.MaterialPaperTo
   @override
   void detectChangesInternal() {
     final import2.MaterialPaperTooltipComponent _ctx = ctx;
-    _NgIf_0_7.ngIf = (_ctx.popupSource != null);
+    _NgIf_0_9.ngIf = (_ctx.popupSource != null);
     _appEl_0.detectChangesInNestedViews();
-    if (_viewQuery_MaterialPopupComponent_0.dirty) {
-      _viewQuery_MaterialPopupComponent_0.reset([
-        _appEl_0.mapNestedViews((_ViewMaterialPaperTooltipComponent1 nestedView) {
-          return [nestedView._MaterialPopupComponent_0_6];
-        })
-      ]);
-      ctx.popupChild = _viewQuery_MaterialPopupComponent_0.first;
+    if (_query_MaterialPopupComponent_1_0_isDirty) {
+      ctx.popupChild = (_appEl_0.mapNestedViews((_ViewMaterialPaperTooltipComponent1 nestedView) {
+        return [nestedView._MaterialPopupComponent_0_8];
+      }).isNotEmpty
+          ? _appEl_0.mapNestedViews((_ViewMaterialPaperTooltipComponent1 nestedView) {
+              return [nestedView._MaterialPopupComponent_0_8];
+            }).first
+          : null);
+      _query_MaterialPopupComponent_1_0_isDirty = false;
     }
   }
 
@@ -109,75 +108,75 @@ AppView<import2.MaterialPaperTooltipComponent> viewFactory_MaterialPaperTooltipC
 }
 
 class _ViewMaterialPaperTooltipComponent1 extends AppView<import2.MaterialPaperTooltipComponent> {
-  import9.Element _el_0;
-  import13.ViewMaterialPopupComponent0 _compView_0;
+  import8.Element _el_0;
+  import12.ViewMaterialPopupComponent0 _compView_0;
   ViewContainer _appEl_0;
-  import14.MaterialPopupComponent _MaterialPopupComponent_0_6;
-  dynamic __PopupHierarchy_0_9;
-  dynamic __PopupRef_0_10;
-  import9.DivElement _el_2;
-  import9.DivElement _el_4;
-  import9.DivElement _el_6;
-  import9.DivElement _el_8;
+  import13.MaterialPopupComponent _MaterialPopupComponent_0_8;
+  dynamic __PopupHierarchy_0_11;
+  dynamic __PopupRef_0_12;
+  import8.DivElement _el_2;
+  import8.DivElement _el_4;
+  import8.DivElement _el_6;
+  import8.DivElement _el_8;
   int _expr_2;
   int _expr_3;
   var _expr_4;
   var _expr_5;
   bool _expr_7;
-  _ViewMaterialPaperTooltipComponent1(AppView<dynamic> parentView, num parentIndex) : super(import7.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMaterialPaperTooltipComponent1(AppView<dynamic> parentView, num parentIndex) : super(import6.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMaterialPaperTooltipComponent0._renderType;
   }
-  dynamic get _PopupHierarchy_0_9 {
-    if ((this.__PopupHierarchy_0_9 == null)) {
-      (__PopupHierarchy_0_9 = import14.getHierarchy(this._MaterialPopupComponent_0_6));
+  dynamic get _PopupHierarchy_0_11 {
+    if ((this.__PopupHierarchy_0_11 == null)) {
+      (__PopupHierarchy_0_11 = import13.getHierarchy(this._MaterialPopupComponent_0_8));
     }
-    return this.__PopupHierarchy_0_9;
+    return this.__PopupHierarchy_0_11;
   }
 
-  dynamic get _PopupRef_0_10 {
-    if ((this.__PopupRef_0_10 == null)) {
-      (__PopupRef_0_10 = import14.getResolvedPopupRef(this._MaterialPopupComponent_0_6));
+  dynamic get _PopupRef_0_12 {
+    if ((this.__PopupRef_0_12 == null)) {
+      (__PopupRef_0_12 = import13.getResolvedPopupRef(this._MaterialPopupComponent_0_8));
     }
-    return this.__PopupRef_0_10;
+    return this.__PopupRef_0_12;
   }
 
   @override
   ComponentRef<import2.MaterialPaperTooltipComponent> build() {
-    _compView_0 = new import13.ViewMaterialPopupComponent0(this, 0);
+    _compView_0 = new import12.ViewMaterialPopupComponent0(this, 0);
     _el_0 = _compView_0.rootEl;
     createAttr(_el_0, 'enforceSpaceConstraints', '');
     createAttr(_el_0, 'role', 'tooltip');
     createAttr(_el_0, 'trackLayoutChanges', '');
     addShimC(_el_0);
     _appEl_0 = new ViewContainer(0, null, this, _el_0);
-    _MaterialPopupComponent_0_6 = new import14.MaterialPopupComponent(parentView.injectorGet(import15.PopupHierarchy, viewData.parentIndex, null), parentView.injectorGet(import14.MaterialPopupComponent, viewData.parentIndex, null), 'tooltip', parentView.injectorGet(import16.NgZone, viewData.parentIndex), parentView.injectorGet(import17.OverlayService, viewData.parentIndex), parentView.injectorGet(import18.ZIndexer, viewData.parentIndex), parentView.injectorGet(const import19.OpaqueToken<List<import21.RelativePosition>>('defaultPopupPositions'), viewData.parentIndex), parentView.injectorGet(const import19.OpaqueToken('overlayRepositionLoop'), viewData.parentIndex), parentView.injectorGet(import22.PopupSizeProvider, viewData.parentIndex, null), _compView_0.ref, _appEl_0, new ElementRef(_el_0));
-    import9.Text _text_1 = new import9.Text('\n  ');
-    var doc = import9.document;
+    _MaterialPopupComponent_0_8 = new import13.MaterialPopupComponent(parentView.injectorGet(import14.PopupHierarchy, viewData.parentIndex, null), parentView.injectorGet(import13.MaterialPopupComponent, viewData.parentIndex, null), 'tooltip', parentView.injectorGet(import15.NgZone, viewData.parentIndex), parentView.injectorGet(import16.OverlayService, viewData.parentIndex), parentView.injectorGet(import17.ZIndexer, viewData.parentIndex), parentView.injectorGet(const import18.OpaqueToken<List<import20.RelativePosition>>('defaultPopupPositions'), viewData.parentIndex), parentView.injectorGet(const import18.OpaqueToken('overlayRepositionLoop'), viewData.parentIndex), parentView.injectorGet(import21.PopupSizeProvider, viewData.parentIndex, null), _compView_0.ref, _appEl_0, new ElementRef(_el_0));
+    import8.Text _text_1 = new import8.Text('\n  ');
+    var doc = import8.document;
     _el_2 = doc.createElement('div');
     _el_2.className = 'paper-container';
     addShimC(_el_2);
-    import9.Text _text_3 = new import9.Text('\n    ');
+    import8.Text _text_3 = new import8.Text('\n    ');
     _el_2.append(_text_3);
     _el_4 = createDivAndAppend(doc, _el_2);
     _el_4.className = 'header';
     addShimC(_el_4);
     project(_el_4, 0);
-    import9.Text _text_5 = new import9.Text('\n    ');
+    import8.Text _text_5 = new import8.Text('\n    ');
     _el_2.append(_text_5);
     _el_6 = createDivAndAppend(doc, _el_2);
     _el_6.className = 'body';
     addShimC(_el_6);
     project(_el_6, 1);
-    import9.Text _text_7 = new import9.Text('\n    ');
+    import8.Text _text_7 = new import8.Text('\n    ');
     _el_2.append(_text_7);
     _el_8 = createDivAndAppend(doc, _el_2);
     _el_8.className = 'footer';
     addShimC(_el_8);
     project(_el_8, 2);
-    import9.Text _text_9 = new import9.Text('\n  ');
+    import8.Text _text_9 = new import8.Text('\n  ');
     _el_2.append(_text_9);
-    import9.Text _text_10 = new import9.Text('\n');
-    _compView_0.create(_MaterialPopupComponent_0_6, [
+    import8.Text _text_10 = new import8.Text('\n');
+    _compView_0.create(_MaterialPopupComponent_0_8, [
       const [],
       [_text_1, _el_2, _text_10],
       const []
@@ -190,14 +189,14 @@ class _ViewMaterialPaperTooltipComponent1 extends AppView<import2.MaterialPaperT
 
   @override
   dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
-    if ((((identical(token, import14.MaterialPopupComponent) || identical(token, import24.DeferredContentAware)) || identical(token, import25.DropdownHandle)) && ((0 <= nodeIndex) && (nodeIndex <= 10)))) {
-      return _MaterialPopupComponent_0_6;
+    if ((((identical(token, import13.MaterialPopupComponent) || identical(token, import23.DeferredContentAware)) || identical(token, import24.DropdownHandle)) && ((0 <= nodeIndex) && (nodeIndex <= 10)))) {
+      return _MaterialPopupComponent_0_8;
     }
-    if ((identical(token, import15.PopupHierarchy) && ((0 <= nodeIndex) && (nodeIndex <= 10)))) {
-      return _PopupHierarchy_0_9;
+    if ((identical(token, import14.PopupHierarchy) && ((0 <= nodeIndex) && (nodeIndex <= 10)))) {
+      return _PopupHierarchy_0_11;
     }
-    if ((identical(token, import26.PopupRef) && ((0 <= nodeIndex) && (nodeIndex <= 10)))) {
-      return _PopupRef_0_10;
+    if ((identical(token, import25.PopupRef) && ((0 <= nodeIndex) && (nodeIndex <= 10)))) {
+      return _PopupRef_0_12;
     }
     return notFoundResult;
   }
@@ -207,53 +206,53 @@ class _ViewMaterialPaperTooltipComponent1 extends AppView<import2.MaterialPaperT
     final import2.MaterialPaperTooltipComponent _ctx = ctx;
     bool firstCheck = (this.cdState == 0);
     if (firstCheck) {
-      _MaterialPopupComponent_0_6.autoDismiss = false;
-      _MaterialPopupComponent_0_6.enforceSpaceConstraints = true;
-      _MaterialPopupComponent_0_6.trackLayoutChanges = true;
+      _MaterialPopupComponent_0_8.autoDismiss = false;
+      _MaterialPopupComponent_0_8.enforceSpaceConstraints = true;
+      _MaterialPopupComponent_0_8.trackLayoutChanges = true;
     }
     final currVal_2 = _ctx.offsetX;
     if (!identical(_expr_2, currVal_2)) {
-      _MaterialPopupComponent_0_6.offsetX = currVal_2;
+      _MaterialPopupComponent_0_8.offsetX = currVal_2;
       _expr_2 = currVal_2;
     }
     final currVal_3 = _ctx.offsetY;
     if (!identical(_expr_3, currVal_3)) {
-      _MaterialPopupComponent_0_6.offsetY = currVal_3;
+      _MaterialPopupComponent_0_8.offsetY = currVal_3;
       _expr_3 = currVal_3;
     }
     final currVal_4 = _ctx.preferredPositions;
     if (!identical(_expr_4, currVal_4)) {
-      _MaterialPopupComponent_0_6.preferredPositions = currVal_4;
+      _MaterialPopupComponent_0_8.preferredPositions = currVal_4;
       _expr_4 = currVal_4;
     }
     final currVal_5 = _ctx.popupSource;
     if (!identical(_expr_5, currVal_5)) {
-      _MaterialPopupComponent_0_6.source = currVal_5;
+      _MaterialPopupComponent_0_8.source = currVal_5;
       _expr_5 = currVal_5;
     }
     final currVal_7 = _ctx.showPopup;
     if (!identical(_expr_7, currVal_7)) {
-      _MaterialPopupComponent_0_6.visible = currVal_7;
+      _MaterialPopupComponent_0_8.visible = currVal_7;
       _expr_7 = currVal_7;
     }
     _appEl_0.detectChangesInNestedViews();
     _compView_0.detectHostChanges(firstCheck);
     _compView_0.detectChanges();
     if (firstCheck) {
-      _MaterialPopupComponent_0_6.ngAfterViewInit();
+      _MaterialPopupComponent_0_8.ngAfterViewInit();
     }
   }
 
   @override
   void dirtyParentQueriesInternal() {
-    (parentView as ViewMaterialPaperTooltipComponent0)._viewQuery_MaterialPopupComponent_0.setDirty();
+    (parentView as ViewMaterialPaperTooltipComponent0)._query_MaterialPopupComponent_1_0_isDirty = true;
   }
 
   @override
   void destroyInternal() {
     _appEl_0?.destroyNestedViews();
     _compView_0?.destroy();
-    _MaterialPopupComponent_0_6.ngOnDestroy();
+    _MaterialPopupComponent_0_8.ngOnDestroy();
   }
 }
 
@@ -265,38 +264,38 @@ const List<dynamic> styles$MaterialPaperTooltipComponentHost = const [];
 
 class _ViewMaterialPaperTooltipComponentHost0 extends AppView<dynamic> {
   ViewMaterialPaperTooltipComponent0 _compView_0;
-  dynamic _TooltipController_0_4;
-  import2.MaterialPaperTooltipComponent _MaterialPaperTooltipComponent_0_5;
-  dynamic __Tooltip_0_6;
-  _ViewMaterialPaperTooltipComponentHost0(AppView<dynamic> parentView, num parentIndex) : super(import7.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
-  dynamic get _Tooltip_0_6 {
-    if ((this.__Tooltip_0_6 == null)) {
-      (__Tooltip_0_6 = import2.getTooltipHandle(this._MaterialPaperTooltipComponent_0_5));
+  dynamic _TooltipController_0_5;
+  import2.MaterialPaperTooltipComponent _MaterialPaperTooltipComponent_0_6;
+  dynamic __Tooltip_0_7;
+  _ViewMaterialPaperTooltipComponentHost0(AppView<dynamic> parentView, num parentIndex) : super(import6.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
+  dynamic get _Tooltip_0_7 {
+    if ((this.__Tooltip_0_7 == null)) {
+      (__Tooltip_0_7 = import2.getTooltipHandle(this._MaterialPaperTooltipComponent_0_6));
     }
-    return this.__Tooltip_0_6;
+    return this.__Tooltip_0_7;
   }
 
   @override
   ComponentRef build() {
     _compView_0 = new ViewMaterialPaperTooltipComponent0(this, 0);
     rootEl = _compView_0.rootEl;
-    _TooltipController_0_4 = import27.createTooltipController(this.injectorGet(import28.TooltipController, viewData.parentIndex, null), this.injectorGet(import29.Disposer, viewData.parentIndex, null));
-    _MaterialPaperTooltipComponent_0_5 = new import2.MaterialPaperTooltipComponent(_TooltipController_0_4, _compView_0.ref);
-    _compView_0.create(_MaterialPaperTooltipComponent_0_5, projectableNodes);
+    _TooltipController_0_5 = import26.createTooltipController(this.injectorGet(import27.TooltipController, viewData.parentIndex, null), this.injectorGet(import28.Disposer, viewData.parentIndex, null));
+    _MaterialPaperTooltipComponent_0_6 = new import2.MaterialPaperTooltipComponent(_TooltipController_0_5, _compView_0.ref);
+    _compView_0.create(_MaterialPaperTooltipComponent_0_6, projectableNodes);
     init0(rootEl);
-    return new ComponentRef<import2.MaterialPaperTooltipComponent>(0, this, rootEl, _MaterialPaperTooltipComponent_0_5);
+    return new ComponentRef<import2.MaterialPaperTooltipComponent>(0, this, rootEl, _MaterialPaperTooltipComponent_0_6);
   }
 
   @override
   dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
-    if ((identical(token, import28.TooltipController) && (0 == nodeIndex))) {
-      return _TooltipController_0_4;
+    if ((identical(token, import27.TooltipController) && (0 == nodeIndex))) {
+      return _TooltipController_0_5;
     }
-    if (((identical(token, import2.MaterialPaperTooltipComponent) || identical(token, import24.DeferredContentAware)) && (0 == nodeIndex))) {
-      return _MaterialPaperTooltipComponent_0_5;
+    if (((identical(token, import2.MaterialPaperTooltipComponent) || identical(token, import23.DeferredContentAware)) && (0 == nodeIndex))) {
+      return _MaterialPaperTooltipComponent_0_6;
     }
-    if ((identical(token, import28.Tooltip) && (0 == nodeIndex))) {
-      return _Tooltip_0_6;
+    if ((identical(token, import27.Tooltip) && (0 == nodeIndex))) {
+      return _Tooltip_0_7;
     }
     return notFoundResult;
   }

@@ -80,7 +80,7 @@ class MenuItemGroupsComponent implements OnInit, OnDestroy {
   MenuModel menu;
 
   @ViewChildren(FocusableActivateItem)
-  QueryList<FocusableActivateItem> focusableItems;
+  List<FocusableActivateItem> focusableItems;
 
   List<RelativePosition> get preferredSubMenuPositions =>
       _preferredSubMenuPositions;
@@ -343,6 +343,13 @@ class MenuItemGroupsComponent implements OnInit, OnDestroy {
 
       // Refocus the previous active item if any
       _focusActiveItem();
+    }
+  }
+
+  /// Toggle the expansion of the group if it's collapsible.
+  void toggleExpansionIfCollapsible(MenuItemGroup group) {
+    if (group.isCollapsible) {
+      group.isExpanded = !group.isExpanded;
     }
   }
 

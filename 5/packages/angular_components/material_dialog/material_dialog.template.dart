@@ -1,7 +1,5 @@
-// GENERATED CODE - DO NOT MODIFY BY HAND
-
 // **************************************************************************
-// Generator: TemplateGenerator
+// Generator: Instance of 'Compiler'
 // **************************************************************************
 
 // ignore_for_file: cancel_subscriptions,constant_identifier_names,duplicate_import,non_constant_identifier_names,library_prefixes,UNUSED_IMPORT,UNUSED_SHOWN_NAME
@@ -22,68 +20,67 @@ import 'package:angular_components/utils/disposer/disposer.template.dart' as _re
 import 'package:angular_components/material_dialog/material_dialog.scss.css.shim.dart' as import0;
 import 'package:angular/src/core/linker/app_view.dart';
 import 'material_dialog.dart' as import2;
-import 'package:angular/src/core/linker/query_list.dart' as import3;
-import 'dart:html' as import4;
-import '../focus/focus_trap.template.dart' as import5;
-import '../focus/focus_trap.dart' as import6;
+import 'dart:html' as import3;
+import '../focus/focus_trap.template.dart' as import4;
+import '../focus/focus_trap.dart' as import5;
 import 'package:angular/src/core/linker/view_container.dart';
 import 'package:angular/src/common/directives/ng_if.dart';
 import 'package:angular/src/core/render/api.dart';
-import 'package:angular/src/core/linker/view_type.dart' as import10;
+import 'package:angular/src/core/linker/view_type.dart' as import9;
 import 'package:angular/src/core/change_detection/change_detection.dart';
-import 'package:angular/src/core/linker/app_view_utils.dart' as import12;
+import 'package:angular/src/core/linker/app_view_utils.dart' as import11;
 import 'package:angular/angular.dart';
 import 'package:angular/src/core/linker/template_ref.dart';
-import '../utils/browser/dom_service/dom_service.dart' as import15;
-import '../laminate/components/modal/modal.dart' as import16;
+import '../utils/browser/dom_service/dom_service.dart' as import14;
+import '../laminate/components/modal/modal.dart' as import15;
 
 const List<dynamic> styles$MaterialDialogComponent = const [import0.styles];
 
 class ViewMaterialDialogComponent0 extends AppView<import2.MaterialDialogComponent> {
-  final import3.QueryList _viewQuery_main_0 = new import3.QueryList();
-  import4.Element _el_0;
-  import5.ViewFocusTrapComponent0 _compView_0;
-  import6.FocusTrapComponent _FocusTrapComponent_0_4;
-  final import3.QueryList _query_AutoFocusDirective_0_0 = new import3.QueryList();
-  import4.DivElement _el_1;
+  bool _query_main_1_0_isDirty = true;
+  import3.Element _el_0;
+  import4.ViewFocusTrapComponent0 _compView_0;
+  import5.FocusTrapComponent _FocusTrapComponent_0_5;
+  bool _query_AutoFocusDirective_0_0_isDirty = true;
+  import3.DivElement _el_1;
   ViewContainer _appEl_2;
-  NgIf _NgIf_2_7;
-  import4.DivElement _el_3;
-  import4.Text _text_4;
-  import4.Element _el_5;
+  NgIf _NgIf_2_9;
+  import3.DivElement _el_3;
+  import3.Text _text_4;
+  import3.Element _el_5;
   ViewContainer _appEl_6;
-  NgIf _NgIf_6_7;
+  NgIf _NgIf_6_9;
   bool _expr_1;
   var _expr_2;
   bool _expr_3;
   bool _expr_4;
   static RenderComponentType _renderType;
-  ViewMaterialDialogComponent0(AppView<dynamic> parentView, num parentIndex) : super(import10.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckOnce) {
-    rootEl = import4.document.createElement('material-dialog');
-    _renderType ??= import12.appViewUtils.createRenderType('', ViewEncapsulation.Emulated, styles$MaterialDialogComponent);
+  ViewMaterialDialogComponent0(AppView<dynamic> parentView, num parentIndex) : super(import9.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckOnce) {
+    rootEl = import3.document.createElement('material-dialog');
+    _renderType ??= import11.appViewUtils.createRenderType('', ViewEncapsulation.Emulated, styles$MaterialDialogComponent);
     setupComponentType(_renderType);
   }
   @override
   ComponentRef<import2.MaterialDialogComponent> build() {
-    final import4.HtmlElement parentRenderNode = initViewRoot(rootEl);
-    _compView_0 = new import5.ViewFocusTrapComponent0(this, 0);
+    final import3.HtmlElement parentRenderNode = initViewRoot(rootEl);
+    _compView_0 = new import4.ViewFocusTrapComponent0(this, 0);
     _el_0 = _compView_0.rootEl;
     parentRenderNode.append(_el_0);
     addShimC(_el_0);
-    _FocusTrapComponent_0_4 = new import6.FocusTrapComponent();
-    var doc = import4.document;
+    _FocusTrapComponent_0_5 = new import5.FocusTrapComponent();
+    var doc = import3.document;
     _el_1 = doc.createElement('div');
     _el_1.className = 'wrapper';
     addShimC(_el_1);
     var _anchor_2 = ngAnchor.clone(false);
     _el_1.append(_anchor_2);
     _appEl_2 = new ViewContainer(2, 1, this, _anchor_2);
-    TemplateRef _TemplateRef_2_6 = new TemplateRef(_appEl_2, viewFactory_MaterialDialogComponent1);
-    _NgIf_2_7 = new NgIf(_appEl_2, _TemplateRef_2_6);
+    TemplateRef _TemplateRef_2_8 = new TemplateRef(_appEl_2, viewFactory_MaterialDialogComponent1);
+    _NgIf_2_9 = new NgIf(_appEl_2, _TemplateRef_2_8);
     _el_3 = createDivAndAppend(doc, _el_1);
     _el_3.className = 'error';
     addShimC(_el_3);
-    _text_4 = new import4.Text('');
+    _text_4 = new import3.Text('');
     _el_3.append(_text_4);
     _el_5 = createAndAppend(doc, 'main', _el_1);
     addShimE(_el_5);
@@ -91,24 +88,21 @@ class ViewMaterialDialogComponent0 extends AppView<import2.MaterialDialogCompone
     var _anchor_6 = ngAnchor.clone(false);
     _el_1.append(_anchor_6);
     _appEl_6 = new ViewContainer(6, 1, this, _anchor_6);
-    TemplateRef _TemplateRef_6_6 = new TemplateRef(_appEl_6, viewFactory_MaterialDialogComponent2);
-    _NgIf_6_7 = new NgIf(_appEl_6, _TemplateRef_6_6);
-    _query_AutoFocusDirective_0_0.reset([]);
-    _FocusTrapComponent_0_4.autoFocus = _query_AutoFocusDirective_0_0.first;
-    _compView_0.create(_FocusTrapComponent_0_4, [
+    TemplateRef _TemplateRef_6_8 = new TemplateRef(_appEl_6, viewFactory_MaterialDialogComponent2);
+    _NgIf_6_9 = new NgIf(_appEl_6, _TemplateRef_6_8);
+    _compView_0.create(_FocusTrapComponent_0_5, [
       [_el_1]
     ]);
     _el_5.addEventListener('scroll', eventHandler0(ctx.onScroll));
-    _viewQuery_main_0.reset([_el_5]);
-    ctx.main = _viewQuery_main_0.first;
+    ctx.main = _el_5;
     init(const [], null);
     return null;
   }
 
   @override
   dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
-    if ((identical(token, import6.FocusTrapComponent) && ((0 <= nodeIndex) && (nodeIndex <= 6)))) {
-      return _FocusTrapComponent_0_4;
+    if ((identical(token, import5.FocusTrapComponent) && ((0 <= nodeIndex) && (nodeIndex <= 6)))) {
+      return _FocusTrapComponent_0_5;
     }
     return notFoundResult;
   }
@@ -116,8 +110,8 @@ class ViewMaterialDialogComponent0 extends AppView<import2.MaterialDialogCompone
   @override
   void detectChangesInternal() {
     final import2.MaterialDialogComponent _ctx = ctx;
-    _NgIf_2_7.ngIf = _ctx.shouldShowHeader;
-    _NgIf_6_7.ngIf = _ctx.shouldShowFooter;
+    _NgIf_2_9.ngIf = _ctx.shouldShowHeader;
+    _NgIf_6_9.ngIf = _ctx.shouldShowFooter;
     _appEl_2.detectChangesInNestedViews();
     _appEl_6.detectChangesInNestedViews();
     final currVal_1 = (_ctx.error != null);
@@ -148,7 +142,7 @@ class ViewMaterialDialogComponent0 extends AppView<import2.MaterialDialogCompone
     _appEl_2?.destroyNestedViews();
     _appEl_6?.destroyNestedViews();
     _compView_0?.destroy();
-    _FocusTrapComponent_0_4.ngOnDestroy();
+    _FocusTrapComponent_0_5.ngOnDestroy();
   }
 }
 
@@ -157,13 +151,13 @@ AppView<import2.MaterialDialogComponent> viewFactory_MaterialDialogComponent0(Ap
 }
 
 class _ViewMaterialDialogComponent1 extends AppView<import2.MaterialDialogComponent> {
-  import4.Element _el_0;
-  _ViewMaterialDialogComponent1(AppView<dynamic> parentView, num parentIndex) : super(import10.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  import3.Element _el_0;
+  _ViewMaterialDialogComponent1(AppView<dynamic> parentView, num parentIndex) : super(import9.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMaterialDialogComponent0._renderType;
   }
   @override
   ComponentRef<import2.MaterialDialogComponent> build() {
-    var doc = import4.document;
+    var doc = import3.document;
     _el_0 = doc.createElement('header');
     addShimE(_el_0);
     project(_el_0, 0);
@@ -177,13 +171,13 @@ AppView<import2.MaterialDialogComponent> viewFactory_MaterialDialogComponent1(Ap
 }
 
 class _ViewMaterialDialogComponent2 extends AppView<import2.MaterialDialogComponent> {
-  import4.Element _el_0;
-  _ViewMaterialDialogComponent2(AppView<dynamic> parentView, num parentIndex) : super(import10.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  import3.Element _el_0;
+  _ViewMaterialDialogComponent2(AppView<dynamic> parentView, num parentIndex) : super(import9.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMaterialDialogComponent0._renderType;
   }
   @override
   ComponentRef<import2.MaterialDialogComponent> build() {
-    var doc = import4.document;
+    var doc = import3.document;
     _el_0 = doc.createElement('footer');
     addShimE(_el_0);
     project(_el_0, 2);
@@ -200,22 +194,22 @@ const List<dynamic> styles$MaterialDialogComponentHost = const [];
 
 class _ViewMaterialDialogComponentHost0 extends AppView<dynamic> {
   ViewMaterialDialogComponent0 _compView_0;
-  import2.MaterialDialogComponent _MaterialDialogComponent_0_4;
-  _ViewMaterialDialogComponentHost0(AppView<dynamic> parentView, num parentIndex) : super(import10.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
+  import2.MaterialDialogComponent _MaterialDialogComponent_0_5;
+  _ViewMaterialDialogComponentHost0(AppView<dynamic> parentView, num parentIndex) : super(import9.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewMaterialDialogComponent0(this, 0);
     rootEl = _compView_0.rootEl;
-    _MaterialDialogComponent_0_4 = new import2.MaterialDialogComponent(this.injectorGet(import15.DomService, viewData.parentIndex), _compView_0.ref, this.injectorGet(import16.ModalComponent, viewData.parentIndex, null));
-    _compView_0.create(_MaterialDialogComponent_0_4, projectableNodes);
+    _MaterialDialogComponent_0_5 = new import2.MaterialDialogComponent(this.injectorGet(import14.DomService, viewData.parentIndex), _compView_0.ref, this.injectorGet(import15.ModalComponent, viewData.parentIndex, null));
+    _compView_0.create(_MaterialDialogComponent_0_5, projectableNodes);
     init0(rootEl);
-    return new ComponentRef<import2.MaterialDialogComponent>(0, this, rootEl, _MaterialDialogComponent_0_4);
+    return new ComponentRef<import2.MaterialDialogComponent>(0, this, rootEl, _MaterialDialogComponent_0_5);
   }
 
   @override
   dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
     if ((identical(token, import2.MaterialDialogComponent) && (0 == nodeIndex))) {
-      return _MaterialDialogComponent_0_4;
+      return _MaterialDialogComponent_0_5;
     }
     return notFoundResult;
   }
@@ -226,14 +220,14 @@ class _ViewMaterialDialogComponentHost0 extends AppView<dynamic> {
     if (changed) {
       _compView_0.markAsCheckOnce();
     }
-    _MaterialDialogComponent_0_4.ngAfterContentChecked();
+    _MaterialDialogComponent_0_5.ngAfterContentChecked();
     _compView_0.detectChanges();
   }
 
   @override
   void destroyInternal() {
     _compView_0?.destroy();
-    _MaterialDialogComponent_0_4.ngOnDestroy();
+    _MaterialDialogComponent_0_5.ngOnDestroy();
   }
 }
 

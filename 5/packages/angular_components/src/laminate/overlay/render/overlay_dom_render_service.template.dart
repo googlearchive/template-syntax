@@ -1,7 +1,5 @@
-// GENERATED CODE - DO NOT MODIFY BY HAND
-
 // **************************************************************************
-// Generator: TemplateGenerator
+// Generator: Instance of 'Compiler'
 // **************************************************************************
 
 // ignore_for_file: cancel_subscriptions,constant_identifier_names,duplicate_import,non_constant_identifier_names,library_prefixes,UNUSED_IMPORT,UNUSED_SHOWN_NAME
@@ -34,6 +32,7 @@ import 'package:angular_components/laminate/ruler/dom_ruler.dart' as _i3;
 import 'package:angular_components/utils/browser/dom_service/dom_service.dart' as _i4;
 import 'package:angular_components/utils/angular/imperative_view/imperative_view.dart' as _i5;
 import 'package:angular_components/laminate/overlay/zindexer.dart' as _i6;
+import 'package:angular/src/core/di/opaque_token.dart' as _i7;
 
 var _visited = false;
 void initReflector() {
@@ -45,13 +44,13 @@ void initReflector() {
   _ngRef.registerFactory(OverlayDomRenderService, (_i1.OverlayStyleConfig p0, _i2.HtmlElement p1, String p2, _i3.DomRuler p3, _i4.DomService p4, _i5.AcxImperativeViewUtils p5, bool p6, bool p7, _i6.ZIndexer p8) => new OverlayDomRenderService(p0, p1, p2, p3, p4, p5, p6, p7, p8));
   _ngRef.registerDependencies(OverlayDomRenderService, const [
     const [_i1.OverlayStyleConfig],
-    const [const _ngRef.Inject(const _ngRef.OpaqueToken<dynamic>('overlayContainer'))],
-    const [const _ngRef.Inject(const _ngRef.OpaqueToken<dynamic>('overlayContainerName'))],
+    const [const _ngRef.Inject(const _i7.OpaqueToken<dynamic>('overlayContainer'))],
+    const [const _ngRef.Inject(const _i7.OpaqueToken<dynamic>('overlayContainerName'))],
     const [_i3.DomRuler],
     const [_i4.DomService],
     const [_i5.AcxImperativeViewUtils],
-    const [const _ngRef.Inject(const _ngRef.OpaqueToken<dynamic>('overlaySyncDom'))],
-    const [const _ngRef.Inject(const _ngRef.OpaqueToken<dynamic>('overlayRepositionLoop'))],
+    const [const _ngRef.Inject(const _i7.OpaqueToken<dynamic>('overlaySyncDom'))],
+    const [const _ngRef.Inject(const _i7.OpaqueToken<dynamic>('overlayRepositionLoop'))],
     const [_i6.ZIndexer]
   ]);
   _ref0.initReflector();

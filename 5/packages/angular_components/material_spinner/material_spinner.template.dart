@@ -1,7 +1,5 @@
-// GENERATED CODE - DO NOT MODIFY BY HAND
-
 // **************************************************************************
-// Generator: TemplateGenerator
+// Generator: Instance of 'Compiler'
 // **************************************************************************
 
 // ignore_for_file: cancel_subscriptions,constant_identifier_names,duplicate_import,non_constant_identifier_names,library_prefixes,UNUSED_IMPORT,UNUSED_SHOWN_NAME
@@ -62,16 +60,16 @@ const List<dynamic> styles$MaterialSpinnerComponentHost = const [];
 
 class _ViewMaterialSpinnerComponentHost0 extends AppView<dynamic> {
   ViewMaterialSpinnerComponent0 _compView_0;
-  import2.MaterialSpinnerComponent _MaterialSpinnerComponent_0_4;
+  import2.MaterialSpinnerComponent _MaterialSpinnerComponent_0_5;
   _ViewMaterialSpinnerComponentHost0(AppView<dynamic> parentView, num parentIndex) : super(import5.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewMaterialSpinnerComponent0(this, 0);
     rootEl = _compView_0.rootEl;
-    _MaterialSpinnerComponent_0_4 = new import2.MaterialSpinnerComponent();
-    _compView_0.create(_MaterialSpinnerComponent_0_4, projectableNodes);
+    _MaterialSpinnerComponent_0_5 = new import2.MaterialSpinnerComponent();
+    _compView_0.create(_MaterialSpinnerComponent_0_5, projectableNodes);
     init0(rootEl);
-    return new ComponentRef<import2.MaterialSpinnerComponent>(0, this, rootEl, _MaterialSpinnerComponent_0_4);
+    return new ComponentRef<import2.MaterialSpinnerComponent>(0, this, rootEl, _MaterialSpinnerComponent_0_5);
   }
 
   @override

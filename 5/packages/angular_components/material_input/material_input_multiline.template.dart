@@ -1,7 +1,5 @@
-// GENERATED CODE - DO NOT MODIFY BY HAND
-
 // **************************************************************************
-// Generator: TemplateGenerator
+// Generator: Instance of 'Compiler'
 // **************************************************************************
 
 // ignore_for_file: cancel_subscriptions,constant_identifier_names,duplicate_import,non_constant_identifier_names,library_prefixes,UNUSED_IMPORT,UNUSED_SHOWN_NAME
@@ -30,10 +28,10 @@ import 'package:angular_components/material_input/material_input.scss.css.shim.d
 import 'package:angular_components/material_input/material_input_multiline.scss.css.shim.dart' as import1;
 import 'package:angular/src/core/linker/app_view.dart';
 import 'material_input_multiline.dart' as import3;
-import 'package:angular/src/core/linker/query_list.dart' as import4;
-import 'dart:html' as import5;
-import 'package:angular_forms/src/directives/default_value_accessor.dart' as import6;
-import '../focus/focus.dart' as import7;
+import 'dart:html' as import4;
+import 'package:angular_forms/src/directives/default_value_accessor.dart' as import5;
+import '../focus/focus.dart' as import6;
+import 'package:angular_forms/src/directives/control_value_accessor.dart' as import7;
 import 'package:angular_forms/src/directives/ng_model.dart' as import8;
 import 'package:angular/src/core/linker/view_container.dart';
 import 'package:angular/src/common/directives/ng_if.dart';
@@ -56,32 +54,32 @@ import 'base_material_input.dart' as import25;
 const List<dynamic> styles$MaterialMultilineInputComponent = const [import0.styles, import1.styles];
 
 class ViewMaterialMultilineInputComponent0 extends AppView<import3.MaterialMultilineInputComponent> {
-  final import4.QueryList _viewQuery_FocusableDirective_0 = new import4.QueryList();
-  final import4.QueryList _viewQuery_lineHeightMeasure_1 = new import4.QueryList();
-  final import4.QueryList _viewQuery_textareaEl_2 = new import4.QueryList();
-  final import4.QueryList _viewQuery_popupSourceEl_3 = new import4.QueryList();
-  import5.DivElement _el_0;
-  import5.DivElement _el_1;
-  import5.DivElement _el_2;
-  import5.DivElement _el_3;
-  import5.Element _el_4;
-  import5.Text _text_5;
-  import5.DivElement _el_6;
-  import5.DivElement _el_7;
-  import5.Text _text_8;
-  import5.DivElement _el_9;
-  import5.Element _el_10;
-  import5.TextAreaElement _el_11;
-  import6.DefaultValueAccessor _DefaultValueAccessor_11_4;
-  import7.FocusableDirective _FocusableDirective_11_5;
-  List<dynamic> _NgValueAccessor_11_6;
-  import8.NgModel _NgModel_11_7;
-  import5.DivElement _el_12;
-  import5.DivElement _el_13;
-  import5.DivElement _el_14;
-  import5.DivElement _el_15;
+  bool _query_FocusableDirective_1_0_isDirty = true;
+  bool _query_lineHeightMeasure_1_1_isDirty = true;
+  bool _query_textareaEl_1_2_isDirty = true;
+  bool _query_popupSourceEl_1_3_isDirty = true;
+  import4.DivElement _el_0;
+  import4.DivElement _el_1;
+  import4.DivElement _el_2;
+  import4.DivElement _el_3;
+  import4.Element _el_4;
+  import4.Text _text_5;
+  import4.DivElement _el_6;
+  import4.DivElement _el_7;
+  import4.Text _text_8;
+  import4.DivElement _el_9;
+  import4.Element _el_10;
+  import4.TextAreaElement _el_11;
+  import5.DefaultValueAccessor _DefaultValueAccessor_11_5;
+  import6.FocusableDirective _FocusableDirective_11_6;
+  List<import7.ControlValueAccessor<dynamic>> _NgValueAccessor_11_7;
+  import8.NgModel _NgModel_11_8;
+  import4.DivElement _el_12;
+  import4.DivElement _el_13;
+  import4.DivElement _el_14;
+  import4.DivElement _el_15;
   ViewContainer _appEl_16;
-  NgIf _NgIf_16_7;
+  NgIf _NgIf_16_9;
   bool _expr_0;
   bool _expr_1;
   bool _expr_2;
@@ -105,7 +103,7 @@ class ViewMaterialMultilineInputComponent0 extends AppView<import3.MaterialMulti
   bool _expr_21;
   static RenderComponentType _renderType;
   ViewMaterialMultilineInputComponent0(AppView<dynamic> parentView, num parentIndex) : super(import12.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckOnce) {
-    rootEl = import5.document.createElement('material-input');
+    rootEl = import4.document.createElement('material-input');
     rootEl.className = 'themeable';
     createAttr(rootEl, 'tabIndex', '-1');
     _renderType ??= import14.appViewUtils.createRenderType('', ViewEncapsulation.Emulated, styles$MaterialMultilineInputComponent);
@@ -114,8 +112,8 @@ class ViewMaterialMultilineInputComponent0 extends AppView<import3.MaterialMulti
   @override
   ComponentRef<import3.MaterialMultilineInputComponent> build() {
     final import3.MaterialMultilineInputComponent _ctx = ctx;
-    final import5.HtmlElement parentRenderNode = initViewRoot(rootEl);
-    var doc = import5.document;
+    final import4.HtmlElement parentRenderNode = initViewRoot(rootEl);
+    var doc = import4.document;
     _el_0 = createDivAndAppend(doc, parentRenderNode);
     _el_0.className = 'baseline';
     addShimC(_el_0);
@@ -132,7 +130,7 @@ class ViewMaterialMultilineInputComponent0 extends AppView<import3.MaterialMulti
     _el_4 = createSpanAndAppend(doc, _el_3);
     _el_4.className = 'label-text';
     addShimE(_el_4);
-    _text_5 = new import5.Text('');
+    _text_5 = new import4.Text('');
     _el_4.append(_text_5);
     _el_6 = createDivAndAppend(doc, _el_2);
     addShimC(_el_6);
@@ -140,7 +138,7 @@ class ViewMaterialMultilineInputComponent0 extends AppView<import3.MaterialMulti
     createAttr(_el_7, 'aria-hidden', 'true');
     _el_7.className = 'mirror-text';
     addShimC(_el_7);
-    _text_8 = new import5.Text('');
+    _text_8 = new import4.Text('');
     _el_7.append(_text_8);
     _el_9 = createDivAndAppend(doc, _el_6);
     createAttr(_el_9, 'aria-hidden', 'true');
@@ -152,10 +150,10 @@ class ViewMaterialMultilineInputComponent0 extends AppView<import3.MaterialMulti
     _el_11.className = 'textarea';
     createAttr(_el_11, 'focusableElement', '');
     addShimC(_el_11);
-    _DefaultValueAccessor_11_4 = new import6.DefaultValueAccessor(_el_11);
-    _FocusableDirective_11_5 = new import7.FocusableDirective(_el_11);
-    _NgValueAccessor_11_6 = [_DefaultValueAccessor_11_4];
-    _NgModel_11_7 = new import8.NgModel(null, _NgValueAccessor_11_6);
+    _DefaultValueAccessor_11_5 = new import5.DefaultValueAccessor(_el_11);
+    _FocusableDirective_11_6 = new import6.FocusableDirective(_el_11);
+    _NgValueAccessor_11_7 = [_DefaultValueAccessor_11_5];
+    _NgModel_11_8 = new import8.NgModel(null, _NgValueAccessor_11_7);
     project(_el_1, 0);
     _el_12 = createDivAndAppend(doc, _el_0);
     _el_12.className = 'underline';
@@ -172,20 +170,16 @@ class ViewMaterialMultilineInputComponent0 extends AppView<import3.MaterialMulti
     var _anchor_16 = ngAnchor.clone(false);
     parentRenderNode.append(_anchor_16);
     _appEl_16 = new ViewContainer(16, null, this, _anchor_16);
-    TemplateRef _TemplateRef_16_6 = new TemplateRef(_appEl_16, viewFactory_MaterialMultilineInputComponent1);
-    _NgIf_16_7 = new NgIf(_appEl_16, _TemplateRef_16_6);
+    TemplateRef _TemplateRef_16_8 = new TemplateRef(_appEl_16, viewFactory_MaterialMultilineInputComponent1);
+    _NgIf_16_9 = new NgIf(_appEl_16, _TemplateRef_16_8);
     _el_11.addEventListener('blur', eventHandler1(_handle_blur_11_0));
     _el_11.addEventListener('change', eventHandler1(_handle_change_11_1));
     _el_11.addEventListener('focus', eventHandler1(ctx.inputFocusAction));
     _el_11.addEventListener('input', eventHandler1(_handle_input_11_3));
-    _viewQuery_FocusableDirective_0.reset([_FocusableDirective_11_5]);
-    ctx.focusable = _viewQuery_FocusableDirective_0.first;
-    _viewQuery_lineHeightMeasure_1.reset([new ElementRef(_el_9)]);
-    ctx.lineHeightMeasure = _viewQuery_lineHeightMeasure_1.first;
-    _viewQuery_textareaEl_2.reset([new ElementRef(_el_11)]);
-    ctx.textareaEl = _viewQuery_textareaEl_2.first;
-    _viewQuery_popupSourceEl_3.reset([new ElementRef(_el_0)]);
-    ctx.popupSourceEl = _viewQuery_popupSourceEl_3.first;
+    ctx.focusable = _FocusableDirective_11_6;
+    ctx.lineHeightMeasure = new ElementRef(_el_9);
+    ctx.textareaEl = new ElementRef(_el_11);
+    ctx.popupSourceEl = new ElementRef(_el_0);
     init(const [], null);
     rootEl.addEventListener('focus', eventHandler0(_ctx.focus));
     return null;
@@ -193,17 +187,17 @@ class ViewMaterialMultilineInputComponent0 extends AppView<import3.MaterialMulti
 
   @override
   dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
-    if ((identical(token, import6.DefaultValueAccessor) && (11 == nodeIndex))) {
-      return _DefaultValueAccessor_11_4;
+    if ((identical(token, import5.DefaultValueAccessor) && (11 == nodeIndex))) {
+      return _DefaultValueAccessor_11_5;
     }
-    if ((identical(token, import7.FocusableDirective) && (11 == nodeIndex))) {
-      return _FocusableDirective_11_5;
+    if ((identical(token, import6.FocusableDirective) && (11 == nodeIndex))) {
+      return _FocusableDirective_11_6;
     }
-    if ((identical(token, const import18.OpaqueToken<import19.ControlValueAccessor<dynamic>>('NgValueAccessor')) && (11 == nodeIndex))) {
-      return _NgValueAccessor_11_6;
+    if ((identical(token, const import18.MultiToken<import19.ControlValueAccessor>('NgValueAccessor')) && (11 == nodeIndex))) {
+      return _NgValueAccessor_11_7;
     }
     if (((identical(token, import8.NgModel) || identical(token, import20.NgControl)) && (11 == nodeIndex))) {
-      return _NgModel_11_7;
+      return _NgModel_11_8;
     }
     return notFoundResult;
   }
@@ -214,12 +208,12 @@ class ViewMaterialMultilineInputComponent0 extends AppView<import3.MaterialMulti
     bool changed = false;
     bool firstCheck = (this.cdState == 0);
     changed = false;
-    _NgModel_11_7.model = _ctx.inputText;
-    _NgModel_11_7.ngAfterChanges();
+    _NgModel_11_8.model = _ctx.inputText;
+    _NgModel_11_8.ngAfterChanges();
     if (firstCheck) {
-      _NgModel_11_7.ngOnInit();
+      _NgModel_11_8.ngOnInit();
     }
-    _NgIf_16_7.ngIf = _ctx.displayBottomPanel;
+    _NgIf_16_9.ngIf = _ctx.displayBottomPanel;
     _appEl_16.detectChangesInNestedViews();
     final currVal_0 = _ctx.floatingLabel;
     if (!identical(_expr_0, currVal_0)) {
@@ -336,7 +330,7 @@ class ViewMaterialMultilineInputComponent0 extends AppView<import3.MaterialMulti
   void _handle_blur_11_0($event) {
     final local_textareaEl = _el_11;
     ctx.inputBlurAction($event, local_textareaEl.validity.valid, local_textareaEl.validationMessage);
-    _DefaultValueAccessor_11_4.touchHandler();
+    _DefaultValueAccessor_11_5.touchHandler();
   }
 
   void _handle_change_11_1($event) {
@@ -348,7 +342,7 @@ class ViewMaterialMultilineInputComponent0 extends AppView<import3.MaterialMulti
   void _handle_input_11_3($event) {
     final local_textareaEl = _el_11;
     ctx.inputKeypress(local_textareaEl.value, local_textareaEl.validity.valid, local_textareaEl.validationMessage);
-    _DefaultValueAccessor_11_4.onChange($event.target.value);
+    _DefaultValueAccessor_11_5.onChange($event.target.value);
   }
 }
 
@@ -357,16 +351,16 @@ AppView<import3.MaterialMultilineInputComponent> viewFactory_MaterialMultilineIn
 }
 
 class _ViewMaterialMultilineInputComponent1 extends AppView<import3.MaterialMultilineInputComponent> {
-  import5.DivElement _el_0;
-  import21.NgSwitch _NgSwitch_0_4;
+  import4.DivElement _el_0;
+  import21.NgSwitch _NgSwitch_0_5;
   ViewContainer _appEl_1;
-  import21.NgSwitchWhen _NgSwitchWhen_1_7;
+  import21.NgSwitchWhen _NgSwitchWhen_1_9;
   ViewContainer _appEl_2;
-  import21.NgSwitchWhen _NgSwitchWhen_2_7;
+  import21.NgSwitchWhen _NgSwitchWhen_2_9;
   ViewContainer _appEl_3;
-  import21.NgSwitchWhen _NgSwitchWhen_3_7;
+  import21.NgSwitchWhen _NgSwitchWhen_3_9;
   ViewContainer _appEl_4;
-  NgIf _NgIf_4_7;
+  NgIf _NgIf_4_9;
   var _expr_0;
   var _expr_1;
   var _expr_2;
@@ -376,31 +370,31 @@ class _ViewMaterialMultilineInputComponent1 extends AppView<import3.MaterialMult
   }
   @override
   ComponentRef<import3.MaterialMultilineInputComponent> build() {
-    var doc = import5.document;
+    var doc = import4.document;
     _el_0 = doc.createElement('div');
     _el_0.className = 'bottom-section';
     addShimC(_el_0);
-    _NgSwitch_0_4 = new import21.NgSwitch();
+    _NgSwitch_0_5 = new import21.NgSwitch();
     var _anchor_1 = ngAnchor.clone(false);
     _el_0.append(_anchor_1);
     _appEl_1 = new ViewContainer(1, 0, this, _anchor_1);
-    TemplateRef _TemplateRef_1_6 = new TemplateRef(_appEl_1, viewFactory_MaterialMultilineInputComponent2);
-    _NgSwitchWhen_1_7 = new import21.NgSwitchWhen(_appEl_1, _TemplateRef_1_6, _NgSwitch_0_4);
+    TemplateRef _TemplateRef_1_8 = new TemplateRef(_appEl_1, viewFactory_MaterialMultilineInputComponent2);
+    _NgSwitchWhen_1_9 = new import21.NgSwitchWhen(_appEl_1, _TemplateRef_1_8, _NgSwitch_0_5);
     var _anchor_2 = ngAnchor.clone(false);
     _el_0.append(_anchor_2);
     _appEl_2 = new ViewContainer(2, 0, this, _anchor_2);
-    TemplateRef _TemplateRef_2_6 = new TemplateRef(_appEl_2, viewFactory_MaterialMultilineInputComponent3);
-    _NgSwitchWhen_2_7 = new import21.NgSwitchWhen(_appEl_2, _TemplateRef_2_6, _NgSwitch_0_4);
+    TemplateRef _TemplateRef_2_8 = new TemplateRef(_appEl_2, viewFactory_MaterialMultilineInputComponent3);
+    _NgSwitchWhen_2_9 = new import21.NgSwitchWhen(_appEl_2, _TemplateRef_2_8, _NgSwitch_0_5);
     var _anchor_3 = ngAnchor.clone(false);
     _el_0.append(_anchor_3);
     _appEl_3 = new ViewContainer(3, 0, this, _anchor_3);
-    TemplateRef _TemplateRef_3_6 = new TemplateRef(_appEl_3, viewFactory_MaterialMultilineInputComponent4);
-    _NgSwitchWhen_3_7 = new import21.NgSwitchWhen(_appEl_3, _TemplateRef_3_6, _NgSwitch_0_4);
+    TemplateRef _TemplateRef_3_8 = new TemplateRef(_appEl_3, viewFactory_MaterialMultilineInputComponent4);
+    _NgSwitchWhen_3_9 = new import21.NgSwitchWhen(_appEl_3, _TemplateRef_3_8, _NgSwitch_0_5);
     var _anchor_4 = ngAnchor.clone(false);
     _el_0.append(_anchor_4);
     _appEl_4 = new ViewContainer(4, 0, this, _anchor_4);
-    TemplateRef _TemplateRef_4_6 = new TemplateRef(_appEl_4, viewFactory_MaterialMultilineInputComponent5);
-    _NgIf_4_7 = new NgIf(_appEl_4, _TemplateRef_4_6);
+    TemplateRef _TemplateRef_4_8 = new TemplateRef(_appEl_4, viewFactory_MaterialMultilineInputComponent5);
+    _NgIf_4_9 = new NgIf(_appEl_4, _TemplateRef_4_8);
     init0(_el_0);
     return null;
   }
@@ -408,7 +402,7 @@ class _ViewMaterialMultilineInputComponent1 extends AppView<import3.MaterialMult
   @override
   dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
     if ((identical(token, import21.NgSwitch) && ((0 <= nodeIndex) && (nodeIndex <= 4)))) {
-      return _NgSwitch_0_4;
+      return _NgSwitch_0_5;
     }
     return notFoundResult;
   }
@@ -418,25 +412,25 @@ class _ViewMaterialMultilineInputComponent1 extends AppView<import3.MaterialMult
     final import3.MaterialMultilineInputComponent _ctx = ctx;
     final currVal_0 = _ctx.bottomPanelState;
     if (!identical(_expr_0, currVal_0)) {
-      _NgSwitch_0_4.ngSwitch = currVal_0;
+      _NgSwitch_0_5.ngSwitch = currVal_0;
       _expr_0 = currVal_0;
     }
     final currVal_1 = _ctx.errorState;
     if (!identical(_expr_1, currVal_1)) {
-      _NgSwitchWhen_1_7.ngSwitchWhen = currVal_1;
+      _NgSwitchWhen_1_9.ngSwitchWhen = currVal_1;
       _expr_1 = currVal_1;
     }
     final currVal_2 = _ctx.hintState;
     if (!identical(_expr_2, currVal_2)) {
-      _NgSwitchWhen_2_7.ngSwitchWhen = currVal_2;
+      _NgSwitchWhen_2_9.ngSwitchWhen = currVal_2;
       _expr_2 = currVal_2;
     }
     final currVal_3 = _ctx.emptyState;
     if (!identical(_expr_3, currVal_3)) {
-      _NgSwitchWhen_3_7.ngSwitchWhen = currVal_3;
+      _NgSwitchWhen_3_9.ngSwitchWhen = currVal_3;
       _expr_3 = currVal_3;
     }
-    _NgIf_4_7.ngIf = (_ctx.maxCount != null);
+    _NgIf_4_9.ngIf = ((_ctx.maxCount != null) || _ctx.showCharacterCount);
     _appEl_1.detectChangesInNestedViews();
     _appEl_2.detectChangesInNestedViews();
     _appEl_3.detectChangesInNestedViews();
@@ -457,8 +451,8 @@ AppView<import3.MaterialMultilineInputComponent> viewFactory_MaterialMultilineIn
 }
 
 class _ViewMaterialMultilineInputComponent2 extends AppView<import3.MaterialMultilineInputComponent> {
-  import5.DivElement _el_0;
-  import5.Text _text_1;
+  import4.DivElement _el_0;
+  import4.Text _text_1;
   bool _expr_0;
   bool _expr_1;
   var _expr_2;
@@ -468,12 +462,12 @@ class _ViewMaterialMultilineInputComponent2 extends AppView<import3.MaterialMult
   }
   @override
   ComponentRef<import3.MaterialMultilineInputComponent> build() {
-    var doc = import5.document;
+    var doc = import4.document;
     _el_0 = doc.createElement('div');
     _el_0.className = 'error-text';
     createAttr(_el_0, 'role', 'alert');
     addShimC(_el_0);
-    _text_1 = new import5.Text('');
+    _text_1 = new import4.Text('');
     _el_0.append(_text_1);
     init0(_el_0);
     return null;
@@ -510,19 +504,19 @@ AppView<import3.MaterialMultilineInputComponent> viewFactory_MaterialMultilineIn
 }
 
 class _ViewMaterialMultilineInputComponent3 extends AppView<import3.MaterialMultilineInputComponent> {
-  import5.DivElement _el_0;
-  import5.Text _text_1;
+  import4.DivElement _el_0;
+  import4.Text _text_1;
   var _expr_0;
   _ViewMaterialMultilineInputComponent3(AppView<dynamic> parentView, num parentIndex) : super(import12.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMaterialMultilineInputComponent0._renderType;
   }
   @override
   ComponentRef<import3.MaterialMultilineInputComponent> build() {
-    var doc = import5.document;
+    var doc = import4.document;
     _el_0 = doc.createElement('div');
     _el_0.className = 'hint-text';
     addShimC(_el_0);
-    _text_1 = new import5.Text('');
+    _text_1 = new import4.Text('');
     _el_0.append(_text_1);
     init0(_el_0);
     return null;
@@ -544,18 +538,18 @@ AppView<import3.MaterialMultilineInputComponent> viewFactory_MaterialMultilineIn
 }
 
 class _ViewMaterialMultilineInputComponent4 extends AppView<import3.MaterialMultilineInputComponent> {
-  import5.DivElement _el_0;
+  import4.DivElement _el_0;
   _ViewMaterialMultilineInputComponent4(AppView<dynamic> parentView, num parentIndex) : super(import12.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMaterialMultilineInputComponent0._renderType;
   }
   @override
   ComponentRef<import3.MaterialMultilineInputComponent> build() {
-    var doc = import5.document;
+    var doc = import4.document;
     _el_0 = doc.createElement('div');
     _el_0.className = 'spaceholder';
     _el_0.tabIndex = -1;
     addShimC(_el_0);
-    import5.Text _text_1 = new import5.Text('\n     \n  ');
+    import4.Text _text_1 = new import4.Text('\n     \n  ');
     _el_0.append(_text_1);
     _el_0.addEventListener('focus', eventHandler1(_handle_focus_0_0));
     init0(_el_0);
@@ -572,8 +566,8 @@ AppView<import3.MaterialMultilineInputComponent> viewFactory_MaterialMultilineIn
 }
 
 class _ViewMaterialMultilineInputComponent5 extends AppView<import3.MaterialMultilineInputComponent> {
-  import5.DivElement _el_0;
-  import5.Text _text_1;
+  import4.DivElement _el_0;
+  import4.Text _text_1;
   bool _expr_0;
   var _expr_1;
   _ViewMaterialMultilineInputComponent5(AppView<dynamic> parentView, num parentIndex) : super(import12.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
@@ -581,12 +575,12 @@ class _ViewMaterialMultilineInputComponent5 extends AppView<import3.MaterialMult
   }
   @override
   ComponentRef<import3.MaterialMultilineInputComponent> build() {
-    var doc = import5.document;
+    var doc = import4.document;
     _el_0 = doc.createElement('div');
     createAttr(_el_0, 'aria-hidden', 'true');
     _el_0.className = 'counter';
     addShimC(_el_0);
-    _text_1 = new import5.Text('');
+    _text_1 = new import4.Text('');
     _el_0.append(_text_1);
     init0(_el_0);
     return null;
@@ -616,38 +610,38 @@ const List<dynamic> styles$MaterialMultilineInputComponentHost = const [];
 
 class _ViewMaterialMultilineInputComponentHost0 extends AppView<dynamic> {
   ViewMaterialMultilineInputComponent0 _compView_0;
-  import22.DeferredValidator _DeferredValidator_0_4;
-  import3.MaterialMultilineInputComponent _MaterialMultilineInputComponent_0_5;
-  List<dynamic> __NgValidators_0_6;
+  import22.DeferredValidator _DeferredValidator_0_5;
+  import3.MaterialMultilineInputComponent _MaterialMultilineInputComponent_0_6;
+  List<dynamic> __NgValidators_0_7;
   _ViewMaterialMultilineInputComponentHost0(AppView<dynamic> parentView, num parentIndex) : super(import12.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
-  List<dynamic> get _NgValidators_0_6 {
-    if ((this.__NgValidators_0_6 == null)) {
-      (__NgValidators_0_6 = [this._DeferredValidator_0_4]);
+  List<dynamic> get _NgValidators_0_7 {
+    if ((this.__NgValidators_0_7 == null)) {
+      (__NgValidators_0_7 = [this._DeferredValidator_0_5]);
     }
-    return this.__NgValidators_0_6;
+    return this.__NgValidators_0_7;
   }
 
   @override
   ComponentRef build() {
     _compView_0 = new ViewMaterialMultilineInputComponent0(this, 0);
     rootEl = _compView_0.rootEl;
-    _DeferredValidator_0_4 = new import22.DeferredValidator();
-    _MaterialMultilineInputComponent_0_5 = new import3.MaterialMultilineInputComponent(null, _compView_0.ref, _DeferredValidator_0_4, this.injectorGet(import23.DomService, viewData.parentIndex));
-    _compView_0.create(_MaterialMultilineInputComponent_0_5, projectableNodes);
+    _DeferredValidator_0_5 = new import22.DeferredValidator();
+    _MaterialMultilineInputComponent_0_6 = new import3.MaterialMultilineInputComponent(null, _compView_0.ref, _DeferredValidator_0_5, this.injectorGet(import23.DomService, viewData.parentIndex));
+    _compView_0.create(_MaterialMultilineInputComponent_0_6, projectableNodes);
     init0(rootEl);
-    return new ComponentRef<import3.MaterialMultilineInputComponent>(0, this, rootEl, _MaterialMultilineInputComponent_0_5);
+    return new ComponentRef<import3.MaterialMultilineInputComponent>(0, this, rootEl, _MaterialMultilineInputComponent_0_6);
   }
 
   @override
   dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
     if ((identical(token, import22.DeferredValidator) && (0 == nodeIndex))) {
-      return _DeferredValidator_0_4;
+      return _DeferredValidator_0_5;
     }
-    if (((((identical(token, import3.MaterialMultilineInputComponent) || identical(token, import24.ReferenceDirective)) || identical(token, import7.Focusable)) || identical(token, import25.BaseMaterialInput)) && (0 == nodeIndex))) {
-      return _MaterialMultilineInputComponent_0_5;
+    if (((((identical(token, import3.MaterialMultilineInputComponent) || identical(token, import24.ReferenceDirective)) || identical(token, import6.Focusable)) || identical(token, import25.BaseMaterialInput)) && (0 == nodeIndex))) {
+      return _MaterialMultilineInputComponent_0_6;
     }
-    if ((identical(token, const import18.OpaqueToken('NgValidators')) && (0 == nodeIndex))) {
-      return _NgValidators_0_6;
+    if ((identical(token, const import18.MultiToken('NgValidators')) && (0 == nodeIndex))) {
+      return _NgValidators_0_7;
     }
     return notFoundResult;
   }
@@ -661,14 +655,14 @@ class _ViewMaterialMultilineInputComponentHost0 extends AppView<dynamic> {
     }
     _compView_0.detectChanges();
     if (firstCheck) {
-      _MaterialMultilineInputComponent_0_5.ngAfterViewInit();
+      _MaterialMultilineInputComponent_0_6.ngAfterViewInit();
     }
   }
 
   @override
   void destroyInternal() {
     _compView_0?.destroy();
-    _MaterialMultilineInputComponent_0_5.ngOnDestroy();
+    _MaterialMultilineInputComponent_0_6.ngOnDestroy();
   }
 }
 
