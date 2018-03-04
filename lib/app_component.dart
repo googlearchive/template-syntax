@@ -19,7 +19,7 @@ enum Color { red, green, blue }
   templateUrl: 'app_component.html',
   styleUrls: const ['app_component.css'],
   directives: const [
-    CORE_DIRECTIVES,
+    coreDirectives,
     formDirectives,
     BigHeroDetailComponent,
     HeroDetailComponent,

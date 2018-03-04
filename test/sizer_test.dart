@@ -21,7 +21,7 @@ void main() {
 
   setUp(() async {
     fixture = await testBed.create();
-    po = await fixture.resolvePageObject(SizerPO);
+    po = await new SizerPO().resolve(fixture);
   });
 
   tearDown(disposeAnyRunningTest);
@@ -31,14 +31,14 @@ void main() {
   const inputSize = 10;
 
   test('@Input() size ${inputSize} as String', () async {
-    fixture.update((c) => c.size = inputSize.toString());
-    po = await fixture.resolvePageObject(SizerPO);
+    await fixture.update((c) => c.size = inputSize.toString());
+    po = await new SizerPO().resolve(fixture);
     await _expectSize(inputSize);
   });
 
   test('@Input() size ${inputSize} as int', () async {
-    fixture.update((c) => c.size = inputSize);
-    po = await fixture.resolvePageObject(SizerPO);
+    await fixture.update((c) => c.size = inputSize);
+    po = await new SizerPO().resolve(fixture);
     await _expectSize(inputSize);
   });
 
@@ -51,11 +51,11 @@ void main() {
       await _expectSize(expectedSize);
     });
 
-    test('@Output $expectedSize size event', () async {
-      fixture.update((c) async {
-        expect(await c.sizeChange.first, expectedSize);
-      });
-    });
+    test(
+        '@Output $expectedSize size event',
+        () => fixture.update((c) async {
+              expect(await c.sizeChange.first, expectedSize);
+            }));
   });
 
   group('inc:', () {
@@ -67,11 +67,11 @@ void main() {
       await _expectSize(expectedSize);
     });
 
-    test('@Output $expectedSize size event', () async {
-      fixture.update((c) async {
-        expect(await c.sizeChange.first, expectedSize);
-      });
-    });
+    test(
+        '@Output $expectedSize size event',
+        () => fixture.update((c) async {
+              expect(await c.sizeChange.first, expectedSize);
+            }));
   });
 }
 
