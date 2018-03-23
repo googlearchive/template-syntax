@@ -117,7 +117,7 @@
   <!-- Normal HTML -->
   <div class="special">Mental Model</div>
   <!-- Wow! A new element! -->
-  <hero-detail></hero-detail>
+  <my-hero></my-hero>
 </div>
 <br><br>
 
@@ -129,13 +129,13 @@
 
 <div>
   <img [src]="heroImageUrl">
-  <hero-detail [hero]="currentHero"></hero-detail>
+  <my-hero [hero]="currentHero"></my-hero>
   <div [ngClass]="{special: isSpecial}"></div>
 </div>
 <br><br>
 
 <button (click)="onSave()">Save</button>
-<hero-detail (deleteRequest)="deleteHero()"></hero-detail>
+<my-hero (deleteRequest)="deleteHero()"></my-hero>
 <div (myClick)="clicked=$event" clickable>click me</div>
 {{clicked}}
 <br><br>
@@ -193,14 +193,14 @@ button</button>
 <img [src]="heroImageUrl">
 <button [disabled]="isUnchanged">Cancel is disabled</button>
 <div [ngClass]="classes">[ngClass] binding to the classes property</div>
-<hero-detail [hero]="currentHero"></hero-detail>
+<my-hero [hero]="currentHero"></my-hero>
 <img bind-src="heroImageUrl">
 
 <!-- ERROR: A value of type 'String' can't be assigned to a variable of type 'Hero'.
-<hero-detail hero="currentHero"></hero-detail>
+<my-hero hero="currentHero"></my-hero>
 -->
 
-<hero-detail prefix="You are my" [hero]="currentHero"></hero-detail>
+<my-hero prefix="You are my" [hero]="currentHero"></my-hero>
 
 <p><img src="{{heroImageUrl}}"> is the <i>interpolated</i> image.</p>
 <p><img [src]="heroImageUrl"> is the <i>property bound</i> image.</p>
@@ -297,13 +297,13 @@ button</button>
 
 
 <!-- binding to a nested component -->
-<hero-detail (deleteRequest)="deleteHero($event)" [hero]="currentHero"></hero-detail>
+<my-hero (deleteRequest)="deleteHero($event)" [hero]="currentHero"></my-hero>
 <br>
 
-<big-hero-detail
+<big-my-hero
     (deleteRequest)="deleteHero($event)"
     [hero]="currentHero">
-</big-hero-detail>
+</big-my-hero>
 
 <div class="parent-div" (click)="onClickMe($event)" clickable>Click me
   <div class="child-div">Click me too!</div>
@@ -416,7 +416,7 @@ without NgModel
 <!-- NgIf binding -->
 <hr><h2 id="ngIf">NgIf Binding</h2>
 
-<hero-detail *ngIf="isActive"></hero-detail>
+<my-hero *ngIf="isActive"></my-hero>
 
 <div *ngIf="currentHero != null">Hello, {{currentHero.name}}</div>
 <div *ngIf="nullHero != null">Hello, {{nullHero.name}}</div>
@@ -428,7 +428,7 @@ without NgModel
 <!-- Does not show because isActive is false! -->
 <div>Hero Detail removed from DOM (via template) because isActive is false</div>
 <template [ngIf]="isActive">
-  <hero-detail></hero-detail>
+  <my-hero></my-hero>
 </template>
 
 <!-- isSpecial is true -->
@@ -436,7 +436,7 @@ without NgModel
 <div [class.hidden]="isSpecial">Hide with class</div>
 
 <!-- HeroDetail is in the DOM but hidden -->
-<hero-detail [class.hidden]="isSpecial"></hero-detail>
+<my-hero [class.hidden]="isSpecial"></my-hero>
 
 <div [style.display]="isSpecial ? 'block' : 'none'">Show with style</div>
 <div [style.display]="isSpecial ? 'none'  : 'block'">Hide with style</div>
@@ -452,8 +452,8 @@ without NgModel
 <br>
 
 <div class="box">
-  <!-- *ngFor w/ hero-detail Component -->
-  <hero-detail *ngFor="let hero of heroes" [hero]="hero"></hero-detail>
+  <!-- *ngFor w/ my-hero Component -->
+  <my-hero *ngFor="let hero of heroes" [hero]="hero"></my-hero>
 </div>
 
 <a class="to-toc" href="#toc">top</a>
@@ -548,8 +548,8 @@ without NgModel
 <img [src]="iconUrl"/>
 <button (click)="onSave()">Save</button>
 
-<hero-detail [hero]="currentHero" (deleteRequest)="deleteHero($event)">
-</hero-detail>
+<my-hero [hero]="currentHero" (deleteRequest)="deleteHero($event)">
+</my-hero>
 
 <div (myClick)="clickMessage2=$event" clickable>myClick2</div>
 {{clickMessage2}}

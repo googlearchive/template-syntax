@@ -75,7 +75,7 @@ void main() {
   });
 }
 
-Future<Null> _expectSize(int size) async {
+Future<void> _expectSize(int size) async {
   expect(await po.fontSizeFromLabelText, size);
   expect(await po.fontSizeFromStyle, size);
 }
