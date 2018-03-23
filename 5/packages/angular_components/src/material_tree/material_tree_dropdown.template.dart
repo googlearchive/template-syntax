@@ -111,7 +111,7 @@ class ViewMaterialTreeDropdownComponent0 extends AppView<import2.MaterialTreeDro
   var _expr_6;
   bool _expr_8;
   static RenderComponentType _renderType;
-  ViewMaterialTreeDropdownComponent0(AppView<dynamic> parentView, num parentIndex) : super(import12.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  ViewMaterialTreeDropdownComponent0(AppView<dynamic> parentView, int parentIndex) : super(import12.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     rootEl = import3.document.createElement('material-tree-dropdown');
     _renderType ??= import14.appViewUtils.createRenderType('', ViewEncapsulation.Emulated, styles$MaterialTreeDropdownComponent);
     setupComponentType(_renderType);
@@ -132,7 +132,8 @@ class ViewMaterialTreeDropdownComponent0 extends AppView<import2.MaterialTreeDro
 
   @override
   ComponentRef<import2.MaterialTreeDropdownComponent> build() {
-    final import3.HtmlElement parentRenderNode = initViewRoot(rootEl);
+    final _rootEl = rootEl;
+    final import3.HtmlElement parentRenderNode = initViewRoot(_rootEl);
     var doc = import3.document;
     _el_0 = createDivAndAppend(doc, parentRenderNode);
     _el_0.className = 'button';
@@ -313,7 +314,7 @@ class ViewMaterialTreeDropdownComponent0 extends AppView<import2.MaterialTreeDro
   }
 }
 
-AppView<import2.MaterialTreeDropdownComponent> viewFactory_MaterialTreeDropdownComponent0(AppView<dynamic> parentView, num parentIndex) {
+AppView<import2.MaterialTreeDropdownComponent> viewFactory_MaterialTreeDropdownComponent0(AppView<dynamic> parentView, int parentIndex) {
   return new ViewMaterialTreeDropdownComponent0(parentView, parentIndex);
 }
 
@@ -321,7 +322,7 @@ class _ViewMaterialTreeDropdownComponent1 extends AppView<import2.MaterialTreeDr
   import3.Element _el_0;
   import3.Text _text_1;
   var _expr_0;
-  _ViewMaterialTreeDropdownComponent1(AppView<dynamic> parentView, num parentIndex) : super(import12.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMaterialTreeDropdownComponent1(AppView<dynamic> parentView, int parentIndex) : super(import12.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMaterialTreeDropdownComponent0._renderType;
   }
   @override
@@ -347,7 +348,7 @@ class _ViewMaterialTreeDropdownComponent1 extends AppView<import2.MaterialTreeDr
   }
 }
 
-AppView<import2.MaterialTreeDropdownComponent> viewFactory_MaterialTreeDropdownComponent1(AppView<dynamic> parentView, num parentIndex) {
+AppView<import2.MaterialTreeDropdownComponent> viewFactory_MaterialTreeDropdownComponent1(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewMaterialTreeDropdownComponent1(parentView, parentIndex);
 }
 
@@ -355,7 +356,7 @@ class _ViewMaterialTreeDropdownComponent2 extends AppView<import2.MaterialTreeDr
   import3.Element _el_0;
   import32.ViewMaterialIconComponent0 _compView_0;
   import33.MaterialIconComponent _MaterialIconComponent_0_5;
-  _ViewMaterialTreeDropdownComponent2(AppView<dynamic> parentView, num parentIndex) : super(import12.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMaterialTreeDropdownComponent2(AppView<dynamic> parentView, int parentIndex) : super(import12.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMaterialTreeDropdownComponent0._renderType;
   }
   @override
@@ -392,7 +393,7 @@ class _ViewMaterialTreeDropdownComponent2 extends AppView<import2.MaterialTreeDr
   }
 }
 
-AppView<import2.MaterialTreeDropdownComponent> viewFactory_MaterialTreeDropdownComponent2(AppView<dynamic> parentView, num parentIndex) {
+AppView<import2.MaterialTreeDropdownComponent> viewFactory_MaterialTreeDropdownComponent2(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewMaterialTreeDropdownComponent2(parentView, parentIndex);
 }
 
@@ -402,7 +403,7 @@ class _ViewMaterialTreeDropdownComponent3 extends AppView<import2.MaterialTreeDr
   import35.MaterialTreeFilterComponent _MaterialTreeFilterComponent_0_5;
   String _expr_0;
   var _expr_1;
-  _ViewMaterialTreeDropdownComponent3(AppView<dynamic> parentView, num parentIndex) : super(import12.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMaterialTreeDropdownComponent3(AppView<dynamic> parentView, int parentIndex) : super(import12.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMaterialTreeDropdownComponent0._renderType;
   }
   @override
@@ -448,7 +449,7 @@ class _ViewMaterialTreeDropdownComponent3 extends AppView<import2.MaterialTreeDr
   }
 }
 
-AppView<import2.MaterialTreeDropdownComponent> viewFactory_MaterialTreeDropdownComponent3(AppView<dynamic> parentView, num parentIndex) {
+AppView<import2.MaterialTreeDropdownComponent> viewFactory_MaterialTreeDropdownComponent3(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewMaterialTreeDropdownComponent3(parentView, parentIndex);
 }
 
@@ -458,7 +459,7 @@ class _ViewMaterialTreeDropdownComponent4 extends AppView<import2.MaterialTreeDr
   import35.MaterialTreeFilterComponent _MaterialTreeFilterComponent_0_5;
   String _expr_1;
   var _expr_2;
-  _ViewMaterialTreeDropdownComponent4(AppView<dynamic> parentView, num parentIndex) : super(import12.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMaterialTreeDropdownComponent4(AppView<dynamic> parentView, int parentIndex) : super(import12.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMaterialTreeDropdownComponent0._renderType;
   }
   @override
@@ -505,7 +506,7 @@ class _ViewMaterialTreeDropdownComponent4 extends AppView<import2.MaterialTreeDr
   }
 }
 
-AppView<import2.MaterialTreeDropdownComponent> viewFactory_MaterialTreeDropdownComponent4(AppView<dynamic> parentView, num parentIndex) {
+AppView<import2.MaterialTreeDropdownComponent> viewFactory_MaterialTreeDropdownComponent4(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewMaterialTreeDropdownComponent4(parentView, parentIndex);
 }
 
@@ -518,7 +519,7 @@ class _ViewMaterialTreeDropdownComponent5 extends AppView<import2.MaterialTreeDr
   var _expr_2;
   var _expr_3;
   var _expr_4;
-  _ViewMaterialTreeDropdownComponent5(AppView<dynamic> parentView, num parentIndex) : super(import12.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMaterialTreeDropdownComponent5(AppView<dynamic> parentView, int parentIndex) : super(import12.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMaterialTreeDropdownComponent0._renderType;
   }
   @override
@@ -579,7 +580,7 @@ class _ViewMaterialTreeDropdownComponent5 extends AppView<import2.MaterialTreeDr
   }
 }
 
-AppView<import2.MaterialTreeDropdownComponent> viewFactory_MaterialTreeDropdownComponent5(AppView<dynamic> parentView, num parentIndex) {
+AppView<import2.MaterialTreeDropdownComponent> viewFactory_MaterialTreeDropdownComponent5(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewMaterialTreeDropdownComponent5(parentView, parentIndex);
 }
 
@@ -588,7 +589,7 @@ const List<dynamic> styles$MaterialTreeDropdownComponentHost = const [];
 class _ViewMaterialTreeDropdownComponentHost0 extends AppView<dynamic> {
   ViewMaterialTreeDropdownComponent0 _compView_0;
   import2.MaterialTreeDropdownComponent _MaterialTreeDropdownComponent_0_5;
-  _ViewMaterialTreeDropdownComponentHost0(AppView<dynamic> parentView, num parentIndex) : super(import12.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
+  _ViewMaterialTreeDropdownComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import12.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewMaterialTreeDropdownComponent0(this, 0);
@@ -622,7 +623,7 @@ class _ViewMaterialTreeDropdownComponentHost0 extends AppView<dynamic> {
   }
 }
 
-AppView viewFactory_MaterialTreeDropdownComponentHost0(AppView<dynamic> parentView, num parentIndex) {
+AppView viewFactory_MaterialTreeDropdownComponentHost0(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewMaterialTreeDropdownComponentHost0(parentView, parentIndex);
 }
 

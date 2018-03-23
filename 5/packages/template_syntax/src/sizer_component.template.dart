@@ -32,14 +32,15 @@ class ViewSizerComponent0 extends AppView<import1.SizerComponent> {
   var _expr_2;
   var _expr_3;
   static RenderComponentType _renderType;
-  ViewSizerComponent0(AppView<dynamic> parentView, num parentIndex) : super(import4.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  ViewSizerComponent0(AppView<dynamic> parentView, int parentIndex) : super(import4.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     rootEl = import2.document.createElement('my-sizer');
     _renderType ??= import6.appViewUtils.createRenderType('', ViewEncapsulation.None, styles$SizerComponent);
     setupComponentType(_renderType);
   }
   @override
   ComponentRef<import1.SizerComponent> build() {
-    final import2.HtmlElement parentRenderNode = initViewRoot(rootEl);
+    final _rootEl = rootEl;
+    final import2.HtmlElement parentRenderNode = initViewRoot(_rootEl);
     var doc = import2.document;
     _el_0 = createDivAndAppend(doc, parentRenderNode);
     _el_1 = createAndAppend(doc, 'button', _el_0);
@@ -87,7 +88,7 @@ class ViewSizerComponent0 extends AppView<import1.SizerComponent> {
   }
 }
 
-AppView<import1.SizerComponent> viewFactory_SizerComponent0(AppView<dynamic> parentView, num parentIndex) {
+AppView<import1.SizerComponent> viewFactory_SizerComponent0(AppView<dynamic> parentView, int parentIndex) {
   return new ViewSizerComponent0(parentView, parentIndex);
 }
 
@@ -96,7 +97,7 @@ const List<dynamic> styles$SizerComponentHost = const [];
 class _ViewSizerComponentHost0 extends AppView<dynamic> {
   ViewSizerComponent0 _compView_0;
   import1.SizerComponent _SizerComponent_0_5;
-  _ViewSizerComponentHost0(AppView<dynamic> parentView, num parentIndex) : super(import4.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
+  _ViewSizerComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import4.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewSizerComponent0(this, 0);
@@ -118,7 +119,7 @@ class _ViewSizerComponentHost0 extends AppView<dynamic> {
   }
 }
 
-AppView viewFactory_SizerComponentHost0(AppView<dynamic> parentView, num parentIndex) {
+AppView viewFactory_SizerComponentHost0(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewSizerComponentHost0(parentView, parentIndex);
 }
 

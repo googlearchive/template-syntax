@@ -1,0 +1,28 @@
+:host {
+  display: flex;
+  align-items: center;
+}
+
+.separator {
+  padding: 8px;
+}
+
+[dateParsing] {
+  flex-grow: 1;
+  padding: 0;
+  width: auto;
+}
+
+.date-input {
+  margin-bottom: -6px;
+}
+.date-input ::ng-deep .top-section {
+  margin: 0 0 6px 0;
+}
+.date-input ::ng-deep .bottom-section {
+  display: none;
+}
+.date-input.active ::ng-deep .focused-underline {
+  transform: scale(1);
+  visibility: visible;
+}

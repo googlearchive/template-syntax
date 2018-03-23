@@ -59,14 +59,15 @@ class ViewMaterialTreeComponent0 extends AppView<import1.MaterialTreeComponent> 
   var _expr_3;
   var _expr_4;
   static RenderComponentType _renderType;
-  ViewMaterialTreeComponent0(AppView<dynamic> parentView, num parentIndex) : super(import5.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  ViewMaterialTreeComponent0(AppView<dynamic> parentView, int parentIndex) : super(import5.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     rootEl = import7.document.createElement('material-tree');
     _renderType ??= import8.appViewUtils.createRenderType('', ViewEncapsulation.None, styles$MaterialTreeComponent);
     setupComponentType(_renderType);
   }
   @override
   ComponentRef<import1.MaterialTreeComponent> build() {
-    final import7.HtmlElement parentRenderNode = initViewRoot(rootEl);
+    final _rootEl = rootEl;
+    final import7.HtmlElement parentRenderNode = initViewRoot(_rootEl);
     var _anchor_0 = ngAnchor.clone(false);
     parentRenderNode.append(_anchor_0);
     _appEl_0 = new ViewContainer(0, null, this, _anchor_0);
@@ -123,7 +124,7 @@ class ViewMaterialTreeComponent0 extends AppView<import1.MaterialTreeComponent> 
   }
 }
 
-AppView<import1.MaterialTreeComponent> viewFactory_MaterialTreeComponent0(AppView<dynamic> parentView, num parentIndex) {
+AppView<import1.MaterialTreeComponent> viewFactory_MaterialTreeComponent0(AppView<dynamic> parentView, int parentIndex) {
   return new ViewMaterialTreeComponent0(parentView, parentIndex);
 }
 
@@ -131,7 +132,7 @@ class _ViewMaterialTreeComponent1 extends AppView<import1.MaterialTreeComponent>
   ViewContainer _appEl_0;
   import11.NgFor _NgFor_0_9;
   var _expr_0;
-  _ViewMaterialTreeComponent1(AppView<dynamic> parentView, num parentIndex) : super(import5.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMaterialTreeComponent1(AppView<dynamic> parentView, int parentIndex) : super(import5.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMaterialTreeComponent0._renderType;
   }
   @override
@@ -162,7 +163,7 @@ class _ViewMaterialTreeComponent1 extends AppView<import1.MaterialTreeComponent>
   }
 }
 
-AppView<import1.MaterialTreeComponent> viewFactory_MaterialTreeComponent1(AppView<dynamic> parentView, num parentIndex) {
+AppView<import1.MaterialTreeComponent> viewFactory_MaterialTreeComponent1(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewMaterialTreeComponent1(parentView, parentIndex);
 }
 
@@ -174,7 +175,7 @@ class _ViewMaterialTreeComponent2 extends AppView<import1.MaterialTreeComponent>
   bool _expr_1;
   int _expr_2;
   bool _expr_3;
-  _ViewMaterialTreeComponent2(AppView<dynamic> parentView, num parentIndex) : super(import5.ViewType.EMBEDDED, {'\$implicit': null, 'index': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMaterialTreeComponent2(AppView<dynamic> parentView, int parentIndex) : super(import5.ViewType.EMBEDDED, {'\$implicit': null, 'index': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMaterialTreeComponent0._renderType;
   }
   @override
@@ -237,7 +238,7 @@ class _ViewMaterialTreeComponent2 extends AppView<import1.MaterialTreeComponent>
   }
 }
 
-AppView<import1.MaterialTreeComponent> viewFactory_MaterialTreeComponent2(AppView<dynamic> parentView, num parentIndex) {
+AppView<import1.MaterialTreeComponent> viewFactory_MaterialTreeComponent2(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewMaterialTreeComponent2(parentView, parentIndex);
 }
 
@@ -248,7 +249,7 @@ class _ViewMaterialTreeComponent3 extends AppView<import1.MaterialTreeComponent>
   NgIf _NgIf_1_9;
   ViewContainer _appEl_2;
   NgIf _NgIf_2_9;
-  _ViewMaterialTreeComponent3(AppView<dynamic> parentView, num parentIndex) : super(import5.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMaterialTreeComponent3(AppView<dynamic> parentView, int parentIndex) : super(import5.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMaterialTreeComponent0._renderType;
   }
   @override
@@ -288,7 +289,7 @@ class _ViewMaterialTreeComponent3 extends AppView<import1.MaterialTreeComponent>
   }
 }
 
-AppView<import1.MaterialTreeComponent> viewFactory_MaterialTreeComponent3(AppView<dynamic> parentView, num parentIndex) {
+AppView<import1.MaterialTreeComponent> viewFactory_MaterialTreeComponent3(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewMaterialTreeComponent3(parentView, parentIndex);
 }
 
@@ -296,7 +297,7 @@ class _ViewMaterialTreeComponent4 extends AppView<import1.MaterialTreeComponent>
   ViewContainer _appEl_0;
   import11.NgFor _NgFor_0_9;
   var _expr_0;
-  _ViewMaterialTreeComponent4(AppView<dynamic> parentView, num parentIndex) : super(import5.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMaterialTreeComponent4(AppView<dynamic> parentView, int parentIndex) : super(import5.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMaterialTreeComponent0._renderType;
   }
   @override
@@ -327,7 +328,7 @@ class _ViewMaterialTreeComponent4 extends AppView<import1.MaterialTreeComponent>
   }
 }
 
-AppView<import1.MaterialTreeComponent> viewFactory_MaterialTreeComponent4(AppView<dynamic> parentView, num parentIndex) {
+AppView<import1.MaterialTreeComponent> viewFactory_MaterialTreeComponent4(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewMaterialTreeComponent4(parentView, parentIndex);
 }
 
@@ -336,7 +337,7 @@ class _ViewMaterialTreeComponent5 extends AppView<import1.MaterialTreeComponent>
   import18.ViewMaterialTreeGroupFlatListComponent0 _compView_0;
   import19.MaterialTreeGroupFlatListComponent _MaterialTreeGroupFlatListComponent_0_5;
   var _expr_0;
-  _ViewMaterialTreeComponent5(AppView<dynamic> parentView, num parentIndex) : super(import5.ViewType.EMBEDDED, {'\$implicit': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMaterialTreeComponent5(AppView<dynamic> parentView, int parentIndex) : super(import5.ViewType.EMBEDDED, {'\$implicit': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMaterialTreeComponent0._renderType;
   }
   @override
@@ -376,7 +377,7 @@ class _ViewMaterialTreeComponent5 extends AppView<import1.MaterialTreeComponent>
   }
 }
 
-AppView<import1.MaterialTreeComponent> viewFactory_MaterialTreeComponent5(AppView<dynamic> parentView, num parentIndex) {
+AppView<import1.MaterialTreeComponent> viewFactory_MaterialTreeComponent5(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewMaterialTreeComponent5(parentView, parentIndex);
 }
 
@@ -384,7 +385,7 @@ class _ViewMaterialTreeComponent6 extends AppView<import1.MaterialTreeComponent>
   ViewContainer _appEl_0;
   import11.NgFor _NgFor_0_9;
   var _expr_0;
-  _ViewMaterialTreeComponent6(AppView<dynamic> parentView, num parentIndex) : super(import5.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMaterialTreeComponent6(AppView<dynamic> parentView, int parentIndex) : super(import5.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMaterialTreeComponent0._renderType;
   }
   @override
@@ -415,7 +416,7 @@ class _ViewMaterialTreeComponent6 extends AppView<import1.MaterialTreeComponent>
   }
 }
 
-AppView<import1.MaterialTreeComponent> viewFactory_MaterialTreeComponent6(AppView<dynamic> parentView, num parentIndex) {
+AppView<import1.MaterialTreeComponent> viewFactory_MaterialTreeComponent6(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewMaterialTreeComponent6(parentView, parentIndex);
 }
 
@@ -424,7 +425,7 @@ class _ViewMaterialTreeComponent7 extends AppView<import1.MaterialTreeComponent>
   import18.ViewMaterialTreeGroupFlatRadioComponent0 _compView_0;
   import19.MaterialTreeGroupFlatRadioComponent _MaterialTreeGroupFlatRadioComponent_0_5;
   var _expr_0;
-  _ViewMaterialTreeComponent7(AppView<dynamic> parentView, num parentIndex) : super(import5.ViewType.EMBEDDED, {'\$implicit': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMaterialTreeComponent7(AppView<dynamic> parentView, int parentIndex) : super(import5.ViewType.EMBEDDED, {'\$implicit': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMaterialTreeComponent0._renderType;
   }
   @override
@@ -464,7 +465,7 @@ class _ViewMaterialTreeComponent7 extends AppView<import1.MaterialTreeComponent>
   }
 }
 
-AppView<import1.MaterialTreeComponent> viewFactory_MaterialTreeComponent7(AppView<dynamic> parentView, num parentIndex) {
+AppView<import1.MaterialTreeComponent> viewFactory_MaterialTreeComponent7(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewMaterialTreeComponent7(parentView, parentIndex);
 }
 
@@ -472,7 +473,7 @@ class _ViewMaterialTreeComponent8 extends AppView<import1.MaterialTreeComponent>
   ViewContainer _appEl_0;
   import11.NgFor _NgFor_0_9;
   var _expr_0;
-  _ViewMaterialTreeComponent8(AppView<dynamic> parentView, num parentIndex) : super(import5.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMaterialTreeComponent8(AppView<dynamic> parentView, int parentIndex) : super(import5.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMaterialTreeComponent0._renderType;
   }
   @override
@@ -503,7 +504,7 @@ class _ViewMaterialTreeComponent8 extends AppView<import1.MaterialTreeComponent>
   }
 }
 
-AppView<import1.MaterialTreeComponent> viewFactory_MaterialTreeComponent8(AppView<dynamic> parentView, num parentIndex) {
+AppView<import1.MaterialTreeComponent> viewFactory_MaterialTreeComponent8(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewMaterialTreeComponent8(parentView, parentIndex);
 }
 
@@ -512,7 +513,7 @@ class _ViewMaterialTreeComponent9 extends AppView<import1.MaterialTreeComponent>
   import18.ViewMaterialTreeGroupFlatCheckComponent0 _compView_0;
   import19.MaterialTreeGroupFlatCheckComponent _MaterialTreeGroupFlatCheckComponent_0_5;
   var _expr_0;
-  _ViewMaterialTreeComponent9(AppView<dynamic> parentView, num parentIndex) : super(import5.ViewType.EMBEDDED, {'\$implicit': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMaterialTreeComponent9(AppView<dynamic> parentView, int parentIndex) : super(import5.ViewType.EMBEDDED, {'\$implicit': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMaterialTreeComponent0._renderType;
   }
   @override
@@ -552,7 +553,7 @@ class _ViewMaterialTreeComponent9 extends AppView<import1.MaterialTreeComponent>
   }
 }
 
-AppView<import1.MaterialTreeComponent> viewFactory_MaterialTreeComponent9(AppView<dynamic> parentView, num parentIndex) {
+AppView<import1.MaterialTreeComponent> viewFactory_MaterialTreeComponent9(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewMaterialTreeComponent9(parentView, parentIndex);
 }
 
@@ -561,7 +562,7 @@ const List<dynamic> styles$MaterialTreeComponentHost = const [];
 class _ViewMaterialTreeComponentHost0 extends AppView<dynamic> {
   ViewMaterialTreeComponent0 _compView_0;
   import1.MaterialTreeComponent _MaterialTreeComponent_0_5;
-  _ViewMaterialTreeComponentHost0(AppView<dynamic> parentView, num parentIndex) : super(import5.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
+  _ViewMaterialTreeComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import5.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewMaterialTreeComponent0(this, 0);
@@ -593,7 +594,7 @@ class _ViewMaterialTreeComponentHost0 extends AppView<dynamic> {
   }
 }
 
-AppView viewFactory_MaterialTreeComponentHost0(AppView<dynamic> parentView, num parentIndex) {
+AppView viewFactory_MaterialTreeComponentHost0(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewMaterialTreeComponentHost0(parentView, parentIndex);
 }
 

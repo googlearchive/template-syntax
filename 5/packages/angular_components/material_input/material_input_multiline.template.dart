@@ -102,7 +102,7 @@ class ViewMaterialMultilineInputComponent0 extends AppView<import3.MaterialMulti
   bool _expr_20;
   bool _expr_21;
   static RenderComponentType _renderType;
-  ViewMaterialMultilineInputComponent0(AppView<dynamic> parentView, num parentIndex) : super(import12.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckOnce) {
+  ViewMaterialMultilineInputComponent0(AppView<dynamic> parentView, int parentIndex) : super(import12.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckOnce) {
     rootEl = import4.document.createElement('material-input');
     rootEl.className = 'themeable';
     createAttr(rootEl, 'tabIndex', '-1');
@@ -112,7 +112,8 @@ class ViewMaterialMultilineInputComponent0 extends AppView<import3.MaterialMulti
   @override
   ComponentRef<import3.MaterialMultilineInputComponent> build() {
     final import3.MaterialMultilineInputComponent _ctx = ctx;
-    final import4.HtmlElement parentRenderNode = initViewRoot(rootEl);
+    final _rootEl = rootEl;
+    final import4.HtmlElement parentRenderNode = initViewRoot(_rootEl);
     var doc = import4.document;
     _el_0 = createDivAndAppend(doc, parentRenderNode);
     _el_0.className = 'baseline';
@@ -181,7 +182,7 @@ class ViewMaterialMultilineInputComponent0 extends AppView<import3.MaterialMulti
     ctx.textareaEl = new ElementRef(_el_11);
     ctx.popupSourceEl = new ElementRef(_el_0);
     init(const [], null);
-    rootEl.addEventListener('focus', eventHandler0(_ctx.focus));
+    _rootEl.addEventListener('focus', eventHandler0(_ctx.focus));
     return null;
   }
 
@@ -346,7 +347,7 @@ class ViewMaterialMultilineInputComponent0 extends AppView<import3.MaterialMulti
   }
 }
 
-AppView<import3.MaterialMultilineInputComponent> viewFactory_MaterialMultilineInputComponent0(AppView<dynamic> parentView, num parentIndex) {
+AppView<import3.MaterialMultilineInputComponent> viewFactory_MaterialMultilineInputComponent0(AppView<dynamic> parentView, int parentIndex) {
   return new ViewMaterialMultilineInputComponent0(parentView, parentIndex);
 }
 
@@ -365,7 +366,7 @@ class _ViewMaterialMultilineInputComponent1 extends AppView<import3.MaterialMult
   var _expr_1;
   var _expr_2;
   var _expr_3;
-  _ViewMaterialMultilineInputComponent1(AppView<dynamic> parentView, num parentIndex) : super(import12.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMaterialMultilineInputComponent1(AppView<dynamic> parentView, int parentIndex) : super(import12.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMaterialMultilineInputComponent0._renderType;
   }
   @override
@@ -446,7 +447,7 @@ class _ViewMaterialMultilineInputComponent1 extends AppView<import3.MaterialMult
   }
 }
 
-AppView<import3.MaterialMultilineInputComponent> viewFactory_MaterialMultilineInputComponent1(AppView<dynamic> parentView, num parentIndex) {
+AppView<import3.MaterialMultilineInputComponent> viewFactory_MaterialMultilineInputComponent1(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewMaterialMultilineInputComponent1(parentView, parentIndex);
 }
 
@@ -457,7 +458,7 @@ class _ViewMaterialMultilineInputComponent2 extends AppView<import3.MaterialMult
   bool _expr_1;
   var _expr_2;
   var _expr_3;
-  _ViewMaterialMultilineInputComponent2(AppView<dynamic> parentView, num parentIndex) : super(import12.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMaterialMultilineInputComponent2(AppView<dynamic> parentView, int parentIndex) : super(import12.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMaterialMultilineInputComponent0._renderType;
   }
   @override
@@ -499,7 +500,7 @@ class _ViewMaterialMultilineInputComponent2 extends AppView<import3.MaterialMult
   }
 }
 
-AppView<import3.MaterialMultilineInputComponent> viewFactory_MaterialMultilineInputComponent2(AppView<dynamic> parentView, num parentIndex) {
+AppView<import3.MaterialMultilineInputComponent> viewFactory_MaterialMultilineInputComponent2(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewMaterialMultilineInputComponent2(parentView, parentIndex);
 }
 
@@ -507,7 +508,7 @@ class _ViewMaterialMultilineInputComponent3 extends AppView<import3.MaterialMult
   import4.DivElement _el_0;
   import4.Text _text_1;
   var _expr_0;
-  _ViewMaterialMultilineInputComponent3(AppView<dynamic> parentView, num parentIndex) : super(import12.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMaterialMultilineInputComponent3(AppView<dynamic> parentView, int parentIndex) : super(import12.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMaterialMultilineInputComponent0._renderType;
   }
   @override
@@ -533,13 +534,13 @@ class _ViewMaterialMultilineInputComponent3 extends AppView<import3.MaterialMult
   }
 }
 
-AppView<import3.MaterialMultilineInputComponent> viewFactory_MaterialMultilineInputComponent3(AppView<dynamic> parentView, num parentIndex) {
+AppView<import3.MaterialMultilineInputComponent> viewFactory_MaterialMultilineInputComponent3(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewMaterialMultilineInputComponent3(parentView, parentIndex);
 }
 
 class _ViewMaterialMultilineInputComponent4 extends AppView<import3.MaterialMultilineInputComponent> {
   import4.DivElement _el_0;
-  _ViewMaterialMultilineInputComponent4(AppView<dynamic> parentView, num parentIndex) : super(import12.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMaterialMultilineInputComponent4(AppView<dynamic> parentView, int parentIndex) : super(import12.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMaterialMultilineInputComponent0._renderType;
   }
   @override
@@ -561,7 +562,7 @@ class _ViewMaterialMultilineInputComponent4 extends AppView<import3.MaterialMult
   }
 }
 
-AppView<import3.MaterialMultilineInputComponent> viewFactory_MaterialMultilineInputComponent4(AppView<dynamic> parentView, num parentIndex) {
+AppView<import3.MaterialMultilineInputComponent> viewFactory_MaterialMultilineInputComponent4(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewMaterialMultilineInputComponent4(parentView, parentIndex);
 }
 
@@ -570,7 +571,7 @@ class _ViewMaterialMultilineInputComponent5 extends AppView<import3.MaterialMult
   import4.Text _text_1;
   bool _expr_0;
   var _expr_1;
-  _ViewMaterialMultilineInputComponent5(AppView<dynamic> parentView, num parentIndex) : super(import12.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMaterialMultilineInputComponent5(AppView<dynamic> parentView, int parentIndex) : super(import12.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMaterialMultilineInputComponent0._renderType;
   }
   @override
@@ -602,7 +603,7 @@ class _ViewMaterialMultilineInputComponent5 extends AppView<import3.MaterialMult
   }
 }
 
-AppView<import3.MaterialMultilineInputComponent> viewFactory_MaterialMultilineInputComponent5(AppView<dynamic> parentView, num parentIndex) {
+AppView<import3.MaterialMultilineInputComponent> viewFactory_MaterialMultilineInputComponent5(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewMaterialMultilineInputComponent5(parentView, parentIndex);
 }
 
@@ -613,7 +614,7 @@ class _ViewMaterialMultilineInputComponentHost0 extends AppView<dynamic> {
   import22.DeferredValidator _DeferredValidator_0_5;
   import3.MaterialMultilineInputComponent _MaterialMultilineInputComponent_0_6;
   List<dynamic> __NgValidators_0_7;
-  _ViewMaterialMultilineInputComponentHost0(AppView<dynamic> parentView, num parentIndex) : super(import12.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
+  _ViewMaterialMultilineInputComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import12.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   List<dynamic> get _NgValidators_0_7 {
     if ((this.__NgValidators_0_7 == null)) {
       (__NgValidators_0_7 = [this._DeferredValidator_0_5]);
@@ -666,7 +667,7 @@ class _ViewMaterialMultilineInputComponentHost0 extends AppView<dynamic> {
   }
 }
 
-AppView viewFactory_MaterialMultilineInputComponentHost0(AppView<dynamic> parentView, num parentIndex) {
+AppView viewFactory_MaterialMultilineInputComponentHost0(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewMaterialMultilineInputComponentHost0(parentView, parentIndex);
 }
 

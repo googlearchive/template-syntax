@@ -136,7 +136,7 @@ class ViewMenuItemGroupsComponent0 extends AppView<import2.MenuItemGroupsCompone
   bool _expr_1;
   var _expr_2;
   static RenderComponentType _renderType;
-  ViewMenuItemGroupsComponent0(AppView<dynamic> parentView, num parentIndex) : super(import9.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckOnce) {
+  ViewMenuItemGroupsComponent0(AppView<dynamic> parentView, int parentIndex) : super(import9.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckOnce) {
     rootEl = import3.document.createElement('menu-item-groups');
     _renderType ??= import11.appViewUtils.createRenderType('', ViewEncapsulation.Emulated, styles$MenuItemGroupsComponent);
     setupComponentType(_renderType);
@@ -144,7 +144,8 @@ class ViewMenuItemGroupsComponent0 extends AppView<import2.MenuItemGroupsCompone
   @override
   ComponentRef<import2.MenuItemGroupsComponent> build() {
     final import2.MenuItemGroupsComponent _ctx = ctx;
-    final import3.HtmlElement parentRenderNode = initViewRoot(rootEl);
+    final _rootEl = rootEl;
+    final import3.HtmlElement parentRenderNode = initViewRoot(_rootEl);
     import3.Text _text_0 = new import3.Text('\n');
     parentRenderNode.append(_text_0);
     _compView_1 = new import4.ViewFocusTrapComponent0(this, 1);
@@ -165,9 +166,9 @@ class ViewMenuItemGroupsComponent0 extends AppView<import2.MenuItemGroupsCompone
     parentRenderNode.append(_text_5);
     _el_1.addEventListener('focus', eventHandler1(ctx.onFocus));
     init(const [], null);
-    rootEl.addEventListener('mouseover', eventHandler1(_ctx.onMouseOver));
-    rootEl.addEventListener('mouseout', eventHandler1(_ctx.onMouseOut));
-    rootEl.addEventListener('keydown', eventHandler1(_ctx.handleKeydown));
+    _rootEl.addEventListener('mouseover', eventHandler1(_ctx.onMouseOver));
+    _rootEl.addEventListener('mouseout', eventHandler1(_ctx.onMouseOut));
+    _rootEl.addEventListener('keydown', eventHandler1(_ctx.handleKeydown));
     return null;
   }
 
@@ -258,7 +259,7 @@ class ViewMenuItemGroupsComponent0 extends AppView<import2.MenuItemGroupsCompone
   }
 }
 
-AppView<import2.MenuItemGroupsComponent> viewFactory_MenuItemGroupsComponent0(AppView<dynamic> parentView, num parentIndex) {
+AppView<import2.MenuItemGroupsComponent> viewFactory_MenuItemGroupsComponent0(AppView<dynamic> parentView, int parentIndex) {
   return new ViewMenuItemGroupsComponent0(parentView, parentIndex);
 }
 
@@ -268,7 +269,8 @@ class _ViewMenuItemGroupsComponent1 extends AppView<import2.MenuItemGroupsCompon
   NgIf _NgIf_2_9;
   ViewContainer _appEl_4;
   NgIf _NgIf_4_9;
-  _ViewMenuItemGroupsComponent1(AppView<dynamic> parentView, num parentIndex) : super(import9.ViewType.EMBEDDED, {'\$implicit': null, 'index': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  bool _expr_0;
+  _ViewMenuItemGroupsComponent1(AppView<dynamic> parentView, int parentIndex) : super(import9.ViewType.EMBEDDED, {'\$implicit': null, 'index': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMenuItemGroupsComponent0._renderType;
   }
   @override
@@ -306,6 +308,11 @@ class _ViewMenuItemGroupsComponent1 extends AppView<import2.MenuItemGroupsCompon
     _NgIf_4_9.ngIf = (!local_group.isCollapsible || local_group.isExpanded);
     _appEl_2.detectChangesInNestedViews();
     _appEl_4.detectChangesInNestedViews();
+    final currVal_0 = local_group.hasSeparator;
+    if (!identical(_expr_0, currVal_0)) {
+      updateClass(_el_0, 'has-separator', currVal_0);
+      _expr_0 = currVal_0;
+    }
   }
 
   @override
@@ -315,7 +322,7 @@ class _ViewMenuItemGroupsComponent1 extends AppView<import2.MenuItemGroupsCompon
   }
 }
 
-AppView<import2.MenuItemGroupsComponent> viewFactory_MenuItemGroupsComponent1(AppView<dynamic> parentView, num parentIndex) {
+AppView<import2.MenuItemGroupsComponent> viewFactory_MenuItemGroupsComponent1(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewMenuItemGroupsComponent1(parentView, parentIndex);
 }
 
@@ -326,8 +333,9 @@ class _ViewMenuItemGroupsComponent2 extends AppView<import2.MenuItemGroupsCompon
   import3.Text _text_4;
   ViewContainer _appEl_7;
   NgIf _NgIf_7_9;
-  var _expr_0;
-  _ViewMenuItemGroupsComponent2(AppView<dynamic> parentView, num parentIndex) : super(import9.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  bool _expr_0;
+  var _expr_1;
+  _ViewMenuItemGroupsComponent2(AppView<dynamic> parentView, int parentIndex) : super(import9.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMenuItemGroupsComponent0._renderType;
   }
   @override
@@ -379,11 +387,16 @@ class _ViewMenuItemGroupsComponent2 extends AppView<import2.MenuItemGroupsCompon
     final import15.MenuItemGroup<dynamic> local_group = parentView.locals['\$implicit'];
     _NgIf_7_9.ngIf = local_group.isCollapsible;
     _appEl_7.detectChangesInNestedViews();
-    _ButtonDirective_0_5.detectHostChanges(this, _el_0);
-    final currVal_0 = import11.interpolate0(local_group.uiDisplayName);
+    final currVal_0 = local_group.isCollapsible;
     if (!identical(_expr_0, currVal_0)) {
-      _text_4.text = currVal_0;
+      updateClass(_el_0, 'is-collapsible', currVal_0);
       _expr_0 = currVal_0;
+    }
+    _ButtonDirective_0_5.detectHostChanges(this, _el_0);
+    final currVal_1 = import11.interpolate0(local_group.uiDisplayName);
+    if (!identical(_expr_1, currVal_1)) {
+      _text_4.text = currVal_1;
+      _expr_1 = currVal_1;
     }
   }
 
@@ -398,7 +411,7 @@ class _ViewMenuItemGroupsComponent2 extends AppView<import2.MenuItemGroupsCompon
   }
 }
 
-AppView<import2.MenuItemGroupsComponent> viewFactory_MenuItemGroupsComponent2(AppView<dynamic> parentView, num parentIndex) {
+AppView<import2.MenuItemGroupsComponent> viewFactory_MenuItemGroupsComponent2(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewMenuItemGroupsComponent2(parentView, parentIndex);
 }
 
@@ -408,7 +421,7 @@ class _ViewMenuItemGroupsComponent3 extends AppView<import2.MenuItemGroupsCompon
   import19.MaterialIconComponent _MaterialIconComponent_0_5;
   bool _expr_0;
   var _expr_1;
-  _ViewMenuItemGroupsComponent3(AppView<dynamic> parentView, num parentIndex) : super(import9.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMenuItemGroupsComponent3(AppView<dynamic> parentView, int parentIndex) : super(import9.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMenuItemGroupsComponent0._renderType;
   }
   @override
@@ -452,7 +465,7 @@ class _ViewMenuItemGroupsComponent3 extends AppView<import2.MenuItemGroupsCompon
   }
 }
 
-AppView<import2.MenuItemGroupsComponent> viewFactory_MenuItemGroupsComponent3(AppView<dynamic> parentView, num parentIndex) {
+AppView<import2.MenuItemGroupsComponent> viewFactory_MenuItemGroupsComponent3(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewMenuItemGroupsComponent3(parentView, parentIndex);
 }
 
@@ -460,7 +473,7 @@ class _ViewMenuItemGroupsComponent4 extends AppView<import2.MenuItemGroupsCompon
   ViewContainer _appEl_1;
   import7.NgFor _NgFor_1_9;
   var _expr_0;
-  _ViewMenuItemGroupsComponent4(AppView<dynamic> parentView, num parentIndex) : super(import9.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMenuItemGroupsComponent4(AppView<dynamic> parentView, int parentIndex) : super(import9.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMenuItemGroupsComponent0._renderType;
   }
   @override
@@ -493,14 +506,14 @@ class _ViewMenuItemGroupsComponent4 extends AppView<import2.MenuItemGroupsCompon
   }
 }
 
-AppView<import2.MenuItemGroupsComponent> viewFactory_MenuItemGroupsComponent4(AppView<dynamic> parentView, num parentIndex) {
+AppView<import2.MenuItemGroupsComponent> viewFactory_MenuItemGroupsComponent4(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewMenuItemGroupsComponent4(parentView, parentIndex);
 }
 
 class _ViewMenuItemGroupsComponent5 extends AppView<import2.MenuItemGroupsComponent> {
   ViewContainer _appEl_1;
   NgIf _NgIf_1_9;
-  _ViewMenuItemGroupsComponent5(AppView<dynamic> parentView, num parentIndex) : super(import9.ViewType.EMBEDDED, {'\$implicit': null, 'index': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMenuItemGroupsComponent5(AppView<dynamic> parentView, int parentIndex) : super(import9.ViewType.EMBEDDED, {'\$implicit': null, 'index': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMenuItemGroupsComponent0._renderType;
   }
   @override
@@ -529,7 +542,7 @@ class _ViewMenuItemGroupsComponent5 extends AppView<import2.MenuItemGroupsCompon
   }
 }
 
-AppView<import2.MenuItemGroupsComponent> viewFactory_MenuItemGroupsComponent5(AppView<dynamic> parentView, num parentIndex) {
+AppView<import2.MenuItemGroupsComponent> viewFactory_MenuItemGroupsComponent5(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewMenuItemGroupsComponent5(parentView, parentIndex);
 }
 
@@ -574,7 +587,7 @@ class _ViewMenuItemGroupsComponent6 extends AppView<import2.MenuItemGroupsCompon
   bool _expr_15;
   var _expr_16;
   var _expr_19;
-  _ViewMenuItemGroupsComponent6(AppView<dynamic> parentView, num parentIndex) : super(import9.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMenuItemGroupsComponent6(AppView<dynamic> parentView, int parentIndex) : super(import9.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMenuItemGroupsComponent0._renderType;
   }
   dynamic get _TooltipController_1_17 {
@@ -823,7 +836,7 @@ class _ViewMenuItemGroupsComponent6 extends AppView<import2.MenuItemGroupsCompon
   }
 }
 
-AppView<import2.MenuItemGroupsComponent> viewFactory_MenuItemGroupsComponent6(AppView<dynamic> parentView, num parentIndex) {
+AppView<import2.MenuItemGroupsComponent> viewFactory_MenuItemGroupsComponent6(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewMenuItemGroupsComponent6(parentView, parentIndex);
 }
 
@@ -832,7 +845,7 @@ class _ViewMenuItemGroupsComponent7 extends AppView<import2.MenuItemGroupsCompon
   import18.ViewMaterialIconComponent0 _compView_0;
   import19.MaterialIconComponent _MaterialIconComponent_0_5;
   var _expr_0;
-  _ViewMenuItemGroupsComponent7(AppView<dynamic> parentView, num parentIndex) : super(import9.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMenuItemGroupsComponent7(AppView<dynamic> parentView, int parentIndex) : super(import9.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMenuItemGroupsComponent0._renderType;
   }
   @override
@@ -871,7 +884,7 @@ class _ViewMenuItemGroupsComponent7 extends AppView<import2.MenuItemGroupsCompon
   }
 }
 
-AppView<import2.MenuItemGroupsComponent> viewFactory_MenuItemGroupsComponent7(AppView<dynamic> parentView, num parentIndex) {
+AppView<import2.MenuItemGroupsComponent> viewFactory_MenuItemGroupsComponent7(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewMenuItemGroupsComponent7(parentView, parentIndex);
 }
 
@@ -881,7 +894,7 @@ class _ViewMenuItemGroupsComponent8 extends AppView<import2.MenuItemGroupsCompon
   import39.ViewHighlightedTextComponent0 _compView_2;
   import40.HighlightedTextComponent _HighlightedTextComponent_2_5;
   var _expr_0;
-  _ViewMenuItemGroupsComponent8(AppView<dynamic> parentView, num parentIndex) : super(import9.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMenuItemGroupsComponent8(AppView<dynamic> parentView, int parentIndex) : super(import9.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMenuItemGroupsComponent0._renderType;
   }
   @override
@@ -937,7 +950,7 @@ class _ViewMenuItemGroupsComponent8 extends AppView<import2.MenuItemGroupsCompon
   }
 }
 
-AppView<import2.MenuItemGroupsComponent> viewFactory_MenuItemGroupsComponent8(AppView<dynamic> parentView, num parentIndex) {
+AppView<import2.MenuItemGroupsComponent> viewFactory_MenuItemGroupsComponent8(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewMenuItemGroupsComponent8(parentView, parentIndex);
 }
 
@@ -945,7 +958,7 @@ class _ViewMenuItemGroupsComponent9 extends AppView<import2.MenuItemGroupsCompon
   import3.Element _el_0;
   import3.Text _text_2;
   var _expr_0;
-  _ViewMenuItemGroupsComponent9(AppView<dynamic> parentView, num parentIndex) : super(import9.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMenuItemGroupsComponent9(AppView<dynamic> parentView, int parentIndex) : super(import9.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMenuItemGroupsComponent0._renderType;
   }
   @override
@@ -975,7 +988,7 @@ class _ViewMenuItemGroupsComponent9 extends AppView<import2.MenuItemGroupsCompon
   }
 }
 
-AppView<import2.MenuItemGroupsComponent> viewFactory_MenuItemGroupsComponent9(AppView<dynamic> parentView, num parentIndex) {
+AppView<import2.MenuItemGroupsComponent> viewFactory_MenuItemGroupsComponent9(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewMenuItemGroupsComponent9(parentView, parentIndex);
 }
 
@@ -985,7 +998,7 @@ class _ViewMenuItemGroupsComponent10 extends AppView<import2.MenuItemGroupsCompo
   import42.MenuItemAffixListComponent _MenuItemAffixListComponent_0_5;
   bool _expr_0;
   var _expr_1;
-  _ViewMenuItemGroupsComponent10(AppView<dynamic> parentView, num parentIndex) : super(import9.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMenuItemGroupsComponent10(AppView<dynamic> parentView, int parentIndex) : super(import9.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMenuItemGroupsComponent0._renderType;
   }
   @override
@@ -1039,7 +1052,7 @@ class _ViewMenuItemGroupsComponent10 extends AppView<import2.MenuItemGroupsCompo
   }
 }
 
-AppView<import2.MenuItemGroupsComponent> viewFactory_MenuItemGroupsComponent10(AppView<dynamic> parentView, num parentIndex) {
+AppView<import2.MenuItemGroupsComponent> viewFactory_MenuItemGroupsComponent10(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewMenuItemGroupsComponent10(parentView, parentIndex);
 }
 
@@ -1047,7 +1060,7 @@ class _ViewMenuItemGroupsComponent11 extends AppView<import2.MenuItemGroupsCompo
   import3.Element _el_0;
   import18.ViewMaterialIconComponent0 _compView_0;
   import19.MaterialIconComponent _MaterialIconComponent_0_5;
-  _ViewMenuItemGroupsComponent11(AppView<dynamic> parentView, num parentIndex) : super(import9.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMenuItemGroupsComponent11(AppView<dynamic> parentView, int parentIndex) : super(import9.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMenuItemGroupsComponent0._renderType;
   }
   @override
@@ -1085,7 +1098,7 @@ class _ViewMenuItemGroupsComponent11 extends AppView<import2.MenuItemGroupsCompo
   }
 }
 
-AppView<import2.MenuItemGroupsComponent> viewFactory_MenuItemGroupsComponent11(AppView<dynamic> parentView, num parentIndex) {
+AppView<import2.MenuItemGroupsComponent> viewFactory_MenuItemGroupsComponent11(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewMenuItemGroupsComponent11(parentView, parentIndex);
 }
 
@@ -1101,7 +1114,7 @@ class _ViewMenuItemGroupsComponent12 extends AppView<import2.MenuItemGroupsCompo
   var _expr_2;
   var _expr_3;
   bool _expr_4;
-  _ViewMenuItemGroupsComponent12(AppView<dynamic> parentView, num parentIndex) : super(import9.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMenuItemGroupsComponent12(AppView<dynamic> parentView, int parentIndex) : super(import9.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMenuItemGroupsComponent0._renderType;
   }
   dynamic get _PopupRef_0_10 {
@@ -1208,7 +1221,7 @@ class _ViewMenuItemGroupsComponent12 extends AppView<import2.MenuItemGroupsCompo
   }
 }
 
-AppView<import2.MenuItemGroupsComponent> viewFactory_MenuItemGroupsComponent12(AppView<dynamic> parentView, num parentIndex) {
+AppView<import2.MenuItemGroupsComponent> viewFactory_MenuItemGroupsComponent12(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewMenuItemGroupsComponent12(parentView, parentIndex);
 }
 
@@ -1223,7 +1236,7 @@ class _ViewMenuItemGroupsComponent13 extends AppView<import2.MenuItemGroupsCompo
   var _expr_0;
   var _expr_2;
   var _expr_3;
-  _ViewMenuItemGroupsComponent13(AppView<dynamic> parentView, num parentIndex) : super(import9.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMenuItemGroupsComponent13(AppView<dynamic> parentView, int parentIndex) : super(import9.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMenuItemGroupsComponent0._renderType;
   }
   @override
@@ -1246,7 +1259,8 @@ class _ViewMenuItemGroupsComponent13 extends AppView<import2.MenuItemGroupsCompo
     _compView_0.create(_MaterialListComponent_0_5, [
       [_text_1, _el_2, _text_4]
     ]);
-    init0(_el_0);
+    final subscription_0 = _MenuItemGroupsComponent_2_6.selected.listen(eventHandler1(ctx.onSubMenuItemSelected));
+    init([_el_0], [subscription_0]);
     return null;
   }
 
@@ -1321,7 +1335,7 @@ class _ViewMenuItemGroupsComponent13 extends AppView<import2.MenuItemGroupsCompo
   }
 }
 
-AppView<import2.MenuItemGroupsComponent> viewFactory_MenuItemGroupsComponent13(AppView<dynamic> parentView, num parentIndex) {
+AppView<import2.MenuItemGroupsComponent> viewFactory_MenuItemGroupsComponent13(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewMenuItemGroupsComponent13(parentView, parentIndex);
 }
 
@@ -1330,7 +1344,7 @@ const List<dynamic> styles$MenuItemGroupsComponentHost = const [];
 class _ViewMenuItemGroupsComponentHost0 extends AppView<dynamic> {
   ViewMenuItemGroupsComponent0 _compView_0;
   import2.MenuItemGroupsComponent _MenuItemGroupsComponent_0_5;
-  _ViewMenuItemGroupsComponentHost0(AppView<dynamic> parentView, num parentIndex) : super(import9.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
+  _ViewMenuItemGroupsComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import9.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewMenuItemGroupsComponent0(this, 0);
@@ -1369,7 +1383,7 @@ class _ViewMenuItemGroupsComponentHost0 extends AppView<dynamic> {
   }
 }
 
-AppView viewFactory_MenuItemGroupsComponentHost0(AppView<dynamic> parentView, num parentIndex) {
+AppView viewFactory_MenuItemGroupsComponentHost0(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewMenuItemGroupsComponentHost0(parentView, parentIndex);
 }
 

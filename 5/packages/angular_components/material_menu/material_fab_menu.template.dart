@@ -110,7 +110,7 @@ class ViewMaterialFabMenuComponent0 extends AppView<import2.MaterialFabMenuCompo
   bool _expr_7;
   var _expr_8;
   static RenderComponentType _renderType;
-  ViewMaterialFabMenuComponent0(AppView<dynamic> parentView, num parentIndex) : super(import13.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckOnce) {
+  ViewMaterialFabMenuComponent0(AppView<dynamic> parentView, int parentIndex) : super(import13.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckOnce) {
     rootEl = import3.document.createElement('material-fab-menu');
     _renderType ??= import15.appViewUtils.createRenderType('', ViewEncapsulation.Emulated, styles$MaterialFabMenuComponent);
     setupComponentType(_renderType);
@@ -124,7 +124,8 @@ class ViewMaterialFabMenuComponent0 extends AppView<import2.MaterialFabMenuCompo
 
   @override
   ComponentRef<import2.MaterialFabMenuComponent> build() {
-    final import3.HtmlElement parentRenderNode = initViewRoot(rootEl);
+    final _rootEl = rootEl;
+    final import3.HtmlElement parentRenderNode = initViewRoot(_rootEl);
     import3.Text _text_0 = new import3.Text('\n');
     parentRenderNode.append(_text_0);
     _compView_1 = new import4.ViewMaterialFabComponent0(this, 1);
@@ -273,7 +274,7 @@ class ViewMaterialFabMenuComponent0 extends AppView<import2.MaterialFabMenuCompo
   }
 }
 
-AppView<import2.MaterialFabMenuComponent> viewFactory_MaterialFabMenuComponent0(AppView<dynamic> parentView, num parentIndex) {
+AppView<import2.MaterialFabMenuComponent> viewFactory_MaterialFabMenuComponent0(AppView<dynamic> parentView, int parentIndex) {
   return new ViewMaterialFabMenuComponent0(parentView, parentIndex);
 }
 
@@ -290,7 +291,7 @@ class _ViewMaterialFabMenuComponent1 extends AppView<import2.MaterialFabMenuComp
   var _expr_3;
   bool _expr_4;
   bool _expr_5;
-  _ViewMaterialFabMenuComponent1(AppView<dynamic> parentView, num parentIndex) : super(import13.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMaterialFabMenuComponent1(AppView<dynamic> parentView, int parentIndex) : super(import13.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMaterialFabMenuComponent0._renderType;
   }
   dynamic get _PopupRef_0_11 {
@@ -399,7 +400,7 @@ class _ViewMaterialFabMenuComponent1 extends AppView<import2.MaterialFabMenuComp
   }
 }
 
-AppView<import2.MaterialFabMenuComponent> viewFactory_MaterialFabMenuComponent1(AppView<dynamic> parentView, num parentIndex) {
+AppView<import2.MaterialFabMenuComponent> viewFactory_MaterialFabMenuComponent1(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewMaterialFabMenuComponent1(parentView, parentIndex);
 }
 
@@ -423,7 +424,7 @@ class _ViewMaterialFabMenuComponent2 extends AppView<import2.MaterialFabMenuComp
   bool _expr_2;
   bool _expr_3;
   var _expr_7;
-  _ViewMaterialFabMenuComponent2(AppView<dynamic> parentView, num parentIndex) : super(import13.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMaterialFabMenuComponent2(AppView<dynamic> parentView, int parentIndex) : super(import13.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMaterialFabMenuComponent0._renderType;
   }
   @override
@@ -586,7 +587,7 @@ class _ViewMaterialFabMenuComponent2 extends AppView<import2.MaterialFabMenuComp
   }
 }
 
-AppView<import2.MaterialFabMenuComponent> viewFactory_MaterialFabMenuComponent2(AppView<dynamic> parentView, num parentIndex) {
+AppView<import2.MaterialFabMenuComponent> viewFactory_MaterialFabMenuComponent2(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewMaterialFabMenuComponent2(parentView, parentIndex);
 }
 
@@ -595,7 +596,7 @@ const List<dynamic> styles$MaterialFabMenuComponentHost = const [];
 class _ViewMaterialFabMenuComponentHost0 extends AppView<dynamic> {
   ViewMaterialFabMenuComponent0 _compView_0;
   import2.MaterialFabMenuComponent _MaterialFabMenuComponent_0_5;
-  _ViewMaterialFabMenuComponentHost0(AppView<dynamic> parentView, num parentIndex) : super(import13.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
+  _ViewMaterialFabMenuComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import13.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewMaterialFabMenuComponent0(this, 0);
@@ -630,7 +631,7 @@ class _ViewMaterialFabMenuComponentHost0 extends AppView<dynamic> {
   }
 }
 
-AppView viewFactory_MaterialFabMenuComponentHost0(AppView<dynamic> parentView, num parentIndex) {
+AppView viewFactory_MaterialFabMenuComponentHost0(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewMaterialFabMenuComponentHost0(parentView, parentIndex);
 }
 

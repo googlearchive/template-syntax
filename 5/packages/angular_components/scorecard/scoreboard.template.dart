@@ -41,14 +41,13 @@ import 'package:angular/src/core/linker/app_view_utils.dart' as import10;
 import 'package:angular/angular.dart';
 import 'package:angular/src/core/linker/template_ref.dart';
 import '../utils/browser/dom_service/dom_service.dart' as import13;
-import 'package:angular/src/core/linker/element_ref.dart';
-import 'package:angular/src/core/di/opaque_token.dart' as import15;
-import '../material_button/material_button.template.dart' as import16;
-import '../theme/dark_theme.dart' as import17;
-import '../material_button/material_button.dart' as import18;
-import '../material_icon/material_icon.template.dart' as import19;
-import '../material_icon/material_icon.dart' as import20;
-import '../button_decorator/button_decorator.dart' as import21;
+import 'package:angular/src/core/di/opaque_token.dart' as import14;
+import '../material_button/material_button.template.dart' as import15;
+import '../theme/dark_theme.dart' as import16;
+import '../material_button/material_button.dart' as import17;
+import '../material_icon/material_icon.template.dart' as import18;
+import '../material_icon/material_icon.dart' as import19;
+import '../button_decorator/button_decorator.dart' as import20;
 
 const List<dynamic> styles$ScoreboardComponent = const [import0.styles];
 
@@ -65,14 +64,15 @@ class ViewScoreboardComponent0 extends AppView<import2.ScoreboardComponent> {
   bool _expr_1;
   var _expr_3;
   static RenderComponentType _renderType;
-  ViewScoreboardComponent0(AppView<dynamic> parentView, num parentIndex) : super(import8.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckOnce) {
+  ViewScoreboardComponent0(AppView<dynamic> parentView, int parentIndex) : super(import8.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckOnce) {
     rootEl = import3.document.createElement('acx-scoreboard');
     _renderType ??= import10.appViewUtils.createRenderType('', ViewEncapsulation.Emulated, styles$ScoreboardComponent);
     setupComponentType(_renderType);
   }
   @override
   ComponentRef<import2.ScoreboardComponent> build() {
-    final import3.HtmlElement parentRenderNode = initViewRoot(rootEl);
+    final _rootEl = rootEl;
+    final import3.HtmlElement parentRenderNode = initViewRoot(_rootEl);
     var doc = import3.document;
     _el_0 = createDivAndAppend(doc, parentRenderNode);
     _el_0.className = 'acx-scoreboard';
@@ -86,7 +86,7 @@ class ViewScoreboardComponent0 extends AppView<import2.ScoreboardComponent> {
     _el_2.className = 'scorecard-bar';
     createAttr(_el_2, 'scorecardBar', '');
     addShimC(_el_2);
-    _ScorecardBarDirective_2_5 = new import6.ScorecardBarDirective(parentView.injectorGet(import13.DomService, viewData.parentIndex), new ElementRef(_el_2), parentView.injectorGet(const import15.OpaqueToken('isRtl'), viewData.parentIndex, null));
+    _ScorecardBarDirective_2_5 = new import6.ScorecardBarDirective(parentView.injectorGet(import13.DomService, viewData.parentIndex), _el_2, parentView.injectorGet(const import14.OpaqueToken('isRtl'), viewData.parentIndex, null));
     project(_el_2, 0);
     var _anchor_3 = ngAnchor.clone(false);
     _el_0.append(_anchor_3);
@@ -143,36 +143,36 @@ class ViewScoreboardComponent0 extends AppView<import2.ScoreboardComponent> {
   }
 }
 
-AppView<import2.ScoreboardComponent> viewFactory_ScoreboardComponent0(AppView<dynamic> parentView, num parentIndex) {
+AppView<import2.ScoreboardComponent> viewFactory_ScoreboardComponent0(AppView<dynamic> parentView, int parentIndex) {
   return new ViewScoreboardComponent0(parentView, parentIndex);
 }
 
 class _ViewScoreboardComponent1 extends AppView<import2.ScoreboardComponent> {
   import3.Element _el_0;
-  import16.ViewMaterialButtonComponent0 _compView_0;
-  import17.AcxDarkTheme _AcxDarkTheme_0_5;
-  import18.MaterialButtonComponent _MaterialButtonComponent_0_6;
+  import15.ViewMaterialButtonComponent0 _compView_0;
+  import16.AcxDarkTheme _AcxDarkTheme_0_5;
+  import17.MaterialButtonComponent _MaterialButtonComponent_0_6;
   import3.Element _el_1;
-  import19.ViewMaterialIconComponent0 _compView_1;
-  import20.MaterialIconComponent _MaterialIconComponent_1_5;
+  import18.ViewMaterialIconComponent0 _compView_1;
+  import19.MaterialIconComponent _MaterialIconComponent_1_5;
   bool _expr_0;
   var _expr_1;
   var _expr_2;
-  _ViewScoreboardComponent1(AppView<dynamic> parentView, num parentIndex) : super(import8.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewScoreboardComponent1(AppView<dynamic> parentView, int parentIndex) : super(import8.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewScoreboardComponent0._renderType;
   }
   @override
   ComponentRef<import2.ScoreboardComponent> build() {
-    _compView_0 = new import16.ViewMaterialButtonComponent0(this, 0);
+    _compView_0 = new import15.ViewMaterialButtonComponent0(this, 0);
     _el_0 = _compView_0.rootEl;
     _el_0.className = 'scroll-button scroll-back-button';
     addShimC(_el_0);
-    _AcxDarkTheme_0_5 = new import17.AcxDarkTheme(parentView.parentView.injectorGet(const import15.OpaqueToken('acxDarkTheme'), parentView.viewData.parentIndex, null));
-    _MaterialButtonComponent_0_6 = new import18.MaterialButtonComponent(_el_0, _AcxDarkTheme_0_5, _compView_0.ref);
-    _compView_1 = new import19.ViewMaterialIconComponent0(this, 1);
+    _AcxDarkTheme_0_5 = new import16.AcxDarkTheme(parentView.parentView.injectorGet(const import14.OpaqueToken('acxDarkTheme'), parentView.viewData.parentIndex, null));
+    _MaterialButtonComponent_0_6 = new import17.MaterialButtonComponent(_el_0, _AcxDarkTheme_0_5, _compView_0.ref);
+    _compView_1 = new import18.ViewMaterialIconComponent0(this, 1);
     _el_1 = _compView_1.rootEl;
     addShimC(_el_1);
-    _MaterialIconComponent_1_5 = new import20.MaterialIconComponent(_el_1);
+    _MaterialIconComponent_1_5 = new import19.MaterialIconComponent(_el_1);
     _compView_1.create(_MaterialIconComponent_1_5, []);
     _compView_0.create(_MaterialButtonComponent_0_6, [
       [_el_1]
@@ -184,10 +184,10 @@ class _ViewScoreboardComponent1 extends AppView<import2.ScoreboardComponent> {
 
   @override
   dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
-    if ((identical(token, import17.AcxDarkTheme) && ((0 <= nodeIndex) && (nodeIndex <= 1)))) {
+    if ((identical(token, import16.AcxDarkTheme) && ((0 <= nodeIndex) && (nodeIndex <= 1)))) {
       return _AcxDarkTheme_0_5;
     }
-    if (((identical(token, import18.MaterialButtonComponent) || identical(token, import21.ButtonDirective)) && ((0 <= nodeIndex) && (nodeIndex <= 1)))) {
+    if (((identical(token, import17.MaterialButtonComponent) || identical(token, import20.ButtonDirective)) && ((0 <= nodeIndex) && (nodeIndex <= 1)))) {
       return _MaterialButtonComponent_0_6;
     }
     return notFoundResult;
@@ -234,36 +234,36 @@ class _ViewScoreboardComponent1 extends AppView<import2.ScoreboardComponent> {
   }
 }
 
-AppView<import2.ScoreboardComponent> viewFactory_ScoreboardComponent1(AppView<dynamic> parentView, num parentIndex) {
+AppView<import2.ScoreboardComponent> viewFactory_ScoreboardComponent1(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewScoreboardComponent1(parentView, parentIndex);
 }
 
 class _ViewScoreboardComponent2 extends AppView<import2.ScoreboardComponent> {
   import3.Element _el_0;
-  import16.ViewMaterialButtonComponent0 _compView_0;
-  import17.AcxDarkTheme _AcxDarkTheme_0_5;
-  import18.MaterialButtonComponent _MaterialButtonComponent_0_6;
+  import15.ViewMaterialButtonComponent0 _compView_0;
+  import16.AcxDarkTheme _AcxDarkTheme_0_5;
+  import17.MaterialButtonComponent _MaterialButtonComponent_0_6;
   import3.Element _el_1;
-  import19.ViewMaterialIconComponent0 _compView_1;
-  import20.MaterialIconComponent _MaterialIconComponent_1_5;
+  import18.ViewMaterialIconComponent0 _compView_1;
+  import19.MaterialIconComponent _MaterialIconComponent_1_5;
   bool _expr_0;
   var _expr_1;
   var _expr_2;
-  _ViewScoreboardComponent2(AppView<dynamic> parentView, num parentIndex) : super(import8.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewScoreboardComponent2(AppView<dynamic> parentView, int parentIndex) : super(import8.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewScoreboardComponent0._renderType;
   }
   @override
   ComponentRef<import2.ScoreboardComponent> build() {
-    _compView_0 = new import16.ViewMaterialButtonComponent0(this, 0);
+    _compView_0 = new import15.ViewMaterialButtonComponent0(this, 0);
     _el_0 = _compView_0.rootEl;
     _el_0.className = 'scroll-button scroll-forward-button';
     addShimC(_el_0);
-    _AcxDarkTheme_0_5 = new import17.AcxDarkTheme(parentView.parentView.injectorGet(const import15.OpaqueToken('acxDarkTheme'), parentView.viewData.parentIndex, null));
-    _MaterialButtonComponent_0_6 = new import18.MaterialButtonComponent(_el_0, _AcxDarkTheme_0_5, _compView_0.ref);
-    _compView_1 = new import19.ViewMaterialIconComponent0(this, 1);
+    _AcxDarkTheme_0_5 = new import16.AcxDarkTheme(parentView.parentView.injectorGet(const import14.OpaqueToken('acxDarkTheme'), parentView.viewData.parentIndex, null));
+    _MaterialButtonComponent_0_6 = new import17.MaterialButtonComponent(_el_0, _AcxDarkTheme_0_5, _compView_0.ref);
+    _compView_1 = new import18.ViewMaterialIconComponent0(this, 1);
     _el_1 = _compView_1.rootEl;
     addShimC(_el_1);
-    _MaterialIconComponent_1_5 = new import20.MaterialIconComponent(_el_1);
+    _MaterialIconComponent_1_5 = new import19.MaterialIconComponent(_el_1);
     _compView_1.create(_MaterialIconComponent_1_5, []);
     _compView_0.create(_MaterialButtonComponent_0_6, [
       [_el_1]
@@ -275,10 +275,10 @@ class _ViewScoreboardComponent2 extends AppView<import2.ScoreboardComponent> {
 
   @override
   dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
-    if ((identical(token, import17.AcxDarkTheme) && ((0 <= nodeIndex) && (nodeIndex <= 1)))) {
+    if ((identical(token, import16.AcxDarkTheme) && ((0 <= nodeIndex) && (nodeIndex <= 1)))) {
       return _AcxDarkTheme_0_5;
     }
-    if (((identical(token, import18.MaterialButtonComponent) || identical(token, import21.ButtonDirective)) && ((0 <= nodeIndex) && (nodeIndex <= 1)))) {
+    if (((identical(token, import17.MaterialButtonComponent) || identical(token, import20.ButtonDirective)) && ((0 <= nodeIndex) && (nodeIndex <= 1)))) {
       return _MaterialButtonComponent_0_6;
     }
     return notFoundResult;
@@ -325,7 +325,7 @@ class _ViewScoreboardComponent2 extends AppView<import2.ScoreboardComponent> {
   }
 }
 
-AppView<import2.ScoreboardComponent> viewFactory_ScoreboardComponent2(AppView<dynamic> parentView, num parentIndex) {
+AppView<import2.ScoreboardComponent> viewFactory_ScoreboardComponent2(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewScoreboardComponent2(parentView, parentIndex);
 }
 
@@ -335,7 +335,7 @@ class _ViewScoreboardComponentHost0 extends AppView<dynamic> {
   ViewScoreboardComponent0 _compView_0;
   import2.ScoreboardComponent _ScoreboardComponent_0_5;
   bool _query_ScorecardComponent_0_0_isDirty = true;
-  _ViewScoreboardComponentHost0(AppView<dynamic> parentView, num parentIndex) : super(import8.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
+  _ViewScoreboardComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import8.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewScoreboardComponent0(this, 0);
@@ -367,7 +367,7 @@ class _ViewScoreboardComponentHost0 extends AppView<dynamic> {
   }
 }
 
-AppView viewFactory_ScoreboardComponentHost0(AppView<dynamic> parentView, num parentIndex) {
+AppView viewFactory_ScoreboardComponentHost0(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewScoreboardComponentHost0(parentView, parentIndex);
 }
 

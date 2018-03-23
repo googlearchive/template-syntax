@@ -66,7 +66,7 @@ class ViewMaterialIconTooltipComponent0 extends AppView<import2.MaterialIconTool
   var _expr_1;
   var _expr_3;
   static RenderComponentType _renderType;
-  ViewMaterialIconTooltipComponent0(AppView<dynamic> parentView, num parentIndex) : super(import12.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckOnce) {
+  ViewMaterialIconTooltipComponent0(AppView<dynamic> parentView, int parentIndex) : super(import12.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckOnce) {
     rootEl = import3.document.createElement('material-icon-tooltip');
     _renderType ??= import14.appViewUtils.createRenderType('', ViewEncapsulation.Emulated, styles$MaterialIconTooltipComponent);
     setupComponentType(_renderType);
@@ -80,7 +80,8 @@ class ViewMaterialIconTooltipComponent0 extends AppView<import2.MaterialIconTool
 
   @override
   ComponentRef<import2.MaterialIconTooltipComponent> build() {
-    final import3.HtmlElement parentRenderNode = initViewRoot(rootEl);
+    final _rootEl = rootEl;
+    final import3.HtmlElement parentRenderNode = initViewRoot(_rootEl);
     import3.Text _text_0 = new import3.Text('    ');
     parentRenderNode.append(_text_0);
     _compView_1 = new import4.ViewMaterialIconComponent0(this, 1);
@@ -103,7 +104,7 @@ class ViewMaterialIconTooltipComponent0 extends AppView<import2.MaterialIconTool
     parentRenderNode.append(_el_4);
     addShimC(_el_4);
     _TooltipController_4_5 = import18.createTooltipController(parentView.injectorGet(import19.TooltipController, viewData.parentIndex, null), parentView.injectorGet(import20.Disposer, viewData.parentIndex, null));
-    _MaterialPaperTooltipComponent_4_6 = new import10.MaterialPaperTooltipComponent(_TooltipController_4_5, _compView_4.ref);
+    _MaterialPaperTooltipComponent_4_6 = new import10.MaterialPaperTooltipComponent(_TooltipController_4_5, _compView_4.ref, _el_4, null);
     import3.Text _text_5 = new import3.Text('\n      ');
     import3.Text _text_6 = new import3.Text('\n    ');
     _compView_4.create(_MaterialPaperTooltipComponent_4_6, [
@@ -206,7 +207,7 @@ class ViewMaterialIconTooltipComponent0 extends AppView<import2.MaterialIconTool
   }
 }
 
-AppView<import2.MaterialIconTooltipComponent> viewFactory_MaterialIconTooltipComponent0(AppView<dynamic> parentView, num parentIndex) {
+AppView<import2.MaterialIconTooltipComponent> viewFactory_MaterialIconTooltipComponent0(AppView<dynamic> parentView, int parentIndex) {
   return new ViewMaterialIconTooltipComponent0(parentView, parentIndex);
 }
 
@@ -216,7 +217,7 @@ class _ViewMaterialIconTooltipComponentHost0 extends AppView<dynamic> {
   ViewMaterialIconTooltipComponent0 _compView_0;
   import22.AcxDarkTheme _AcxDarkTheme_0_5;
   import2.MaterialIconTooltipComponent _MaterialIconTooltipComponent_0_6;
-  _ViewMaterialIconTooltipComponentHost0(AppView<dynamic> parentView, num parentIndex) : super(import12.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
+  _ViewMaterialIconTooltipComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import12.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewMaterialIconTooltipComponent0(this, 0);
@@ -250,7 +251,7 @@ class _ViewMaterialIconTooltipComponentHost0 extends AppView<dynamic> {
   }
 }
 
-AppView viewFactory_MaterialIconTooltipComponentHost0(AppView<dynamic> parentView, num parentIndex) {
+AppView viewFactory_MaterialIconTooltipComponentHost0(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewMaterialIconTooltipComponentHost0(parentView, parentIndex);
 }
 

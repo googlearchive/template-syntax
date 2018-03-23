@@ -19,7 +19,6 @@ import 'package:angular/src/core/change_detection/directive_change_detector.dart
 import 'tooltip_source.dart' as import1;
 import 'package:angular/src/core/linker/app_view.dart';
 import 'dart:html' as import3;
-import 'package:angular/src/core/linker/app_view_utils.dart' as import4;
 
 class MaterialTooltipSourceDirectiveNgCd extends import0.DirectiveChangeDetector {
   final import1.MaterialTooltipSourceDirective instance;
@@ -27,7 +26,7 @@ class MaterialTooltipSourceDirectiveNgCd extends import0.DirectiveChangeDetector
   void detectHostChanges(AppView<dynamic> view, import3.Element el) {
     bool firstCheck = (view.cdState == 0);
     if (firstCheck) {
-      setAttr(el, 'style', import4.appViewUtils.sanitizer.sanitizeStyle('cursor: pointer')?.toString());
+      el.style.setProperty('cursor', 'pointer'?.toString());
     }
   }
 }

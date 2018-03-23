@@ -10,7 +10,7 @@ import 'package:angular/angular.dart';
 import 'package:angular_forms/angular_forms.dart';
 import 'package:angular_components/angular_components.dart';
 import 'src/hero.dart';
-import 'src/hero_detail_component.dart';
+import 'src/hero_component.dart';
 import 'src/hero_form_component.dart';
 import 'src/hero_switch_components.dart';
 import 'src/click_directive.dart';
@@ -21,7 +21,7 @@ import 'package:angular_components/angular_components.template.dart' as _ref1;
 import 'package:angular_forms/angular_forms.template.dart' as _ref2;
 import 'src/click_directive.template.dart' as _ref3;
 import 'src/hero.template.dart' as _ref4;
-import 'src/hero_detail_component.template.dart' as _ref5;
+import 'src/hero_component.template.dart' as _ref5;
 import 'src/hero_form_component.template.dart' as _ref6;
 import 'src/hero_switch_components.template.dart' as _ref7;
 import 'src/sizer_component.template.dart' as _ref8;
@@ -32,8 +32,8 @@ import 'dart:html' as import3;
 import 'package:angular/src/core/linker/view_container.dart';
 import 'package:angular/src/common/directives/ng_for.dart' as import5;
 import 'package:angular_forms/src/directives/ng_form.dart' as import6;
-import 'src/hero_detail_component.template.dart' as import7;
-import 'src/hero_detail_component.dart' as import8;
+import 'src/hero_component.template.dart' as import7;
+import 'src/hero_component.dart' as import8;
 import 'package:angular/src/common/directives/ng_class.dart' as import9;
 import 'src/click_directive.dart' as import10;
 import 'package:angular_forms/src/directives/default_value_accessor.dart' as import11;
@@ -66,21 +66,21 @@ import 'package:angular_forms/src/directives/control_container.dart' as import37
 import 'package:angular/src/core/di/opaque_token.dart' as import38;
 import 'package:angular_forms/src/directives/control_value_accessor.dart' as import39;
 import 'package:angular_forms/src/directives/ng_control.dart' as import40;
-import 'package:angular/src/core/linker/element_ref.dart';
-import 'src/hero.dart' as import42;
-import 'package:angular_components/material_radio/material_radio.template.dart' as import43;
-import 'package:angular_components/material_radio/material_radio.dart' as import44;
-import 'src/hero_switch_components.template.dart' as import45;
-import 'src/hero_switch_components.dart' as import46;
-import 'package:angular_components/laminate/enums/alignment.dart' as import47;
-import 'package:angular_components/utils/angular/imperative_view/imperative_view.dart' as import48;
-import 'package:angular_components/laminate/ruler/dom_ruler.dart' as import49;
-import 'package:angular_components/utils/angular/managed_zone/angular_2.dart' as import50;
-import 'package:angular_components/src/laminate/overlay/render/overlay_style_config.dart' as import51;
-import 'package:angular_components/laminate/overlay/zindexer.dart' as import52;
-import 'package:angular_components/src/laminate/overlay/render/overlay_dom_render_service.dart' as import53;
-import 'package:angular_components/src/laminate/overlay/overlay_service.dart' as import54;
-import 'package:angular_components/src/laminate/popup/dom_popup_source.dart' as import55;
+import 'src/hero.dart' as import41;
+import 'package:angular_components/material_radio/material_radio.template.dart' as import42;
+import 'package:angular_components/material_radio/material_radio.dart' as import43;
+import 'src/hero_switch_components.template.dart' as import44;
+import 'src/hero_switch_components.dart' as import45;
+import 'package:angular_components/laminate/enums/alignment.dart' as import46;
+import 'package:angular_components/utils/angular/imperative_view/imperative_view.dart' as import47;
+import 'package:angular_components/laminate/ruler/dom_ruler.dart' as import48;
+import 'package:angular_components/utils/angular/managed_zone/angular_2.dart' as import49;
+import 'package:angular_components/src/laminate/overlay/render/overlay_style_config.dart' as import50;
+import 'package:angular_components/laminate/overlay/zindexer.dart' as import51;
+import 'package:angular_components/src/laminate/overlay/render/overlay_dom_render_service.dart' as import52;
+import 'package:angular_components/src/laminate/overlay/overlay_service.dart' as import53;
+import 'package:angular_components/src/laminate/popup/dom_popup_source.dart' as import54;
+import 'package:quiver/time.dart' as import55;
 import 'package:angular_components/utils/browser/window/module.dart' as import56;
 import 'package:angular_components/utils/browser/dom_service/angular_2.dart' as import57;
 import 'package:angular_components/utils/browser/dom_service/dom_service.dart' as import58;
@@ -208,8 +208,8 @@ class ViewAppComponent0 extends AppView<import2.AppComponent> {
   import3.DivElement _el_161;
   import3.DivElement _el_162;
   import3.Element _el_164;
-  import7.ViewHeroDetailComponent0 _compView_164;
-  import8.HeroDetailComponent _HeroDetailComponent_164_5;
+  import7.ViewHeroComponent0 _compView_164;
+  import8.HeroComponent _HeroComponent_164_5;
   import3.Element _el_165;
   import3.Element _el_166;
   import3.DivElement _el_167;
@@ -219,16 +219,16 @@ class ViewAppComponent0 extends AppView<import2.AppComponent> {
   import3.DivElement _el_172;
   import3.Element _el_173;
   import3.Element _el_174;
-  import7.ViewHeroDetailComponent0 _compView_174;
-  import8.HeroDetailComponent _HeroDetailComponent_174_5;
+  import7.ViewHeroComponent0 _compView_174;
+  import8.HeroComponent _HeroComponent_174_5;
   import3.DivElement _el_175;
   import9.NgClass _NgClass_175_5;
   import3.Element _el_176;
   import3.Element _el_177;
   import3.ButtonElement _el_178;
   import3.Element _el_180;
-  import7.ViewHeroDetailComponent0 _compView_180;
-  import8.HeroDetailComponent _HeroDetailComponent_180_5;
+  import7.ViewHeroComponent0 _compView_180;
+  import8.HeroComponent _HeroComponent_180_5;
   import3.DivElement _el_181;
   import10.ClickDirective _ClickDirective_181_5;
   import3.Text _text_183;
@@ -280,12 +280,12 @@ class ViewAppComponent0 extends AppView<import2.AppComponent> {
   import3.DivElement _el_244;
   import9.NgClass _NgClass_244_5;
   import3.Element _el_246;
-  import7.ViewHeroDetailComponent0 _compView_246;
-  import8.HeroDetailComponent _HeroDetailComponent_246_5;
+  import7.ViewHeroComponent0 _compView_246;
+  import8.HeroComponent _HeroComponent_246_5;
   import3.Element _el_247;
   import3.Element _el_248;
-  import7.ViewHeroDetailComponent0 _compView_248;
-  import8.HeroDetailComponent _HeroDetailComponent_248_5;
+  import7.ViewHeroComponent0 _compView_248;
+  import8.HeroComponent _HeroComponent_248_5;
   import3.Element _el_249;
   import3.Element _el_250;
   import3.Element _el_252;
@@ -349,12 +349,10 @@ class ViewAppComponent0 extends AppView<import2.AppComponent> {
   import10.ClickDirective _ClickDirective_356_5;
   import3.Text _text_358;
   import3.Element _el_359;
-  import7.ViewHeroDetailComponent0 _compView_359;
-  import8.HeroDetailComponent _HeroDetailComponent_359_5;
+  import7.ViewHeroComponent0 _compView_359;
+  import8.HeroComponent _HeroComponent_359_5;
   import3.Element _el_360;
   import3.Element _el_361;
-  import7.ViewBigHeroDetailComponent0 _compView_361;
-  import8.BigHeroDetailComponent _BigHeroDetailComponent_361_5;
   import3.DivElement _el_362;
   import3.DivElement _el_364;
   import3.DivElement _el_366;
@@ -487,8 +485,8 @@ class ViewAppComponent0 extends AppView<import2.AppComponent> {
   import3.DivElement _el_502;
   import3.DivElement _el_504;
   import3.Element _el_506;
-  import7.ViewHeroDetailComponent0 _compView_506;
-  import8.HeroDetailComponent _HeroDetailComponent_506_5;
+  import7.ViewHeroComponent0 _compView_506;
+  import8.HeroComponent _HeroComponent_506_5;
   import3.DivElement _el_507;
   import3.DivElement _el_509;
   import3.AnchorElement _el_511;
@@ -573,8 +571,8 @@ class ViewAppComponent0 extends AppView<import2.AppComponent> {
   import3.Element _el_595;
   import3.ButtonElement _el_596;
   import3.Element _el_598;
-  import7.ViewHeroDetailComponent0 _compView_598;
-  import8.HeroDetailComponent _HeroDetailComponent_598_5;
+  import7.ViewHeroComponent0 _compView_598;
+  import8.HeroComponent _HeroComponent_598_5;
   import3.DivElement _el_599;
   import10.ClickDirective _ClickDirective_599_5;
   import3.Text _text_601;
@@ -625,36 +623,35 @@ class ViewAppComponent0 extends AppView<import2.AppComponent> {
   var _expr_4;
   var _expr_5;
   var _expr_6;
-  var _expr_7;
-  var _expr_9;
+  var _expr_8;
+  var _expr_10;
+  Map<String, dynamic> Function(dynamic) _map_0;
   var _expr_11;
-  var _map_0;
   var _expr_12;
-  var _expr_13;
+  var _expr_14;
   var _expr_15;
-  var _expr_16;
-  bool _expr_17;
-  var _expr_18;
+  bool _expr_16;
+  var _expr_17;
+  var _expr_22;
   var _expr_23;
   var _expr_24;
-  var _expr_25;
+  var _expr_26;
   var _expr_27;
   var _expr_28;
-  var _expr_29;
-  var _expr_31;
+  var _expr_30;
+  var _expr_34;
   var _expr_35;
   var _expr_36;
   var _expr_37;
-  var _expr_38;
   var _expr_39;
   var _expr_40;
   var _expr_41;
   var _expr_42;
-  var _expr_43;
-  String _expr_45;
+  String _expr_44;
+  bool _expr_45;
   bool _expr_46;
   bool _expr_47;
-  bool _expr_48;
+  var _expr_48;
   var _expr_49;
   var _expr_50;
   var _expr_51;
@@ -663,38 +660,38 @@ class ViewAppComponent0 extends AppView<import2.AppComponent> {
   var _expr_54;
   var _expr_55;
   var _expr_56;
-  var _expr_57;
+  var _expr_58;
   var _expr_59;
   var _expr_60;
   var _expr_61;
-  var _expr_62;
+  var _expr_65;
   var _expr_66;
-  var _expr_67;
-  var _expr_69;
+  var _expr_68;
+  var _expr_70;
   var _expr_71;
   var _expr_72;
   var _expr_73;
   var _expr_74;
+  Map<String, dynamic> Function(dynamic, dynamic, dynamic) _map_1;
   var _expr_75;
-  var _map_1;
   var _expr_76;
   var _expr_77;
   var _expr_78;
-  var _expr_79;
+  var _expr_82;
   var _expr_83;
   var _expr_84;
   var _expr_85;
-  var _expr_86;
+  bool _expr_91;
   bool _expr_92;
   bool _expr_93;
-  bool _expr_94;
+  var _expr_94;
   var _expr_95;
-  var _expr_96;
+  var _expr_108;
   var _expr_109;
   var _expr_110;
-  var _expr_111;
+  var _expr_115;
   var _expr_116;
-  var _expr_117;
+  var _expr_118;
   var _expr_119;
   var _expr_120;
   var _expr_121;
@@ -705,12 +702,10 @@ class ViewAppComponent0 extends AppView<import2.AppComponent> {
   var _expr_126;
   var _expr_127;
   var _expr_128;
-  var _expr_129;
+  var _expr_130;
   var _expr_131;
   var _expr_132;
   var _expr_133;
-  var _expr_134;
-  var _expr_135;
   import24.UpperCasePipe _pipe_uppercase_0;
   String Function(String) _pipe_uppercase_0_0;
   String Function(String) _pipe_uppercase_0_1;
@@ -724,14 +719,15 @@ class ViewAppComponent0 extends AppView<import2.AppComponent> {
   import29.CurrencyPipe _pipe_currency_4;
   String Function(dynamic, String, bool) _pipe_currency_4_0;
   static RenderComponentType _renderType;
-  ViewAppComponent0(AppView<dynamic> parentView, num parentIndex) : super(import31.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  ViewAppComponent0(AppView<dynamic> parentView, int parentIndex) : super(import31.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     rootEl = import3.document.createElement('my-app');
     _renderType ??= import33.appViewUtils.createRenderType('', ViewEncapsulation.Emulated, styles$AppComponent);
     setupComponentType(_renderType);
   }
   @override
   ComponentRef<import2.AppComponent> build() {
-    final import3.HtmlElement parentRenderNode = initViewRoot(rootEl);
+    final _rootEl = rootEl;
+    final import3.HtmlElement parentRenderNode = initViewRoot(_rootEl);
     var doc = import3.document;
     _el_0 = createAndAppend(doc, 'a', parentRenderNode);
     createAttr(_el_0, 'id', 'toc');
@@ -964,7 +960,7 @@ class ViewAppComponent0 extends AppView<import2.AppComponent> {
     addShimE(_el_98);
     import3.Text _text_99 = new import3.Text('The sum of 1 + 1 is ');
     _el_98.append(_text_99);
-    _text_100 = new import3.Text('');
+    _text_100 = new import3.Text(import33.interpolate0((1 + 1)));
     _el_98.append(_text_100);
     _el_101 = createAndAppend(doc, 'p', parentRenderNode);
     addShimE(_el_101);
@@ -1117,12 +1113,12 @@ class ViewAppComponent0 extends AppView<import2.AppComponent> {
     addShimC(_el_162);
     import3.Text _text_163 = new import3.Text('Mental Model');
     _el_162.append(_text_163);
-    _compView_164 = new import7.ViewHeroDetailComponent0(this, 164);
+    _compView_164 = new import7.ViewHeroComponent0(this, 164);
     _el_164 = _compView_164.rootEl;
     _el_161.append(_el_164);
     addShimC(_el_164);
-    _HeroDetailComponent_164_5 = new import8.HeroDetailComponent();
-    _compView_164.create(_HeroDetailComponent_164_5, []);
+    _HeroComponent_164_5 = new import8.HeroComponent();
+    _compView_164.create(_HeroComponent_164_5, []);
     _el_165 = createAndAppend(doc, 'br', parentRenderNode);
     addShimE(_el_165);
     _el_166 = createAndAppend(doc, 'br', parentRenderNode);
@@ -1141,12 +1137,12 @@ class ViewAppComponent0 extends AppView<import2.AppComponent> {
     addShimC(_el_172);
     _el_173 = createAndAppend(doc, 'img', _el_172);
     addShimE(_el_173);
-    _compView_174 = new import7.ViewHeroDetailComponent0(this, 174);
+    _compView_174 = new import7.ViewHeroComponent0(this, 174);
     _el_174 = _compView_174.rootEl;
     _el_172.append(_el_174);
     addShimC(_el_174);
-    _HeroDetailComponent_174_5 = new import8.HeroDetailComponent();
-    _compView_174.create(_HeroDetailComponent_174_5, []);
+    _HeroComponent_174_5 = new import8.HeroComponent();
+    _compView_174.create(_HeroComponent_174_5, []);
     _el_175 = createDivAndAppend(doc, _el_172);
     addShimC(_el_175);
     _NgClass_175_5 = new import9.NgClass(_el_175);
@@ -1158,12 +1154,12 @@ class ViewAppComponent0 extends AppView<import2.AppComponent> {
     addShimC(_el_178);
     import3.Text _text_179 = new import3.Text('Save');
     _el_178.append(_text_179);
-    _compView_180 = new import7.ViewHeroDetailComponent0(this, 180);
+    _compView_180 = new import7.ViewHeroComponent0(this, 180);
     _el_180 = _compView_180.rootEl;
     parentRenderNode.append(_el_180);
     addShimC(_el_180);
-    _HeroDetailComponent_180_5 = new import8.HeroDetailComponent();
-    _compView_180.create(_HeroDetailComponent_180_5, []);
+    _HeroComponent_180_5 = new import8.HeroComponent();
+    _compView_180.create(_HeroComponent_180_5, []);
     _el_181 = createDivAndAppend(doc, parentRenderNode);
     createAttr(_el_181, 'clickable', '');
     addShimC(_el_181);
@@ -1313,21 +1309,21 @@ class ViewAppComponent0 extends AppView<import2.AppComponent> {
     _NgClass_244_5 = new import9.NgClass(_el_244);
     import3.Text _text_245 = new import3.Text('[ngClass] binding to the classes property');
     _el_244.append(_text_245);
-    _compView_246 = new import7.ViewHeroDetailComponent0(this, 246);
+    _compView_246 = new import7.ViewHeroComponent0(this, 246);
     _el_246 = _compView_246.rootEl;
     parentRenderNode.append(_el_246);
     addShimC(_el_246);
-    _HeroDetailComponent_246_5 = new import8.HeroDetailComponent();
-    _compView_246.create(_HeroDetailComponent_246_5, []);
+    _HeroComponent_246_5 = new import8.HeroComponent();
+    _compView_246.create(_HeroComponent_246_5, []);
     _el_247 = createAndAppend(doc, 'img', parentRenderNode);
     addShimE(_el_247);
-    _compView_248 = new import7.ViewHeroDetailComponent0(this, 248);
+    _compView_248 = new import7.ViewHeroComponent0(this, 248);
     _el_248 = _compView_248.rootEl;
     parentRenderNode.append(_el_248);
     createAttr(_el_248, 'prefix', 'You are my');
     addShimC(_el_248);
-    _HeroDetailComponent_248_5 = new import8.HeroDetailComponent();
-    _compView_248.create(_HeroDetailComponent_248_5, []);
+    _HeroComponent_248_5 = new import8.HeroComponent();
+    _compView_248.create(_HeroComponent_248_5, []);
     _el_249 = createAndAppend(doc, 'p', parentRenderNode);
     addShimE(_el_249);
     _el_250 = createAndAppend(doc, 'img', _el_249);
@@ -1567,20 +1563,16 @@ class ViewAppComponent0 extends AppView<import2.AppComponent> {
     _el_356.append(_text_357);
     _text_358 = new import3.Text('');
     _el_355.append(_text_358);
-    _compView_359 = new import7.ViewHeroDetailComponent0(this, 359);
+    _compView_359 = new import7.ViewHeroComponent0(this, 359);
     _el_359 = _compView_359.rootEl;
     parentRenderNode.append(_el_359);
     addShimC(_el_359);
-    _HeroDetailComponent_359_5 = new import8.HeroDetailComponent();
-    _compView_359.create(_HeroDetailComponent_359_5, []);
+    _HeroComponent_359_5 = new import8.HeroComponent();
+    _compView_359.create(_HeroComponent_359_5, []);
     _el_360 = createAndAppend(doc, 'br', parentRenderNode);
     addShimE(_el_360);
-    _compView_361 = new import7.ViewBigHeroDetailComponent0(this, 361);
-    _el_361 = _compView_361.rootEl;
-    parentRenderNode.append(_el_361);
-    addShimC(_el_361);
-    _BigHeroDetailComponent_361_5 = new import8.BigHeroDetailComponent();
-    _compView_361.create(_BigHeroDetailComponent_361_5, []);
+    _el_361 = createAndAppend(doc, 'big-my-hero', parentRenderNode);
+    addShimE(_el_361);
     _el_362 = createDivAndAppend(doc, parentRenderNode);
     _el_362.className = 'parent-div';
     createAttr(_el_362, 'clickable', '');
@@ -1954,12 +1946,12 @@ class ViewAppComponent0 extends AppView<import2.AppComponent> {
     addShimC(_el_504);
     import3.Text _text_505 = new import3.Text('Hide with class');
     _el_504.append(_text_505);
-    _compView_506 = new import7.ViewHeroDetailComponent0(this, 506);
+    _compView_506 = new import7.ViewHeroComponent0(this, 506);
     _el_506 = _compView_506.rootEl;
     parentRenderNode.append(_el_506);
     addShimC(_el_506);
-    _HeroDetailComponent_506_5 = new import8.HeroDetailComponent();
-    _compView_506.create(_HeroDetailComponent_506_5, []);
+    _HeroComponent_506_5 = new import8.HeroComponent();
+    _compView_506.create(_HeroComponent_506_5, []);
     _el_507 = createDivAndAppend(doc, parentRenderNode);
     addShimC(_el_507);
     import3.Text _text_508 = new import3.Text('Show with style');
@@ -2222,12 +2214,12 @@ class ViewAppComponent0 extends AppView<import2.AppComponent> {
     addShimC(_el_596);
     import3.Text _text_597 = new import3.Text('Save');
     _el_596.append(_text_597);
-    _compView_598 = new import7.ViewHeroDetailComponent0(this, 598);
+    _compView_598 = new import7.ViewHeroComponent0(this, 598);
     _el_598 = _compView_598.rootEl;
     parentRenderNode.append(_el_598);
     addShimC(_el_598);
-    _HeroDetailComponent_598_5 = new import8.HeroDetailComponent();
-    _compView_598.create(_HeroDetailComponent_598_5, []);
+    _HeroComponent_598_5 = new import8.HeroComponent();
+    _compView_598.create(_HeroComponent_598_5, []);
     _el_599 = createDivAndAppend(doc, parentRenderNode);
     createAttr(_el_599, 'clickable', '');
     addShimC(_el_599);
@@ -2348,7 +2340,7 @@ class ViewAppComponent0 extends AppView<import2.AppComponent> {
     addShimE(_el_650);
     import3.Text _text_651 = new import3.Text('The name of the Color.red enum is ');
     _el_650.append(_text_651);
-    _text_652 = new import3.Text('');
+    _text_652 = new import3.Text(import33.interpolate0(import2.Color.red));
     _el_650.append(_text_652);
     import3.Text _text_653 = new import3.Text('.');
     _el_650.append(_text_653);
@@ -2385,7 +2377,7 @@ class ViewAppComponent0 extends AppView<import2.AppComponent> {
       return {'special': p0};
     });
     _el_178.addEventListener('click', eventHandler0(ctx.onSave));
-    final subscription_1 = _HeroDetailComponent_180_5.deleteRequest.listen(eventHandler0(ctx.deleteHero));
+    final subscription_1 = _HeroComponent_180_5.deleteRequest.listen(eventHandler0(ctx.deleteHero));
     final subscription_2 = _ClickDirective_181_5.clicks.listen(eventHandler1(_handle_myClick_181_0));
     _el_188.addEventListener('input', eventHandler1(_handle_input_188_1));
     _el_188.addEventListener('blur', eventHandler0(_DefaultValueAccessor_188_5.touchHandler));
@@ -2395,57 +2387,57 @@ class ViewAppComponent0 extends AppView<import2.AppComponent> {
     _el_351.addEventListener('click', eventHandler0(ctx.onSave));
     _el_353.addEventListener('click', eventHandler0(ctx.onSave));
     final subscription_4 = _ClickDirective_356_5.clicks.listen(eventHandler1(_handle_myClick_356_0));
-    final subscription_5 = _HeroDetailComponent_359_5.deleteRequest.listen(eventHandler1(ctx.deleteHero));
-    final subscription_6 = _BigHeroDetailComponent_361_5.deleteRequest.listen(eventHandler1(ctx.deleteHero));
+    final subscription_5 = _HeroComponent_359_5.deleteRequest.listen(eventHandler1(ctx.deleteHero));
+    import33.appViewUtils.eventManager.addEventListener(_el_361, 'deleteRequest', eventHandler1(ctx.deleteHero));
     _el_362.addEventListener('click', eventHandler1(ctx.onClickMe));
     _el_366.addEventListener('click', eventHandler0(ctx.onSave));
     _el_367.addEventListener('click', eventHandler1(ctx.onSave));
     _el_369.addEventListener('click', eventHandler0(ctx.onSave));
     _el_370.addEventListener('click', eventHandler0(ctx.onSave));
-    final subscription_7 = _SizerComponent_378_5.sizeChange.listen(eventHandler1(_handle_sizeChange_378_0));
+    final subscription_6 = _SizerComponent_378_5.sizeChange.listen(eventHandler1(_handle_sizeChange_378_0));
     _el_383.addEventListener('input', eventHandler1(_handle_input_383_1));
     _el_383.addEventListener('blur', eventHandler0(_DefaultValueAccessor_383_5.touchHandler));
-    final subscription_8 = _NgModel_383_7.update.listen(eventHandler1(_handle_ngModelChange_383_0));
-    final subscription_9 = _SizerComponent_390_5.sizeChange.listen(eventHandler1(_handle_sizeChange_390_0));
+    final subscription_7 = _NgModel_383_7.update.listen(eventHandler1(_handle_ngModelChange_383_0));
+    final subscription_8 = _SizerComponent_390_5.sizeChange.listen(eventHandler1(_handle_sizeChange_390_0));
     _el_399.addEventListener('input', eventHandler1(_handle_input_399_0));
     _el_402.addEventListener('input', eventHandler1(_handle_input_402_1));
     _el_402.addEventListener('blur', eventHandler0(_DefaultValueAccessor_402_5.touchHandler));
-    final subscription_10 = _NgModel_402_7.update.listen(eventHandler1(_handle_ngModelChange_402_0));
+    final subscription_9 = _NgModel_402_7.update.listen(eventHandler1(_handle_ngModelChange_402_0));
     _el_405.addEventListener('input', eventHandler1(_handle_input_405_1));
     _el_405.addEventListener('blur', eventHandler0(_DefaultValueAccessor_405_5.touchHandler));
-    final subscription_11 = _NgModel_405_7.update.listen(eventHandler1(_handle_ngModelChange_405_0));
+    final subscription_10 = _NgModel_405_7.update.listen(eventHandler1(_handle_ngModelChange_405_0));
     _el_408.addEventListener('input', eventHandler1(_handle_input_408_1));
     _el_408.addEventListener('blur', eventHandler0(_DefaultValueAccessor_408_5.touchHandler));
-    final subscription_12 = _NgModel_408_7.update.listen(eventHandler1(ctx.setUppercaseName));
+    final subscription_11 = _NgModel_408_7.update.listen(eventHandler1(ctx.setUppercaseName));
     _el_423.addEventListener('change', eventHandler1(_handle_change_423_1));
     _el_423.addEventListener('blur', eventHandler0(_CheckboxControlValueAccessor_423_5.touchHandler));
-    final subscription_13 = _NgModel_423_7.update.listen(eventHandler1(_handle_ngModelChange_423_0));
+    final subscription_12 = _NgModel_423_7.update.listen(eventHandler1(_handle_ngModelChange_423_0));
     _el_427.addEventListener('change', eventHandler1(_handle_change_427_0));
     _el_431.addEventListener('change', eventHandler1(_handle_change_431_1));
     _el_431.addEventListener('blur', eventHandler0(_CheckboxControlValueAccessor_431_5.touchHandler));
-    final subscription_14 = _NgModel_431_7.update.listen(eventHandler1(_handle_ngModelChange_431_0));
+    final subscription_13 = _NgModel_431_7.update.listen(eventHandler1(_handle_ngModelChange_431_0));
     _el_432.addEventListener('click', eventHandler0(ctx.setCurrentClasses));
     _map_1 = import33.pureProxy3((p0, p1, p2) {
       return {'bad': p0, 'curly': p1, 'special': p2};
     });
     _el_469.addEventListener('change', eventHandler1(_handle_change_469_1));
     _el_469.addEventListener('blur', eventHandler0(_CheckboxControlValueAccessor_469_5.touchHandler));
-    final subscription_15 = _NgModel_469_7.update.listen(eventHandler1(_handle_ngModelChange_469_0));
+    final subscription_14 = _NgModel_469_7.update.listen(eventHandler1(_handle_ngModelChange_469_0));
     _el_473.addEventListener('change', eventHandler1(_handle_change_473_1));
     _el_473.addEventListener('blur', eventHandler0(_CheckboxControlValueAccessor_473_5.touchHandler));
-    final subscription_16 = _NgModel_473_7.update.listen(eventHandler1(_handle_ngModelChange_473_0));
+    final subscription_15 = _NgModel_473_7.update.listen(eventHandler1(_handle_ngModelChange_473_0));
     _el_477.addEventListener('change', eventHandler1(_handle_change_477_1));
     _el_477.addEventListener('blur', eventHandler0(_CheckboxControlValueAccessor_477_5.touchHandler));
-    final subscription_17 = _NgModel_477_7.update.listen(eventHandler1(_handle_ngModelChange_477_0));
+    final subscription_16 = _NgModel_477_7.update.listen(eventHandler1(_handle_ngModelChange_477_0));
     _el_478.addEventListener('click', eventHandler0(ctx.setCurrentStyles));
     _el_531.addEventListener('click', eventHandler0(ctx.resetHeroes));
     _el_533.addEventListener('click', eventHandler0(ctx.changeIds));
     _el_535.addEventListener('click', eventHandler0(ctx.clearTrackByCounts));
-    final subscription_18 = _NgModel_564_5.update.listen(eventHandler1(_handle_ngModelChange_564_0));
+    final subscription_17 = _NgModel_564_5.update.listen(eventHandler1(_handle_ngModelChange_564_0));
     _el_584.addEventListener('click', eventHandler1(_handle_click_584_0));
     _el_596.addEventListener('click', eventHandler0(ctx.onSave));
-    final subscription_19 = _HeroDetailComponent_598_5.deleteRequest.listen(eventHandler1(ctx.deleteHero));
-    final subscription_20 = _ClickDirective_599_5.clicks.listen(eventHandler1(_handle_myClick_599_0));
+    final subscription_18 = _HeroComponent_598_5.deleteRequest.listen(eventHandler1(ctx.deleteHero));
+    final subscription_19 = _ClickDirective_599_5.clicks.listen(eventHandler1(_handle_myClick_599_0));
     _el_661.addEventListener('click', eventHandler0(ctx.colorToggle));
     _pipe_uppercase_0 = new import24.UpperCasePipe();
     _pipe_uppercase_0_0 = import33.pureProxy1(_pipe_uppercase_0.transform);
@@ -2459,7 +2451,7 @@ class ViewAppComponent0 extends AppView<import2.AppComponent> {
     _pipe_json_3 = new import28.JsonPipe();
     _pipe_currency_4 = new import29.CurrencyPipe();
     _pipe_currency_4_0 = import33.pureProxy3(_pipe_currency_4.transform);
-    init(const [], [subscription_0, subscription_1, subscription_2, subscription_3, subscription_4, subscription_5, subscription_6, subscription_7, subscription_8, subscription_9, subscription_10, subscription_11, subscription_12, subscription_13, subscription_14, subscription_15, subscription_16, subscription_17, subscription_18, subscription_19, subscription_20]);
+    init(const [], [subscription_0, subscription_1, subscription_2, subscription_3, subscription_4, subscription_5, subscription_6, subscription_7, subscription_8, subscription_9, subscription_10, subscription_11, subscription_12, subscription_13, subscription_14, subscription_15, subscription_16, subscription_17, subscription_18, subscription_19]);
     return null;
   }
 
@@ -2588,24 +2580,24 @@ class ViewAppComponent0 extends AppView<import2.AppComponent> {
     }
     _NgFor_143_9.ngDoCheck();
     if (firstCheck) {
-      _HeroDetailComponent_164_5.ngOnInit();
+      _HeroComponent_164_5.ngOnInit();
     }
-    final currVal_11 = _ctx.currentHero;
-    if (!identical(_expr_11, currVal_11)) {
-      _HeroDetailComponent_174_5.hero = currVal_11;
-      _expr_11 = currVal_11;
+    final currVal_10 = _ctx.currentHero;
+    if (!identical(_expr_10, currVal_10)) {
+      _HeroComponent_174_5.hero = currVal_10;
+      _expr_10 = currVal_10;
     }
     if (firstCheck) {
-      _HeroDetailComponent_174_5.ngOnInit();
+      _HeroComponent_174_5.ngOnInit();
     }
-    final currVal_12 = _map_0(_ctx.isSpecial);
-    if (!identical(_expr_12, currVal_12)) {
-      _NgClass_175_5.rawClass = currVal_12;
-      _expr_12 = currVal_12;
+    final currVal_11 = _map_0(_ctx.isSpecial);
+    if (!identical(_expr_11, currVal_11)) {
+      _NgClass_175_5.rawClass = currVal_11;
+      _expr_11 = currVal_11;
     }
     _NgClass_175_5.ngDoCheck();
     if (firstCheck) {
-      _HeroDetailComponent_180_5.ngOnInit();
+      _HeroComponent_180_5.ngOnInit();
     }
     changed = false;
     _NgModel_188_7.model = _ctx.name;
@@ -2613,51 +2605,43 @@ class ViewAppComponent0 extends AppView<import2.AppComponent> {
     if (firstCheck) {
       _NgModel_188_7.ngOnInit();
     }
-    final currVal_28 = _ctx.classes;
-    if (!identical(_expr_28, currVal_28)) {
-      _NgClass_244_5.rawClass = currVal_28;
-      _expr_28 = currVal_28;
+    final currVal_27 = _ctx.classes;
+    if (!identical(_expr_27, currVal_27)) {
+      _NgClass_244_5.rawClass = currVal_27;
+      _expr_27 = currVal_27;
     }
     _NgClass_244_5.ngDoCheck();
-    final currVal_29 = _ctx.currentHero;
-    if (!identical(_expr_29, currVal_29)) {
-      _HeroDetailComponent_246_5.hero = currVal_29;
-      _expr_29 = currVal_29;
+    final currVal_28 = _ctx.currentHero;
+    if (!identical(_expr_28, currVal_28)) {
+      _HeroComponent_246_5.hero = currVal_28;
+      _expr_28 = currVal_28;
     }
     if (firstCheck) {
-      _HeroDetailComponent_246_5.ngOnInit();
+      _HeroComponent_246_5.ngOnInit();
     }
     if (firstCheck) {
-      (_HeroDetailComponent_248_5.prefix = 'You are my');
+      (_HeroComponent_248_5.prefix = 'You are my');
     }
-    final currVal_31 = _ctx.currentHero;
-    if (!identical(_expr_31, currVal_31)) {
-      _HeroDetailComponent_248_5.hero = currVal_31;
-      _expr_31 = currVal_31;
-    }
-    if (firstCheck) {
-      _HeroDetailComponent_248_5.ngOnInit();
-    }
-    final currVal_54 = _ctx.currentHero;
-    if (!identical(_expr_54, currVal_54)) {
-      _HeroDetailComponent_359_5.hero = currVal_54;
-      _expr_54 = currVal_54;
+    final currVal_30 = _ctx.currentHero;
+    if (!identical(_expr_30, currVal_30)) {
+      _HeroComponent_248_5.hero = currVal_30;
+      _expr_30 = currVal_30;
     }
     if (firstCheck) {
-      _HeroDetailComponent_359_5.ngOnInit();
+      _HeroComponent_248_5.ngOnInit();
     }
-    final currVal_55 = _ctx.currentHero;
+    final currVal_53 = _ctx.currentHero;
+    if (!identical(_expr_53, currVal_53)) {
+      _HeroComponent_359_5.hero = currVal_53;
+      _expr_53 = currVal_53;
+    }
+    if (firstCheck) {
+      _HeroComponent_359_5.ngOnInit();
+    }
+    final currVal_55 = _ctx.fontSizePx;
     if (!identical(_expr_55, currVal_55)) {
-      _BigHeroDetailComponent_361_5.hero = currVal_55;
+      _SizerComponent_378_5.size = currVal_55;
       _expr_55 = currVal_55;
-    }
-    if (firstCheck) {
-      _BigHeroDetailComponent_361_5.ngOnInit();
-    }
-    final currVal_56 = _ctx.fontSizePx;
-    if (!identical(_expr_56, currVal_56)) {
-      _SizerComponent_378_5.size = currVal_56;
-      _expr_56 = currVal_56;
     }
     changed = false;
     _NgModel_383_7.model = _ctx.fontSizePx;
@@ -2665,10 +2649,10 @@ class ViewAppComponent0 extends AppView<import2.AppComponent> {
     if (firstCheck) {
       _NgModel_383_7.ngOnInit();
     }
-    final currVal_60 = _ctx.fontSizePx;
-    if (!identical(_expr_60, currVal_60)) {
-      _SizerComponent_390_5.size = currVal_60;
-      _expr_60 = currVal_60;
+    final currVal_59 = _ctx.fontSizePx;
+    if (!identical(_expr_59, currVal_59)) {
+      _SizerComponent_390_5.size = currVal_59;
+      _expr_59 = currVal_59;
     }
     changed = false;
     _NgModel_402_7.model = _ctx.currentHero.name;
@@ -2688,10 +2672,10 @@ class ViewAppComponent0 extends AppView<import2.AppComponent> {
     if (firstCheck) {
       _NgModel_408_7.ngOnInit();
     }
-    final currVal_67 = _ctx.currentClasses;
-    if (!identical(_expr_67, currVal_67)) {
-      _NgClass_418_5.rawClass = currVal_67;
-      _expr_67 = currVal_67;
+    final currVal_66 = _ctx.currentClasses;
+    if (!identical(_expr_66, currVal_66)) {
+      _NgClass_418_5.rawClass = currVal_66;
+      _expr_66 = currVal_66;
     }
     _NgClass_418_5.ngDoCheck();
     changed = false;
@@ -2706,28 +2690,28 @@ class ViewAppComponent0 extends AppView<import2.AppComponent> {
     if (firstCheck) {
       _NgModel_431_7.ngOnInit();
     }
-    final currVal_71 = _ctx.currentClasses;
-    if (!identical(_expr_71, currVal_71)) {
-      _NgClass_436_5.rawClass = currVal_71;
-      _expr_71 = currVal_71;
+    final currVal_70 = _ctx.currentClasses;
+    if (!identical(_expr_70, currVal_70)) {
+      _NgClass_436_5.rawClass = currVal_70;
+      _expr_70 = currVal_70;
     }
     _NgClass_436_5.ngDoCheck();
-    final currVal_75 = (_ctx.isSpecial ? 'special' : '');
-    if (!identical(_expr_75, currVal_75)) {
-      _NgClass_446_5.rawClass = currVal_75;
-      _expr_75 = currVal_75;
+    final currVal_74 = (_ctx.isSpecial ? 'special' : '');
+    if (!identical(_expr_74, currVal_74)) {
+      _NgClass_446_5.rawClass = currVal_74;
+      _expr_74 = currVal_74;
     }
     _NgClass_446_5.ngDoCheck();
-    final currVal_76 = _map_1(false, true, true);
-    if (!identical(_expr_76, currVal_76)) {
-      _NgClass_450_5.rawClass = currVal_76;
-      _expr_76 = currVal_76;
+    final currVal_75 = _map_1(false, true, true);
+    if (!identical(_expr_75, currVal_75)) {
+      _NgClass_450_5.rawClass = currVal_75;
+      _expr_75 = currVal_75;
     }
     _NgClass_450_5.ngDoCheck();
-    final currVal_79 = _ctx.currentStyles;
-    if (!identical(_expr_79, currVal_79)) {
-      _NgStyle_464_5.rawStyle = currVal_79;
-      _expr_79 = currVal_79;
+    final currVal_78 = _ctx.currentStyles;
+    if (!identical(_expr_78, currVal_78)) {
+      _NgStyle_464_5.rawStyle = currVal_78;
+      _expr_78 = currVal_78;
     }
     _NgStyle_464_5.ngDoCheck();
     changed = false;
@@ -2748,10 +2732,10 @@ class ViewAppComponent0 extends AppView<import2.AppComponent> {
     if (firstCheck) {
       _NgModel_477_7.ngOnInit();
     }
-    final currVal_83 = _ctx.currentStyles;
-    if (!identical(_expr_83, currVal_83)) {
-      _NgStyle_482_5.rawStyle = currVal_83;
-      _expr_83 = currVal_83;
+    final currVal_82 = _ctx.currentStyles;
+    if (!identical(_expr_82, currVal_82)) {
+      _NgStyle_482_5.rawStyle = currVal_82;
+      _expr_82 = currVal_82;
     }
     _NgStyle_482_5.ngDoCheck();
     _NgIf_495_9.ngIf = _ctx.isActive;
@@ -2760,7 +2744,7 @@ class ViewAppComponent0 extends AppView<import2.AppComponent> {
     _NgIf_498_9.ngIf = (_ctx.currentHero != null);
     _NgIf_501_9.ngIf = _ctx.isActive;
     if (firstCheck) {
-      _HeroDetailComponent_506_5.ngOnInit();
+      _HeroComponent_506_5.ngOnInit();
     }
     if (firstCheck) {
       if (!identical(_ctx.heroes, null)) {
@@ -2822,10 +2806,10 @@ class ViewAppComponent0 extends AppView<import2.AppComponent> {
       }
     }
     _NgFor_565_9.ngDoCheck();
-    final currVal_111 = _ctx.currentHero.emotion;
-    if (!identical(_expr_111, currVal_111)) {
-      _NgSwitch_572_5.ngSwitch = currVal_111;
-      _expr_111 = currVal_111;
+    final currVal_110 = _ctx.currentHero.emotion;
+    if (!identical(_expr_110, currVal_110)) {
+      _NgSwitch_572_5.ngSwitch = currVal_110;
+      _expr_110 = currVal_110;
     }
     if (firstCheck) {
       (_NgSwitchWhen_573_9.ngSwitchCase = 'happy');
@@ -2839,18 +2823,18 @@ class ViewAppComponent0 extends AppView<import2.AppComponent> {
     if (firstCheck) {
       (_NgSwitchWhen_576_9.ngSwitchCase = 'confused');
     }
-    final currVal_117 = _ctx.currentHero;
-    if (!identical(_expr_117, currVal_117)) {
-      _HeroFormComponent_589_5.hero = currVal_117;
-      _expr_117 = currVal_117;
+    final currVal_116 = _ctx.currentHero;
+    if (!identical(_expr_116, currVal_116)) {
+      _HeroFormComponent_589_5.hero = currVal_116;
+      _expr_116 = currVal_116;
     }
-    final currVal_119 = _ctx.currentHero;
-    if (!identical(_expr_119, currVal_119)) {
-      _HeroDetailComponent_598_5.hero = currVal_119;
-      _expr_119 = currVal_119;
+    final currVal_118 = _ctx.currentHero;
+    if (!identical(_expr_118, currVal_118)) {
+      _HeroComponent_598_5.hero = currVal_118;
+      _expr_118 = currVal_118;
     }
     if (firstCheck) {
-      _HeroDetailComponent_598_5.ngOnInit();
+      _HeroComponent_598_5.ngOnInit();
     }
     _NgIf_641_9.ngIf = (_ctx.nullHero != null);
     _appEl_143.detectChangesInNestedViews();
@@ -2882,13 +2866,13 @@ class ViewAppComponent0 extends AppView<import2.AppComponent> {
     }
     if (_query_noTrackBy_1_0_isDirty) {
       ctx.heroesNoTrackBy = _appEl_542.mapNestedViews((_ViewAppComponent12 nestedView) {
-        return [new ElementRef(nestedView._el_0)];
+        return [nestedView._el_0];
       });
       _query_noTrackBy_1_0_isDirty = false;
     }
     if (_query_withTrackBy_1_1_isDirty) {
       ctx.heroesWithTrackBy = _appEl_549.mapNestedViews((_ViewAppComponent14 nestedView) {
-        return [new ElementRef(nestedView._el_0)];
+        return [nestedView._el_0];
       });
       _query_withTrackBy_1_1_isDirty = false;
     }
@@ -2908,65 +2892,60 @@ class ViewAppComponent0 extends AppView<import2.AppComponent> {
     if (firstCheck) {
       setProp(_el_97, 'src', import33.appViewUtils.sanitizer.sanitizeUrl((_ctx.heroImageUrl ?? '')));
     }
-    final currVal_3 = import33.interpolate0((1 + 1));
+    final currVal_3 = import33.interpolate0(((1 + 1) + _ctx.getVal()));
     if (!identical(_expr_3, currVal_3)) {
-      _text_100.text = currVal_3;
+      _text_103.text = currVal_3;
       _expr_3 = currVal_3;
     }
-    final currVal_4 = import33.interpolate0(((1 + 1) + _ctx.getVal()));
+    final currVal_4 = (_ctx.title ?? '');
     if (!identical(_expr_4, currVal_4)) {
-      _text_103.text = currVal_4;
+      _text_112.text = currVal_4;
       _expr_4 = currVal_4;
     }
-    final currVal_5 = (_ctx.title ?? '');
+    final currVal_5 = _ctx.isUnchanged;
     if (!identical(_expr_5, currVal_5)) {
-      _text_112.text = currVal_5;
+      setProp(_el_113, 'hidden', currVal_5);
       _expr_5 = currVal_5;
     }
-    final currVal_6 = _ctx.isUnchanged;
+    final currVal_6 = import33.interpolate0(local_heroInput.value);
     if (!identical(_expr_6, currVal_6)) {
-      setProp(_el_113, 'hidden', currVal_6);
+      _text_124.text = currVal_6;
       _expr_6 = currVal_6;
     }
-    final currVal_7 = import33.interpolate0(local_heroInput.value);
-    if (!identical(_expr_7, currVal_7)) {
-      _text_124.text = currVal_7;
-      _expr_7 = currVal_7;
-    }
-    final currVal_9 = _ctx.isUnchanged;
-    if (!identical(_expr_9, currVal_9)) {
-      setProp(_el_168, 'disabled', currVal_9);
-      _expr_9 = currVal_9;
+    final currVal_8 = _ctx.isUnchanged;
+    if (!identical(_expr_8, currVal_8)) {
+      setProp(_el_168, 'disabled', currVal_8);
+      _expr_8 = currVal_8;
     }
     if (firstCheck) {
       if (!identical(_ctx.heroImageUrl, null)) {
         setProp(_el_173, 'src', import33.appViewUtils.sanitizer.sanitizeUrl(_ctx.heroImageUrl));
       }
     }
-    final currVal_13 = (_ctx.clicked ?? '');
-    if (!identical(_expr_13, currVal_13)) {
-      _text_183.text = currVal_13;
-      _expr_13 = currVal_13;
+    final currVal_12 = (_ctx.clicked ?? '');
+    if (!identical(_expr_12, currVal_12)) {
+      _text_183.text = currVal_12;
+      _expr_12 = currVal_12;
     }
-    final currVal_15 = (_ctx.name ?? '');
+    final currVal_14 = (_ctx.name ?? '');
+    if (!identical(_expr_14, currVal_14)) {
+      _text_189.text = currVal_14;
+      _expr_14 = currVal_14;
+    }
+    final currVal_15 = _ctx.help;
     if (!identical(_expr_15, currVal_15)) {
-      _text_189.text = currVal_15;
+      setAttr(_el_192, 'aria-label', currVal_15?.toString());
       _expr_15 = currVal_15;
     }
-    final currVal_16 = _ctx.help;
+    final currVal_16 = _ctx.isSpecial;
     if (!identical(_expr_16, currVal_16)) {
-      setAttr(_el_192, 'aria-label', currVal_16?.toString());
+      updateClass(_el_196, 'special', currVal_16);
       _expr_16 = currVal_16;
     }
-    final currVal_17 = _ctx.isSpecial;
+    final currVal_17 = (_ctx.isSpecial ? 'red' : 'green');
     if (!identical(_expr_17, currVal_17)) {
-      updateClass(_el_196, 'special', currVal_17);
+      _el_200.style.setProperty('color', currVal_17?.toString());
       _expr_17 = currVal_17;
-    }
-    final currVal_18 = (_ctx.isSpecial ? 'red' : 'green');
-    if (!identical(_expr_18, currVal_18)) {
-      _el_200.style.setProperty('color', currVal_18?.toString());
-      _expr_18 = currVal_18;
     }
     if (firstCheck) {
       if (!identical(_ctx.heroImageUrl, null)) {
@@ -2988,30 +2967,30 @@ class ViewAppComponent0 extends AppView<import2.AppComponent> {
         setAttr(_el_212, 'src', import33.appViewUtils.sanitizer.sanitizeUrl(_ctx.villainImageUrl)?.toString());
       }
     }
+    final currVal_22 = _ctx.isUnchanged;
+    if (!identical(_expr_22, currVal_22)) {
+      setProp(_el_228, 'disabled', currVal_22);
+      _expr_22 = currVal_22;
+    }
     final currVal_23 = _ctx.isUnchanged;
     if (!identical(_expr_23, currVal_23)) {
-      setProp(_el_228, 'disabled', currVal_23);
+      setProp(_el_232, 'disabled', currVal_23);
       _expr_23 = currVal_23;
     }
-    final currVal_24 = _ctx.isUnchanged;
+    final bool currVal_24 = !_ctx.canSave;
     if (!identical(_expr_24, currVal_24)) {
-      setProp(_el_232, 'disabled', currVal_24);
+      setProp(_el_234, 'disabled', currVal_24);
       _expr_24 = currVal_24;
-    }
-    final bool currVal_25 = !_ctx.canSave;
-    if (!identical(_expr_25, currVal_25)) {
-      setProp(_el_234, 'disabled', currVal_25);
-      _expr_25 = currVal_25;
     }
     if (firstCheck) {
       if (!identical(_ctx.heroImageUrl, null)) {
         setProp(_el_241, 'src', import33.appViewUtils.sanitizer.sanitizeUrl(_ctx.heroImageUrl));
       }
     }
-    final currVal_27 = _ctx.isUnchanged;
-    if (!identical(_expr_27, currVal_27)) {
-      setProp(_el_242, 'disabled', currVal_27);
-      _expr_27 = currVal_27;
+    final currVal_26 = _ctx.isUnchanged;
+    if (!identical(_expr_26, currVal_26)) {
+      setProp(_el_242, 'disabled', currVal_26);
+      _expr_26 = currVal_26;
     }
     if (firstCheck) {
       if (!identical(_ctx.heroImageUrl, null)) {
@@ -3026,288 +3005,288 @@ class ViewAppComponent0 extends AppView<import2.AppComponent> {
         setProp(_el_256, 'src', import33.appViewUtils.sanitizer.sanitizeUrl(_ctx.heroImageUrl));
       }
     }
-    final currVal_35 = (_ctx.title ?? '');
+    final currVal_34 = (_ctx.title ?? '');
+    if (!identical(_expr_34, currVal_34)) {
+      _text_264.text = currVal_34;
+      _expr_34 = currVal_34;
+    }
+    final currVal_35 = _ctx.title;
     if (!identical(_expr_35, currVal_35)) {
-      _text_264.text = currVal_35;
+      setProp(_el_271, 'innerHTML', import33.appViewUtils.sanitizer.sanitizeHtml(currVal_35));
       _expr_35 = currVal_35;
     }
-    final currVal_36 = _ctx.title;
+    final currVal_36 = (_ctx.evilTitle ?? '');
     if (!identical(_expr_36, currVal_36)) {
-      setProp(_el_271, 'innerHTML', import33.appViewUtils.sanitizer.sanitizeHtml(currVal_36));
+      _text_279.text = currVal_36;
       _expr_36 = currVal_36;
     }
-    final currVal_37 = (_ctx.evilTitle ?? '');
+    final currVal_37 = _ctx.evilTitle;
     if (!identical(_expr_37, currVal_37)) {
-      _text_279.text = currVal_37;
+      setProp(_el_286, 'innerHTML', import33.appViewUtils.sanitizer.sanitizeHtml(currVal_37));
       _expr_37 = currVal_37;
     }
-    final currVal_38 = _ctx.evilTitle;
-    if (!identical(_expr_38, currVal_38)) {
-      setProp(_el_286, 'innerHTML', import33.appViewUtils.sanitizer.sanitizeHtml(currVal_38));
-      _expr_38 = currVal_38;
+    if (firstCheck) {
+      if (!identical((1 + 1), null)) {
+        setAttr(_el_298, 'colspan', (1 + 1)?.toString());
+      }
     }
-    final currVal_39 = (1 + 1);
+    final currVal_39 = _ctx.actionName;
     if (!identical(_expr_39, currVal_39)) {
-      setAttr(_el_298, 'colspan', currVal_39?.toString());
+      setAttr(_el_306, 'aria-label', currVal_39?.toString());
       _expr_39 = currVal_39;
     }
-    final currVal_40 = _ctx.actionName;
+    final currVal_40 = (_ctx.actionName ?? '');
     if (!identical(_expr_40, currVal_40)) {
-      setAttr(_el_306, 'aria-label', currVal_40?.toString());
+      _text_307.text = currVal_40;
       _expr_40 = currVal_40;
     }
-    final currVal_41 = (_ctx.actionName ?? '');
+    final currVal_41 = _ctx.isUnchanged;
     if (!identical(_expr_41, currVal_41)) {
-      _text_307.text = currVal_41;
+      setAttr(_el_312, 'disabled', currVal_41?.toString());
       _expr_41 = currVal_41;
     }
-    final currVal_42 = _ctx.isUnchanged;
+    final bool currVal_42 = !_ctx.isUnchanged;
     if (!identical(_expr_42, currVal_42)) {
-      setAttr(_el_312, 'disabled', currVal_42?.toString());
+      setAttr(_el_314, 'disabled', currVal_42?.toString());
       _expr_42 = currVal_42;
-    }
-    final bool currVal_43 = !_ctx.isUnchanged;
-    if (!identical(_expr_43, currVal_43)) {
-      setAttr(_el_314, 'disabled', currVal_43?.toString());
-      _expr_43 = currVal_43;
     }
     if (firstCheck) {
       setProp(_el_316, 'disabled', false);
     }
-    final currVal_45 = _ctx.badCurly;
+    final currVal_44 = _ctx.badCurly;
+    if (!identical(_expr_44, currVal_44)) {
+      this.updateChildClass(_el_325, currVal_44);
+      _expr_44 = currVal_44;
+    }
+    final currVal_45 = _ctx.isSpecial;
     if (!identical(_expr_45, currVal_45)) {
-      this.updateChildClass(_el_325, currVal_45);
+      updateClass(_el_327, 'special', currVal_45);
       _expr_45 = currVal_45;
     }
-    final currVal_46 = _ctx.isSpecial;
+    final bool currVal_46 = !_ctx.isSpecial;
     if (!identical(_expr_46, currVal_46)) {
-      updateClass(_el_327, 'special', currVal_46);
+      updateClass(_el_329, 'special', currVal_46);
       _expr_46 = currVal_46;
     }
-    final bool currVal_47 = !_ctx.isSpecial;
+    final currVal_47 = _ctx.isSpecial;
     if (!identical(_expr_47, currVal_47)) {
-      updateClass(_el_329, 'special', currVal_47);
+      updateClass(_el_331, 'special', currVal_47);
       _expr_47 = currVal_47;
     }
-    final currVal_48 = _ctx.isSpecial;
+    final currVal_48 = (_ctx.isSpecial ? 'red' : 'green');
     if (!identical(_expr_48, currVal_48)) {
-      updateClass(_el_331, 'special', currVal_48);
+      _el_338.style.setProperty('color', currVal_48?.toString());
       _expr_48 = currVal_48;
     }
-    final currVal_49 = (_ctx.isSpecial ? 'red' : 'green');
+    final currVal_49 = (_ctx.canSave ? 'cyan' : 'grey');
     if (!identical(_expr_49, currVal_49)) {
-      _el_338.style.setProperty('color', currVal_49?.toString());
+      _el_340.style.setProperty('background-color', currVal_49?.toString());
       _expr_49 = currVal_49;
     }
-    final currVal_50 = (_ctx.canSave ? 'cyan' : 'grey');
+    final currVal_50 = (_ctx.isSpecial ? 3 : 1);
     if (!identical(_expr_50, currVal_50)) {
-      _el_340.style.setProperty('background-color', currVal_50?.toString());
+      _el_342.style.setProperty('font-size', ((currVal_50?.toString() == null) ? null : (currVal_50?.toString() + 'em')));
       _expr_50 = currVal_50;
     }
-    final currVal_51 = (_ctx.isSpecial ? 3 : 1);
+    final currVal_51 = (!_ctx.isSpecial ? 150 : 50);
     if (!identical(_expr_51, currVal_51)) {
-      _el_342.style.setProperty('font-size', ((currVal_51?.toString() == null) ? null : (currVal_51?.toString() + 'em')));
+      _el_344.style.setProperty('font-size', ((currVal_51?.toString() == null) ? null : (currVal_51?.toString() + '%')));
       _expr_51 = currVal_51;
     }
-    final currVal_52 = (!_ctx.isSpecial ? 150 : 50);
+    final currVal_52 = (_ctx.clickMessage ?? '');
     if (!identical(_expr_52, currVal_52)) {
-      _el_344.style.setProperty('font-size', ((currVal_52?.toString() == null) ? null : (currVal_52?.toString() + '%')));
+      _text_358.text = currVal_52;
       _expr_52 = currVal_52;
     }
-    final currVal_53 = (_ctx.clickMessage ?? '');
-    if (!identical(_expr_53, currVal_53)) {
-      _text_358.text = currVal_53;
-      _expr_53 = currVal_53;
+    final currVal_54 = _ctx.currentHero;
+    if (!identical(_expr_54, currVal_54)) {
+      setProp(_el_361, 'hero', currVal_54);
+      _expr_54 = currVal_54;
     }
-    final currVal_57 = local_mySizer.size;
-    if (!identical(_expr_57, currVal_57)) {
-      _el_379.style.setProperty('font-size', ((currVal_57?.toString() == null) ? null : (currVal_57?.toString() + 'px')));
-      _expr_57 = currVal_57;
+    final currVal_56 = local_mySizer.size;
+    if (!identical(_expr_56, currVal_56)) {
+      _el_379.style.setProperty('font-size', ((currVal_56?.toString() == null) ? null : (currVal_56?.toString() + 'px')));
+      _expr_56 = currVal_56;
     }
-    final currVal_59 = import33.interpolate0(_ctx.fontSizePx.runtimeType);
-    if (!identical(_expr_59, currVal_59)) {
-      _text_385.text = currVal_59;
-      _expr_59 = currVal_59;
+    final currVal_58 = import33.interpolate0(_ctx.fontSizePx.runtimeType);
+    if (!identical(_expr_58, currVal_58)) {
+      _text_385.text = currVal_58;
+      _expr_58 = currVal_58;
     }
-    final currVal_61 = import33.interpolate0(_ctx.currentHero.name);
+    final currVal_60 = import33.interpolate0(_ctx.currentHero.name);
+    if (!identical(_expr_60, currVal_60)) {
+      _text_398.text = currVal_60;
+      _expr_60 = currVal_60;
+    }
+    final currVal_61 = _ctx.currentHero.name;
     if (!identical(_expr_61, currVal_61)) {
-      _text_398.text = currVal_61;
+      setProp(_el_399, 'value', currVal_61);
       _expr_61 = currVal_61;
     }
-    final currVal_62 = _ctx.currentHero.name;
-    if (!identical(_expr_62, currVal_62)) {
-      setProp(_el_399, 'value', currVal_62);
-      _expr_62 = currVal_62;
+    final currVal_65 = import33.interpolate0(_ctx.currentClasses);
+    if (!identical(_expr_65, currVal_65)) {
+      _text_417.text = currVal_65;
+      _expr_65 = currVal_65;
     }
-    final currVal_66 = import33.interpolate0(_ctx.currentClasses);
-    if (!identical(_expr_66, currVal_66)) {
-      _text_417.text = currVal_66;
-      _expr_66 = currVal_66;
+    final bool currVal_68 = !_ctx.isUnchanged;
+    if (!identical(_expr_68, currVal_68)) {
+      setProp(_el_427, 'value', currVal_68);
+      _expr_68 = currVal_68;
     }
-    final bool currVal_69 = !_ctx.isUnchanged;
-    if (!identical(_expr_69, currVal_69)) {
-      setProp(_el_427, 'value', currVal_69);
-      _expr_69 = currVal_69;
+    final currVal_71 = import33.interpolate0((_ctx.canSave ? '' : 'not'));
+    if (!identical(_expr_71, currVal_71)) {
+      _text_438.text = currVal_71;
+      _expr_71 = currVal_71;
     }
-    final currVal_72 = import33.interpolate0((_ctx.canSave ? '' : 'not'));
+    final currVal_72 = import33.interpolate0((_ctx.isUnchanged ? 'unchanged' : 'modified'));
     if (!identical(_expr_72, currVal_72)) {
-      _text_438.text = currVal_72;
+      _text_440.text = currVal_72;
       _expr_72 = currVal_72;
     }
-    final currVal_73 = import33.interpolate0((_ctx.isUnchanged ? 'unchanged' : 'modified'));
+    final currVal_73 = import33.interpolate0((_ctx.isSpecial ? '' : 'not'));
     if (!identical(_expr_73, currVal_73)) {
-      _text_440.text = currVal_73;
+      _text_442.text = currVal_73;
       _expr_73 = currVal_73;
     }
-    final currVal_74 = import33.interpolate0((_ctx.isSpecial ? '' : 'not'));
-    if (!identical(_expr_74, currVal_74)) {
-      _text_442.text = currVal_74;
-      _expr_74 = currVal_74;
+    final currVal_76 = (_ctx.isSpecial ? 'x-large' : 'smaller');
+    if (!identical(_expr_76, currVal_76)) {
+      _el_457.style.setProperty('font-size', currVal_76?.toString());
+      _expr_76 = currVal_76;
     }
-    final currVal_77 = (_ctx.isSpecial ? 'x-large' : 'smaller');
+    final currVal_77 = import33.interpolate0(_ctx.currentStyles);
     if (!identical(_expr_77, currVal_77)) {
-      _el_457.style.setProperty('font-size', currVal_77?.toString());
+      _text_463.text = currVal_77;
       _expr_77 = currVal_77;
     }
-    final currVal_78 = import33.interpolate0(_ctx.currentStyles);
-    if (!identical(_expr_78, currVal_78)) {
-      _text_463.text = currVal_78;
-      _expr_78 = currVal_78;
+    final currVal_83 = import33.interpolate0((_ctx.canSave ? 'italic' : 'plain'));
+    if (!identical(_expr_83, currVal_83)) {
+      _text_484.text = currVal_83;
+      _expr_83 = currVal_83;
     }
-    final currVal_84 = import33.interpolate0((_ctx.canSave ? 'italic' : 'plain'));
+    final currVal_84 = import33.interpolate0((_ctx.isUnchanged ? 'normal weight' : 'bold'));
     if (!identical(_expr_84, currVal_84)) {
-      _text_484.text = currVal_84;
+      _text_486.text = currVal_84;
       _expr_84 = currVal_84;
     }
-    final currVal_85 = import33.interpolate0((_ctx.isUnchanged ? 'normal weight' : 'bold'));
+    final currVal_85 = import33.interpolate0((_ctx.isSpecial ? 'extra large' : 'normal size'));
     if (!identical(_expr_85, currVal_85)) {
-      _text_486.text = currVal_85;
+      _text_488.text = currVal_85;
       _expr_85 = currVal_85;
     }
-    final currVal_86 = import33.interpolate0((_ctx.isSpecial ? 'extra large' : 'normal size'));
-    if (!identical(_expr_86, currVal_86)) {
-      _text_488.text = currVal_86;
-      _expr_86 = currVal_86;
+    final bool currVal_91 = !_ctx.isSpecial;
+    if (!identical(_expr_91, currVal_91)) {
+      updateClass(_el_502, 'hidden', currVal_91);
+      _expr_91 = currVal_91;
     }
-    final bool currVal_92 = !_ctx.isSpecial;
+    final currVal_92 = _ctx.isSpecial;
     if (!identical(_expr_92, currVal_92)) {
-      updateClass(_el_502, 'hidden', currVal_92);
+      updateClass(_el_504, 'hidden', currVal_92);
       _expr_92 = currVal_92;
     }
     final currVal_93 = _ctx.isSpecial;
     if (!identical(_expr_93, currVal_93)) {
-      updateClass(_el_504, 'hidden', currVal_93);
+      updateElemClass(_el_506, 'hidden', currVal_93);
       _expr_93 = currVal_93;
     }
-    final currVal_94 = _ctx.isSpecial;
+    final currVal_94 = (_ctx.isSpecial ? 'block' : 'none');
     if (!identical(_expr_94, currVal_94)) {
-      updateElemClass(_el_506, 'hidden', currVal_94);
+      _el_507.style.setProperty('display', currVal_94?.toString());
       _expr_94 = currVal_94;
     }
-    final currVal_95 = (_ctx.isSpecial ? 'block' : 'none');
+    final currVal_95 = (_ctx.isSpecial ? 'none' : 'block');
     if (!identical(_expr_95, currVal_95)) {
-      _el_507.style.setProperty('display', currVal_95?.toString());
+      _el_509.style.setProperty('display', currVal_95?.toString());
       _expr_95 = currVal_95;
     }
-    final currVal_96 = (_ctx.isSpecial ? 'none' : 'block');
-    if (!identical(_expr_96, currVal_96)) {
-      _el_509.style.setProperty('display', currVal_96?.toString());
-      _expr_96 = currVal_96;
+    final currVal_108 = import33.interpolate0(_ctx.currentHero.name);
+    if (!identical(_expr_108, currVal_108)) {
+      _text_568.text = currVal_108;
+      _expr_108 = currVal_108;
     }
-    final currVal_109 = import33.interpolate0(_ctx.currentHero.name);
+    final currVal_109 = import33.interpolate0(_ctx.currentHero.id);
     if (!identical(_expr_109, currVal_109)) {
-      _text_568.text = currVal_109;
+      _text_570.text = currVal_109;
       _expr_109 = currVal_109;
     }
-    final currVal_110 = import33.interpolate0(_ctx.currentHero.id);
-    if (!identical(_expr_110, currVal_110)) {
-      _text_570.text = currVal_110;
-      _expr_110 = currVal_110;
-    }
-    final currVal_116 = ('disabled by attribute: ' + local_btn.disabled.toString());
-    if (!identical(_expr_116, currVal_116)) {
-      setProp(_el_586, 'innerHTML', import33.appViewUtils.sanitizer.sanitizeHtml(currVal_116));
-      _expr_116 = currVal_116;
+    final currVal_115 = ('disabled by attribute: ' + local_btn.disabled.toString());
+    if (!identical(_expr_115, currVal_115)) {
+      setProp(_el_586, 'innerHTML', import33.appViewUtils.sanitizer.sanitizeHtml(currVal_115));
+      _expr_115 = currVal_115;
     }
     if (firstCheck) {
       if (!identical(_ctx.iconUrl, null)) {
         setProp(_el_595, 'src', import33.appViewUtils.sanitizer.sanitizeUrl(_ctx.iconUrl));
       }
     }
-    final currVal_120 = (_ctx.clickMessage2 ?? '');
+    final currVal_119 = (_ctx.clickMessage2 ?? '');
+    if (!identical(_expr_119, currVal_119)) {
+      _text_601.text = currVal_119;
+      _expr_119 = currVal_119;
+    }
+    final currVal_120 = import33.interpolate0(_pipe_uppercase_0_0(_ctx.title));
     if (!identical(_expr_120, currVal_120)) {
-      _text_601.text = currVal_120;
+      _text_609.text = currVal_120;
       _expr_120 = currVal_120;
     }
-    final currVal_121 = import33.interpolate0(_pipe_uppercase_0_0(_ctx.title));
+    final currVal_121 = import33.interpolate0(_pipe_lowercase_1_0(_pipe_uppercase_0_1(_ctx.title)));
     if (!identical(_expr_121, currVal_121)) {
-      _text_609.text = currVal_121;
+      _text_612.text = currVal_121;
       _expr_121 = currVal_121;
     }
-    final currVal_122 = import33.interpolate0(_pipe_lowercase_1_0(_pipe_uppercase_0_1(_ctx.title)));
+    final currVal_122 = import33.interpolate0(_pipe_date_2_0(((_ctx.currentHero == null) ? null : _ctx.currentHero.birthdate), 'longDate'));
     if (!identical(_expr_122, currVal_122)) {
-      _text_612.text = currVal_122;
+      _text_615.text = currVal_122;
       _expr_122 = currVal_122;
     }
-    final currVal_123 = import33.interpolate0(_pipe_date_2_0(((_ctx.currentHero == null) ? null : _ctx.currentHero.birthdate), 'longDate'));
+    final currVal_123 = import33.interpolate0(_pipe_json_3.transform(_ctx.currentHero));
     if (!identical(_expr_123, currVal_123)) {
-      _text_615.text = currVal_123;
+      _text_617.text = currVal_123;
       _expr_123 = currVal_123;
     }
-    final currVal_124 = import33.interpolate0(_pipe_json_3.transform(_ctx.currentHero));
+    final currVal_124 = import33.interpolate0(_pipe_uppercase_0_2(_pipe_date_2_1(((_ctx.currentHero == null) ? null : _ctx.currentHero.birthdate), 'longDate')));
     if (!identical(_expr_124, currVal_124)) {
-      _text_617.text = currVal_124;
+      _text_620.text = currVal_124;
       _expr_124 = currVal_124;
     }
-    final currVal_125 = import33.interpolate0(_pipe_uppercase_0_2(_pipe_date_2_1(((_ctx.currentHero == null) ? null : _ctx.currentHero.birthdate), 'longDate')));
+    final currVal_125 = import33.interpolate0(_pipe_currency_4_0(_ctx.product['price'], 'USD', true));
     if (!identical(_expr_125, currVal_125)) {
-      _text_620.text = currVal_125;
+      _text_624.text = currVal_125;
       _expr_125 = currVal_125;
     }
-    final currVal_126 = import33.interpolate0(_pipe_currency_4_0(_ctx.product['price'], 'USD', true));
+    final currVal_126 = (_ctx.title ?? '');
     if (!identical(_expr_126, currVal_126)) {
-      _text_624.text = currVal_126;
+      _text_634.text = currVal_126;
       _expr_126 = currVal_126;
     }
-    final currVal_127 = (_ctx.title ?? '');
+    final currVal_127 = import33.interpolate0(((_ctx.currentHero == null) ? null : _ctx.currentHero.name));
     if (!identical(_expr_127, currVal_127)) {
-      _text_634.text = currVal_127;
+      _text_637.text = currVal_127;
       _expr_127 = currVal_127;
     }
-    final currVal_128 = import33.interpolate0(((_ctx.currentHero == null) ? null : _ctx.currentHero.name));
+    final currVal_128 = import33.interpolate0(_ctx.currentHero.name);
     if (!identical(_expr_128, currVal_128)) {
-      _text_637.text = currVal_128;
+      _text_640.text = currVal_128;
       _expr_128 = currVal_128;
     }
-    final currVal_129 = import33.interpolate0(_ctx.currentHero.name);
-    if (!identical(_expr_129, currVal_129)) {
-      _text_640.text = currVal_129;
-      _expr_129 = currVal_129;
+    final currVal_130 = import33.interpolate0(((_ctx.nullHero == null) ? null : _ctx.nullHero.name));
+    if (!identical(_expr_130, currVal_130)) {
+      _text_644.text = currVal_130;
+      _expr_130 = currVal_130;
     }
-    final currVal_131 = import33.interpolate0(((_ctx.nullHero == null) ? null : _ctx.nullHero.name));
+    final currVal_131 = import33.interpolate0(_ctx.color);
     if (!identical(_expr_131, currVal_131)) {
-      _text_644.text = currVal_131;
+      _text_656.text = currVal_131;
       _expr_131 = currVal_131;
     }
-    final currVal_132 = import33.interpolate0(import2.Color.red);
+    final currVal_132 = import33.interpolate0(_ctx.color.index);
     if (!identical(_expr_132, currVal_132)) {
-      _text_652.text = currVal_132;
+      _text_658.text = currVal_132;
       _expr_132 = currVal_132;
     }
-    final currVal_133 = import33.interpolate0(_ctx.color);
+    final currVal_133 = _ctx.color.toString().split('.')[1];
     if (!identical(_expr_133, currVal_133)) {
-      _text_656.text = currVal_133;
+      _el_661.style.setProperty('color', currVal_133?.toString());
       _expr_133 = currVal_133;
-    }
-    final currVal_134 = import33.interpolate0(_ctx.color.index);
-    if (!identical(_expr_134, currVal_134)) {
-      _text_658.text = currVal_134;
-      _expr_134 = currVal_134;
-    }
-    final currVal_135 = _ctx.color.toString().split('.')[1];
-    if (!identical(_expr_135, currVal_135)) {
-      _el_661.style.setProperty('color', currVal_135?.toString());
-      _expr_135 = currVal_135;
     }
     _compView_164.detectChanges();
     _compView_174.detectChanges();
@@ -3315,7 +3294,6 @@ class ViewAppComponent0 extends AppView<import2.AppComponent> {
     _compView_246.detectChanges();
     _compView_248.detectChanges();
     _compView_359.detectChanges();
-    _compView_361.detectChanges();
     _compView_378.detectChanges();
     _compView_390.detectChanges();
     _compView_506.detectChanges();
@@ -3353,7 +3331,6 @@ class ViewAppComponent0 extends AppView<import2.AppComponent> {
     _compView_246?.destroy();
     _compView_248?.destroy();
     _compView_359?.destroy();
-    _compView_361?.destroy();
     _compView_378?.destroy();
     _compView_390?.destroy();
     _compView_506?.destroy();
@@ -3492,14 +3469,14 @@ class ViewAppComponent0 extends AppView<import2.AppComponent> {
   }
 }
 
-AppView<import2.AppComponent> viewFactory_AppComponent0(AppView<dynamic> parentView, num parentIndex) {
+AppView<import2.AppComponent> viewFactory_AppComponent0(AppView<dynamic> parentView, int parentIndex) {
   return new ViewAppComponent0(parentView, parentIndex);
 }
 
 class _ViewAppComponent1 extends AppView<import2.AppComponent> {
   ViewContainer _appEl_0;
   import5.NgFor _NgFor_0_9;
-  _ViewAppComponent1(AppView<dynamic> parentView, num parentIndex) : super(import31.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewAppComponent1(AppView<dynamic> parentView, int parentIndex) : super(import31.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewAppComponent0._renderType;
   }
   @override
@@ -3531,7 +3508,7 @@ class _ViewAppComponent1 extends AppView<import2.AppComponent> {
   }
 }
 
-AppView<import2.AppComponent> viewFactory_AppComponent1(AppView<dynamic> parentView, num parentIndex) {
+AppView<import2.AppComponent> viewFactory_AppComponent1(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewAppComponent1(parentView, parentIndex);
 }
 
@@ -3539,7 +3516,7 @@ class _ViewAppComponent2 extends AppView<import2.AppComponent> {
   import3.DivElement _el_0;
   import3.Text _text_1;
   var _expr_0;
-  _ViewAppComponent2(AppView<dynamic> parentView, num parentIndex) : super(import31.ViewType.EMBEDDED, {'\$implicit': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewAppComponent2(AppView<dynamic> parentView, int parentIndex) : super(import31.ViewType.EMBEDDED, {'\$implicit': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewAppComponent0._renderType;
   }
   @override
@@ -3555,7 +3532,7 @@ class _ViewAppComponent2 extends AppView<import2.AppComponent> {
 
   @override
   void detectChangesInternal() {
-    final import42.Hero local_hero = locals['\$implicit'];
+    final import41.Hero local_hero = locals['\$implicit'];
     final currVal_0 = import33.interpolate0(local_hero.name);
     if (!identical(_expr_0, currVal_0)) {
       _text_1.text = currVal_0;
@@ -3564,7 +3541,7 @@ class _ViewAppComponent2 extends AppView<import2.AppComponent> {
   }
 }
 
-AppView<import2.AppComponent> viewFactory_AppComponent2(AppView<dynamic> parentView, num parentIndex) {
+AppView<import2.AppComponent> viewFactory_AppComponent2(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewAppComponent2(parentView, parentIndex);
 }
 
@@ -3572,7 +3549,7 @@ class _ViewAppComponent3 extends AppView<import2.AppComponent> {
   import3.ButtonElement _el_0;
   import3.Text _text_1;
   var _expr_0;
-  _ViewAppComponent3(AppView<dynamic> parentView, num parentIndex) : super(import31.ViewType.EMBEDDED, {'\$implicit': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewAppComponent3(AppView<dynamic> parentView, int parentIndex) : super(import31.ViewType.EMBEDDED, {'\$implicit': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewAppComponent0._renderType;
   }
   @override
@@ -3589,7 +3566,7 @@ class _ViewAppComponent3 extends AppView<import2.AppComponent> {
 
   @override
   void detectChangesInternal() {
-    final import42.Hero local_hero = locals['\$implicit'];
+    final import41.Hero local_hero = locals['\$implicit'];
     final currVal_0 = import33.interpolate0(local_hero.name);
     if (!identical(_expr_0, currVal_0)) {
       _text_1.text = currVal_0;
@@ -3598,29 +3575,29 @@ class _ViewAppComponent3 extends AppView<import2.AppComponent> {
   }
 
   void _handle_click_0_0($event) {
-    final import42.Hero local_hero = locals['\$implicit'];
+    final import41.Hero local_hero = locals['\$implicit'];
     ctx.deleteHero(local_hero);
   }
 }
 
-AppView<import2.AppComponent> viewFactory_AppComponent3(AppView<dynamic> parentView, num parentIndex) {
+AppView<import2.AppComponent> viewFactory_AppComponent3(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewAppComponent3(parentView, parentIndex);
 }
 
 class _ViewAppComponent4 extends AppView<import2.AppComponent> {
   import3.Element _el_0;
-  import7.ViewHeroDetailComponent0 _compView_0;
-  import8.HeroDetailComponent _HeroDetailComponent_0_5;
-  _ViewAppComponent4(AppView<dynamic> parentView, num parentIndex) : super(import31.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  import7.ViewHeroComponent0 _compView_0;
+  import8.HeroComponent _HeroComponent_0_5;
+  _ViewAppComponent4(AppView<dynamic> parentView, int parentIndex) : super(import31.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewAppComponent0._renderType;
   }
   @override
   ComponentRef<import2.AppComponent> build() {
-    _compView_0 = new import7.ViewHeroDetailComponent0(this, 0);
+    _compView_0 = new import7.ViewHeroComponent0(this, 0);
     _el_0 = _compView_0.rootEl;
     addShimC(_el_0);
-    _HeroDetailComponent_0_5 = new import8.HeroDetailComponent();
-    _compView_0.create(_HeroDetailComponent_0_5, []);
+    _HeroComponent_0_5 = new import8.HeroComponent();
+    _compView_0.create(_HeroComponent_0_5, []);
     init0(_el_0);
     return null;
   }
@@ -3629,7 +3606,7 @@ class _ViewAppComponent4 extends AppView<import2.AppComponent> {
   void detectChangesInternal() {
     bool firstCheck = (this.cdState == 0);
     if (firstCheck) {
-      _HeroDetailComponent_0_5.ngOnInit();
+      _HeroComponent_0_5.ngOnInit();
     }
     _compView_0.detectChanges();
   }
@@ -3640,7 +3617,7 @@ class _ViewAppComponent4 extends AppView<import2.AppComponent> {
   }
 }
 
-AppView<import2.AppComponent> viewFactory_AppComponent4(AppView<dynamic> parentView, num parentIndex) {
+AppView<import2.AppComponent> viewFactory_AppComponent4(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewAppComponent4(parentView, parentIndex);
 }
 
@@ -3648,7 +3625,7 @@ class _ViewAppComponent5 extends AppView<import2.AppComponent> {
   import3.DivElement _el_0;
   import3.Text _text_2;
   var _expr_0;
-  _ViewAppComponent5(AppView<dynamic> parentView, num parentIndex) : super(import31.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewAppComponent5(AppView<dynamic> parentView, int parentIndex) : super(import31.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewAppComponent0._renderType;
   }
   @override
@@ -3675,7 +3652,7 @@ class _ViewAppComponent5 extends AppView<import2.AppComponent> {
   }
 }
 
-AppView<import2.AppComponent> viewFactory_AppComponent5(AppView<dynamic> parentView, num parentIndex) {
+AppView<import2.AppComponent> viewFactory_AppComponent5(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewAppComponent5(parentView, parentIndex);
 }
 
@@ -3683,7 +3660,7 @@ class _ViewAppComponent6 extends AppView<import2.AppComponent> {
   import3.DivElement _el_0;
   import3.Text _text_2;
   var _expr_0;
-  _ViewAppComponent6(AppView<dynamic> parentView, num parentIndex) : super(import31.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewAppComponent6(AppView<dynamic> parentView, int parentIndex) : super(import31.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewAppComponent0._renderType;
   }
   @override
@@ -3710,14 +3687,14 @@ class _ViewAppComponent6 extends AppView<import2.AppComponent> {
   }
 }
 
-AppView<import2.AppComponent> viewFactory_AppComponent6(AppView<dynamic> parentView, num parentIndex) {
+AppView<import2.AppComponent> viewFactory_AppComponent6(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewAppComponent6(parentView, parentIndex);
 }
 
 class _ViewAppComponent7 extends AppView<import2.AppComponent> {
   import3.Text _text_1;
   var _expr_0;
-  _ViewAppComponent7(AppView<dynamic> parentView, num parentIndex) : super(import31.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewAppComponent7(AppView<dynamic> parentView, int parentIndex) : super(import31.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewAppComponent0._renderType;
   }
   @override
@@ -3740,24 +3717,24 @@ class _ViewAppComponent7 extends AppView<import2.AppComponent> {
   }
 }
 
-AppView<import2.AppComponent> viewFactory_AppComponent7(AppView<dynamic> parentView, num parentIndex) {
+AppView<import2.AppComponent> viewFactory_AppComponent7(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewAppComponent7(parentView, parentIndex);
 }
 
 class _ViewAppComponent8 extends AppView<import2.AppComponent> {
   import3.Element _el_0;
-  import7.ViewHeroDetailComponent0 _compView_0;
-  import8.HeroDetailComponent _HeroDetailComponent_0_5;
-  _ViewAppComponent8(AppView<dynamic> parentView, num parentIndex) : super(import31.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  import7.ViewHeroComponent0 _compView_0;
+  import8.HeroComponent _HeroComponent_0_5;
+  _ViewAppComponent8(AppView<dynamic> parentView, int parentIndex) : super(import31.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewAppComponent0._renderType;
   }
   @override
   ComponentRef<import2.AppComponent> build() {
-    _compView_0 = new import7.ViewHeroDetailComponent0(this, 0);
+    _compView_0 = new import7.ViewHeroComponent0(this, 0);
     _el_0 = _compView_0.rootEl;
     addShimC(_el_0);
-    _HeroDetailComponent_0_5 = new import8.HeroDetailComponent();
-    _compView_0.create(_HeroDetailComponent_0_5, []);
+    _HeroComponent_0_5 = new import8.HeroComponent();
+    _compView_0.create(_HeroComponent_0_5, []);
     init0(_el_0);
     return null;
   }
@@ -3766,7 +3743,7 @@ class _ViewAppComponent8 extends AppView<import2.AppComponent> {
   void detectChangesInternal() {
     bool firstCheck = (this.cdState == 0);
     if (firstCheck) {
-      _HeroDetailComponent_0_5.ngOnInit();
+      _HeroComponent_0_5.ngOnInit();
     }
     _compView_0.detectChanges();
   }
@@ -3777,7 +3754,7 @@ class _ViewAppComponent8 extends AppView<import2.AppComponent> {
   }
 }
 
-AppView<import2.AppComponent> viewFactory_AppComponent8(AppView<dynamic> parentView, num parentIndex) {
+AppView<import2.AppComponent> viewFactory_AppComponent8(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewAppComponent8(parentView, parentIndex);
 }
 
@@ -3785,7 +3762,7 @@ class _ViewAppComponent9 extends AppView<import2.AppComponent> {
   import3.DivElement _el_0;
   import3.Text _text_1;
   var _expr_0;
-  _ViewAppComponent9(AppView<dynamic> parentView, num parentIndex) : super(import31.ViewType.EMBEDDED, {'\$implicit': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewAppComponent9(AppView<dynamic> parentView, int parentIndex) : super(import31.ViewType.EMBEDDED, {'\$implicit': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewAppComponent0._renderType;
   }
   @override
@@ -3801,7 +3778,7 @@ class _ViewAppComponent9 extends AppView<import2.AppComponent> {
 
   @override
   void detectChangesInternal() {
-    final import42.Hero local_hero = locals['\$implicit'];
+    final import41.Hero local_hero = locals['\$implicit'];
     final currVal_0 = import33.interpolate0(local_hero.name);
     if (!identical(_expr_0, currVal_0)) {
       _text_1.text = currVal_0;
@@ -3810,25 +3787,25 @@ class _ViewAppComponent9 extends AppView<import2.AppComponent> {
   }
 }
 
-AppView<import2.AppComponent> viewFactory_AppComponent9(AppView<dynamic> parentView, num parentIndex) {
+AppView<import2.AppComponent> viewFactory_AppComponent9(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewAppComponent9(parentView, parentIndex);
 }
 
 class _ViewAppComponent10 extends AppView<import2.AppComponent> {
   import3.Element _el_0;
-  import7.ViewHeroDetailComponent0 _compView_0;
-  import8.HeroDetailComponent _HeroDetailComponent_0_5;
+  import7.ViewHeroComponent0 _compView_0;
+  import8.HeroComponent _HeroComponent_0_5;
   var _expr_0;
-  _ViewAppComponent10(AppView<dynamic> parentView, num parentIndex) : super(import31.ViewType.EMBEDDED, {'\$implicit': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewAppComponent10(AppView<dynamic> parentView, int parentIndex) : super(import31.ViewType.EMBEDDED, {'\$implicit': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewAppComponent0._renderType;
   }
   @override
   ComponentRef<import2.AppComponent> build() {
-    _compView_0 = new import7.ViewHeroDetailComponent0(this, 0);
+    _compView_0 = new import7.ViewHeroComponent0(this, 0);
     _el_0 = _compView_0.rootEl;
     addShimC(_el_0);
-    _HeroDetailComponent_0_5 = new import8.HeroDetailComponent();
-    _compView_0.create(_HeroDetailComponent_0_5, []);
+    _HeroComponent_0_5 = new import8.HeroComponent();
+    _compView_0.create(_HeroComponent_0_5, []);
     init0(_el_0);
     return null;
   }
@@ -3836,14 +3813,14 @@ class _ViewAppComponent10 extends AppView<import2.AppComponent> {
   @override
   void detectChangesInternal() {
     bool firstCheck = (this.cdState == 0);
-    final import42.Hero local_hero = locals['\$implicit'];
+    final import41.Hero local_hero = locals['\$implicit'];
     final currVal_0 = local_hero;
     if (!identical(_expr_0, currVal_0)) {
-      _HeroDetailComponent_0_5.hero = currVal_0;
+      _HeroComponent_0_5.hero = currVal_0;
       _expr_0 = currVal_0;
     }
     if (firstCheck) {
-      _HeroDetailComponent_0_5.ngOnInit();
+      _HeroComponent_0_5.ngOnInit();
     }
     _compView_0.detectChanges();
   }
@@ -3854,7 +3831,7 @@ class _ViewAppComponent10 extends AppView<import2.AppComponent> {
   }
 }
 
-AppView<import2.AppComponent> viewFactory_AppComponent10(AppView<dynamic> parentView, num parentIndex) {
+AppView<import2.AppComponent> viewFactory_AppComponent10(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewAppComponent10(parentView, parentIndex);
 }
 
@@ -3864,7 +3841,7 @@ class _ViewAppComponent11 extends AppView<import2.AppComponent> {
   import3.Text _text_3;
   var _expr_0;
   var _expr_1;
-  _ViewAppComponent11(AppView<dynamic> parentView, num parentIndex) : super(import31.ViewType.EMBEDDED, {'\$implicit': null, 'index': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewAppComponent11(AppView<dynamic> parentView, int parentIndex) : super(import31.ViewType.EMBEDDED, {'\$implicit': null, 'index': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewAppComponent0._renderType;
   }
   @override
@@ -3885,7 +3862,7 @@ class _ViewAppComponent11 extends AppView<import2.AppComponent> {
   @override
   void detectChangesInternal() {
     final int local_i = locals['index'];
-    final import42.Hero local_hero = locals['\$implicit'];
+    final import41.Hero local_hero = locals['\$implicit'];
     final currVal_0 = import33.interpolate0((local_i + 1));
     if (!identical(_expr_0, currVal_0)) {
       _text_1.text = currVal_0;
@@ -3899,7 +3876,7 @@ class _ViewAppComponent11 extends AppView<import2.AppComponent> {
   }
 }
 
-AppView<import2.AppComponent> viewFactory_AppComponent11(AppView<dynamic> parentView, num parentIndex) {
+AppView<import2.AppComponent> viewFactory_AppComponent11(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewAppComponent11(parentView, parentIndex);
 }
 
@@ -3909,7 +3886,7 @@ class _ViewAppComponent12 extends AppView<import2.AppComponent> {
   import3.Text _text_4;
   var _expr_0;
   var _expr_1;
-  _ViewAppComponent12(AppView<dynamic> parentView, num parentIndex) : super(import31.ViewType.EMBEDDED, {'\$implicit': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewAppComponent12(AppView<dynamic> parentView, int parentIndex) : super(import31.ViewType.EMBEDDED, {'\$implicit': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewAppComponent0._renderType;
   }
   @override
@@ -3931,7 +3908,7 @@ class _ViewAppComponent12 extends AppView<import2.AppComponent> {
 
   @override
   void detectChangesInternal() {
-    final import42.Hero local_hero = locals['\$implicit'];
+    final import41.Hero local_hero = locals['\$implicit'];
     final currVal_0 = import33.interpolate0(local_hero.id);
     if (!identical(_expr_0, currVal_0)) {
       _text_2.text = currVal_0;
@@ -3950,7 +3927,7 @@ class _ViewAppComponent12 extends AppView<import2.AppComponent> {
   }
 }
 
-AppView<import2.AppComponent> viewFactory_AppComponent12(AppView<dynamic> parentView, num parentIndex) {
+AppView<import2.AppComponent> viewFactory_AppComponent12(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewAppComponent12(parentView, parentIndex);
 }
 
@@ -3958,7 +3935,7 @@ class _ViewAppComponent13 extends AppView<import2.AppComponent> {
   import3.DivElement _el_0;
   import3.Text _text_2;
   var _expr_0;
-  _ViewAppComponent13(AppView<dynamic> parentView, num parentIndex) : super(import31.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewAppComponent13(AppView<dynamic> parentView, int parentIndex) : super(import31.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewAppComponent0._renderType;
   }
   @override
@@ -3988,7 +3965,7 @@ class _ViewAppComponent13 extends AppView<import2.AppComponent> {
   }
 }
 
-AppView<import2.AppComponent> viewFactory_AppComponent13(AppView<dynamic> parentView, num parentIndex) {
+AppView<import2.AppComponent> viewFactory_AppComponent13(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewAppComponent13(parentView, parentIndex);
 }
 
@@ -3998,7 +3975,7 @@ class _ViewAppComponent14 extends AppView<import2.AppComponent> {
   import3.Text _text_4;
   var _expr_0;
   var _expr_1;
-  _ViewAppComponent14(AppView<dynamic> parentView, num parentIndex) : super(import31.ViewType.EMBEDDED, {'\$implicit': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewAppComponent14(AppView<dynamic> parentView, int parentIndex) : super(import31.ViewType.EMBEDDED, {'\$implicit': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewAppComponent0._renderType;
   }
   @override
@@ -4020,7 +3997,7 @@ class _ViewAppComponent14 extends AppView<import2.AppComponent> {
 
   @override
   void detectChangesInternal() {
-    final import42.Hero local_hero = locals['\$implicit'];
+    final import41.Hero local_hero = locals['\$implicit'];
     final currVal_0 = import33.interpolate0(local_hero.id);
     if (!identical(_expr_0, currVal_0)) {
       _text_2.text = currVal_0;
@@ -4039,7 +4016,7 @@ class _ViewAppComponent14 extends AppView<import2.AppComponent> {
   }
 }
 
-AppView<import2.AppComponent> viewFactory_AppComponent14(AppView<dynamic> parentView, num parentIndex) {
+AppView<import2.AppComponent> viewFactory_AppComponent14(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewAppComponent14(parentView, parentIndex);
 }
 
@@ -4048,7 +4025,7 @@ class _ViewAppComponent15 extends AppView<import2.AppComponent> {
   import3.Text _text_2;
   import3.Element _el_4;
   var _expr_0;
-  _ViewAppComponent15(AppView<dynamic> parentView, num parentIndex) : super(import31.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewAppComponent15(AppView<dynamic> parentView, int parentIndex) : super(import31.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewAppComponent0._renderType;
   }
   @override
@@ -4082,7 +4059,7 @@ class _ViewAppComponent15 extends AppView<import2.AppComponent> {
   }
 }
 
-AppView<import2.AppComponent> viewFactory_AppComponent15(AppView<dynamic> parentView, num parentIndex) {
+AppView<import2.AppComponent> viewFactory_AppComponent15(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewAppComponent15(parentView, parentIndex);
 }
 
@@ -4092,7 +4069,7 @@ class _ViewAppComponent16 extends AppView<import2.AppComponent> {
   import3.Text _text_4;
   var _expr_0;
   var _expr_1;
-  _ViewAppComponent16(AppView<dynamic> parentView, num parentIndex) : super(import31.ViewType.EMBEDDED, {'\$implicit': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewAppComponent16(AppView<dynamic> parentView, int parentIndex) : super(import31.ViewType.EMBEDDED, {'\$implicit': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewAppComponent0._renderType;
   }
   @override
@@ -4114,7 +4091,7 @@ class _ViewAppComponent16 extends AppView<import2.AppComponent> {
 
   @override
   void detectChangesInternal() {
-    final import42.Hero local_hero = locals['\$implicit'];
+    final import41.Hero local_hero = locals['\$implicit'];
     final currVal_0 = import33.interpolate0(local_hero.id);
     if (!identical(_expr_0, currVal_0)) {
       _text_2.text = currVal_0;
@@ -4128,29 +4105,29 @@ class _ViewAppComponent16 extends AppView<import2.AppComponent> {
   }
 }
 
-AppView<import2.AppComponent> viewFactory_AppComponent16(AppView<dynamic> parentView, num parentIndex) {
+AppView<import2.AppComponent> viewFactory_AppComponent16(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewAppComponent16(parentView, parentIndex);
 }
 
 class _ViewAppComponent17 extends AppView<import2.AppComponent> {
   import3.Element _el_0;
-  import43.ViewMaterialRadioComponent0 _compView_0;
-  import44.MaterialRadioComponent _MaterialRadioComponent_0_5;
+  import42.ViewMaterialRadioComponent0 _compView_0;
+  import43.MaterialRadioComponent _MaterialRadioComponent_0_5;
   import3.Text _text_1;
   import3.Text _text_3;
   var _expr_0;
   bool _expr_1;
   var _expr_2;
   var _expr_3;
-  _ViewAppComponent17(AppView<dynamic> parentView, num parentIndex) : super(import31.ViewType.EMBEDDED, {'\$implicit': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewAppComponent17(AppView<dynamic> parentView, int parentIndex) : super(import31.ViewType.EMBEDDED, {'\$implicit': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewAppComponent0._renderType;
   }
   @override
   ComponentRef<import2.AppComponent> build() {
-    _compView_0 = new import43.ViewMaterialRadioComponent0(this, 0);
+    _compView_0 = new import42.ViewMaterialRadioComponent0(this, 0);
     _el_0 = _compView_0.rootEl;
     addShimC(_el_0);
-    _MaterialRadioComponent_0_5 = new import44.MaterialRadioComponent(_el_0, _compView_0.ref, (parentView as ViewAppComponent0)._MaterialRadioGroupComponent_564_7, null, null);
+    _MaterialRadioComponent_0_5 = new import43.MaterialRadioComponent(_el_0, _compView_0.ref, (parentView as ViewAppComponent0)._MaterialRadioGroupComponent_564_7, null, null);
     _text_1 = new import3.Text('');
     import3.Text _text_2 = new import3.Text(' (');
     _text_3 = new import3.Text('');
@@ -4167,7 +4144,7 @@ class _ViewAppComponent17 extends AppView<import2.AppComponent> {
     final import2.AppComponent _ctx = ctx;
     bool changed = false;
     bool firstCheck = (this.cdState == 0);
-    final import42.Hero local_h = locals['\$implicit'];
+    final import41.Hero local_h = locals['\$implicit'];
     changed = false;
     final currVal_0 = local_h;
     if (!identical(_expr_0, currVal_0)) {
@@ -4210,24 +4187,24 @@ class _ViewAppComponent17 extends AppView<import2.AppComponent> {
   }
 }
 
-AppView<import2.AppComponent> viewFactory_AppComponent17(AppView<dynamic> parentView, num parentIndex) {
+AppView<import2.AppComponent> viewFactory_AppComponent17(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewAppComponent17(parentView, parentIndex);
 }
 
 class _ViewAppComponent18 extends AppView<import2.AppComponent> {
   import3.Element _el_0;
-  import45.ViewHappyHeroComponent0 _compView_0;
-  import46.HappyHeroComponent _HappyHeroComponent_0_5;
+  import44.ViewHappyHeroComponent0 _compView_0;
+  import45.HappyHeroComponent _HappyHeroComponent_0_5;
   var _expr_0;
-  _ViewAppComponent18(AppView<dynamic> parentView, num parentIndex) : super(import31.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewAppComponent18(AppView<dynamic> parentView, int parentIndex) : super(import31.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewAppComponent0._renderType;
   }
   @override
   ComponentRef<import2.AppComponent> build() {
-    _compView_0 = new import45.ViewHappyHeroComponent0(this, 0);
+    _compView_0 = new import44.ViewHappyHeroComponent0(this, 0);
     _el_0 = _compView_0.rootEl;
     addShimC(_el_0);
-    _HappyHeroComponent_0_5 = new import46.HappyHeroComponent();
+    _HappyHeroComponent_0_5 = new import45.HappyHeroComponent();
     _compView_0.create(_HappyHeroComponent_0_5, []);
     init0(_el_0);
     return null;
@@ -4250,24 +4227,24 @@ class _ViewAppComponent18 extends AppView<import2.AppComponent> {
   }
 }
 
-AppView<import2.AppComponent> viewFactory_AppComponent18(AppView<dynamic> parentView, num parentIndex) {
+AppView<import2.AppComponent> viewFactory_AppComponent18(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewAppComponent18(parentView, parentIndex);
 }
 
 class _ViewAppComponent19 extends AppView<import2.AppComponent> {
   import3.Element _el_0;
-  import45.ViewSadHeroComponent0 _compView_0;
-  import46.SadHeroComponent _SadHeroComponent_0_5;
+  import44.ViewSadHeroComponent0 _compView_0;
+  import45.SadHeroComponent _SadHeroComponent_0_5;
   var _expr_0;
-  _ViewAppComponent19(AppView<dynamic> parentView, num parentIndex) : super(import31.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewAppComponent19(AppView<dynamic> parentView, int parentIndex) : super(import31.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewAppComponent0._renderType;
   }
   @override
   ComponentRef<import2.AppComponent> build() {
-    _compView_0 = new import45.ViewSadHeroComponent0(this, 0);
+    _compView_0 = new import44.ViewSadHeroComponent0(this, 0);
     _el_0 = _compView_0.rootEl;
     addShimC(_el_0);
-    _SadHeroComponent_0_5 = new import46.SadHeroComponent();
+    _SadHeroComponent_0_5 = new import45.SadHeroComponent();
     _compView_0.create(_SadHeroComponent_0_5, []);
     init0(_el_0);
     return null;
@@ -4290,24 +4267,24 @@ class _ViewAppComponent19 extends AppView<import2.AppComponent> {
   }
 }
 
-AppView<import2.AppComponent> viewFactory_AppComponent19(AppView<dynamic> parentView, num parentIndex) {
+AppView<import2.AppComponent> viewFactory_AppComponent19(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewAppComponent19(parentView, parentIndex);
 }
 
 class _ViewAppComponent20 extends AppView<import2.AppComponent> {
   import3.Element _el_0;
-  import45.ViewConfusedHeroComponent0 _compView_0;
-  import46.ConfusedHeroComponent _ConfusedHeroComponent_0_5;
+  import44.ViewConfusedHeroComponent0 _compView_0;
+  import45.ConfusedHeroComponent _ConfusedHeroComponent_0_5;
   var _expr_0;
-  _ViewAppComponent20(AppView<dynamic> parentView, num parentIndex) : super(import31.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewAppComponent20(AppView<dynamic> parentView, int parentIndex) : super(import31.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewAppComponent0._renderType;
   }
   @override
   ComponentRef<import2.AppComponent> build() {
-    _compView_0 = new import45.ViewConfusedHeroComponent0(this, 0);
+    _compView_0 = new import44.ViewConfusedHeroComponent0(this, 0);
     _el_0 = _compView_0.rootEl;
     addShimC(_el_0);
-    _ConfusedHeroComponent_0_5 = new import46.ConfusedHeroComponent();
+    _ConfusedHeroComponent_0_5 = new import45.ConfusedHeroComponent();
     _compView_0.create(_ConfusedHeroComponent_0_5, []);
     init0(_el_0);
     return null;
@@ -4330,7 +4307,7 @@ class _ViewAppComponent20 extends AppView<import2.AppComponent> {
   }
 }
 
-AppView<import2.AppComponent> viewFactory_AppComponent20(AppView<dynamic> parentView, num parentIndex) {
+AppView<import2.AppComponent> viewFactory_AppComponent20(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewAppComponent20(parentView, parentIndex);
 }
 
@@ -4338,7 +4315,7 @@ class _ViewAppComponent21 extends AppView<import2.AppComponent> {
   import3.DivElement _el_0;
   import3.Text _text_2;
   var _expr_0;
-  _ViewAppComponent21(AppView<dynamic> parentView, num parentIndex) : super(import31.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewAppComponent21(AppView<dynamic> parentView, int parentIndex) : super(import31.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewAppComponent0._renderType;
   }
   @override
@@ -4367,24 +4344,24 @@ class _ViewAppComponent21 extends AppView<import2.AppComponent> {
   }
 }
 
-AppView<import2.AppComponent> viewFactory_AppComponent21(AppView<dynamic> parentView, num parentIndex) {
+AppView<import2.AppComponent> viewFactory_AppComponent21(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewAppComponent21(parentView, parentIndex);
 }
 
 class _ViewAppComponent22 extends AppView<import2.AppComponent> {
   import3.Element _el_0;
-  import45.ViewUnknownHeroComponent0 _compView_0;
-  import46.UnknownHeroComponent _UnknownHeroComponent_0_5;
+  import44.ViewUnknownHeroComponent0 _compView_0;
+  import45.UnknownHeroComponent _UnknownHeroComponent_0_5;
   var _expr_0;
-  _ViewAppComponent22(AppView<dynamic> parentView, num parentIndex) : super(import31.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewAppComponent22(AppView<dynamic> parentView, int parentIndex) : super(import31.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewAppComponent0._renderType;
   }
   @override
   ComponentRef<import2.AppComponent> build() {
-    _compView_0 = new import45.ViewUnknownHeroComponent0(this, 0);
+    _compView_0 = new import44.ViewUnknownHeroComponent0(this, 0);
     _el_0 = _compView_0.rootEl;
     addShimC(_el_0);
-    _UnknownHeroComponent_0_5 = new import46.UnknownHeroComponent();
+    _UnknownHeroComponent_0_5 = new import45.UnknownHeroComponent();
     _compView_0.create(_UnknownHeroComponent_0_5, []);
     init0(_el_0);
     return null;
@@ -4407,7 +4384,7 @@ class _ViewAppComponent22 extends AppView<import2.AppComponent> {
   }
 }
 
-AppView<import2.AppComponent> viewFactory_AppComponent22(AppView<dynamic> parentView, num parentIndex) {
+AppView<import2.AppComponent> viewFactory_AppComponent22(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewAppComponent22(parentView, parentIndex);
 }
 
@@ -4415,7 +4392,7 @@ class _ViewAppComponent23 extends AppView<import2.AppComponent> {
   import3.DivElement _el_0;
   import3.Text _text_2;
   var _expr_0;
-  _ViewAppComponent23(AppView<dynamic> parentView, num parentIndex) : super(import31.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewAppComponent23(AppView<dynamic> parentView, int parentIndex) : super(import31.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewAppComponent0._renderType;
   }
   @override
@@ -4442,7 +4419,7 @@ class _ViewAppComponent23 extends AppView<import2.AppComponent> {
   }
 }
 
-AppView<import2.AppComponent> viewFactory_AppComponent23(AppView<dynamic> parentView, num parentIndex) {
+AppView<import2.AppComponent> viewFactory_AppComponent23(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewAppComponent23(parentView, parentIndex);
 }
 
@@ -4451,27 +4428,28 @@ const List<dynamic> styles$AppComponentHost = const [];
 class _ViewAppComponentHost0 extends AppView<dynamic> {
   ViewAppComponent0 _compView_0;
   import2.AppComponent _AppComponent_0_5;
-  List<import47.RelativePosition> __defaultPopupPositions_0_6;
+  List<import46.RelativePosition> __defaultPopupPositions_0_6;
   dynamic __Window_0_7;
   dynamic __DomService_0_8;
-  import48.AcxImperativeViewUtils __AcxImperativeViewUtils_0_9;
+  import47.AcxImperativeViewUtils __AcxImperativeViewUtils_0_9;
   dynamic __Document_0_10;
-  import49.DomRuler __DomRuler_0_11;
-  import50.Angular2ManagedZone __ManagedZone_0_12;
+  import48.DomRuler __DomRuler_0_11;
+  import49.Angular2ManagedZone __ManagedZone_0_12;
   dynamic __overlayContainerName_0_13;
   dynamic __overlayContainerParent_0_14;
   dynamic __overlayContainer_0_15;
   bool __overlaySyncDom_0_16;
   bool __overlayRepositionLoop_0_17;
-  import51.OverlayStyleConfig __OverlayStyleConfig_0_18;
-  import52.ZIndexer __ZIndexer_0_19;
-  import53.OverlayDomRenderService __OverlayDomRenderService_0_20;
-  import54.OverlayService __OverlayService_0_21;
-  import55.DomPopupSourceFactory __DomPopupSourceFactory_0_22;
-  _ViewAppComponentHost0(AppView<dynamic> parentView, num parentIndex) : super(import31.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
-  List<import47.RelativePosition> get _defaultPopupPositions_0_6 {
+  import50.OverlayStyleConfig __OverlayStyleConfig_0_18;
+  import51.ZIndexer __ZIndexer_0_19;
+  import52.OverlayDomRenderService __OverlayDomRenderService_0_20;
+  import53.OverlayService __OverlayService_0_21;
+  import54.DomPopupSourceFactory __DomPopupSourceFactory_0_22;
+  import55.Clock __Clock_0_23;
+  _ViewAppComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import31.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
+  List<import46.RelativePosition> get _defaultPopupPositions_0_6 {
     if ((this.__defaultPopupPositions_0_6 == null)) {
-      (__defaultPopupPositions_0_6 = const [const import47.RelativePosition(animationOrigin: 'top center'), const import47.RelativePosition(animationOrigin: 'top right', originX: const import47.Alignment('End', 'flex-end')), const import47.RelativePosition(animationOrigin: 'top left', originX: const import47.Alignment('Start', 'flex-start')), const import47.RelativePosition(animationOrigin: 'bottom center', originY: const import47.Alignment('End', 'flex-end')), const import47.RelativePosition(animationOrigin: 'bottom right', originX: const import47.Alignment('End', 'flex-end'), originY: const import47.Alignment('End', 'flex-end')), const import47.RelativePosition(animationOrigin: 'bottom left', originX: const import47.Alignment('Start', 'flex-start'), originY: const import47.Alignment('End', 'flex-end'))]);
+      (__defaultPopupPositions_0_6 = const [const import46.RelativePosition(animationOrigin: 'top center'), const import46.RelativePosition(animationOrigin: 'top right', originX: const import46.Alignment('End', 'flex-end')), const import46.RelativePosition(animationOrigin: 'top left', originX: const import46.Alignment('Start', 'flex-start')), const import46.RelativePosition(animationOrigin: 'bottom center', originY: const import46.Alignment('End', 'flex-end')), const import46.RelativePosition(animationOrigin: 'bottom right', originX: const import46.Alignment('End', 'flex-end'), originY: const import46.Alignment('End', 'flex-end')), const import46.RelativePosition(animationOrigin: 'bottom left', originX: const import46.Alignment('Start', 'flex-start'), originY: const import46.Alignment('End', 'flex-end'))]);
     }
     return this.__defaultPopupPositions_0_6;
   }
@@ -4490,9 +4468,9 @@ class _ViewAppComponentHost0 extends AppView<dynamic> {
     return this.__DomService_0_8;
   }
 
-  import48.AcxImperativeViewUtils get _AcxImperativeViewUtils_0_9 {
+  import47.AcxImperativeViewUtils get _AcxImperativeViewUtils_0_9 {
     if ((this.__AcxImperativeViewUtils_0_9 == null)) {
-      (__AcxImperativeViewUtils_0_9 = new import48.AcxImperativeViewUtils(this.injectorGet(import60.ComponentLoader, this.viewData.parentIndex), this._DomService_0_8));
+      (__AcxImperativeViewUtils_0_9 = new import47.AcxImperativeViewUtils(this.injectorGet(import60.ComponentLoader, this.viewData.parentIndex), this._DomService_0_8));
     }
     return this.__AcxImperativeViewUtils_0_9;
   }
@@ -4504,16 +4482,16 @@ class _ViewAppComponentHost0 extends AppView<dynamic> {
     return this.__Document_0_10;
   }
 
-  import49.DomRuler get _DomRuler_0_11 {
+  import48.DomRuler get _DomRuler_0_11 {
     if ((this.__DomRuler_0_11 == null)) {
-      (__DomRuler_0_11 = new import49.DomRuler(this._Document_0_10, this._DomService_0_8));
+      (__DomRuler_0_11 = new import48.DomRuler(this._Document_0_10, this._DomService_0_8));
     }
     return this.__DomRuler_0_11;
   }
 
-  import50.Angular2ManagedZone get _ManagedZone_0_12 {
+  import49.Angular2ManagedZone get _ManagedZone_0_12 {
     if ((this.__ManagedZone_0_12 == null)) {
-      (__ManagedZone_0_12 = new import50.Angular2ManagedZone(this.injectorGet(import36.NgZone, this.viewData.parentIndex)));
+      (__ManagedZone_0_12 = new import49.Angular2ManagedZone(this.injectorGet(import36.NgZone, this.viewData.parentIndex)));
     }
     return this.__ManagedZone_0_12;
   }
@@ -4553,39 +4531,46 @@ class _ViewAppComponentHost0 extends AppView<dynamic> {
     return this.__overlayRepositionLoop_0_17;
   }
 
-  import51.OverlayStyleConfig get _OverlayStyleConfig_0_18 {
+  import50.OverlayStyleConfig get _OverlayStyleConfig_0_18 {
     if ((this.__OverlayStyleConfig_0_18 == null)) {
-      (__OverlayStyleConfig_0_18 = new import51.OverlayStyleConfig(this._Document_0_10));
+      (__OverlayStyleConfig_0_18 = new import50.OverlayStyleConfig(this._Document_0_10));
     }
     return this.__OverlayStyleConfig_0_18;
   }
 
-  import52.ZIndexer get _ZIndexer_0_19 {
+  import51.ZIndexer get _ZIndexer_0_19 {
     if ((this.__ZIndexer_0_19 == null)) {
-      (__ZIndexer_0_19 = new import52.ZIndexer());
+      (__ZIndexer_0_19 = new import51.ZIndexer());
     }
     return this.__ZIndexer_0_19;
   }
 
-  import53.OverlayDomRenderService get _OverlayDomRenderService_0_20 {
+  import52.OverlayDomRenderService get _OverlayDomRenderService_0_20 {
     if ((this.__OverlayDomRenderService_0_20 == null)) {
-      (__OverlayDomRenderService_0_20 = new import53.OverlayDomRenderService(this._OverlayStyleConfig_0_18, this._overlayContainer_0_15, this._overlayContainerName_0_13, this._DomRuler_0_11, this._DomService_0_8, this._AcxImperativeViewUtils_0_9, this._overlaySyncDom_0_16, this._overlayRepositionLoop_0_17, this._ZIndexer_0_19));
+      (__OverlayDomRenderService_0_20 = new import52.OverlayDomRenderService(this._OverlayStyleConfig_0_18, this._overlayContainer_0_15, this._overlayContainerName_0_13, this._DomRuler_0_11, this._DomService_0_8, this._AcxImperativeViewUtils_0_9, this._overlaySyncDom_0_16, this._overlayRepositionLoop_0_17, this._ZIndexer_0_19));
     }
     return this.__OverlayDomRenderService_0_20;
   }
 
-  import54.OverlayService get _OverlayService_0_21 {
+  import53.OverlayService get _OverlayService_0_21 {
     if ((this.__OverlayService_0_21 == null)) {
-      (__OverlayService_0_21 = new import54.OverlayService(this.injectorGet(import36.NgZone, this.viewData.parentIndex), this._overlaySyncDom_0_16, this._OverlayDomRenderService_0_20, this.injectorGet(import54.OverlayService, this.viewData.parentIndex, null)));
+      (__OverlayService_0_21 = new import53.OverlayService(this.injectorGet(import36.NgZone, this.viewData.parentIndex), this._overlaySyncDom_0_16, this._OverlayDomRenderService_0_20, this.injectorGet(import53.OverlayService, this.viewData.parentIndex, null)));
     }
     return this.__OverlayService_0_21;
   }
 
-  import55.DomPopupSourceFactory get _DomPopupSourceFactory_0_22 {
+  import54.DomPopupSourceFactory get _DomPopupSourceFactory_0_22 {
     if ((this.__DomPopupSourceFactory_0_22 == null)) {
-      (__DomPopupSourceFactory_0_22 = new import55.DomPopupSourceFactory(this._DomRuler_0_11));
+      (__DomPopupSourceFactory_0_22 = new import54.DomPopupSourceFactory(this._DomRuler_0_11));
     }
     return this.__DomPopupSourceFactory_0_22;
+  }
+
+  import55.Clock get _Clock_0_23 {
+    if ((this.__Clock_0_23 == null)) {
+      (__Clock_0_23 = const import55.Clock());
+    }
+    return this.__Clock_0_23;
   }
 
   @override
@@ -4609,13 +4594,13 @@ class _ViewAppComponentHost0 extends AppView<dynamic> {
     if ((identical(token, import58.DomService) && (0 == nodeIndex))) {
       return _DomService_0_8;
     }
-    if ((identical(token, import48.AcxImperativeViewUtils) && (0 == nodeIndex))) {
+    if ((identical(token, import47.AcxImperativeViewUtils) && (0 == nodeIndex))) {
       return _AcxImperativeViewUtils_0_9;
     }
     if ((identical(token, import3.Document) && (0 == nodeIndex))) {
       return _Document_0_10;
     }
-    if ((identical(token, import49.DomRuler) && (0 == nodeIndex))) {
+    if ((identical(token, import48.DomRuler) && (0 == nodeIndex))) {
       return _DomRuler_0_11;
     }
     if ((identical(token, import63.ManagedZone) && (0 == nodeIndex))) {
@@ -4636,20 +4621,23 @@ class _ViewAppComponentHost0 extends AppView<dynamic> {
     if ((identical(token, const import38.OpaqueToken('overlayRepositionLoop')) && (0 == nodeIndex))) {
       return _overlayRepositionLoop_0_17;
     }
-    if ((identical(token, import51.OverlayStyleConfig) && (0 == nodeIndex))) {
+    if ((identical(token, import50.OverlayStyleConfig) && (0 == nodeIndex))) {
       return _OverlayStyleConfig_0_18;
     }
-    if ((identical(token, import52.ZIndexer) && (0 == nodeIndex))) {
+    if ((identical(token, import51.ZIndexer) && (0 == nodeIndex))) {
       return _ZIndexer_0_19;
     }
-    if ((identical(token, import53.OverlayDomRenderService) && (0 == nodeIndex))) {
+    if ((identical(token, import52.OverlayDomRenderService) && (0 == nodeIndex))) {
       return _OverlayDomRenderService_0_20;
     }
-    if ((identical(token, import54.OverlayService) && (0 == nodeIndex))) {
+    if ((identical(token, import53.OverlayService) && (0 == nodeIndex))) {
       return _OverlayService_0_21;
     }
-    if ((identical(token, import55.DomPopupSourceFactory) && (0 == nodeIndex))) {
+    if ((identical(token, import54.DomPopupSourceFactory) && (0 == nodeIndex))) {
       return _DomPopupSourceFactory_0_22;
+    }
+    if (((identical(token, import55.Clock) || identical(token, const import38.OpaqueToken('third_party.dart_src.acx.material_datepicker.datepickerClock'))) && (0 == nodeIndex))) {
+      return _Clock_0_23;
     }
     return notFoundResult;
   }
@@ -4669,7 +4657,7 @@ class _ViewAppComponentHost0 extends AppView<dynamic> {
   }
 }
 
-AppView viewFactory_AppComponentHost0(AppView<dynamic> parentView, num parentIndex) {
+AppView viewFactory_AppComponentHost0(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewAppComponentHost0(parentView, parentIndex);
 }
 

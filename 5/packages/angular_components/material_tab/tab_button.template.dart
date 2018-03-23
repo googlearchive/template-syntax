@@ -42,7 +42,7 @@ class ViewTabButtonComponent0 extends AppView<import2.TabButtonComponent> {
   bool _expr_4;
   bool _expr_5;
   static RenderComponentType _renderType;
-  ViewTabButtonComponent0(AppView<dynamic> parentView, num parentIndex) : super(import7.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  ViewTabButtonComponent0(AppView<dynamic> parentView, int parentIndex) : super(import7.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     rootEl = import3.document.createElement('tab-button');
     createAttr(rootEl, 'role', 'tab');
     _renderType ??= import9.appViewUtils.createRenderType('', ViewEncapsulation.Emulated, styles$TabButtonComponent);
@@ -51,7 +51,8 @@ class ViewTabButtonComponent0 extends AppView<import2.TabButtonComponent> {
   @override
   ComponentRef<import2.TabButtonComponent> build() {
     final import2.TabButtonComponent _ctx = ctx;
-    final import3.HtmlElement parentRenderNode = initViewRoot(rootEl);
+    final _rootEl = rootEl;
+    final import3.HtmlElement parentRenderNode = initViewRoot(_rootEl);
     var doc = import3.document;
     _el_0 = createDivAndAppend(doc, parentRenderNode);
     _el_0.className = 'content';
@@ -65,12 +66,12 @@ class ViewTabButtonComponent0 extends AppView<import2.TabButtonComponent> {
     _MaterialRippleComponent_2_5 = new import5.MaterialRippleComponent(_el_2);
     _compView_2.create(_MaterialRippleComponent_2_5, []);
     init(const [], null);
-    rootEl.addEventListener('click', eventHandler1(_ctx.handleClick));
-    rootEl.addEventListener('keypress', eventHandler1(_ctx.handleKeyPress));
-    rootEl.addEventListener('mousedown', eventHandler1(_ctx.onMouseDown));
-    rootEl.addEventListener('mouseup', eventHandler1(_ctx.onMouseUp));
-    rootEl.addEventListener('focus', eventHandler1(_ctx.onFocus));
-    rootEl.addEventListener('blur', eventHandler1(_ctx.onBlur));
+    _rootEl.addEventListener('click', eventHandler1(_ctx.handleClick));
+    _rootEl.addEventListener('keypress', eventHandler1(_ctx.handleKeyPress));
+    _rootEl.addEventListener('mousedown', eventHandler1(_ctx.onMouseDown));
+    _rootEl.addEventListener('mouseup', eventHandler1(_ctx.onMouseUp));
+    _rootEl.addEventListener('focus', eventHandler1(_ctx.onFocus));
+    _rootEl.addEventListener('blur', eventHandler1(_ctx.onBlur));
     return null;
   }
 
@@ -125,7 +126,7 @@ class ViewTabButtonComponent0 extends AppView<import2.TabButtonComponent> {
   }
 }
 
-AppView<import2.TabButtonComponent> viewFactory_TabButtonComponent0(AppView<dynamic> parentView, num parentIndex) {
+AppView<import2.TabButtonComponent> viewFactory_TabButtonComponent0(AppView<dynamic> parentView, int parentIndex) {
   return new ViewTabButtonComponent0(parentView, parentIndex);
 }
 
@@ -134,7 +135,7 @@ const List<dynamic> styles$TabButtonComponentHost = const [];
 class _ViewTabButtonComponentHost0 extends AppView<dynamic> {
   ViewTabButtonComponent0 _compView_0;
   import2.TabButtonComponent _TabButtonComponent_0_5;
-  _ViewTabButtonComponentHost0(AppView<dynamic> parentView, num parentIndex) : super(import7.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
+  _ViewTabButtonComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import7.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewTabButtonComponent0(this, 0);
@@ -166,7 +167,7 @@ class _ViewTabButtonComponentHost0 extends AppView<dynamic> {
   }
 }
 
-AppView viewFactory_TabButtonComponentHost0(AppView<dynamic> parentView, num parentIndex) {
+AppView viewFactory_TabButtonComponentHost0(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewTabButtonComponentHost0(parentView, parentIndex);
 }
 

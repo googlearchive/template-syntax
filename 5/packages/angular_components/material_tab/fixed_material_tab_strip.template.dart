@@ -54,7 +54,7 @@ class ViewFixedMaterialTabStripComponent0 extends AppView<import2.FixedMaterialT
   var _expr_0;
   var _expr_1;
   static RenderComponentType _renderType;
-  ViewFixedMaterialTabStripComponent0(AppView<dynamic> parentView, num parentIndex) : super(import8.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckOnce) {
+  ViewFixedMaterialTabStripComponent0(AppView<dynamic> parentView, int parentIndex) : super(import8.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckOnce) {
     rootEl = import3.document.createElement('material-tab-strip');
     rootEl.className = 'themeable';
     _renderType ??= import10.appViewUtils.createRenderType('', ViewEncapsulation.Emulated, styles$FixedMaterialTabStripComponent);
@@ -62,7 +62,8 @@ class ViewFixedMaterialTabStripComponent0 extends AppView<import2.FixedMaterialT
   }
   @override
   ComponentRef<import2.FixedMaterialTabStripComponent> build() {
-    final import3.HtmlElement parentRenderNode = initViewRoot(rootEl);
+    final _rootEl = rootEl;
+    final import3.HtmlElement parentRenderNode = initViewRoot(_rootEl);
     var doc = import3.document;
     _el_0 = createDivAndAppend(doc, parentRenderNode);
     _el_0.className = 'navi-bar';
@@ -121,7 +122,7 @@ class ViewFixedMaterialTabStripComponent0 extends AppView<import2.FixedMaterialT
   }
 }
 
-AppView<import2.FixedMaterialTabStripComponent> viewFactory_FixedMaterialTabStripComponent0(AppView<dynamic> parentView, num parentIndex) {
+AppView<import2.FixedMaterialTabStripComponent> viewFactory_FixedMaterialTabStripComponent0(AppView<dynamic> parentView, int parentIndex) {
   return new ViewFixedMaterialTabStripComponent0(parentView, parentIndex);
 }
 
@@ -135,7 +136,7 @@ class _ViewFixedMaterialTabStripComponent1 extends AppView<import2.FixedMaterial
   var _expr_1;
   String _expr_2;
   bool _expr_3;
-  _ViewFixedMaterialTabStripComponent1(AppView<dynamic> parentView, num parentIndex) : super(import8.ViewType.EMBEDDED, {'\$implicit': null, 'index': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewFixedMaterialTabStripComponent1(AppView<dynamic> parentView, int parentIndex) : super(import8.ViewType.EMBEDDED, {'\$implicit': null, 'index': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewFixedMaterialTabStripComponent0._renderType;
   }
   @override
@@ -214,7 +215,7 @@ class _ViewFixedMaterialTabStripComponent1 extends AppView<import2.FixedMaterial
   }
 }
 
-AppView<import2.FixedMaterialTabStripComponent> viewFactory_FixedMaterialTabStripComponent1(AppView<dynamic> parentView, num parentIndex) {
+AppView<import2.FixedMaterialTabStripComponent> viewFactory_FixedMaterialTabStripComponent1(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewFixedMaterialTabStripComponent1(parentView, parentIndex);
 }
 
@@ -223,7 +224,7 @@ const List<dynamic> styles$FixedMaterialTabStripComponentHost = const [];
 class _ViewFixedMaterialTabStripComponentHost0 extends AppView<dynamic> {
   ViewFixedMaterialTabStripComponent0 _compView_0;
   import2.FixedMaterialTabStripComponent _FixedMaterialTabStripComponent_0_5;
-  _ViewFixedMaterialTabStripComponentHost0(AppView<dynamic> parentView, num parentIndex) : super(import8.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
+  _ViewFixedMaterialTabStripComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import8.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewFixedMaterialTabStripComponent0(this, 0);
@@ -257,7 +258,7 @@ class _ViewFixedMaterialTabStripComponentHost0 extends AppView<dynamic> {
   }
 }
 
-AppView viewFactory_FixedMaterialTabStripComponentHost0(AppView<dynamic> parentView, num parentIndex) {
+AppView viewFactory_FixedMaterialTabStripComponentHost0(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewFixedMaterialTabStripComponentHost0(parentView, parentIndex);
 }
 

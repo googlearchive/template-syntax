@@ -8,6 +8,7 @@ import 'dart:html';
 import 'package:angular/angular.dart';
 import 'package:angular_components/annotations/rtl_annotation.dart';
 import 'package:angular_components/content/deferred_content.dart';
+import 'package:angular_components/utils/angular/css/css.dart';
 import 'package:angular_components/content/deferred_content_aware.dart';
 import 'package:angular_components/dynamic_component/dynamic_component.dart';
 import 'package:angular_components/focus/keyboard_only_focus_indicator.dart';
@@ -108,8 +109,11 @@ import 'package:angular_components/utils/id_generator/id_generator.dart';
 /// - `slide: String` -- Direction of popup scaling. Valid values are `x`, `y`,
 ///   or `null`.
 ///
-/// - `deselectLabel: String` -- Text label for select item that deselects
-///   the current selection.
+/// - `deselectOnActivate: bool` -- Whether to deselect a selected option on
+///   click or enter/space key. Single selection model only. Defaults to true.
+///
+/// - `deselectLabel: String` -- Adds a select item that deselects the current
+///   selection.
 ///
 /// - `labelRenderer: ComponentRenderer` -- Function that returns a component
 ///   to be used for rendering group labels.
@@ -184,6 +188,17 @@ class MaterialDropdownSelectComponent extends MaterialSelectBase
   @Input()
   bool showButtonBorder;
 
+  bool _deselectOnActivate = true;
+
+  /// If true triggering a select item component will deselect the currently
+  /// selected single select value.
+  @Input()
+  set deselectOnActivate(bool value) {
+    _deselectOnActivate = value;
+  }
+
+  bool get deselectOnActivate => isMultiSelect || _deselectOnActivate;
+
   @Input()
   @Deprecated(
       'Use labelFactory instead it allows for better tree-shakable code.')
@@ -210,25 +225,10 @@ class MaterialDropdownSelectComponent extends MaterialSelectBase
       @Attribute('popupClass') String popupClass,
       HtmlElement element)
       : activeModel = new ActiveItemModel(idGenerator),
-        popupClassName =
-            _constructEncapsulatedCss(popupClass, element.classes) {
+        popupClassName = constructEncapsulatedCss(popupClass, element.classes) {
     isRtl = rtl;
     preferredPositions = RelativePosition.overlapAlignments;
     iconName = 'arrow_drop_down';
-  }
-
-  /// Return a string representing the encapsulated classes from [classes]
-  /// combined with the classes from [className].
-  // TODO(google): Move this somewhere more common if this becomes common
-  // practice.
-  static String _constructEncapsulatedCss(
-      String className, CssClassSet classes) {
-    var result = className ?? '';
-    for (var i in classes) {
-      // Add encapsulation classes from host
-      if (i.startsWith('_')) result += ' $i';
-    }
-    return result;
   }
 
   @Input()
@@ -397,10 +397,10 @@ class MaterialDropdownSelectComponent extends MaterialSelectBase
       if (item != null && selection != null) {
         if (item == deselectLabel) {
           deselectCurrentSelection();
-        } else if (selection.isSelected(item)) {
-          selection.deselect(item);
-        } else {
+        } else if (!selection.isSelected(item)) {
           selection.select(item);
+        } else if (deselectOnActivate) {
+          selection.deselect(item);
         }
       }
       if (isSingleSelect) close();

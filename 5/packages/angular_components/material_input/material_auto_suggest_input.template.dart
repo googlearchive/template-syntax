@@ -203,7 +203,7 @@ class ViewMaterialAutoSuggestInputComponent0 extends AppView<import3.MaterialAut
   bool _expr_32;
   String _expr_33;
   static RenderComponentType _renderType;
-  ViewMaterialAutoSuggestInputComponent0(AppView<dynamic> parentView, num parentIndex) : super(import18.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  ViewMaterialAutoSuggestInputComponent0(AppView<dynamic> parentView, int parentIndex) : super(import18.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     rootEl = import4.document.createElement('material-auto-suggest-input');
     _renderType ??= import20.appViewUtils.createRenderType('', ViewEncapsulation.Emulated, styles$MaterialAutoSuggestInputComponent);
     setupComponentType(_renderType);
@@ -224,7 +224,8 @@ class ViewMaterialAutoSuggestInputComponent0 extends AppView<import3.MaterialAut
 
   @override
   ComponentRef<import3.MaterialAutoSuggestInputComponent> build() {
-    final import4.HtmlElement parentRenderNode = initViewRoot(rootEl);
+    final _rootEl = rootEl;
+    final import4.HtmlElement parentRenderNode = initViewRoot(_rootEl);
     _compView_0 = new import5.ViewMaterialInputComponent0(this, 0);
     _el_0 = _compView_0.rootEl;
     parentRenderNode.append(_el_0);
@@ -587,7 +588,7 @@ class ViewMaterialAutoSuggestInputComponent0 extends AppView<import3.MaterialAut
   }
 }
 
-AppView<import3.MaterialAutoSuggestInputComponent> viewFactory_MaterialAutoSuggestInputComponent0(AppView<dynamic> parentView, num parentIndex) {
+AppView<import3.MaterialAutoSuggestInputComponent> viewFactory_MaterialAutoSuggestInputComponent0(AppView<dynamic> parentView, int parentIndex) {
   return new ViewMaterialAutoSuggestInputComponent0(parentView, parentIndex);
 }
 
@@ -604,7 +605,7 @@ class _ViewMaterialAutoSuggestInputComponent1 extends AppView<import3.MaterialAu
   var _expr_0;
   String _expr_2;
   bool _expr_3;
-  _ViewMaterialAutoSuggestInputComponent1(AppView<dynamic> parentView, num parentIndex) : super(import18.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMaterialAutoSuggestInputComponent1(AppView<dynamic> parentView, int parentIndex) : super(import18.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMaterialAutoSuggestInputComponent0._renderType;
   }
   dynamic get _TooltipController_0_13 {
@@ -709,7 +710,7 @@ class _ViewMaterialAutoSuggestInputComponent1 extends AppView<import3.MaterialAu
   }
 }
 
-AppView<import3.MaterialAutoSuggestInputComponent> viewFactory_MaterialAutoSuggestInputComponent1(AppView<dynamic> parentView, num parentIndex) {
+AppView<import3.MaterialAutoSuggestInputComponent> viewFactory_MaterialAutoSuggestInputComponent1(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewMaterialAutoSuggestInputComponent1(parentView, parentIndex);
 }
 
@@ -720,7 +721,7 @@ class _ViewMaterialAutoSuggestInputComponent2 extends AppView<import3.MaterialAu
   NgIf _NgIf_1_9;
   ViewContainer _appEl_2;
   NgIf _NgIf_2_9;
-  _ViewMaterialAutoSuggestInputComponent2(AppView<dynamic> parentView, num parentIndex) : super(import18.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMaterialAutoSuggestInputComponent2(AppView<dynamic> parentView, int parentIndex) : super(import18.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMaterialAutoSuggestInputComponent0._renderType;
   }
   @override
@@ -760,7 +761,7 @@ class _ViewMaterialAutoSuggestInputComponent2 extends AppView<import3.MaterialAu
   }
 }
 
-AppView<import3.MaterialAutoSuggestInputComponent> viewFactory_MaterialAutoSuggestInputComponent2(AppView<dynamic> parentView, num parentIndex) {
+AppView<import3.MaterialAutoSuggestInputComponent> viewFactory_MaterialAutoSuggestInputComponent2(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewMaterialAutoSuggestInputComponent2(parentView, parentIndex);
 }
 
@@ -769,7 +770,7 @@ class _ViewMaterialAutoSuggestInputComponent3 extends AppView<import3.MaterialAu
   import4.Element _el_1;
   import50.ViewMaterialSpinnerComponent0 _compView_1;
   import51.MaterialSpinnerComponent _MaterialSpinnerComponent_1_5;
-  _ViewMaterialAutoSuggestInputComponent3(AppView<dynamic> parentView, num parentIndex) : super(import18.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMaterialAutoSuggestInputComponent3(AppView<dynamic> parentView, int parentIndex) : super(import18.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMaterialAutoSuggestInputComponent0._renderType;
   }
   @override
@@ -799,7 +800,7 @@ class _ViewMaterialAutoSuggestInputComponent3 extends AppView<import3.MaterialAu
   }
 }
 
-AppView<import3.MaterialAutoSuggestInputComponent> viewFactory_MaterialAutoSuggestInputComponent3(AppView<dynamic> parentView, num parentIndex) {
+AppView<import3.MaterialAutoSuggestInputComponent> viewFactory_MaterialAutoSuggestInputComponent3(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewMaterialAutoSuggestInputComponent3(parentView, parentIndex);
 }
 
@@ -807,7 +808,7 @@ class _ViewMaterialAutoSuggestInputComponent4 extends AppView<import3.MaterialAu
   import4.DivElement _el_0;
   import4.Text _text_1;
   var _expr_0;
-  _ViewMaterialAutoSuggestInputComponent4(AppView<dynamic> parentView, num parentIndex) : super(import18.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMaterialAutoSuggestInputComponent4(AppView<dynamic> parentView, int parentIndex) : super(import18.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMaterialAutoSuggestInputComponent0._renderType;
   }
   @override
@@ -833,7 +834,7 @@ class _ViewMaterialAutoSuggestInputComponent4 extends AppView<import3.MaterialAu
   }
 }
 
-AppView<import3.MaterialAutoSuggestInputComponent> viewFactory_MaterialAutoSuggestInputComponent4(AppView<dynamic> parentView, num parentIndex) {
+AppView<import3.MaterialAutoSuggestInputComponent> viewFactory_MaterialAutoSuggestInputComponent4(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewMaterialAutoSuggestInputComponent4(parentView, parentIndex);
 }
 
@@ -847,7 +848,7 @@ class _ViewMaterialAutoSuggestInputComponent5 extends AppView<import3.MaterialAu
   var _expr_0;
   var _expr_3;
   var _expr_4;
-  _ViewMaterialAutoSuggestInputComponent5(AppView<dynamic> parentView, num parentIndex) : super(import18.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMaterialAutoSuggestInputComponent5(AppView<dynamic> parentView, int parentIndex) : super(import18.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMaterialAutoSuggestInputComponent0._renderType;
   }
   @override
@@ -943,7 +944,7 @@ class _ViewMaterialAutoSuggestInputComponent5 extends AppView<import3.MaterialAu
   }
 }
 
-AppView<import3.MaterialAutoSuggestInputComponent> viewFactory_MaterialAutoSuggestInputComponent5(AppView<dynamic> parentView, num parentIndex) {
+AppView<import3.MaterialAutoSuggestInputComponent> viewFactory_MaterialAutoSuggestInputComponent5(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewMaterialAutoSuggestInputComponent5(parentView, parentIndex);
 }
 
@@ -958,7 +959,7 @@ class _ViewMaterialAutoSuggestInputComponent6 extends AppView<import3.MaterialAu
   ViewContainer _appEl_4;
   import54.NgFor _NgFor_4_9;
   var _expr_3;
-  _ViewMaterialAutoSuggestInputComponent6(AppView<dynamic> parentView, num parentIndex) : super(import18.ViewType.EMBEDDED, {'\$implicit': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMaterialAutoSuggestInputComponent6(AppView<dynamic> parentView, int parentIndex) : super(import18.ViewType.EMBEDDED, {'\$implicit': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMaterialAutoSuggestInputComponent0._renderType;
   }
   @override
@@ -1020,7 +1021,7 @@ class _ViewMaterialAutoSuggestInputComponent6 extends AppView<import3.MaterialAu
   }
 }
 
-AppView<import3.MaterialAutoSuggestInputComponent> viewFactory_MaterialAutoSuggestInputComponent6(AppView<dynamic> parentView, num parentIndex) {
+AppView<import3.MaterialAutoSuggestInputComponent> viewFactory_MaterialAutoSuggestInputComponent6(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewMaterialAutoSuggestInputComponent6(parentView, parentIndex);
 }
 
@@ -1028,7 +1029,7 @@ class _ViewMaterialAutoSuggestInputComponent7 extends AppView<import3.MaterialAu
   import4.Element _el_0;
   import4.Text _text_1;
   var _expr_0;
-  _ViewMaterialAutoSuggestInputComponent7(AppView<dynamic> parentView, num parentIndex) : super(import18.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMaterialAutoSuggestInputComponent7(AppView<dynamic> parentView, int parentIndex) : super(import18.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMaterialAutoSuggestInputComponent0._renderType;
   }
   @override
@@ -1060,7 +1061,7 @@ class _ViewMaterialAutoSuggestInputComponent7 extends AppView<import3.MaterialAu
   }
 }
 
-AppView<import3.MaterialAutoSuggestInputComponent> viewFactory_MaterialAutoSuggestInputComponent7(AppView<dynamic> parentView, num parentIndex) {
+AppView<import3.MaterialAutoSuggestInputComponent> viewFactory_MaterialAutoSuggestInputComponent7(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewMaterialAutoSuggestInputComponent7(parentView, parentIndex);
 }
 
@@ -1072,7 +1073,7 @@ class _ViewMaterialAutoSuggestInputComponent8 extends AppView<import3.MaterialAu
   var _expr_0;
   var _expr_1;
   var _expr_2;
-  _ViewMaterialAutoSuggestInputComponent8(AppView<dynamic> parentView, num parentIndex) : super(import18.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMaterialAutoSuggestInputComponent8(AppView<dynamic> parentView, int parentIndex) : super(import18.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMaterialAutoSuggestInputComponent0._renderType;
   }
   @override
@@ -1139,7 +1140,7 @@ class _ViewMaterialAutoSuggestInputComponent8 extends AppView<import3.MaterialAu
   }
 }
 
-AppView<import3.MaterialAutoSuggestInputComponent> viewFactory_MaterialAutoSuggestInputComponent8(AppView<dynamic> parentView, num parentIndex) {
+AppView<import3.MaterialAutoSuggestInputComponent> viewFactory_MaterialAutoSuggestInputComponent8(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewMaterialAutoSuggestInputComponent8(parentView, parentIndex);
 }
 
@@ -1149,7 +1150,7 @@ class _ViewMaterialAutoSuggestInputComponent9 extends AppView<import3.MaterialAu
   import15.KeyboardOnlyFocusIndicatorDirective _KeyboardOnlyFocusIndicatorDirective_0_5;
   import60.MaterialSelectDropdownItemComponent _MaterialSelectDropdownItemComponent_0_6;
   var _expr_1;
-  _ViewMaterialAutoSuggestInputComponent9(AppView<dynamic> parentView, num parentIndex) : super(import18.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMaterialAutoSuggestInputComponent9(AppView<dynamic> parentView, int parentIndex) : super(import18.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMaterialAutoSuggestInputComponent0._renderType;
   }
   @override
@@ -1203,7 +1204,7 @@ class _ViewMaterialAutoSuggestInputComponent9 extends AppView<import3.MaterialAu
   }
 }
 
-AppView<import3.MaterialAutoSuggestInputComponent> viewFactory_MaterialAutoSuggestInputComponent9(AppView<dynamic> parentView, num parentIndex) {
+AppView<import3.MaterialAutoSuggestInputComponent> viewFactory_MaterialAutoSuggestInputComponent9(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewMaterialAutoSuggestInputComponent9(parentView, parentIndex);
 }
 
@@ -1223,7 +1224,7 @@ class _ViewMaterialAutoSuggestInputComponent10 extends AppView<import3.MaterialA
   bool _expr_8;
   var _expr_9;
   var _expr_10;
-  _ViewMaterialAutoSuggestInputComponent10(AppView<dynamic> parentView, num parentIndex) : super(import18.ViewType.EMBEDDED, {'\$implicit': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMaterialAutoSuggestInputComponent10(AppView<dynamic> parentView, int parentIndex) : super(import18.ViewType.EMBEDDED, {'\$implicit': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMaterialAutoSuggestInputComponent0._renderType;
   }
   @override
@@ -1333,7 +1334,7 @@ class _ViewMaterialAutoSuggestInputComponent10 extends AppView<import3.MaterialA
   }
 }
 
-AppView<import3.MaterialAutoSuggestInputComponent> viewFactory_MaterialAutoSuggestInputComponent10(AppView<dynamic> parentView, num parentIndex) {
+AppView<import3.MaterialAutoSuggestInputComponent> viewFactory_MaterialAutoSuggestInputComponent10(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewMaterialAutoSuggestInputComponent10(parentView, parentIndex);
 }
 
@@ -1342,7 +1343,7 @@ const List<dynamic> styles$MaterialAutoSuggestInputComponentHost = const [];
 class _ViewMaterialAutoSuggestInputComponentHost0 extends AppView<dynamic> {
   ViewMaterialAutoSuggestInputComponent0 _compView_0;
   import3.MaterialAutoSuggestInputComponent _MaterialAutoSuggestInputComponent_0_5;
-  _ViewMaterialAutoSuggestInputComponentHost0(AppView<dynamic> parentView, num parentIndex) : super(import18.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
+  _ViewMaterialAutoSuggestInputComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import18.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewMaterialAutoSuggestInputComponent0(this, 0);
@@ -1377,7 +1378,7 @@ class _ViewMaterialAutoSuggestInputComponentHost0 extends AppView<dynamic> {
   }
 }
 
-AppView viewFactory_MaterialAutoSuggestInputComponentHost0(AppView<dynamic> parentView, num parentIndex) {
+AppView viewFactory_MaterialAutoSuggestInputComponentHost0(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewMaterialAutoSuggestInputComponentHost0(parentView, parentIndex);
 }
 

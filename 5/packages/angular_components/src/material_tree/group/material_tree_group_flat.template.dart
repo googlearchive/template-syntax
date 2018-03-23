@@ -61,14 +61,15 @@ class ViewMaterialTreeGroupFlatListComponent0 extends AppView<import2.MaterialTr
   import4.NgFor _NgFor_0_9;
   var _expr_0;
   static RenderComponentType _renderType;
-  ViewMaterialTreeGroupFlatListComponent0(AppView<dynamic> parentView, num parentIndex) : super(import6.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  ViewMaterialTreeGroupFlatListComponent0(AppView<dynamic> parentView, int parentIndex) : super(import6.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     rootEl = import8.document.createElement('material-tree-group-flat-list');
     _renderType ??= import9.appViewUtils.createRenderType('', ViewEncapsulation.Emulated, styles$MaterialTreeGroupFlatListComponent);
     setupComponentType(_renderType);
   }
   @override
   ComponentRef<import2.MaterialTreeGroupFlatListComponent> build() {
-    final import8.HtmlElement parentRenderNode = initViewRoot(rootEl);
+    final _rootEl = rootEl;
+    final import8.HtmlElement parentRenderNode = initViewRoot(_rootEl);
     var _anchor_0 = ngAnchor.clone(false);
     parentRenderNode.append(_anchor_0);
     _appEl_0 = new ViewContainer(0, null, this, _anchor_0);
@@ -104,7 +105,7 @@ class ViewMaterialTreeGroupFlatListComponent0 extends AppView<import2.MaterialTr
   }
 }
 
-AppView<import2.MaterialTreeGroupFlatListComponent> viewFactory_MaterialTreeGroupFlatListComponent0(AppView<dynamic> parentView, num parentIndex) {
+AppView<import2.MaterialTreeGroupFlatListComponent> viewFactory_MaterialTreeGroupFlatListComponent0(AppView<dynamic> parentView, int parentIndex) {
   return new ViewMaterialTreeGroupFlatListComponent0(parentView, parentIndex);
 }
 
@@ -114,7 +115,7 @@ class _ViewMaterialTreeGroupFlatListComponent1 extends AppView<import2.MaterialT
   NgIf _NgIf_1_9;
   ViewContainer _appEl_2;
   NgIf _NgIf_2_9;
-  _ViewMaterialTreeGroupFlatListComponent1(AppView<dynamic> parentView, num parentIndex) : super(import6.ViewType.EMBEDDED, {'\$implicit': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMaterialTreeGroupFlatListComponent1(AppView<dynamic> parentView, int parentIndex) : super(import6.ViewType.EMBEDDED, {'\$implicit': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMaterialTreeGroupFlatListComponent0._renderType;
   }
   @override
@@ -153,7 +154,7 @@ class _ViewMaterialTreeGroupFlatListComponent1 extends AppView<import2.MaterialT
   }
 }
 
-AppView<import2.MaterialTreeGroupFlatListComponent> viewFactory_MaterialTreeGroupFlatListComponent1(AppView<dynamic> parentView, num parentIndex) {
+AppView<import2.MaterialTreeGroupFlatListComponent> viewFactory_MaterialTreeGroupFlatListComponent1(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewMaterialTreeGroupFlatListComponent1(parentView, parentIndex);
 }
 
@@ -165,7 +166,7 @@ class _ViewMaterialTreeGroupFlatListComponent2 extends AppView<import2.MaterialT
   var _expr_0;
   var _expr_1;
   var _expr_2;
-  _ViewMaterialTreeGroupFlatListComponent2(AppView<dynamic> parentView, num parentIndex) : super(import6.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMaterialTreeGroupFlatListComponent2(AppView<dynamic> parentView, int parentIndex) : super(import6.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMaterialTreeGroupFlatListComponent0._renderType;
   }
   @override
@@ -228,7 +229,7 @@ class _ViewMaterialTreeGroupFlatListComponent2 extends AppView<import2.MaterialT
   }
 }
 
-AppView<import2.MaterialTreeGroupFlatListComponent> viewFactory_MaterialTreeGroupFlatListComponent2(AppView<dynamic> parentView, num parentIndex) {
+AppView<import2.MaterialTreeGroupFlatListComponent> viewFactory_MaterialTreeGroupFlatListComponent2(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewMaterialTreeGroupFlatListComponent2(parentView, parentIndex);
 }
 
@@ -236,7 +237,7 @@ class _ViewMaterialTreeGroupFlatListComponent3 extends AppView<import2.MaterialT
   import8.Element _el_0;
   import8.Text _text_1;
   var _expr_0;
-  _ViewMaterialTreeGroupFlatListComponent3(AppView<dynamic> parentView, num parentIndex) : super(import6.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMaterialTreeGroupFlatListComponent3(AppView<dynamic> parentView, int parentIndex) : super(import6.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMaterialTreeGroupFlatListComponent0._renderType;
   }
   @override
@@ -263,7 +264,7 @@ class _ViewMaterialTreeGroupFlatListComponent3 extends AppView<import2.MaterialT
   }
 }
 
-AppView<import2.MaterialTreeGroupFlatListComponent> viewFactory_MaterialTreeGroupFlatListComponent3(AppView<dynamic> parentView, num parentIndex) {
+AppView<import2.MaterialTreeGroupFlatListComponent> viewFactory_MaterialTreeGroupFlatListComponent3(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewMaterialTreeGroupFlatListComponent3(parentView, parentIndex);
 }
 
@@ -272,7 +273,7 @@ const List<dynamic> styles$MaterialTreeGroupFlatListComponentHost = const [];
 class _ViewMaterialTreeGroupFlatListComponentHost0 extends AppView<dynamic> {
   ViewMaterialTreeGroupFlatListComponent0 _compView_0;
   import2.MaterialTreeGroupFlatListComponent _MaterialTreeGroupFlatListComponent_0_5;
-  _ViewMaterialTreeGroupFlatListComponentHost0(AppView<dynamic> parentView, num parentIndex) : super(import6.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
+  _ViewMaterialTreeGroupFlatListComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import6.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewMaterialTreeGroupFlatListComponent0(this, 0);
@@ -304,7 +305,7 @@ class _ViewMaterialTreeGroupFlatListComponentHost0 extends AppView<dynamic> {
   }
 }
 
-AppView viewFactory_MaterialTreeGroupFlatListComponentHost0(AppView<dynamic> parentView, num parentIndex) {
+AppView viewFactory_MaterialTreeGroupFlatListComponentHost0(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewMaterialTreeGroupFlatListComponentHost0(parentView, parentIndex);
 }
 
@@ -320,14 +321,15 @@ class ViewMaterialTreeGroupFlatRadioComponent0 extends AppView<import2.MaterialT
   import4.NgFor _NgFor_1_9;
   var _expr_1;
   static RenderComponentType _renderType;
-  ViewMaterialTreeGroupFlatRadioComponent0(AppView<dynamic> parentView, num parentIndex) : super(import6.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  ViewMaterialTreeGroupFlatRadioComponent0(AppView<dynamic> parentView, int parentIndex) : super(import6.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     rootEl = import8.document.createElement('material-tree-group-flat-radio');
     _renderType ??= import9.appViewUtils.createRenderType('', ViewEncapsulation.Emulated, styles$MaterialTreeGroupFlatRadioComponent);
     setupComponentType(_renderType);
   }
   @override
   ComponentRef<import2.MaterialTreeGroupFlatRadioComponent> build() {
-    final import8.HtmlElement parentRenderNode = initViewRoot(rootEl);
+    final _rootEl = rootEl;
+    final import8.HtmlElement parentRenderNode = initViewRoot(_rootEl);
     _compView_0 = new import18.ViewMaterialRadioGroupComponent0(this, 0);
     _el_0 = _compView_0.rootEl;
     parentRenderNode.append(_el_0);
@@ -402,7 +404,7 @@ class ViewMaterialTreeGroupFlatRadioComponent0 extends AppView<import2.MaterialT
   }
 }
 
-AppView<import2.MaterialTreeGroupFlatRadioComponent> viewFactory_MaterialTreeGroupFlatRadioComponent0(AppView<dynamic> parentView, num parentIndex) {
+AppView<import2.MaterialTreeGroupFlatRadioComponent> viewFactory_MaterialTreeGroupFlatRadioComponent0(AppView<dynamic> parentView, int parentIndex) {
   return new ViewMaterialTreeGroupFlatRadioComponent0(parentView, parentIndex);
 }
 
@@ -418,7 +420,7 @@ class _ViewMaterialTreeGroupFlatRadioComponent1 extends AppView<import2.Material
   bool _expr_1;
   var _expr_2;
   bool _expr_3;
-  _ViewMaterialTreeGroupFlatRadioComponent1(AppView<dynamic> parentView, num parentIndex) : super(import6.ViewType.EMBEDDED, {'\$implicit': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMaterialTreeGroupFlatRadioComponent1(AppView<dynamic> parentView, int parentIndex) : super(import6.ViewType.EMBEDDED, {'\$implicit': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMaterialTreeGroupFlatRadioComponent0._renderType;
   }
   @override
@@ -498,7 +500,7 @@ class _ViewMaterialTreeGroupFlatRadioComponent1 extends AppView<import2.Material
   }
 }
 
-AppView<import2.MaterialTreeGroupFlatRadioComponent> viewFactory_MaterialTreeGroupFlatRadioComponent1(AppView<dynamic> parentView, num parentIndex) {
+AppView<import2.MaterialTreeGroupFlatRadioComponent> viewFactory_MaterialTreeGroupFlatRadioComponent1(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewMaterialTreeGroupFlatRadioComponent1(parentView, parentIndex);
 }
 
@@ -510,7 +512,7 @@ class _ViewMaterialTreeGroupFlatRadioComponent2 extends AppView<import2.Material
   var _expr_0;
   var _expr_1;
   var _expr_2;
-  _ViewMaterialTreeGroupFlatRadioComponent2(AppView<dynamic> parentView, num parentIndex) : super(import6.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMaterialTreeGroupFlatRadioComponent2(AppView<dynamic> parentView, int parentIndex) : super(import6.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMaterialTreeGroupFlatRadioComponent0._renderType;
   }
   @override
@@ -573,7 +575,7 @@ class _ViewMaterialTreeGroupFlatRadioComponent2 extends AppView<import2.Material
   }
 }
 
-AppView<import2.MaterialTreeGroupFlatRadioComponent> viewFactory_MaterialTreeGroupFlatRadioComponent2(AppView<dynamic> parentView, num parentIndex) {
+AppView<import2.MaterialTreeGroupFlatRadioComponent> viewFactory_MaterialTreeGroupFlatRadioComponent2(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewMaterialTreeGroupFlatRadioComponent2(parentView, parentIndex);
 }
 
@@ -581,7 +583,7 @@ class _ViewMaterialTreeGroupFlatRadioComponent3 extends AppView<import2.Material
   import8.Element _el_0;
   import8.Text _text_1;
   var _expr_0;
-  _ViewMaterialTreeGroupFlatRadioComponent3(AppView<dynamic> parentView, num parentIndex) : super(import6.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMaterialTreeGroupFlatRadioComponent3(AppView<dynamic> parentView, int parentIndex) : super(import6.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMaterialTreeGroupFlatRadioComponent0._renderType;
   }
   @override
@@ -608,7 +610,7 @@ class _ViewMaterialTreeGroupFlatRadioComponent3 extends AppView<import2.Material
   }
 }
 
-AppView<import2.MaterialTreeGroupFlatRadioComponent> viewFactory_MaterialTreeGroupFlatRadioComponent3(AppView<dynamic> parentView, num parentIndex) {
+AppView<import2.MaterialTreeGroupFlatRadioComponent> viewFactory_MaterialTreeGroupFlatRadioComponent3(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewMaterialTreeGroupFlatRadioComponent3(parentView, parentIndex);
 }
 
@@ -617,7 +619,7 @@ const List<dynamic> styles$MaterialTreeGroupFlatRadioComponentHost = const [];
 class _ViewMaterialTreeGroupFlatRadioComponentHost0 extends AppView<dynamic> {
   ViewMaterialTreeGroupFlatRadioComponent0 _compView_0;
   import2.MaterialTreeGroupFlatRadioComponent _MaterialTreeGroupFlatRadioComponent_0_5;
-  _ViewMaterialTreeGroupFlatRadioComponentHost0(AppView<dynamic> parentView, num parentIndex) : super(import6.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
+  _ViewMaterialTreeGroupFlatRadioComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import6.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewMaterialTreeGroupFlatRadioComponent0(this, 0);
@@ -649,7 +651,7 @@ class _ViewMaterialTreeGroupFlatRadioComponentHost0 extends AppView<dynamic> {
   }
 }
 
-AppView viewFactory_MaterialTreeGroupFlatRadioComponentHost0(AppView<dynamic> parentView, num parentIndex) {
+AppView viewFactory_MaterialTreeGroupFlatRadioComponentHost0(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewMaterialTreeGroupFlatRadioComponentHost0(parentView, parentIndex);
 }
 
@@ -661,14 +663,15 @@ class ViewMaterialTreeGroupFlatCheckComponent0 extends AppView<import2.MaterialT
   import4.NgFor _NgFor_0_9;
   var _expr_0;
   static RenderComponentType _renderType;
-  ViewMaterialTreeGroupFlatCheckComponent0(AppView<dynamic> parentView, num parentIndex) : super(import6.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  ViewMaterialTreeGroupFlatCheckComponent0(AppView<dynamic> parentView, int parentIndex) : super(import6.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     rootEl = import8.document.createElement('material-tree-group-flat-check');
     _renderType ??= import9.appViewUtils.createRenderType('', ViewEncapsulation.Emulated, styles$MaterialTreeGroupFlatCheckComponent);
     setupComponentType(_renderType);
   }
   @override
   ComponentRef<import2.MaterialTreeGroupFlatCheckComponent> build() {
-    final import8.HtmlElement parentRenderNode = initViewRoot(rootEl);
+    final _rootEl = rootEl;
+    final import8.HtmlElement parentRenderNode = initViewRoot(_rootEl);
     var _anchor_0 = ngAnchor.clone(false);
     parentRenderNode.append(_anchor_0);
     _appEl_0 = new ViewContainer(0, null, this, _anchor_0);
@@ -704,7 +707,7 @@ class ViewMaterialTreeGroupFlatCheckComponent0 extends AppView<import2.MaterialT
   }
 }
 
-AppView<import2.MaterialTreeGroupFlatCheckComponent> viewFactory_MaterialTreeGroupFlatCheckComponent0(AppView<dynamic> parentView, num parentIndex) {
+AppView<import2.MaterialTreeGroupFlatCheckComponent> viewFactory_MaterialTreeGroupFlatCheckComponent0(AppView<dynamic> parentView, int parentIndex) {
   return new ViewMaterialTreeGroupFlatCheckComponent0(parentView, parentIndex);
 }
 
@@ -720,7 +723,7 @@ class _ViewMaterialTreeGroupFlatCheckComponent1 extends AppView<import2.Material
   bool _expr_1;
   bool _expr_2;
   bool _expr_3;
-  _ViewMaterialTreeGroupFlatCheckComponent1(AppView<dynamic> parentView, num parentIndex) : super(import6.ViewType.EMBEDDED, {'\$implicit': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMaterialTreeGroupFlatCheckComponent1(AppView<dynamic> parentView, int parentIndex) : super(import6.ViewType.EMBEDDED, {'\$implicit': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMaterialTreeGroupFlatCheckComponent0._renderType;
   }
   @override
@@ -800,7 +803,7 @@ class _ViewMaterialTreeGroupFlatCheckComponent1 extends AppView<import2.Material
   }
 }
 
-AppView<import2.MaterialTreeGroupFlatCheckComponent> viewFactory_MaterialTreeGroupFlatCheckComponent1(AppView<dynamic> parentView, num parentIndex) {
+AppView<import2.MaterialTreeGroupFlatCheckComponent> viewFactory_MaterialTreeGroupFlatCheckComponent1(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewMaterialTreeGroupFlatCheckComponent1(parentView, parentIndex);
 }
 
@@ -812,7 +815,7 @@ class _ViewMaterialTreeGroupFlatCheckComponent2 extends AppView<import2.Material
   var _expr_0;
   var _expr_1;
   var _expr_2;
-  _ViewMaterialTreeGroupFlatCheckComponent2(AppView<dynamic> parentView, num parentIndex) : super(import6.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMaterialTreeGroupFlatCheckComponent2(AppView<dynamic> parentView, int parentIndex) : super(import6.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMaterialTreeGroupFlatCheckComponent0._renderType;
   }
   @override
@@ -875,7 +878,7 @@ class _ViewMaterialTreeGroupFlatCheckComponent2 extends AppView<import2.Material
   }
 }
 
-AppView<import2.MaterialTreeGroupFlatCheckComponent> viewFactory_MaterialTreeGroupFlatCheckComponent2(AppView<dynamic> parentView, num parentIndex) {
+AppView<import2.MaterialTreeGroupFlatCheckComponent> viewFactory_MaterialTreeGroupFlatCheckComponent2(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewMaterialTreeGroupFlatCheckComponent2(parentView, parentIndex);
 }
 
@@ -883,7 +886,7 @@ class _ViewMaterialTreeGroupFlatCheckComponent3 extends AppView<import2.Material
   import8.Element _el_0;
   import8.Text _text_1;
   var _expr_0;
-  _ViewMaterialTreeGroupFlatCheckComponent3(AppView<dynamic> parentView, num parentIndex) : super(import6.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMaterialTreeGroupFlatCheckComponent3(AppView<dynamic> parentView, int parentIndex) : super(import6.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMaterialTreeGroupFlatCheckComponent0._renderType;
   }
   @override
@@ -910,7 +913,7 @@ class _ViewMaterialTreeGroupFlatCheckComponent3 extends AppView<import2.Material
   }
 }
 
-AppView<import2.MaterialTreeGroupFlatCheckComponent> viewFactory_MaterialTreeGroupFlatCheckComponent3(AppView<dynamic> parentView, num parentIndex) {
+AppView<import2.MaterialTreeGroupFlatCheckComponent> viewFactory_MaterialTreeGroupFlatCheckComponent3(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewMaterialTreeGroupFlatCheckComponent3(parentView, parentIndex);
 }
 
@@ -919,7 +922,7 @@ const List<dynamic> styles$MaterialTreeGroupFlatCheckComponentHost = const [];
 class _ViewMaterialTreeGroupFlatCheckComponentHost0 extends AppView<dynamic> {
   ViewMaterialTreeGroupFlatCheckComponent0 _compView_0;
   import2.MaterialTreeGroupFlatCheckComponent _MaterialTreeGroupFlatCheckComponent_0_5;
-  _ViewMaterialTreeGroupFlatCheckComponentHost0(AppView<dynamic> parentView, num parentIndex) : super(import6.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
+  _ViewMaterialTreeGroupFlatCheckComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import6.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewMaterialTreeGroupFlatCheckComponent0(this, 0);
@@ -951,7 +954,7 @@ class _ViewMaterialTreeGroupFlatCheckComponentHost0 extends AppView<dynamic> {
   }
 }
 
-AppView viewFactory_MaterialTreeGroupFlatCheckComponentHost0(AppView<dynamic> parentView, num parentIndex) {
+AppView viewFactory_MaterialTreeGroupFlatCheckComponentHost0(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewMaterialTreeGroupFlatCheckComponentHost0(parentView, parentIndex);
 }
 

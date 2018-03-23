@@ -8,6 +8,7 @@ export 'material_toggle.dart';
 import 'dart:async';
 import 'dart:html';
 import 'package:angular/angular.dart';
+import 'package:meta/meta.dart';
 import 'package:angular_components/utils/browser/events/events.dart';
 import 'package:angular/src/di/reflector.dart' as _ngRef;
 import 'package:angular/angular.template.dart' as _ref0;
@@ -28,6 +29,7 @@ import 'package:angular/src/core/linker/template_ref.dart';
 const List<dynamic> styles$MaterialToggleComponent = const [import0.styles];
 
 class ViewMaterialToggleComponent0 extends AppView<import2.MaterialToggleComponent> {
+  bool _query_toggle_1_0_isDirty = true;
   import3.DivElement _el_0;
   ViewContainer _appEl_1;
   NgIf _NgIf_1_9;
@@ -40,11 +42,10 @@ class ViewMaterialToggleComponent0 extends AppView<import2.MaterialToggleCompone
   var _expr_2;
   var _expr_3;
   var _expr_4;
-  var _expr_5;
+  var _expr_6;
   var _expr_7;
-  var _expr_8;
   static RenderComponentType _renderType;
-  ViewMaterialToggleComponent0(AppView<dynamic> parentView, num parentIndex) : super(import7.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckOnce) {
+  ViewMaterialToggleComponent0(AppView<dynamic> parentView, int parentIndex) : super(import7.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckOnce) {
     rootEl = import3.document.createElement('material-toggle');
     rootEl.className = 'themeable';
     _renderType ??= import9.appViewUtils.createRenderType('', ViewEncapsulation.Emulated, styles$MaterialToggleComponent);
@@ -53,7 +54,8 @@ class ViewMaterialToggleComponent0 extends AppView<import2.MaterialToggleCompone
   @override
   ComponentRef<import2.MaterialToggleComponent> build() {
     final import2.MaterialToggleComponent _ctx = ctx;
-    final import3.HtmlElement parentRenderNode = initViewRoot(rootEl);
+    final _rootEl = rootEl;
+    final import3.HtmlElement parentRenderNode = initViewRoot(_rootEl);
     var doc = import3.document;
     _el_0 = createDivAndAppend(doc, parentRenderNode);
     _el_0.className = 'material-toggle';
@@ -83,9 +85,10 @@ class ViewMaterialToggleComponent0 extends AppView<import2.MaterialToggleCompone
     _el_0.addEventListener('focus', eventHandler1(_handle_focus_0_1));
     _el_0.addEventListener('mouseenter', eventHandler1(_handle_mouseenter_0_2));
     _el_0.addEventListener('mouseleave', eventHandler1(_handle_mouseleave_0_3));
+    ctx.toggleElement = _el_0;
     init(const [], null);
-    rootEl.addEventListener('click', eventHandler1(_ctx.handleClick));
-    rootEl.addEventListener('keypress', eventHandler1(_ctx.handleKeyPress));
+    _rootEl.addEventListener('click', eventHandler1(_ctx.handleClick));
+    _rootEl.addEventListener('keypress', eventHandler1(_ctx.handleKeyPress));
     return null;
   }
 
@@ -109,30 +112,25 @@ class ViewMaterialToggleComponent0 extends AppView<import2.MaterialToggleCompone
       setAttr(_el_0, 'tabindex', currVal_2?.toString());
       _expr_2 = currVal_2;
     }
-    final currVal_3 = import9.interpolate0(_ctx.checked);
+    final currVal_3 = import9.interpolate0(_ctx.disabled);
     if (!identical(_expr_3, currVal_3)) {
-      setAttr(_el_0, 'aria-pressed', currVal_3?.toString());
+      setAttr(_el_0, 'aria-disabled', currVal_3?.toString());
       _expr_3 = currVal_3;
     }
-    final currVal_4 = import9.interpolate0(_ctx.disabled);
+    final currVal_4 = (_ctx.ariaLabel ?? '');
     if (!identical(_expr_4, currVal_4)) {
-      setAttr(_el_0, 'aria-disabled', currVal_4?.toString());
+      setAttr(_el_0, 'aria-label', currVal_4?.toString());
       _expr_4 = currVal_4;
     }
-    final currVal_5 = (_ctx.ariaLabel ?? '');
-    if (!identical(_expr_5, currVal_5)) {
-      setAttr(_el_0, 'aria-label', currVal_5?.toString());
-      _expr_5 = currVal_5;
+    final currVal_6 = import9.interpolate0(_ctx.shadow_z);
+    if (!identical(_expr_6, currVal_6)) {
+      setAttr(_el_3, 'elevation', currVal_6?.toString());
+      _expr_6 = currVal_6;
     }
     final currVal_7 = import9.interpolate0(_ctx.shadow_z);
     if (!identical(_expr_7, currVal_7)) {
-      setAttr(_el_3, 'elevation', currVal_7?.toString());
+      setAttr(_el_5, 'elevation', currVal_7?.toString());
       _expr_7 = currVal_7;
-    }
-    final currVal_8 = import9.interpolate0(_ctx.shadow_z);
-    if (!identical(_expr_8, currVal_8)) {
-      setAttr(_el_5, 'elevation', currVal_8?.toString());
-      _expr_8 = currVal_8;
     }
   }
 
@@ -158,7 +156,7 @@ class ViewMaterialToggleComponent0 extends AppView<import2.MaterialToggleCompone
   }
 }
 
-AppView<import2.MaterialToggleComponent> viewFactory_MaterialToggleComponent0(AppView<dynamic> parentView, num parentIndex) {
+AppView<import2.MaterialToggleComponent> viewFactory_MaterialToggleComponent0(AppView<dynamic> parentView, int parentIndex) {
   return new ViewMaterialToggleComponent0(parentView, parentIndex);
 }
 
@@ -166,7 +164,7 @@ class _ViewMaterialToggleComponent1 extends AppView<import2.MaterialToggleCompon
   import3.DivElement _el_0;
   import3.Text _text_1;
   var _expr_0;
-  _ViewMaterialToggleComponent1(AppView<dynamic> parentView, num parentIndex) : super(import7.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMaterialToggleComponent1(AppView<dynamic> parentView, int parentIndex) : super(import7.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMaterialToggleComponent0._renderType;
   }
   @override
@@ -192,7 +190,7 @@ class _ViewMaterialToggleComponent1 extends AppView<import2.MaterialToggleCompon
   }
 }
 
-AppView<import2.MaterialToggleComponent> viewFactory_MaterialToggleComponent1(AppView<dynamic> parentView, num parentIndex) {
+AppView<import2.MaterialToggleComponent> viewFactory_MaterialToggleComponent1(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewMaterialToggleComponent1(parentView, parentIndex);
 }
 
@@ -201,7 +199,7 @@ const List<dynamic> styles$MaterialToggleComponentHost = const [];
 class _ViewMaterialToggleComponentHost0 extends AppView<dynamic> {
   ViewMaterialToggleComponent0 _compView_0;
   import2.MaterialToggleComponent _MaterialToggleComponent_0_5;
-  _ViewMaterialToggleComponentHost0(AppView<dynamic> parentView, num parentIndex) : super(import7.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
+  _ViewMaterialToggleComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import7.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewMaterialToggleComponent0(this, 0);
@@ -215,10 +213,14 @@ class _ViewMaterialToggleComponentHost0 extends AppView<dynamic> {
   @override
   void detectChangesInternal() {
     bool changed = false;
+    bool firstCheck = (this.cdState == 0);
     if (changed) {
       _compView_0.markAsCheckOnce();
     }
     _compView_0.detectChanges();
+    if (firstCheck) {
+      _MaterialToggleComponent_0_5.ngAfterViewInit();
+    }
   }
 
   @override
@@ -227,7 +229,7 @@ class _ViewMaterialToggleComponentHost0 extends AppView<dynamic> {
   }
 }
 
-AppView viewFactory_MaterialToggleComponentHost0(AppView<dynamic> parentView, num parentIndex) {
+AppView viewFactory_MaterialToggleComponentHost0(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewMaterialToggleComponentHost0(parentView, parentIndex);
 }
 

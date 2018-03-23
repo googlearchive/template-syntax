@@ -12,12 +12,14 @@ import 'package:angular_components/button_decorator/button_decorator.dart';
 import 'package:angular_components/focus/keyboard_only_focus_indicator.dart';
 import 'package:angular_components/glyph/glyph.dart';
 import 'package:angular_components/mixins/button_wrapper.dart';
+import 'package:angular_components/mixins/focusable_mixin.dart';
 import 'package:angular/src/di/reflector.dart' as _ngRef;
 import 'package:angular/angular.template.dart' as _ref0;
 import 'package:angular_components/button_decorator/button_decorator.template.dart' as _ref1;
 import 'package:angular_components/focus/keyboard_only_focus_indicator.template.dart' as _ref2;
 import 'package:angular_components/glyph/glyph.template.dart' as _ref3;
 import 'package:angular_components/mixins/button_wrapper.template.dart' as _ref4;
+import 'package:angular_components/mixins/focusable_mixin.template.dart' as _ref5;
 import 'package:angular_components/button_decorator/button_decorator.scss.css.shim.dart' as import0;
 import 'package:angular_components/material_select/dropdown_button.scss.css.shim.dart' as import1;
 import 'package:angular/src/core/linker/app_view.dart';
@@ -56,14 +58,15 @@ class ViewDropdownButtonComponent0 extends AppView<import3.DropdownButtonCompone
   bool _expr_2;
   bool _expr_3;
   static RenderComponentType _renderType;
-  ViewDropdownButtonComponent0(AppView<dynamic> parentView, num parentIndex) : super(import10.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckOnce) {
+  ViewDropdownButtonComponent0(AppView<dynamic> parentView, int parentIndex) : super(import10.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckOnce) {
     rootEl = import4.document.createElement('dropdown-button');
     _renderType ??= import12.appViewUtils.createRenderType('', ViewEncapsulation.Emulated, styles$DropdownButtonComponent);
     setupComponentType(_renderType);
   }
   @override
   ComponentRef<import3.DropdownButtonComponent> build() {
-    final import4.HtmlElement parentRenderNode = initViewRoot(rootEl);
+    final _rootEl = rootEl;
+    final import4.HtmlElement parentRenderNode = initViewRoot(_rootEl);
     var doc = import4.document;
     _el_0 = createDivAndAppend(doc, parentRenderNode);
     createAttr(_el_0, 'buttonDecorator', '');
@@ -89,7 +92,7 @@ class ViewDropdownButtonComponent0 extends AppView<import3.DropdownButtonCompone
     _appEl_3 = new ViewContainer(3, null, this, _anchor_3);
     TemplateRef _TemplateRef_3_8 = new TemplateRef(_appEl_3, viewFactory_DropdownButtonComponent3);
     _NgIf_3_9 = new NgIf(_appEl_3, _TemplateRef_3_8);
-    _el_0.addEventListener('focus', eventHandler1(ctx.onFocus));
+    _el_0.addEventListener('focus', eventHandler1(ctx.handleFocus));
     _el_0.addEventListener('blur', eventHandler1(_handle_blur_0_1));
     _el_0.addEventListener('click', eventHandler1(_handle_click_0_2));
     _el_0.addEventListener('keypress', eventHandler1(_ButtonDirective_0_5.instance.handleKeyPress));
@@ -151,7 +154,7 @@ class ViewDropdownButtonComponent0 extends AppView<import3.DropdownButtonCompone
   }
 
   void _handle_blur_0_1($event) {
-    ctx.onBlur($event);
+    ctx.handleBlur($event);
     _KeyboardOnlyFocusIndicatorDirective_0_6.resetOutline();
   }
 
@@ -161,7 +164,7 @@ class ViewDropdownButtonComponent0 extends AppView<import3.DropdownButtonCompone
   }
 }
 
-AppView<import3.DropdownButtonComponent> viewFactory_DropdownButtonComponent0(AppView<dynamic> parentView, num parentIndex) {
+AppView<import3.DropdownButtonComponent> viewFactory_DropdownButtonComponent0(AppView<dynamic> parentView, int parentIndex) {
   return new ViewDropdownButtonComponent0(parentView, parentIndex);
 }
 
@@ -169,7 +172,7 @@ class _ViewDropdownButtonComponent1 extends AppView<import3.DropdownButtonCompon
   import4.Element _el_0;
   import4.Text _text_1;
   var _expr_0;
-  _ViewDropdownButtonComponent1(AppView<dynamic> parentView, num parentIndex) : super(import10.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewDropdownButtonComponent1(AppView<dynamic> parentView, int parentIndex) : super(import10.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewDropdownButtonComponent0._renderType;
   }
   @override
@@ -195,7 +198,7 @@ class _ViewDropdownButtonComponent1 extends AppView<import3.DropdownButtonCompon
   }
 }
 
-AppView<import3.DropdownButtonComponent> viewFactory_DropdownButtonComponent1(AppView<dynamic> parentView, num parentIndex) {
+AppView<import3.DropdownButtonComponent> viewFactory_DropdownButtonComponent1(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewDropdownButtonComponent1(parentView, parentIndex);
 }
 
@@ -204,7 +207,7 @@ class _ViewDropdownButtonComponent2 extends AppView<import3.DropdownButtonCompon
   import17.ViewGlyphComponent0 _compView_0;
   import18.GlyphComponent _GlyphComponent_0_5;
   var _expr_0;
-  _ViewDropdownButtonComponent2(AppView<dynamic> parentView, num parentIndex) : super(import10.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewDropdownButtonComponent2(AppView<dynamic> parentView, int parentIndex) : super(import10.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewDropdownButtonComponent0._renderType;
   }
   @override
@@ -242,7 +245,7 @@ class _ViewDropdownButtonComponent2 extends AppView<import3.DropdownButtonCompon
   }
 }
 
-AppView<import3.DropdownButtonComponent> viewFactory_DropdownButtonComponent2(AppView<dynamic> parentView, num parentIndex) {
+AppView<import3.DropdownButtonComponent> viewFactory_DropdownButtonComponent2(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewDropdownButtonComponent2(parentView, parentIndex);
 }
 
@@ -252,7 +255,7 @@ class _ViewDropdownButtonComponent3 extends AppView<import3.DropdownButtonCompon
   bool _expr_0;
   var _expr_1;
   var _expr_2;
-  _ViewDropdownButtonComponent3(AppView<dynamic> parentView, num parentIndex) : super(import10.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewDropdownButtonComponent3(AppView<dynamic> parentView, int parentIndex) : super(import10.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewDropdownButtonComponent0._renderType;
   }
   @override
@@ -289,7 +292,7 @@ class _ViewDropdownButtonComponent3 extends AppView<import3.DropdownButtonCompon
   }
 }
 
-AppView<import3.DropdownButtonComponent> viewFactory_DropdownButtonComponent3(AppView<dynamic> parentView, num parentIndex) {
+AppView<import3.DropdownButtonComponent> viewFactory_DropdownButtonComponent3(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewDropdownButtonComponent3(parentView, parentIndex);
 }
 
@@ -298,7 +301,7 @@ const List<dynamic> styles$DropdownButtonComponentHost = const [];
 class _ViewDropdownButtonComponentHost0 extends AppView<dynamic> {
   ViewDropdownButtonComponent0 _compView_0;
   import3.DropdownButtonComponent _DropdownButtonComponent_0_5;
-  _ViewDropdownButtonComponentHost0(AppView<dynamic> parentView, num parentIndex) : super(import10.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
+  _ViewDropdownButtonComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import10.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewDropdownButtonComponent0(this, 0);
@@ -332,7 +335,7 @@ class _ViewDropdownButtonComponentHost0 extends AppView<dynamic> {
   }
 }
 
-AppView viewFactory_DropdownButtonComponentHost0(AppView<dynamic> parentView, num parentIndex) {
+AppView viewFactory_DropdownButtonComponentHost0(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewDropdownButtonComponentHost0(parentView, parentIndex);
 }
 
@@ -351,4 +354,5 @@ void initReflector() {
   _ref2.initReflector();
   _ref3.initReflector();
   _ref4.initReflector();
+  _ref5.initReflector();
 }

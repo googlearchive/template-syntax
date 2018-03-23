@@ -34,7 +34,7 @@ const List<dynamic> styles$MaterialRadioGroupComponent = const [import0.styles];
 
 class ViewMaterialRadioGroupComponent0 extends AppView<import2.MaterialRadioGroupComponent> {
   static RenderComponentType _renderType;
-  ViewMaterialRadioGroupComponent0(AppView<dynamic> parentView, num parentIndex) : super(import4.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckOnce) {
+  ViewMaterialRadioGroupComponent0(AppView<dynamic> parentView, int parentIndex) : super(import4.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckOnce) {
     rootEl = import6.document.createElement('material-radio-group');
     createAttr(rootEl, 'role', 'radiogroup');
     rootEl.tabIndex = -1;
@@ -43,14 +43,15 @@ class ViewMaterialRadioGroupComponent0 extends AppView<import2.MaterialRadioGrou
   }
   @override
   ComponentRef<import2.MaterialRadioGroupComponent> build() {
-    final import6.HtmlElement parentRenderNode = initViewRoot(rootEl);
+    final _rootEl = rootEl;
+    final import6.HtmlElement parentRenderNode = initViewRoot(_rootEl);
     project(parentRenderNode, 0);
     init(const [], null);
     return null;
   }
 }
 
-AppView<import2.MaterialRadioGroupComponent> viewFactory_MaterialRadioGroupComponent0(AppView<dynamic> parentView, num parentIndex) {
+AppView<import2.MaterialRadioGroupComponent> viewFactory_MaterialRadioGroupComponent0(AppView<dynamic> parentView, int parentIndex) {
   return new ViewMaterialRadioGroupComponent0(parentView, parentIndex);
 }
 
@@ -60,7 +61,7 @@ class _ViewMaterialRadioGroupComponentHost0 extends AppView<dynamic> {
   ViewMaterialRadioGroupComponent0 _compView_0;
   import2.MaterialRadioGroupComponent _MaterialRadioGroupComponent_0_5;
   bool _query_MaterialRadioComponent_0_0_isDirty = true;
-  _ViewMaterialRadioGroupComponentHost0(AppView<dynamic> parentView, num parentIndex) : super(import4.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
+  _ViewMaterialRadioGroupComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import4.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewMaterialRadioGroupComponent0(this, 0);
@@ -100,7 +101,7 @@ class _ViewMaterialRadioGroupComponentHost0 extends AppView<dynamic> {
   }
 }
 
-AppView viewFactory_MaterialRadioGroupComponentHost0(AppView<dynamic> parentView, num parentIndex) {
+AppView viewFactory_MaterialRadioGroupComponentHost0(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewMaterialRadioGroupComponentHost0(parentView, parentIndex);
 }
 

@@ -9,6 +9,7 @@ import 'dart:async';
 import 'dart:html';
 import 'package:angular/angular.dart';
 import 'package:angular_forms/angular_forms.dart';
+import 'package:meta/meta.dart';
 import 'package:angular_components/focus/focus.dart';
 import 'package:angular_components/material_icon/material_icon.dart';
 import 'package:angular_components/material_radio/material_radio_group.dart';
@@ -62,7 +63,7 @@ class ViewMaterialRadioComponent0 extends AppView<import2.MaterialRadioComponent
   var _expr_7;
   var _expr_8;
   static RenderComponentType _renderType;
-  ViewMaterialRadioComponent0(AppView<dynamic> parentView, num parentIndex) : super(import9.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckOnce) {
+  ViewMaterialRadioComponent0(AppView<dynamic> parentView, int parentIndex) : super(import9.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckOnce) {
     rootEl = import3.document.createElement('material-radio');
     rootEl.className = 'themeable';
     _renderType ??= import11.appViewUtils.createRenderType('', ViewEncapsulation.Emulated, styles$MaterialRadioComponent);
@@ -71,7 +72,8 @@ class ViewMaterialRadioComponent0 extends AppView<import2.MaterialRadioComponent
   @override
   ComponentRef<import2.MaterialRadioComponent> build() {
     final import2.MaterialRadioComponent _ctx = ctx;
-    final import3.HtmlElement parentRenderNode = initViewRoot(rootEl);
+    final _rootEl = rootEl;
+    final import3.HtmlElement parentRenderNode = initViewRoot(_rootEl);
     var doc = import3.document;
     _el_0 = createDivAndAppend(doc, parentRenderNode);
     _el_0.className = 'icon-container';
@@ -94,12 +96,12 @@ class ViewMaterialRadioComponent0 extends AppView<import2.MaterialRadioComponent
     addShimC(_el_3);
     project(_el_3, 0);
     init(const [], null);
-    rootEl.addEventListener('click', eventHandler1(_ctx.handleClick));
-    rootEl.addEventListener('keypress', eventHandler1(_ctx.handleKeyPress));
-    rootEl.addEventListener('keydown', eventHandler1(_ctx.handleKeyDown));
-    rootEl.addEventListener('keyup', eventHandler1(_ctx.handleKeyUp));
-    rootEl.addEventListener('focus', eventHandler0(_ctx.onFocus));
-    rootEl.addEventListener('blur', eventHandler0(_ctx.onBlur));
+    _rootEl.addEventListener('click', eventHandler1(_ctx.handleClick));
+    _rootEl.addEventListener('keypress', eventHandler1(_ctx.handleKeyPress));
+    _rootEl.addEventListener('keydown', eventHandler1(_ctx.handleKeyDown));
+    _rootEl.addEventListener('keyup', eventHandler1(_ctx.handleKeyUp));
+    _rootEl.addEventListener('focus', eventHandler0(_ctx.onFocus));
+    _rootEl.addEventListener('blur', eventHandler0(_ctx.onBlur));
     return null;
   }
 
@@ -167,7 +169,7 @@ class ViewMaterialRadioComponent0 extends AppView<import2.MaterialRadioComponent
   }
 }
 
-AppView<import2.MaterialRadioComponent> viewFactory_MaterialRadioComponent0(AppView<dynamic> parentView, num parentIndex) {
+AppView<import2.MaterialRadioComponent> viewFactory_MaterialRadioComponent0(AppView<dynamic> parentView, int parentIndex) {
   return new ViewMaterialRadioComponent0(parentView, parentIndex);
 }
 
@@ -175,7 +177,7 @@ class _ViewMaterialRadioComponent1 extends AppView<import2.MaterialRadioComponen
   import3.Element _el_0;
   import14.ViewMaterialRippleComponent0 _compView_0;
   import15.MaterialRippleComponent _MaterialRippleComponent_0_5;
-  _ViewMaterialRadioComponent1(AppView<dynamic> parentView, num parentIndex) : super(import9.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMaterialRadioComponent1(AppView<dynamic> parentView, int parentIndex) : super(import9.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMaterialRadioComponent0._renderType;
   }
   @override
@@ -207,7 +209,7 @@ class _ViewMaterialRadioComponent1 extends AppView<import2.MaterialRadioComponen
   }
 }
 
-AppView<import2.MaterialRadioComponent> viewFactory_MaterialRadioComponent1(AppView<dynamic> parentView, num parentIndex) {
+AppView<import2.MaterialRadioComponent> viewFactory_MaterialRadioComponent1(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewMaterialRadioComponent1(parentView, parentIndex);
 }
 
@@ -216,7 +218,7 @@ const List<dynamic> styles$MaterialRadioComponentHost = const [];
 class _ViewMaterialRadioComponentHost0 extends AppView<dynamic> {
   ViewMaterialRadioComponent0 _compView_0;
   import2.MaterialRadioComponent _MaterialRadioComponent_0_5;
-  _ViewMaterialRadioComponentHost0(AppView<dynamic> parentView, num parentIndex) : super(import9.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
+  _ViewMaterialRadioComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import9.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewMaterialRadioComponent0(this, 0);
@@ -245,7 +247,7 @@ class _ViewMaterialRadioComponentHost0 extends AppView<dynamic> {
   }
 }
 
-AppView viewFactory_MaterialRadioComponentHost0(AppView<dynamic> parentView, num parentIndex) {
+AppView viewFactory_MaterialRadioComponentHost0(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewMaterialRadioComponentHost0(parentView, parentIndex);
 }
 

@@ -2,6 +2,7 @@
 // MIT-style license that can be found in the LICENSE file or at
 // https://opensource.org/licenses/MIT.
 
+import '../../logger.dart';
 import '../../parse/media_query.dart';
 import '../../utils.dart';
 
@@ -28,8 +29,8 @@ class CssMediaQuery {
   /// If passed, [url] is the name of the file from which [contents] comes.
   ///
   /// Throws a [SassFormatException] if parsing fails.
-  static List<CssMediaQuery> parseList(String contents, {url}) =>
-      new MediaQueryParser(contents, url: url).parse();
+  static List<CssMediaQuery> parseList(String contents, {url, Logger logger}) =>
+      new MediaQueryParser(contents, url: url, logger: logger).parse();
 
   /// Creates a media query specifies a type and, optionally, features.
   CssMediaQuery(this.type, {this.modifier, Iterable<String> features})
@@ -57,21 +58,31 @@ class CssMediaQuery {
 
     String modifier;
     String type;
-    if (ourType == null) {
-      modifier = theirModifier;
-      type = theirType;
-    } else if (theirType == null) {
-      modifier = ourModifier;
-      type = ourType;
-    } else if ((ourModifier == 'not') != (theirModifier == 'not')) {
+    if ((ourModifier == 'not') != (theirModifier == 'not')) {
       if (ourType == theirType) return null;
-      modifier = ourModifier == 'not' ? theirModifier : ourModifier;
-      type = ourModifier == 'not' ? theirType : ourType;
+
+      if (ourModifier == 'not') {
+        // The "not" would apply to the other query's features, which is not
+        // what we want.
+        if (other.features.isNotEmpty) return null;
+        modifier = theirModifier;
+        type = theirType;
+      } else {
+        if (this.features.isNotEmpty) return null;
+        modifier = ourModifier;
+        type = ourType;
+      }
     } else if (ourModifier == 'not') {
       assert(theirModifier == 'not');
       // CSS has no way of representing "neither screen nor print".
       if (ourType == theirType) return null;
       modifier = ourModifier; // "not"
+      type = ourType;
+    } else if (ourType == null) {
+      modifier = theirModifier;
+      type = theirType;
+    } else if (theirType == null) {
+      modifier = ourModifier;
       type = ourType;
     } else if (ourType != theirType) {
       return null;

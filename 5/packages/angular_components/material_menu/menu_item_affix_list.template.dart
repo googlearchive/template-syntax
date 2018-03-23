@@ -47,14 +47,15 @@ class ViewMenuItemAffixListComponent0 extends AppView<import2.MenuItemAffixListC
   ViewContainer _appEl_1;
   NgIf _NgIf_1_9;
   static RenderComponentType _renderType;
-  ViewMenuItemAffixListComponent0(AppView<dynamic> parentView, num parentIndex) : super(import6.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckOnce) {
+  ViewMenuItemAffixListComponent0(AppView<dynamic> parentView, int parentIndex) : super(import6.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckOnce) {
     rootEl = import8.document.createElement('menu-item-affix-list');
     _renderType ??= import9.appViewUtils.createRenderType('', ViewEncapsulation.Emulated, styles$MenuItemAffixListComponent);
     setupComponentType(_renderType);
   }
   @override
   ComponentRef<import2.MenuItemAffixListComponent> build() {
-    final import8.HtmlElement parentRenderNode = initViewRoot(rootEl);
+    final _rootEl = rootEl;
+    final import8.HtmlElement parentRenderNode = initViewRoot(_rootEl);
     import8.Text _text_0 = new import8.Text('\n');
     parentRenderNode.append(_text_0);
     var _anchor_1 = ngAnchor.clone(false);
@@ -81,7 +82,7 @@ class ViewMenuItemAffixListComponent0 extends AppView<import2.MenuItemAffixListC
   }
 }
 
-AppView<import2.MenuItemAffixListComponent> viewFactory_MenuItemAffixListComponent0(AppView<dynamic> parentView, num parentIndex) {
+AppView<import2.MenuItemAffixListComponent> viewFactory_MenuItemAffixListComponent0(AppView<dynamic> parentView, int parentIndex) {
   return new ViewMenuItemAffixListComponent0(parentView, parentIndex);
 }
 
@@ -89,7 +90,7 @@ class _ViewMenuItemAffixListComponent1 extends AppView<import2.MenuItemAffixList
   ViewContainer _appEl_1;
   import12.NgFor _NgFor_1_9;
   var _expr_0;
-  _ViewMenuItemAffixListComponent1(AppView<dynamic> parentView, num parentIndex) : super(import6.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMenuItemAffixListComponent1(AppView<dynamic> parentView, int parentIndex) : super(import6.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMenuItemAffixListComponent0._renderType;
   }
   @override
@@ -122,14 +123,14 @@ class _ViewMenuItemAffixListComponent1 extends AppView<import2.MenuItemAffixList
   }
 }
 
-AppView<import2.MenuItemAffixListComponent> viewFactory_MenuItemAffixListComponent1(AppView<dynamic> parentView, num parentIndex) {
+AppView<import2.MenuItemAffixListComponent> viewFactory_MenuItemAffixListComponent1(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewMenuItemAffixListComponent1(parentView, parentIndex);
 }
 
 class _ViewMenuItemAffixListComponent2 extends AppView<import2.MenuItemAffixListComponent> {
   ViewContainer _appEl_1;
   NgIf _NgIf_1_9;
-  _ViewMenuItemAffixListComponent2(AppView<dynamic> parentView, num parentIndex) : super(import6.ViewType.EMBEDDED, {'\$implicit': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMenuItemAffixListComponent2(AppView<dynamic> parentView, int parentIndex) : super(import6.ViewType.EMBEDDED, {'\$implicit': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMenuItemAffixListComponent0._renderType;
   }
   @override
@@ -157,7 +158,7 @@ class _ViewMenuItemAffixListComponent2 extends AppView<import2.MenuItemAffixList
   }
 }
 
-AppView<import2.MenuItemAffixListComponent> viewFactory_MenuItemAffixListComponent2(AppView<dynamic> parentView, num parentIndex) {
+AppView<import2.MenuItemAffixListComponent> viewFactory_MenuItemAffixListComponent2(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewMenuItemAffixListComponent2(parentView, parentIndex);
 }
 
@@ -166,7 +167,7 @@ class _ViewMenuItemAffixListComponent3 extends AppView<import2.MenuItemAffixList
   NgIf _NgIf_1_9;
   ViewContainer _appEl_3;
   NgIf _NgIf_3_9;
-  _ViewMenuItemAffixListComponent3(AppView<dynamic> parentView, num parentIndex) : super(import6.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMenuItemAffixListComponent3(AppView<dynamic> parentView, int parentIndex) : super(import6.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMenuItemAffixListComponent0._renderType;
   }
   @override
@@ -203,7 +204,7 @@ class _ViewMenuItemAffixListComponent3 extends AppView<import2.MenuItemAffixList
   }
 }
 
-AppView<import2.MenuItemAffixListComponent> viewFactory_MenuItemAffixListComponent3(AppView<dynamic> parentView, num parentIndex) {
+AppView<import2.MenuItemAffixListComponent> viewFactory_MenuItemAffixListComponent3(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewMenuItemAffixListComponent3(parentView, parentIndex);
 }
 
@@ -217,7 +218,7 @@ class _ViewMenuItemAffixListComponent4 extends AppView<import2.MenuItemAffixList
   bool _expr_3;
   bool _expr_4;
   var _expr_5;
-  _ViewMenuItemAffixListComponent4(AppView<dynamic> parentView, num parentIndex) : super(import6.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMenuItemAffixListComponent4(AppView<dynamic> parentView, int parentIndex) : super(import6.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMenuItemAffixListComponent0._renderType;
   }
   @override
@@ -302,7 +303,7 @@ class _ViewMenuItemAffixListComponent4 extends AppView<import2.MenuItemAffixList
   }
 }
 
-AppView<import2.MenuItemAffixListComponent> viewFactory_MenuItemAffixListComponent4(AppView<dynamic> parentView, num parentIndex) {
+AppView<import2.MenuItemAffixListComponent> viewFactory_MenuItemAffixListComponent4(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewMenuItemAffixListComponent4(parentView, parentIndex);
 }
 
@@ -310,7 +311,7 @@ class _ViewMenuItemAffixListComponent5 extends AppView<import2.MenuItemAffixList
   import8.Element _el_0;
   import8.Text _text_2;
   var _expr_0;
-  _ViewMenuItemAffixListComponent5(AppView<dynamic> parentView, num parentIndex) : super(import6.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMenuItemAffixListComponent5(AppView<dynamic> parentView, int parentIndex) : super(import6.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMenuItemAffixListComponent0._renderType;
   }
   @override
@@ -341,7 +342,7 @@ class _ViewMenuItemAffixListComponent5 extends AppView<import2.MenuItemAffixList
   }
 }
 
-AppView<import2.MenuItemAffixListComponent> viewFactory_MenuItemAffixListComponent5(AppView<dynamic> parentView, num parentIndex) {
+AppView<import2.MenuItemAffixListComponent> viewFactory_MenuItemAffixListComponent5(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewMenuItemAffixListComponent5(parentView, parentIndex);
 }
 
@@ -350,7 +351,7 @@ const List<dynamic> styles$MenuItemAffixListComponentHost = const [];
 class _ViewMenuItemAffixListComponentHost0 extends AppView<dynamic> {
   ViewMenuItemAffixListComponent0 _compView_0;
   import2.MenuItemAffixListComponent _MenuItemAffixListComponent_0_5;
-  _ViewMenuItemAffixListComponentHost0(AppView<dynamic> parentView, num parentIndex) : super(import6.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
+  _ViewMenuItemAffixListComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import6.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewMenuItemAffixListComponent0(this, 0);
@@ -385,7 +386,7 @@ class _ViewMenuItemAffixListComponentHost0 extends AppView<dynamic> {
   }
 }
 
-AppView viewFactory_MenuItemAffixListComponentHost0(AppView<dynamic> parentView, num parentIndex) {
+AppView viewFactory_MenuItemAffixListComponentHost0(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewMenuItemAffixListComponentHost0(parentView, parentIndex);
 }
 

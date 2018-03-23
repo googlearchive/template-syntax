@@ -25,14 +25,15 @@ class ViewHappyHeroComponent0 extends AppView<import1.HappyHeroComponent> {
   import2.Text _text_1;
   var _expr_0;
   static RenderComponentType _renderType;
-  ViewHappyHeroComponent0(AppView<dynamic> parentView, num parentIndex) : super(import4.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  ViewHappyHeroComponent0(AppView<dynamic> parentView, int parentIndex) : super(import4.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     rootEl = import2.document.createElement('happy-hero');
     _renderType ??= import6.appViewUtils.createRenderType('', ViewEncapsulation.None, styles$HappyHeroComponent);
     setupComponentType(_renderType);
   }
   @override
   ComponentRef<import1.HappyHeroComponent> build() {
-    final import2.HtmlElement parentRenderNode = initViewRoot(rootEl);
+    final _rootEl = rootEl;
+    final import2.HtmlElement parentRenderNode = initViewRoot(_rootEl);
     import2.Text _text_0 = new import2.Text('Wow. You like ');
     parentRenderNode.append(_text_0);
     _text_1 = new import2.Text('');
@@ -54,7 +55,7 @@ class ViewHappyHeroComponent0 extends AppView<import1.HappyHeroComponent> {
   }
 }
 
-AppView<import1.HappyHeroComponent> viewFactory_HappyHeroComponent0(AppView<dynamic> parentView, num parentIndex) {
+AppView<import1.HappyHeroComponent> viewFactory_HappyHeroComponent0(AppView<dynamic> parentView, int parentIndex) {
   return new ViewHappyHeroComponent0(parentView, parentIndex);
 }
 
@@ -63,7 +64,7 @@ const List<dynamic> styles$HappyHeroComponentHost = const [];
 class _ViewHappyHeroComponentHost0 extends AppView<dynamic> {
   ViewHappyHeroComponent0 _compView_0;
   import1.HappyHeroComponent _HappyHeroComponent_0_5;
-  _ViewHappyHeroComponentHost0(AppView<dynamic> parentView, num parentIndex) : super(import4.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
+  _ViewHappyHeroComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import4.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewHappyHeroComponent0(this, 0);
@@ -85,7 +86,7 @@ class _ViewHappyHeroComponentHost0 extends AppView<dynamic> {
   }
 }
 
-AppView viewFactory_HappyHeroComponentHost0(AppView<dynamic> parentView, num parentIndex) {
+AppView viewFactory_HappyHeroComponentHost0(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewHappyHeroComponentHost0(parentView, parentIndex);
 }
 
@@ -96,14 +97,15 @@ class ViewSadHeroComponent0 extends AppView<import1.SadHeroComponent> {
   import2.Text _text_1;
   var _expr_0;
   static RenderComponentType _renderType;
-  ViewSadHeroComponent0(AppView<dynamic> parentView, num parentIndex) : super(import4.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  ViewSadHeroComponent0(AppView<dynamic> parentView, int parentIndex) : super(import4.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     rootEl = import2.document.createElement('sad-hero');
     _renderType ??= import6.appViewUtils.createRenderType('', ViewEncapsulation.None, styles$SadHeroComponent);
     setupComponentType(_renderType);
   }
   @override
   ComponentRef<import1.SadHeroComponent> build() {
-    final import2.HtmlElement parentRenderNode = initViewRoot(rootEl);
+    final _rootEl = rootEl;
+    final import2.HtmlElement parentRenderNode = initViewRoot(_rootEl);
     import2.Text _text_0 = new import2.Text('You like ');
     parentRenderNode.append(_text_0);
     _text_1 = new import2.Text('');
@@ -125,7 +127,7 @@ class ViewSadHeroComponent0 extends AppView<import1.SadHeroComponent> {
   }
 }
 
-AppView<import1.SadHeroComponent> viewFactory_SadHeroComponent0(AppView<dynamic> parentView, num parentIndex) {
+AppView<import1.SadHeroComponent> viewFactory_SadHeroComponent0(AppView<dynamic> parentView, int parentIndex) {
   return new ViewSadHeroComponent0(parentView, parentIndex);
 }
 
@@ -134,7 +136,7 @@ const List<dynamic> styles$SadHeroComponentHost = const [];
 class _ViewSadHeroComponentHost0 extends AppView<dynamic> {
   ViewSadHeroComponent0 _compView_0;
   import1.SadHeroComponent _SadHeroComponent_0_5;
-  _ViewSadHeroComponentHost0(AppView<dynamic> parentView, num parentIndex) : super(import4.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
+  _ViewSadHeroComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import4.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewSadHeroComponent0(this, 0);
@@ -156,7 +158,7 @@ class _ViewSadHeroComponentHost0 extends AppView<dynamic> {
   }
 }
 
-AppView viewFactory_SadHeroComponentHost0(AppView<dynamic> parentView, num parentIndex) {
+AppView viewFactory_SadHeroComponentHost0(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewSadHeroComponentHost0(parentView, parentIndex);
 }
 
@@ -167,14 +169,15 @@ class ViewConfusedHeroComponent0 extends AppView<import1.ConfusedHeroComponent> 
   import2.Text _text_1;
   var _expr_0;
   static RenderComponentType _renderType;
-  ViewConfusedHeroComponent0(AppView<dynamic> parentView, num parentIndex) : super(import4.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  ViewConfusedHeroComponent0(AppView<dynamic> parentView, int parentIndex) : super(import4.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     rootEl = import2.document.createElement('confused-hero');
     _renderType ??= import6.appViewUtils.createRenderType('', ViewEncapsulation.None, styles$ConfusedHeroComponent);
     setupComponentType(_renderType);
   }
   @override
   ComponentRef<import1.ConfusedHeroComponent> build() {
-    final import2.HtmlElement parentRenderNode = initViewRoot(rootEl);
+    final _rootEl = rootEl;
+    final import2.HtmlElement parentRenderNode = initViewRoot(_rootEl);
     import2.Text _text_0 = new import2.Text('Are you as confused as ');
     parentRenderNode.append(_text_0);
     _text_1 = new import2.Text('');
@@ -196,7 +199,7 @@ class ViewConfusedHeroComponent0 extends AppView<import1.ConfusedHeroComponent> 
   }
 }
 
-AppView<import1.ConfusedHeroComponent> viewFactory_ConfusedHeroComponent0(AppView<dynamic> parentView, num parentIndex) {
+AppView<import1.ConfusedHeroComponent> viewFactory_ConfusedHeroComponent0(AppView<dynamic> parentView, int parentIndex) {
   return new ViewConfusedHeroComponent0(parentView, parentIndex);
 }
 
@@ -205,7 +208,7 @@ const List<dynamic> styles$ConfusedHeroComponentHost = const [];
 class _ViewConfusedHeroComponentHost0 extends AppView<dynamic> {
   ViewConfusedHeroComponent0 _compView_0;
   import1.ConfusedHeroComponent _ConfusedHeroComponent_0_5;
-  _ViewConfusedHeroComponentHost0(AppView<dynamic> parentView, num parentIndex) : super(import4.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
+  _ViewConfusedHeroComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import4.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewConfusedHeroComponent0(this, 0);
@@ -227,7 +230,7 @@ class _ViewConfusedHeroComponentHost0 extends AppView<dynamic> {
   }
 }
 
-AppView viewFactory_ConfusedHeroComponentHost0(AppView<dynamic> parentView, num parentIndex) {
+AppView viewFactory_ConfusedHeroComponentHost0(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewConfusedHeroComponentHost0(parentView, parentIndex);
 }
 
@@ -238,14 +241,15 @@ class ViewUnknownHeroComponent0 extends AppView<import1.UnknownHeroComponent> {
   import2.Text _text_0;
   var _expr_0;
   static RenderComponentType _renderType;
-  ViewUnknownHeroComponent0(AppView<dynamic> parentView, num parentIndex) : super(import4.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  ViewUnknownHeroComponent0(AppView<dynamic> parentView, int parentIndex) : super(import4.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     rootEl = import2.document.createElement('unknown-hero');
     _renderType ??= import6.appViewUtils.createRenderType('', ViewEncapsulation.None, styles$UnknownHeroComponent);
     setupComponentType(_renderType);
   }
   @override
   ComponentRef<import1.UnknownHeroComponent> build() {
-    final import2.HtmlElement parentRenderNode = initViewRoot(rootEl);
+    final _rootEl = rootEl;
+    final import2.HtmlElement parentRenderNode = initViewRoot(_rootEl);
     _text_0 = new import2.Text('');
     parentRenderNode.append(_text_0);
     init(const [], null);
@@ -263,7 +267,7 @@ class ViewUnknownHeroComponent0 extends AppView<import1.UnknownHeroComponent> {
   }
 }
 
-AppView<import1.UnknownHeroComponent> viewFactory_UnknownHeroComponent0(AppView<dynamic> parentView, num parentIndex) {
+AppView<import1.UnknownHeroComponent> viewFactory_UnknownHeroComponent0(AppView<dynamic> parentView, int parentIndex) {
   return new ViewUnknownHeroComponent0(parentView, parentIndex);
 }
 
@@ -272,7 +276,7 @@ const List<dynamic> styles$UnknownHeroComponentHost = const [];
 class _ViewUnknownHeroComponentHost0 extends AppView<dynamic> {
   ViewUnknownHeroComponent0 _compView_0;
   import1.UnknownHeroComponent _UnknownHeroComponent_0_5;
-  _ViewUnknownHeroComponentHost0(AppView<dynamic> parentView, num parentIndex) : super(import4.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
+  _ViewUnknownHeroComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import4.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewUnknownHeroComponent0(this, 0);
@@ -294,7 +298,7 @@ class _ViewUnknownHeroComponentHost0 extends AppView<dynamic> {
   }
 }
 
-AppView viewFactory_UnknownHeroComponentHost0(AppView<dynamic> parentView, num parentIndex) {
+AppView viewFactory_UnknownHeroComponentHost0(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewUnknownHeroComponentHost0(parentView, parentIndex);
 }
 

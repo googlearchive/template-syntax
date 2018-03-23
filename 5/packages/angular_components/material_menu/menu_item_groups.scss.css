@@ -39,9 +39,13 @@
 .group-header ::ng-deep .submenu-icon {
   transform: rotate(-90deg);
 }
+.group-header.is-collapsible {
+  cursor: pointer;
+}
 
 .expansion-icon {
   cursor: pointer;
+  margin-left: 8px;
 }
 
 .menu-item {

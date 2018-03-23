@@ -6,18 +6,22 @@
 import 'dropdown_menu.dart';
 export 'dropdown_menu.dart';
 import 'package:angular/angular.dart';
+import 'package:angular_components/focus/focus.dart';
 import 'package:angular_components/material_menu/menu_popup.dart';
 import 'package:angular_components/material_menu/menu_popup_wrapper.dart';
 import 'package:angular_components/material_popup/material_popup.dart';
 import 'package:angular_components/material_select/dropdown_button.dart';
+import 'package:angular_components/mixins/focusable_mixin.dart';
 import 'package:angular_components/utils/disposer/disposer.dart';
 import 'package:angular/src/di/reflector.dart' as _ngRef;
 import 'package:angular/angular.template.dart' as _ref0;
-import 'package:angular_components/material_menu/menu_popup.template.dart' as _ref1;
-import 'package:angular_components/material_menu/menu_popup_wrapper.template.dart' as _ref2;
-import 'package:angular_components/material_popup/material_popup.template.dart' as _ref3;
-import 'package:angular_components/material_select/dropdown_button.template.dart' as _ref4;
-import 'package:angular_components/utils/disposer/disposer.template.dart' as _ref5;
+import 'package:angular_components/focus/focus.template.dart' as _ref1;
+import 'package:angular_components/material_menu/menu_popup.template.dart' as _ref2;
+import 'package:angular_components/material_menu/menu_popup_wrapper.template.dart' as _ref3;
+import 'package:angular_components/material_popup/material_popup.template.dart' as _ref4;
+import 'package:angular_components/material_select/dropdown_button.template.dart' as _ref5;
+import 'package:angular_components/mixins/focusable_mixin.template.dart' as _ref6;
+import 'package:angular_components/utils/disposer/disposer.template.dart' as _ref7;
 import 'package:angular/src/core/linker/app_view.dart';
 import 'dropdown_menu.dart' as import1;
 import 'dart:html' as import2;
@@ -37,6 +41,8 @@ import '../utils/angular/reference/reference.dart' as import14;
 const List<dynamic> styles$DropdownMenuComponent = const [];
 
 class ViewDropdownMenuComponent0 extends AppView<import1.DropdownMenuComponent> {
+  bool _query_DropdownButtonComponent_1_0_isDirty = true;
+  bool _query_MenuPopupComponent_1_1_isDirty = true;
   import2.Element _el_1;
   import3.ViewDropdownButtonComponent0 _compView_1;
   import4.DropdownButtonComponent _DropdownButtonComponent_1_5;
@@ -53,14 +59,15 @@ class ViewDropdownMenuComponent0 extends AppView<import1.DropdownMenuComponent> 
   var _expr_5;
   var _expr_6;
   static RenderComponentType _renderType;
-  ViewDropdownMenuComponent0(AppView<dynamic> parentView, num parentIndex) : super(import9.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckOnce) {
+  ViewDropdownMenuComponent0(AppView<dynamic> parentView, int parentIndex) : super(import9.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckOnce) {
     rootEl = import2.document.createElement('dropdown-menu');
     _renderType ??= import11.appViewUtils.createRenderType('', ViewEncapsulation.None, styles$DropdownMenuComponent);
     setupComponentType(_renderType);
   }
   @override
   ComponentRef<import1.DropdownMenuComponent> build() {
-    final import2.HtmlElement parentRenderNode = initViewRoot(rootEl);
+    final _rootEl = rootEl;
+    final import2.HtmlElement parentRenderNode = initViewRoot(_rootEl);
     import2.Text _text_0 = new import2.Text('\n');
     parentRenderNode.append(_text_0);
     _compView_1 = new import3.ViewDropdownButtonComponent0(this, 1);
@@ -90,6 +97,8 @@ class ViewDropdownMenuComponent0 extends AppView<import1.DropdownMenuComponent> 
     parentRenderNode.append(_text_8);
     final subscription_0 = _DropdownButtonComponent_1_5.trigger.listen(eventHandler1(_handle_trigger_1_0));
     final subscription_1 = _MenuPopupComponent_5_5.isExpandedChange.listen(eventHandler1(_handle_isExpandedChange_5_0));
+    ctx.dropdownButton = _DropdownButtonComponent_1_5;
+    ctx.menuPopup = _MenuPopupComponent_5_5;
     init(const [], [subscription_0, subscription_1]);
     return null;
   }
@@ -194,7 +203,7 @@ class ViewDropdownMenuComponent0 extends AppView<import1.DropdownMenuComponent> 
   }
 }
 
-AppView<import1.DropdownMenuComponent> viewFactory_DropdownMenuComponent0(AppView<dynamic> parentView, num parentIndex) {
+AppView<import1.DropdownMenuComponent> viewFactory_DropdownMenuComponent0(AppView<dynamic> parentView, int parentIndex) {
   return new ViewDropdownMenuComponent0(parentView, parentIndex);
 }
 
@@ -203,7 +212,7 @@ const List<dynamic> styles$DropdownMenuComponentHost = const [];
 class _ViewDropdownMenuComponentHost0 extends AppView<dynamic> {
   ViewDropdownMenuComponent0 _compView_0;
   import1.DropdownMenuComponent _DropdownMenuComponent_0_5;
-  _ViewDropdownMenuComponentHost0(AppView<dynamic> parentView, num parentIndex) : super(import9.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
+  _ViewDropdownMenuComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import9.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewDropdownMenuComponent0(this, 0);
@@ -225,10 +234,14 @@ class _ViewDropdownMenuComponentHost0 extends AppView<dynamic> {
   @override
   void detectChangesInternal() {
     bool changed = false;
+    bool firstCheck = (this.cdState == 0);
     if (changed) {
       _compView_0.markAsCheckOnce();
     }
     _compView_0.detectChanges();
+    if (firstCheck) {
+      _DropdownMenuComponent_0_5.ngAfterViewInit();
+    }
   }
 
   @override
@@ -238,7 +251,7 @@ class _ViewDropdownMenuComponentHost0 extends AppView<dynamic> {
   }
 }
 
-AppView viewFactory_DropdownMenuComponentHost0(AppView<dynamic> parentView, num parentIndex) {
+AppView viewFactory_DropdownMenuComponentHost0(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewDropdownMenuComponentHost0(parentView, parentIndex);
 }
 
@@ -258,4 +271,6 @@ void initReflector() {
   _ref3.initReflector();
   _ref4.initReflector();
   _ref5.initReflector();
+  _ref6.initReflector();
+  _ref7.initReflector();
 }

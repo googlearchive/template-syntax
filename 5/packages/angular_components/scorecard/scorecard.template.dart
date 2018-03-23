@@ -69,7 +69,7 @@ class ViewScorecardComponent0 extends AppView<import2.ScorecardComponent> {
   bool _expr_13;
   bool _expr_14;
   static RenderComponentType _renderType;
-  ViewScorecardComponent0(AppView<dynamic> parentView, num parentIndex) : super(import7.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckOnce) {
+  ViewScorecardComponent0(AppView<dynamic> parentView, int parentIndex) : super(import7.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckOnce) {
     rootEl = import5.document.createElement('acx-scorecard');
     rootEl.className = 'themeable';
     _renderType ??= import9.appViewUtils.createRenderType('', ViewEncapsulation.Emulated, styles$ScorecardComponent);
@@ -78,7 +78,8 @@ class ViewScorecardComponent0 extends AppView<import2.ScorecardComponent> {
   @override
   ComponentRef<import2.ScorecardComponent> build() {
     final import2.ScorecardComponent _ctx = ctx;
-    final import5.HtmlElement parentRenderNode = initViewRoot(rootEl);
+    final _rootEl = rootEl;
+    final import5.HtmlElement parentRenderNode = initViewRoot(_rootEl);
     var _anchor_0 = ngAnchor.clone(false);
     parentRenderNode.append(_anchor_0);
     _appEl_0 = new ViewContainer(0, null, this, _anchor_0);
@@ -112,11 +113,11 @@ class ViewScorecardComponent0 extends AppView<import2.ScorecardComponent> {
     _NgIf_7_9 = new NgIf(_appEl_7, _TemplateRef_7_8);
     project(parentRenderNode, 3);
     init(const [], null);
-    rootEl.addEventListener('keyup', eventHandler0(_ctx.resetOutline));
-    rootEl.addEventListener('blur', eventHandler0(_ctx.resetOutline));
-    rootEl.addEventListener('mousedown', eventHandler0(_ctx.hideOutline));
-    rootEl.addEventListener('click', eventHandler0(_ctx.handleClick));
-    rootEl.addEventListener('keypress', eventHandler1(_ctx.handleKeypress));
+    _rootEl.addEventListener('keyup', eventHandler0(_ctx.resetOutline));
+    _rootEl.addEventListener('blur', eventHandler0(_ctx.resetOutline));
+    _rootEl.addEventListener('mousedown', eventHandler0(_ctx.hideOutline));
+    _rootEl.addEventListener('click', eventHandler0(_ctx.handleClick));
+    _rootEl.addEventListener('keypress', eventHandler1(_ctx.handleKeypress));
     return null;
   }
 
@@ -200,7 +201,7 @@ class ViewScorecardComponent0 extends AppView<import2.ScorecardComponent> {
   }
 }
 
-AppView<import2.ScorecardComponent> viewFactory_ScorecardComponent0(AppView<dynamic> parentView, num parentIndex) {
+AppView<import2.ScorecardComponent> viewFactory_ScorecardComponent0(AppView<dynamic> parentView, int parentIndex) {
   return new ViewScorecardComponent0(parentView, parentIndex);
 }
 
@@ -208,7 +209,7 @@ class _ViewScorecardComponent1 extends AppView<import2.ScorecardComponent> {
   import5.Element _el_0;
   import12.ViewMaterialRippleComponent0 _compView_0;
   import13.MaterialRippleComponent _MaterialRippleComponent_0_5;
-  _ViewScorecardComponent1(AppView<dynamic> parentView, num parentIndex) : super(import7.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewScorecardComponent1(AppView<dynamic> parentView, int parentIndex) : super(import7.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewScorecardComponent0._renderType;
   }
   @override
@@ -239,7 +240,7 @@ class _ViewScorecardComponent1 extends AppView<import2.ScorecardComponent> {
   }
 }
 
-AppView<import2.ScorecardComponent> viewFactory_ScorecardComponent1(AppView<dynamic> parentView, num parentIndex) {
+AppView<import2.ScorecardComponent> viewFactory_ScorecardComponent1(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewScorecardComponent1(parentView, parentIndex);
 }
 
@@ -247,7 +248,7 @@ class _ViewScorecardComponent2 extends AppView<import2.ScorecardComponent> {
   import5.Element _el_0;
   import5.Text _text_1;
   var _expr_0;
-  _ViewScorecardComponent2(AppView<dynamic> parentView, num parentIndex) : super(import7.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewScorecardComponent2(AppView<dynamic> parentView, int parentIndex) : super(import7.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewScorecardComponent0._renderType;
   }
   @override
@@ -273,7 +274,7 @@ class _ViewScorecardComponent2 extends AppView<import2.ScorecardComponent> {
   }
 }
 
-AppView<import2.ScorecardComponent> viewFactory_ScorecardComponent2(AppView<dynamic> parentView, num parentIndex) {
+AppView<import2.ScorecardComponent> viewFactory_ScorecardComponent2(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewScorecardComponent2(parentView, parentIndex);
 }
 
@@ -283,7 +284,7 @@ class _ViewScorecardComponent3 extends AppView<import2.ScorecardComponent> {
   NgIf _NgIf_1_9;
   import5.Text _text_3;
   var _expr_1;
-  _ViewScorecardComponent3(AppView<dynamic> parentView, num parentIndex) : super(import7.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewScorecardComponent3(AppView<dynamic> parentView, int parentIndex) : super(import7.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewScorecardComponent0._renderType;
   }
   @override
@@ -326,7 +327,7 @@ class _ViewScorecardComponent3 extends AppView<import2.ScorecardComponent> {
   }
 }
 
-AppView<import2.ScorecardComponent> viewFactory_ScorecardComponent3(AppView<dynamic> parentView, num parentIndex) {
+AppView<import2.ScorecardComponent> viewFactory_ScorecardComponent3(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewScorecardComponent3(parentView, parentIndex);
 }
 
@@ -335,7 +336,7 @@ class _ViewScorecardComponent4 extends AppView<import2.ScorecardComponent> {
   import14.ViewMaterialIconComponent0 _compView_0;
   import15.MaterialIconComponent _MaterialIconComponent_0_5;
   var _expr_0;
-  _ViewScorecardComponent4(AppView<dynamic> parentView, num parentIndex) : super(import7.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewScorecardComponent4(AppView<dynamic> parentView, int parentIndex) : super(import7.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewScorecardComponent0._renderType;
   }
   @override
@@ -374,7 +375,7 @@ class _ViewScorecardComponent4 extends AppView<import2.ScorecardComponent> {
   }
 }
 
-AppView<import2.ScorecardComponent> viewFactory_ScorecardComponent4(AppView<dynamic> parentView, num parentIndex) {
+AppView<import2.ScorecardComponent> viewFactory_ScorecardComponent4(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewScorecardComponent4(parentView, parentIndex);
 }
 
@@ -382,7 +383,7 @@ class _ViewScorecardComponent5 extends AppView<import2.ScorecardComponent> {
   import5.Element _el_0;
   import5.Text _text_1;
   var _expr_0;
-  _ViewScorecardComponent5(AppView<dynamic> parentView, num parentIndex) : super(import7.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewScorecardComponent5(AppView<dynamic> parentView, int parentIndex) : super(import7.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewScorecardComponent0._renderType;
   }
   @override
@@ -408,7 +409,7 @@ class _ViewScorecardComponent5 extends AppView<import2.ScorecardComponent> {
   }
 }
 
-AppView<import2.ScorecardComponent> viewFactory_ScorecardComponent5(AppView<dynamic> parentView, num parentIndex) {
+AppView<import2.ScorecardComponent> viewFactory_ScorecardComponent5(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewScorecardComponent5(parentView, parentIndex);
 }
 
@@ -417,7 +418,7 @@ const List<dynamic> styles$ScorecardComponentHost = const [];
 class _ViewScorecardComponentHost0 extends AppView<dynamic> {
   ViewScorecardComponent0 _compView_0;
   import2.ScorecardComponent _ScorecardComponent_0_5;
-  _ViewScorecardComponentHost0(AppView<dynamic> parentView, num parentIndex) : super(import7.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
+  _ViewScorecardComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import7.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewScorecardComponent0(this, 0);
@@ -445,7 +446,7 @@ class _ViewScorecardComponentHost0 extends AppView<dynamic> {
   }
 }
 
-AppView viewFactory_ScorecardComponentHost0(AppView<dynamic> parentView, num parentIndex) {
+AppView viewFactory_ScorecardComponentHost0(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewScorecardComponentHost0(parentView, parentIndex);
 }
 

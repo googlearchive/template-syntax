@@ -83,6 +83,7 @@ import 'package:angular_components/utils/disposer/disposer.dart';
 ///    "dismiss", "not now"). The default text is "cancel".
 ///  - `saveDisabled: bool` -- If true, the save button is disabled.
 ///  - `enterAccepts: bool` -- If true, enterAccepts is enabled.
+///  - `cancelDisplayed: bool` -- If true, the cancel button is displayed.
 ///
 /// __Events:__
 ///
@@ -253,19 +254,33 @@ class MaterialExpansionPanel
   @Input()
   bool alwaysShowExpandIcon = false;
 
+  /// If true, the expand icon should never be visible.
+  @Input()
+  bool alwaysHideExpandIcon = false;
+
   bool get hasCustomExpandIcon => expandIcon != _defaultExpandIcon;
 
-  bool get shouldShowExpandIcon =>
-      (hasCustomExpandIcon && isExpanded) ? alwaysShowExpandIcon : !disabled;
+  bool get shouldShowExpandIcon {
+    if (alwaysHideExpandIcon) return false;
+    return (hasCustomExpandIcon && isExpanded)
+        ? alwaysShowExpandIcon
+        : !disabled;
+  }
 
   bool get shouldFlipExpandIcon => hasCustomExpandIcon ? false : !isExpanded;
 
   bool get shouldShowHiddenHeaderExpandIcon =>
-      hasCustomExpandIcon ? false : (hideExpandedHeader && !disabled);
+      hasCustomExpandIcon || alwaysHideExpandIcon
+          ? false
+          : (hideExpandedHeader && !disabled);
 
   /// Option to set if widget should show save/cancel buttons `true` by default.
   @Input()
   bool showSaveCancel = true;
+
+  /// Option to set if widget should show cancel button `true` by default.
+  @Input()
+  bool cancelDisplayed = true;
 
   @Input()
   bool enterAccepts = false;

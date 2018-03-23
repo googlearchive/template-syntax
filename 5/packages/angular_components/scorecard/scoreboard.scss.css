@@ -2,6 +2,7 @@
   display: block;
   overflow: hidden;
   position: relative;
+  z-index: 0;
 }
 .acx-scoreboard .scroll-button {
   display: flex;

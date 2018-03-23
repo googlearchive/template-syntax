@@ -7,6 +7,7 @@ import 'package:string_scanner/string_scanner.dart';
 
 import '../ast/sass.dart';
 import '../interpolation_buffer.dart';
+import '../logger.dart';
 import '../util/character.dart';
 import 'stylesheet.dart';
 
@@ -36,8 +37,21 @@ class SassParser extends StylesheetParser {
 
   bool get indented => true;
 
-  SassParser(String contents, {url, bool color: false})
-      : super(contents, url: url, color: color);
+  SassParser(String contents, {url, Logger logger})
+      : super(contents, url: url, logger: logger);
+
+  Interpolation styleRuleSelector() {
+    var start = scanner.state;
+
+    var buffer = new InterpolationBuffer();
+    do {
+      buffer.addInterpolation(almostAnyValue());
+      buffer.writeCharCode($lf);
+    } while (buffer.trailingString.trimRight().endsWith(",") &&
+        scanCharIf(isNewline));
+
+    return buffer.interpolation(scanner.spanFrom(start));
+  }
 
   void expectStatementSeparator([String name]) {
     if (!atEndOfStatement()) scanner.expectChar($lf);
@@ -208,7 +222,17 @@ class SassParser extends StylesheetParser {
     var buffer = new InterpolationBuffer()..write("/*");
     var parentIndentation = currentIndentation;
     while (true) {
-      if (!first) {
+      if (first) {
+        // If the first line is empty, ignore it.
+        var beginningOfComment = scanner.position;
+        spaces();
+        if (isNewline(scanner.peekChar())) {
+          _readIndentation();
+          buffer.writeCharCode($space);
+        } else {
+          buffer.write(scanner.substring(beginningOfComment));
+        }
+      } else {
         buffer.writeln();
         buffer.write(" * ");
       }
@@ -218,13 +242,14 @@ class SassParser extends StylesheetParser {
         buffer.writeCharCode($space);
       }
 
+      loop:
       while (!scanner.isDone) {
         var next = scanner.peekChar();
         switch (next) {
           case $lf:
           case $cr:
           case $ff:
-            break;
+            break loop;
 
           case $hash:
             if (scanner.peekChar(1) == $lbrace) {
@@ -241,9 +266,17 @@ class SassParser extends StylesheetParser {
       }
 
       if (_peekIndentation() <= parentIndentation) break;
+
+      // Preserve empty lines.
+      while (isNewline(scanner.peekChar(1))) {
+        scanner.readChar();
+        buffer.writeln();
+        buffer.write(" *");
+      }
+
       _readIndentation();
     }
-    buffer.write(" */");
+    if (!buffer.trailingString.trimRight().endsWith("*/")) buffer.write(" */");
 
     return new LoudComment(buffer.interpolation(scanner.spanFrom(start)));
   }
@@ -358,7 +391,7 @@ class SassParser extends StylesheetParser {
             position: scanner.position - scanner.column,
             length: scanner.column);
       }
-    } else if (_spaces == false) {
+    } else if (containsSpace && _spaces == false) {
       scanner.error("Expected tabs, was spaces.",
           position: scanner.position - scanner.column, length: scanner.column);
     }

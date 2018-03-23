@@ -47,14 +47,15 @@ class ViewMaterialYesNoButtonsComponent0 extends AppView<import2.MaterialYesNoBu
   ViewContainer _appEl_2;
   NgIf _NgIf_2_9;
   static RenderComponentType _renderType;
-  ViewMaterialYesNoButtonsComponent0(AppView<dynamic> parentView, num parentIndex) : super(import6.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckOnce) {
+  ViewMaterialYesNoButtonsComponent0(AppView<dynamic> parentView, int parentIndex) : super(import6.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckOnce) {
     rootEl = import8.document.createElement('material-yes-no-buttons');
     _renderType ??= import9.appViewUtils.createRenderType('', ViewEncapsulation.Emulated, styles$MaterialYesNoButtonsComponent);
     setupComponentType(_renderType);
   }
   @override
   ComponentRef<import2.MaterialYesNoButtonsComponent> build() {
-    final import8.HtmlElement parentRenderNode = initViewRoot(rootEl);
+    final _rootEl = rootEl;
+    final import8.HtmlElement parentRenderNode = initViewRoot(_rootEl);
     var _anchor_0 = ngAnchor.clone(false);
     parentRenderNode.append(_anchor_0);
     _appEl_0 = new ViewContainer(0, null, this, _anchor_0);
@@ -113,7 +114,7 @@ class ViewMaterialYesNoButtonsComponent0 extends AppView<import2.MaterialYesNoBu
   }
 }
 
-AppView<import2.MaterialYesNoButtonsComponent> viewFactory_MaterialYesNoButtonsComponent0(AppView<dynamic> parentView, num parentIndex) {
+AppView<import2.MaterialYesNoButtonsComponent> viewFactory_MaterialYesNoButtonsComponent0(AppView<dynamic> parentView, int parentIndex) {
   return new ViewMaterialYesNoButtonsComponent0(parentView, parentIndex);
 }
 
@@ -122,7 +123,7 @@ class _ViewMaterialYesNoButtonsComponent1 extends AppView<import2.MaterialYesNoB
   import8.Element _el_1;
   import12.ViewMaterialSpinnerComponent0 _compView_1;
   import13.MaterialSpinnerComponent _MaterialSpinnerComponent_1_5;
-  _ViewMaterialYesNoButtonsComponent1(AppView<dynamic> parentView, num parentIndex) : super(import6.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMaterialYesNoButtonsComponent1(AppView<dynamic> parentView, int parentIndex) : super(import6.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMaterialYesNoButtonsComponent0._renderType;
   }
   @override
@@ -152,7 +153,7 @@ class _ViewMaterialYesNoButtonsComponent1 extends AppView<import2.MaterialYesNoB
   }
 }
 
-AppView<import2.MaterialYesNoButtonsComponent> viewFactory_MaterialYesNoButtonsComponent1(AppView<dynamic> parentView, num parentIndex) {
+AppView<import2.MaterialYesNoButtonsComponent> viewFactory_MaterialYesNoButtonsComponent1(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewMaterialYesNoButtonsComponent1(parentView, parentIndex);
 }
 
@@ -166,7 +167,7 @@ class _ViewMaterialYesNoButtonsComponent2 extends AppView<import2.MaterialYesNoB
   bool _expr_1;
   bool _expr_2;
   var _expr_3;
-  _ViewMaterialYesNoButtonsComponent2(AppView<dynamic> parentView, num parentIndex) : super(import6.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMaterialYesNoButtonsComponent2(AppView<dynamic> parentView, int parentIndex) : super(import6.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMaterialYesNoButtonsComponent0._renderType;
   }
   @override
@@ -243,7 +244,7 @@ class _ViewMaterialYesNoButtonsComponent2 extends AppView<import2.MaterialYesNoB
   }
 }
 
-AppView<import2.MaterialYesNoButtonsComponent> viewFactory_MaterialYesNoButtonsComponent2(AppView<dynamic> parentView, num parentIndex) {
+AppView<import2.MaterialYesNoButtonsComponent> viewFactory_MaterialYesNoButtonsComponent2(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewMaterialYesNoButtonsComponent2(parentView, parentIndex);
 }
 
@@ -256,7 +257,7 @@ class _ViewMaterialYesNoButtonsComponent3 extends AppView<import2.MaterialYesNoB
   bool _expr_0;
   bool _expr_1;
   var _expr_2;
-  _ViewMaterialYesNoButtonsComponent3(AppView<dynamic> parentView, num parentIndex) : super(import6.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMaterialYesNoButtonsComponent3(AppView<dynamic> parentView, int parentIndex) : super(import6.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMaterialYesNoButtonsComponent0._renderType;
   }
   @override
@@ -328,7 +329,7 @@ class _ViewMaterialYesNoButtonsComponent3 extends AppView<import2.MaterialYesNoB
   }
 }
 
-AppView<import2.MaterialYesNoButtonsComponent> viewFactory_MaterialYesNoButtonsComponent3(AppView<dynamic> parentView, num parentIndex) {
+AppView<import2.MaterialYesNoButtonsComponent> viewFactory_MaterialYesNoButtonsComponent3(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewMaterialYesNoButtonsComponent3(parentView, parentIndex);
 }
 
@@ -337,7 +338,7 @@ const List<dynamic> styles$MaterialYesNoButtonsComponentHost = const [];
 class _ViewMaterialYesNoButtonsComponentHost0 extends AppView<dynamic> {
   ViewMaterialYesNoButtonsComponent0 _compView_0;
   import2.MaterialYesNoButtonsComponent _MaterialYesNoButtonsComponent_0_5;
-  _ViewMaterialYesNoButtonsComponentHost0(AppView<dynamic> parentView, num parentIndex) : super(import6.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
+  _ViewMaterialYesNoButtonsComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import6.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewMaterialYesNoButtonsComponent0(this, 0);
@@ -371,7 +372,7 @@ class _ViewMaterialYesNoButtonsComponentHost0 extends AppView<dynamic> {
   }
 }
 
-AppView viewFactory_MaterialYesNoButtonsComponentHost0(AppView<dynamic> parentView, num parentIndex) {
+AppView viewFactory_MaterialYesNoButtonsComponentHost0(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewMaterialYesNoButtonsComponentHost0(parentView, parentIndex);
 }
 

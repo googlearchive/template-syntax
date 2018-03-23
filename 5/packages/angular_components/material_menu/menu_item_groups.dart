@@ -66,7 +66,7 @@ import 'package:angular_components/utils/id_generator/id_generator.dart';
   // TODO(google): Change to `Visibility.local` to reduce code size.
   visibility: Visibility.all,
 )
-class MenuItemGroupsComponent implements OnInit, OnDestroy {
+class MenuItemGroupsComponent implements Focusable, OnInit, OnDestroy {
   final IdGenerator _idGenerator;
   final ChangeDetectorRef _changeDetector;
 
@@ -222,6 +222,10 @@ class MenuItemGroupsComponent implements OnInit, OnDestroy {
       _hoveredItem = null;
     }
     _subMenuOpener.cancel();
+  }
+
+  void onSubMenuItemSelected(MenuItem item) {
+    _selected.add(item);
   }
 
   void select(MenuItem item, MenuItemGroup group) {
@@ -444,6 +448,11 @@ class MenuItemGroupsComponent implements OnInit, OnDestroy {
         break;
       }
     }
+  }
+
+  @override
+  void focus() {
+    _focusActiveItem();
   }
 
   void _openSubMenuOnHover() {

@@ -55,14 +55,15 @@ class ViewHeroFormComponent0 extends AppView<import1.HeroFormComponent> {
   var _expr_3;
   var _expr_4;
   static RenderComponentType _renderType;
-  ViewHeroFormComponent0(AppView<dynamic> parentView, num parentIndex) : super(import9.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  ViewHeroFormComponent0(AppView<dynamic> parentView, int parentIndex) : super(import9.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     rootEl = import2.document.createElement('hero-form');
     _renderType ??= import11.appViewUtils.createRenderType('', ViewEncapsulation.Emulated, styles$HeroFormComponent);
     setupComponentType(_renderType);
   }
   @override
   ComponentRef<import1.HeroFormComponent> build() {
-    final import2.HtmlElement parentRenderNode = initViewRoot(rootEl);
+    final _rootEl = rootEl;
+    final import2.HtmlElement parentRenderNode = initViewRoot(_rootEl);
     var doc = import2.document;
     _el_0 = createDivAndAppend(doc, parentRenderNode);
     createAttr(_el_0, 'id', 'heroForm');
@@ -121,9 +122,6 @@ class ViewHeroFormComponent0 extends AppView<import1.HeroFormComponent> {
     }
     if (((identical(token, import6.NgControlName) || identical(token, import16.NgControl)) && (5 == nodeIndex))) {
       return _NgControlName_5_8;
-    }
-    if ((identical(token, import7.RequiredValidator) && (5 == nodeIndex))) {
-      return _RequiredValidator_5_9;
     }
     if ((identical(token, import3.NgForm) && ((1 <= nodeIndex) && (nodeIndex <= 7)))) {
       return _NgForm_1_5;
@@ -190,7 +188,7 @@ class ViewHeroFormComponent0 extends AppView<import1.HeroFormComponent> {
   }
 }
 
-AppView<import1.HeroFormComponent> viewFactory_HeroFormComponent0(AppView<dynamic> parentView, num parentIndex) {
+AppView<import1.HeroFormComponent> viewFactory_HeroFormComponent0(AppView<dynamic> parentView, int parentIndex) {
   return new ViewHeroFormComponent0(parentView, parentIndex);
 }
 
@@ -199,7 +197,7 @@ const List<dynamic> styles$HeroFormComponentHost = const [];
 class _ViewHeroFormComponentHost0 extends AppView<dynamic> {
   ViewHeroFormComponent0 _compView_0;
   import1.HeroFormComponent _HeroFormComponent_0_5;
-  _ViewHeroFormComponentHost0(AppView<dynamic> parentView, num parentIndex) : super(import9.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
+  _ViewHeroFormComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import9.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewHeroFormComponent0(this, 0);
@@ -221,7 +219,7 @@ class _ViewHeroFormComponentHost0 extends AppView<dynamic> {
   }
 }
 
-AppView viewFactory_HeroFormComponentHost0(AppView<dynamic> parentView, num parentIndex) {
+AppView viewFactory_HeroFormComponentHost0(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewHeroFormComponentHost0(parentView, parentIndex);
 }
 

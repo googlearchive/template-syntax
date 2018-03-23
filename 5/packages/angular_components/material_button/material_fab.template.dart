@@ -40,7 +40,7 @@ class ViewMaterialFabComponent0 extends AppView<import2.MaterialFabComponent> {
   bool _expr_5;
   bool _expr_6;
   static RenderComponentType _renderType;
-  ViewMaterialFabComponent0(AppView<dynamic> parentView, num parentIndex) : super(import7.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckOnce) {
+  ViewMaterialFabComponent0(AppView<dynamic> parentView, int parentIndex) : super(import7.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckOnce) {
     rootEl = import3.document.createElement('material-fab');
     createAttr(rootEl, 'role', 'button');
     createAttr(rootEl, 'animated', 'true');
@@ -50,7 +50,8 @@ class ViewMaterialFabComponent0 extends AppView<import2.MaterialFabComponent> {
   @override
   ComponentRef<import2.MaterialFabComponent> build() {
     final import2.MaterialFabComponent _ctx = ctx;
-    final import3.HtmlElement parentRenderNode = initViewRoot(rootEl);
+    final _rootEl = rootEl;
+    final import3.HtmlElement parentRenderNode = initViewRoot(_rootEl);
     var doc = import3.document;
     _el_0 = createDivAndAppend(doc, parentRenderNode);
     _el_0.className = 'content';
@@ -65,12 +66,12 @@ class ViewMaterialFabComponent0 extends AppView<import2.MaterialFabComponent> {
     _el_1.addEventListener('mousedown', eventHandler1(ctx.onMouseDown));
     _el_1.addEventListener('mouseup', eventHandler1(ctx.onMouseUp));
     init(const [], null);
-    rootEl.addEventListener('click', eventHandler1(_ctx.handleClick));
-    rootEl.addEventListener('keypress', eventHandler1(_ctx.handleKeyPress));
-    rootEl.addEventListener('mousedown', eventHandler1(_ctx.onMouseDown));
-    rootEl.addEventListener('mouseup', eventHandler1(_ctx.onMouseUp));
-    rootEl.addEventListener('focus', eventHandler1(_ctx.onFocus));
-    rootEl.addEventListener('blur', eventHandler1(_ctx.onBlur));
+    _rootEl.addEventListener('click', eventHandler1(_ctx.handleClick));
+    _rootEl.addEventListener('keypress', eventHandler1(_ctx.handleKeyPress));
+    _rootEl.addEventListener('mousedown', eventHandler1(_ctx.onMouseDown));
+    _rootEl.addEventListener('mouseup', eventHandler1(_ctx.onMouseUp));
+    _rootEl.addEventListener('focus', eventHandler1(_ctx.onFocus));
+    _rootEl.addEventListener('blur', eventHandler1(_ctx.onBlur));
     return null;
   }
 
@@ -129,7 +130,7 @@ class ViewMaterialFabComponent0 extends AppView<import2.MaterialFabComponent> {
   }
 }
 
-AppView<import2.MaterialFabComponent> viewFactory_MaterialFabComponent0(AppView<dynamic> parentView, num parentIndex) {
+AppView<import2.MaterialFabComponent> viewFactory_MaterialFabComponent0(AppView<dynamic> parentView, int parentIndex) {
   return new ViewMaterialFabComponent0(parentView, parentIndex);
 }
 
@@ -138,7 +139,7 @@ const List<dynamic> styles$MaterialFabComponentHost = const [];
 class _ViewMaterialFabComponentHost0 extends AppView<dynamic> {
   ViewMaterialFabComponent0 _compView_0;
   import2.MaterialFabComponent _MaterialFabComponent_0_5;
-  _ViewMaterialFabComponentHost0(AppView<dynamic> parentView, num parentIndex) : super(import7.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
+  _ViewMaterialFabComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import7.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewMaterialFabComponent0(this, 0);
@@ -166,7 +167,7 @@ class _ViewMaterialFabComponentHost0 extends AppView<dynamic> {
   }
 }
 
-AppView viewFactory_MaterialFabComponentHost0(AppView<dynamic> parentView, num parentIndex) {
+AppView viewFactory_MaterialFabComponentHost0(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewMaterialFabComponentHost0(parentView, parentIndex);
 }
 

@@ -82,7 +82,7 @@ class ViewMaterialSelectItemComponent0 extends AppView<import2.MaterialSelectIte
   bool _expr_10;
   bool _expr_11;
   static RenderComponentType _renderType;
-  ViewMaterialSelectItemComponent0(AppView<dynamic> parentView, num parentIndex) : super(import6.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  ViewMaterialSelectItemComponent0(AppView<dynamic> parentView, int parentIndex) : super(import6.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     rootEl = import8.document.createElement('material-select-item');
     createAttr(rootEl, 'role', 'option');
     rootEl.className = 'item';
@@ -93,7 +93,8 @@ class ViewMaterialSelectItemComponent0 extends AppView<import2.MaterialSelectIte
   @override
   ComponentRef<import2.MaterialSelectItemComponent> build() {
     final import2.MaterialSelectItemComponent _ctx = ctx;
-    final import8.HtmlElement parentRenderNode = initViewRoot(rootEl);
+    final _rootEl = rootEl;
+    final import8.HtmlElement parentRenderNode = initViewRoot(_rootEl);
     var _anchor_0 = ngAnchor.clone(false);
     parentRenderNode.append(_anchor_0);
     _appEl_0 = new ViewContainer(0, null, this, _anchor_0);
@@ -122,10 +123,10 @@ class ViewMaterialSelectItemComponent0 extends AppView<import2.MaterialSelectIte
     _NgIf_6_9 = new NgIf(_appEl_6, _TemplateRef_6_8);
     project(parentRenderNode, 0);
     init(const [], null);
-    rootEl.addEventListener('mouseenter', eventHandler0(_ctx.onMouseEnter));
-    rootEl.addEventListener('mouseleave', eventHandler0(_ctx.onMouseLeave));
-    rootEl.addEventListener('click', eventHandler1(_ctx.handleClick));
-    rootEl.addEventListener('keypress', eventHandler1(_ctx.handleKeyPress));
+    _rootEl.addEventListener('mouseenter', eventHandler0(_ctx.onMouseEnter));
+    _rootEl.addEventListener('mouseleave', eventHandler0(_ctx.onMouseLeave));
+    _rootEl.addEventListener('click', eventHandler1(_ctx.handleClick));
+    _rootEl.addEventListener('keypress', eventHandler1(_ctx.handleKeyPress));
     return null;
   }
 
@@ -194,14 +195,14 @@ class ViewMaterialSelectItemComponent0 extends AppView<import2.MaterialSelectIte
   }
 }
 
-AppView<import2.MaterialSelectItemComponent> viewFactory_MaterialSelectItemComponent0(AppView<dynamic> parentView, num parentIndex) {
+AppView<import2.MaterialSelectItemComponent> viewFactory_MaterialSelectItemComponent0(AppView<dynamic> parentView, int parentIndex) {
   return new ViewMaterialSelectItemComponent0(parentView, parentIndex);
 }
 
 class _ViewMaterialSelectItemComponent1 extends AppView<import2.MaterialSelectItemComponent> {
   import8.DivElement _el_0;
   var _expr_0;
-  _ViewMaterialSelectItemComponent1(AppView<dynamic> parentView, num parentIndex) : super(import6.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMaterialSelectItemComponent1(AppView<dynamic> parentView, int parentIndex) : super(import6.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMaterialSelectItemComponent0._renderType;
   }
   @override
@@ -225,7 +226,7 @@ class _ViewMaterialSelectItemComponent1 extends AppView<import2.MaterialSelectIt
   }
 }
 
-AppView<import2.MaterialSelectItemComponent> viewFactory_MaterialSelectItemComponent1(AppView<dynamic> parentView, num parentIndex) {
+AppView<import2.MaterialSelectItemComponent> viewFactory_MaterialSelectItemComponent1(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewMaterialSelectItemComponent1(parentView, parentIndex);
 }
 
@@ -234,7 +235,7 @@ class _ViewMaterialSelectItemComponent2 extends AppView<import2.MaterialSelectIt
   NgIf _NgIf_0_9;
   ViewContainer _appEl_2;
   NgIf _NgIf_2_9;
-  _ViewMaterialSelectItemComponent2(AppView<dynamic> parentView, num parentIndex) : super(import6.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMaterialSelectItemComponent2(AppView<dynamic> parentView, int parentIndex) : super(import6.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMaterialSelectItemComponent0._renderType;
   }
   @override
@@ -268,7 +269,7 @@ class _ViewMaterialSelectItemComponent2 extends AppView<import2.MaterialSelectIt
   }
 }
 
-AppView<import2.MaterialSelectItemComponent> viewFactory_MaterialSelectItemComponent2(AppView<dynamic> parentView, num parentIndex) {
+AppView<import2.MaterialSelectItemComponent> viewFactory_MaterialSelectItemComponent2(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewMaterialSelectItemComponent2(parentView, parentIndex);
 }
 
@@ -279,7 +280,7 @@ class _ViewMaterialSelectItemComponent3 extends AppView<import2.MaterialSelectIt
   var _expr_0;
   bool _expr_1;
   bool _expr_2;
-  _ViewMaterialSelectItemComponent3(AppView<dynamic> parentView, num parentIndex) : super(import6.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMaterialSelectItemComponent3(AppView<dynamic> parentView, int parentIndex) : super(import6.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMaterialSelectItemComponent0._renderType;
   }
   @override
@@ -330,7 +331,7 @@ class _ViewMaterialSelectItemComponent3 extends AppView<import2.MaterialSelectIt
   }
 }
 
-AppView<import2.MaterialSelectItemComponent> viewFactory_MaterialSelectItemComponent3(AppView<dynamic> parentView, num parentIndex) {
+AppView<import2.MaterialSelectItemComponent> viewFactory_MaterialSelectItemComponent3(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewMaterialSelectItemComponent3(parentView, parentIndex);
 }
 
@@ -339,7 +340,7 @@ class _ViewMaterialSelectItemComponent4 extends AppView<import2.MaterialSelectIt
   ViewContainer _appEl_1;
   NgIf _NgIf_1_9;
   var _expr_0;
-  _ViewMaterialSelectItemComponent4(AppView<dynamic> parentView, num parentIndex) : super(import6.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMaterialSelectItemComponent4(AppView<dynamic> parentView, int parentIndex) : super(import6.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMaterialSelectItemComponent0._renderType;
   }
   @override
@@ -375,7 +376,7 @@ class _ViewMaterialSelectItemComponent4 extends AppView<import2.MaterialSelectIt
   }
 }
 
-AppView<import2.MaterialSelectItemComponent> viewFactory_MaterialSelectItemComponent4(AppView<dynamic> parentView, num parentIndex) {
+AppView<import2.MaterialSelectItemComponent> viewFactory_MaterialSelectItemComponent4(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewMaterialSelectItemComponent4(parentView, parentIndex);
 }
 
@@ -383,7 +384,7 @@ class _ViewMaterialSelectItemComponent5 extends AppView<import2.MaterialSelectIt
   import8.Element _el_0;
   import14.ViewGlyphComponent0 _compView_0;
   import15.GlyphComponent _GlyphComponent_0_5;
-  _ViewMaterialSelectItemComponent5(AppView<dynamic> parentView, num parentIndex) : super(import6.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMaterialSelectItemComponent5(AppView<dynamic> parentView, int parentIndex) : super(import6.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMaterialSelectItemComponent0._renderType;
   }
   @override
@@ -421,7 +422,7 @@ class _ViewMaterialSelectItemComponent5 extends AppView<import2.MaterialSelectIt
   }
 }
 
-AppView<import2.MaterialSelectItemComponent> viewFactory_MaterialSelectItemComponent5(AppView<dynamic> parentView, num parentIndex) {
+AppView<import2.MaterialSelectItemComponent> viewFactory_MaterialSelectItemComponent5(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewMaterialSelectItemComponent5(parentView, parentIndex);
 }
 
@@ -429,7 +430,7 @@ class _ViewMaterialSelectItemComponent6 extends AppView<import2.MaterialSelectIt
   import8.Element _el_0;
   import8.Text _text_1;
   var _expr_0;
-  _ViewMaterialSelectItemComponent6(AppView<dynamic> parentView, num parentIndex) : super(import6.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMaterialSelectItemComponent6(AppView<dynamic> parentView, int parentIndex) : super(import6.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMaterialSelectItemComponent0._renderType;
   }
   @override
@@ -455,7 +456,7 @@ class _ViewMaterialSelectItemComponent6 extends AppView<import2.MaterialSelectIt
   }
 }
 
-AppView<import2.MaterialSelectItemComponent> viewFactory_MaterialSelectItemComponent6(AppView<dynamic> parentView, num parentIndex) {
+AppView<import2.MaterialSelectItemComponent> viewFactory_MaterialSelectItemComponent6(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewMaterialSelectItemComponent6(parentView, parentIndex);
 }
 
@@ -467,7 +468,7 @@ class _ViewMaterialSelectItemComponent7 extends AppView<import2.MaterialSelectIt
   var _expr_0;
   var _expr_1;
   var _expr_2;
-  _ViewMaterialSelectItemComponent7(AppView<dynamic> parentView, num parentIndex) : super(import6.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMaterialSelectItemComponent7(AppView<dynamic> parentView, int parentIndex) : super(import6.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMaterialSelectItemComponent0._renderType;
   }
   @override
@@ -529,7 +530,7 @@ class _ViewMaterialSelectItemComponent7 extends AppView<import2.MaterialSelectIt
   }
 }
 
-AppView<import2.MaterialSelectItemComponent> viewFactory_MaterialSelectItemComponent7(AppView<dynamic> parentView, num parentIndex) {
+AppView<import2.MaterialSelectItemComponent> viewFactory_MaterialSelectItemComponent7(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewMaterialSelectItemComponent7(parentView, parentIndex);
 }
 
@@ -538,7 +539,7 @@ const List<dynamic> styles$MaterialSelectItemComponentHost = const [];
 class _ViewMaterialSelectItemComponentHost0 extends AppView<dynamic> {
   ViewMaterialSelectItemComponent0 _compView_0;
   import2.MaterialSelectItemComponent _MaterialSelectItemComponent_0_5;
-  _ViewMaterialSelectItemComponentHost0(AppView<dynamic> parentView, num parentIndex) : super(import6.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
+  _ViewMaterialSelectItemComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import6.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewMaterialSelectItemComponent0(this, 0);
@@ -571,7 +572,7 @@ class _ViewMaterialSelectItemComponentHost0 extends AppView<dynamic> {
   }
 }
 
-AppView viewFactory_MaterialSelectItemComponentHost0(AppView<dynamic> parentView, num parentIndex) {
+AppView viewFactory_MaterialSelectItemComponentHost0(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewMaterialSelectItemComponentHost0(parentView, parentIndex);
 }
 

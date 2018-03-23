@@ -112,7 +112,7 @@ class ViewMaterialInputComponent0 extends AppView<import2.MaterialInputComponent
   bool _expr_25;
   bool _expr_26;
   static RenderComponentType _renderType;
-  ViewMaterialInputComponent0(AppView<dynamic> parentView, num parentIndex) : super(import11.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckOnce) {
+  ViewMaterialInputComponent0(AppView<dynamic> parentView, int parentIndex) : super(import11.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckOnce) {
     rootEl = import3.document.createElement('material-input');
     rootEl.className = 'themeable';
     createAttr(rootEl, 'tabIndex', '-1');
@@ -122,7 +122,8 @@ class ViewMaterialInputComponent0 extends AppView<import2.MaterialInputComponent
   @override
   ComponentRef<import2.MaterialInputComponent> build() {
     final import2.MaterialInputComponent _ctx = ctx;
-    final import3.HtmlElement parentRenderNode = initViewRoot(rootEl);
+    final _rootEl = rootEl;
+    final import3.HtmlElement parentRenderNode = initViewRoot(_rootEl);
     var doc = import3.document;
     _el_0 = createDivAndAppend(doc, parentRenderNode);
     _el_0.className = 'baseline';
@@ -196,7 +197,7 @@ class ViewMaterialInputComponent0 extends AppView<import2.MaterialInputComponent
     ctx.inputEl = new ElementRef(_el_8);
     ctx.popupSourceEl = new ElementRef(_el_0);
     init(const [], null);
-    rootEl.addEventListener('focus', eventHandler0(_ctx.focus));
+    _rootEl.addEventListener('focus', eventHandler0(_ctx.focus));
     return null;
   }
 
@@ -378,7 +379,7 @@ class ViewMaterialInputComponent0 extends AppView<import2.MaterialInputComponent
   }
 }
 
-AppView<import2.MaterialInputComponent> viewFactory_MaterialInputComponent0(AppView<dynamic> parentView, num parentIndex) {
+AppView<import2.MaterialInputComponent> viewFactory_MaterialInputComponent0(AppView<dynamic> parentView, int parentIndex) {
   return new ViewMaterialInputComponent0(parentView, parentIndex);
 }
 
@@ -390,7 +391,7 @@ class _ViewMaterialInputComponent1 extends AppView<import2.MaterialInputComponen
   bool _expr_0;
   var _expr_1;
   var _expr_2;
-  _ViewMaterialInputComponent1(AppView<dynamic> parentView, num parentIndex) : super(import11.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMaterialInputComponent1(AppView<dynamic> parentView, int parentIndex) : super(import11.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMaterialInputComponent0._renderType;
   }
   @override
@@ -443,7 +444,7 @@ class _ViewMaterialInputComponent1 extends AppView<import2.MaterialInputComponen
   }
 }
 
-AppView<import2.MaterialInputComponent> viewFactory_MaterialInputComponent1(AppView<dynamic> parentView, num parentIndex) {
+AppView<import2.MaterialInputComponent> viewFactory_MaterialInputComponent1(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewMaterialInputComponent1(parentView, parentIndex);
 }
 
@@ -452,7 +453,7 @@ class _ViewMaterialInputComponent2 extends AppView<import2.MaterialInputComponen
   import3.Text _text_1;
   bool _expr_0;
   var _expr_1;
-  _ViewMaterialInputComponent2(AppView<dynamic> parentView, num parentIndex) : super(import11.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMaterialInputComponent2(AppView<dynamic> parentView, int parentIndex) : super(import11.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMaterialInputComponent0._renderType;
   }
   @override
@@ -483,7 +484,7 @@ class _ViewMaterialInputComponent2 extends AppView<import2.MaterialInputComponen
   }
 }
 
-AppView<import2.MaterialInputComponent> viewFactory_MaterialInputComponent2(AppView<dynamic> parentView, num parentIndex) {
+AppView<import2.MaterialInputComponent> viewFactory_MaterialInputComponent2(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewMaterialInputComponent2(parentView, parentIndex);
 }
 
@@ -492,7 +493,7 @@ class _ViewMaterialInputComponent3 extends AppView<import2.MaterialInputComponen
   import3.Text _text_1;
   bool _expr_0;
   var _expr_1;
-  _ViewMaterialInputComponent3(AppView<dynamic> parentView, num parentIndex) : super(import11.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMaterialInputComponent3(AppView<dynamic> parentView, int parentIndex) : super(import11.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMaterialInputComponent0._renderType;
   }
   @override
@@ -523,7 +524,7 @@ class _ViewMaterialInputComponent3 extends AppView<import2.MaterialInputComponen
   }
 }
 
-AppView<import2.MaterialInputComponent> viewFactory_MaterialInputComponent3(AppView<dynamic> parentView, num parentIndex) {
+AppView<import2.MaterialInputComponent> viewFactory_MaterialInputComponent3(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewMaterialInputComponent3(parentView, parentIndex);
 }
 
@@ -535,7 +536,7 @@ class _ViewMaterialInputComponent4 extends AppView<import2.MaterialInputComponen
   bool _expr_0;
   var _expr_1;
   var _expr_2;
-  _ViewMaterialInputComponent4(AppView<dynamic> parentView, num parentIndex) : super(import11.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMaterialInputComponent4(AppView<dynamic> parentView, int parentIndex) : super(import11.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMaterialInputComponent0._renderType;
   }
   @override
@@ -588,7 +589,7 @@ class _ViewMaterialInputComponent4 extends AppView<import2.MaterialInputComponen
   }
 }
 
-AppView<import2.MaterialInputComponent> viewFactory_MaterialInputComponent4(AppView<dynamic> parentView, num parentIndex) {
+AppView<import2.MaterialInputComponent> viewFactory_MaterialInputComponent4(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewMaterialInputComponent4(parentView, parentIndex);
 }
 
@@ -607,7 +608,7 @@ class _ViewMaterialInputComponent5 extends AppView<import2.MaterialInputComponen
   var _expr_1;
   var _expr_2;
   var _expr_3;
-  _ViewMaterialInputComponent5(AppView<dynamic> parentView, num parentIndex) : super(import11.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMaterialInputComponent5(AppView<dynamic> parentView, int parentIndex) : super(import11.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMaterialInputComponent0._renderType;
   }
   @override
@@ -688,7 +689,7 @@ class _ViewMaterialInputComponent5 extends AppView<import2.MaterialInputComponen
   }
 }
 
-AppView<import2.MaterialInputComponent> viewFactory_MaterialInputComponent5(AppView<dynamic> parentView, num parentIndex) {
+AppView<import2.MaterialInputComponent> viewFactory_MaterialInputComponent5(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewMaterialInputComponent5(parentView, parentIndex);
 }
 
@@ -699,7 +700,7 @@ class _ViewMaterialInputComponent6 extends AppView<import2.MaterialInputComponen
   bool _expr_1;
   var _expr_2;
   var _expr_3;
-  _ViewMaterialInputComponent6(AppView<dynamic> parentView, num parentIndex) : super(import11.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMaterialInputComponent6(AppView<dynamic> parentView, int parentIndex) : super(import11.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMaterialInputComponent0._renderType;
   }
   @override
@@ -741,7 +742,7 @@ class _ViewMaterialInputComponent6 extends AppView<import2.MaterialInputComponen
   }
 }
 
-AppView<import2.MaterialInputComponent> viewFactory_MaterialInputComponent6(AppView<dynamic> parentView, num parentIndex) {
+AppView<import2.MaterialInputComponent> viewFactory_MaterialInputComponent6(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewMaterialInputComponent6(parentView, parentIndex);
 }
 
@@ -749,7 +750,7 @@ class _ViewMaterialInputComponent7 extends AppView<import2.MaterialInputComponen
   import3.DivElement _el_0;
   import3.Text _text_1;
   var _expr_0;
-  _ViewMaterialInputComponent7(AppView<dynamic> parentView, num parentIndex) : super(import11.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMaterialInputComponent7(AppView<dynamic> parentView, int parentIndex) : super(import11.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMaterialInputComponent0._renderType;
   }
   @override
@@ -775,13 +776,13 @@ class _ViewMaterialInputComponent7 extends AppView<import2.MaterialInputComponen
   }
 }
 
-AppView<import2.MaterialInputComponent> viewFactory_MaterialInputComponent7(AppView<dynamic> parentView, num parentIndex) {
+AppView<import2.MaterialInputComponent> viewFactory_MaterialInputComponent7(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewMaterialInputComponent7(parentView, parentIndex);
 }
 
 class _ViewMaterialInputComponent8 extends AppView<import2.MaterialInputComponent> {
   import3.DivElement _el_0;
-  _ViewMaterialInputComponent8(AppView<dynamic> parentView, num parentIndex) : super(import11.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMaterialInputComponent8(AppView<dynamic> parentView, int parentIndex) : super(import11.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMaterialInputComponent0._renderType;
   }
   @override
@@ -803,7 +804,7 @@ class _ViewMaterialInputComponent8 extends AppView<import2.MaterialInputComponen
   }
 }
 
-AppView<import2.MaterialInputComponent> viewFactory_MaterialInputComponent8(AppView<dynamic> parentView, num parentIndex) {
+AppView<import2.MaterialInputComponent> viewFactory_MaterialInputComponent8(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewMaterialInputComponent8(parentView, parentIndex);
 }
 
@@ -812,7 +813,7 @@ class _ViewMaterialInputComponent9 extends AppView<import2.MaterialInputComponen
   import3.Text _text_1;
   bool _expr_0;
   var _expr_1;
-  _ViewMaterialInputComponent9(AppView<dynamic> parentView, num parentIndex) : super(import11.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMaterialInputComponent9(AppView<dynamic> parentView, int parentIndex) : super(import11.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMaterialInputComponent0._renderType;
   }
   @override
@@ -844,7 +845,7 @@ class _ViewMaterialInputComponent9 extends AppView<import2.MaterialInputComponen
   }
 }
 
-AppView<import2.MaterialInputComponent> viewFactory_MaterialInputComponent9(AppView<dynamic> parentView, num parentIndex) {
+AppView<import2.MaterialInputComponent> viewFactory_MaterialInputComponent9(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewMaterialInputComponent9(parentView, parentIndex);
 }
 
@@ -855,7 +856,7 @@ class _ViewMaterialInputComponentHost0 extends AppView<dynamic> {
   import23.DeferredValidator _DeferredValidator_0_5;
   import2.MaterialInputComponent _MaterialInputComponent_0_6;
   List<dynamic> __NgValidators_0_7;
-  _ViewMaterialInputComponentHost0(AppView<dynamic> parentView, num parentIndex) : super(import11.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
+  _ViewMaterialInputComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import11.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   List<dynamic> get _NgValidators_0_7 {
     if ((this.__NgValidators_0_7 == null)) {
       (__NgValidators_0_7 = [this._DeferredValidator_0_5]);
@@ -908,7 +909,7 @@ class _ViewMaterialInputComponentHost0 extends AppView<dynamic> {
   }
 }
 
-AppView viewFactory_MaterialInputComponentHost0(AppView<dynamic> parentView, num parentIndex) {
+AppView viewFactory_MaterialInputComponentHost0(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewMaterialInputComponentHost0(parentView, parentIndex);
 }
 

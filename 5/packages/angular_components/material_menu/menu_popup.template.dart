@@ -14,6 +14,7 @@ import 'package:angular_components/material_menu/menu_item_groups.dart';
 import 'package:angular_components/material_menu/menu_popup_wrapper.dart';
 import 'package:angular_components/material_menu/menu_root.dart';
 import 'package:angular_components/material_popup/material_popup.dart';
+import 'package:angular_components/mixins/focusable_mixin.dart';
 import 'package:angular_components/model/menu/menu.dart';
 import 'package:angular/src/di/reflector.dart' as _ngRef;
 import 'package:angular/angular.template.dart' as _ref0;
@@ -25,7 +26,8 @@ import 'package:angular_components/material_menu/menu_item_groups.template.dart'
 import 'package:angular_components/material_menu/menu_popup_wrapper.template.dart' as _ref6;
 import 'package:angular_components/material_menu/menu_root.template.dart' as _ref7;
 import 'package:angular_components/material_popup/material_popup.template.dart' as _ref8;
-import 'package:angular_components/model/menu/menu.template.dart' as _ref9;
+import 'package:angular_components/mixins/focusable_mixin.template.dart' as _ref9;
+import 'package:angular_components/model/menu/menu.template.dart' as _ref10;
 import 'package:angular_components/material_menu/menu_popup.scss.css.shim.dart' as import0;
 import 'package:angular/src/core/linker/app_view.dart';
 import 'menu_popup.dart' as import2;
@@ -65,6 +67,7 @@ import '../utils/id_generator/id_generator.dart' as import34;
 const List<dynamic> styles$MenuPopupComponent = const [import0.styles];
 
 class ViewMenuPopupComponent0 extends AppView<import2.MenuPopupComponent> {
+  bool _query_MenuItemGroupsComponent_1_0_isDirty = true;
   import3.Element _el_1;
   import4.ViewMaterialPopupComponent0 _compView_1;
   ViewContainer _appEl_1;
@@ -77,7 +80,7 @@ class ViewMenuPopupComponent0 extends AppView<import2.MenuPopupComponent> {
   var _expr_2;
   bool _expr_3;
   static RenderComponentType _renderType;
-  ViewMenuPopupComponent0(AppView<dynamic> parentView, num parentIndex) : super(import9.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckOnce) {
+  ViewMenuPopupComponent0(AppView<dynamic> parentView, int parentIndex) : super(import9.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckOnce) {
     rootEl = import3.document.createElement('menu-popup');
     _renderType ??= import11.appViewUtils.createRenderType('', ViewEncapsulation.Emulated, styles$MenuPopupComponent);
     setupComponentType(_renderType);
@@ -98,7 +101,8 @@ class ViewMenuPopupComponent0 extends AppView<import2.MenuPopupComponent> {
 
   @override
   ComponentRef<import2.MenuPopupComponent> build() {
-    final import3.HtmlElement parentRenderNode = initViewRoot(rootEl);
+    final _rootEl = rootEl;
+    final import3.HtmlElement parentRenderNode = initViewRoot(_rootEl);
     import3.Text _text_0 = new import3.Text('\n');
     parentRenderNode.append(_text_0);
     _compView_1 = new import4.ViewMaterialPopupComponent0(this, 1);
@@ -168,6 +172,16 @@ class ViewMenuPopupComponent0 extends AppView<import2.MenuPopupComponent> {
     }
     _appEl_1.detectChangesInNestedViews();
     _appEl_4.detectChangesInNestedViews();
+    if (_query_MenuItemGroupsComponent_1_0_isDirty) {
+      ctx.menuItemGroups = (_appEl_4.mapNestedViews((_ViewMenuPopupComponent1 nestedView) {
+        return [nestedView._MenuItemGroupsComponent_2_8];
+      }).isNotEmpty
+          ? _appEl_4.mapNestedViews((_ViewMenuPopupComponent1 nestedView) {
+              return [nestedView._MenuItemGroupsComponent_2_8];
+            }).first
+          : null);
+      _query_MenuItemGroupsComponent_1_0_isDirty = false;
+    }
     _compView_1.detectHostChanges(firstCheck);
     _compView_1.detectChanges();
     if (firstCheck) {
@@ -189,7 +203,7 @@ class ViewMenuPopupComponent0 extends AppView<import2.MenuPopupComponent> {
   }
 }
 
-AppView<import2.MenuPopupComponent> viewFactory_MenuPopupComponent0(AppView<dynamic> parentView, num parentIndex) {
+AppView<import2.MenuPopupComponent> viewFactory_MenuPopupComponent0(AppView<dynamic> parentView, int parentIndex) {
   return new ViewMenuPopupComponent0(parentView, parentIndex);
 }
 
@@ -205,7 +219,7 @@ class _ViewMenuPopupComponent1 extends AppView<import2.MenuPopupComponent> {
   import31.MenuItemGroupsComponent _MenuItemGroupsComponent_2_8;
   var _expr_0;
   var _expr_2;
-  _ViewMenuPopupComponent1(AppView<dynamic> parentView, num parentIndex) : super(import9.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMenuPopupComponent1(AppView<dynamic> parentView, int parentIndex) : super(import9.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMenuPopupComponent0._renderType;
   }
   @override
@@ -297,6 +311,11 @@ class _ViewMenuPopupComponent1 extends AppView<import2.MenuPopupComponent> {
   }
 
   @override
+  void dirtyParentQueriesInternal() {
+    (parentView as ViewMenuPopupComponent0)._query_MenuItemGroupsComponent_1_0_isDirty = true;
+  }
+
+  @override
   void destroyInternal() {
     _compView_0?.destroy();
     _compView_2?.destroy();
@@ -305,7 +324,7 @@ class _ViewMenuPopupComponent1 extends AppView<import2.MenuPopupComponent> {
   }
 }
 
-AppView<import2.MenuPopupComponent> viewFactory_MenuPopupComponent1(AppView<dynamic> parentView, num parentIndex) {
+AppView<import2.MenuPopupComponent> viewFactory_MenuPopupComponent1(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewMenuPopupComponent1(parentView, parentIndex);
 }
 
@@ -314,7 +333,7 @@ const List<dynamic> styles$MenuPopupComponentHost = const [];
 class _ViewMenuPopupComponentHost0 extends AppView<dynamic> {
   ViewMenuPopupComponent0 _compView_0;
   import2.MenuPopupComponent _MenuPopupComponent_0_5;
-  _ViewMenuPopupComponentHost0(AppView<dynamic> parentView, num parentIndex) : super(import9.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
+  _ViewMenuPopupComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import9.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewMenuPopupComponent0(this, 0);
@@ -348,7 +367,7 @@ class _ViewMenuPopupComponentHost0 extends AppView<dynamic> {
   }
 }
 
-AppView viewFactory_MenuPopupComponentHost0(AppView<dynamic> parentView, num parentIndex) {
+AppView viewFactory_MenuPopupComponentHost0(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewMenuPopupComponentHost0(parentView, parentIndex);
 }
 
@@ -372,4 +391,5 @@ void initReflector() {
   _ref7.initReflector();
   _ref8.initReflector();
   _ref9.initReflector();
+  _ref10.initReflector();
 }

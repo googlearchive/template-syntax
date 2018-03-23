@@ -30,6 +30,9 @@
   height: 32px;
   font-size: 13px;
 }
+:host[compact]:not([icon]) {
+  padding: 0 8px;
+}
 :host[disabled] {
   color: rgba(0, 0, 0, 0.26);
   cursor: not-allowed;
@@ -90,6 +93,10 @@
 :host[raised][disabled].acx-theme-dark {
   background: rgba(255, 255, 255, 0.12);
 }
+:host[raised].highlighted:not([disabled]) {
+  background-color: #4285f4;
+  color: #fff;
+}
 :host[no-ink] material-ripple {
   display: none;
 }
@@ -119,7 +126,7 @@
   margin: 0;
   padding: 0 16px;
 }
-:host.text-wrap ::ng-deep > .content {
+:host.text-wrap ::ng-deep .content {
   text-overflow: initial;
   white-space: initial;
 }

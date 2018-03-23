@@ -59,14 +59,15 @@ class ViewMaterialInkTooltipComponent0 extends AppView<import2.MaterialInkToolti
   ViewContainer _appEl_1;
   NgIf _NgIf_1_9;
   static RenderComponentType _renderType;
-  ViewMaterialInkTooltipComponent0(AppView<dynamic> parentView, num parentIndex) : super(import6.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckOnce) {
+  ViewMaterialInkTooltipComponent0(AppView<dynamic> parentView, int parentIndex) : super(import6.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckOnce) {
     rootEl = import8.document.createElement('material-tooltip-text');
     _renderType ??= import9.appViewUtils.createRenderType('', ViewEncapsulation.Emulated, styles$MaterialInkTooltipComponent);
     setupComponentType(_renderType);
   }
   @override
   ComponentRef<import2.MaterialInkTooltipComponent> build() {
-    final import8.HtmlElement parentRenderNode = initViewRoot(rootEl);
+    final _rootEl = rootEl;
+    final import8.HtmlElement parentRenderNode = initViewRoot(_rootEl);
     import8.Text _text_0 = new import8.Text('        ');
     parentRenderNode.append(_text_0);
     var _anchor_1 = ngAnchor.clone(false);
@@ -91,7 +92,7 @@ class ViewMaterialInkTooltipComponent0 extends AppView<import2.MaterialInkToolti
   }
 }
 
-AppView<import2.MaterialInkTooltipComponent> viewFactory_MaterialInkTooltipComponent0(AppView<dynamic> parentView, num parentIndex) {
+AppView<import2.MaterialInkTooltipComponent> viewFactory_MaterialInkTooltipComponent0(AppView<dynamic> parentView, int parentIndex) {
   return new ViewMaterialInkTooltipComponent0(parentView, parentIndex);
 }
 
@@ -107,7 +108,7 @@ class _ViewMaterialInkTooltipComponent1 extends AppView<import2.MaterialInkToolt
   var _expr_3;
   var _expr_4;
   bool _expr_6;
-  _ViewMaterialInkTooltipComponent1(AppView<dynamic> parentView, num parentIndex) : super(import6.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMaterialInkTooltipComponent1(AppView<dynamic> parentView, int parentIndex) : super(import6.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMaterialInkTooltipComponent0._renderType;
   }
   dynamic get _PopupHierarchy_0_11 {
@@ -213,7 +214,7 @@ class _ViewMaterialInkTooltipComponent1 extends AppView<import2.MaterialInkToolt
   }
 }
 
-AppView<import2.MaterialInkTooltipComponent> viewFactory_MaterialInkTooltipComponent1(AppView<dynamic> parentView, num parentIndex) {
+AppView<import2.MaterialInkTooltipComponent> viewFactory_MaterialInkTooltipComponent1(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewMaterialInkTooltipComponent1(parentView, parentIndex);
 }
 
@@ -221,7 +222,7 @@ class _ViewMaterialInkTooltipComponent2 extends AppView<import2.MaterialInkToolt
   import8.DivElement _el_0;
   import8.Text _text_2;
   var _expr_0;
-  _ViewMaterialInkTooltipComponent2(AppView<dynamic> parentView, num parentIndex) : super(import6.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMaterialInkTooltipComponent2(AppView<dynamic> parentView, int parentIndex) : super(import6.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMaterialInkTooltipComponent0._renderType;
   }
   @override
@@ -252,7 +253,7 @@ class _ViewMaterialInkTooltipComponent2 extends AppView<import2.MaterialInkToolt
   }
 }
 
-AppView<import2.MaterialInkTooltipComponent> viewFactory_MaterialInkTooltipComponent2(AppView<dynamic> parentView, num parentIndex) {
+AppView<import2.MaterialInkTooltipComponent> viewFactory_MaterialInkTooltipComponent2(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewMaterialInkTooltipComponent2(parentView, parentIndex);
 }
 
@@ -262,7 +263,7 @@ class _ViewMaterialInkTooltipComponentHost0 extends AppView<dynamic> {
   ViewMaterialInkTooltipComponent0 _compView_0;
   dynamic _TooltipController_0_5;
   import2.MaterialInkTooltipComponent _MaterialInkTooltipComponent_0_6;
-  _ViewMaterialInkTooltipComponentHost0(AppView<dynamic> parentView, num parentIndex) : super(import6.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
+  _ViewMaterialInkTooltipComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import6.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewMaterialInkTooltipComponent0(this, 0);
@@ -297,7 +298,7 @@ class _ViewMaterialInkTooltipComponentHost0 extends AppView<dynamic> {
   }
 }
 
-AppView viewFactory_MaterialInkTooltipComponentHost0(AppView<dynamic> parentView, num parentIndex) {
+AppView viewFactory_MaterialInkTooltipComponentHost0(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewMaterialInkTooltipComponentHost0(parentView, parentIndex);
 }
 

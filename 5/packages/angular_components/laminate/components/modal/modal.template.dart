@@ -42,14 +42,15 @@ class ViewModalComponent0 extends AppView<import1.ModalComponent> {
   var _expr_0;
   var _expr_1;
   static RenderComponentType _renderType;
-  ViewModalComponent0(AppView<dynamic> parentView, num parentIndex) : super(import5.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  ViewModalComponent0(AppView<dynamic> parentView, int parentIndex) : super(import5.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     rootEl = import7.document.createElement('modal');
     _renderType ??= import8.appViewUtils.createRenderType('', ViewEncapsulation.None, styles$ModalComponent);
     setupComponentType(_renderType);
   }
   @override
   ComponentRef<import1.ModalComponent> build() {
-    final import7.HtmlElement parentRenderNode = initViewRoot(rootEl);
+    final _rootEl = rootEl;
+    final import7.HtmlElement parentRenderNode = initViewRoot(_rootEl);
     import7.Text _text_0 = new import7.Text('    ');
     parentRenderNode.append(_text_0);
     var _anchor_1 = ngAnchor.clone(false);
@@ -97,12 +98,12 @@ class ViewModalComponent0 extends AppView<import1.ModalComponent> {
   }
 }
 
-AppView<import1.ModalComponent> viewFactory_ModalComponent0(AppView<dynamic> parentView, num parentIndex) {
+AppView<import1.ModalComponent> viewFactory_ModalComponent0(AppView<dynamic> parentView, int parentIndex) {
   return new ViewModalComponent0(parentView, parentIndex);
 }
 
 class _ViewModalComponent1 extends AppView<import1.ModalComponent> {
-  _ViewModalComponent1(AppView<dynamic> parentView, num parentIndex) : super(import5.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewModalComponent1(AppView<dynamic> parentView, int parentIndex) : super(import5.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewModalComponent0._renderType;
   }
   @override
@@ -114,7 +115,7 @@ class _ViewModalComponent1 extends AppView<import1.ModalComponent> {
   }
 }
 
-AppView<import1.ModalComponent> viewFactory_ModalComponent1(AppView<dynamic> parentView, num parentIndex) {
+AppView<import1.ModalComponent> viewFactory_ModalComponent1(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewModalComponent1(parentView, parentIndex);
 }
 
@@ -123,7 +124,7 @@ const List<dynamic> styles$ModalComponentHost = const [];
 class _ViewModalComponentHost0 extends AppView<dynamic> {
   ViewModalComponent0 _compView_0;
   import1.ModalComponent _ModalComponent_0_5;
-  _ViewModalComponentHost0(AppView<dynamic> parentView, num parentIndex) : super(import5.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
+  _ViewModalComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import5.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewModalComponent0(this, 0);
@@ -156,7 +157,7 @@ class _ViewModalComponentHost0 extends AppView<dynamic> {
   }
 }
 
-AppView viewFactory_ModalComponentHost0(AppView<dynamic> parentView, num parentIndex) {
+AppView viewFactory_ModalComponentHost0(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewModalComponentHost0(parentView, parentIndex);
 }
 

@@ -9,12 +9,11 @@ import 'package:angular_components/src/utils/async/async_update_scheduler.templa
 import 'package:angular_components/src/utils/async/async_where.template.dart' as _ref1;
 import 'package:angular_components/src/utils/async/debounce_stream.template.dart' as _ref2;
 import 'package:angular_components/src/utils/async/disposable_future.template.dart' as _ref3;
-import 'package:angular_components/src/utils/async/lazy_event_emitter.template.dart' as _ref4;
-import 'package:angular_components/src/utils/async/lazy_stream_controller.template.dart' as _ref5;
-import 'package:angular_components/src/utils/async/priority_stream_iterator.template.dart' as _ref6;
-import 'package:angular_components/src/utils/async/simple_stream.template.dart' as _ref7;
-import 'package:angular_components/src/utils/async/throttle_stream.template.dart' as _ref8;
-import 'package:angular_components/src/utils/async/zoned_async.template.dart' as _ref9;
+import 'package:angular_components/src/utils/async/lazy_stream_controller.template.dart' as _ref4;
+import 'package:angular_components/src/utils/async/priority_stream_iterator.template.dart' as _ref5;
+import 'package:angular_components/src/utils/async/simple_stream.template.dart' as _ref6;
+import 'package:angular_components/src/utils/async/throttle_stream.template.dart' as _ref7;
+import 'package:angular_components/src/utils/async/zoned_async.template.dart' as _ref8;
 
 var _visited = false;
 void initReflector() {
@@ -32,5 +31,4 @@ void initReflector() {
   _ref6.initReflector();
   _ref7.initReflector();
   _ref8.initReflector();
-  _ref9.initReflector();
 }

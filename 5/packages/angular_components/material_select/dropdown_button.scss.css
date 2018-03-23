@@ -45,7 +45,7 @@
   margin-top: -12px;
   margin-bottom: -12px;
 }
-.icon ::ng-deep i.material-icons-extended {
+.icon ::ng-deep i.glyph-i {
   position: relative;
   top: -6px;
 }

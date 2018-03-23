@@ -30,14 +30,15 @@ const List<dynamic> styles$MaterialListComponent = const [import0.styles];
 class ViewMaterialListComponent0 extends AppView<import2.MaterialListComponent> {
   var _expr_0;
   static RenderComponentType _renderType;
-  ViewMaterialListComponent0(AppView<dynamic> parentView, num parentIndex) : super(import4.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckOnce) {
+  ViewMaterialListComponent0(AppView<dynamic> parentView, int parentIndex) : super(import4.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckOnce) {
     rootEl = import6.document.createElement('material-list');
     _renderType ??= import7.appViewUtils.createRenderType('', ViewEncapsulation.Emulated, styles$MaterialListComponent);
     setupComponentType(_renderType);
   }
   @override
   ComponentRef<import2.MaterialListComponent> build() {
-    final import6.HtmlElement parentRenderNode = initViewRoot(rootEl);
+    final _rootEl = rootEl;
+    final import6.HtmlElement parentRenderNode = initViewRoot(_rootEl);
     project(parentRenderNode, 0);
     init(const [], null);
     return null;
@@ -52,7 +53,7 @@ class ViewMaterialListComponent0 extends AppView<import2.MaterialListComponent> 
   }
 }
 
-AppView<import2.MaterialListComponent> viewFactory_MaterialListComponent0(AppView<dynamic> parentView, num parentIndex) {
+AppView<import2.MaterialListComponent> viewFactory_MaterialListComponent0(AppView<dynamic> parentView, int parentIndex) {
   return new ViewMaterialListComponent0(parentView, parentIndex);
 }
 
@@ -61,7 +62,7 @@ const List<dynamic> styles$MaterialListComponentHost = const [];
 class _ViewMaterialListComponentHost0 extends AppView<dynamic> {
   ViewMaterialListComponent0 _compView_0;
   import2.MaterialListComponent _MaterialListComponent_0_5;
-  _ViewMaterialListComponentHost0(AppView<dynamic> parentView, num parentIndex) : super(import4.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
+  _ViewMaterialListComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import4.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewMaterialListComponent0(this, 0);
@@ -97,7 +98,7 @@ class _ViewMaterialListComponentHost0 extends AppView<dynamic> {
   }
 }
 
-AppView viewFactory_MaterialListComponentHost0(AppView<dynamic> parentView, num parentIndex) {
+AppView viewFactory_MaterialListComponentHost0(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewMaterialListComponentHost0(parentView, parentIndex);
 }
 

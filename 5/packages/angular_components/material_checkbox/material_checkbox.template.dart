@@ -9,6 +9,7 @@ import 'dart:async';
 import 'dart:html';
 import 'package:angular/angular.dart';
 import 'package:angular_forms/angular_forms.dart';
+import 'package:meta/meta.dart';
 import 'package:angular_components/focus/focus.dart';
 import 'package:angular_components/glyph/glyph.dart';
 import 'package:angular_components/material_ripple/material_ripple.dart';
@@ -60,7 +61,7 @@ class ViewMaterialCheckboxComponent0 extends AppView<import2.MaterialCheckboxCom
   var _expr_9;
   var _expr_10;
   static RenderComponentType _renderType;
-  ViewMaterialCheckboxComponent0(AppView<dynamic> parentView, num parentIndex) : super(import9.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckOnce) {
+  ViewMaterialCheckboxComponent0(AppView<dynamic> parentView, int parentIndex) : super(import9.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckOnce) {
     rootEl = import3.document.createElement('material-checkbox');
     rootEl.className = 'themeable';
     _renderType ??= import11.appViewUtils.createRenderType('', ViewEncapsulation.Emulated, styles$MaterialCheckboxComponent);
@@ -69,7 +70,8 @@ class ViewMaterialCheckboxComponent0 extends AppView<import2.MaterialCheckboxCom
   @override
   ComponentRef<import2.MaterialCheckboxComponent> build() {
     final import2.MaterialCheckboxComponent _ctx = ctx;
-    final import3.HtmlElement parentRenderNode = initViewRoot(rootEl);
+    final _rootEl = rootEl;
+    final import3.HtmlElement parentRenderNode = initViewRoot(_rootEl);
     var doc = import3.document;
     _el_0 = createDivAndAppend(doc, parentRenderNode);
     _el_0.className = 'icon-container';
@@ -94,12 +96,12 @@ class ViewMaterialCheckboxComponent0 extends AppView<import2.MaterialCheckboxCom
     _el_3.append(_text_4);
     project(_el_3, 0);
     init(const [], null);
-    rootEl.addEventListener('click', eventHandler1(_ctx.handleClick));
-    rootEl.addEventListener('keypress', eventHandler1(_ctx.handleKeyPress));
-    rootEl.addEventListener('keyup', eventHandler1(_ctx.handleKeyUp));
-    rootEl.addEventListener('focus', eventHandler1(_ctx.handleFocus));
-    rootEl.addEventListener('mousedown', eventHandler1(_ctx.handleMouseDown));
-    rootEl.addEventListener('blur', eventHandler1(_ctx.handleBlur));
+    _rootEl.addEventListener('click', eventHandler1(_ctx.handleClick));
+    _rootEl.addEventListener('keypress', eventHandler1(_ctx.handleKeyPress));
+    _rootEl.addEventListener('keyup', eventHandler1(_ctx.handleKeyUp));
+    _rootEl.addEventListener('focus', eventHandler1(_ctx.handleFocus));
+    _rootEl.addEventListener('mousedown', eventHandler1(_ctx.handleMouseDown));
+    _rootEl.addEventListener('blur', eventHandler1(_ctx.handleBlur));
     return null;
   }
 
@@ -177,7 +179,7 @@ class ViewMaterialCheckboxComponent0 extends AppView<import2.MaterialCheckboxCom
   }
 }
 
-AppView<import2.MaterialCheckboxComponent> viewFactory_MaterialCheckboxComponent0(AppView<dynamic> parentView, num parentIndex) {
+AppView<import2.MaterialCheckboxComponent> viewFactory_MaterialCheckboxComponent0(AppView<dynamic> parentView, int parentIndex) {
   return new ViewMaterialCheckboxComponent0(parentView, parentIndex);
 }
 
@@ -186,7 +188,7 @@ class _ViewMaterialCheckboxComponent1 extends AppView<import2.MaterialCheckboxCo
   import14.ViewMaterialRippleComponent0 _compView_0;
   import15.MaterialRippleComponent _MaterialRippleComponent_0_5;
   var _expr_0;
-  _ViewMaterialCheckboxComponent1(AppView<dynamic> parentView, num parentIndex) : super(import9.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMaterialCheckboxComponent1(AppView<dynamic> parentView, int parentIndex) : super(import9.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMaterialCheckboxComponent0._renderType;
   }
   @override
@@ -224,7 +226,7 @@ class _ViewMaterialCheckboxComponent1 extends AppView<import2.MaterialCheckboxCo
   }
 }
 
-AppView<import2.MaterialCheckboxComponent> viewFactory_MaterialCheckboxComponent1(AppView<dynamic> parentView, num parentIndex) {
+AppView<import2.MaterialCheckboxComponent> viewFactory_MaterialCheckboxComponent1(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewMaterialCheckboxComponent1(parentView, parentIndex);
 }
 
@@ -233,7 +235,7 @@ const List<dynamic> styles$MaterialCheckboxComponentHost = const [];
 class _ViewMaterialCheckboxComponentHost0 extends AppView<dynamic> {
   ViewMaterialCheckboxComponent0 _compView_0;
   import2.MaterialCheckboxComponent _MaterialCheckboxComponent_0_5;
-  _ViewMaterialCheckboxComponentHost0(AppView<dynamic> parentView, num parentIndex) : super(import9.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
+  _ViewMaterialCheckboxComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import9.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewMaterialCheckboxComponent0(this, 0);
@@ -261,7 +263,7 @@ class _ViewMaterialCheckboxComponentHost0 extends AppView<dynamic> {
   }
 }
 
-AppView viewFactory_MaterialCheckboxComponentHost0(AppView<dynamic> parentView, num parentIndex) {
+AppView viewFactory_MaterialCheckboxComponentHost0(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewMaterialCheckboxComponentHost0(parentView, parentIndex);
 }
 

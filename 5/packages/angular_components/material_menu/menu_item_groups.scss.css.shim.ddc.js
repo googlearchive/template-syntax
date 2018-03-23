@@ -1,0 +1,22 @@
+define(['dart_sdk'], function(dart_sdk) {
+  'use strict';
+  const core = dart_sdk.core;
+  const dart = dart_sdk.dart;
+  const dartx = dart_sdk.dartx;
+  const _root = Object.create(null);
+  const material_menu__menu_item_groups$46scss$46css$46shim = Object.create(_root);
+  dart.defineLazy(material_menu__menu_item_groups$46scss$46css$46shim, {
+    /*material_menu__menu_item_groups$46scss$46css$46shim.styles*/get styles() {
+      return dart.constList(['._nghost-%COMP% { display:block; outline:none; } .group-header._ngcontent-%COMP% { display:block; font-family:inherit; font-size:15px; line-height:32px; padding:0 24px; position:relative; white-space:nowrap; font-size:12px; font-weight:400; color:rgba(0, 0, 0, 0.54); height:24px; line-height:24px; display:flex; justify-content:space-between; } .group-header.disabled._ngcontent-%COMP% { pointer-events:none; } .group-header._ngcontent-%COMP%  .material-list-item-primary { color:rgba(0, 0, 0, 0.54); width:40px; } .group-header.disabled._ngcontent-%COMP%  .material-list-item-primary { color:rgba(0, 0, 0, 0.38); } .group-header._ngcontent-%COMP%  .material-list-item-secondary { color:rgba(0, 0, 0, 0.54); margin-left:auto; } .group-header.disabled._ngcontent-%COMP%  .material-list-item-secondary { color:rgba(0, 0, 0, 0.38); } .group-header._ngcontent-%COMP%  .submenu-icon { transform:rotate(-90deg); } .group-header.is-collapsible._ngcontent-%COMP% { cursor:pointer; } .expansion-icon._ngcontent-%COMP% { cursor:pointer; margin-left:8px; } .menu-item._ngcontent-%COMP% { display:block; font-family:inherit; font-size:15px; line-height:32px; padding:0 24px; position:relative; white-space:nowrap; display:flex; align-items:center; color:rgba(0, 0, 0, 0.87); cursor:pointer; outline:none; } .menu-item.disabled._ngcontent-%COMP% { pointer-events:none; } .menu-item._ngcontent-%COMP%  .material-list-item-primary { color:rgba(0, 0, 0, 0.54); width:40px; } .menu-item.disabled._ngcontent-%COMP%  .material-list-item-primary { color:rgba(0, 0, 0, 0.38); } .menu-item._ngcontent-%COMP%  .material-list-item-secondary { color:rgba(0, 0, 0, 0.54); margin-left:auto; } .menu-item.disabled._ngcontent-%COMP%  .material-list-item-secondary { color:rgba(0, 0, 0, 0.38); } .menu-item._ngcontent-%COMP%  .submenu-icon { transform:rotate(-90deg); } .menu-item:not([separator=present]):hover._ngcontent-%COMP%,.menu-item:not([separator=present]):focus._ngcontent-%COMP%,.menu-item:not([separator=present]).active._ngcontent-%COMP% { background:#eee; } .menu-item:not([separator=present]).disabled._ngcontent-%COMP% { background:none; color:rgba(0, 0, 0, 0.38); cursor:default; pointer-events:all; } .menu-item._ngcontent-%COMP% material-icon.disabled._ngcontent-%COMP% { color:rgba(0, 0, 0, 0.38); } body._nghost-%COMP%[dir=rtl] .group-header._ngcontent-%COMP%  .submenu-icon,body[dir=rtl] ._nghost-%COMP% .group-header._ngcontent-%COMP%  .submenu-icon,body._nghost-%COMP%[dir=rtl] .menu-item._ngcontent-%COMP%  .submenu-icon,body[dir=rtl] ._nghost-%COMP% .menu-item._ngcontent-%COMP%  .submenu-icon { transform:rotate(90deg); } .menu-item.active._ngcontent-%COMP%  .secondary-icon.hover-icon { opacity:inherit; } .mouse-driven._ngcontent-%COMP% .menu-item:not(:hover)._ngcontent-%COMP% { background-color:inherit; } .mouse-driven._ngcontent-%COMP% .menu-item:hover._ngcontent-%COMP%  .secondary-icon.hover-icon { opacity:inherit; } .keyboard-driven._ngcontent-%COMP% .menu-item:not(.active)._ngcontent-%COMP% { background-color:inherit; } .keyboard-driven._ngcontent-%COMP% .menu-item.is-menu-parent._ngcontent-%COMP% { background:#eee; } .group:not(.empty):not(:first-child)._ngcontent-%COMP% { border-top:1px solid #e0e0e0; margin-top:7px; padding-top:8px; } .menu-item-label._ngcontent-%COMP% { flex:1; } .item-group-list._ngcontent-%COMP% { padding:8px 0; } .suffix-list._ngcontent-%COMP% { margin-left:24px; }'], dart.dynamic);
+    }
+  });
+  dart.trackLibraries("packages/angular_components/material_menu/menu_item_groups.scss.css.shim.ddc", {
+    "package:angular_components/material_menu/menu_item_groups.scss.css.shim.dart": material_menu__menu_item_groups$46scss$46css$46shim
+  }, '{"version":3,"sourceRoot":"","sources":["menu_item_groups.scss.css.shim.dart"],"names":[],"mappings":";;;;;;;;MAGoB,0DAAM;YAAG,iBAAO","file":"menu_item_groups.scss.css.shim.ddc.js"}');
+  // Exports:
+  return {
+    material_menu__menu_item_groups$46scss$46css$46shim: material_menu__menu_item_groups$46scss$46css$46shim
+  };
+});
+
+//# sourceMappingURL=menu_item_groups.scss.css.shim.ddc.js.map

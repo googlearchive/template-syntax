@@ -29,14 +29,15 @@ class ViewGlyphComponent0 extends AppView<import2.GlyphComponent> {
   bool _expr_0;
   var _expr_1;
   static RenderComponentType _renderType;
-  ViewGlyphComponent0(AppView<dynamic> parentView, num parentIndex) : super(import5.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckOnce) {
+  ViewGlyphComponent0(AppView<dynamic> parentView, int parentIndex) : super(import5.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckOnce) {
     rootEl = import3.document.createElement('glyph');
     _renderType ??= import7.appViewUtils.createRenderType('', ViewEncapsulation.Emulated, styles$GlyphComponent);
     setupComponentType(_renderType);
   }
   @override
   ComponentRef<import2.GlyphComponent> build() {
-    final import3.HtmlElement parentRenderNode = initViewRoot(rootEl);
+    final _rootEl = rootEl;
+    final import3.HtmlElement parentRenderNode = initViewRoot(_rootEl);
     var doc = import3.document;
     _el_0 = createAndAppend(doc, 'i', parentRenderNode);
     createAttr(_el_0, 'aria-hidden', 'true');
@@ -64,7 +65,7 @@ class ViewGlyphComponent0 extends AppView<import2.GlyphComponent> {
   }
 }
 
-AppView<import2.GlyphComponent> viewFactory_GlyphComponent0(AppView<dynamic> parentView, num parentIndex) {
+AppView<import2.GlyphComponent> viewFactory_GlyphComponent0(AppView<dynamic> parentView, int parentIndex) {
   return new ViewGlyphComponent0(parentView, parentIndex);
 }
 
@@ -73,7 +74,7 @@ const List<dynamic> styles$GlyphComponentHost = const [];
 class _ViewGlyphComponentHost0 extends AppView<dynamic> {
   ViewGlyphComponent0 _compView_0;
   import2.GlyphComponent _GlyphComponent_0_5;
-  _ViewGlyphComponentHost0(AppView<dynamic> parentView, num parentIndex) : super(import5.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
+  _ViewGlyphComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import5.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewGlyphComponent0(this, 0);
@@ -99,7 +100,7 @@ class _ViewGlyphComponentHost0 extends AppView<dynamic> {
   }
 }
 
-AppView viewFactory_GlyphComponentHost0(AppView<dynamic> parentView, num parentIndex) {
+AppView viewFactory_GlyphComponentHost0(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewGlyphComponentHost0(parentView, parentIndex);
 }
 

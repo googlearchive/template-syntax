@@ -47,14 +47,15 @@ class ViewMaterialTreeFilterComponent0 extends AppView<import1.MaterialTreeFilte
   ViewContainer _appEl_0;
   NgIf _NgIf_0_9;
   static RenderComponentType _renderType;
-  ViewMaterialTreeFilterComponent0(AppView<dynamic> parentView, num parentIndex) : super(import5.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  ViewMaterialTreeFilterComponent0(AppView<dynamic> parentView, int parentIndex) : super(import5.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     rootEl = import7.document.createElement('material-tree-filter');
     _renderType ??= import8.appViewUtils.createRenderType('', ViewEncapsulation.None, styles$MaterialTreeFilterComponent);
     setupComponentType(_renderType);
   }
   @override
   ComponentRef<import1.MaterialTreeFilterComponent> build() {
-    final import7.HtmlElement parentRenderNode = initViewRoot(rootEl);
+    final _rootEl = rootEl;
+    final import7.HtmlElement parentRenderNode = initViewRoot(_rootEl);
     var _anchor_0 = ngAnchor.clone(false);
     parentRenderNode.append(_anchor_0);
     _appEl_0 = new ViewContainer(0, null, this, _anchor_0);
@@ -87,7 +88,7 @@ class ViewMaterialTreeFilterComponent0 extends AppView<import1.MaterialTreeFilte
   }
 }
 
-AppView<import1.MaterialTreeFilterComponent> viewFactory_MaterialTreeFilterComponent0(AppView<dynamic> parentView, num parentIndex) {
+AppView<import1.MaterialTreeFilterComponent> viewFactory_MaterialTreeFilterComponent0(AppView<dynamic> parentView, int parentIndex) {
   return new ViewMaterialTreeFilterComponent0(parentView, parentIndex);
 }
 
@@ -103,7 +104,7 @@ class _ViewMaterialTreeFilterComponent1 extends AppView<import1.MaterialTreeFilt
   import15.MaterialInputDefaultValueAccessor _MaterialInputDefaultValueAccessor_0_11;
   String _expr_1;
   String _expr_3;
-  _ViewMaterialTreeFilterComponent1(AppView<dynamic> parentView, num parentIndex) : super(import5.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMaterialTreeFilterComponent1(AppView<dynamic> parentView, int parentIndex) : super(import5.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMaterialTreeFilterComponent0._renderType;
   }
   @override
@@ -205,7 +206,7 @@ class _ViewMaterialTreeFilterComponent1 extends AppView<import1.MaterialTreeFilt
   }
 }
 
-AppView<import1.MaterialTreeFilterComponent> viewFactory_MaterialTreeFilterComponent1(AppView<dynamic> parentView, num parentIndex) {
+AppView<import1.MaterialTreeFilterComponent> viewFactory_MaterialTreeFilterComponent1(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewMaterialTreeFilterComponent1(parentView, parentIndex);
 }
 
@@ -214,7 +215,7 @@ const List<dynamic> styles$MaterialTreeFilterComponentHost = const [];
 class _ViewMaterialTreeFilterComponentHost0 extends AppView<dynamic> {
   ViewMaterialTreeFilterComponent0 _compView_0;
   import1.MaterialTreeFilterComponent _MaterialTreeFilterComponent_0_5;
-  _ViewMaterialTreeFilterComponentHost0(AppView<dynamic> parentView, num parentIndex) : super(import5.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
+  _ViewMaterialTreeFilterComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import5.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewMaterialTreeFilterComponent0(this, 0);
@@ -236,7 +237,7 @@ class _ViewMaterialTreeFilterComponentHost0 extends AppView<dynamic> {
   }
 }
 
-AppView viewFactory_MaterialTreeFilterComponentHost0(AppView<dynamic> parentView, num parentIndex) {
+AppView viewFactory_MaterialTreeFilterComponentHost0(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewMaterialTreeFilterComponentHost0(parentView, parentIndex);
 }
 
