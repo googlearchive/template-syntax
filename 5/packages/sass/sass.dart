@@ -2,6 +2,9 @@
 // MIT-style license that can be found in the LICENSE file or at
 // https://opensource.org/licenses/MIT.
 
+/// We strongly recommend importing this library with the prefix `sass`.
+library sass;
+
 import 'dart:async';
 
 import 'src/callable.dart';
@@ -179,9 +182,3 @@ Future<String> compileStringAsync(String source,
       url: url);
   return result.css;
 }
-
-/// Use [compile] instead.
-@Deprecated('Will be removed in 1.0.0')
-String render(String path,
-        {bool color: false, SyncPackageResolver packageResolver}) =>
-    compile(path, color: color, packageResolver: packageResolver);

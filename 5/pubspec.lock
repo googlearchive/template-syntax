@@ -154,14 +154,14 @@ packages:
       name: built_collection
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "3.0.5"
+    version: "3.1.1"
   built_value:
     dependency: transitive
     description:
       name: built_value
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "5.2.1"
+    version: "5.2.2"
   charcode:
     dependency: transitive
     description:
@@ -398,7 +398,7 @@ packages:
     description:
       path: "examples/util/pageloader"
       ref: "5-dev"
-      resolved-ref: "3a0a2e3a1b0c6be4474bdb7a00dfff72e24942fb"
+      resolved-ref: a8a36e97e237770b1f8ae33c3e24a3b2e00ccc07
       url: "https://github.com/dart-lang/site-webdev.git"
     source: git
     version: "0.0.1"
@@ -464,7 +464,7 @@ packages:
       name: sass
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "1.0.0-rc.1"
+    version: "1.0.0"
   sass_builder:
     dependency: transitive
     description:
