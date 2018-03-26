@@ -48,9 +48,7 @@ class AppComponent implements OnInit {
 
   List<Element> prevHeroesNoTrackBy = [];
 
-  @ViewChildren('noTrackBy', read: Element)
-  // Drop `read` argument once #814 is fixed:
-  // https://github.com/dart-lang/angular/issues/814
+  @ViewChildren('noTrackBy')
   set heroesNoTrackBy(List<Element> elements) {
     final isSame = elements.every((e) => prevHeroesNoTrackBy.contains(e));
     if (isSame) return;
@@ -61,9 +59,7 @@ class AppComponent implements OnInit {
 
   List<Element> prevHeroesWithTrackBy = [];
 
-  @ViewChildren('withTrackBy', read: Element)
-  // Drop `read` argument once #814 is fixed:
-  // https://github.com/dart-lang/angular/issues/814
+  @ViewChildren('withTrackBy')
   set heroesWithTrackBy(List<Element> elements) {
     final isSame = elements.every((e) => prevHeroesWithTrackBy.contains(e));
     if (isSame) return;
