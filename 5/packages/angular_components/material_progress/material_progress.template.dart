@@ -126,14 +126,6 @@ class _ViewMaterialProgressComponentHost0 extends AppView<dynamic> {
   }
 
   @override
-  dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
-    if ((identical(token, import2.MaterialProgressComponent) && (0 == nodeIndex))) {
-      return _MaterialProgressComponent_0_5;
-    }
-    return notFoundResult;
-  }
-
-  @override
   void detectChangesInternal() {
     bool changed = false;
     bool firstCheck = (this.cdState == 0);

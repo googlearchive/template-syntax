@@ -19,7 +19,9 @@ import 'package:angular_components/utils/angular/properties/properties.dart';
 /// The selected [dateTime] is always in local time zone.
 /// See `material-datepicker` if you want to choose date only.
 /// See `material-time-picker` if you want to choose time only.
-/// ### Example
+///
+/// __Example usage:__
+///
 ///     <material-date-time-picker [(dateTime)]="myDateTime">
 ///     </material-date-time-picker>
 @Component(
@@ -32,8 +34,6 @@ import 'package:angular_components/utils/angular/properties/properties.dart';
     MaterialTimePickerComponent,
     MaterialInputComponent,
   ],
-  // TODO(google): Change to `Visibility.local` to reduce code size.
-  visibility: Visibility.all,
 )
 class MaterialDateTimePickerComponent {
   final Clock _clock;
@@ -62,11 +62,7 @@ class MaterialDateTimePickerComponent {
 
   /// Returns maximum time for time picker when selected date is maximum date.
   DateTime get maxTime {
-    if (_date != null &&
-        maxDateTime != null &&
-        _date.year == maxDateTime.year &&
-        _date.month == maxDateTime.month &&
-        _date.day == maxDateTime.day) {
+    if (_sameDate(_date, maxDateTime)) {
       return cloneDateTime(maxDateTime);
     }
     return null;
@@ -84,11 +80,7 @@ class MaterialDateTimePickerComponent {
 
   /// Returns minimum time for time picker when selected date is minimum date.
   DateTime get minTime {
-    if (_date != null &&
-        minDateTime != null &&
-        _date.year == minDateTime.year &&
-        _date.month == minDateTime.month &&
-        _date.day == minDateTime.day) {
+    if (_sameDate(_date, minDateTime)) {
       return cloneDateTime(minDateTime);
     }
     return null;
@@ -173,6 +165,15 @@ class MaterialDateTimePickerComponent {
   set date(Date value) {
     if (value != _date) {
       _date = value;
+      if (_date != null && _time == null) {
+        // Set default time to minimum time if date is minimum date.
+        if (_sameDate(_date, minDateTime)) {
+          _time = cloneDateTime(minDateTime);
+        } else {
+          _time =
+              _utc ? new DateTime.utc(_date.year) : new DateTime(_date.year);
+        }
+      }
       _updateDateTimeAndNotify();
     }
   }
@@ -214,10 +215,21 @@ class MaterialDateTimePickerComponent {
     }
   }
 
+  /// Checks whether [toCompare] has the same date as [date] ignoring the time.
+  static bool _sameDate(Date date, DateTime toCompare) {
+    if (date == null || toCompare == null) {
+      return false;
+    }
+    return (date.year == toCompare.year &&
+        date.month == toCompare.month &&
+        date.day == toCompare.day);
+  }
+
   static DateTime cloneDateTime(DateTime dateTime) {
     return dateTime != null
         ? new DateTime.fromMillisecondsSinceEpoch(
-            dateTime.millisecondsSinceEpoch)
+            dateTime.millisecondsSinceEpoch,
+            isUtc: dateTime.isUtc)
         : null;
   }
 }

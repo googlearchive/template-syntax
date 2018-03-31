@@ -45,8 +45,6 @@ import 'package:angular_components/mixins/focusable_mixin.dart';
     KeyboardOnlyFocusIndicatorDirective,
     NgIf,
   ],
-  // TODO(google): Change to `Visibility.local` to reduce code size.
-  visibility: Visibility.all,
 )
 class DropdownButtonComponent extends Object
     with FocusableMixin, MaterialButtonWrapper {
@@ -67,6 +65,18 @@ class DropdownButtonComponent extends Object
   /// The button also gets a red underline when this is set.
   @Input()
   String error;
+
+  /// The id of the content of the dropdown.
+  @Input()
+  String ariaOwns;
+
+  /// True if the dropdown is expanded.
+  @Input()
+  bool ariaExpanded;
+
+  /// The id of the active element of the dropdown.
+  @Input()
+  String ariaActiveDescendant;
 
   bool get invalid => error != null;
 

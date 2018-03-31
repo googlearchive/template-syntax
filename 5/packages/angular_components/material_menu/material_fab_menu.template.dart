@@ -61,18 +61,18 @@ import '../utils/disposer/disposer.dart' as import19;
 import '../src/laminate/popup/dom_popup_source.dart' as import20;
 import '../utils/angular/reference/reference.dart' as import21;
 import 'package:angular/src/core/linker/template_ref.dart';
-import 'package:angular/src/core/linker/element_ref.dart';
-import '../material_popup/material_popup.template.dart' as import24;
-import '../material_popup/material_popup.dart' as import25;
-import '../content/deferred_content.dart' as import26;
-import '../src/laminate/popup/popup_hierarchy.dart' as import27;
-import 'package:angular/src/core/zone/ng_zone.dart' as import28;
-import '../src/laminate/overlay/overlay_service.dart' as import29;
-import '../laminate/overlay/zindexer.dart' as import30;
-import 'package:angular/src/core/di/opaque_token.dart' as import31;
+import '../material_popup/material_popup.template.dart' as import23;
+import '../material_popup/material_popup.dart' as import24;
+import '../content/deferred_content.dart' as import25;
+import '../src/laminate/popup/popup_hierarchy.dart' as import26;
+import 'package:angular/src/core/zone/ng_zone.dart' as import27;
+import '../src/laminate/overlay/overlay_service.dart' as import28;
+import '../laminate/overlay/zindexer.dart' as import29;
+import 'package:angular/src/core/di/opaque_token.dart' as import30;
 import 'dart:core';
-import 'package:angular_components/laminate/enums/alignment.dart' as import33;
-import '../src/laminate/popup/popup_size_provider.dart' as import34;
+import 'package:angular_components/laminate/enums/alignment.dart' as import32;
+import '../src/laminate/popup/popup_size_provider.dart' as import33;
+import 'package:angular/src/core/linker/element_ref.dart';
 import '../content/deferred_content_aware.dart' as import35;
 import '../mixins/material_dropdown_base.dart' as import36;
 import '../src/laminate/popup/popup_ref.dart' as import37;
@@ -164,9 +164,6 @@ class ViewMaterialFabMenuComponent0 extends AppView<import2.MaterialFabMenuCompo
 
   @override
   dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
-    if ((identical(token, import8.PopupSourceDirective) && ((1 <= nodeIndex) && (nodeIndex <= 4)))) {
-      return _PopupSourceDirective_1_10;
-    }
     if ((identical(token, import18.TooltipController) && ((1 <= nodeIndex) && (nodeIndex <= 4)))) {
       return _TooltipController_1_11;
     }
@@ -226,12 +223,12 @@ class ViewMaterialFabMenuComponent0 extends AppView<import2.MaterialFabMenuCompo
     if (_query_content_1_0_isDirty) {
       ctx.contentElementRef = (_appEl_6.mapNestedViews((_ViewMaterialFabMenuComponent1 nestedView) {
         return nestedView._appEl_2.mapNestedViews((_ViewMaterialFabMenuComponent2 nestedView) {
-          return [new ElementRef(nestedView._el_0)];
+          return [nestedView._el_0];
         });
       }).isNotEmpty
           ? _appEl_6.mapNestedViews((_ViewMaterialFabMenuComponent1 nestedView) {
               return nestedView._appEl_2.mapNestedViews((_ViewMaterialFabMenuComponent2 nestedView) {
-                return [new ElementRef(nestedView._el_0)];
+                return [nestedView._el_0];
               });
             }).first
           : null);
@@ -280,13 +277,13 @@ AppView<import2.MaterialFabMenuComponent> viewFactory_MaterialFabMenuComponent0(
 
 class _ViewMaterialFabMenuComponent1 extends AppView<import2.MaterialFabMenuComponent> {
   import3.Element _el_0;
-  import24.ViewMaterialPopupComponent0 _compView_0;
+  import23.ViewMaterialPopupComponent0 _compView_0;
   ViewContainer _appEl_0;
-  import25.MaterialPopupComponent _MaterialPopupComponent_0_8;
+  import24.MaterialPopupComponent _MaterialPopupComponent_0_8;
   dynamic __PopupRef_0_11;
   dynamic __PopupHierarchy_0_12;
   ViewContainer _appEl_2;
-  import26.DeferredContentDirective _DeferredContentDirective_2_9;
+  import25.DeferredContentDirective _DeferredContentDirective_2_9;
   var _expr_2;
   var _expr_3;
   bool _expr_4;
@@ -296,32 +293,32 @@ class _ViewMaterialFabMenuComponent1 extends AppView<import2.MaterialFabMenuComp
   }
   dynamic get _PopupRef_0_11 {
     if ((this.__PopupRef_0_11 == null)) {
-      (__PopupRef_0_11 = import25.getResolvedPopupRef(this._MaterialPopupComponent_0_8));
+      (__PopupRef_0_11 = import24.getResolvedPopupRef(this._MaterialPopupComponent_0_8));
     }
     return this.__PopupRef_0_11;
   }
 
   dynamic get _PopupHierarchy_0_12 {
     if ((this.__PopupHierarchy_0_12 == null)) {
-      (__PopupHierarchy_0_12 = import25.getHierarchy(this._MaterialPopupComponent_0_8));
+      (__PopupHierarchy_0_12 = import24.getHierarchy(this._MaterialPopupComponent_0_8));
     }
     return this.__PopupHierarchy_0_12;
   }
 
   @override
   ComponentRef<import2.MaterialFabMenuComponent> build() {
-    _compView_0 = new import24.ViewMaterialPopupComponent0(this, 0);
+    _compView_0 = new import23.ViewMaterialPopupComponent0(this, 0);
     _el_0 = _compView_0.rootEl;
     createAttr(_el_0, 'autoDismiss', '');
     createAttr(_el_0, 'enforceSpaceConstraints', '');
     addShimC(_el_0);
     _appEl_0 = new ViewContainer(0, null, this, _el_0);
-    _MaterialPopupComponent_0_8 = new import25.MaterialPopupComponent(parentView.injectorGet(import27.PopupHierarchy, viewData.parentIndex, null), parentView.injectorGet(import25.MaterialPopupComponent, viewData.parentIndex, null), null, parentView.injectorGet(import28.NgZone, viewData.parentIndex), parentView.injectorGet(import29.OverlayService, viewData.parentIndex), parentView.injectorGet(import30.ZIndexer, viewData.parentIndex), parentView.injectorGet(const import31.OpaqueToken<List<import33.RelativePosition>>('defaultPopupPositions'), viewData.parentIndex), parentView.injectorGet(const import31.OpaqueToken('overlayRepositionLoop'), viewData.parentIndex), parentView.injectorGet(import34.PopupSizeProvider, viewData.parentIndex, null), _compView_0.ref, _appEl_0, new ElementRef(_el_0));
+    _MaterialPopupComponent_0_8 = new import24.MaterialPopupComponent(parentView.injectorGet(import26.PopupHierarchy, viewData.parentIndex, null), parentView.injectorGet(import24.MaterialPopupComponent, viewData.parentIndex, null), null, parentView.injectorGet(import27.NgZone, viewData.parentIndex), parentView.injectorGet(import28.OverlayService, viewData.parentIndex), parentView.injectorGet(import29.ZIndexer, viewData.parentIndex), parentView.injectorGet(const import30.OpaqueToken<List<import32.RelativePosition>>('defaultPopupPositions'), viewData.parentIndex), parentView.injectorGet(const import30.OpaqueToken('overlayRepositionLoop'), viewData.parentIndex), parentView.injectorGet(import33.PopupSizeProvider, viewData.parentIndex, null), _compView_0.ref, _appEl_0, new ElementRef(_el_0));
     import3.Text _text_1 = new import3.Text('\n  ');
     var _anchor_2 = ngAnchor.clone(false);
     _appEl_2 = new ViewContainer(2, 0, this, _anchor_2);
     TemplateRef _TemplateRef_2_8 = new TemplateRef(_appEl_2, viewFactory_MaterialFabMenuComponent2);
-    _DeferredContentDirective_2_9 = new import26.DeferredContentDirective(_appEl_2, _TemplateRef_2_8, _MaterialPopupComponent_0_8);
+    _DeferredContentDirective_2_9 = new import25.DeferredContentDirective(_appEl_2, _TemplateRef_2_8, _MaterialPopupComponent_0_8);
     import3.Text _text_3 = new import3.Text('\n');
     _compView_0.create(_MaterialPopupComponent_0_8, [
       const [],
@@ -336,13 +333,13 @@ class _ViewMaterialFabMenuComponent1 extends AppView<import2.MaterialFabMenuComp
 
   @override
   dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
-    if ((((identical(token, import25.MaterialPopupComponent) || identical(token, import35.DeferredContentAware)) || identical(token, import36.DropdownHandle)) && ((0 <= nodeIndex) && (nodeIndex <= 3)))) {
+    if ((((identical(token, import24.MaterialPopupComponent) || identical(token, import35.DeferredContentAware)) || identical(token, import36.DropdownHandle)) && ((0 <= nodeIndex) && (nodeIndex <= 3)))) {
       return _MaterialPopupComponent_0_8;
     }
     if ((identical(token, import37.PopupRef) && ((0 <= nodeIndex) && (nodeIndex <= 3)))) {
       return _PopupRef_0_11;
     }
-    if ((identical(token, import27.PopupHierarchy) && ((0 <= nodeIndex) && (nodeIndex <= 3)))) {
+    if ((identical(token, import26.PopupHierarchy) && ((0 <= nodeIndex) && (nodeIndex <= 3)))) {
       return _PopupHierarchy_0_12;
     }
     return notFoundResult;
@@ -486,17 +483,8 @@ class _ViewMaterialFabMenuComponent2 extends AppView<import2.MaterialFabMenuComp
 
   @override
   dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
-    if ((identical(token, import39.MaterialListItemComponent) && ((4 <= nodeIndex) && (nodeIndex <= 7)))) {
-      return _MaterialListItemComponent_4_5;
-    }
-    if ((identical(token, import42.MenuRootDirective) && ((9 <= nodeIndex) && (nodeIndex <= 10)))) {
-      return _MenuRootDirective_9_6;
-    }
     if ((identical(token, import42.MenuRoot) && ((9 <= nodeIndex) && (nodeIndex <= 10)))) {
       return _MenuRoot_9_7;
-    }
-    if ((identical(token, import43.MenuItemGroupsComponent) && ((9 <= nodeIndex) && (nodeIndex <= 10)))) {
-      return _MenuItemGroupsComponent_9_8;
     }
     return notFoundResult;
   }
@@ -605,14 +593,6 @@ class _ViewMaterialFabMenuComponentHost0 extends AppView<dynamic> {
     _compView_0.create(_MaterialFabMenuComponent_0_5, projectableNodes);
     init0(rootEl);
     return new ComponentRef<import2.MaterialFabMenuComponent>(0, this, rootEl, _MaterialFabMenuComponent_0_5);
-  }
-
-  @override
-  dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
-    if ((identical(token, import2.MaterialFabMenuComponent) && (0 == nodeIndex))) {
-      return _MaterialFabMenuComponent_0_5;
-    }
-    return notFoundResult;
   }
 
   @override

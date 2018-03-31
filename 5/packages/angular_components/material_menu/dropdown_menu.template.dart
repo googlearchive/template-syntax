@@ -104,23 +104,6 @@ class ViewDropdownMenuComponent0 extends AppView<import1.DropdownMenuComponent> 
   }
 
   @override
-  dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
-    if ((identical(token, import4.DropdownButtonComponent) && ((1 <= nodeIndex) && (nodeIndex <= 3)))) {
-      return _DropdownButtonComponent_1_5;
-    }
-    if ((identical(token, import5.PopupSourceDirective) && ((1 <= nodeIndex) && (nodeIndex <= 3)))) {
-      return _PopupSourceDirective_1_6;
-    }
-    if ((identical(token, import7.MenuPopupComponent) && ((5 <= nodeIndex) && (nodeIndex <= 7)))) {
-      return _MenuPopupComponent_5_5;
-    }
-    if ((identical(token, import5.PopupSourceDirective) && ((5 <= nodeIndex) && (nodeIndex <= 7)))) {
-      return _PopupSourceDirective_5_6;
-    }
-    return notFoundResult;
-  }
-
-  @override
   void detectChangesInternal() {
     final import1.DropdownMenuComponent _ctx = ctx;
     bool changed = false;
@@ -221,14 +204,6 @@ class _ViewDropdownMenuComponentHost0 extends AppView<dynamic> {
     _compView_0.create(_DropdownMenuComponent_0_5, projectableNodes);
     init0(rootEl);
     return new ComponentRef<import1.DropdownMenuComponent>(0, this, rootEl, _DropdownMenuComponent_0_5);
-  }
-
-  @override
-  dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
-    if ((identical(token, import1.DropdownMenuComponent) && (0 == nodeIndex))) {
-      return _DropdownMenuComponent_0_5;
-    }
-    return notFoundResult;
   }
 
   @override

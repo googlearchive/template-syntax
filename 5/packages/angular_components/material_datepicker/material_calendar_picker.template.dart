@@ -41,10 +41,9 @@ import 'package:angular/src/core/change_detection/change_detection.dart';
 import 'package:angular/src/core/linker/app_view_utils.dart' as import9;
 import 'package:angular/angular.dart';
 import 'package:angular/src/core/linker/template_ref.dart';
-import 'package:angular/src/core/linker/element_ref.dart';
 import 'dart:core';
-import 'package:angular/src/core/di/opaque_token.dart' as import14;
-import 'package:quiver/time.dart' as import15;
+import 'package:angular/src/core/di/opaque_token.dart' as import13;
+import 'package:quiver/time.dart' as import14;
 
 const List<dynamic> styles$MaterialCalendarPickerComponent = const [import0.styles];
 
@@ -82,7 +81,7 @@ class ViewMaterialCalendarPickerComponent0 extends AppView<import2.MaterialCalen
     _el_3 = createDivAndAppend(doc, _el_2);
     _el_3.className = 'calendar-container';
     addShimC(_el_3);
-    ctx.container = new ElementRef(_el_3);
+    ctx.container = _el_3;
     init(const [], null);
     return null;
   }
@@ -161,18 +160,10 @@ class _ViewMaterialCalendarPickerComponentHost0 extends AppView<dynamic> {
   ComponentRef build() {
     _compView_0 = new ViewMaterialCalendarPickerComponent0(this, 0);
     rootEl = _compView_0.rootEl;
-    _MaterialCalendarPickerComponent_0_5 = new import2.MaterialCalendarPickerComponent(this.injectorGet(const import14.OpaqueToken('third_party.dart_src.acx.material_datepicker.datepickerClock'), viewData.parentIndex, null), this.injectorGet(import15.Clock, viewData.parentIndex), null);
+    _MaterialCalendarPickerComponent_0_5 = new import2.MaterialCalendarPickerComponent(this.injectorGet(const import13.OpaqueToken('third_party.dart_src.acx.material_datepicker.datepickerClock'), viewData.parentIndex, null), this.injectorGet(import14.Clock, viewData.parentIndex), null);
     _compView_0.create(_MaterialCalendarPickerComponent_0_5, projectableNodes);
     init0(rootEl);
     return new ComponentRef<import2.MaterialCalendarPickerComponent>(0, this, rootEl, _MaterialCalendarPickerComponent_0_5);
-  }
-
-  @override
-  dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
-    if ((identical(token, import2.MaterialCalendarPickerComponent) && (0 == nodeIndex))) {
-      return _MaterialCalendarPickerComponent_0_5;
-    }
-    return notFoundResult;
   }
 
   @override

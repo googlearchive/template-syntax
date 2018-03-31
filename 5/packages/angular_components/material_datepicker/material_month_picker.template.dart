@@ -85,14 +85,6 @@ class _ViewMaterialMonthPickerComponentHost0 extends AppView<dynamic> {
   }
 
   @override
-  dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
-    if ((identical(token, import2.MaterialMonthPickerComponent) && (0 == nodeIndex))) {
-      return _MaterialMonthPickerComponent_0_5;
-    }
-    return notFoundResult;
-  }
-
-  @override
   void detectChangesInternal() {
     bool changed = false;
     bool firstCheck = (this.cdState == 0);

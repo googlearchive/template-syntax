@@ -21,16 +21,13 @@ const Map<String, double> _indeterminateTiming = const {
 ///
 /// __Example usage:__
 ///
-///    <material-progress [activeProgress]="10" [secondaryProgress]="30">
-///    </material-progress>
-///
+///     <material-progress [activeProgress]="10" [secondaryProgress]="30">
+///     </material-progress>
 @Component(
   selector: 'material-progress',
   templateUrl: 'material_progress.html',
   styleUrls: const ['material_progress.scss.css'],
   changeDetection: ChangeDetectionStrategy.OnPush,
-  // TODO(google): Change to `Visibility.local` to reduce code size.
-  visibility: Visibility.all,
 )
 class MaterialProgressComponent implements AfterViewInit, OnDestroy {
   final ChangeDetectorRef _changeDetector;

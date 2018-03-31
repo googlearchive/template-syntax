@@ -10,7 +10,6 @@ import 'dart:html';
 import 'package:angular/angular.dart';
 import 'package:angular_components/annotations/rtl_annotation.dart';
 import 'package:angular_components/content/deferred_content.dart';
-import 'package:angular_components/utils/angular/css/css.dart';
 import 'package:angular_components/content/deferred_content_aware.dart';
 import 'package:angular_components/dynamic_component/dynamic_component.dart';
 import 'package:angular_components/focus/keyboard_only_focus_indicator.dart';
@@ -34,6 +33,7 @@ import 'package:angular_components/model/selection/selection_model.dart';
 import 'package:angular_components/model/selection/selection_options.dart';
 import 'package:angular_components/model/ui/has_factory.dart';
 import 'package:angular_components/model/ui/template_support.dart';
+import 'package:angular_components/utils/angular/css/css.dart';
 import 'package:angular_components/utils/id_generator/id_generator.dart';
 import 'package:angular/src/di/reflector.dart' as _ngRef;
 import 'package:angular/angular.template.dart' as _ref0;
@@ -104,13 +104,13 @@ import '../focus/keyboard_only_focus_indicator.dart' as import36;
 import 'material_select_dropdown_item.dart' as import37;
 import '../utils/browser/dom_service/dom_service.dart' as import38;
 import 'activation_handler.dart' as import39;
-import '../model/selection/selection_container.dart' as import40;
-import '../model/ui/has_renderer.dart' as import41;
-import '../model/selection/selection_options.dart' as import42;
-import '../dynamic_component/dynamic_component.template.dart' as import43;
-import '../dynamic_component/dynamic_component.dart' as import44;
-import 'package:angular/src/core/linker/dynamic_component_loader.dart' as import45;
-import '../utils/id_generator/id_generator.dart' as import46;
+import '../utils/id_generator/id_generator.dart' as import40;
+import '../model/selection/selection_container.dart' as import41;
+import '../model/ui/has_renderer.dart' as import42;
+import '../model/selection/selection_options.dart' as import43;
+import '../dynamic_component/dynamic_component.template.dart' as import44;
+import '../dynamic_component/dynamic_component.dart' as import45;
+import 'package:angular/src/core/linker/dynamic_component_loader.dart' as import46;
 
 const List<dynamic> styles$MaterialDropdownSelectComponent = const [import0.styles];
 
@@ -136,14 +136,16 @@ class ViewMaterialDropdownSelectComponent0 extends AppView<import2.MaterialDropd
   String _expr_4;
   bool _expr_5;
   String _expr_6;
-  bool _expr_7;
-  bool _expr_9;
-  bool _expr_11;
-  var _expr_12;
-  var _expr_13;
+  bool _expr_8;
+  String _expr_9;
+  bool _expr_10;
+  bool _expr_12;
   bool _expr_14;
-  bool _expr_15;
-  String _expr_16;
+  var _expr_15;
+  var _expr_16;
+  bool _expr_17;
+  bool _expr_18;
+  String _expr_19;
   static RenderComponentType _renderType;
   ViewMaterialDropdownSelectComponent0(AppView<dynamic> parentView, int parentIndex) : super(import12.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     rootEl = import3.document.createElement('material-dropdown-select');
@@ -223,12 +225,6 @@ class ViewMaterialDropdownSelectComponent0 extends AppView<import2.MaterialDropd
 
   @override
   dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
-    if ((identical(token, import5.DropdownButtonComponent) && ((0 <= nodeIndex) && (nodeIndex <= 1)))) {
-      return _DropdownButtonComponent_0_5;
-    }
-    if ((identical(token, import6.PopupSourceDirective) && ((0 <= nodeIndex) && (nodeIndex <= 1)))) {
-      return _PopupSourceDirective_0_6;
-    }
     if ((((identical(token, import9.MaterialPopupComponent) || identical(token, import28.DeferredContentAware)) || identical(token, import29.DropdownHandle)) && ((2 <= nodeIndex) && (nodeIndex <= 5)))) {
       return _MaterialPopupComponent_2_8;
     }
@@ -248,6 +244,12 @@ class ViewMaterialDropdownSelectComponent0 extends AppView<import2.MaterialDropd
     bool firstCheck = (this.cdState == 0);
     final import6.PopupSourceDirective local_source = _PopupSourceDirective_0_6;
     changed = false;
+    if (firstCheck) {
+      if (!identical(_ctx.listId, null)) {
+        _DropdownButtonComponent_0_5.ariaOwns = _ctx.listId;
+        changed = true;
+      }
+    }
     final currVal_0 = _ctx.buttonText;
     if (!identical(_expr_0, currVal_0)) {
       _DropdownButtonComponent_0_5.buttonText = currVal_0;
@@ -290,11 +292,23 @@ class ViewMaterialDropdownSelectComponent0 extends AppView<import2.MaterialDropd
       changed = true;
       _expr_6 = currVal_6;
     }
-    final currVal_7 = _ctx.showButtonBorder;
-    if (!identical(_expr_7, currVal_7)) {
-      _DropdownButtonComponent_0_5.showButtonBorder = currVal_7;
+    final currVal_8 = _ctx.visible;
+    if (!identical(_expr_8, currVal_8)) {
+      _DropdownButtonComponent_0_5.ariaExpanded = currVal_8;
       changed = true;
-      _expr_7 = currVal_7;
+      _expr_8 = currVal_8;
+    }
+    final currVal_9 = _ctx.ariaActiveDescendant;
+    if (!identical(_expr_9, currVal_9)) {
+      _DropdownButtonComponent_0_5.ariaActiveDescendant = currVal_9;
+      changed = true;
+      _expr_9 = currVal_9;
+    }
+    final currVal_10 = _ctx.showButtonBorder;
+    if (!identical(_expr_10, currVal_10)) {
+      _DropdownButtonComponent_0_5.showButtonBorder = currVal_10;
+      changed = true;
+      _expr_10 = currVal_10;
     }
     if (changed) {
       _compView_0.markAsCheckOnce();
@@ -302,40 +316,40 @@ class ViewMaterialDropdownSelectComponent0 extends AppView<import2.MaterialDropd
     if (firstCheck) {
       (_MaterialPopupComponent_2_8.enforceSpaceConstraints = true);
     }
-    final currVal_9 = _ctx.autoDismiss;
-    if (!identical(_expr_9, currVal_9)) {
-      _MaterialPopupComponent_2_8.autoDismiss = currVal_9;
-      _expr_9 = currVal_9;
-    }
-    final currVal_11 = _ctx.popupMatchInputWidth;
-    if (!identical(_expr_11, currVal_11)) {
-      _MaterialPopupComponent_2_8.matchMinSourceWidth = currVal_11;
-      _expr_11 = currVal_11;
-    }
-    final currVal_12 = _ctx.preferredPositions;
+    final currVal_12 = _ctx.autoDismiss;
     if (!identical(_expr_12, currVal_12)) {
-      _MaterialPopupComponent_2_8.preferredPositions = currVal_12;
+      _MaterialPopupComponent_2_8.autoDismiss = currVal_12;
       _expr_12 = currVal_12;
     }
-    final currVal_13 = local_source;
-    if (!identical(_expr_13, currVal_13)) {
-      _MaterialPopupComponent_2_8.source = currVal_13;
-      _expr_13 = currVal_13;
-    }
-    final currVal_14 = _ctx.trackLayoutChanges;
+    final currVal_14 = _ctx.popupMatchInputWidth;
     if (!identical(_expr_14, currVal_14)) {
-      _MaterialPopupComponent_2_8.trackLayoutChanges = currVal_14;
+      _MaterialPopupComponent_2_8.matchMinSourceWidth = currVal_14;
       _expr_14 = currVal_14;
     }
-    final currVal_15 = _ctx.visible;
+    final currVal_15 = _ctx.preferredPositions;
     if (!identical(_expr_15, currVal_15)) {
-      _MaterialPopupComponent_2_8.visible = currVal_15;
+      _MaterialPopupComponent_2_8.preferredPositions = currVal_15;
       _expr_15 = currVal_15;
     }
-    final currVal_16 = _ctx.slide;
+    final currVal_16 = local_source;
     if (!identical(_expr_16, currVal_16)) {
-      _MaterialPopupComponent_2_8.slide = currVal_16;
+      _MaterialPopupComponent_2_8.source = currVal_16;
       _expr_16 = currVal_16;
+    }
+    final currVal_17 = _ctx.trackLayoutChanges;
+    if (!identical(_expr_17, currVal_17)) {
+      _MaterialPopupComponent_2_8.trackLayoutChanges = currVal_17;
+      _expr_17 = currVal_17;
+    }
+    final currVal_18 = _ctx.visible;
+    if (!identical(_expr_18, currVal_18)) {
+      _MaterialPopupComponent_2_8.visible = currVal_18;
+      _expr_18 = currVal_18;
+    }
+    final currVal_19 = _ctx.slide;
+    if (!identical(_expr_19, currVal_19)) {
+      _MaterialPopupComponent_2_8.slide = currVal_19;
+      _expr_19 = currVal_19;
     }
     if (firstCheck) {
       (_DeferredContentDirective_4_9.preserveDimensions = true);
@@ -380,7 +394,7 @@ class _ViewMaterialDropdownSelectComponent1 extends AppView<import2.MaterialDrop
   import32.MaterialListComponent _MaterialListComponent_0_5;
   ViewContainer _appEl_1;
   NgIf _NgIf_1_9;
-  var _expr_0;
+  var _expr_1;
   _ViewMaterialDropdownSelectComponent1(AppView<dynamic> parentView, int parentIndex) : super(import12.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMaterialDropdownSelectComponent0._renderType;
   }
@@ -389,6 +403,7 @@ class _ViewMaterialDropdownSelectComponent1 extends AppView<import2.MaterialDrop
     _compView_0 = new import31.ViewMaterialListComponent0(this, 0);
     _el_0 = _compView_0.rootEl;
     _el_0.className = 'options-list';
+    createAttr(_el_0, 'role', 'listbox');
     createAttr(_el_0, 'tabIndex', '-1');
     addShimC(_el_0);
     _MaterialListComponent_0_5 = new import32.MaterialListComponent();
@@ -408,30 +423,27 @@ class _ViewMaterialDropdownSelectComponent1 extends AppView<import2.MaterialDrop
   }
 
   @override
-  dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
-    if ((identical(token, import32.MaterialListComponent) && ((0 <= nodeIndex) && (nodeIndex <= 1)))) {
-      return _MaterialListComponent_0_5;
-    }
-    return notFoundResult;
-  }
-
-  @override
   void detectChangesInternal() {
     final import2.MaterialDropdownSelectComponent _ctx = ctx;
     bool changed = false;
     bool firstCheck = (this.cdState == 0);
     changed = false;
-    final currVal_0 = _ctx.width;
-    if (!identical(_expr_0, currVal_0)) {
-      _MaterialListComponent_0_5.width = currVal_0;
+    final currVal_1 = _ctx.width;
+    if (!identical(_expr_1, currVal_1)) {
+      _MaterialListComponent_0_5.width = currVal_1;
       changed = true;
-      _expr_0 = currVal_0;
+      _expr_1 = currVal_1;
     }
     if (changed) {
       _compView_0.markAsCheckOnce();
     }
     _NgIf_1_9.ngIf = (_ctx.options != null);
     _appEl_1.detectChangesInNestedViews();
+    if (firstCheck) {
+      if (!identical(_ctx.listId, null)) {
+        setAttr(_el_0, 'id', _ctx.listId?.toString());
+      }
+    }
     _compView_0.detectHostChanges(firstCheck);
     _compView_0.detectChanges();
   }
@@ -518,10 +530,10 @@ class _ViewMaterialDropdownSelectComponent3 extends AppView<import2.MaterialDrop
   import36.KeyboardOnlyFocusIndicatorDirective _KeyboardOnlyFocusIndicatorDirective_0_5;
   import37.MaterialSelectDropdownItemComponent _MaterialSelectDropdownItemComponent_0_6;
   bool _expr_0;
-  var _expr_1;
-  bool _expr_2;
+  bool _expr_1;
+  var _expr_2;
   var _expr_3;
-  var _expr_4;
+  String _expr_4;
   _ViewMaterialDropdownSelectComponent3(AppView<dynamic> parentView, int parentIndex) : super(import12.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMaterialDropdownSelectComponent0._renderType;
   }
@@ -532,7 +544,7 @@ class _ViewMaterialDropdownSelectComponent3 extends AppView<import2.MaterialDrop
     createAttr(_el_0, 'keyboardOnlyFocusIndicator', '');
     addShimC(_el_0);
     _KeyboardOnlyFocusIndicatorDirective_0_5 = new import36.KeyboardOnlyFocusIndicatorDirective(_el_0, parentView.parentView.parentView.parentView.injectorGet(import38.DomService, parentView.parentView.parentView.viewData.parentIndex));
-    _MaterialSelectDropdownItemComponent_0_6 = new import37.MaterialSelectDropdownItemComponent(_el_0, parentView.parentView.parentView.parentView.injectorGet(import38.DomService, parentView.parentView.parentView.viewData.parentIndex), null, (parentView.parentView.parentView as ViewMaterialDropdownSelectComponent0)._MaterialPopupComponent_2_8, parentView.parentView.parentView.parentView.injectorGet(import39.ActivationHandler, parentView.parentView.parentView.viewData.parentIndex, null), _compView_0.ref);
+    _MaterialSelectDropdownItemComponent_0_6 = new import37.MaterialSelectDropdownItemComponent(_el_0, parentView.parentView.parentView.parentView.injectorGet(import38.DomService, parentView.parentView.parentView.viewData.parentIndex), null, (parentView.parentView.parentView as ViewMaterialDropdownSelectComponent0)._MaterialPopupComponent_2_8, parentView.parentView.parentView.parentView.injectorGet(import39.ActivationHandler, parentView.parentView.parentView.viewData.parentIndex, null), parentView.parentView.parentView.parentView.injectorGet(import40.IdGenerator, parentView.parentView.parentView.viewData.parentIndex, null), _compView_0.ref);
     _compView_0.create(_MaterialSelectDropdownItemComponent_0_6, [const []]);
     _el_0.addEventListener('mouseenter', eventHandler1(_handle_mouseenter_0_1));
     _el_0.addEventListener('keyup', eventHandler0(_KeyboardOnlyFocusIndicatorDirective_0_5.resetOutline));
@@ -546,10 +558,7 @@ class _ViewMaterialDropdownSelectComponent3 extends AppView<import2.MaterialDrop
 
   @override
   dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
-    if ((identical(token, import36.KeyboardOnlyFocusIndicatorDirective) && (0 == nodeIndex))) {
-      return _KeyboardOnlyFocusIndicatorDirective_0_5;
-    }
-    if ((((identical(token, import37.MaterialSelectDropdownItemComponent) || identical(token, import40.SelectionItem)) || identical(token, import41.HasRenderer)) && (0 == nodeIndex))) {
+    if (((identical(token, import41.SelectionItem) || identical(token, import42.HasRenderer)) && (0 == nodeIndex))) {
       return _MaterialSelectDropdownItemComponent_0_6;
     }
     return notFoundResult;
@@ -560,30 +569,30 @@ class _ViewMaterialDropdownSelectComponent3 extends AppView<import2.MaterialDrop
     final import2.MaterialDropdownSelectComponent _ctx = ctx;
     bool firstCheck = (this.cdState == 0);
     final local_popup = (parentView.parentView.parentView as ViewMaterialDropdownSelectComponent0)._MaterialPopupComponent_2_8;
-    final currVal_2 = (local_popup.showPopup && _ctx.activeModel.isActive(_ctx.deselectLabel));
+    final currVal_1 = (local_popup.showPopup && _ctx.activeModel.isActive(_ctx.deselectLabel));
+    if (!identical(_expr_1, currVal_1)) {
+      _MaterialSelectDropdownItemComponent_0_6.active = currVal_1;
+      _expr_1 = currVal_1;
+    }
+    final currVal_2 = _ctx.deselectLabel;
     if (!identical(_expr_2, currVal_2)) {
-      _MaterialSelectDropdownItemComponent_0_6.active = currVal_2;
+      _MaterialSelectDropdownItemComponent_0_6.value = currVal_2;
       _expr_2 = currVal_2;
     }
-    final currVal_3 = _ctx.deselectLabel;
+    final currVal_3 = _ctx.isDeselectItemSelected;
     if (!identical(_expr_3, currVal_3)) {
-      _MaterialSelectDropdownItemComponent_0_6.value = currVal_3;
+      _MaterialSelectDropdownItemComponent_0_6.selected = currVal_3;
       _expr_3 = currVal_3;
     }
-    final currVal_4 = _ctx.isDeselectItemSelected;
+    final currVal_4 = _ctx.activeModel.id(_ctx.deselectLabel);
     if (!identical(_expr_4, currVal_4)) {
-      _MaterialSelectDropdownItemComponent_0_6.selected = currVal_4;
+      _MaterialSelectDropdownItemComponent_0_6.id = currVal_4;
       _expr_4 = currVal_4;
     }
     final currVal_0 = (_ctx.options.optionGroups.length == 1);
     if (!identical(_expr_0, currVal_0)) {
       updateElemClass(_el_0, 'empty', currVal_0);
       _expr_0 = currVal_0;
-    }
-    final currVal_1 = _ctx.activeModel.id(_ctx.deselectLabel);
-    if (!identical(_expr_1, currVal_1)) {
-      setAttr(_el_0, 'id', currVal_1?.toString());
-      _expr_1 = currVal_1;
     }
     _compView_0.detectHostChanges(firstCheck);
     _compView_0.detectChanges();
@@ -629,7 +638,7 @@ class _ViewMaterialDropdownSelectComponent4 extends AppView<import2.MaterialDrop
 
   @override
   void detectChangesInternal() {
-    final import42.OptionGroup<dynamic> local_group = locals['\$implicit'];
+    final import43.OptionGroup<dynamic> local_group = locals['\$implicit'];
     _NgIf_1_9.ngIf = (local_group.isNotEmpty || local_group.hasEmptyLabel);
     _appEl_1.detectChangesInNestedViews();
     final currVal_0 = (local_group.isEmpty && !local_group.hasEmptyLabel);
@@ -686,7 +695,7 @@ class _ViewMaterialDropdownSelectComponent5 extends AppView<import2.MaterialDrop
   @override
   void detectChangesInternal() {
     final import2.MaterialDropdownSelectComponent _ctx = ctx;
-    final import42.OptionGroup<dynamic> local_group = parentView.locals['\$implicit'];
+    final import43.OptionGroup<dynamic> local_group = parentView.locals['\$implicit'];
     _NgIf_0_9.ngIf = (local_group.hasLabel && !_ctx.hasCustomLabelRenderer);
     _NgIf_1_9.ngIf = _ctx.hasCustomLabelRenderer;
     _NgIf_2_9.ngIf = local_group.isNotEmpty;
@@ -731,7 +740,7 @@ class _ViewMaterialDropdownSelectComponent6 extends AppView<import2.MaterialDrop
 
   @override
   void detectChangesInternal() {
-    final import42.OptionGroup<dynamic> local_group = parentView.parentView.locals['\$implicit'];
+    final import43.OptionGroup<dynamic> local_group = parentView.parentView.locals['\$implicit'];
     final currVal_0 = import14.interpolate0(local_group.uiDisplayName);
     if (!identical(_expr_0, currVal_0)) {
       _text_1.text = currVal_0;
@@ -746,9 +755,9 @@ AppView<import2.MaterialDropdownSelectComponent> viewFactory_MaterialDropdownSel
 
 class _ViewMaterialDropdownSelectComponent7 extends AppView<import2.MaterialDropdownSelectComponent> {
   import3.Element _el_0;
-  import43.ViewDynamicComponent0 _compView_0;
+  import44.ViewDynamicComponent0 _compView_0;
   ViewContainer _appEl_0;
-  import44.DynamicComponent _DynamicComponent_0_8;
+  import45.DynamicComponent _DynamicComponent_0_8;
   var _expr_0;
   var _expr_1;
   var _expr_2;
@@ -757,29 +766,21 @@ class _ViewMaterialDropdownSelectComponent7 extends AppView<import2.MaterialDrop
   }
   @override
   ComponentRef<import2.MaterialDropdownSelectComponent> build() {
-    _compView_0 = new import43.ViewDynamicComponent0(this, 0);
+    _compView_0 = new import44.ViewDynamicComponent0(this, 0);
     _el_0 = _compView_0.rootEl;
     addShimC(_el_0);
     _appEl_0 = new ViewContainer(0, null, this, _el_0);
-    _DynamicComponent_0_8 = new import44.DynamicComponent(parentView.parentView.parentView.parentView.parentView.parentView.injectorGet(import45.SlowComponentLoader, parentView.parentView.parentView.parentView.parentView.viewData.parentIndex), _compView_0.ref, _appEl_0);
+    _DynamicComponent_0_8 = new import45.DynamicComponent(parentView.parentView.parentView.parentView.parentView.parentView.injectorGet(import46.SlowComponentLoader, parentView.parentView.parentView.parentView.parentView.viewData.parentIndex), _compView_0.ref, _appEl_0);
     _compView_0.create(_DynamicComponent_0_8, []);
     init0(_appEl_0);
     return null;
   }
 
   @override
-  dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
-    if ((identical(token, import44.DynamicComponent) && (0 == nodeIndex))) {
-      return _DynamicComponent_0_8;
-    }
-    return notFoundResult;
-  }
-
-  @override
   void detectChangesInternal() {
     final import2.MaterialDropdownSelectComponent _ctx = ctx;
     bool changed = false;
-    final import42.OptionGroup<dynamic> local_group = parentView.parentView.locals['\$implicit'];
+    final import43.OptionGroup<dynamic> local_group = parentView.parentView.locals['\$implicit'];
     changed = false;
     final currVal_0 = ((_ctx.labelRenderer != null) ? _ctx.labelRenderer(local_group) : null);
     if (!identical(_expr_0, currVal_0)) {
@@ -837,7 +838,7 @@ class _ViewMaterialDropdownSelectComponent8 extends AppView<import2.MaterialDrop
 
   @override
   void detectChangesInternal() {
-    final import42.OptionGroup<dynamic> local_group = parentView.parentView.locals['\$implicit'];
+    final import43.OptionGroup<dynamic> local_group = parentView.parentView.locals['\$implicit'];
     final currVal_0 = local_group;
     if (!identical(_expr_0, currVal_0)) {
       _NgFor_0_9.ngForOf = currVal_0;
@@ -862,16 +863,16 @@ class _ViewMaterialDropdownSelectComponent9 extends AppView<import2.MaterialDrop
   import35.ViewMaterialSelectDropdownItemComponent0 _compView_0;
   import36.KeyboardOnlyFocusIndicatorDirective _KeyboardOnlyFocusIndicatorDirective_0_5;
   import37.MaterialSelectDropdownItemComponent _MaterialSelectDropdownItemComponent_0_6;
-  var _expr_0;
+  bool _expr_0;
   bool _expr_1;
-  bool _expr_2;
+  var _expr_2;
   var _expr_3;
   var _expr_4;
   var _expr_5;
   var _expr_6;
-  var _expr_7;
-  bool _expr_8;
-  var _expr_9;
+  bool _expr_7;
+  var _expr_8;
+  String _expr_9;
   _ViewMaterialDropdownSelectComponent9(AppView<dynamic> parentView, int parentIndex) : super(import12.ViewType.EMBEDDED, {'\$implicit': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMaterialDropdownSelectComponent0._renderType;
   }
@@ -882,7 +883,7 @@ class _ViewMaterialDropdownSelectComponent9 extends AppView<import2.MaterialDrop
     createAttr(_el_0, 'keyboardOnlyFocusIndicator', '');
     addShimC(_el_0);
     _KeyboardOnlyFocusIndicatorDirective_0_5 = new import36.KeyboardOnlyFocusIndicatorDirective(_el_0, parentView.parentView.parentView.parentView.parentView.parentView.parentView.injectorGet(import38.DomService, parentView.parentView.parentView.parentView.parentView.parentView.viewData.parentIndex));
-    _MaterialSelectDropdownItemComponent_0_6 = new import37.MaterialSelectDropdownItemComponent(_el_0, parentView.parentView.parentView.parentView.parentView.parentView.parentView.injectorGet(import38.DomService, parentView.parentView.parentView.parentView.parentView.parentView.viewData.parentIndex), null, (parentView.parentView.parentView.parentView.parentView.parentView as ViewMaterialDropdownSelectComponent0)._MaterialPopupComponent_2_8, parentView.parentView.parentView.parentView.parentView.parentView.parentView.injectorGet(import39.ActivationHandler, parentView.parentView.parentView.parentView.parentView.parentView.viewData.parentIndex, null), _compView_0.ref);
+    _MaterialSelectDropdownItemComponent_0_6 = new import37.MaterialSelectDropdownItemComponent(_el_0, parentView.parentView.parentView.parentView.parentView.parentView.parentView.injectorGet(import38.DomService, parentView.parentView.parentView.parentView.parentView.parentView.viewData.parentIndex), null, (parentView.parentView.parentView.parentView.parentView.parentView as ViewMaterialDropdownSelectComponent0)._MaterialPopupComponent_2_8, parentView.parentView.parentView.parentView.parentView.parentView.parentView.injectorGet(import39.ActivationHandler, parentView.parentView.parentView.parentView.parentView.parentView.viewData.parentIndex, null), parentView.parentView.parentView.parentView.parentView.parentView.parentView.injectorGet(import40.IdGenerator, parentView.parentView.parentView.parentView.parentView.parentView.viewData.parentIndex, null), _compView_0.ref);
     _compView_0.create(_MaterialSelectDropdownItemComponent_0_6, [const []]);
     _el_0.addEventListener('mouseenter', eventHandler1(_handle_mouseenter_0_0));
     _el_0.addEventListener('keyup', eventHandler0(_KeyboardOnlyFocusIndicatorDirective_0_5.resetOutline));
@@ -895,10 +896,7 @@ class _ViewMaterialDropdownSelectComponent9 extends AppView<import2.MaterialDrop
 
   @override
   dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
-    if ((identical(token, import36.KeyboardOnlyFocusIndicatorDirective) && (0 == nodeIndex))) {
-      return _KeyboardOnlyFocusIndicatorDirective_0_5;
-    }
-    if ((((identical(token, import37.MaterialSelectDropdownItemComponent) || identical(token, import40.SelectionItem)) || identical(token, import41.HasRenderer)) && (0 == nodeIndex))) {
+    if (((identical(token, import41.SelectionItem) || identical(token, import42.HasRenderer)) && (0 == nodeIndex))) {
       return _MaterialSelectDropdownItemComponent_0_6;
     }
     return notFoundResult;
@@ -908,57 +906,57 @@ class _ViewMaterialDropdownSelectComponent9 extends AppView<import2.MaterialDrop
   void detectChangesInternal() {
     final import2.MaterialDropdownSelectComponent _ctx = ctx;
     bool firstCheck = (this.cdState == 0);
-    final local_item = locals['\$implicit'];
     final local_popup = (parentView.parentView.parentView.parentView.parentView.parentView as ViewMaterialDropdownSelectComponent0)._MaterialPopupComponent_2_8;
-    final currVal_1 = (local_popup.showPopup && _ctx.activeModel.isActive(local_item));
+    final local_item = locals['\$implicit'];
+    final currVal_0 = (local_popup.showPopup && _ctx.activeModel.isActive(local_item));
+    if (!identical(_expr_0, currVal_0)) {
+      _MaterialSelectDropdownItemComponent_0_6.active = currVal_0;
+      _expr_0 = currVal_0;
+    }
+    final currVal_1 = _ctx.isOptionDisabled(local_item);
     if (!identical(_expr_1, currVal_1)) {
-      _MaterialSelectDropdownItemComponent_0_6.active = currVal_1;
+      _MaterialSelectDropdownItemComponent_0_6.disabled = currVal_1;
       _expr_1 = currVal_1;
     }
-    final currVal_2 = _ctx.isOptionDisabled(local_item);
+    final currVal_2 = _ctx.componentRenderer;
     if (!identical(_expr_2, currVal_2)) {
-      _MaterialSelectDropdownItemComponent_0_6.disabled = currVal_2;
+      _MaterialSelectDropdownItemComponent_0_6.componentRenderer = currVal_2;
       _expr_2 = currVal_2;
     }
-    final currVal_3 = _ctx.componentRenderer;
+    final currVal_3 = _ctx.factoryRenderer;
     if (!identical(_expr_3, currVal_3)) {
-      _MaterialSelectDropdownItemComponent_0_6.componentRenderer = currVal_3;
+      _MaterialSelectDropdownItemComponent_0_6.factoryRenderer = currVal_3;
       _expr_3 = currVal_3;
     }
-    final currVal_4 = _ctx.factoryRenderer;
+    final currVal_4 = _ctx.isOptionHidden(local_item);
     if (!identical(_expr_4, currVal_4)) {
-      _MaterialSelectDropdownItemComponent_0_6.factoryRenderer = currVal_4;
+      _MaterialSelectDropdownItemComponent_0_6.isHidden = currVal_4;
       _expr_4 = currVal_4;
     }
-    final currVal_5 = _ctx.isOptionHidden(local_item);
+    final currVal_5 = local_item;
     if (!identical(_expr_5, currVal_5)) {
-      _MaterialSelectDropdownItemComponent_0_6.isHidden = currVal_5;
+      _MaterialSelectDropdownItemComponent_0_6.value = currVal_5;
       _expr_5 = currVal_5;
     }
-    final currVal_6 = local_item;
+    final currVal_6 = _ctx.itemRenderer;
     if (!identical(_expr_6, currVal_6)) {
-      _MaterialSelectDropdownItemComponent_0_6.value = currVal_6;
+      _MaterialSelectDropdownItemComponent_0_6.itemRenderer = currVal_6;
       _expr_6 = currVal_6;
     }
-    final currVal_7 = _ctx.itemRenderer;
+    final currVal_7 = _ctx.deselectOnActivate;
     if (!identical(_expr_7, currVal_7)) {
-      _MaterialSelectDropdownItemComponent_0_6.itemRenderer = currVal_7;
+      _MaterialSelectDropdownItemComponent_0_6.deselectOnActivate = currVal_7;
       _expr_7 = currVal_7;
     }
-    final currVal_8 = _ctx.deselectOnActivate;
+    final currVal_8 = _ctx.selection;
     if (!identical(_expr_8, currVal_8)) {
-      _MaterialSelectDropdownItemComponent_0_6.deselectOnActivate = currVal_8;
+      _MaterialSelectDropdownItemComponent_0_6.selection = currVal_8;
       _expr_8 = currVal_8;
     }
-    final currVal_9 = _ctx.selection;
+    final currVal_9 = _ctx.activeModel.id(local_item);
     if (!identical(_expr_9, currVal_9)) {
-      _MaterialSelectDropdownItemComponent_0_6.selection = currVal_9;
+      _MaterialSelectDropdownItemComponent_0_6.id = currVal_9;
       _expr_9 = currVal_9;
-    }
-    final currVal_0 = _ctx.activeModel.id(local_item);
-    if (!identical(_expr_0, currVal_0)) {
-      setAttr(_el_0, 'id', currVal_0?.toString());
-      _expr_0 = currVal_0;
     }
     _compView_0.detectHostChanges(firstCheck);
     _compView_0.detectChanges();
@@ -996,7 +994,7 @@ class _ViewMaterialDropdownSelectComponent10 extends AppView<import2.MaterialDro
     createAttr(_el_0, 'keyboardOnlyFocusIndicator', '');
     addShimC(_el_0);
     _KeyboardOnlyFocusIndicatorDirective_0_5 = new import36.KeyboardOnlyFocusIndicatorDirective(_el_0, parentView.parentView.parentView.parentView.parentView.parentView.injectorGet(import38.DomService, parentView.parentView.parentView.parentView.parentView.viewData.parentIndex));
-    _MaterialSelectDropdownItemComponent_0_6 = new import37.MaterialSelectDropdownItemComponent(_el_0, parentView.parentView.parentView.parentView.parentView.parentView.injectorGet(import38.DomService, parentView.parentView.parentView.parentView.parentView.viewData.parentIndex), null, (parentView.parentView.parentView.parentView.parentView as ViewMaterialDropdownSelectComponent0)._MaterialPopupComponent_2_8, parentView.parentView.parentView.parentView.parentView.parentView.injectorGet(import39.ActivationHandler, parentView.parentView.parentView.parentView.parentView.viewData.parentIndex, null), _compView_0.ref);
+    _MaterialSelectDropdownItemComponent_0_6 = new import37.MaterialSelectDropdownItemComponent(_el_0, parentView.parentView.parentView.parentView.parentView.parentView.injectorGet(import38.DomService, parentView.parentView.parentView.parentView.parentView.viewData.parentIndex), null, (parentView.parentView.parentView.parentView.parentView as ViewMaterialDropdownSelectComponent0)._MaterialPopupComponent_2_8, parentView.parentView.parentView.parentView.parentView.parentView.injectorGet(import39.ActivationHandler, parentView.parentView.parentView.parentView.parentView.viewData.parentIndex, null), parentView.parentView.parentView.parentView.parentView.parentView.injectorGet(import40.IdGenerator, parentView.parentView.parentView.parentView.parentView.viewData.parentIndex, null), _compView_0.ref);
     _compView_0.create(_MaterialSelectDropdownItemComponent_0_6, [const []]);
     _el_0.addEventListener('keyup', eventHandler0(_KeyboardOnlyFocusIndicatorDirective_0_5.resetOutline));
     _el_0.addEventListener('blur', eventHandler0(_KeyboardOnlyFocusIndicatorDirective_0_5.resetOutline));
@@ -1008,10 +1006,7 @@ class _ViewMaterialDropdownSelectComponent10 extends AppView<import2.MaterialDro
 
   @override
   dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
-    if ((identical(token, import36.KeyboardOnlyFocusIndicatorDirective) && (0 == nodeIndex))) {
-      return _KeyboardOnlyFocusIndicatorDirective_0_5;
-    }
-    if ((((identical(token, import37.MaterialSelectDropdownItemComponent) || identical(token, import40.SelectionItem)) || identical(token, import41.HasRenderer)) && (0 == nodeIndex))) {
+    if (((identical(token, import41.SelectionItem) || identical(token, import42.HasRenderer)) && (0 == nodeIndex))) {
       return _MaterialSelectDropdownItemComponent_0_6;
     }
     return notFoundResult;
@@ -1020,7 +1015,7 @@ class _ViewMaterialDropdownSelectComponent10 extends AppView<import2.MaterialDro
   @override
   void detectChangesInternal() {
     bool firstCheck = (this.cdState == 0);
-    final import42.OptionGroup<dynamic> local_group = parentView.parentView.locals['\$implicit'];
+    final import43.OptionGroup<dynamic> local_group = parentView.parentView.locals['\$implicit'];
     if (firstCheck) {
       (_MaterialSelectDropdownItemComponent_0_6.disabled = true);
     }
@@ -1054,7 +1049,7 @@ class _ViewMaterialDropdownSelectComponentHost0 extends AppView<dynamic> {
   ComponentRef build() {
     _compView_0 = new ViewMaterialDropdownSelectComponent0(this, 0);
     rootEl = _compView_0.rootEl;
-    _MaterialDropdownSelectComponent_0_5 = new import2.MaterialDropdownSelectComponent(this.injectorGet(import46.IdGenerator, viewData.parentIndex, null), this.injectorGet(import25.PopupSizeProvider, viewData.parentIndex, null), this.injectorGet(const import22.OpaqueToken('isRtl'), viewData.parentIndex, null), null, rootEl);
+    _MaterialDropdownSelectComponent_0_5 = new import2.MaterialDropdownSelectComponent(this.injectorGet(import40.IdGenerator, viewData.parentIndex, null), this.injectorGet(import25.PopupSizeProvider, viewData.parentIndex, null), this.injectorGet(const import22.OpaqueToken('isRtl'), viewData.parentIndex, null), null, rootEl);
     _compView_0.create(_MaterialDropdownSelectComponent_0_5, projectableNodes);
     init0(rootEl);
     return new ComponentRef<import2.MaterialDropdownSelectComponent>(0, this, rootEl, _MaterialDropdownSelectComponent_0_5);
@@ -1062,7 +1057,7 @@ class _ViewMaterialDropdownSelectComponentHost0 extends AppView<dynamic> {
 
   @override
   dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
-    if ((((((((identical(token, import2.MaterialDropdownSelectComponent) || identical(token, import29.DropdownHandle)) || identical(token, import41.HasRenderer)) || identical(token, import28.DeferredContentAware)) || identical(token, import40.SelectionContainer)) || identical(token, import25.PopupSizeProvider)) || identical(token, import39.ActivationHandler)) && (0 == nodeIndex))) {
+    if ((((((((identical(token, import2.MaterialDropdownSelectComponent) || identical(token, import29.DropdownHandle)) || identical(token, import42.HasRenderer)) || identical(token, import28.DeferredContentAware)) || identical(token, import41.SelectionContainer)) || identical(token, import25.PopupSizeProvider)) || identical(token, import39.ActivationHandler)) && (0 == nodeIndex))) {
       return _MaterialDropdownSelectComponent_0_5;
     }
     return notFoundResult;

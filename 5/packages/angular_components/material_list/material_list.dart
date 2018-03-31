@@ -17,14 +17,14 @@ export 'material_list_size.dart';
 /// The `MaterialListComponent` class acts as the root node for a list
 /// providing styling and the ability to collect item events.
 ///
-///
 /// __Example usage:__
+///
 ///     <material-list size="medium">
 ///       <material-list-item>Item 1</material-list-item>
 ///       <material-list-item>Item 2</material-list-item>
 ///     </material-list>
 ///
-/// ## List Item Grouping
+/// __List Item Grouping:__
 ///
 /// Wrap `material-list-item` elements in a container with attribute
 /// `group` for a divider line between other groupings.
@@ -44,7 +44,7 @@ export 'material_list_size.dart';
 ///       </div>
 ///     <material-list>
 ///
-/// ## List Item Group Labels
+/// __List Item Group Labels:__
 ///
 /// Denote the label for a list item group using the `label` attribute.
 ///
@@ -71,8 +71,6 @@ export 'material_list_size.dart';
   host: const {'[attr.size]': 'size'},
   template: '<ng-content></ng-content>',
   changeDetection: ChangeDetectionStrategy.OnPush,
-  // TODO(google): Change to `Visibility.local` to reduce code size.
-  visibility: Visibility.all,
 )
 class MaterialListComponent implements AcceptsWidth {
   @Input()

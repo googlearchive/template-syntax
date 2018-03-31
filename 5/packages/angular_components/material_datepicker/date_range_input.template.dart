@@ -144,9 +144,6 @@ class ViewDateRangeInputComponent0 extends AppView<import2.DateRangeInputCompone
     if ((((identical(token, import6.MaterialInputComponent) || identical(token, import16.ReferenceDirective)) || identical(token, import17.Focusable)) && (0 == nodeIndex))) {
       return _MaterialInputComponent_0_6;
     }
-    if ((identical(token, import7.DateInputDirective) && (0 == nodeIndex))) {
-      return _DateInputDirective_0_7;
-    }
     if ((identical(token, import18.BaseMaterialInput) && (0 == nodeIndex))) {
       return _BaseMaterialInput_0_8;
     }
@@ -161,9 +158,6 @@ class ViewDateRangeInputComponent0 extends AppView<import2.DateRangeInputCompone
     }
     if ((((identical(token, import6.MaterialInputComponent) || identical(token, import16.ReferenceDirective)) || identical(token, import17.Focusable)) && (3 == nodeIndex))) {
       return _MaterialInputComponent_3_6;
-    }
-    if ((identical(token, import7.DateInputDirective) && (3 == nodeIndex))) {
-      return _DateInputDirective_3_7;
     }
     if ((identical(token, import18.BaseMaterialInput) && (3 == nodeIndex))) {
       return _BaseMaterialInput_3_8;
@@ -316,14 +310,6 @@ class _ViewDateRangeInputComponentHost0 extends AppView<dynamic> {
     _compView_0.create(_DateRangeInputComponent_0_5, projectableNodes);
     init0(rootEl);
     return new ComponentRef<import2.DateRangeInputComponent>(0, this, rootEl, _DateRangeInputComponent_0_5);
-  }
-
-  @override
-  dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
-    if ((identical(token, import2.DateRangeInputComponent) && (0 == nodeIndex))) {
-      return _DateRangeInputComponent_0_5;
-    }
-    return notFoundResult;
   }
 
   @override

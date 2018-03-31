@@ -13,7 +13,9 @@ import 'material_drawer_base.dart';
 /// in the list of styleUrls of the containing component.
 ///
 /// Works with deferred content.
+///
 /// __Example usage:__
+///
 ///     <material-drawer persistent #drawer="drawer">
 ///         ... content here ...
 ///     </material-drawer>
@@ -31,8 +33,7 @@ import 'material_drawer_base.dart';
     '[class.mat-drawer-collapsed]': '!visible',
     '[class.mat-drawer-expanded]': 'visible',
   },
-  // TODO(google): Change to `Visibility.local` to reduce code size.
-  visibility: Visibility.all,
+  visibility: Visibility.all, // Injected by child elements.
 )
 class MaterialPersistentDrawerDirective extends MaterialDrawerBase {
   MaterialPersistentDrawerDirective() : super();

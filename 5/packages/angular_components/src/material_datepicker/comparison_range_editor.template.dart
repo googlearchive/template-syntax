@@ -215,7 +215,7 @@ class _ViewComparisonRangeEditorComponent2 extends AppView<import2.ComparisonRan
     _el_0 = _compView_0.rootEl;
     createAttr(_el_0, 'closeOnActivate', 'false');
     addShimC(_el_0);
-    _MaterialSelectItemComponent_0_5 = new import16.MaterialSelectItemComponent(_el_0, parentView.parentView.injectorGet(import17.DomService, parentView.viewData.parentIndex), parentView.parentView.injectorGet(import18.DropdownHandle, parentView.viewData.parentIndex, null), parentView.parentView.injectorGet(import19.ActivationHandler, parentView.viewData.parentIndex, null), _compView_0.ref);
+    _MaterialSelectItemComponent_0_5 = new import16.MaterialSelectItemComponent(_el_0, parentView.parentView.injectorGet(import17.DomService, parentView.viewData.parentIndex), parentView.parentView.injectorGet(import18.DropdownHandle, parentView.viewData.parentIndex, null), parentView.parentView.injectorGet(import19.ActivationHandler, parentView.viewData.parentIndex, null), _compView_0.ref, null);
     _text_1 = new import3.Text('');
     _compView_0.create(_MaterialSelectItemComponent_0_5, [
       [_text_1]
@@ -227,7 +227,7 @@ class _ViewComparisonRangeEditorComponent2 extends AppView<import2.ComparisonRan
 
   @override
   dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
-    if ((((identical(token, import16.MaterialSelectItemComponent) || identical(token, import20.SelectionItem)) || identical(token, import21.HasRenderer)) && ((0 <= nodeIndex) && (nodeIndex <= 1)))) {
+    if (((identical(token, import20.SelectionItem) || identical(token, import21.HasRenderer)) && ((0 <= nodeIndex) && (nodeIndex <= 1)))) {
       return _MaterialSelectItemComponent_0_5;
     }
     return notFoundResult;
@@ -285,14 +285,6 @@ class _ViewComparisonRangeEditorComponentHost0 extends AppView<dynamic> {
     _compView_0.create(_ComparisonRangeEditorComponent_0_5, projectableNodes);
     init0(rootEl);
     return new ComponentRef<import2.ComparisonRangeEditorComponent>(0, this, rootEl, _ComparisonRangeEditorComponent_0_5);
-  }
-
-  @override
-  dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
-    if ((identical(token, import2.ComparisonRangeEditorComponent) && (0 == nodeIndex))) {
-      return _ComparisonRangeEditorComponent_0_5;
-    }
-    return notFoundResult;
   }
 
   @override

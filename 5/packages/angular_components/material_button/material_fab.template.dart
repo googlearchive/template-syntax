@@ -34,15 +34,15 @@ class ViewMaterialFabComponent0 extends AppView<import2.MaterialFabComponent> {
   import5.MaterialRippleComponent _MaterialRippleComponent_1_5;
   var _expr_0;
   var _expr_1;
-  bool _expr_2;
-  var _expr_3;
+  var _expr_2;
+  bool _expr_3;
   var _expr_4;
-  bool _expr_5;
+  var _expr_5;
   bool _expr_6;
+  bool _expr_7;
   static RenderComponentType _renderType;
   ViewMaterialFabComponent0(AppView<dynamic> parentView, int parentIndex) : super(import7.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckOnce) {
     rootEl = import3.document.createElement('material-fab');
-    createAttr(rootEl, 'role', 'button');
     createAttr(rootEl, 'animated', 'true');
     _renderType ??= import9.appViewUtils.createRenderType('', ViewEncapsulation.Emulated, styles$MaterialFabComponent);
     setupComponentType(_renderType);
@@ -97,35 +97,40 @@ class ViewMaterialFabComponent0 extends AppView<import2.MaterialFabComponent> {
       setProp(rootEl, 'tabIndex', currVal_0);
       _expr_0 = currVal_0;
     }
-    final currVal_1 = ctx.disabledStr;
+    final currVal_1 = ctx.role;
     if (!identical(_expr_1, currVal_1)) {
-      setAttr(rootEl, 'aria-disabled', currVal_1?.toString());
+      setAttr(rootEl, 'role', currVal_1?.toString());
       _expr_1 = currVal_1;
     }
-    final currVal_2 = ctx.disabled;
+    final currVal_2 = ctx.disabledStr;
     if (!identical(_expr_2, currVal_2)) {
-      updateElemClass(rootEl, 'is-disabled', currVal_2);
+      setAttr(rootEl, 'aria-disabled', currVal_2?.toString());
       _expr_2 = currVal_2;
     }
-    final currVal_3 = (ctx.disabled ? '' : null);
+    final currVal_3 = ctx.disabled;
     if (!identical(_expr_3, currVal_3)) {
-      setAttr(rootEl, 'disabled', currVal_3?.toString());
+      updateElemClass(rootEl, 'is-disabled', currVal_3);
       _expr_3 = currVal_3;
     }
-    final currVal_4 = (ctx.raised ? '' : null);
+    final currVal_4 = (ctx.disabled ? '' : null);
     if (!identical(_expr_4, currVal_4)) {
-      setAttr(rootEl, 'raised', currVal_4?.toString());
+      setAttr(rootEl, 'disabled', currVal_4?.toString());
       _expr_4 = currVal_4;
     }
-    final currVal_5 = ctx.visualFocus;
+    final currVal_5 = (ctx.raised ? '' : null);
     if (!identical(_expr_5, currVal_5)) {
-      updateElemClass(rootEl, 'is-focused', currVal_5);
+      setAttr(rootEl, 'raised', currVal_5?.toString());
       _expr_5 = currVal_5;
     }
-    final currVal_6 = ctx.isPressed;
+    final currVal_6 = ctx.visualFocus;
     if (!identical(_expr_6, currVal_6)) {
-      updateElemClass(rootEl, 'is-pressed', currVal_6);
+      updateElemClass(rootEl, 'is-focused', currVal_6);
       _expr_6 = currVal_6;
+    }
+    final currVal_7 = ctx.isPressed;
+    if (!identical(_expr_7, currVal_7)) {
+      updateElemClass(rootEl, 'is-pressed', currVal_7);
+      _expr_7 = currVal_7;
     }
   }
 }

@@ -196,12 +196,6 @@ class ViewMaterialTreeDropdownComponent0 extends AppView<import2.MaterialTreeDro
 
   @override
   dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
-    if ((identical(token, import4.KeyboardOnlyFocusIndicatorDirective) && ((0 <= nodeIndex) && (nodeIndex <= 3)))) {
-      return _KeyboardOnlyFocusIndicatorDirective_0_5;
-    }
-    if ((identical(token, import5.PopupSourceDirective) && ((0 <= nodeIndex) && (nodeIndex <= 3)))) {
-      return _PopupSourceDirective_0_6;
-    }
     if ((((identical(token, import9.MaterialPopupComponent) || identical(token, import29.DeferredContentAware)) || identical(token, import30.DropdownHandle)) && ((4 <= nodeIndex) && (nodeIndex <= 7)))) {
       return _MaterialPopupComponent_4_8;
     }
@@ -535,7 +529,7 @@ class _ViewMaterialTreeDropdownComponent5 extends AppView<import2.MaterialTreeDr
 
   @override
   dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
-    if (((identical(token, import38.MaterialTreeComponent) || identical(token, import36.MaterialTreeRoot)) && (0 == nodeIndex))) {
+    if ((identical(token, import36.MaterialTreeRoot) && (0 == nodeIndex))) {
       return _MaterialTreeComponent_0_5;
     }
     return notFoundResult;

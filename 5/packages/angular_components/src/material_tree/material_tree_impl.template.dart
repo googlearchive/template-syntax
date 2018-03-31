@@ -189,14 +189,6 @@ class _ViewMaterialTreeComponent2 extends AppView<import1.MaterialTreeComponent>
   }
 
   @override
-  dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
-    if ((identical(token, import13.MaterialTreeGroupComponent) && (0 == nodeIndex))) {
-      return _MaterialTreeGroupComponent_0_5;
-    }
-    return notFoundResult;
-  }
-
-  @override
   void detectChangesInternal() {
     final import1.MaterialTreeComponent _ctx = ctx;
     bool firstCheck = (this.cdState == 0);
@@ -351,14 +343,6 @@ class _ViewMaterialTreeComponent5 extends AppView<import1.MaterialTreeComponent>
   }
 
   @override
-  dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
-    if ((identical(token, import19.MaterialTreeGroupFlatListComponent) && (0 == nodeIndex))) {
-      return _MaterialTreeGroupFlatListComponent_0_5;
-    }
-    return notFoundResult;
-  }
-
-  @override
   void detectChangesInternal() {
     bool firstCheck = (this.cdState == 0);
     final import17.OptionGroup<dynamic> local_group = locals['\$implicit'];
@@ -436,14 +420,6 @@ class _ViewMaterialTreeComponent7 extends AppView<import1.MaterialTreeComponent>
     _compView_0.create(_MaterialTreeGroupFlatRadioComponent_0_5, []);
     init0(_el_0);
     return null;
-  }
-
-  @override
-  dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
-    if ((identical(token, import19.MaterialTreeGroupFlatRadioComponent) && (0 == nodeIndex))) {
-      return _MaterialTreeGroupFlatRadioComponent_0_5;
-    }
-    return notFoundResult;
   }
 
   @override
@@ -527,14 +503,6 @@ class _ViewMaterialTreeComponent9 extends AppView<import1.MaterialTreeComponent>
   }
 
   @override
-  dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
-    if ((identical(token, import19.MaterialTreeGroupFlatCheckComponent) && (0 == nodeIndex))) {
-      return _MaterialTreeGroupFlatCheckComponent_0_5;
-    }
-    return notFoundResult;
-  }
-
-  @override
   void detectChangesInternal() {
     bool firstCheck = (this.cdState == 0);
     final import17.OptionGroup<dynamic> local_group = locals['\$implicit'];
@@ -575,7 +543,7 @@ class _ViewMaterialTreeComponentHost0 extends AppView<dynamic> {
 
   @override
   dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
-    if (((identical(token, import1.MaterialTreeComponent) || identical(token, import14.MaterialTreeRoot)) && (0 == nodeIndex))) {
+    if ((identical(token, import14.MaterialTreeRoot) && (0 == nodeIndex))) {
       return _MaterialTreeComponent_0_5;
     }
     return notFoundResult;

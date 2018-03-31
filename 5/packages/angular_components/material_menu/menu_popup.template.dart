@@ -252,17 +252,8 @@ class _ViewMenuPopupComponent1 extends AppView<import2.MenuPopupComponent> {
 
   @override
   dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
-    if ((identical(token, import30.MenuRootDirective) && ((2 <= nodeIndex) && (nodeIndex <= 3)))) {
-      return _MenuRootDirective_2_6;
-    }
     if ((identical(token, import30.MenuRoot) && ((2 <= nodeIndex) && (nodeIndex <= 3)))) {
       return _MenuRoot_2_7;
-    }
-    if ((identical(token, import31.MenuItemGroupsComponent) && ((2 <= nodeIndex) && (nodeIndex <= 3)))) {
-      return _MenuItemGroupsComponent_2_8;
-    }
-    if ((identical(token, import27.MaterialListComponent) && ((0 <= nodeIndex) && (nodeIndex <= 4)))) {
-      return _MaterialListComponent_0_5;
     }
     return notFoundResult;
   }
@@ -342,14 +333,6 @@ class _ViewMenuPopupComponentHost0 extends AppView<dynamic> {
     _compView_0.create(_MenuPopupComponent_0_5, projectableNodes);
     init0(rootEl);
     return new ComponentRef<import2.MenuPopupComponent>(0, this, rootEl, _MenuPopupComponent_0_5);
-  }
-
-  @override
-  dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
-    if ((identical(token, import2.MenuPopupComponent) && (0 == nodeIndex))) {
-      return _MenuPopupComponent_0_5;
-    }
-    return notFoundResult;
   }
 
   @override

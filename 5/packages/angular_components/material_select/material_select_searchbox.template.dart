@@ -182,7 +182,7 @@ class _ViewMaterialSelectSearchboxComponentHost0 extends AppView<dynamic> {
 
   @override
   dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
-    if (((identical(token, import2.MaterialSelectSearchboxComponent) || identical(token, import17.Focusable)) && (0 == nodeIndex))) {
+    if ((identical(token, import17.Focusable) && (0 == nodeIndex))) {
       return _MaterialSelectSearchboxComponent_0_5;
     }
     return notFoundResult;

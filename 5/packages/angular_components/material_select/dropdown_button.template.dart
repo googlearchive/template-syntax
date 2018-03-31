@@ -56,7 +56,10 @@ class ViewDropdownButtonComponent0 extends AppView<import3.DropdownButtonCompone
   var _expr_0;
   bool _expr_1;
   bool _expr_2;
-  bool _expr_3;
+  var _expr_3;
+  var _expr_4;
+  var _expr_5;
+  bool _expr_6;
   static RenderComponentType _renderType;
   ViewDropdownButtonComponent0(AppView<dynamic> parentView, int parentIndex) : super(import10.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckOnce) {
     rootEl = import4.document.createElement('dropdown-button');
@@ -69,12 +72,14 @@ class ViewDropdownButtonComponent0 extends AppView<import3.DropdownButtonCompone
     final import4.HtmlElement parentRenderNode = initViewRoot(_rootEl);
     var doc = import4.document;
     _el_0 = createDivAndAppend(doc, parentRenderNode);
+    createAttr(_el_0, 'aria-autocomplete', 'none');
+    createAttr(_el_0, 'aria-haspopup', 'listbox');
     createAttr(_el_0, 'buttonDecorator', '');
     _el_0.className = 'button';
     createAttr(_el_0, 'keyboardOnlyFocusIndicator', '');
-    createAttr(_el_0, 'role', 'button');
+    createAttr(_el_0, 'role', 'combobox');
     addShimC(_el_0);
-    _ButtonDirective_0_5 = new import5.ButtonDirectiveNgCd(new import14.ButtonDirective(_el_0));
+    _ButtonDirective_0_5 = new import5.ButtonDirectiveNgCd(new import14.ButtonDirective(_el_0, 'combobox'));
     _KeyboardOnlyFocusIndicatorDirective_0_6 = new import6.KeyboardOnlyFocusIndicatorDirective(_el_0, parentView.injectorGet(import15.DomService, viewData.parentIndex));
     var _anchor_1 = ngAnchor.clone(false);
     _el_0.append(_anchor_1);
@@ -108,19 +113,16 @@ class ViewDropdownButtonComponent0 extends AppView<import3.DropdownButtonCompone
     if ((identical(token, import14.ButtonDirective) && ((0 <= nodeIndex) && (nodeIndex <= 2)))) {
       return _ButtonDirective_0_5.instance;
     }
-    if ((identical(token, import6.KeyboardOnlyFocusIndicatorDirective) && ((0 <= nodeIndex) && (nodeIndex <= 2)))) {
-      return _KeyboardOnlyFocusIndicatorDirective_0_6;
-    }
     return notFoundResult;
   }
 
   @override
   void detectChangesInternal() {
     final import3.DropdownButtonComponent _ctx = ctx;
-    final currVal_3 = _ctx.disabled;
-    if (!identical(_expr_3, currVal_3)) {
-      _ButtonDirective_0_5.instance.disabled = currVal_3;
-      _expr_3 = currVal_3;
+    final currVal_6 = _ctx.disabled;
+    if (!identical(_expr_6, currVal_6)) {
+      _ButtonDirective_0_5.instance.disabled = currVal_6;
+      _expr_6 = currVal_6;
     }
     _NgIf_1_9.ngIf = (_ctx.buttonText != null);
     _NgIf_2_9.ngIf = (_ctx.buttonIcon != null);
@@ -142,6 +144,21 @@ class ViewDropdownButtonComponent0 extends AppView<import3.DropdownButtonCompone
     if (!identical(_expr_2, currVal_2)) {
       updateClass(_el_0, 'invalid', currVal_2);
       _expr_2 = currVal_2;
+    }
+    final currVal_3 = _ctx.ariaOwns;
+    if (!identical(_expr_3, currVal_3)) {
+      setAttr(_el_0, 'aria-owns', currVal_3?.toString());
+      _expr_3 = currVal_3;
+    }
+    final currVal_4 = _ctx.ariaExpanded;
+    if (!identical(_expr_4, currVal_4)) {
+      setAttr(_el_0, 'aria-expanded', currVal_4?.toString());
+      _expr_4 = currVal_4;
+    }
+    final currVal_5 = _ctx.ariaActiveDescendant;
+    if (!identical(_expr_5, currVal_5)) {
+      setAttr(_el_0, 'aria-activedescendant', currVal_5?.toString());
+      _expr_5 = currVal_5;
     }
     _ButtonDirective_0_5.detectHostChanges(this, _el_0);
   }
@@ -310,14 +327,6 @@ class _ViewDropdownButtonComponentHost0 extends AppView<dynamic> {
     _compView_0.create(_DropdownButtonComponent_0_5, projectableNodes);
     init0(rootEl);
     return new ComponentRef<import3.DropdownButtonComponent>(0, this, rootEl, _DropdownButtonComponent_0_5);
-  }
-
-  @override
-  dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
-    if ((identical(token, import3.DropdownButtonComponent) && (0 == nodeIndex))) {
-      return _DropdownButtonComponent_0_5;
-    }
-    return notFoundResult;
   }
 
   @override

@@ -173,14 +173,6 @@ class ViewMenuItemGroupsComponent0 extends AppView<import2.MenuItemGroupsCompone
   }
 
   @override
-  dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
-    if ((identical(token, import5.FocusTrapComponent) && ((1 <= nodeIndex) && (nodeIndex <= 4)))) {
-      return _FocusTrapComponent_1_5;
-    }
-    return notFoundResult;
-  }
-
-  @override
   void detectChangesInternal() {
     final import2.MenuItemGroupsComponent _ctx = ctx;
     final currVal_2 = _ctx.menu.itemGroups;
@@ -270,6 +262,7 @@ class _ViewMenuItemGroupsComponent1 extends AppView<import2.MenuItemGroupsCompon
   ViewContainer _appEl_4;
   NgIf _NgIf_4_9;
   bool _expr_0;
+  bool _expr_1;
   _ViewMenuItemGroupsComponent1(AppView<dynamic> parentView, int parentIndex) : super(import9.ViewType.EMBEDDED, {'\$implicit': null, 'index': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMenuItemGroupsComponent0._renderType;
   }
@@ -313,6 +306,11 @@ class _ViewMenuItemGroupsComponent1 extends AppView<import2.MenuItemGroupsCompon
       updateClass(_el_0, 'has-separator', currVal_0);
       _expr_0 = currVal_0;
     }
+    final currVal_1 = local_group.hasLabel;
+    if (!identical(_expr_1, currVal_1)) {
+      updateClass(_el_0, 'has-label', currVal_1);
+      _expr_1 = currVal_1;
+    }
   }
 
   @override
@@ -344,9 +342,8 @@ class _ViewMenuItemGroupsComponent2 extends AppView<import2.MenuItemGroupsCompon
     _el_0 = doc.createElement('div');
     createAttr(_el_0, 'buttonDecorator', '');
     _el_0.className = 'group-header';
-    createAttr(_el_0, 'role', 'button');
     addShimC(_el_0);
-    _ButtonDirective_0_5 = new import16.ButtonDirectiveNgCd(new import17.ButtonDirective(_el_0));
+    _ButtonDirective_0_5 = new import16.ButtonDirectiveNgCd(new import17.ButtonDirective(_el_0, null));
     import3.Text _text_1 = new import3.Text('\n      ');
     _el_0.append(_text_1);
     _el_2 = createDivAndAppend(doc, _el_0);
@@ -612,7 +609,7 @@ class _ViewMenuItemGroupsComponent6 extends AppView<import2.MenuItemGroupsCompon
     _AutoFocusDirective_1_8 = new import21.AutoFocusDirective(_el_1, parentView.parentView.parentView.parentView.parentView.injectorGet(import30.DomService, parentView.parentView.parentView.parentView.viewData.parentIndex), parentView.parentView.parentView.parentView.parentView.injectorGet(import21.Focusable, parentView.parentView.parentView.parentView.viewData.parentIndex, null), parentView.parentView.parentView.parentView.parentView.injectorGet(import31.ModalComponent, parentView.parentView.parentView.parentView.viewData.parentIndex, null), parentView.parentView.parentView.parentView.parentView.injectorGet(import32.PopupRef, parentView.parentView.parentView.parentView.viewData.parentIndex, null));
     _FocusActivableItemDirective_1_9 = new import22.FocusActivableItemDirective(_el_1);
     _MaterialTooltipDirective_1_10 = new import23.MaterialTooltipDirective(parentView.parentView.parentView.parentView.parentView.injectorGet(import33.DomPopupSourceFactory, parentView.parentView.parentView.parentView.viewData.parentIndex), _appEl_1, _el_1, _appEl_1, _compView_1.ref, parentView.parentView.parentView.parentView.parentView.injectorGet(import3.Window, parentView.parentView.parentView.parentView.viewData.parentIndex));
-    _MaterialSelectItemComponent_1_11 = new import24.MaterialSelectItemComponent(_el_1, parentView.parentView.parentView.parentView.parentView.injectorGet(import30.DomService, parentView.parentView.parentView.parentView.viewData.parentIndex), parentView.parentView.parentView.parentView.parentView.injectorGet(import34.DropdownHandle, parentView.parentView.parentView.parentView.viewData.parentIndex, null), parentView.parentView.parentView.parentView.parentView.injectorGet(import35.ActivationHandler, parentView.parentView.parentView.parentView.viewData.parentIndex, null), _compView_1.ref);
+    _MaterialSelectItemComponent_1_11 = new import24.MaterialSelectItemComponent(_el_1, parentView.parentView.parentView.parentView.parentView.injectorGet(import30.DomService, parentView.parentView.parentView.parentView.viewData.parentIndex), parentView.parentView.parentView.parentView.parentView.injectorGet(import34.DropdownHandle, parentView.parentView.parentView.parentView.viewData.parentIndex, null), parentView.parentView.parentView.parentView.parentView.injectorGet(import35.ActivationHandler, parentView.parentView.parentView.parentView.viewData.parentIndex, null), _compView_1.ref, 'menuitem');
     _NgClass_1_12 = new import25.NgClass(_el_1);
     _PopupSourceDirective_1_13 = new import26.PopupSourceDirective(parentView.parentView.parentView.parentView.parentView.injectorGet(import33.DomPopupSourceFactory, parentView.parentView.parentView.parentView.viewData.parentIndex), _el_1, parentView.parentView.parentView.parentView.parentView.injectorGet(import36.ReferenceDirective, parentView.parentView.parentView.parentView.viewData.parentIndex, null));
     _FocusableActivateItem_1_14 = _FocusActivableItemDirective_1_9;
@@ -658,14 +655,8 @@ class _ViewMenuItemGroupsComponent6 extends AppView<import2.MenuItemGroupsCompon
 
   @override
   dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
-    if ((identical(token, import22.FocusActivableItemDirective) && ((1 <= nodeIndex) && (nodeIndex <= 12)))) {
-      return _FocusActivableItemDirective_1_9;
-    }
-    if ((((identical(token, import24.MaterialSelectItemComponent) || identical(token, import37.SelectionItem)) || identical(token, import38.HasRenderer)) && ((1 <= nodeIndex) && (nodeIndex <= 12)))) {
+    if (((identical(token, import37.SelectionItem) || identical(token, import38.HasRenderer)) && ((1 <= nodeIndex) && (nodeIndex <= 12)))) {
       return _MaterialSelectItemComponent_1_11;
-    }
-    if ((identical(token, import26.PopupSourceDirective) && ((1 <= nodeIndex) && (nodeIndex <= 12)))) {
-      return _PopupSourceDirective_1_13;
     }
     if ((identical(token, import22.FocusableActivateItem) && ((1 <= nodeIndex) && (nodeIndex <= 12)))) {
       return _FocusableActivateItem_1_14;
@@ -919,14 +910,6 @@ class _ViewMenuItemGroupsComponent8 extends AppView<import2.MenuItemGroupsCompon
   }
 
   @override
-  dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
-    if ((identical(token, import40.HighlightedTextComponent) && ((2 <= nodeIndex) && (nodeIndex <= 3)))) {
-      return _HighlightedTextComponent_2_5;
-    }
-    return notFoundResult;
-  }
-
-  @override
   void detectChangesInternal() {
     final import2.MenuItemGroupsComponent _ctx = ctx;
     bool changed = false;
@@ -1012,14 +995,6 @@ class _ViewMenuItemGroupsComponent10 extends AppView<import2.MenuItemGroupsCompo
     _compView_0.create(_MenuItemAffixListComponent_0_5, []);
     init0(_el_0);
     return null;
-  }
-
-  @override
-  dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
-    if ((identical(token, import42.MenuItemAffixListComponent) && ((0 <= nodeIndex) && (nodeIndex <= 1)))) {
-      return _MenuItemAffixListComponent_0_5;
-    }
-    return notFoundResult;
   }
 
   @override
@@ -1265,17 +1240,6 @@ class _ViewMenuItemGroupsComponent13 extends AppView<import2.MenuItemGroupsCompo
   }
 
   @override
-  dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
-    if ((identical(token, import2.MenuItemGroupsComponent) && ((2 <= nodeIndex) && (nodeIndex <= 3)))) {
-      return _MenuItemGroupsComponent_2_6;
-    }
-    if ((identical(token, import58.MaterialListComponent) && ((0 <= nodeIndex) && (nodeIndex <= 4)))) {
-      return _MaterialListComponent_0_5;
-    }
-    return notFoundResult;
-  }
-
-  @override
   void detectChangesInternal() {
     final import2.MenuItemGroupsComponent _ctx = ctx;
     bool changed = false;
@@ -1353,14 +1317,6 @@ class _ViewMenuItemGroupsComponentHost0 extends AppView<dynamic> {
     _compView_0.create(_MenuItemGroupsComponent_0_5, projectableNodes);
     init0(rootEl);
     return new ComponentRef<import2.MenuItemGroupsComponent>(0, this, rootEl, _MenuItemGroupsComponent_0_5);
-  }
-
-  @override
-  dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
-    if ((identical(token, import2.MenuItemGroupsComponent) && (0 == nodeIndex))) {
-      return _MenuItemGroupsComponent_0_5;
-    }
-    return notFoundResult;
   }
 
   @override

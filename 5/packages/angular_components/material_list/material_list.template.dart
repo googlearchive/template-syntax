@@ -74,14 +74,6 @@ class _ViewMaterialListComponentHost0 extends AppView<dynamic> {
   }
 
   @override
-  dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
-    if ((identical(token, import2.MaterialListComponent) && (0 == nodeIndex))) {
-      return _MaterialListComponent_0_5;
-    }
-    return notFoundResult;
-  }
-
-  @override
   void detectChangesInternal() {
     bool changed = false;
     bool firstCheck = (this.cdState == 0);

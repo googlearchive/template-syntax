@@ -126,12 +126,6 @@ class ViewMaterialIconTooltipComponent0 extends AppView<import2.MaterialIconTool
 
   @override
   dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
-    if ((identical(token, import6.ClickableTooltipTargetDirective) && ((1 <= nodeIndex) && (nodeIndex <= 2)))) {
-      return _ClickableTooltipTargetDirective_1_8;
-    }
-    if ((identical(token, import8.KeyboardOnlyFocusIndicatorDirective) && ((1 <= nodeIndex) && (nodeIndex <= 2)))) {
-      return _KeyboardOnlyFocusIndicatorDirective_1_10;
-    }
     if ((identical(token, import19.TooltipController) && ((4 <= nodeIndex) && (nodeIndex <= 6)))) {
       return _TooltipController_4_5;
     }

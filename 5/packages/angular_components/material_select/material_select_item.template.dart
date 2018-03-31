@@ -76,15 +76,15 @@ class ViewMaterialSelectItemComponent0 extends AppView<import2.MaterialSelectIte
   var _expr_4;
   bool _expr_5;
   var _expr_6;
-  bool _expr_7;
+  var _expr_7;
   bool _expr_8;
   bool _expr_9;
   bool _expr_10;
   bool _expr_11;
+  bool _expr_12;
   static RenderComponentType _renderType;
   ViewMaterialSelectItemComponent0(AppView<dynamic> parentView, int parentIndex) : super(import6.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     rootEl = import8.document.createElement('material-select-item');
-    createAttr(rootEl, 'role', 'option');
     rootEl.className = 'item';
     rootEl.tabIndex = 0;
     _renderType ??= import9.appViewUtils.createRenderType('', ViewEncapsulation.Emulated, styles$MaterialSelectItemComponent);
@@ -162,35 +162,40 @@ class ViewMaterialSelectItemComponent0 extends AppView<import2.MaterialSelectIte
       updateElemClass(rootEl, 'active', currVal_5);
       _expr_5 = currVal_5;
     }
-    final currVal_6 = ctx.disabledStr;
+    final currVal_6 = ctx.role;
     if (!identical(_expr_6, currVal_6)) {
-      setAttr(rootEl, 'aria-disabled', currVal_6?.toString());
+      setAttr(rootEl, 'role', currVal_6?.toString());
       _expr_6 = currVal_6;
     }
-    final currVal_7 = ctx.disabled;
+    final currVal_7 = ctx.disabledStr;
     if (!identical(_expr_7, currVal_7)) {
-      updateElemClass(rootEl, 'is-disabled', currVal_7);
+      setAttr(rootEl, 'aria-disabled', currVal_7?.toString());
       _expr_7 = currVal_7;
     }
     final currVal_8 = ctx.disabled;
     if (!identical(_expr_8, currVal_8)) {
-      updateElemClass(rootEl, 'disabled', currVal_8);
+      updateElemClass(rootEl, 'is-disabled', currVal_8);
       _expr_8 = currVal_8;
     }
-    final currVal_9 = ctx.isHidden;
+    final currVal_9 = ctx.disabled;
     if (!identical(_expr_9, currVal_9)) {
-      updateElemClass(rootEl, 'hidden', currVal_9);
+      updateElemClass(rootEl, 'disabled', currVal_9);
       _expr_9 = currVal_9;
     }
-    final currVal_10 = ctx.isSelected;
+    final currVal_10 = ctx.isHidden;
     if (!identical(_expr_10, currVal_10)) {
-      updateElemClass(rootEl, 'selected', currVal_10);
+      updateElemClass(rootEl, 'hidden', currVal_10);
       _expr_10 = currVal_10;
     }
-    final currVal_11 = ctx.supportsMultiSelect;
+    final currVal_11 = ctx.isSelected;
     if (!identical(_expr_11, currVal_11)) {
-      updateElemClass(rootEl, 'multiselect', currVal_11);
+      updateElemClass(rootEl, 'selected', currVal_11);
       _expr_11 = currVal_11;
+    }
+    final currVal_12 = ctx.supportsMultiSelect;
+    if (!identical(_expr_12, currVal_12)) {
+      updateElemClass(rootEl, 'multiselect', currVal_12);
+      _expr_12 = currVal_12;
     }
   }
 }
@@ -485,14 +490,6 @@ class _ViewMaterialSelectItemComponent7 extends AppView<import2.MaterialSelectIt
   }
 
   @override
-  dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
-    if ((identical(token, import17.DynamicComponent) && (0 == nodeIndex))) {
-      return _DynamicComponent_0_8;
-    }
-    return notFoundResult;
-  }
-
-  @override
   void detectChangesInternal() {
     final import2.MaterialSelectItemComponent _ctx = ctx;
     bool changed = false;
@@ -544,7 +541,7 @@ class _ViewMaterialSelectItemComponentHost0 extends AppView<dynamic> {
   ComponentRef build() {
     _compView_0 = new ViewMaterialSelectItemComponent0(this, 0);
     rootEl = _compView_0.rootEl;
-    _MaterialSelectItemComponent_0_5 = new import2.MaterialSelectItemComponent(rootEl, this.injectorGet(import19.DomService, viewData.parentIndex), this.injectorGet(import20.DropdownHandle, viewData.parentIndex, null), this.injectorGet(import21.ActivationHandler, viewData.parentIndex, null), _compView_0.ref);
+    _MaterialSelectItemComponent_0_5 = new import2.MaterialSelectItemComponent(rootEl, this.injectorGet(import19.DomService, viewData.parentIndex), this.injectorGet(import20.DropdownHandle, viewData.parentIndex, null), this.injectorGet(import21.ActivationHandler, viewData.parentIndex, null), _compView_0.ref, null);
     _compView_0.create(_MaterialSelectItemComponent_0_5, projectableNodes);
     init0(rootEl);
     return new ComponentRef<import2.MaterialSelectItemComponent>(0, this, rootEl, _MaterialSelectItemComponent_0_5);
@@ -552,7 +549,7 @@ class _ViewMaterialSelectItemComponentHost0 extends AppView<dynamic> {
 
   @override
   dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
-    if ((((identical(token, import2.MaterialSelectItemComponent) || identical(token, import22.SelectionItem)) || identical(token, import23.HasRenderer)) && (0 == nodeIndex))) {
+    if (((identical(token, import22.SelectionItem) || identical(token, import23.HasRenderer)) && (0 == nodeIndex))) {
       return _MaterialSelectItemComponent_0_5;
     }
     return notFoundResult;

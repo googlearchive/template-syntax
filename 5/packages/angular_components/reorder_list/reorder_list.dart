@@ -43,8 +43,7 @@ export 'reorder_events.dart';
   host: const {'role': 'list', 'class': 'themeable'},
   templateUrl: 'reorder_list.html',
   styleUrls: const ['reorder_list.scss.css'],
-  // TODO(google): Change to `Visibility.local` to reduce code size.
-  visibility: Visibility.all,
+  visibility: Visibility.all, // injected
 )
 class ReorderListComponent implements OnDestroy {
   static final itemSelectedCssClass = 'item-selected';
@@ -110,8 +109,8 @@ class ReorderListComponent implements OnDestroy {
   // for shift multi selection.
   int _pivotItemIndex;
 
-  @ViewChild('placeholder', read: ElementRef)
-  ElementRef placeholder;
+  @ViewChild('placeholder')
+  HtmlElement placeholder;
 
   ReorderListComponent(this._ngZone) {
     _subscriptions = new Map<HtmlElement, List<StreamSubscription>>();
@@ -214,7 +213,7 @@ class ReorderListComponent implements OnDestroy {
     }
 
     if (verticalItems) {
-      placeholder.nativeElement.style
+      placeholder.style
         ..height = "${_dragSourceElement.borderEdge.height}px"
         ..width = "${_dragSourceElement.borderEdge.width}px"
         ..top = "${upperStackSize}px";
@@ -226,7 +225,7 @@ class ReorderListComponent implements OnDestroy {
           ? e.offset.left
           : e.offset.right - _dragSourceElement.borderEdge.width;
 
-      placeholder.nativeElement.style
+      placeholder.style
         ..height = "${_dragSourceElement.borderEdge.height}px"
         ..width = "${_dragSourceElement.borderEdge.width}px"
         ..top = "${e.offset.top}px"
@@ -594,12 +593,9 @@ typedef void ReorderListHandler(int sourceIndex, int destIndex);
 @Directive(
   selector: '[reorderItem]',
   host: const {'draggable': 'true', 'role': 'listitem', 'tabindex': '0'},
-  // TODO(google): Change to `Visibility.local` to reduce code size.
-  visibility: Visibility.all,
 )
 class ReorderItemDirective {
   final HtmlElement element;
 
-  ReorderItemDirective(ElementRef elementRef)
-      : element = elementRef.nativeElement;
+  ReorderItemDirective(this.element);
 }

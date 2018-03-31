@@ -61,7 +61,7 @@ class HeroComponent implements OnInit {
     '.detail { border: 1px solid black; padding: 4px; max-width: 450px; }',
     'img     { float: left; margin-right: 8px; height: 100px; }'
   ],
-  pipes: [COMMON_PIPES],
+  pipes: [commonPipes],
 )
 class BigHeroComponent extends HeroComponent {
   @override

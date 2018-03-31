@@ -245,9 +245,8 @@ class _ViewMaterialExpansionPanel1 extends AppView<import2.MaterialExpansionPane
     _el_1 = createDivAndAppend(doc, _el_0);
     createAttr(_el_1, 'buttonDecorator', '');
     _el_1.className = 'header';
-    createAttr(_el_1, 'role', 'button');
     addShimC(_el_1);
-    _ButtonDirective_1_5 = new import13.ButtonDirectiveNgCd(new import14.ButtonDirective(_el_1));
+    _ButtonDirective_1_5 = new import13.ButtonDirectiveNgCd(new import14.ButtonDirective(_el_1, null));
     _el_2 = createDivAndAppend(doc, _el_1);
     _el_2.className = 'panel-name';
     addShimC(_el_2);
@@ -395,9 +394,8 @@ class _ViewMaterialExpansionPanel3 extends AppView<import2.MaterialExpansionPane
     _el_0 = _compView_0.rootEl;
     createAttr(_el_0, 'buttonDecorator', '');
     _el_0.className = 'expand-button';
-    createAttr(_el_0, 'role', 'button');
     addShimC(_el_0);
-    _ButtonDirective_0_5 = new import13.ButtonDirectiveNgCd(new import14.ButtonDirective(_el_0));
+    _ButtonDirective_0_5 = new import13.ButtonDirectiveNgCd(new import14.ButtonDirective(_el_0, null));
     _MaterialIconComponent_0_6 = new import16.MaterialIconComponent(_el_0);
     _compView_0.create(_MaterialIconComponent_0_6, []);
     _el_0.addEventListener('click', eventHandler1(_ButtonDirective_0_5.instance.handleClick));
@@ -485,9 +483,8 @@ class _ViewMaterialExpansionPanel5 extends AppView<import2.MaterialExpansionPane
     _el_0 = _compView_0.rootEl;
     createAttr(_el_0, 'buttonDecorator', '');
     _el_0.className = 'expand-button';
-    createAttr(_el_0, 'role', 'button');
     addShimC(_el_0);
-    _ButtonDirective_0_5 = new import13.ButtonDirectiveNgCd(new import14.ButtonDirective(_el_0));
+    _ButtonDirective_0_5 = new import13.ButtonDirectiveNgCd(new import14.ButtonDirective(_el_0, null));
     _MaterialIconComponent_0_6 = new import16.MaterialIconComponent(_el_0);
     _compView_0.create(_MaterialIconComponent_0_6, []);
     _el_0.addEventListener('click', eventHandler1(_ButtonDirective_0_5.instance.handleClick));

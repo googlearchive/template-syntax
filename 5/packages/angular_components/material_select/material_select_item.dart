@@ -31,7 +31,6 @@ import 'package:angular_components/utils/disposer/disposer.dart';
     '[class.selected]': 'isSelected',
     '[class.multiselect]': 'supportsMultiSelect',
     'tabindex': '0',
-    'role': 'option'
   },
   providers: const [
     const Provider(SelectionItem, useExisting: MaterialSelectItemComponent),
@@ -45,8 +44,6 @@ import 'package:angular_components/utils/disposer/disposer.dart';
     DynamicComponent
   ],
   templateUrl: 'material_select_item.html',
-  // TODO(google): Change to `Visibility.local` to reduce code size.
-  visibility: Visibility.all,
 )
 class MaterialSelectItemComponent extends ButtonDirective
     with ActiveItemMixin
@@ -74,8 +71,9 @@ class MaterialSelectItemComponent extends ButtonDirective
       this.domService,
       @Optional() this._dropdown,
       @Optional() this._activationHandler,
-      this._cdRef)
-      : super(element) {
+      this._cdRef,
+      @Attribute('role') String role)
+      : super(element, role ?? 'option') {
     _disposer
       ..addStreamSubscription(trigger.listen(handleActivate))
       ..addFunction(() => _selectionChangeStreamSub?.cancel());

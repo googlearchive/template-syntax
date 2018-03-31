@@ -188,14 +188,6 @@ class _ViewNextPrevComponentHost0 extends AppView<dynamic> {
   }
 
   @override
-  dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
-    if ((identical(token, import2.NextPrevComponent) && (0 == nodeIndex))) {
-      return _NextPrevComponent_0_5;
-    }
-    return notFoundResult;
-  }
-
-  @override
   void detectChangesInternal() {
     bool changed = false;
     if (changed) {

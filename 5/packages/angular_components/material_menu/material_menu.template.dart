@@ -107,7 +107,7 @@ class ViewMaterialMenuComponent0 extends AppView<import1.MaterialMenuComponent> 
     createAttr(_el_1, 'popupSource', '');
     _appEl_1 = new ViewContainer(1, null, this, _el_1);
     _AcxDarkTheme_1_8 = new import5.AcxDarkTheme(parentView.injectorGet(const import18.OpaqueToken('acxDarkTheme'), viewData.parentIndex, null));
-    _MaterialButtonComponent_1_9 = new import6.MaterialButtonComponent(_el_1, _AcxDarkTheme_1_8, _compView_1.ref);
+    _MaterialButtonComponent_1_9 = new import6.MaterialButtonComponent(_el_1, _AcxDarkTheme_1_8, _compView_1.ref, null);
     _MaterialTooltipDirective_1_10 = new import7.MaterialTooltipDirective(parentView.injectorGet(import19.DomPopupSourceFactory, viewData.parentIndex), _appEl_1, _el_1, _appEl_1, _compView_1.ref, parentView.injectorGet(import2.Window, viewData.parentIndex));
     _PopupSourceDirective_1_11 = new import8.PopupSourceDirective(parentView.injectorGet(import19.DomPopupSourceFactory, viewData.parentIndex), _el_1, parentView.injectorGet(import20.ReferenceDirective, viewData.parentIndex, null));
     import2.Text _text_2 = new import2.Text('\n  ');
@@ -147,9 +147,6 @@ class ViewMaterialMenuComponent0 extends AppView<import1.MaterialMenuComponent> 
     }
     if (((identical(token, import6.MaterialButtonComponent) || identical(token, import22.ButtonDirective)) && ((1 <= nodeIndex) && (nodeIndex <= 7)))) {
       return _MaterialButtonComponent_1_9;
-    }
-    if ((identical(token, import8.PopupSourceDirective) && ((1 <= nodeIndex) && (nodeIndex <= 7)))) {
-      return _PopupSourceDirective_1_11;
     }
     if ((identical(token, import16.TooltipController) && ((1 <= nodeIndex) && (nodeIndex <= 7)))) {
       return _TooltipController_1_13;
@@ -346,17 +343,6 @@ class _ViewMaterialMenuComponent3 extends AppView<import1.MaterialMenuComponent>
   }
 
   @override
-  dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
-    if ((identical(token, import26.MenuPopupComponent) && ((0 <= nodeIndex) && (nodeIndex <= 2)))) {
-      return _MenuPopupComponent_0_5;
-    }
-    if ((identical(token, import8.PopupSourceDirective) && ((0 <= nodeIndex) && (nodeIndex <= 2)))) {
-      return _PopupSourceDirective_0_6;
-    }
-    return notFoundResult;
-  }
-
-  @override
   void detectChangesInternal() {
     final import1.MaterialMenuComponent _ctx = ctx;
     bool changed = false;
@@ -436,14 +422,6 @@ class _ViewMaterialMenuComponentHost0 extends AppView<dynamic> {
     _compView_0.create(_MaterialMenuComponent_0_5, projectableNodes);
     init0(rootEl);
     return new ComponentRef<import1.MaterialMenuComponent>(0, this, rootEl, _MaterialMenuComponent_0_5);
-  }
-
-  @override
-  dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
-    if ((identical(token, import1.MaterialMenuComponent) && (0 == nodeIndex))) {
-      return _MaterialMenuComponent_0_5;
-    }
-    return notFoundResult;
   }
 
   @override

@@ -10,7 +10,9 @@ import 'material_drawer_base.dart';
 /// A temporary drawer that can be opened and closed.
 ///
 /// Works with deferred content.
+///
 /// __Example usage:__
+///
 ///     <material-drawer temporary #drawer="drawer">
 ///         ... content here ...
 ///     </material-drawer>
@@ -34,8 +36,7 @@ import 'material_drawer_base.dart';
   templateUrl: 'material_temporary_drawer.html',
   styleUrls: const ['material_temporary_drawer.scss.css'],
   changeDetection: ChangeDetectionStrategy.OnPush,
-  // TODO(google): Change to `Visibility.local` to reduce code size.
-  visibility: Visibility.all,
+  visibility: Visibility.all, // Injected by child elements.
 )
 class MaterialTemporaryDrawerComponent extends MaterialDrawerBase {
   MaterialTemporaryDrawerComponent() : super(visible: false);

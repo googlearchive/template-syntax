@@ -162,9 +162,8 @@ class _ViewMaterialTreeGroupComponent1 extends AppView<import2.MaterialTreeGroup
     createAttr(_el_0, 'buttonDecorator', '');
     _el_0.className = 'material-tree-option';
     createAttr(_el_0, 'keyboardOnlyFocusIndicator', '');
-    createAttr(_el_0, 'role', 'button');
     addShimE(_el_0);
-    _ButtonDirective_0_5 = new import13.ButtonDirectiveNgCd(new import15.ButtonDirective(_el_0));
+    _ButtonDirective_0_5 = new import13.ButtonDirectiveNgCd(new import15.ButtonDirective(_el_0, null));
     _KeyboardOnlyFocusIndicatorDirective_0_6 = new import14.KeyboardOnlyFocusIndicatorDirective(_el_0, parentView.parentView.injectorGet(import16.DomService, parentView.viewData.parentIndex));
     _el_1 = createDivAndAppend(doc, _el_0);
     _el_1.className = 'material-tree-item';
@@ -215,9 +214,6 @@ class _ViewMaterialTreeGroupComponent1 extends AppView<import2.MaterialTreeGroup
   dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
     if ((identical(token, import15.ButtonDirective) && ((0 <= nodeIndex) && (nodeIndex <= 8)))) {
       return _ButtonDirective_0_5.instance;
-    }
-    if ((identical(token, import14.KeyboardOnlyFocusIndicatorDirective) && ((0 <= nodeIndex) && (nodeIndex <= 8)))) {
-      return _KeyboardOnlyFocusIndicatorDirective_0_6;
     }
     return notFoundResult;
   }
@@ -490,14 +486,6 @@ class _ViewMaterialTreeGroupComponent5 extends AppView<import2.MaterialTreeGroup
   }
 
   @override
-  dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
-    if ((identical(token, import22.DynamicComponent) && (0 == nodeIndex))) {
-      return _DynamicComponent_0_8;
-    }
-    return notFoundResult;
-  }
-
-  @override
   void detectChangesInternal() {
     final import2.MaterialTreeGroupComponent _ctx = ctx;
     bool changed = false;
@@ -603,9 +591,8 @@ class _ViewMaterialTreeGroupComponent7 extends AppView<import2.MaterialTreeGroup
     _el_0 = _compView_0.rootEl;
     createAttr(_el_0, 'buttonDecorator', '');
     _el_0.className = 'tree-expansion-state';
-    createAttr(_el_0, 'role', 'button');
     addShimC(_el_0);
-    _ButtonDirective_0_5 = new import13.ButtonDirectiveNgCd(new import15.ButtonDirective(_el_0));
+    _ButtonDirective_0_5 = new import13.ButtonDirectiveNgCd(new import15.ButtonDirective(_el_0, null));
     _MaterialIconComponent_0_6 = new import20.MaterialIconComponent(_el_0);
     _compView_0.create(_MaterialIconComponent_0_6, []);
     _el_0.addEventListener('click', eventHandler1(_ButtonDirective_0_5.instance.handleClick));
@@ -688,14 +675,6 @@ class _ViewMaterialTreeGroupComponent8 extends AppView<import2.MaterialTreeGroup
   }
 
   @override
-  dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
-    if ((identical(token, import2.MaterialTreeGroupComponent) && (0 == nodeIndex))) {
-      return _MaterialTreeGroupComponent_0_5;
-    }
-    return notFoundResult;
-  }
-
-  @override
   void detectChangesInternal() {
     final import2.MaterialTreeGroupComponent _ctx = ctx;
     bool firstCheck = (this.cdState == 0);
@@ -772,9 +751,8 @@ class _ViewMaterialTreeGroupComponent9 extends AppView<import2.MaterialTreeGroup
     createAttr(_el_3, 'buttonDecorator', '');
     _el_3.className = 'view-more-link';
     createAttr(_el_3, 'href', '#');
-    createAttr(_el_3, 'role', 'button');
     addShimC(_el_3);
-    _ButtonDirective_3_5 = new import13.ButtonDirectiveNgCd(new import15.ButtonDirective(_el_3));
+    _ButtonDirective_3_5 = new import13.ButtonDirectiveNgCd(new import15.ButtonDirective(_el_3, null));
     _text_4 = new import3.Text((ctx.viewMoreMsg ?? ''));
     _el_3.append(_text_4);
     _el_3.addEventListener('click', eventHandler1(_ButtonDirective_3_5.instance.handleClick));
@@ -828,14 +806,6 @@ class _ViewMaterialTreeGroupComponentHost0 extends AppView<dynamic> {
     _compView_0.create(_MaterialTreeGroupComponent_0_5, projectableNodes);
     init0(rootEl);
     return new ComponentRef<import2.MaterialTreeGroupComponent>(0, this, rootEl, _MaterialTreeGroupComponent_0_5);
-  }
-
-  @override
-  dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
-    if ((identical(token, import2.MaterialTreeGroupComponent) && (0 == nodeIndex))) {
-      return _MaterialTreeGroupComponent_0_5;
-    }
-    return notFoundResult;
   }
 
   @override

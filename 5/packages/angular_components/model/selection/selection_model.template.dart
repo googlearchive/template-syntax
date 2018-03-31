@@ -9,9 +9,11 @@ import 'dart:async';
 import 'dart:collection';
 import 'package:observable/observable.dart';
 import 'package:angular_components/src/model/selection/interfaces/selectable.dart';
+import 'package:angular_components/src/model/selection/radio_group_single_selection_model.dart';
 import 'package:angular_components/src/model/selection/delegating_selection_model.template.dart' as _ref0;
 import 'package:angular_components/src/model/selection/interfaces/selectable.template.dart' as _ref1;
 import 'package:angular_components/src/model/selection/radio_group_single_selection_model.template.dart' as _ref2;
+import 'package:angular_components/src/model/selection/radio_group_single_selection_model.template.dart' as _ref3;
 
 var _visited = false;
 void initReflector() {
@@ -23,4 +25,5 @@ void initReflector() {
   _ref0.initReflector();
   _ref1.initReflector();
   _ref2.initReflector();
+  _ref3.initReflector();
 }

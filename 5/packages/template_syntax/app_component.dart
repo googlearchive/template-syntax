@@ -32,7 +32,7 @@ enum Color { red, green, blue }
   ],
   exports: [Color],
   providers: [materialProviders],
-  pipes: [COMMON_PIPES],
+  pipes: [commonPipes],
 )
 class AppComponent implements OnInit {
   ChangeDetectorRef cd;

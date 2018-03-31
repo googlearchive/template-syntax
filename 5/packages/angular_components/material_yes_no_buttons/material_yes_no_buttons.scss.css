@@ -6,7 +6,6 @@
 .btn.btn-no {
   height: 36px;
   margin: 0 4px;
-  min-width: 88px;
 }
 
 .btn:not([disabled]).highlighted[raised] {
@@ -21,7 +20,7 @@
   align-items: center;
   display: flex;
   margin-right: 24px;
-  min-width: 176px;
+  min-width: 128px;
 }
 
 :host(.no-margin) .btn {

@@ -62,14 +62,6 @@ class ViewMaterialTabPanelComponent0 extends AppView<import2.MaterialTabPanelCom
   }
 
   @override
-  dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
-    if ((identical(token, import5.FixedMaterialTabStripComponent) && (0 == nodeIndex))) {
-      return _FixedMaterialTabStripComponent_0_5;
-    }
-    return notFoundResult;
-  }
-
-  @override
   void detectChangesInternal() {
     final import2.MaterialTabPanelComponent _ctx = ctx;
     bool changed = false;
@@ -124,14 +116,6 @@ class _ViewMaterialTabPanelComponentHost0 extends AppView<dynamic> {
     _compView_0.create(_MaterialTabPanelComponent_0_5, projectableNodes);
     init0(rootEl);
     return new ComponentRef<import2.MaterialTabPanelComponent>(0, this, rootEl, _MaterialTabPanelComponent_0_5);
-  }
-
-  @override
-  dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
-    if ((identical(token, import2.MaterialTabPanelComponent) && (0 == nodeIndex))) {
-      return _MaterialTabPanelComponent_0_5;
-    }
-    return notFoundResult;
   }
 
   @override

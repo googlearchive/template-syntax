@@ -128,14 +128,6 @@ class _ViewHighlightedTextComponentHost0 extends AppView<dynamic> {
   }
 
   @override
-  dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
-    if ((identical(token, import2.HighlightedTextComponent) && (0 == nodeIndex))) {
-      return _HighlightedTextComponent_0_5;
-    }
-    return notFoundResult;
-  }
-
-  @override
   void detectChangesInternal() {
     bool changed = false;
     if (changed) {

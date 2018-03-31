@@ -177,7 +177,7 @@ class _ViewMaterialYesNoButtonsComponent2 extends AppView<import2.MaterialYesNoB
     _el_0.className = 'btn btn-yes';
     addShimC(_el_0);
     _AcxDarkTheme_0_5 = new import15.AcxDarkTheme(parentView.injectorGet(const import17.OpaqueToken('acxDarkTheme'), viewData.parentIndex, null));
-    _MaterialButtonComponent_0_6 = new import16.MaterialButtonComponent(_el_0, _AcxDarkTheme_0_5, _compView_0.ref);
+    _MaterialButtonComponent_0_6 = new import16.MaterialButtonComponent(_el_0, _AcxDarkTheme_0_5, _compView_0.ref, null);
     _text_1 = new import8.Text('');
     _compView_0.create(_MaterialButtonComponent_0_6, [
       [_text_1]
@@ -267,7 +267,7 @@ class _ViewMaterialYesNoButtonsComponent3 extends AppView<import2.MaterialYesNoB
     _el_0.className = 'btn btn-no';
     addShimC(_el_0);
     _AcxDarkTheme_0_5 = new import15.AcxDarkTheme(parentView.injectorGet(const import17.OpaqueToken('acxDarkTheme'), viewData.parentIndex, null));
-    _MaterialButtonComponent_0_6 = new import16.MaterialButtonComponent(_el_0, _AcxDarkTheme_0_5, _compView_0.ref);
+    _MaterialButtonComponent_0_6 = new import16.MaterialButtonComponent(_el_0, _AcxDarkTheme_0_5, _compView_0.ref, null);
     _text_1 = new import8.Text('');
     _compView_0.create(_MaterialButtonComponent_0_6, [
       [_text_1]

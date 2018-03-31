@@ -84,14 +84,6 @@ class ViewFixedMaterialTabStripComponent0 extends AppView<import2.FixedMaterialT
   }
 
   @override
-  dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
-    if ((identical(token, import12.FocusListDirective) && ((0 <= nodeIndex) && (nodeIndex <= 2)))) {
-      return _FocusListDirective_0_5.instance;
-    }
-    return notFoundResult;
-  }
-
-  @override
   void detectChangesInternal() {
     final import2.FixedMaterialTabStripComponent _ctx = ctx;
     final currVal_1 = _ctx.tabLabels;
@@ -159,9 +151,6 @@ class _ViewFixedMaterialTabStripComponent1 extends AppView<import2.FixedMaterial
 
   @override
   dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
-    if ((identical(token, import17.TabButtonComponent) && (0 == nodeIndex))) {
-      return _TabButtonComponent_0_6;
-    }
     if ((identical(token, import19.FocusableItem) && (0 == nodeIndex))) {
       return _FocusableItem_0_7;
     }
@@ -233,14 +222,6 @@ class _ViewFixedMaterialTabStripComponentHost0 extends AppView<dynamic> {
     _compView_0.create(_FixedMaterialTabStripComponent_0_5, projectableNodes);
     init0(rootEl);
     return new ComponentRef<import2.FixedMaterialTabStripComponent>(0, this, rootEl, _FixedMaterialTabStripComponent_0_5);
-  }
-
-  @override
-  dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
-    if ((identical(token, import2.FixedMaterialTabStripComponent) && (0 == nodeIndex))) {
-      return _FixedMaterialTabStripComponent_0_5;
-    }
-    return notFoundResult;
   }
 
   @override

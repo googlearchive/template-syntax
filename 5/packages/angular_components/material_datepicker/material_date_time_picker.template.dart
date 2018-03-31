@@ -93,9 +93,6 @@ class ViewMaterialDateTimePickerComponent0 extends AppView<import2.MaterialDateT
     if ((identical(token, import5.MaterialDatepickerComponent) && (0 == nodeIndex))) {
       return _MaterialDatepickerComponent_0_5;
     }
-    if ((identical(token, import7.MaterialTimePickerComponent) && (1 == nodeIndex))) {
-      return _MaterialTimePickerComponent_1_5;
-    }
     return notFoundResult;
   }
 
@@ -225,14 +222,6 @@ class _ViewMaterialDateTimePickerComponentHost0 extends AppView<dynamic> {
     _compView_0.create(_MaterialDateTimePickerComponent_0_5, projectableNodes);
     init0(rootEl);
     return new ComponentRef<import2.MaterialDateTimePickerComponent>(0, this, rootEl, _MaterialDateTimePickerComponent_0_5);
-  }
-
-  @override
-  dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
-    if ((identical(token, import2.MaterialDateTimePickerComponent) && (0 == nodeIndex))) {
-      return _MaterialDateTimePickerComponent_0_5;
-    }
-    return notFoundResult;
   }
 
   @override

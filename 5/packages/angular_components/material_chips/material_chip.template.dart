@@ -147,12 +147,11 @@ class _ViewMaterialChipComponent2 extends AppView<import2.MaterialChipComponent>
     createAttr(_el_0, 'buttonDecorator', '');
     createAttr(_el_0, 'class', 'delete-icon');
     createAttr(_el_0, 'height', '24');
-    createAttr(_el_0, 'role', 'button');
     createAttr(_el_0, 'viewBox', '0 0 24 24');
     createAttr(_el_0, 'width', '24');
     createAttr(_el_0, 'xmlns', 'http://www.w3.org/2000/svg');
     addShimE(_el_0);
-    _ButtonDirective_0_5 = new import12.ButtonDirectiveNgCd(new import13.ButtonDirective(_el_0));
+    _ButtonDirective_0_5 = new import12.ButtonDirectiveNgCd(new import13.ButtonDirective(_el_0, null));
     _el_1 = doc.createElementNS('http://www.w3.org/2000/svg', 'path');
     _el_0.append(_el_1);
     createAttr(_el_1, 'd', 'M12 2c-5.53 0-10 4.47-10 10s4.47 10 10 10 10-4.47 10-10-4.47-10-10-10zm5\n               13.59l-1.41 1.41-3.59-3.59-3.59 3.59-1.41-1.41 3.59-3.59-3.59-3.59 1.41-1.41 3.59\n               3.59 3.59-3.59 1.41 1.41-3.59 3.59 3.59 3.59z');

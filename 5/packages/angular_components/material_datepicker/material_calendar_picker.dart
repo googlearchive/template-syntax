@@ -85,8 +85,6 @@ int _dayOfWeek(int year, int month, int day) {
   selector: 'material-calendar-picker',
   styleUrls: const ['material_calendar_picker.scss.css'],
   templateUrl: 'material_calendar_picker.html',
-  // TODO(google): Change to `Visibility.local` to reduce code size.
-  visibility: Visibility.all,
 )
 class MaterialCalendarPickerComponent
     implements OnInit, AfterViewInit, OnDestroy {
@@ -711,9 +709,9 @@ class MaterialCalendarPickerComponent
   }
 
   @ViewChild('container')
-  set container(ElementRef containerRef) {
-    _container = containerRef.nativeElement;
-    _scroller = _container.parent;
+  set container(HtmlElement container) {
+    _container = container;
+    _scroller = container.parent;
   }
 
   @override

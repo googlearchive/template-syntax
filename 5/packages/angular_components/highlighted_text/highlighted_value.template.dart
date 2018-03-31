@@ -135,14 +135,6 @@ class _ViewHighlightedValueComponentHost0 extends AppView<dynamic> {
   }
 
   @override
-  dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
-    if ((identical(token, import2.HighlightedValueComponent) && (0 == nodeIndex))) {
-      return _HighlightedValueComponent_0_5;
-    }
-    return notFoundResult;
-  }
-
-  @override
   void detectChangesInternal() {
     _compView_0.detectChanges();
   }

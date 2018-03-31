@@ -32,7 +32,7 @@ abstract class Tab extends Focusable {
 /// property. Tab contents can be lazily instantiated by using the
 /// `*deferredContent` template directive.
 ///
-/// __Example Usage:__
+/// __Example usage:__
 ///
 ///     <material-tab-panel>
 ///       <material-tab label="tab 1">
@@ -64,8 +64,6 @@ abstract class Tab extends Focusable {
         </div>''',
   styleUrls: const ['material_tab.scss.css'],
   directives: const [NgIf],
-  // TODO(google): Change to `Visibility.local` to reduce code size.
-  visibility: Visibility.all,
 )
 class MaterialTabComponent extends RootFocusable
     implements Tab, DeferredContentAware {

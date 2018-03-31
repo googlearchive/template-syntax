@@ -206,9 +206,6 @@ class ViewMaterialInputComponent0 extends AppView<import2.MaterialInputComponent
     if ((identical(token, import6.DefaultValueAccessor) && (8 == nodeIndex))) {
       return _DefaultValueAccessor_8_5;
     }
-    if ((identical(token, import7.FocusableDirective) && (8 == nodeIndex))) {
-      return _FocusableDirective_8_6;
-    }
     if ((identical(token, const import17.MultiToken<import18.ControlValueAccessor>('NgValueAccessor')) && (8 == nodeIndex))) {
       return _NgValueAccessor_8_7;
     }

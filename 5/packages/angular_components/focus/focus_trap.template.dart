@@ -63,14 +63,6 @@ class ViewFocusTrapComponent0 extends AppView<import2.FocusTrapComponent> {
     init(const [], null);
     return null;
   }
-
-  @override
-  dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
-    if ((identical(token, import2.FocusContentWrapper) && (1 == nodeIndex))) {
-      return _FocusContentWrapper_1_5;
-    }
-    return notFoundResult;
-  }
 }
 
 AppView<import2.FocusTrapComponent> viewFactory_FocusTrapComponent0(AppView<dynamic> parentView, int parentIndex) {
@@ -92,14 +84,6 @@ class _ViewFocusTrapComponentHost0 extends AppView<dynamic> {
     _compView_0.create(_FocusTrapComponent_0_5, projectableNodes);
     init0(rootEl);
     return new ComponentRef<import2.FocusTrapComponent>(0, this, rootEl, _FocusTrapComponent_0_5);
-  }
-
-  @override
-  dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
-    if ((identical(token, import2.FocusTrapComponent) && (0 == nodeIndex))) {
-      return _FocusTrapComponent_0_5;
-    }
-    return notFoundResult;
   }
 
   @override

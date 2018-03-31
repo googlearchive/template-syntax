@@ -15,7 +15,7 @@ import 'package:angular_components/material_expansionpanel/material_expansionpan
 /// When a [MaterialExpansionPanel] is expanded, any click outside of it will
 /// automatically collapses the panel.
 ///
-/// __Example Usage:__
+/// __Example usage:__
 ///
 ///     <material-expansionpanel autoDismissable>
 ///     </material-expansionpanel>
@@ -23,8 +23,6 @@ import 'package:angular_components/material_expansionpanel/material_expansionpan
 @Directive(
   selector: 'material-expansionpanel[autoDismissable]',
   host: const {'(expandedChange)': r'onExpandedChanged($event)'},
-  // TODO(google): Change to `Visibility.local` to reduce code size.
-  visibility: Visibility.all,
 )
 class MaterialExpansionPanelAutoDismiss implements OnDestroy {
   final MaterialExpansionPanel _expansionPanel;

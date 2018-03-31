@@ -183,14 +183,6 @@ class _ViewMaterialTreeGroupFlatListComponent2 extends AppView<import2.MaterialT
   }
 
   @override
-  dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
-    if ((identical(token, import14.DynamicComponent) && (0 == nodeIndex))) {
-      return _DynamicComponent_0_8;
-    }
-    return notFoundResult;
-  }
-
-  @override
   void detectChangesInternal() {
     final import2.MaterialTreeGroupFlatListComponent _ctx = ctx;
     bool changed = false;
@@ -282,14 +274,6 @@ class _ViewMaterialTreeGroupFlatListComponentHost0 extends AppView<dynamic> {
     _compView_0.create(_MaterialTreeGroupFlatListComponent_0_5, projectableNodes);
     init0(rootEl);
     return new ComponentRef<import2.MaterialTreeGroupFlatListComponent>(0, this, rootEl, _MaterialTreeGroupFlatListComponent_0_5);
-  }
-
-  @override
-  dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
-    if ((identical(token, import2.MaterialTreeGroupFlatListComponent) && (0 == nodeIndex))) {
-      return _MaterialTreeGroupFlatListComponent_0_5;
-    }
-    return notFoundResult;
   }
 
   @override
@@ -529,14 +513,6 @@ class _ViewMaterialTreeGroupFlatRadioComponent2 extends AppView<import2.Material
   }
 
   @override
-  dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
-    if ((identical(token, import14.DynamicComponent) && (0 == nodeIndex))) {
-      return _DynamicComponent_0_8;
-    }
-    return notFoundResult;
-  }
-
-  @override
   void detectChangesInternal() {
     final import2.MaterialTreeGroupFlatRadioComponent _ctx = ctx;
     bool changed = false;
@@ -628,14 +604,6 @@ class _ViewMaterialTreeGroupFlatRadioComponentHost0 extends AppView<dynamic> {
     _compView_0.create(_MaterialTreeGroupFlatRadioComponent_0_5, projectableNodes);
     init0(rootEl);
     return new ComponentRef<import2.MaterialTreeGroupFlatRadioComponent>(0, this, rootEl, _MaterialTreeGroupFlatRadioComponent_0_5);
-  }
-
-  @override
-  dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
-    if ((identical(token, import2.MaterialTreeGroupFlatRadioComponent) && (0 == nodeIndex))) {
-      return _MaterialTreeGroupFlatRadioComponent_0_5;
-    }
-    return notFoundResult;
   }
 
   @override
@@ -832,14 +800,6 @@ class _ViewMaterialTreeGroupFlatCheckComponent2 extends AppView<import2.Material
   }
 
   @override
-  dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
-    if ((identical(token, import14.DynamicComponent) && (0 == nodeIndex))) {
-      return _DynamicComponent_0_8;
-    }
-    return notFoundResult;
-  }
-
-  @override
   void detectChangesInternal() {
     final import2.MaterialTreeGroupFlatCheckComponent _ctx = ctx;
     bool changed = false;
@@ -931,14 +891,6 @@ class _ViewMaterialTreeGroupFlatCheckComponentHost0 extends AppView<dynamic> {
     _compView_0.create(_MaterialTreeGroupFlatCheckComponent_0_5, projectableNodes);
     init0(rootEl);
     return new ComponentRef<import2.MaterialTreeGroupFlatCheckComponent>(0, this, rootEl, _MaterialTreeGroupFlatCheckComponent_0_5);
-  }
-
-  @override
-  dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
-    if ((identical(token, import2.MaterialTreeGroupFlatCheckComponent) && (0 == nodeIndex))) {
-      return _MaterialTreeGroupFlatCheckComponent_0_5;
-    }
-    return notFoundResult;
   }
 
   @override

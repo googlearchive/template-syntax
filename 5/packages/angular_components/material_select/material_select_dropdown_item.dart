@@ -14,6 +14,7 @@ import 'package:angular_components/mixins/material_dropdown_base.dart';
 import 'package:angular_components/model/selection/selection_container.dart';
 import 'package:angular_components/model/ui/has_renderer.dart';
 import 'package:angular_components/utils/browser/dom_service/dom_service.dart';
+import 'package:angular_components/utils/id_generator/id_generator.dart';
 
 /// Container for a single item selected in a dropdown.
 ///
@@ -32,8 +33,9 @@ import 'package:angular_components/utils/browser/dom_service/dom_service.dart';
     '(mousedown)': r'preventTextSelectionIfShiftKey($event)',
     '(mouseenter)': 'onMouseEnter()',
     '(mouseleave)': 'onMouseLeave()',
+    '[attr.aria-selected]': 'isSelected',
     '[attr.aria-disabled]': 'disabledStr',
-    '[attr.role]': 'role',
+    '[attr.id]': 'id',
     'tabindex': '0',
   },
   providers: const [
@@ -50,12 +52,19 @@ import 'package:angular_components/utils/browser/dom_service/dom_service.dart';
     NgIf
   ],
   templateUrl: 'material_select_item.html',
-  // TODO(google): Change to `Visibility.local` to reduce code size.
-  visibility: Visibility.all,
 )
 class MaterialSelectDropdownItemComponent extends MaterialSelectItemComponent
     implements OnDestroy {
-  final String role;
+  final String _generatedId;
+
+  String _id;
+
+  /// The id of the element.
+  String get id => _id ?? _generatedId;
+  @Input()
+  set id(String id) {
+    _id = id;
+  }
 
   MaterialSelectDropdownItemComponent(
       HtmlElement element,
@@ -63,9 +72,12 @@ class MaterialSelectDropdownItemComponent extends MaterialSelectItemComponent
       @Attribute('role') String role,
       @Optional() DropdownHandle dropdown,
       @Optional() ActivationHandler activationHandler,
+      @Optional() IdGenerator idGenerator,
       ChangeDetectorRef cdRef)
-      : this.role = role ?? 'button',
-        super(element, domService, dropdown, activationHandler, cdRef) {
+      : _generatedId =
+            (idGenerator ?? new SequentialIdGenerator.fromUUID()).nextId(),
+        super(element, domService, dropdown, activationHandler, cdRef,
+            role ?? 'option') {
     this.itemRenderer = defaultItemRenderer;
   }
 

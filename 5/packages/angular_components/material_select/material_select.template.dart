@@ -93,14 +93,6 @@ class ViewMaterialSelectComponent0 extends AppView<import2.MaterialSelectCompone
   }
 
   @override
-  dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
-    if ((identical(token, import5.MaterialListComponent) && ((0 <= nodeIndex) && (nodeIndex <= 1)))) {
-      return _MaterialListComponent_0_5;
-    }
-    return notFoundResult;
-  }
-
-  @override
   void detectChangesInternal() {
     final import2.MaterialSelectComponent _ctx = ctx;
     bool changed = false;
@@ -336,7 +328,7 @@ class _ViewMaterialSelectComponent5 extends AppView<import2.MaterialSelectCompon
     _compView_0 = new import16.ViewMaterialSelectItemComponent0(this, 0);
     _el_0 = _compView_0.rootEl;
     addShimC(_el_0);
-    _MaterialSelectItemComponent_0_5 = new import17.MaterialSelectItemComponent(_el_0, parentView.parentView.parentView.parentView.parentView.injectorGet(import18.DomService, parentView.parentView.parentView.parentView.viewData.parentIndex), parentView.parentView.parentView.parentView.parentView.injectorGet(import19.DropdownHandle, parentView.parentView.parentView.parentView.viewData.parentIndex, null), parentView.parentView.parentView.parentView.parentView.injectorGet(import20.ActivationHandler, parentView.parentView.parentView.parentView.viewData.parentIndex, null), _compView_0.ref);
+    _MaterialSelectItemComponent_0_5 = new import17.MaterialSelectItemComponent(_el_0, parentView.parentView.parentView.parentView.parentView.injectorGet(import18.DomService, parentView.parentView.parentView.parentView.viewData.parentIndex), parentView.parentView.parentView.parentView.parentView.injectorGet(import19.DropdownHandle, parentView.parentView.parentView.parentView.viewData.parentIndex, null), parentView.parentView.parentView.parentView.parentView.injectorGet(import20.ActivationHandler, parentView.parentView.parentView.parentView.viewData.parentIndex, null), _compView_0.ref, null);
     _compView_0.create(_MaterialSelectItemComponent_0_5, [const []]);
     init0(_el_0);
     return null;
@@ -344,7 +336,7 @@ class _ViewMaterialSelectComponent5 extends AppView<import2.MaterialSelectCompon
 
   @override
   dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
-    if ((((identical(token, import17.MaterialSelectItemComponent) || identical(token, import21.SelectionItem)) || identical(token, import22.HasRenderer)) && (0 == nodeIndex))) {
+    if (((identical(token, import21.SelectionItem) || identical(token, import22.HasRenderer)) && (0 == nodeIndex))) {
       return _MaterialSelectItemComponent_0_5;
     }
     return notFoundResult;
@@ -420,7 +412,7 @@ class _ViewMaterialSelectComponentHost0 extends AppView<dynamic> {
 
   @override
   dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
-    if ((((identical(token, import2.MaterialSelectComponent) || identical(token, import22.HasRenderer)) || identical(token, import21.SelectionContainer)) && (0 == nodeIndex))) {
+    if (((identical(token, import22.HasRenderer) || identical(token, import21.SelectionContainer)) && (0 == nodeIndex))) {
       return _MaterialSelectComponent_0_5;
     }
     return notFoundResult;

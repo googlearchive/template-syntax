@@ -16,6 +16,7 @@ import 'package:angular_components/mixins/material_dropdown_base.dart';
 import 'package:angular_components/model/selection/selection_container.dart';
 import 'package:angular_components/model/ui/has_renderer.dart';
 import 'package:angular_components/utils/browser/dom_service/dom_service.dart';
+import 'package:angular_components/utils/id_generator/id_generator.dart';
 import 'package:angular/src/di/reflector.dart' as _ngRef;
 import 'package:angular/angular.template.dart' as _ref0;
 import 'package:angular_components/dynamic_component/dynamic_component.template.dart' as _ref1;
@@ -27,6 +28,7 @@ import 'package:angular_components/mixins/material_dropdown_base.template.dart' 
 import 'package:angular_components/model/selection/selection_container.template.dart' as _ref7;
 import 'package:angular_components/model/ui/has_renderer.template.dart' as _ref8;
 import 'package:angular_components/utils/browser/dom_service/dom_service.template.dart' as _ref9;
+import 'package:angular_components/utils/id_generator/id_generator.template.dart' as _ref10;
 import 'package:angular_components/material_select/material_select_dropdown_item.scss.css.shim.dart' as import0;
 import 'package:angular/src/core/linker/app_view.dart';
 import 'material_select_dropdown_item.dart' as import2;
@@ -49,8 +51,9 @@ import 'package:angular/src/core/linker/dynamic_component_loader.dart' as import
 import '../utils/browser/dom_service/dom_service.dart' as import19;
 import '../mixins/material_dropdown_base.dart' as import20;
 import 'activation_handler.dart' as import21;
-import '../model/selection/selection_container.dart' as import22;
-import '../model/ui/has_renderer.dart' as import23;
+import '../utils/id_generator/id_generator.dart' as import22;
+import '../model/selection/selection_container.dart' as import23;
+import '../model/ui/has_renderer.dart' as import24;
 
 const List<dynamic> styles$MaterialSelectDropdownItemComponent = const [import0.styles];
 
@@ -66,15 +69,17 @@ class ViewMaterialSelectDropdownItemComponent0 extends AppView<import2.MaterialS
   var _expr_4;
   bool _expr_5;
   var _expr_6;
-  bool _expr_7;
+  var _expr_7;
   bool _expr_8;
   bool _expr_9;
   bool _expr_10;
   bool _expr_11;
+  bool _expr_12;
+  var _expr_13;
+  var _expr_14;
   static RenderComponentType _renderType;
   ViewMaterialSelectDropdownItemComponent0(AppView<dynamic> parentView, int parentIndex) : super(import6.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     rootEl = import8.document.createElement('material-select-dropdown-item');
-    createAttr(rootEl, 'role', 'option');
     rootEl.className = 'item';
     rootEl.tabIndex = 0;
     _renderType ??= import9.appViewUtils.createRenderType('', ViewEncapsulation.Emulated, styles$MaterialSelectDropdownItemComponent);
@@ -143,11 +148,6 @@ class ViewMaterialSelectDropdownItemComponent0 extends AppView<import2.MaterialS
   }
 
   void detectHostChanges(bool firstCheck) {
-    if (firstCheck) {
-      if (!identical(ctx.role, null)) {
-        setAttr(rootEl, 'role', ctx.role?.toString());
-      }
-    }
     final currVal_4 = ctx.tabIndex;
     if (!identical(_expr_4, currVal_4)) {
       setProp(rootEl, 'tabIndex', currVal_4);
@@ -158,35 +158,50 @@ class ViewMaterialSelectDropdownItemComponent0 extends AppView<import2.MaterialS
       updateElemClass(rootEl, 'active', currVal_5);
       _expr_5 = currVal_5;
     }
-    final currVal_6 = ctx.disabledStr;
+    final currVal_6 = ctx.role;
     if (!identical(_expr_6, currVal_6)) {
-      setAttr(rootEl, 'aria-disabled', currVal_6?.toString());
+      setAttr(rootEl, 'role', currVal_6?.toString());
       _expr_6 = currVal_6;
     }
-    final currVal_7 = ctx.disabled;
+    final currVal_7 = ctx.disabledStr;
     if (!identical(_expr_7, currVal_7)) {
-      updateElemClass(rootEl, 'is-disabled', currVal_7);
+      setAttr(rootEl, 'aria-disabled', currVal_7?.toString());
       _expr_7 = currVal_7;
     }
     final currVal_8 = ctx.disabled;
     if (!identical(_expr_8, currVal_8)) {
-      updateElemClass(rootEl, 'disabled', currVal_8);
+      updateElemClass(rootEl, 'is-disabled', currVal_8);
       _expr_8 = currVal_8;
     }
-    final currVal_9 = ctx.isHidden;
+    final currVal_9 = ctx.disabled;
     if (!identical(_expr_9, currVal_9)) {
-      updateElemClass(rootEl, 'hidden', currVal_9);
+      updateElemClass(rootEl, 'disabled', currVal_9);
       _expr_9 = currVal_9;
     }
-    final currVal_10 = ctx.isSelected;
+    final currVal_10 = ctx.isHidden;
     if (!identical(_expr_10, currVal_10)) {
-      updateElemClass(rootEl, 'selected', currVal_10);
+      updateElemClass(rootEl, 'hidden', currVal_10);
       _expr_10 = currVal_10;
     }
-    final currVal_11 = ctx.supportsMultiSelect;
+    final currVal_11 = ctx.isSelected;
     if (!identical(_expr_11, currVal_11)) {
-      updateElemClass(rootEl, 'multiselect', currVal_11);
+      updateElemClass(rootEl, 'selected', currVal_11);
       _expr_11 = currVal_11;
+    }
+    final currVal_12 = ctx.supportsMultiSelect;
+    if (!identical(_expr_12, currVal_12)) {
+      updateElemClass(rootEl, 'multiselect', currVal_12);
+      _expr_12 = currVal_12;
+    }
+    final currVal_13 = ctx.isSelected;
+    if (!identical(_expr_13, currVal_13)) {
+      setAttr(rootEl, 'aria-selected', currVal_13?.toString());
+      _expr_13 = currVal_13;
+    }
+    final currVal_14 = ctx.id;
+    if (!identical(_expr_14, currVal_14)) {
+      setAttr(rootEl, 'id', currVal_14?.toString());
+      _expr_14 = currVal_14;
     }
   }
 }
@@ -481,14 +496,6 @@ class _ViewMaterialSelectDropdownItemComponent7 extends AppView<import2.Material
   }
 
   @override
-  dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
-    if ((identical(token, import17.DynamicComponent) && (0 == nodeIndex))) {
-      return _DynamicComponent_0_8;
-    }
-    return notFoundResult;
-  }
-
-  @override
   void detectChangesInternal() {
     final import2.MaterialSelectDropdownItemComponent _ctx = ctx;
     bool changed = false;
@@ -540,7 +547,7 @@ class _ViewMaterialSelectDropdownItemComponentHost0 extends AppView<dynamic> {
   ComponentRef build() {
     _compView_0 = new ViewMaterialSelectDropdownItemComponent0(this, 0);
     rootEl = _compView_0.rootEl;
-    _MaterialSelectDropdownItemComponent_0_5 = new import2.MaterialSelectDropdownItemComponent(rootEl, this.injectorGet(import19.DomService, viewData.parentIndex), null, this.injectorGet(import20.DropdownHandle, viewData.parentIndex, null), this.injectorGet(import21.ActivationHandler, viewData.parentIndex, null), _compView_0.ref);
+    _MaterialSelectDropdownItemComponent_0_5 = new import2.MaterialSelectDropdownItemComponent(rootEl, this.injectorGet(import19.DomService, viewData.parentIndex), null, this.injectorGet(import20.DropdownHandle, viewData.parentIndex, null), this.injectorGet(import21.ActivationHandler, viewData.parentIndex, null), this.injectorGet(import22.IdGenerator, viewData.parentIndex, null), _compView_0.ref);
     _compView_0.create(_MaterialSelectDropdownItemComponent_0_5, projectableNodes);
     init0(rootEl);
     return new ComponentRef<import2.MaterialSelectDropdownItemComponent>(0, this, rootEl, _MaterialSelectDropdownItemComponent_0_5);
@@ -548,7 +555,7 @@ class _ViewMaterialSelectDropdownItemComponentHost0 extends AppView<dynamic> {
 
   @override
   dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
-    if ((((identical(token, import2.MaterialSelectDropdownItemComponent) || identical(token, import22.SelectionItem)) || identical(token, import23.HasRenderer)) && (0 == nodeIndex))) {
+    if (((identical(token, import23.SelectionItem) || identical(token, import24.HasRenderer)) && (0 == nodeIndex))) {
       return _MaterialSelectDropdownItemComponent_0_5;
     }
     return notFoundResult;
@@ -592,4 +599,5 @@ void initReflector() {
   _ref7.initReflector();
   _ref8.initReflector();
   _ref9.initReflector();
+  _ref10.initReflector();
 }

@@ -133,7 +133,7 @@ class _ViewMaterialTabComponentHost0 extends AppView<dynamic> {
 
   @override
   dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
-    if ((((identical(token, import2.MaterialTabComponent) || identical(token, import2.Tab)) || identical(token, import13.DeferredContentAware)) && (0 == nodeIndex))) {
+    if (((identical(token, import2.Tab) || identical(token, import13.DeferredContentAware)) && (0 == nodeIndex))) {
       return _MaterialTabComponent_0_5;
     }
     return notFoundResult;

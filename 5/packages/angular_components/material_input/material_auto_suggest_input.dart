@@ -74,6 +74,8 @@ typedef String _InputChangeCallback(String inputText);
 ///   Defaults to 10.
 /// - `label: String` -- The label to use on the input. Passed through to
 ///   `material-input`.
+/// - `ariaLabel: String` -- The label to use for assistive technology.  If not
+///    provided, uses the label instead.
 /// - `labelRenderer: ComponentRenderer` -- Provides capability to customize the
 ///    suggestionOptions label with a custom component.
 /// - `leadingGlyph: String` -- Any persistent glyph to show before the input.
@@ -253,6 +255,10 @@ class MaterialAutoSuggestInputComponent extends MaterialSelectBase
   /// Allow filtering of suggestions as the user is typing.
   @Input()
   bool filterSuggestions = true;
+
+  /// Whether to close on enter even for string non matching options.
+  @Input()
+  bool closeOnEnter = false;
 
   /// A custom CSS class for suggestion popup contents.
   @Input()
@@ -637,8 +643,12 @@ class MaterialAutoSuggestInputComponent extends MaterialSelectBase
       showPopup = true;
     } else {
       var item = activeModel.activeItem;
-      if (item != null && !isOptionDisabled(item)) {
-        onListItemSelected(item);
+      if (item != null) {
+        if (!isOptionDisabled(item)) {
+          onListItemSelected(item);
+        }
+      } else if (closeOnEnter) {
+        showPopup = false;
       }
     }
   }

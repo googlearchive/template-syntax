@@ -20,7 +20,7 @@ import 'tooltip_source.dart' show tooltipShowDelay;
 /// the only stand-alone tooltip component is the [MaterialInkTooltipComponent],
 /// which gives full control over the content of a simple tooltip.
 ///
-/// __Example Usage:__
+/// __Example usage:__
 ///
 /// ```html
 /// <!-- Explicitly declare the tooltip target. Allows for custom content -->
@@ -40,8 +40,6 @@ import 'tooltip_source.dart' show tooltipShowDelay;
     '(blur)': 'hideTooltip()',
     '(keyup)': 'showTooltipWithDelay()',
   },
-  // TODO(google): Change to `Visibility.local` to reduce code size.
-  visibility: Visibility.all,
 )
 class MaterialTooltipTargetDirective extends TooltipBehavior
     implements AfterViewInit, OnDestroy {
@@ -124,7 +122,7 @@ abstract class TooltipBehavior extends TooltipTarget {
 /// the only stand-alone tooltip component is the [MaterialInkTooltipComponent],
 /// which gives full control over the content of a simple tooltip.
 ///
-/// __Example Usage:__
+/// __Example usage:__
 ///
 /// ```html
 /// <!-- Explicitly declare the tooltip target. Allows for custom content -->
@@ -144,8 +142,6 @@ abstract class TooltipBehavior extends TooltipTarget {
     '(keypress)': r'kbTrigger($event)',
     '(blur)': r'onBlur($event)',
   },
-  // TODO(google): Change to `Visibility.local` to reduce code size.
-  visibility: Visibility.all,
 )
 class ClickableTooltipTargetDirective extends TooltipBehavior
     implements AfterViewInit, OnDestroy {

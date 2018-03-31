@@ -228,9 +228,8 @@ class _ViewMenuItemAffixListComponent4 extends AppView<import2.MenuItemAffixList
     createAttr(_el_0, 'baseline', '');
     createAttr(_el_0, 'buttonDecorator', '');
     _el_0.className = 'material-list-item-primary secondary-icon';
-    createAttr(_el_0, 'role', 'button');
     addShimC(_el_0);
-    _ButtonDirective_0_5 = new import15.ButtonDirectiveNgCd(new import17.ButtonDirective(_el_0));
+    _ButtonDirective_0_5 = new import15.ButtonDirectiveNgCd(new import17.ButtonDirective(_el_0, null));
     _MaterialIconComponent_0_6 = new import16.MaterialIconComponent(_el_0);
     import8.Text _text_1 = new import8.Text('\n      ');
     _compView_0.create(_MaterialIconComponent_0_6, []);
@@ -360,14 +359,6 @@ class _ViewMenuItemAffixListComponentHost0 extends AppView<dynamic> {
     _compView_0.create(_MenuItemAffixListComponent_0_5, projectableNodes);
     init0(rootEl);
     return new ComponentRef<import2.MenuItemAffixListComponent>(0, this, rootEl, _MenuItemAffixListComponent_0_5);
-  }
-
-  @override
-  dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
-    if ((identical(token, import2.MenuItemAffixListComponent) && (0 == nodeIndex))) {
-      return _MenuItemAffixListComponent_0_5;
-    }
-    return notFoundResult;
   }
 
   @override

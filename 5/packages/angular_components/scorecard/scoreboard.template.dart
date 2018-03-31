@@ -99,14 +99,6 @@ class ViewScoreboardComponent0 extends AppView<import2.ScoreboardComponent> {
   }
 
   @override
-  dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
-    if ((identical(token, import6.ScorecardBarDirective) && (2 == nodeIndex))) {
-      return _ScorecardBarDirective_2_5;
-    }
-    return notFoundResult;
-  }
-
-  @override
   void detectChangesInternal() {
     final import2.ScoreboardComponent _ctx = ctx;
     bool firstCheck = (this.cdState == 0);
@@ -168,7 +160,7 @@ class _ViewScoreboardComponent1 extends AppView<import2.ScoreboardComponent> {
     _el_0.className = 'scroll-button scroll-back-button';
     addShimC(_el_0);
     _AcxDarkTheme_0_5 = new import16.AcxDarkTheme(parentView.parentView.injectorGet(const import14.OpaqueToken('acxDarkTheme'), parentView.viewData.parentIndex, null));
-    _MaterialButtonComponent_0_6 = new import17.MaterialButtonComponent(_el_0, _AcxDarkTheme_0_5, _compView_0.ref);
+    _MaterialButtonComponent_0_6 = new import17.MaterialButtonComponent(_el_0, _AcxDarkTheme_0_5, _compView_0.ref, null);
     _compView_1 = new import18.ViewMaterialIconComponent0(this, 1);
     _el_1 = _compView_1.rootEl;
     addShimC(_el_1);
@@ -259,7 +251,7 @@ class _ViewScoreboardComponent2 extends AppView<import2.ScoreboardComponent> {
     _el_0.className = 'scroll-button scroll-forward-button';
     addShimC(_el_0);
     _AcxDarkTheme_0_5 = new import16.AcxDarkTheme(parentView.parentView.injectorGet(const import14.OpaqueToken('acxDarkTheme'), parentView.viewData.parentIndex, null));
-    _MaterialButtonComponent_0_6 = new import17.MaterialButtonComponent(_el_0, _AcxDarkTheme_0_5, _compView_0.ref);
+    _MaterialButtonComponent_0_6 = new import17.MaterialButtonComponent(_el_0, _AcxDarkTheme_0_5, _compView_0.ref, null);
     _compView_1 = new import18.ViewMaterialIconComponent0(this, 1);
     _el_1 = _compView_1.rootEl;
     addShimC(_el_1);

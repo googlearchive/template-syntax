@@ -23,24 +23,30 @@ import 'dart:html' as import3;
 class ButtonDirectiveNgCd extends import0.DirectiveChangeDetector {
   final import1.ButtonDirective instance;
   var _expr_0;
-  var _expr_1;
-  bool _expr_2;
+  var _expr_2;
+  bool _expr_3;
   ButtonDirectiveNgCd(this.instance);
   void detectHostChanges(AppView<dynamic> view, import3.Element el) {
+    bool firstCheck = (view.cdState == 0);
+    if (firstCheck) {
+      if (!identical(instance.role, null)) {
+        setAttr(el, 'role', instance.role?.toString());
+      }
+    }
     final currVal_0 = instance.tabIndex;
     if (!identical(_expr_0, currVal_0)) {
       setProp(el, 'tabIndex', currVal_0);
       _expr_0 = currVal_0;
     }
-    final currVal_1 = instance.disabledStr;
-    if (!identical(_expr_1, currVal_1)) {
-      setAttr(el, 'aria-disabled', currVal_1?.toString());
-      _expr_1 = currVal_1;
-    }
-    final currVal_2 = instance.disabled;
+    final currVal_2 = instance.disabledStr;
     if (!identical(_expr_2, currVal_2)) {
-      updateElemClass(el, 'is-disabled', currVal_2);
+      setAttr(el, 'aria-disabled', currVal_2?.toString());
       _expr_2 = currVal_2;
+    }
+    final currVal_3 = instance.disabled;
+    if (!identical(_expr_3, currVal_3)) {
+      updateElemClass(el, 'is-disabled', currVal_3);
+      _expr_3 = currVal_3;
     }
   }
 }

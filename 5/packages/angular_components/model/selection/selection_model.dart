@@ -8,7 +8,9 @@ import 'dart:async';
 import 'dart:collection';
 
 import 'package:observable/observable.dart';
+
 import 'package:angular_components/src/model/selection/interfaces/selectable.dart';
+import 'package:angular_components/src/model/selection/radio_group_single_selection_model.dart';
 
 export 'package:angular_components/src/model/selection/delegating_selection_model.dart';
 export 'package:angular_components/src/model/selection/radio_group_single_selection_model.dart';
@@ -35,28 +37,48 @@ Object _defaultKeyProvider(Object o) => o;
 /// [changes] to selection.
 abstract class SelectionModel<T>
     implements Observable<ChangeRecord>, SelectionObservable<T> {
-  /// Returns an immutable, constant model.
-  const factory SelectionModel() = _NoopSelectionModelImpl<T>;
+  /// Creates an immutable, constant model.
+  const factory SelectionModel.empty() = _NoopSelectionModelImpl<T>;
 
-  /// Creates a new model with the given [selectedValues].
+  /// Creates a single-selection model.
   ///
-  /// [keyProvider] is used for equality checking by various other methods.
-  /// For example, [select] will only alter the set of selected values if the
-  /// key of the new value is not among the keys of the already selected values.
-  /// [allowMulti] is whether to allow more than one selection at a time.
-  /// When false, selecting a new value automatically deselects the old value.
+  /// [keyProvider] is used for equality checking. For example, [select] will
+  /// only alter the selected value if the key of the new value does not equal
+  /// the key of the already selected value.
+  factory SelectionModel.single({T selected, KeyProvider<T> keyProvider}) =>
+      new _SingleSelectionModelImpl<T>(
+          selected, keyProvider ?? _defaultKeyProvider);
+
+  /// Creates a single-selection model that always has a value selected.
+  factory SelectionModel.radio(T selected) =>
+      new RadioGroupSingleSelectionModel<T>(selected);
+
+  /// Creates a multi-selection model.
+  ///
+  /// [keyProvider] is used for equality checking. For example, [select] will
+  /// only alter the set of selected values if the key of the new value is not
+  /// among the keys of the already selected values.
+  factory SelectionModel.multi(
+      {List<T> selectedValues,
+      KeyProvider<T> keyProvider}) = MultiSelectionModel<T>;
+
+  @Deprecated('Use SelectionModel.empty instead.')
+  const factory SelectionModel() = SelectionModel<T>.empty;
+
+  @Deprecated('Use SelectionModel.single or SelectionModel.multi instead.')
   factory SelectionModel.withList(
-      {List<T> selectedValues: const [],
-      KeyProvider<T> keyProvider: _defaultKeyProvider,
-      bool allowMulti: false}) {
-    if (selectedValues == null) {
-      throw new ArgumentError.notNull('selectedValues');
-    }
+      {List<T> selectedValues,
+      KeyProvider<T> keyProvider,
+      bool allowMulti = false}) {
     if (allowMulti) {
-      return new _MultiSelectionModelImpl<T>(selectedValues, keyProvider);
+      return new SelectionModel<T>.multi(
+          selectedValues: selectedValues, keyProvider: keyProvider);
     } else {
-      return new _SingleSelectionModelImpl<T>(
-          selectedValues.isNotEmpty ? selectedValues.last : null, keyProvider);
+      return new SelectionModel<T>.single(
+          selected: (selectedValues?.isNotEmpty ?? false)
+              ? selectedValues.last
+              : null,
+          keyProvider: keyProvider);
     }
   }
 
@@ -91,12 +113,9 @@ abstract class SelectionModel<T>
 
 abstract class MultiSelectionModel<T> extends SelectionModel<T> {
   factory MultiSelectionModel(
-      {List<T> selectedValues: const [],
-      KeyProvider<T> keyProvider: _defaultKeyProvider}) {
-    return new SelectionModel<T>.withList(
-        selectedValues: selectedValues,
-        keyProvider: keyProvider,
-        allowMulti: true);
+      {List<T> selectedValues, KeyProvider<T> keyProvider}) {
+    return new _MultiSelectionModelImpl<T>(
+        selectedValues ?? const [], keyProvider ?? _defaultKeyProvider);
   }
 
   /// Adds all [values] to the list of selected items that were not previously

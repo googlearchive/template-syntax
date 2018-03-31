@@ -297,7 +297,7 @@ class _ViewDateRangeEditorComponent1 extends AppView<import2.DateRangeEditorComp
 
   @override
   dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
-    if ((((identical(token, import13.MaterialSelectComponent) || identical(token, import15.HasRenderer)) || identical(token, import16.SelectionContainer)) && ((0 <= nodeIndex) && (nodeIndex <= 6)))) {
+    if (((identical(token, import15.HasRenderer) || identical(token, import16.SelectionContainer)) && ((0 <= nodeIndex) && (nodeIndex <= 6)))) {
       return _MaterialSelectComponent_0_5;
     }
     return notFoundResult;
@@ -394,7 +394,7 @@ class _ViewDateRangeEditorComponent2 extends AppView<import2.DateRangeEditorComp
     _el_1 = _compView_1.rootEl;
     _el_0.append(_el_1);
     addShimC(_el_1);
-    _MaterialSelectItemComponent_1_5 = new import18.MaterialSelectItemComponent(_el_1, parentView.parentView.injectorGet(import19.DomService, parentView.viewData.parentIndex), parentView.parentView.injectorGet(import20.DropdownHandle, parentView.viewData.parentIndex, null), parentView.parentView.injectorGet(import21.ActivationHandler, parentView.viewData.parentIndex, null), _compView_1.ref);
+    _MaterialSelectItemComponent_1_5 = new import18.MaterialSelectItemComponent(_el_1, parentView.parentView.injectorGet(import19.DomService, parentView.viewData.parentIndex), parentView.parentView.injectorGet(import20.DropdownHandle, parentView.viewData.parentIndex, null), parentView.parentView.injectorGet(import21.ActivationHandler, parentView.viewData.parentIndex, null), _compView_1.ref, null);
     _SelectionItem_1_6 = _MaterialSelectItemComponent_1_5;
     _text_2 = new import8.Text('');
     _compView_1.create(_MaterialSelectItemComponent_1_5, [
@@ -407,7 +407,7 @@ class _ViewDateRangeEditorComponent2 extends AppView<import2.DateRangeEditorComp
 
   @override
   dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
-    if (((identical(token, import18.MaterialSelectItemComponent) || identical(token, import15.HasRenderer)) && ((1 <= nodeIndex) && (nodeIndex <= 2)))) {
+    if ((identical(token, import15.HasRenderer) && ((1 <= nodeIndex) && (nodeIndex <= 2)))) {
       return _MaterialSelectItemComponent_1_5;
     }
     if ((identical(token, import16.SelectionItem) && ((1 <= nodeIndex) && (nodeIndex <= 2)))) {
@@ -475,7 +475,7 @@ class _ViewDateRangeEditorComponent3 extends AppView<import2.DateRangeEditorComp
     _el_0.append(_el_1);
     createAttr(_el_1, 'closeOnActivate', 'false');
     addShimC(_el_1);
-    _MaterialSelectItemComponent_1_5 = new import18.MaterialSelectItemComponent(_el_1, parentView.parentView.injectorGet(import19.DomService, parentView.viewData.parentIndex), parentView.parentView.injectorGet(import20.DropdownHandle, parentView.viewData.parentIndex, null), parentView.parentView.injectorGet(import21.ActivationHandler, parentView.viewData.parentIndex, null), _compView_1.ref);
+    _MaterialSelectItemComponent_1_5 = new import18.MaterialSelectItemComponent(_el_1, parentView.parentView.injectorGet(import19.DomService, parentView.viewData.parentIndex), parentView.parentView.injectorGet(import20.DropdownHandle, parentView.viewData.parentIndex, null), parentView.parentView.injectorGet(import21.ActivationHandler, parentView.viewData.parentIndex, null), _compView_1.ref, null);
     _SelectionItem_1_6 = _MaterialSelectItemComponent_1_5;
     _el_2 = doc.createElement('div');
     addShimC(_el_2);
@@ -500,7 +500,7 @@ class _ViewDateRangeEditorComponent3 extends AppView<import2.DateRangeEditorComp
 
   @override
   dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
-    if (((identical(token, import18.MaterialSelectItemComponent) || identical(token, import15.HasRenderer)) && ((1 <= nodeIndex) && (nodeIndex <= 5)))) {
+    if ((identical(token, import15.HasRenderer) && ((1 <= nodeIndex) && (nodeIndex <= 5)))) {
       return _MaterialSelectItemComponent_1_5;
     }
     if ((identical(token, import16.SelectionItem) && ((1 <= nodeIndex) && (nodeIndex <= 5)))) {
@@ -611,9 +611,8 @@ class _ViewDateRangeEditorComponent5 extends AppView<import2.DateRangeEditorComp
     createAttr(_el_0, 'buttonDecorator', '');
     _el_0.className = 'expend-more';
     createAttr(_el_0, 'icon', 'expand_more');
-    createAttr(_el_0, 'role', 'button');
     addShimC(_el_0);
-    _ButtonDirective_0_5 = new import23.ButtonDirectiveNgCd(new import25.ButtonDirective(_el_0));
+    _ButtonDirective_0_5 = new import23.ButtonDirectiveNgCd(new import25.ButtonDirective(_el_0, null));
     _GlyphComponent_0_6 = new import24.GlyphComponent(_el_0);
     _compView_0.create(_GlyphComponent_0_6, []);
     _el_0.addEventListener('click', eventHandler1(_ButtonDirective_0_5.instance.handleClick));
@@ -689,7 +688,7 @@ class _ViewDateRangeEditorComponent6 extends AppView<import2.DateRangeEditorComp
     createAttr(_el_0, 'closeOnActivate', 'false');
     addShimC(_el_0);
     _appEl_0 = new ViewContainer(0, null, this, _el_0);
-    _MaterialSelectItemComponent_0_8 = new import18.MaterialSelectItemComponent(_el_0, parentView.parentView.injectorGet(import19.DomService, parentView.viewData.parentIndex), parentView.parentView.injectorGet(import20.DropdownHandle, parentView.viewData.parentIndex, null), parentView.parentView.injectorGet(import21.ActivationHandler, parentView.viewData.parentIndex, null), _compView_0.ref);
+    _MaterialSelectItemComponent_0_8 = new import18.MaterialSelectItemComponent(_el_0, parentView.parentView.injectorGet(import19.DomService, parentView.viewData.parentIndex), parentView.parentView.injectorGet(import20.DropdownHandle, parentView.viewData.parentIndex, null), parentView.parentView.injectorGet(import21.ActivationHandler, parentView.viewData.parentIndex, null), _compView_0.ref, null);
     _MaterialTooltipDirective_0_9 = new import26.MaterialTooltipDirective(parentView.parentView.injectorGet(import30.DomPopupSourceFactory, parentView.viewData.parentIndex), _appEl_0, _el_0, _appEl_0, _compView_0.ref, parentView.parentView.injectorGet(import8.Window, parentView.viewData.parentIndex));
     _SelectionItem_0_10 = _MaterialSelectItemComponent_0_8;
     _text_1 = new import8.Text('');
@@ -707,7 +706,7 @@ class _ViewDateRangeEditorComponent6 extends AppView<import2.DateRangeEditorComp
 
   @override
   dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
-    if (((identical(token, import18.MaterialSelectItemComponent) || identical(token, import15.HasRenderer)) && ((0 <= nodeIndex) && (nodeIndex <= 2)))) {
+    if ((identical(token, import15.HasRenderer) && ((0 <= nodeIndex) && (nodeIndex <= 2)))) {
       return _MaterialSelectItemComponent_0_8;
     }
     if ((identical(token, import16.SelectionItem) && ((0 <= nodeIndex) && (nodeIndex <= 2)))) {
@@ -836,7 +835,7 @@ class _ViewDateRangeEditorComponent7 extends AppView<import2.DateRangeEditorComp
     createAttr(_el_0, 'popupSource', '');
     addShimC(_el_0);
     _AcxDarkTheme_0_5 = new import33.AcxDarkTheme(parentView.parentView.parentView.injectorGet(const import38.OpaqueToken('acxDarkTheme'), parentView.parentView.viewData.parentIndex, null));
-    _MaterialButtonComponent_0_6 = new import34.MaterialButtonComponent(_el_0, _AcxDarkTheme_0_5, _compView_0.ref);
+    _MaterialButtonComponent_0_6 = new import34.MaterialButtonComponent(_el_0, _AcxDarkTheme_0_5, _compView_0.ref, null);
     _PopupSourceDirective_0_7 = new import35.PopupSourceDirective(parentView.parentView.parentView.injectorGet(import30.DomPopupSourceFactory, parentView.parentView.viewData.parentIndex), _el_0, parentView.parentView.parentView.injectorGet(import39.ReferenceDirective, parentView.parentView.viewData.parentIndex, null));
     _compView_1 = new import22.ViewGlyphComponent0(this, 1);
     _el_1 = _compView_1.rootEl;
@@ -875,9 +874,6 @@ class _ViewDateRangeEditorComponent7 extends AppView<import2.DateRangeEditorComp
     }
     if (((identical(token, import34.MaterialButtonComponent) || identical(token, import25.ButtonDirective)) && ((0 <= nodeIndex) && (nodeIndex <= 1)))) {
       return _MaterialButtonComponent_0_6;
-    }
-    if ((identical(token, import35.PopupSourceDirective) && ((0 <= nodeIndex) && (nodeIndex <= 1)))) {
-      return _PopupSourceDirective_0_7;
     }
     if ((((identical(token, import37.MaterialPopupComponent) || identical(token, import20.DropdownHandle)) || identical(token, import48.DeferredContentAware)) && ((2 <= nodeIndex) && (nodeIndex <= 3)))) {
       return _MaterialPopupComponent_2_8;
@@ -1006,7 +1002,7 @@ class _ViewDateRangeEditorComponent8 extends AppView<import2.DateRangeEditorComp
     createAttr(_el_0, 'closeOnActivate', 'false');
     addShimC(_el_0);
     _appEl_0 = new ViewContainer(0, null, this, _el_0);
-    _MaterialSelectItemComponent_0_8 = new import18.MaterialSelectItemComponent(_el_0, parentView.parentView.parentView.parentView.injectorGet(import19.DomService, parentView.parentView.parentView.viewData.parentIndex), (parentView as _ViewDateRangeEditorComponent7)._MaterialPopupComponent_2_8, parentView.parentView.parentView.parentView.injectorGet(import21.ActivationHandler, parentView.parentView.parentView.viewData.parentIndex, null), _compView_0.ref);
+    _MaterialSelectItemComponent_0_8 = new import18.MaterialSelectItemComponent(_el_0, parentView.parentView.parentView.parentView.injectorGet(import19.DomService, parentView.parentView.parentView.viewData.parentIndex), (parentView as _ViewDateRangeEditorComponent7)._MaterialPopupComponent_2_8, parentView.parentView.parentView.parentView.injectorGet(import21.ActivationHandler, parentView.parentView.parentView.viewData.parentIndex, null), _compView_0.ref, null);
     _MaterialTooltipDirective_0_9 = new import26.MaterialTooltipDirective(parentView.parentView.parentView.parentView.injectorGet(import30.DomPopupSourceFactory, parentView.parentView.parentView.viewData.parentIndex), _appEl_0, _el_0, _appEl_0, _compView_0.ref, parentView.parentView.parentView.parentView.injectorGet(import8.Window, parentView.parentView.parentView.viewData.parentIndex));
     _SelectionItem_0_10 = _MaterialSelectItemComponent_0_8;
     _text_1 = new import8.Text('');
@@ -1020,7 +1016,7 @@ class _ViewDateRangeEditorComponent8 extends AppView<import2.DateRangeEditorComp
 
   @override
   dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
-    if (((identical(token, import18.MaterialSelectItemComponent) || identical(token, import15.HasRenderer)) && ((0 <= nodeIndex) && (nodeIndex <= 1)))) {
+    if ((identical(token, import15.HasRenderer) && ((0 <= nodeIndex) && (nodeIndex <= 1)))) {
       return _MaterialSelectItemComponent_0_8;
     }
     if ((identical(token, import16.SelectionItem) && ((0 <= nodeIndex) && (nodeIndex <= 1)))) {
@@ -1153,7 +1149,7 @@ class _ViewDateRangeEditorComponent9 extends AppView<import2.DateRangeEditorComp
     _el_1.className = 'days-input days-to-today item';
     createAttr(_el_1, 'closeOnActivate', 'false');
     addShimC(_el_1);
-    _MaterialSelectItemComponent_1_5 = new import18.MaterialSelectItemComponent(_el_1, parentView.parentView.injectorGet(import19.DomService, parentView.viewData.parentIndex), parentView.parentView.injectorGet(import20.DropdownHandle, parentView.viewData.parentIndex, null), parentView.parentView.injectorGet(import21.ActivationHandler, parentView.viewData.parentIndex, null), _compView_1.ref);
+    _MaterialSelectItemComponent_1_5 = new import18.MaterialSelectItemComponent(_el_1, parentView.parentView.injectorGet(import19.DomService, parentView.viewData.parentIndex), parentView.parentView.injectorGet(import20.DropdownHandle, parentView.viewData.parentIndex, null), parentView.parentView.injectorGet(import21.ActivationHandler, parentView.viewData.parentIndex, null), _compView_1.ref, null);
     _SelectionItem_1_6 = _MaterialSelectItemComponent_1_5;
     _compView_2 = new import50.ViewMaterialInputComponent0(this, 2);
     _el_2 = _compView_2.rootEl;
@@ -1179,7 +1175,7 @@ class _ViewDateRangeEditorComponent9 extends AppView<import2.DateRangeEditorComp
     _el_5.className = 'days-input days-to-yesterday item';
     createAttr(_el_5, 'closeOnActivate', 'false');
     addShimC(_el_5);
-    _MaterialSelectItemComponent_5_5 = new import18.MaterialSelectItemComponent(_el_5, parentView.parentView.injectorGet(import19.DomService, parentView.viewData.parentIndex), parentView.parentView.injectorGet(import20.DropdownHandle, parentView.viewData.parentIndex, null), parentView.parentView.injectorGet(import21.ActivationHandler, parentView.viewData.parentIndex, null), _compView_5.ref);
+    _MaterialSelectItemComponent_5_5 = new import18.MaterialSelectItemComponent(_el_5, parentView.parentView.injectorGet(import19.DomService, parentView.viewData.parentIndex), parentView.parentView.injectorGet(import20.DropdownHandle, parentView.viewData.parentIndex, null), parentView.parentView.injectorGet(import21.ActivationHandler, parentView.viewData.parentIndex, null), _compView_5.ref, null);
     _SelectionItem_5_6 = _MaterialSelectItemComponent_5_5;
     _compView_6 = new import50.ViewMaterialInputComponent0(this, 6);
     _el_6 = _compView_6.rootEl;
@@ -1232,7 +1228,7 @@ class _ViewDateRangeEditorComponent9 extends AppView<import2.DateRangeEditorComp
     if ((identical(token, import54.MaterialInputDefaultValueAccessor) && (2 == nodeIndex))) {
       return _MaterialInputDefaultValueAccessor_2_11;
     }
-    if (((identical(token, import18.MaterialSelectItemComponent) || identical(token, import15.HasRenderer)) && ((1 <= nodeIndex) && (nodeIndex <= 4)))) {
+    if ((identical(token, import15.HasRenderer) && ((1 <= nodeIndex) && (nodeIndex <= 4)))) {
       return _MaterialSelectItemComponent_1_5;
     }
     if ((identical(token, import16.SelectionItem) && ((1 <= nodeIndex) && (nodeIndex <= 4)))) {
@@ -1259,7 +1255,7 @@ class _ViewDateRangeEditorComponent9 extends AppView<import2.DateRangeEditorComp
     if ((identical(token, import54.MaterialInputDefaultValueAccessor) && (6 == nodeIndex))) {
       return _MaterialInputDefaultValueAccessor_6_11;
     }
-    if (((identical(token, import18.MaterialSelectItemComponent) || identical(token, import15.HasRenderer)) && ((5 <= nodeIndex) && (nodeIndex <= 8)))) {
+    if ((identical(token, import15.HasRenderer) && ((5 <= nodeIndex) && (nodeIndex <= 8)))) {
       return _MaterialSelectItemComponent_5_5;
     }
     if ((identical(token, import16.SelectionItem) && ((5 <= nodeIndex) && (nodeIndex <= 8)))) {
@@ -1428,14 +1424,6 @@ class _ViewDateRangeEditorComponent10 extends AppView<import2.DateRangeEditorCom
   }
 
   @override
-  dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
-    if ((identical(token, import59.ComparisonRangeEditorComponent) && (1 == nodeIndex))) {
-      return _ComparisonRangeEditorComponent_1_5;
-    }
-    return notFoundResult;
-  }
-
-  @override
   void detectChangesInternal() {
     final import2.DateRangeEditorComponent _ctx = ctx;
     final currVal_0 = _ctx.model;
@@ -1548,14 +1536,6 @@ class _ViewDateRangeEditorComponent11 extends AppView<import2.DateRangeEditorCom
     final subscription_1 = _DateRangeInputComponent_4_5.stateChange.listen(eventHandler1(_handle_stateChange_4_0));
     init([_el_0], [subscription_0, subscription_1]);
     return null;
-  }
-
-  @override
-  dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
-    if ((identical(token, import61.DateRangeInputComponent) && (4 == nodeIndex))) {
-      return _DateRangeInputComponent_4_5;
-    }
-    return notFoundResult;
   }
 
   @override
@@ -1695,9 +1675,8 @@ class _ViewDateRangeEditorComponent12 extends AppView<import2.DateRangeEditorCom
     _el_0 = doc.createElement('div');
     createAttr(_el_0, 'buttonDecorator', '');
     _el_0.className = 'button-decorator';
-    createAttr(_el_0, 'role', 'button');
     addShimC(_el_0);
-    _ButtonDirective_0_5 = new import23.ButtonDirectiveNgCd(new import25.ButtonDirective(_el_0));
+    _ButtonDirective_0_5 = new import23.ButtonDirectiveNgCd(new import25.ButtonDirective(_el_0, null));
     _el_1 = createDivAndAppend(doc, _el_0);
     _el_1.className = 'custom-tab-right';
     addShimC(_el_1);
@@ -1826,14 +1805,6 @@ class _ViewDateRangeEditorComponent15 extends AppView<import2.DateRangeEditorCom
   }
 
   @override
-  dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
-    if ((identical(token, import61.DateRangeInputComponent) && (1 == nodeIndex))) {
-      return _DateRangeInputComponent_1_5;
-    }
-    return notFoundResult;
-  }
-
-  @override
   void detectChangesInternal() {
     final import2.DateRangeEditorComponent _ctx = ctx;
     bool changed = false;
@@ -1932,9 +1903,8 @@ class _ViewDateRangeEditorComponent16 extends AppView<import2.DateRangeEditorCom
     createAttr(_el_1, 'buttonDecorator', '');
     _el_1.className = 'month-selector-dropdown';
     createAttr(_el_1, 'keyboardOnlyFocusIndicator', '');
-    createAttr(_el_1, 'role', 'button');
     addShimC(_el_1);
-    _ButtonDirective_1_5 = new import23.ButtonDirectiveNgCd(new import25.ButtonDirective(_el_1));
+    _ButtonDirective_1_5 = new import23.ButtonDirectiveNgCd(new import25.ButtonDirective(_el_1, null));
     _KeyboardOnlyFocusIndicatorDirective_1_6 = new import62.KeyboardOnlyFocusIndicatorDirective(_el_1, parentView.parentView.injectorGet(import19.DomService, parentView.viewData.parentIndex));
     _el_2 = createSpanAndAppend(doc, _el_1);
     _el_2.className = 'visible-month';
@@ -1970,12 +1940,6 @@ class _ViewDateRangeEditorComponent16 extends AppView<import2.DateRangeEditorCom
   dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
     if ((identical(token, import25.ButtonDirective) && ((1 <= nodeIndex) && (nodeIndex <= 4)))) {
       return _ButtonDirective_1_5.instance;
-    }
-    if ((identical(token, import62.KeyboardOnlyFocusIndicatorDirective) && ((1 <= nodeIndex) && (nodeIndex <= 4)))) {
-      return _KeyboardOnlyFocusIndicatorDirective_1_6;
-    }
-    if ((identical(token, import64.NextPrevComponent) && (5 == nodeIndex))) {
-      return _NextPrevComponent_5_5;
     }
     return notFoundResult;
   }
@@ -2064,14 +2028,6 @@ class _ViewDateRangeEditorComponent18 extends AppView<import2.DateRangeEditorCom
     final subscription_1 = _MaterialCalendarPickerComponent_0_5.visibleMonth.listen(eventHandler1(ctx.onVisibleMonthChange));
     init([_el_0], [subscription_0, subscription_1]);
     return null;
-  }
-
-  @override
-  dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
-    if ((identical(token, import66.MaterialCalendarPickerComponent) && (0 == nodeIndex))) {
-      return _MaterialCalendarPickerComponent_0_5;
-    }
-    return notFoundResult;
   }
 
   @override
@@ -2185,14 +2141,6 @@ class _ViewDateRangeEditorComponent19 extends AppView<import2.DateRangeEditorCom
   }
 
   @override
-  dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
-    if ((identical(token, import70.MaterialMonthPickerComponent) && (0 == nodeIndex))) {
-      return _MaterialMonthPickerComponent_0_5;
-    }
-    return notFoundResult;
-  }
-
-  @override
   void detectChangesInternal() {
     final import2.DateRangeEditorComponent _ctx = ctx;
     bool changed = false;
@@ -2267,18 +2215,10 @@ class _ViewDateRangeEditorComponentHost0 extends AppView<dynamic> {
   ComponentRef build() {
     _compView_0 = new ViewDateRangeEditorComponent0(this, 0);
     rootEl = _compView_0.rootEl;
-    _DateRangeEditorComponent_0_5 = new import2.DateRangeEditorComponent(new ElementRef(rootEl), this.injectorGet(import19.DomService, viewData.parentIndex), this.injectorGet(import71.ManagedZone, viewData.parentIndex), this.injectorGet(import2.DateRangeEditorHost, viewData.parentIndex, null), this.injectorGet(const import38.OpaqueToken('third_party.dart_src.acx.material_datepicker.datepickerClock'), viewData.parentIndex, null), this.injectorGet(import68.Clock, viewData.parentIndex));
+    _DateRangeEditorComponent_0_5 = new import2.DateRangeEditorComponent(rootEl, this.injectorGet(import19.DomService, viewData.parentIndex), this.injectorGet(import71.ManagedZone, viewData.parentIndex), this.injectorGet(import2.DateRangeEditorHost, viewData.parentIndex, null), this.injectorGet(const import38.OpaqueToken('third_party.dart_src.acx.material_datepicker.datepickerClock'), viewData.parentIndex, null), this.injectorGet(import68.Clock, viewData.parentIndex));
     _compView_0.create(_DateRangeEditorComponent_0_5, projectableNodes);
     init0(rootEl);
     return new ComponentRef<import2.DateRangeEditorComponent>(0, this, rootEl, _DateRangeEditorComponent_0_5);
-  }
-
-  @override
-  dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
-    if ((identical(token, import2.DateRangeEditorComponent) && (0 == nodeIndex))) {
-      return _DateRangeEditorComponent_0_5;
-    }
-    return notFoundResult;
   }
 
   @override

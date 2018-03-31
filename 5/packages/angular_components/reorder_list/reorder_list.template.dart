@@ -28,8 +28,7 @@ import 'package:angular/src/core/linker/view_type.dart' as import5;
 import 'package:angular/src/core/change_detection/change_detection.dart';
 import 'package:angular/src/core/linker/app_view_utils.dart' as import7;
 import 'package:angular/angular.dart';
-import 'package:angular/src/core/linker/element_ref.dart';
-import 'package:angular/src/core/zone/ng_zone.dart' as import10;
+import 'package:angular/src/core/zone/ng_zone.dart' as import9;
 
 const List<dynamic> styles$ReorderListComponent = const [import0.styles];
 
@@ -57,7 +56,7 @@ class ViewReorderListComponent0 extends AppView<import2.ReorderListComponent> {
     _el_0.className = 'placeholder';
     addShimC(_el_0);
     project(_el_0, 1);
-    ctx.placeholder = new ElementRef(_el_0);
+    ctx.placeholder = _el_0;
     init(const [], null);
     return null;
   }
@@ -101,7 +100,7 @@ class _ViewReorderListComponentHost0 extends AppView<dynamic> {
   ComponentRef build() {
     _compView_0 = new ViewReorderListComponent0(this, 0);
     rootEl = _compView_0.rootEl;
-    _ReorderListComponent_0_5 = new import2.ReorderListComponent(this.injectorGet(import10.NgZone, viewData.parentIndex));
+    _ReorderListComponent_0_5 = new import2.ReorderListComponent(this.injectorGet(import9.NgZone, viewData.parentIndex));
     _ReorderListComponent_0_5.items = [];
     _compView_0.create(_ReorderListComponent_0_5, projectableNodes);
     init0(rootEl);

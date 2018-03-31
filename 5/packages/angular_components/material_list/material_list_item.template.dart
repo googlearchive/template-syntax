@@ -37,12 +37,12 @@ class ViewMaterialListItemComponent0 extends AppView<import2.MaterialListItemCom
   var _expr_0;
   bool _expr_1;
   var _expr_2;
-  bool _expr_3;
+  var _expr_3;
   bool _expr_4;
+  bool _expr_5;
   static RenderComponentType _renderType;
   ViewMaterialListItemComponent0(AppView<dynamic> parentView, int parentIndex) : super(import4.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckOnce) {
     rootEl = import6.document.createElement('material-list-item');
-    createAttr(rootEl, 'role', 'button');
     rootEl.className = 'item';
     _renderType ??= import7.appViewUtils.createRenderType('', ViewEncapsulation.Emulated, styles$MaterialListItemComponent);
     setupComponentType(_renderType);
@@ -62,11 +62,6 @@ class ViewMaterialListItemComponent0 extends AppView<import2.MaterialListItemCom
   }
 
   void detectHostChanges(bool firstCheck) {
-    if (firstCheck) {
-      if (!identical(ctx.role, null)) {
-        setAttr(rootEl, 'role', ctx.role?.toString());
-      }
-    }
     final currVal_0 = ctx.tabIndex;
     if (!identical(_expr_0, currVal_0)) {
       setProp(rootEl, 'tabIndex', currVal_0);
@@ -77,20 +72,25 @@ class ViewMaterialListItemComponent0 extends AppView<import2.MaterialListItemCom
       updateElemClass(rootEl, 'active', currVal_1);
       _expr_1 = currVal_1;
     }
-    final currVal_2 = ctx.disabledStr;
+    final currVal_2 = ctx.role;
     if (!identical(_expr_2, currVal_2)) {
-      setAttr(rootEl, 'aria-disabled', currVal_2?.toString());
+      setAttr(rootEl, 'role', currVal_2?.toString());
       _expr_2 = currVal_2;
     }
-    final currVal_3 = ctx.disabled;
+    final currVal_3 = ctx.disabledStr;
     if (!identical(_expr_3, currVal_3)) {
-      updateElemClass(rootEl, 'is-disabled', currVal_3);
+      setAttr(rootEl, 'aria-disabled', currVal_3?.toString());
       _expr_3 = currVal_3;
     }
     final currVal_4 = ctx.disabled;
     if (!identical(_expr_4, currVal_4)) {
-      updateElemClass(rootEl, 'disabled', currVal_4);
+      updateElemClass(rootEl, 'is-disabled', currVal_4);
       _expr_4 = currVal_4;
+    }
+    final currVal_5 = ctx.disabled;
+    if (!identical(_expr_5, currVal_5)) {
+      updateElemClass(rootEl, 'disabled', currVal_5);
+      _expr_5 = currVal_5;
     }
   }
 }
@@ -113,14 +113,6 @@ class _ViewMaterialListItemComponentHost0 extends AppView<dynamic> {
     _compView_0.create(_MaterialListItemComponent_0_5, projectableNodes);
     init0(rootEl);
     return new ComponentRef<import2.MaterialListItemComponent>(0, this, rootEl, _MaterialListItemComponent_0_5);
-  }
-
-  @override
-  dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
-    if ((identical(token, import2.MaterialListItemComponent) && (0 == nodeIndex))) {
-      return _MaterialListItemComponent_0_5;
-    }
-    return notFoundResult;
   }
 
   @override

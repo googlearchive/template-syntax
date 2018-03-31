@@ -26,11 +26,11 @@ import 'package:angular_components/utils/browser/events/events.dart';
   host: const {
     '(click)': r'handleClick($event)',
     '(keypress)': r'handleKeyPress($event)',
-    'role': 'button',
+    '[attr.role]': 'role',
     '[attr.aria-disabled]': 'disabledStr',
     '[class.is-disabled]': 'disabled',
   },
-  // TODO(google): Change to `Visibility.local` to reduce code size.
+  // Injected by [DisablePendingClickHandlerDirective].
   visibility: Visibility.all,
 )
 class ButtonDirective extends RootFocusable with HasTabIndex {
@@ -42,7 +42,11 @@ class ButtonDirective extends RootFocusable with HasTabIndex {
 
   String _hostTabIndex;
 
-  ButtonDirective(Element element) : super(element);
+  final String role;
+
+  ButtonDirective(Element element, @Attribute('role') String role)
+      : this.role = role ?? 'button',
+        super(element);
 
   /// String value to be passed to aria-disabled.
   String get disabledStr => '$disabled';

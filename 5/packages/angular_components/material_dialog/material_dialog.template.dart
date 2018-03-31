@@ -101,14 +101,6 @@ class ViewMaterialDialogComponent0 extends AppView<import2.MaterialDialogCompone
   }
 
   @override
-  dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
-    if ((identical(token, import5.FocusTrapComponent) && ((0 <= nodeIndex) && (nodeIndex <= 6)))) {
-      return _FocusTrapComponent_0_5;
-    }
-    return notFoundResult;
-  }
-
-  @override
   void detectChangesInternal() {
     final import2.MaterialDialogComponent _ctx = ctx;
     _NgIf_2_9.ngIf = _ctx.shouldShowHeader;
@@ -205,14 +197,6 @@ class _ViewMaterialDialogComponentHost0 extends AppView<dynamic> {
     _compView_0.create(_MaterialDialogComponent_0_5, projectableNodes);
     init0(rootEl);
     return new ComponentRef<import2.MaterialDialogComponent>(0, this, rootEl, _MaterialDialogComponent_0_5);
-  }
-
-  @override
-  dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
-    if ((identical(token, import2.MaterialDialogComponent) && (0 == nodeIndex))) {
-      return _MaterialDialogComponent_0_5;
-    }
-    return notFoundResult;
   }
 
   @override
