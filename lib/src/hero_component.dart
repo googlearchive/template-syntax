@@ -4,10 +4,8 @@ import 'package:angular/angular.dart';
 import 'hero.dart';
 
 @Component(
-  selector: 'hero-detail',
-  styles: const [
-    'button {margin-left: 8px} div {margin: 8px 0} img {height:24px}'
-  ],
+  selector: 'my-hero',
+  styles: ['button {margin-left: 8px} div {margin: 8px 0} img {height:24px}'],
   template: '''
     <div>
       <img src="{{heroImageUrl}}">
@@ -18,7 +16,7 @@ import 'hero.dart';
     </div>
   ''',
 )
-class HeroDetailComponent implements OnInit {
+class HeroComponent implements OnInit {
   @Input()
   Hero hero;
   final _deleteRequest = new StreamController<Hero>();
@@ -45,7 +43,7 @@ class HeroDetailComponent implements OnInit {
 }
 
 @Component(
-  selector: 'big-hero-detail',
+  selector: 'my-big-hero',
   template: '''
     <div class="detail">
       <img src="{{heroImageUrl}}">
@@ -59,15 +57,13 @@ class HeroDetailComponent implements OnInit {
       <button (click)="delete()">Delete</button>
     </div>
   ''',
-  styles: const [
+  styles: [
     '.detail { border: 1px solid black; padding: 4px; max-width: 450px; }',
     'img     { float: left; margin-right: 8px; height: 100px; }'
   ],
-  pipes: const [COMMON_PIPES],
+  pipes: [commonPipes],
 )
-class BigHeroDetailComponent extends HeroDetailComponent {
+class BigHeroComponent extends HeroComponent {
   @override
-  void delete() {
-    _deleteRequest.add(hero);
-  }
+  void delete() => _deleteRequest.add(hero);
 }
