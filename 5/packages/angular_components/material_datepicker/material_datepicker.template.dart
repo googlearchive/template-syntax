@@ -143,7 +143,7 @@ class ViewMaterialDatepickerComponent0 extends AppView<import2.MaterialDatepicke
   bool _expr_7;
   bool _expr_9;
   static RenderComponentType _renderType;
-  ViewMaterialDatepickerComponent0(AppView<dynamic> parentView, int parentIndex) : super(import15.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  ViewMaterialDatepickerComponent0(AppView<dynamic> parentView, int parentIndex) : super(import15.ViewType.component, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     rootEl = import3.document.createElement('material-datepicker');
     _renderType ??= import17.appViewUtils.createRenderType('', ViewEncapsulation.Emulated, styles$MaterialDatepickerComponent);
     setupComponentType(_renderType);
@@ -172,7 +172,7 @@ class ViewMaterialDatepickerComponent0 extends AppView<import2.MaterialDatepicke
     createAttr(_el_0, 'popupSource', '');
     addShimC(_el_0);
     _PopupSourceDirective_0_5 = new import4.PopupSourceDirective(parentView.injectorGet(import19.DomPopupSourceFactory, viewData.parentIndex), _el_0, parentView.injectorGet(import20.ReferenceDirective, viewData.parentIndex, null));
-    var _anchor_1 = ngAnchor.clone(false);
+    final _anchor_1 = createViewContainerAnchor();
     _el_0.append(_anchor_1);
     _appEl_1 = new ViewContainer(1, 0, this, _anchor_1);
     TemplateRef _TemplateRef_1_8 = new TemplateRef(_appEl_1, viewFactory_MaterialDatepickerComponent1);
@@ -195,7 +195,7 @@ class ViewMaterialDatepickerComponent0 extends AppView<import2.MaterialDatepicke
     _el_4 = _compView_4.rootEl;
     addShimC(_el_4);
     _FocusTrapComponent_4_5 = new import12.FocusTrapComponent();
-    var _anchor_5 = ngAnchor.clone(false);
+    final _anchor_5 = createViewContainerAnchor();
     _appEl_5 = new ViewContainer(5, 4, this, _anchor_5);
     TemplateRef _TemplateRef_5_8 = new TemplateRef(_appEl_5, viewFactory_MaterialDatepickerComponent2);
     _DeferredContentDirective_5_9 = new import13.DeferredContentDirective(_appEl_5, _TemplateRef_5_8, _MaterialPopupComponent_3_8);
@@ -351,7 +351,7 @@ class _ViewMaterialDatepickerComponent1 extends AppView<import2.MaterialDatepick
   import3.DivElement _el_0;
   import3.Text _text_1;
   var _expr_0;
-  _ViewMaterialDatepickerComponent1(AppView<dynamic> parentView, int parentIndex) : super(import15.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMaterialDatepickerComponent1(AppView<dynamic> parentView, int parentIndex) : super(import15.ViewType.embedded, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMaterialDatepickerComponent0._renderType;
   }
   @override
@@ -415,7 +415,7 @@ class _ViewMaterialDatepickerComponent2 extends AppView<import2.MaterialDatepick
   var _expr_12;
   var _expr_13;
   var _expr_15;
-  _ViewMaterialDatepickerComponent2(AppView<dynamic> parentView, int parentIndex) : super(import15.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMaterialDatepickerComponent2(AppView<dynamic> parentView, int parentIndex) : super(import15.ViewType.embedded, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMaterialDatepickerComponent0._renderType;
   }
   List<dynamic> get _NgValidators_4_12 {
@@ -434,7 +434,7 @@ class _ViewMaterialDatepickerComponent2 extends AppView<import2.MaterialDatepick
     _el_1 = createDivAndAppend(doc, _el_0);
     _el_1.className = 'inner-label-wrapper';
     addShimC(_el_1);
-    var _anchor_2 = ngAnchor.clone(false);
+    final _anchor_2 = createViewContainerAnchor();
     _el_1.append(_anchor_2);
     _appEl_2 = new ViewContainer(2, 1, this, _anchor_2);
     TemplateRef _TemplateRef_2_8 = new TemplateRef(_appEl_2, viewFactory_MaterialDatepickerComponent3);
@@ -450,14 +450,14 @@ class _ViewMaterialDatepickerComponent2 extends AppView<import2.MaterialDatepick
     createAttr(_el_4, 'type', 'text');
     addShimC(_el_4);
     _DeferredValidator_4_5 = new import35.DeferredValidator();
-    _MaterialInputComponent_4_6 = new import36.MaterialInputComponent('text', null, null, _compView_4.ref, _DeferredValidator_4_5);
+    _MaterialInputComponent_4_6 = new import36.MaterialInputComponent('text', null, null, null, _compView_4.ref, _DeferredValidator_4_5);
     _Focusable_4_7 = _MaterialInputComponent_4_6;
     _AutoFocusDirective_4_8 = new import37.AutoFocusDirective(_el_4, parentView.parentView.injectorGet(import43.DomService, parentView.viewData.parentIndex), _Focusable_4_7, parentView.parentView.injectorGet(import44.ModalComponent, parentView.viewData.parentIndex, null), (parentView as ViewMaterialDatepickerComponent0)._PopupRef_3_10);
     _DateInputDirective_4_9 = new import38.DateInputDirective(parentView.parentView.injectorGet(const import26.OpaqueToken('third_party.dart_src.acx.material_datepicker.datepickerClock'), parentView.viewData.parentIndex, null), parentView.parentView.injectorGet(import45.Clock, parentView.viewData.parentIndex), _MaterialInputComponent_4_6);
     _BaseMaterialInput_4_10 = _MaterialInputComponent_4_6;
     _MaterialInputDefaultValueAccessor_4_11 = new import39.MaterialInputDefaultValueAccessor(_BaseMaterialInput_4_10, null);
     _compView_4.create(_MaterialInputComponent_4_6, [const []]);
-    var _anchor_5 = ngAnchor.clone(false);
+    final _anchor_5 = createViewContainerAnchor();
     _el_0.append(_anchor_5);
     _appEl_5 = new ViewContainer(5, 0, this, _anchor_5);
     TemplateRef _TemplateRef_5_8 = new TemplateRef(_appEl_5, viewFactory_MaterialDatepickerComponent4);
@@ -640,7 +640,7 @@ class _ViewMaterialDatepickerComponent3 extends AppView<import2.MaterialDatepick
   import3.Element _el_0;
   import3.Text _text_1;
   var _expr_0;
-  _ViewMaterialDatepickerComponent3(AppView<dynamic> parentView, int parentIndex) : super(import15.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMaterialDatepickerComponent3(AppView<dynamic> parentView, int parentIndex) : super(import15.ViewType.embedded, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMaterialDatepickerComponent0._renderType;
   }
   @override
@@ -675,7 +675,7 @@ class _ViewMaterialDatepickerComponent4 extends AppView<import2.MaterialDatepick
   ViewContainer _appEl_1;
   import47.NgFor _NgFor_1_9;
   var _expr_0;
-  _ViewMaterialDatepickerComponent4(AppView<dynamic> parentView, int parentIndex) : super(import15.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMaterialDatepickerComponent4(AppView<dynamic> parentView, int parentIndex) : super(import15.ViewType.embedded, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMaterialDatepickerComponent0._renderType;
   }
   @override
@@ -683,8 +683,9 @@ class _ViewMaterialDatepickerComponent4 extends AppView<import2.MaterialDatepick
     var doc = import3.document;
     _el_0 = doc.createElement('div');
     _el_0.className = 'preset-dates-wrapper';
+    createAttr(_el_0, 'role', 'listbox');
     addShimC(_el_0);
-    var _anchor_1 = ngAnchor.clone(false);
+    final _anchor_1 = createViewContainerAnchor();
     _el_0.append(_anchor_1);
     _appEl_1 = new ViewContainer(1, 0, this, _anchor_1);
     TemplateRef _TemplateRef_1_8 = new TemplateRef(_appEl_1, viewFactory_MaterialDatepickerComponent5);
@@ -722,7 +723,7 @@ class _ViewMaterialDatepickerComponent5 extends AppView<import2.MaterialDatepick
   import3.Text _text_1;
   var _expr_0;
   var _expr_2;
-  _ViewMaterialDatepickerComponent5(AppView<dynamic> parentView, int parentIndex) : super(import15.ViewType.EMBEDDED, {'\$implicit': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMaterialDatepickerComponent5(AppView<dynamic> parentView, int parentIndex) : super(import15.ViewType.embedded, {'\$implicit': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMaterialDatepickerComponent0._renderType;
   }
   @override
@@ -792,7 +793,7 @@ const List<dynamic> styles$MaterialDatepickerComponentHost = const [];
 class _ViewMaterialDatepickerComponentHost0 extends AppView<dynamic> {
   ViewMaterialDatepickerComponent0 _compView_0;
   import2.MaterialDatepickerComponent _MaterialDatepickerComponent_0_5;
-  _ViewMaterialDatepickerComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import15.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
+  _ViewMaterialDatepickerComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import15.ViewType.host, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewMaterialDatepickerComponent0(this, 0);
@@ -801,14 +802,6 @@ class _ViewMaterialDatepickerComponentHost0 extends AppView<dynamic> {
     _compView_0.create(_MaterialDatepickerComponent_0_5, projectableNodes);
     init0(rootEl);
     return new ComponentRef<import2.MaterialDatepickerComponent>(0, this, rootEl, _MaterialDatepickerComponent_0_5);
-  }
-
-  @override
-  dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
-    if ((identical(token, import2.MaterialDatepickerComponent) && (0 == nodeIndex))) {
-      return _MaterialDatepickerComponent_0_5;
-    }
-    return notFoundResult;
   }
 
   @override

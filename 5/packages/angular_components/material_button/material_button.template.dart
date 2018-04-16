@@ -48,7 +48,7 @@ class ViewMaterialButtonComponent0 extends AppView<import2.MaterialButtonCompone
   bool _expr_6;
   var _expr_7;
   static RenderComponentType _renderType;
-  ViewMaterialButtonComponent0(AppView<dynamic> parentView, int parentIndex) : super(import7.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckOnce) {
+  ViewMaterialButtonComponent0(AppView<dynamic> parentView, int parentIndex) : super(import7.ViewType.component, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckOnce) {
     rootEl = import3.document.createElement('material-button');
     createAttr(rootEl, 'animated', 'true');
     _renderType ??= import9.appViewUtils.createRenderType('', ViewEncapsulation.Emulated, styles$MaterialButtonComponent);
@@ -152,7 +152,7 @@ class _ViewMaterialButtonComponentHost0 extends AppView<dynamic> {
   ViewMaterialButtonComponent0 _compView_0;
   import11.AcxDarkTheme _AcxDarkTheme_0_5;
   import2.MaterialButtonComponent _MaterialButtonComponent_0_6;
-  _ViewMaterialButtonComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import7.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
+  _ViewMaterialButtonComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import7.ViewType.host, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewMaterialButtonComponent0(this, 0);

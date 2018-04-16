@@ -34,7 +34,7 @@ class ViewFocusTrapComponent0 extends AppView<import2.FocusTrapComponent> {
   import2.FocusContentWrapper _FocusContentWrapper_1_5;
   import3.DivElement _el_2;
   static RenderComponentType _renderType;
-  ViewFocusTrapComponent0(AppView<dynamic> parentView, int parentIndex) : super(import5.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckOnce) {
+  ViewFocusTrapComponent0(AppView<dynamic> parentView, int parentIndex) : super(import5.ViewType.component, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckOnce) {
     rootEl = import3.document.createElement('focus-trap');
     _renderType ??= import7.appViewUtils.createRenderType('', ViewEncapsulation.Emulated, styles$FocusTrapComponent);
     setupComponentType(_renderType);
@@ -75,7 +75,7 @@ class _ViewFocusTrapComponentHost0 extends AppView<dynamic> {
   ViewFocusTrapComponent0 _compView_0;
   import2.FocusTrapComponent _FocusTrapComponent_0_5;
   bool _query_AutoFocusDirective_0_0_isDirty = true;
-  _ViewFocusTrapComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import5.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
+  _ViewFocusTrapComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import5.ViewType.host, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewFocusTrapComponent0(this, 0);

@@ -43,9 +43,13 @@
              [class.right-align]="rightAlign"
              [type]="type"
              [multiple]="multiple"
-             attr.aria-invalid="{{invalid}}"
-             [attr.aria-label]="ariaLabel"
-             [disabled]="disabled"
+             [readonly]="disabled"
+             [attr.role]="inputRole"
+             [attr.aria-owns]="inputAriaOwns"
+             [attr.aria-activedescendant]="inputAriaActivedescendent"
+             [attr.aria-expanded]="inputAriaExpanded"
+             [attr.aria-autocomplete]="inputAriaAutocomplete"
+             [attr.aria-haspopup]="inputAriaHasPopup"
              [ngModel]="inputText"
              (blur)="inputBlurAction($event, inputEl.validity.valid, inputEl.validationMessage)"
              (change)="inputChange(inputEl.value, inputEl.validity.valid, inputEl.validationMessage);$event.stopPropagation()"
@@ -74,7 +78,7 @@
     <div class="unfocused-underline"
          [class.invisible]="disabled" [class.invalid]="invalid"></div>
     <div class="focused-underline"
-         [class.invisible]="!focused" [class.invalid]="invalid"
+         [class.invisible]="!focused || disabled" [class.invalid]="invalid"
          [class.animated]="underlineAnimated"></div>
   </div>
 </div>

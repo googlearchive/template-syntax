@@ -37,7 +37,7 @@ class ViewHeroComponent0 extends AppView<import1.HeroComponent> {
   var _expr_2;
   var _expr_3;
   static RenderComponentType _renderType;
-  ViewHeroComponent0(AppView<dynamic> parentView, int parentIndex) : super(import4.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  ViewHeroComponent0(AppView<dynamic> parentView, int parentIndex) : super(import4.ViewType.component, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     rootEl = import2.document.createElement('my-hero');
     _renderType ??= import6.appViewUtils.createRenderType('', ViewEncapsulation.Emulated, styles$HeroComponent);
     setupComponentType(_renderType);
@@ -103,7 +103,7 @@ const List<dynamic> styles$HeroComponentHost = const [];
 class _ViewHeroComponentHost0 extends AppView<dynamic> {
   ViewHeroComponent0 _compView_0;
   import1.HeroComponent _HeroComponent_0_5;
-  _ViewHeroComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import4.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
+  _ViewHeroComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import4.ViewType.host, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewHeroComponent0(this, 0);
@@ -166,9 +166,9 @@ class ViewBigHeroComponent0 extends AppView<import1.BigHeroComponent> {
   import8.DatePipe _pipe_date_0;
   String Function(dynamic, String) _pipe_date_0_0;
   import10.CurrencyPipe _pipe_currency_1;
-  String Function(dynamic, String) _pipe_currency_1_0;
+  String Function(num, String) _pipe_currency_1_0;
   static RenderComponentType _renderType;
-  ViewBigHeroComponent0(AppView<dynamic> parentView, int parentIndex) : super(import4.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  ViewBigHeroComponent0(AppView<dynamic> parentView, int parentIndex) : super(import4.ViewType.component, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     rootEl = import2.document.createElement('my-big-hero');
     _renderType ??= import6.appViewUtils.createRenderType('', ViewEncapsulation.Emulated, styles$BigHeroComponent);
     setupComponentType(_renderType);
@@ -293,7 +293,7 @@ const List<dynamic> styles$BigHeroComponentHost = const [];
 class _ViewBigHeroComponentHost0 extends AppView<dynamic> {
   ViewBigHeroComponent0 _compView_0;
   import1.BigHeroComponent _BigHeroComponent_0_5;
-  _ViewBigHeroComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import4.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
+  _ViewBigHeroComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import4.ViewType.host, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewBigHeroComponent0(this, 0);

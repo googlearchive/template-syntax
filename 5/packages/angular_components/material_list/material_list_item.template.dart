@@ -41,7 +41,7 @@ class ViewMaterialListItemComponent0 extends AppView<import2.MaterialListItemCom
   bool _expr_4;
   bool _expr_5;
   static RenderComponentType _renderType;
-  ViewMaterialListItemComponent0(AppView<dynamic> parentView, int parentIndex) : super(import4.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckOnce) {
+  ViewMaterialListItemComponent0(AppView<dynamic> parentView, int parentIndex) : super(import4.ViewType.component, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckOnce) {
     rootEl = import6.document.createElement('material-list-item');
     rootEl.className = 'item';
     _renderType ??= import7.appViewUtils.createRenderType('', ViewEncapsulation.Emulated, styles$MaterialListItemComponent);
@@ -104,7 +104,7 @@ const List<dynamic> styles$MaterialListItemComponentHost = const [];
 class _ViewMaterialListItemComponentHost0 extends AppView<dynamic> {
   ViewMaterialListItemComponent0 _compView_0;
   import2.MaterialListItemComponent _MaterialListItemComponent_0_5;
-  _ViewMaterialListItemComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import4.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
+  _ViewMaterialListItemComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import4.ViewType.host, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewMaterialListItemComponent0(this, 0);

@@ -62,94 +62,84 @@ const List<dynamic> styles$MaterialMenuComponent = const [];
 class ViewMaterialMenuComponent0 extends AppView<import1.MaterialMenuComponent> {
   bool _query_MaterialButtonComponent_1_0_isDirty = true;
   bool _query_MenuPopupComponent_1_1_isDirty = true;
-  import2.Element _el_1;
-  import3.ViewMaterialButtonComponent0 _compView_1;
+  import2.Element _el_0;
+  import3.ViewMaterialButtonComponent0 _compView_0;
+  ViewContainer _appEl_0;
+  import5.AcxDarkTheme _AcxDarkTheme_0_8;
+  import6.MaterialButtonComponent _MaterialButtonComponent_0_9;
+  import7.MaterialTooltipDirective _MaterialTooltipDirective_0_10;
+  import8.PopupSourceDirective _PopupSourceDirective_0_11;
+  dynamic __TooltipController_0_13;
   ViewContainer _appEl_1;
-  import5.AcxDarkTheme _AcxDarkTheme_1_8;
-  import6.MaterialButtonComponent _MaterialButtonComponent_1_9;
-  import7.MaterialTooltipDirective _MaterialTooltipDirective_1_10;
-  import8.PopupSourceDirective _PopupSourceDirective_1_11;
-  dynamic __TooltipController_1_13;
+  NgIf _NgIf_1_9;
+  ViewContainer _appEl_2;
+  NgIf _NgIf_2_9;
   ViewContainer _appEl_3;
   NgIf _NgIf_3_9;
-  ViewContainer _appEl_5;
-  NgIf _NgIf_5_9;
-  ViewContainer _appEl_9;
-  NgIf _NgIf_9_9;
   var _expr_0;
   var _expr_1;
   bool _expr_2;
   String _expr_3;
   bool _expr_4;
   static RenderComponentType _renderType;
-  ViewMaterialMenuComponent0(AppView<dynamic> parentView, int parentIndex) : super(import11.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckOnce) {
+  ViewMaterialMenuComponent0(AppView<dynamic> parentView, int parentIndex) : super(import11.ViewType.component, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckOnce) {
     rootEl = import2.document.createElement('material-menu');
     _renderType ??= import13.appViewUtils.createRenderType('', ViewEncapsulation.None, styles$MaterialMenuComponent);
     setupComponentType(_renderType);
   }
-  dynamic get _TooltipController_1_13 {
-    if ((this.__TooltipController_1_13 == null)) {
-      (__TooltipController_1_13 = import15.createTooltipController(this.parentView.injectorGet(import16.TooltipController, this.viewData.parentIndex, null), this.parentView.injectorGet(import17.Disposer, this.viewData.parentIndex, null)));
+  dynamic get _TooltipController_0_13 {
+    if ((this.__TooltipController_0_13 == null)) {
+      (__TooltipController_0_13 = import15.createTooltipController(this.parentView.injectorGet(import16.TooltipController, this.viewData.parentIndex, null), this.parentView.injectorGet(import17.Disposer, this.viewData.parentIndex, null)));
     }
-    return this.__TooltipController_1_13;
+    return this.__TooltipController_0_13;
   }
 
   @override
   ComponentRef<import1.MaterialMenuComponent> build() {
     final _rootEl = rootEl;
     final import2.HtmlElement parentRenderNode = initViewRoot(_rootEl);
-    import2.Text _text_0 = new import2.Text('\n');
-    parentRenderNode.append(_text_0);
-    _compView_1 = new import3.ViewMaterialButtonComponent0(this, 1);
-    _el_1 = _compView_1.rootEl;
-    parentRenderNode.append(_el_1);
-    _el_1.className = 'trigger-button';
-    createAttr(_el_1, 'popupSource', '');
-    _appEl_1 = new ViewContainer(1, null, this, _el_1);
-    _AcxDarkTheme_1_8 = new import5.AcxDarkTheme(parentView.injectorGet(const import18.OpaqueToken('acxDarkTheme'), viewData.parentIndex, null));
-    _MaterialButtonComponent_1_9 = new import6.MaterialButtonComponent(_el_1, _AcxDarkTheme_1_8, _compView_1.ref, null);
-    _MaterialTooltipDirective_1_10 = new import7.MaterialTooltipDirective(parentView.injectorGet(import19.DomPopupSourceFactory, viewData.parentIndex), _appEl_1, _el_1, _appEl_1, _compView_1.ref, parentView.injectorGet(import2.Window, viewData.parentIndex));
-    _PopupSourceDirective_1_11 = new import8.PopupSourceDirective(parentView.injectorGet(import19.DomPopupSourceFactory, viewData.parentIndex), _el_1, parentView.injectorGet(import20.ReferenceDirective, viewData.parentIndex, null));
-    import2.Text _text_2 = new import2.Text('\n  ');
-    var _anchor_3 = ngAnchor.clone(false);
-    _appEl_3 = new ViewContainer(3, 1, this, _anchor_3);
-    TemplateRef _TemplateRef_3_8 = new TemplateRef(_appEl_3, viewFactory_MaterialMenuComponent1);
-    _NgIf_3_9 = new NgIf(_appEl_3, _TemplateRef_3_8);
-    import2.Text _text_4 = new import2.Text('\n  ');
-    var _anchor_5 = ngAnchor.clone(false);
-    _appEl_5 = new ViewContainer(5, 1, this, _anchor_5);
-    TemplateRef _TemplateRef_5_8 = new TemplateRef(_appEl_5, viewFactory_MaterialMenuComponent2);
-    _NgIf_5_9 = new NgIf(_appEl_5, _TemplateRef_5_8);
-    import2.Text _text_6 = new import2.Text('\n  ');
-    import2.Text _text_7 = new import2.Text('\n');
-    _compView_1.create(_MaterialButtonComponent_1_9, [
-      <dynamic>[_text_2, _appEl_3, _text_4, _appEl_5, _text_6]..addAll(projectableNodes[0])..addAll([_text_7])
+    _compView_0 = new import3.ViewMaterialButtonComponent0(this, 0);
+    _el_0 = _compView_0.rootEl;
+    parentRenderNode.append(_el_0);
+    _el_0.className = 'trigger-button';
+    createAttr(_el_0, 'popupSource', '');
+    _appEl_0 = new ViewContainer(0, null, this, _el_0);
+    _AcxDarkTheme_0_8 = new import5.AcxDarkTheme(parentView.injectorGet(const import18.OpaqueToken('acxDarkTheme'), viewData.parentIndex, null));
+    _MaterialButtonComponent_0_9 = new import6.MaterialButtonComponent(_el_0, _AcxDarkTheme_0_8, _compView_0.ref, null);
+    _MaterialTooltipDirective_0_10 = new import7.MaterialTooltipDirective(parentView.injectorGet(import19.DomPopupSourceFactory, viewData.parentIndex), _appEl_0, _el_0, _appEl_0, _compView_0.ref, parentView.injectorGet(import2.Window, viewData.parentIndex));
+    _PopupSourceDirective_0_11 = new import8.PopupSourceDirective(parentView.injectorGet(import19.DomPopupSourceFactory, viewData.parentIndex), _el_0, parentView.injectorGet(import20.ReferenceDirective, viewData.parentIndex, null));
+    final _anchor_1 = createViewContainerAnchor();
+    _appEl_1 = new ViewContainer(1, 0, this, _anchor_1);
+    TemplateRef _TemplateRef_1_8 = new TemplateRef(_appEl_1, viewFactory_MaterialMenuComponent1);
+    _NgIf_1_9 = new NgIf(_appEl_1, _TemplateRef_1_8);
+    final _anchor_2 = createViewContainerAnchor();
+    _appEl_2 = new ViewContainer(2, 0, this, _anchor_2);
+    TemplateRef _TemplateRef_2_8 = new TemplateRef(_appEl_2, viewFactory_MaterialMenuComponent2);
+    _NgIf_2_9 = new NgIf(_appEl_2, _TemplateRef_2_8);
+    _compView_0.create(_MaterialButtonComponent_0_9, [
+      <dynamic>[_appEl_1, _appEl_2]..addAll(projectableNodes[0])
     ]);
-    import2.Text _text_8 = new import2.Text('\n');
-    parentRenderNode.append(_text_8);
-    var _anchor_9 = ngAnchor.clone(false);
-    parentRenderNode.append(_anchor_9);
-    _appEl_9 = new ViewContainer(9, null, this, _anchor_9);
-    TemplateRef _TemplateRef_9_8 = new TemplateRef(_appEl_9, viewFactory_MaterialMenuComponent3);
-    _NgIf_9_9 = new NgIf(_appEl_9, _TemplateRef_9_8);
-    import2.Text _text_10 = new import2.Text('\n');
-    parentRenderNode.append(_text_10);
-    final subscription_0 = _MaterialButtonComponent_1_9.trigger.listen(eventHandler0(ctx.handleButtonClick));
-    ctx.button = _MaterialButtonComponent_1_9;
+    final _anchor_3 = createViewContainerAnchor();
+    parentRenderNode.append(_anchor_3);
+    _appEl_3 = new ViewContainer(3, null, this, _anchor_3);
+    TemplateRef _TemplateRef_3_8 = new TemplateRef(_appEl_3, viewFactory_MaterialMenuComponent3);
+    _NgIf_3_9 = new NgIf(_appEl_3, _TemplateRef_3_8);
+    final subscription_0 = _MaterialButtonComponent_0_9.trigger.listen(eventHandler0(ctx.handleButtonClick));
+    ctx.button = _MaterialButtonComponent_0_9;
     init(const [], [subscription_0]);
     return null;
   }
 
   @override
   dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
-    if ((identical(token, import5.AcxDarkTheme) && ((1 <= nodeIndex) && (nodeIndex <= 7)))) {
-      return _AcxDarkTheme_1_8;
+    if ((identical(token, import5.AcxDarkTheme) && ((0 <= nodeIndex) && (nodeIndex <= 2)))) {
+      return _AcxDarkTheme_0_8;
     }
-    if (((identical(token, import6.MaterialButtonComponent) || identical(token, import22.ButtonDirective)) && ((1 <= nodeIndex) && (nodeIndex <= 7)))) {
-      return _MaterialButtonComponent_1_9;
+    if (((identical(token, import6.MaterialButtonComponent) || identical(token, import22.ButtonDirective)) && ((0 <= nodeIndex) && (nodeIndex <= 2)))) {
+      return _MaterialButtonComponent_0_9;
     }
-    if ((identical(token, import16.TooltipController) && ((1 <= nodeIndex) && (nodeIndex <= 7)))) {
-      return _TooltipController_1_13;
+    if ((identical(token, import16.TooltipController) && ((0 <= nodeIndex) && (nodeIndex <= 2)))) {
+      return _TooltipController_0_13;
     }
     return notFoundResult;
   }
@@ -162,38 +152,38 @@ class ViewMaterialMenuComponent0 extends AppView<import1.MaterialMenuComponent> 
     changed = false;
     final currVal_2 = _ctx.disabled;
     if (!identical(_expr_2, currVal_2)) {
-      _MaterialButtonComponent_1_9.disabled = currVal_2;
+      _MaterialButtonComponent_0_9.disabled = currVal_2;
       changed = true;
       _expr_2 = currVal_2;
     }
     if (changed) {
-      _compView_1.markAsCheckOnce();
+      _compView_0.markAsCheckOnce();
     }
     final currVal_3 = _ctx.tooltipText;
     if (!identical(_expr_3, currVal_3)) {
-      _MaterialTooltipDirective_1_10.text = currVal_3;
+      _MaterialTooltipDirective_0_10.text = currVal_3;
       _expr_3 = currVal_3;
     }
     final currVal_4 = _ctx.hasTooltip;
     if (!identical(_expr_4, currVal_4)) {
-      _MaterialTooltipDirective_1_10.canShow = currVal_4;
+      _MaterialTooltipDirective_0_10.canShow = currVal_4;
       _expr_4 = currVal_4;
     }
     if (firstCheck) {
-      _MaterialTooltipDirective_1_10.ngOnInit();
+      _MaterialTooltipDirective_0_10.ngOnInit();
     }
-    _NgIf_3_9.ngIf = (_ctx.menu.uiIcon != null);
-    _NgIf_5_9.ngIf = (_ctx.buttonText != null);
-    _NgIf_9_9.ngIf = _ctx.hasSubmenu;
+    _NgIf_1_9.ngIf = (_ctx.menu.uiIcon != null);
+    _NgIf_2_9.ngIf = (_ctx.buttonText != null);
+    _NgIf_3_9.ngIf = _ctx.hasSubmenu;
+    _appEl_0.detectChangesInNestedViews();
     _appEl_1.detectChangesInNestedViews();
+    _appEl_2.detectChangesInNestedViews();
     _appEl_3.detectChangesInNestedViews();
-    _appEl_5.detectChangesInNestedViews();
-    _appEl_9.detectChangesInNestedViews();
     if (_query_MenuPopupComponent_1_1_isDirty) {
-      ctx.menuPopup = (_appEl_9.mapNestedViews((_ViewMaterialMenuComponent3 nestedView) {
+      ctx.menuPopup = (_appEl_3.mapNestedViews((_ViewMaterialMenuComponent3 nestedView) {
         return [nestedView._MenuPopupComponent_0_5];
       }).isNotEmpty
-          ? _appEl_9.mapNestedViews((_ViewMaterialMenuComponent3 nestedView) {
+          ? _appEl_3.mapNestedViews((_ViewMaterialMenuComponent3 nestedView) {
               return [nestedView._MenuPopupComponent_0_5];
             }).first
           : null);
@@ -201,33 +191,33 @@ class ViewMaterialMenuComponent0 extends AppView<import1.MaterialMenuComponent> 
     }
     final currVal_0 = _ctx.ariaLabel;
     if (!identical(_expr_0, currVal_0)) {
-      setAttr(_el_1, 'aria-label', currVal_0?.toString());
+      setAttr(_el_0, 'aria-label', currVal_0?.toString());
       _expr_0 = currVal_0;
     }
     final currVal_1 = _ctx.hasIcon;
     if (!identical(_expr_1, currVal_1)) {
-      setAttr(_el_1, 'icon', currVal_1?.toString());
+      setAttr(_el_0, 'icon', currVal_1?.toString());
       _expr_1 = currVal_1;
     }
-    _compView_1.detectHostChanges(firstCheck);
-    _compView_1.detectChanges();
+    _compView_0.detectHostChanges(firstCheck);
+    _compView_0.detectChanges();
     if (firstCheck) {
-      _MaterialTooltipDirective_1_10.ngAfterViewInit();
+      _MaterialTooltipDirective_0_10.ngAfterViewInit();
     }
     if (firstCheck) {
-      _PopupSourceDirective_1_11.ngAfterViewInit();
+      _PopupSourceDirective_0_11.ngAfterViewInit();
     }
   }
 
   @override
   void destroyInternal() {
+    _appEl_0?.destroyNestedViews();
     _appEl_1?.destroyNestedViews();
+    _appEl_2?.destroyNestedViews();
     _appEl_3?.destroyNestedViews();
-    _appEl_5?.destroyNestedViews();
-    _appEl_9?.destroyNestedViews();
-    _compView_1?.destroy();
-    _MaterialTooltipDirective_1_10.ngOnDestroy();
-    _PopupSourceDirective_1_11.ngOnDestroy();
+    _compView_0?.destroy();
+    _MaterialTooltipDirective_0_10.ngOnDestroy();
+    _PopupSourceDirective_0_11.ngOnDestroy();
   }
 }
 
@@ -240,7 +230,7 @@ class _ViewMaterialMenuComponent1 extends AppView<import1.MaterialMenuComponent>
   import23.ViewMaterialIconComponent0 _compView_0;
   import24.MaterialIconComponent _MaterialIconComponent_0_5;
   var _expr_0;
-  _ViewMaterialMenuComponent1(AppView<dynamic> parentView, int parentIndex) : super(import11.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMaterialMenuComponent1(AppView<dynamic> parentView, int parentIndex) : super(import11.ViewType.embedded, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMaterialMenuComponent0._renderType;
   }
   @override
@@ -248,7 +238,6 @@ class _ViewMaterialMenuComponent1 extends AppView<import1.MaterialMenuComponent>
     _compView_0 = new import23.ViewMaterialIconComponent0(this, 0);
     _el_0 = _compView_0.rootEl;
     _MaterialIconComponent_0_5 = new import24.MaterialIconComponent(_el_0);
-    import2.Text _text_1 = new import2.Text('\n  ');
     _compView_0.create(_MaterialIconComponent_0_5, []);
     init0(_el_0);
     return null;
@@ -285,7 +274,7 @@ class _ViewMaterialMenuComponent2 extends AppView<import1.MaterialMenuComponent>
   import2.Element _el_0;
   import2.Text _text_1;
   var _expr_0;
-  _ViewMaterialMenuComponent2(AppView<dynamic> parentView, int parentIndex) : super(import11.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMaterialMenuComponent2(AppView<dynamic> parentView, int parentIndex) : super(import11.ViewType.embedded, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMaterialMenuComponent0._renderType;
   }
   @override
@@ -323,7 +312,8 @@ class _ViewMaterialMenuComponent3 extends AppView<import1.MaterialMenuComponent>
   var _expr_2;
   var _expr_3;
   var _expr_4;
-  _ViewMaterialMenuComponent3(AppView<dynamic> parentView, int parentIndex) : super(import11.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  String _expr_5;
+  _ViewMaterialMenuComponent3(AppView<dynamic> parentView, int parentIndex) : super(import11.ViewType.embedded, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMaterialMenuComponent0._renderType;
   }
   @override
@@ -332,11 +322,7 @@ class _ViewMaterialMenuComponent3 extends AppView<import1.MaterialMenuComponent>
     _el_0 = _compView_0.rootEl;
     _MenuPopupComponent_0_5 = new import26.MenuPopupComponent();
     _PopupSourceDirective_0_6 = new import8.PopupSourceDirective(parentView.injectorGet(import19.DomPopupSourceFactory, viewData.parentIndex), _el_0, parentView.injectorGet(import20.ReferenceDirective, viewData.parentIndex, null));
-    import2.Text _text_1 = new import2.Text('\n  ');
-    import2.Text _text_2 = new import2.Text('\n');
-    _compView_0.create(_MenuPopupComponent_0_5, [
-      <dynamic>[_text_1]..addAll(projectableNodes[1])..addAll([_text_2])
-    ]);
+    _compView_0.create(_MenuPopupComponent_0_5, [projectableNodes[1]]);
     final subscription_0 = _MenuPopupComponent_0_5.isExpandedChange.listen(eventHandler1(_handle_isExpandedChange_0_0));
     init([_el_0], [subscription_0]);
     return null;
@@ -347,7 +333,7 @@ class _ViewMaterialMenuComponent3 extends AppView<import1.MaterialMenuComponent>
     final import1.MaterialMenuComponent _ctx = ctx;
     bool changed = false;
     bool firstCheck = (this.cdState == 0);
-    final local_toggle = (parentView as ViewMaterialMenuComponent0)._PopupSourceDirective_1_11;
+    final local_toggle = (parentView as ViewMaterialMenuComponent0)._PopupSourceDirective_0_11;
     changed = false;
     final currVal_0 = _ctx.menu;
     if (!identical(_expr_0, currVal_0)) {
@@ -378,6 +364,12 @@ class _ViewMaterialMenuComponent3 extends AppView<import1.MaterialMenuComponent>
       _MenuPopupComponent_0_5.popupSource = currVal_4;
       changed = true;
       _expr_4 = currVal_4;
+    }
+    final currVal_5 = _ctx.popupClass;
+    if (!identical(_expr_5, currVal_5)) {
+      _MenuPopupComponent_0_5.popupClass = currVal_5;
+      changed = true;
+      _expr_5 = currVal_5;
     }
     if (changed) {
       _compView_0.markAsCheckOnce();
@@ -413,7 +405,7 @@ const List<dynamic> styles$MaterialMenuComponentHost = const [];
 class _ViewMaterialMenuComponentHost0 extends AppView<dynamic> {
   ViewMaterialMenuComponent0 _compView_0;
   import1.MaterialMenuComponent _MaterialMenuComponent_0_5;
-  _ViewMaterialMenuComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import11.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
+  _ViewMaterialMenuComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import11.ViewType.host, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewMaterialMenuComponent0(this, 0);

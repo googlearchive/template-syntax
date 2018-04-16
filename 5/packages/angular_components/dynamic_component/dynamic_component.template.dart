@@ -30,7 +30,7 @@ class ViewDynamicComponent0 extends AppView<import1.DynamicComponent> {
   ViewContainer _appEl_0;
   TemplateRef _TemplateRef_0_8;
   static RenderComponentType _renderType;
-  ViewDynamicComponent0(AppView<dynamic> parentView, int parentIndex) : super(import5.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  ViewDynamicComponent0(AppView<dynamic> parentView, int parentIndex) : super(import5.ViewType.component, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     rootEl = import7.document.createElement('dynamic-component');
     _renderType ??= import8.appViewUtils.createRenderType('', ViewEncapsulation.None, styles$DynamicComponent);
     setupComponentType(_renderType);
@@ -39,7 +39,7 @@ class ViewDynamicComponent0 extends AppView<import1.DynamicComponent> {
   ComponentRef<import1.DynamicComponent> build() {
     final _rootEl = rootEl;
     final import7.HtmlElement parentRenderNode = initViewRoot(_rootEl);
-    var _anchor_0 = ngAnchor.clone(false);
+    final _anchor_0 = createViewContainerAnchor();
     parentRenderNode.append(_anchor_0);
     _appEl_0 = new ViewContainer(0, null, this, _anchor_0);
     _TemplateRef_0_8 = new TemplateRef(_appEl_0, viewFactory_DynamicComponent1);
@@ -64,7 +64,7 @@ AppView<import1.DynamicComponent> viewFactory_DynamicComponent0(AppView<dynamic>
 }
 
 class _ViewDynamicComponent1 extends AppView<import1.DynamicComponent> {
-  _ViewDynamicComponent1(AppView<dynamic> parentView, int parentIndex) : super(import5.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewDynamicComponent1(AppView<dynamic> parentView, int parentIndex) : super(import5.ViewType.embedded, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewDynamicComponent0._renderType;
   }
   @override
@@ -84,7 +84,7 @@ class _ViewDynamicComponentHost0 extends AppView<dynamic> {
   ViewDynamicComponent0 _compView_0;
   ViewContainer _appEl_0;
   import1.DynamicComponent _DynamicComponent_0_8;
-  _ViewDynamicComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import5.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
+  _ViewDynamicComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import5.ViewType.host, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewDynamicComponent0(this, 0);

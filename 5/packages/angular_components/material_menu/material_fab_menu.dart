@@ -3,7 +3,6 @@
 // BSD-style license that can be found in the LICENSE file.
 
 import 'dart:async';
-import 'dart:html';
 
 import 'package:angular/angular.dart';
 import 'package:angular_components/content/deferred_content.dart';
@@ -114,8 +113,7 @@ class MaterialFabMenuComponent extends Object
 
   bool get menuVisible => _menuVisible;
 
-  @ViewChild('content')
-  HtmlElement contentElementRef;
+  bool get hasIcons => _viewModel.hasIcons;
 
   @override
   void ngOnDestroy() {
@@ -125,14 +123,7 @@ class MaterialFabMenuComponent extends Object
   }
 
   void onPopupOpened() {
-    if (_menuVisible || contentElementRef == null) return;
-    // Set the content wrapper large enough so as not to cut off any menu
-    // contents. Menu contents are measured via scrolling dimensions.
-    var e = contentElementRef;
-    var scrollWidth = e.scrollWidth;
-    var scrollHeight = e.scrollHeight;
-    e.style.width = '${scrollWidth}px';
-    e.style.height = '${scrollHeight}px';
+    if (_menuVisible) return;
     _menuVisible = true;
     _onShow.add(null);
   }
@@ -156,10 +147,6 @@ class MaterialFabMenuComponent extends Object
   void _hideMenuContent() {
     if (!_menuVisible) return;
     _menuVisible = false;
-    if (contentElementRef == null) return;
-    var e = contentElementRef;
-    e.style.removeProperty('width');
-    e.style.removeProperty('height');
   }
 
   final tooltipPositions = const <RelativePosition>[
@@ -187,6 +174,12 @@ class MaterialFabMenuModel {
 
   /// True if the [menuItem] exists and has at least one item.
   bool get hasMenu => menuItem.subMenu?.itemGroups?.isNotEmpty ?? false;
+
+  /// True if the FAB has a menu and at least one menu item has an icon.
+  bool get hasIcons =>
+      hasMenu &&
+      menuItem.subMenu.itemGroups
+          .any((itemGroup) => itemGroup.any((item) => item.hasIcon));
 
   /// True if the FAB menu should be shown.
   bool get showPopup => _showPopup.value;

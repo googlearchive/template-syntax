@@ -77,7 +77,7 @@ class ViewMaterialExpansionPanel0 extends AppView<import2.MaterialExpansionPanel
   bool _expr_5;
   bool _expr_6;
   static RenderComponentType _renderType;
-  ViewMaterialExpansionPanel0(AppView<dynamic> parentView, int parentIndex) : super(import8.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckOnce) {
+  ViewMaterialExpansionPanel0(AppView<dynamic> parentView, int parentIndex) : super(import8.ViewType.component, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckOnce) {
     rootEl = import3.document.createElement('material-expansionpanel');
     _renderType ??= import10.appViewUtils.createRenderType('', ViewEncapsulation.Emulated, styles$MaterialExpansionPanel);
     setupComponentType(_renderType);
@@ -93,7 +93,7 @@ class ViewMaterialExpansionPanel0 extends AppView<import2.MaterialExpansionPanel
     createAttr(_el_0, 'role', 'group');
     addShimC(_el_0);
     _KeyUpBoundaryDirective_0_5 = new import4.KeyUpBoundaryDirective(_el_0);
-    var _anchor_1 = ngAnchor.clone(false);
+    final _anchor_1 = createViewContainerAnchor();
     _el_0.append(_anchor_1);
     _appEl_1 = new ViewContainer(1, 0, this, _anchor_1);
     TemplateRef _TemplateRef_1_8 = new TemplateRef(_appEl_1, viewFactory_MaterialExpansionPanel1);
@@ -109,17 +109,17 @@ class ViewMaterialExpansionPanel0 extends AppView<import2.MaterialExpansionPanel
     _el_5.className = 'content';
     addShimC(_el_5);
     project(_el_5, 3);
-    var _anchor_6 = ngAnchor.clone(false);
+    final _anchor_6 = createViewContainerAnchor();
     _el_4.append(_anchor_6);
     _appEl_6 = new ViewContainer(6, 4, this, _anchor_6);
     TemplateRef _TemplateRef_6_8 = new TemplateRef(_appEl_6, viewFactory_MaterialExpansionPanel5);
     _NgIf_6_9 = new NgIf(_appEl_6, _TemplateRef_6_8);
-    var _anchor_7 = ngAnchor.clone(false);
+    final _anchor_7 = createViewContainerAnchor();
     _el_3.append(_anchor_7);
     _appEl_7 = new ViewContainer(7, 3, this, _anchor_7);
     TemplateRef _TemplateRef_7_8 = new TemplateRef(_appEl_7, viewFactory_MaterialExpansionPanel6);
     _NgIf_7_9 = new NgIf(_appEl_7, _TemplateRef_7_8);
-    var _anchor_8 = ngAnchor.clone(false);
+    final _anchor_8 = createViewContainerAnchor();
     _el_3.append(_anchor_8);
     _appEl_8 = new ViewContainer(8, 3, this, _anchor_8);
     TemplateRef _TemplateRef_8_8 = new TemplateRef(_appEl_8, viewFactory_MaterialExpansionPanel7);
@@ -234,7 +234,7 @@ class _ViewMaterialExpansionPanel1 extends AppView<import2.MaterialExpansionPane
   var _expr_2;
   bool _expr_3;
   var _expr_4;
-  _ViewMaterialExpansionPanel1(AppView<dynamic> parentView, int parentIndex) : super(import8.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMaterialExpansionPanel1(AppView<dynamic> parentView, int parentIndex) : super(import8.ViewType.embedded, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMaterialExpansionPanel0._renderType;
   }
   @override
@@ -255,7 +255,7 @@ class _ViewMaterialExpansionPanel1 extends AppView<import2.MaterialExpansionPane
     addShimE(_el_3);
     _text_4 = new import3.Text('');
     _el_3.append(_text_4);
-    var _anchor_5 = ngAnchor.clone(false);
+    final _anchor_5 = createViewContainerAnchor();
     _el_2.append(_anchor_5);
     _appEl_5 = new ViewContainer(5, 2, this, _anchor_5);
     TemplateRef _TemplateRef_5_8 = new TemplateRef(_appEl_5, viewFactory_MaterialExpansionPanel2);
@@ -265,12 +265,12 @@ class _ViewMaterialExpansionPanel1 extends AppView<import2.MaterialExpansionPane
     _el_6.className = 'panel-description';
     addShimC(_el_6);
     project(_el_6, 1);
-    var _anchor_7 = ngAnchor.clone(false);
+    final _anchor_7 = createViewContainerAnchor();
     _el_1.append(_anchor_7);
     _appEl_7 = new ViewContainer(7, 1, this, _anchor_7);
     TemplateRef _TemplateRef_7_8 = new TemplateRef(_appEl_7, viewFactory_MaterialExpansionPanel3);
     _NgIf_7_9 = new NgIf(_appEl_7, _TemplateRef_7_8);
-    var _anchor_8 = ngAnchor.clone(false);
+    final _anchor_8 = createViewContainerAnchor();
     _el_0.append(_anchor_8);
     _appEl_8 = new ViewContainer(8, 0, this, _anchor_8);
     TemplateRef _TemplateRef_8_8 = new TemplateRef(_appEl_8, viewFactory_MaterialExpansionPanel4);
@@ -348,7 +348,7 @@ class _ViewMaterialExpansionPanel2 extends AppView<import2.MaterialExpansionPane
   import3.Element _el_0;
   import3.Text _text_1;
   var _expr_0;
-  _ViewMaterialExpansionPanel2(AppView<dynamic> parentView, int parentIndex) : super(import8.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMaterialExpansionPanel2(AppView<dynamic> parentView, int parentIndex) : super(import8.ViewType.embedded, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMaterialExpansionPanel0._renderType;
   }
   @override
@@ -385,7 +385,7 @@ class _ViewMaterialExpansionPanel3 extends AppView<import2.MaterialExpansionPane
   import16.MaterialIconComponent _MaterialIconComponent_0_6;
   bool _expr_0;
   var _expr_1;
-  _ViewMaterialExpansionPanel3(AppView<dynamic> parentView, int parentIndex) : super(import8.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMaterialExpansionPanel3(AppView<dynamic> parentView, int parentIndex) : super(import8.ViewType.embedded, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMaterialExpansionPanel0._renderType;
   }
   @override
@@ -448,7 +448,7 @@ AppView<import2.MaterialExpansionPanel> viewFactory_MaterialExpansionPanel3(AppV
 
 class _ViewMaterialExpansionPanel4 extends AppView<import2.MaterialExpansionPanel> {
   import3.DivElement _el_0;
-  _ViewMaterialExpansionPanel4(AppView<dynamic> parentView, int parentIndex) : super(import8.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMaterialExpansionPanel4(AppView<dynamic> parentView, int parentIndex) : super(import8.ViewType.embedded, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMaterialExpansionPanel0._renderType;
   }
   @override
@@ -474,7 +474,7 @@ class _ViewMaterialExpansionPanel5 extends AppView<import2.MaterialExpansionPane
   import16.MaterialIconComponent _MaterialIconComponent_0_6;
   var _expr_0;
   var _expr_1;
-  _ViewMaterialExpansionPanel5(AppView<dynamic> parentView, int parentIndex) : super(import8.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMaterialExpansionPanel5(AppView<dynamic> parentView, int parentIndex) : super(import8.ViewType.embedded, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMaterialExpansionPanel0._renderType;
   }
   @override
@@ -542,7 +542,7 @@ AppView<import2.MaterialExpansionPanel> viewFactory_MaterialExpansionPanel5(AppV
 
 class _ViewMaterialExpansionPanel6 extends AppView<import2.MaterialExpansionPanel> {
   import3.DivElement _el_0;
-  _ViewMaterialExpansionPanel6(AppView<dynamic> parentView, int parentIndex) : super(import8.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMaterialExpansionPanel6(AppView<dynamic> parentView, int parentIndex) : super(import8.ViewType.embedded, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMaterialExpansionPanel0._renderType;
   }
   @override
@@ -572,7 +572,7 @@ class _ViewMaterialExpansionPanel7 extends AppView<import2.MaterialExpansionPane
   bool _expr_3;
   bool _expr_4;
   bool _expr_5;
-  _ViewMaterialExpansionPanel7(AppView<dynamic> parentView, int parentIndex) : super(import8.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMaterialExpansionPanel7(AppView<dynamic> parentView, int parentIndex) : super(import8.ViewType.embedded, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMaterialExpansionPanel0._renderType;
   }
   @override
@@ -665,7 +665,7 @@ class _ViewMaterialExpansionPanelHost0 extends AppView<dynamic> {
   ViewMaterialExpansionPanel0 _compView_0;
   import2.MaterialExpansionPanel _MaterialExpansionPanel_0_5;
   bool _query_AutoFocusDirective_0_0_isDirty = true;
-  _ViewMaterialExpansionPanelHost0(AppView<dynamic> parentView, int parentIndex) : super(import8.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
+  _ViewMaterialExpansionPanelHost0(AppView<dynamic> parentView, int parentIndex) : super(import8.ViewType.host, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewMaterialExpansionPanel0(this, 0);

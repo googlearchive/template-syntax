@@ -65,7 +65,7 @@ class ViewComparisonRangeEditorComponent0 extends AppView<import2.ComparisonRang
   bool _expr_2;
   String _expr_3;
   static RenderComponentType _renderType;
-  ViewComparisonRangeEditorComponent0(AppView<dynamic> parentView, int parentIndex) : super(import9.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  ViewComparisonRangeEditorComponent0(AppView<dynamic> parentView, int parentIndex) : super(import9.ViewType.component, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     rootEl = import3.document.createElement('comparison-range-editor');
     _renderType ??= import11.appViewUtils.createRenderType('', ViewEncapsulation.Emulated, styles$ComparisonRangeEditorComponent);
     setupComponentType(_renderType);
@@ -90,7 +90,7 @@ class ViewComparisonRangeEditorComponent0 extends AppView<import2.ComparisonRang
     addShimC(_el_3);
     _MaterialToggleComponent_3_5 = new import5.MaterialToggleComponent();
     _compView_3.create(_MaterialToggleComponent_3_5, [const []]);
-    var _anchor_4 = ngAnchor.clone(false);
+    final _anchor_4 = createViewContainerAnchor();
     parentRenderNode.append(_anchor_4);
     _appEl_4 = new ViewContainer(4, null, this, _anchor_4);
     TemplateRef _TemplateRef_4_8 = new TemplateRef(_appEl_4, viewFactory_ComparisonRangeEditorComponent1);
@@ -160,7 +160,7 @@ class _ViewComparisonRangeEditorComponent1 extends AppView<import2.ComparisonRan
   ViewContainer _appEl_1;
   import14.NgFor _NgFor_1_9;
   var _expr_0;
-  _ViewComparisonRangeEditorComponent1(AppView<dynamic> parentView, int parentIndex) : super(import9.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewComparisonRangeEditorComponent1(AppView<dynamic> parentView, int parentIndex) : super(import9.ViewType.embedded, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewComparisonRangeEditorComponent0._renderType;
   }
   @override
@@ -168,7 +168,7 @@ class _ViewComparisonRangeEditorComponent1 extends AppView<import2.ComparisonRan
     var doc = import3.document;
     _el_0 = doc.createElement('div');
     addShimC(_el_0);
-    var _anchor_1 = ngAnchor.clone(false);
+    final _anchor_1 = createViewContainerAnchor();
     _el_0.append(_anchor_1);
     _appEl_1 = new ViewContainer(1, 0, this, _anchor_1);
     TemplateRef _TemplateRef_1_8 = new TemplateRef(_appEl_1, viewFactory_ComparisonRangeEditorComponent2);
@@ -206,7 +206,7 @@ class _ViewComparisonRangeEditorComponent2 extends AppView<import2.ComparisonRan
   import3.Text _text_1;
   var _expr_0;
   var _expr_2;
-  _ViewComparisonRangeEditorComponent2(AppView<dynamic> parentView, int parentIndex) : super(import9.ViewType.EMBEDDED, {'\$implicit': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewComparisonRangeEditorComponent2(AppView<dynamic> parentView, int parentIndex) : super(import9.ViewType.embedded, {'\$implicit': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewComparisonRangeEditorComponent0._renderType;
   }
   @override
@@ -276,7 +276,7 @@ const List<dynamic> styles$ComparisonRangeEditorComponentHost = const [];
 class _ViewComparisonRangeEditorComponentHost0 extends AppView<dynamic> {
   ViewComparisonRangeEditorComponent0 _compView_0;
   import2.ComparisonRangeEditorComponent _ComparisonRangeEditorComponent_0_5;
-  _ViewComparisonRangeEditorComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import9.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
+  _ViewComparisonRangeEditorComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import9.ViewType.host, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewComparisonRangeEditorComponent0(this, 0);

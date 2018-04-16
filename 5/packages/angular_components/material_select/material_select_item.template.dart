@@ -8,7 +8,6 @@ export 'material_select_item.dart';
 import 'dart:async';
 import 'dart:html';
 import 'package:angular/angular.dart';
-import 'package:intl/intl.dart';
 import 'package:angular_components/button_decorator/button_decorator.dart';
 import 'package:angular_components/dynamic_component/dynamic_component.dart';
 import 'package:angular_components/glyph/glyph.dart';
@@ -40,12 +39,12 @@ import 'package:angular_components/utils/disposer/disposer.template.dart' as _re
 import 'package:angular_components/material_select/material_select_item.scss.css.shim.dart' as import0;
 import 'package:angular/src/core/linker/app_view.dart';
 import 'material_select_item.dart' as import2;
+import 'dart:html' as import3;
 import 'package:angular/src/core/linker/view_container.dart';
 import 'package:angular/src/common/directives/ng_if.dart';
 import 'package:angular/src/core/render/api.dart';
-import 'package:angular/src/core/linker/view_type.dart' as import6;
+import 'package:angular/src/core/linker/view_type.dart' as import7;
 import 'package:angular/src/core/change_detection/change_detection.dart';
-import 'dart:html' as import8;
 import 'package:angular/src/core/linker/app_view_utils.dart' as import9;
 import 'package:angular/angular.dart';
 import 'package:angular/src/core/linker/template_ref.dart';
@@ -65,14 +64,15 @@ import '../model/ui/has_renderer.dart' as import23;
 const List<dynamic> styles$MaterialSelectItemComponent = const [import0.styles];
 
 class ViewMaterialSelectItemComponent0 extends AppView<import2.MaterialSelectItemComponent> {
-  ViewContainer _appEl_0;
-  NgIf _NgIf_0_9;
+  import3.Comment _anchor_0;
+  import3.DivElement _el_0_0;
   ViewContainer _appEl_2;
   NgIf _NgIf_2_9;
   ViewContainer _appEl_4;
   NgIf _NgIf_4_9;
   ViewContainer _appEl_6;
   NgIf _NgIf_6_9;
+  bool _expr_0 = false;
   var _expr_4;
   bool _expr_5;
   var _expr_6;
@@ -81,10 +81,12 @@ class ViewMaterialSelectItemComponent0 extends AppView<import2.MaterialSelectIte
   bool _expr_9;
   bool _expr_10;
   bool _expr_11;
-  bool _expr_12;
+  var _expr_12;
+  var _expr_13;
+  bool _expr_14;
   static RenderComponentType _renderType;
-  ViewMaterialSelectItemComponent0(AppView<dynamic> parentView, int parentIndex) : super(import6.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
-    rootEl = import8.document.createElement('material-select-item');
+  ViewMaterialSelectItemComponent0(AppView<dynamic> parentView, int parentIndex) : super(import7.ViewType.component, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+    rootEl = import3.document.createElement('material-select-item');
     rootEl.className = 'item';
     rootEl.tabIndex = 0;
     _renderType ??= import9.appViewUtils.createRenderType('', ViewEncapsulation.Emulated, styles$MaterialSelectItemComponent);
@@ -94,35 +96,32 @@ class ViewMaterialSelectItemComponent0 extends AppView<import2.MaterialSelectIte
   ComponentRef<import2.MaterialSelectItemComponent> build() {
     final import2.MaterialSelectItemComponent _ctx = ctx;
     final _rootEl = rootEl;
-    final import8.HtmlElement parentRenderNode = initViewRoot(_rootEl);
-    var _anchor_0 = ngAnchor.clone(false);
+    final import3.HtmlElement parentRenderNode = initViewRoot(_rootEl);
+    _anchor_0 = createViewContainerAnchor();
     parentRenderNode.append(_anchor_0);
-    _appEl_0 = new ViewContainer(0, null, this, _anchor_0);
-    TemplateRef _TemplateRef_0_8 = new TemplateRef(_appEl_0, viewFactory_MaterialSelectItemComponent1);
-    _NgIf_0_9 = new NgIf(_appEl_0, _TemplateRef_0_8);
-    import8.Text _text_1 = new import8.Text('\n \n');
+    import3.Text _text_1 = new import3.Text('\n \n');
     parentRenderNode.append(_text_1);
-    var _anchor_2 = ngAnchor.clone(false);
+    final _anchor_2 = createViewContainerAnchor();
     parentRenderNode.append(_anchor_2);
     _appEl_2 = new ViewContainer(2, null, this, _anchor_2);
     TemplateRef _TemplateRef_2_8 = new TemplateRef(_appEl_2, viewFactory_MaterialSelectItemComponent2);
     _NgIf_2_9 = new NgIf(_appEl_2, _TemplateRef_2_8);
-    import8.Text _text_3 = new import8.Text('\n \n');
+    import3.Text _text_3 = new import3.Text('\n \n');
     parentRenderNode.append(_text_3);
-    var _anchor_4 = ngAnchor.clone(false);
+    final _anchor_4 = createViewContainerAnchor();
     parentRenderNode.append(_anchor_4);
     _appEl_4 = new ViewContainer(4, null, this, _anchor_4);
     TemplateRef _TemplateRef_4_8 = new TemplateRef(_appEl_4, viewFactory_MaterialSelectItemComponent6);
     _NgIf_4_9 = new NgIf(_appEl_4, _TemplateRef_4_8);
-    import8.Text _text_5 = new import8.Text('\n \n');
+    import3.Text _text_5 = new import3.Text('\n \n');
     parentRenderNode.append(_text_5);
-    var _anchor_6 = ngAnchor.clone(false);
+    final _anchor_6 = createViewContainerAnchor();
     parentRenderNode.append(_anchor_6);
     _appEl_6 = new ViewContainer(6, null, this, _anchor_6);
     TemplateRef _TemplateRef_6_8 = new TemplateRef(_appEl_6, viewFactory_MaterialSelectItemComponent7);
     _NgIf_6_9 = new NgIf(_appEl_6, _TemplateRef_6_8);
     project(parentRenderNode, 0);
-    init(const [], null);
+    init([], null);
     _rootEl.addEventListener('mouseenter', eventHandler0(_ctx.onMouseEnter));
     _rootEl.addEventListener('mouseleave', eventHandler0(_ctx.onMouseLeave));
     _rootEl.addEventListener('click', eventHandler1(_ctx.handleClick));
@@ -133,11 +132,22 @@ class ViewMaterialSelectItemComponent0 extends AppView<import2.MaterialSelectIte
   @override
   void detectChangesInternal() {
     final import2.MaterialSelectItemComponent _ctx = ctx;
-    _NgIf_0_9.ngIf = (!_ctx.supportsMultiSelect && _ctx.isSelected);
+    final bool currVal_0 = ((!_ctx.supportsMultiSelect && _ctx.isSelected) == true);
+    if (!identical(_expr_0, currVal_0)) {
+      if (currVal_0) {
+        var doc = import3.document;
+        _el_0_0 = doc.createElement('div');
+        _el_0_0.className = 'selected-accent mixin';
+        addShimC(_el_0_0);
+        addInlinedNodes(_anchor_0, [_el_0_0], true);
+      } else {
+        removeInlinedNodes([_el_0_0], true);
+      }
+      _expr_0 = currVal_0;
+    }
     _NgIf_2_9.ngIf = (_ctx.supportsMultiSelect && !_ctx.hideCheckbox);
     _NgIf_4_9.ngIf = _ctx.valueHasLabel;
     _NgIf_6_9.ngIf = ((_ctx.componentType != null) || (_ctx.componentFactory != null));
-    _appEl_0.detectChangesInNestedViews();
     _appEl_2.detectChangesInNestedViews();
     _appEl_4.detectChangesInNestedViews();
     _appEl_6.detectChangesInNestedViews();
@@ -145,7 +155,6 @@ class ViewMaterialSelectItemComponent0 extends AppView<import2.MaterialSelectIte
 
   @override
   void destroyInternal() {
-    _appEl_0?.destroyNestedViews();
     _appEl_2?.destroyNestedViews();
     _appEl_4?.destroyNestedViews();
     _appEl_6?.destroyNestedViews();
@@ -192,10 +201,20 @@ class ViewMaterialSelectItemComponent0 extends AppView<import2.MaterialSelectIte
       updateElemClass(rootEl, 'selected', currVal_11);
       _expr_11 = currVal_11;
     }
-    final currVal_12 = ctx.supportsMultiSelect;
+    final currVal_12 = ctx.isSelected;
     if (!identical(_expr_12, currVal_12)) {
-      updateElemClass(rootEl, 'multiselect', currVal_12);
+      setAttr(rootEl, 'aria-selected', currVal_12?.toString());
       _expr_12 = currVal_12;
+    }
+    final currVal_13 = ctx.isAriaChecked;
+    if (!identical(_expr_13, currVal_13)) {
+      setAttr(rootEl, 'aria-checked', currVal_13?.toString());
+      _expr_13 = currVal_13;
+    }
+    final currVal_14 = ctx.supportsMultiSelect;
+    if (!identical(_expr_14, currVal_14)) {
+      updateElemClass(rootEl, 'multiselect', currVal_14);
+      _expr_14 = currVal_14;
     }
   }
 }
@@ -204,53 +223,22 @@ AppView<import2.MaterialSelectItemComponent> viewFactory_MaterialSelectItemCompo
   return new ViewMaterialSelectItemComponent0(parentView, parentIndex);
 }
 
-class _ViewMaterialSelectItemComponent1 extends AppView<import2.MaterialSelectItemComponent> {
-  import8.DivElement _el_0;
-  var _expr_0;
-  _ViewMaterialSelectItemComponent1(AppView<dynamic> parentView, int parentIndex) : super(import6.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
-    componentType = ViewMaterialSelectItemComponent0._renderType;
-  }
-  @override
-  ComponentRef<import2.MaterialSelectItemComponent> build() {
-    var doc = import8.document;
-    _el_0 = doc.createElement('div');
-    _el_0.className = 'selected-accent mixin';
-    addShimC(_el_0);
-    init0(_el_0);
-    return null;
-  }
-
-  @override
-  void detectChangesInternal() {
-    final import2.MaterialSelectItemComponent _ctx = ctx;
-    final currVal_0 = _ctx.selectedMessage;
-    if (!identical(_expr_0, currVal_0)) {
-      setAttr(_el_0, 'aria-label', currVal_0?.toString());
-      _expr_0 = currVal_0;
-    }
-  }
-}
-
-AppView<import2.MaterialSelectItemComponent> viewFactory_MaterialSelectItemComponent1(AppView<dynamic> parentView, int parentIndex) {
-  return new _ViewMaterialSelectItemComponent1(parentView, parentIndex);
-}
-
 class _ViewMaterialSelectItemComponent2 extends AppView<import2.MaterialSelectItemComponent> {
   ViewContainer _appEl_0;
   NgIf _NgIf_0_9;
   ViewContainer _appEl_2;
   NgIf _NgIf_2_9;
-  _ViewMaterialSelectItemComponent2(AppView<dynamic> parentView, int parentIndex) : super(import6.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMaterialSelectItemComponent2(AppView<dynamic> parentView, int parentIndex) : super(import7.ViewType.embedded, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMaterialSelectItemComponent0._renderType;
   }
   @override
   ComponentRef<import2.MaterialSelectItemComponent> build() {
-    var _anchor_0 = ngAnchor.clone(false);
+    final _anchor_0 = createViewContainerAnchor();
     _appEl_0 = new ViewContainer(0, null, this, _anchor_0);
     TemplateRef _TemplateRef_0_8 = new TemplateRef(_appEl_0, viewFactory_MaterialSelectItemComponent3);
     _NgIf_0_9 = new NgIf(_appEl_0, _TemplateRef_0_8);
-    import8.Text _text_1 = new import8.Text('\n   \n  ');
-    var _anchor_2 = ngAnchor.clone(false);
+    import3.Text _text_1 = new import3.Text('\n   \n  ');
+    final _anchor_2 = createViewContainerAnchor();
     _appEl_2 = new ViewContainer(2, null, this, _anchor_2);
     TemplateRef _TemplateRef_2_8 = new TemplateRef(_appEl_2, viewFactory_MaterialSelectItemComponent4);
     _NgIf_2_9 = new NgIf(_appEl_2, _TemplateRef_2_8);
@@ -279,13 +267,12 @@ AppView<import2.MaterialSelectItemComponent> viewFactory_MaterialSelectItemCompo
 }
 
 class _ViewMaterialSelectItemComponent3 extends AppView<import2.MaterialSelectItemComponent> {
-  import8.Element _el_0;
+  import3.Element _el_0;
   import12.ViewMaterialCheckboxComponent0 _compView_0;
   import13.MaterialCheckboxComponent _MaterialCheckboxComponent_0_5;
-  var _expr_0;
+  bool _expr_0;
   bool _expr_1;
-  bool _expr_2;
-  _ViewMaterialSelectItemComponent3(AppView<dynamic> parentView, int parentIndex) : super(import6.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMaterialSelectItemComponent3(AppView<dynamic> parentView, int parentIndex) : super(import7.ViewType.embedded, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMaterialSelectItemComponent0._renderType;
   }
   @override
@@ -306,25 +293,20 @@ class _ViewMaterialSelectItemComponent3 extends AppView<import2.MaterialSelectIt
     bool changed = false;
     bool firstCheck = (this.cdState == 0);
     changed = false;
-    final currVal_1 = _ctx.disabled;
+    final currVal_0 = _ctx.disabled;
+    if (!identical(_expr_0, currVal_0)) {
+      _MaterialCheckboxComponent_0_5.disabled = currVal_0;
+      changed = true;
+      _expr_0 = currVal_0;
+    }
+    final currVal_1 = _ctx.isSelected;
     if (!identical(_expr_1, currVal_1)) {
-      _MaterialCheckboxComponent_0_5.disabled = currVal_1;
+      _MaterialCheckboxComponent_0_5.checked = currVal_1;
       changed = true;
       _expr_1 = currVal_1;
     }
-    final currVal_2 = _ctx.isSelected;
-    if (!identical(_expr_2, currVal_2)) {
-      _MaterialCheckboxComponent_0_5.checked = currVal_2;
-      changed = true;
-      _expr_2 = currVal_2;
-    }
     if (changed) {
       _compView_0.markAsCheckOnce();
-    }
-    final currVal_0 = (_ctx.isSelected ? _ctx.selectedMessage : _ctx.notSelectedMessage);
-    if (!identical(_expr_0, currVal_0)) {
-      setAttr(_el_0, 'aria-label', currVal_0?.toString());
-      _expr_0 = currVal_0;
     }
     _compView_0.detectHostChanges(firstCheck);
     _compView_0.detectChanges();
@@ -341,20 +323,19 @@ AppView<import2.MaterialSelectItemComponent> viewFactory_MaterialSelectItemCompo
 }
 
 class _ViewMaterialSelectItemComponent4 extends AppView<import2.MaterialSelectItemComponent> {
-  import8.Element _el_0;
+  import3.Element _el_0;
   ViewContainer _appEl_1;
   NgIf _NgIf_1_9;
-  var _expr_0;
-  _ViewMaterialSelectItemComponent4(AppView<dynamic> parentView, int parentIndex) : super(import6.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMaterialSelectItemComponent4(AppView<dynamic> parentView, int parentIndex) : super(import7.ViewType.embedded, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMaterialSelectItemComponent0._renderType;
   }
   @override
   ComponentRef<import2.MaterialSelectItemComponent> build() {
-    var doc = import8.document;
+    var doc = import3.document;
     _el_0 = doc.createElement('span');
     _el_0.className = 'check-container';
     addShimE(_el_0);
-    var _anchor_1 = ngAnchor.clone(false);
+    final _anchor_1 = createViewContainerAnchor();
     _el_0.append(_anchor_1);
     _appEl_1 = new ViewContainer(1, 0, this, _anchor_1);
     TemplateRef _TemplateRef_1_8 = new TemplateRef(_appEl_1, viewFactory_MaterialSelectItemComponent5);
@@ -368,11 +349,6 @@ class _ViewMaterialSelectItemComponent4 extends AppView<import2.MaterialSelectIt
     final import2.MaterialSelectItemComponent _ctx = ctx;
     _NgIf_1_9.ngIf = _ctx.isSelected;
     _appEl_1.detectChangesInNestedViews();
-    final currVal_0 = (_ctx.isSelected ? _ctx.selectedMessage : _ctx.notSelectedMessage);
-    if (!identical(_expr_0, currVal_0)) {
-      setAttr(_el_0, 'aria-label', currVal_0?.toString());
-      _expr_0 = currVal_0;
-    }
   }
 
   @override
@@ -386,10 +362,10 @@ AppView<import2.MaterialSelectItemComponent> viewFactory_MaterialSelectItemCompo
 }
 
 class _ViewMaterialSelectItemComponent5 extends AppView<import2.MaterialSelectItemComponent> {
-  import8.Element _el_0;
+  import3.Element _el_0;
   import14.ViewGlyphComponent0 _compView_0;
   import15.GlyphComponent _GlyphComponent_0_5;
-  _ViewMaterialSelectItemComponent5(AppView<dynamic> parentView, int parentIndex) : super(import6.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMaterialSelectItemComponent5(AppView<dynamic> parentView, int parentIndex) : super(import7.ViewType.embedded, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMaterialSelectItemComponent0._renderType;
   }
   @override
@@ -432,19 +408,19 @@ AppView<import2.MaterialSelectItemComponent> viewFactory_MaterialSelectItemCompo
 }
 
 class _ViewMaterialSelectItemComponent6 extends AppView<import2.MaterialSelectItemComponent> {
-  import8.Element _el_0;
-  import8.Text _text_1;
+  import3.Element _el_0;
+  import3.Text _text_1;
   var _expr_0;
-  _ViewMaterialSelectItemComponent6(AppView<dynamic> parentView, int parentIndex) : super(import6.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMaterialSelectItemComponent6(AppView<dynamic> parentView, int parentIndex) : super(import7.ViewType.embedded, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMaterialSelectItemComponent0._renderType;
   }
   @override
   ComponentRef<import2.MaterialSelectItemComponent> build() {
-    var doc = import8.document;
+    var doc = import3.document;
     _el_0 = doc.createElement('span');
     _el_0.className = 'label';
     addShimE(_el_0);
-    _text_1 = new import8.Text('');
+    _text_1 = new import3.Text('');
     _el_0.append(_text_1);
     init0(_el_0);
     return null;
@@ -466,14 +442,14 @@ AppView<import2.MaterialSelectItemComponent> viewFactory_MaterialSelectItemCompo
 }
 
 class _ViewMaterialSelectItemComponent7 extends AppView<import2.MaterialSelectItemComponent> {
-  import8.Element _el_0;
+  import3.Element _el_0;
   import16.ViewDynamicComponent0 _compView_0;
   ViewContainer _appEl_0;
   import17.DynamicComponent _DynamicComponent_0_8;
   var _expr_0;
   var _expr_1;
   var _expr_2;
-  _ViewMaterialSelectItemComponent7(AppView<dynamic> parentView, int parentIndex) : super(import6.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMaterialSelectItemComponent7(AppView<dynamic> parentView, int parentIndex) : super(import7.ViewType.embedded, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMaterialSelectItemComponent0._renderType;
   }
   @override
@@ -536,7 +512,7 @@ const List<dynamic> styles$MaterialSelectItemComponentHost = const [];
 class _ViewMaterialSelectItemComponentHost0 extends AppView<dynamic> {
   ViewMaterialSelectItemComponent0 _compView_0;
   import2.MaterialSelectItemComponent _MaterialSelectItemComponent_0_5;
-  _ViewMaterialSelectItemComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import6.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
+  _ViewMaterialSelectItemComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import7.ViewType.host, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewMaterialSelectItemComponent0(this, 0);

@@ -113,4 +113,7 @@ abstract class BaseMaterialInputValueAccessor
   void ngOnDestroy() {
     disposer.dispose();
   }
+
+  @override
+  void onDisabledChanged(bool isDisabled) {}
 }

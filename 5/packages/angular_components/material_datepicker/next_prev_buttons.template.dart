@@ -48,7 +48,7 @@ class ViewNextPrevComponent0 extends AppView<import2.NextPrevComponent> {
   var _expr_7;
   var _expr_8;
   static RenderComponentType _renderType;
-  ViewNextPrevComponent0(AppView<dynamic> parentView, int parentIndex) : super(import7.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckOnce) {
+  ViewNextPrevComponent0(AppView<dynamic> parentView, int parentIndex) : super(import7.ViewType.component, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckOnce) {
     rootEl = import3.document.createElement('next-prev-buttons');
     _renderType ??= import9.appViewUtils.createRenderType('', ViewEncapsulation.Emulated, styles$NextPrevComponent);
     setupComponentType(_renderType);
@@ -176,7 +176,7 @@ const List<dynamic> styles$NextPrevComponentHost = const [];
 class _ViewNextPrevComponentHost0 extends AppView<dynamic> {
   ViewNextPrevComponent0 _compView_0;
   import2.NextPrevComponent _NextPrevComponent_0_5;
-  _ViewNextPrevComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import7.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
+  _ViewNextPrevComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import7.ViewType.host, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewNextPrevComponent0(this, 0);

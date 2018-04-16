@@ -41,7 +41,7 @@ class ViewMaterialFabComponent0 extends AppView<import2.MaterialFabComponent> {
   bool _expr_6;
   bool _expr_7;
   static RenderComponentType _renderType;
-  ViewMaterialFabComponent0(AppView<dynamic> parentView, int parentIndex) : super(import7.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckOnce) {
+  ViewMaterialFabComponent0(AppView<dynamic> parentView, int parentIndex) : super(import7.ViewType.component, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckOnce) {
     rootEl = import3.document.createElement('material-fab');
     createAttr(rootEl, 'animated', 'true');
     _renderType ??= import9.appViewUtils.createRenderType('', ViewEncapsulation.Emulated, styles$MaterialFabComponent);
@@ -144,7 +144,7 @@ const List<dynamic> styles$MaterialFabComponentHost = const [];
 class _ViewMaterialFabComponentHost0 extends AppView<dynamic> {
   ViewMaterialFabComponent0 _compView_0;
   import2.MaterialFabComponent _MaterialFabComponent_0_5;
-  _ViewMaterialFabComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import7.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
+  _ViewMaterialFabComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import7.ViewType.host, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewMaterialFabComponent0(this, 0);

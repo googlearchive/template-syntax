@@ -38,7 +38,7 @@ class ViewMaterialProgressComponent0 extends AppView<import2.MaterialProgressCom
   var _expr_5;
   var _expr_6;
   static RenderComponentType _renderType;
-  ViewMaterialProgressComponent0(AppView<dynamic> parentView, int parentIndex) : super(import5.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckOnce) {
+  ViewMaterialProgressComponent0(AppView<dynamic> parentView, int parentIndex) : super(import5.ViewType.component, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckOnce) {
     rootEl = import3.document.createElement('material-progress');
     _renderType ??= import7.appViewUtils.createRenderType('', ViewEncapsulation.Emulated, styles$MaterialProgressComponent);
     setupComponentType(_renderType);
@@ -114,7 +114,7 @@ const List<dynamic> styles$MaterialProgressComponentHost = const [];
 class _ViewMaterialProgressComponentHost0 extends AppView<dynamic> {
   ViewMaterialProgressComponent0 _compView_0;
   import2.MaterialProgressComponent _MaterialProgressComponent_0_5;
-  _ViewMaterialProgressComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import5.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
+  _ViewMaterialProgressComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import5.ViewType.host, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewMaterialProgressComponent0(this, 0);

@@ -111,7 +111,7 @@ class ViewMaterialTreeDropdownComponent0 extends AppView<import2.MaterialTreeDro
   var _expr_6;
   bool _expr_8;
   static RenderComponentType _renderType;
-  ViewMaterialTreeDropdownComponent0(AppView<dynamic> parentView, int parentIndex) : super(import12.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  ViewMaterialTreeDropdownComponent0(AppView<dynamic> parentView, int parentIndex) : super(import12.ViewType.component, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     rootEl = import3.document.createElement('material-tree-dropdown');
     _renderType ??= import14.appViewUtils.createRenderType('', ViewEncapsulation.Emulated, styles$MaterialTreeDropdownComponent);
     setupComponentType(_renderType);
@@ -142,17 +142,17 @@ class ViewMaterialTreeDropdownComponent0 extends AppView<import2.MaterialTreeDro
     addShimC(_el_0);
     _KeyboardOnlyFocusIndicatorDirective_0_5 = new import4.KeyboardOnlyFocusIndicatorDirective(_el_0, parentView.injectorGet(import16.DomService, viewData.parentIndex));
     _PopupSourceDirective_0_6 = new import5.PopupSourceDirective(parentView.injectorGet(import17.DomPopupSourceFactory, viewData.parentIndex), _el_0, parentView.injectorGet(import18.ReferenceDirective, viewData.parentIndex, null));
-    var _anchor_1 = ngAnchor.clone(false);
+    final _anchor_1 = createViewContainerAnchor();
     _el_0.append(_anchor_1);
     _appEl_1 = new ViewContainer(1, 0, this, _anchor_1);
     TemplateRef _TemplateRef_1_8 = new TemplateRef(_appEl_1, viewFactory_MaterialTreeDropdownComponent1);
     _NgIf_1_9 = new NgIf(_appEl_1, _TemplateRef_1_8);
-    var _anchor_2 = ngAnchor.clone(false);
+    final _anchor_2 = createViewContainerAnchor();
     _el_0.append(_anchor_2);
     _appEl_2 = new ViewContainer(2, 0, this, _anchor_2);
     TemplateRef _TemplateRef_2_8 = new TemplateRef(_appEl_2, viewFactory_MaterialTreeDropdownComponent2);
     _NgIf_2_9 = new NgIf(_appEl_2, _TemplateRef_2_8);
-    var _anchor_3 = ngAnchor.clone(false);
+    final _anchor_3 = createViewContainerAnchor();
     _el_0.append(_anchor_3);
     _appEl_3 = new ViewContainer(3, 0, this, _anchor_3);
     TemplateRef _TemplateRef_3_8 = new TemplateRef(_appEl_3, viewFactory_MaterialTreeDropdownComponent3);
@@ -169,12 +169,12 @@ class ViewMaterialTreeDropdownComponent0 extends AppView<import2.MaterialTreeDro
     createAttr(_el_5, 'header', '');
     addShimC(_el_5);
     project(_el_5, 0);
-    var _anchor_6 = ngAnchor.clone(false);
+    final _anchor_6 = createViewContainerAnchor();
     _el_5.append(_anchor_6);
     _appEl_6 = new ViewContainer(6, 5, this, _anchor_6);
     TemplateRef _TemplateRef_6_8 = new TemplateRef(_appEl_6, viewFactory_MaterialTreeDropdownComponent4);
     _NgIf_6_9 = new NgIf(_appEl_6, _TemplateRef_6_8);
-    var _anchor_7 = ngAnchor.clone(false);
+    final _anchor_7 = createViewContainerAnchor();
     _appEl_7 = new ViewContainer(7, 4, this, _anchor_7);
     TemplateRef _TemplateRef_7_8 = new TemplateRef(_appEl_7, viewFactory_MaterialTreeDropdownComponent5);
     _DeferredContentDirective_7_9 = new import10.DeferredContentDirective(_appEl_7, _TemplateRef_7_8, _MaterialPopupComponent_4_8);
@@ -316,7 +316,7 @@ class _ViewMaterialTreeDropdownComponent1 extends AppView<import2.MaterialTreeDr
   import3.Element _el_0;
   import3.Text _text_1;
   var _expr_0;
-  _ViewMaterialTreeDropdownComponent1(AppView<dynamic> parentView, int parentIndex) : super(import12.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMaterialTreeDropdownComponent1(AppView<dynamic> parentView, int parentIndex) : super(import12.ViewType.embedded, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMaterialTreeDropdownComponent0._renderType;
   }
   @override
@@ -350,7 +350,7 @@ class _ViewMaterialTreeDropdownComponent2 extends AppView<import2.MaterialTreeDr
   import3.Element _el_0;
   import32.ViewMaterialIconComponent0 _compView_0;
   import33.MaterialIconComponent _MaterialIconComponent_0_5;
-  _ViewMaterialTreeDropdownComponent2(AppView<dynamic> parentView, int parentIndex) : super(import12.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMaterialTreeDropdownComponent2(AppView<dynamic> parentView, int parentIndex) : super(import12.ViewType.embedded, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMaterialTreeDropdownComponent0._renderType;
   }
   @override
@@ -397,7 +397,7 @@ class _ViewMaterialTreeDropdownComponent3 extends AppView<import2.MaterialTreeDr
   import35.MaterialTreeFilterComponent _MaterialTreeFilterComponent_0_5;
   String _expr_0;
   var _expr_1;
-  _ViewMaterialTreeDropdownComponent3(AppView<dynamic> parentView, int parentIndex) : super(import12.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMaterialTreeDropdownComponent3(AppView<dynamic> parentView, int parentIndex) : super(import12.ViewType.embedded, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMaterialTreeDropdownComponent0._renderType;
   }
   @override
@@ -453,7 +453,7 @@ class _ViewMaterialTreeDropdownComponent4 extends AppView<import2.MaterialTreeDr
   import35.MaterialTreeFilterComponent _MaterialTreeFilterComponent_0_5;
   String _expr_1;
   var _expr_2;
-  _ViewMaterialTreeDropdownComponent4(AppView<dynamic> parentView, int parentIndex) : super(import12.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMaterialTreeDropdownComponent4(AppView<dynamic> parentView, int parentIndex) : super(import12.ViewType.embedded, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMaterialTreeDropdownComponent0._renderType;
   }
   @override
@@ -513,7 +513,7 @@ class _ViewMaterialTreeDropdownComponent5 extends AppView<import2.MaterialTreeDr
   var _expr_2;
   var _expr_3;
   var _expr_4;
-  _ViewMaterialTreeDropdownComponent5(AppView<dynamic> parentView, int parentIndex) : super(import12.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMaterialTreeDropdownComponent5(AppView<dynamic> parentView, int parentIndex) : super(import12.ViewType.embedded, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMaterialTreeDropdownComponent0._renderType;
   }
   @override
@@ -583,7 +583,7 @@ const List<dynamic> styles$MaterialTreeDropdownComponentHost = const [];
 class _ViewMaterialTreeDropdownComponentHost0 extends AppView<dynamic> {
   ViewMaterialTreeDropdownComponent0 _compView_0;
   import2.MaterialTreeDropdownComponent _MaterialTreeDropdownComponent_0_5;
-  _ViewMaterialTreeDropdownComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import12.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
+  _ViewMaterialTreeDropdownComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import12.ViewType.host, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewMaterialTreeDropdownComponent0(this, 0);

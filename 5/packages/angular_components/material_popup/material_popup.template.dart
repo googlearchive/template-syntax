@@ -72,7 +72,7 @@ class ViewMaterialPopupComponent0 extends AppView<import2.MaterialPopupComponent
   TemplateRef _TemplateRef_1_7;
   var _expr_0;
   static RenderComponentType _renderType;
-  ViewMaterialPopupComponent0(AppView<dynamic> parentView, int parentIndex) : super(import6.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  ViewMaterialPopupComponent0(AppView<dynamic> parentView, int parentIndex) : super(import6.ViewType.component, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     rootEl = import8.document.createElement('material-popup');
     _renderType ??= import9.appViewUtils.createRenderType('', ViewEncapsulation.Emulated, styles$MaterialPopupComponent);
     setupComponentType(_renderType);
@@ -83,7 +83,7 @@ class ViewMaterialPopupComponent0 extends AppView<import2.MaterialPopupComponent
     final import8.HtmlElement parentRenderNode = initViewRoot(_rootEl);
     import8.Text _text_0 = new import8.Text('\n');
     parentRenderNode.append(_text_0);
-    var _anchor_1 = ngAnchor.clone(false);
+    final _anchor_1 = createViewContainerAnchor();
     parentRenderNode.append(_anchor_1);
     _appEl_1 = new ViewContainer(1, null, this, _anchor_1);
     _TemplateRef_1_7 = new TemplateRef(_appEl_1, viewFactory_MaterialPopupComponent1);
@@ -125,7 +125,7 @@ class _ViewMaterialPopupComponent1 extends AppView<import2.MaterialPopupComponen
   var _expr_8;
   var _expr_10;
   var _expr_11;
-  _ViewMaterialPopupComponent1(AppView<dynamic> parentView, int parentIndex) : super(import6.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMaterialPopupComponent1(AppView<dynamic> parentView, int parentIndex) : super(import6.ViewType.embedded, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMaterialPopupComponent0._renderType;
   }
   @override
@@ -260,7 +260,7 @@ class _ViewMaterialPopupComponentHost0 extends AppView<dynamic> {
   import2.MaterialPopupComponent _MaterialPopupComponent_0_8;
   dynamic __PopupHierarchy_0_11;
   dynamic __PopupRef_0_12;
-  _ViewMaterialPopupComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import6.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
+  _ViewMaterialPopupComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import6.ViewType.host, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   dynamic get _PopupHierarchy_0_11 {
     if ((this.__PopupHierarchy_0_11 == null)) {
       (__PopupHierarchy_0_11 = import2.getHierarchy(this._MaterialPopupComponent_0_8));

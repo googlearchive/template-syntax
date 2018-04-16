@@ -103,16 +103,19 @@ class ViewMaterialInputComponent0 extends AppView<import2.MaterialInputComponent
   var _expr_13;
   var _expr_14;
   var _expr_15;
-  var _expr_16;
   var _expr_17;
-  bool _expr_21;
-  bool _expr_22;
-  bool _expr_23;
-  bool _expr_24;
+  var _expr_18;
+  var _expr_19;
+  var _expr_20;
+  var _expr_21;
   bool _expr_25;
   bool _expr_26;
+  bool _expr_27;
+  bool _expr_28;
+  bool _expr_29;
+  bool _expr_30;
   static RenderComponentType _renderType;
-  ViewMaterialInputComponent0(AppView<dynamic> parentView, int parentIndex) : super(import11.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckOnce) {
+  ViewMaterialInputComponent0(AppView<dynamic> parentView, int parentIndex) : super(import11.ViewType.component, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckOnce) {
     rootEl = import3.document.createElement('material-input');
     rootEl.className = 'themeable';
     createAttr(rootEl, 'tabIndex', '-1');
@@ -131,12 +134,12 @@ class ViewMaterialInputComponent0 extends AppView<import2.MaterialInputComponent
     _el_1 = createDivAndAppend(doc, _el_0);
     _el_1.className = 'top-section';
     addShimC(_el_1);
-    var _anchor_2 = ngAnchor.clone(false);
+    final _anchor_2 = createViewContainerAnchor();
     _el_1.append(_anchor_2);
     _appEl_2 = new ViewContainer(2, 1, this, _anchor_2);
     TemplateRef _TemplateRef_2_8 = new TemplateRef(_appEl_2, viewFactory_MaterialInputComponent1);
     _NgIf_2_9 = new NgIf(_appEl_2, _TemplateRef_2_8);
-    var _anchor_3 = ngAnchor.clone(false);
+    final _anchor_3 = createViewContainerAnchor();
     _el_1.append(_anchor_3);
     _appEl_3 = new ViewContainer(3, 1, this, _anchor_3);
     TemplateRef _TemplateRef_3_8 = new TemplateRef(_appEl_3, viewFactory_MaterialInputComponent2);
@@ -161,12 +164,12 @@ class ViewMaterialInputComponent0 extends AppView<import2.MaterialInputComponent
     _FocusableDirective_8_6 = new import7.FocusableDirective(_el_8);
     _NgValueAccessor_8_7 = [_DefaultValueAccessor_8_5];
     _NgModel_8_8 = new import9.NgModel(null, _NgValueAccessor_8_7);
-    var _anchor_9 = ngAnchor.clone(false);
+    final _anchor_9 = createViewContainerAnchor();
     _el_1.append(_anchor_9);
     _appEl_9 = new ViewContainer(9, 1, this, _anchor_9);
     TemplateRef _TemplateRef_9_8 = new TemplateRef(_appEl_9, viewFactory_MaterialInputComponent3);
     _NgIf_9_9 = new NgIf(_appEl_9, _TemplateRef_9_8);
-    var _anchor_10 = ngAnchor.clone(false);
+    final _anchor_10 = createViewContainerAnchor();
     _el_1.append(_anchor_10);
     _appEl_10 = new ViewContainer(10, 1, this, _anchor_10);
     TemplateRef _TemplateRef_10_8 = new TemplateRef(_appEl_10, viewFactory_MaterialInputComponent4);
@@ -184,7 +187,7 @@ class ViewMaterialInputComponent0 extends AppView<import2.MaterialInputComponent
     _el_14 = createDivAndAppend(doc, _el_11);
     _el_14.className = 'focused-underline';
     addShimC(_el_14);
-    var _anchor_15 = ngAnchor.clone(false);
+    final _anchor_15 = createViewContainerAnchor();
     parentRenderNode.append(_anchor_15);
     _appEl_15 = new ViewContainer(15, null, this, _anchor_15);
     TemplateRef _TemplateRef_15_8 = new TemplateRef(_appEl_15, viewFactory_MaterialInputComponent5);
@@ -281,6 +284,11 @@ class ViewMaterialInputComponent0 extends AppView<import2.MaterialInputComponent
       _text_7.text = currVal_10;
       _expr_10 = currVal_10;
     }
+    if (firstCheck) {
+      if (!identical(_ctx.inputRole, null)) {
+        setAttr(_el_8, 'role', _ctx.inputRole?.toString());
+      }
+    }
     final currVal_11 = _ctx.disabled;
     if (!identical(_expr_11, currVal_11)) {
       updateClass(_el_8, 'disabledInput', currVal_11);
@@ -301,50 +309,65 @@ class ViewMaterialInputComponent0 extends AppView<import2.MaterialInputComponent
       setProp(_el_8, 'multiple', currVal_14);
       _expr_14 = currVal_14;
     }
-    final currVal_15 = _ctx.ariaLabel;
+    final currVal_15 = _ctx.disabled;
     if (!identical(_expr_15, currVal_15)) {
-      setAttr(_el_8, 'aria-label', currVal_15?.toString());
+      setProp(_el_8, 'readOnly', currVal_15);
       _expr_15 = currVal_15;
     }
-    final currVal_16 = _ctx.disabled;
-    if (!identical(_expr_16, currVal_16)) {
-      setProp(_el_8, 'disabled', currVal_16);
-      _expr_16 = currVal_16;
-    }
-    final currVal_17 = import13.interpolate0(_ctx.invalid);
+    final currVal_17 = _ctx.inputAriaOwns;
     if (!identical(_expr_17, currVal_17)) {
-      setAttr(_el_8, 'aria-invalid', currVal_17?.toString());
+      setAttr(_el_8, 'aria-owns', currVal_17?.toString());
       _expr_17 = currVal_17;
     }
-    final bool currVal_21 = !_ctx.disabled;
+    final currVal_18 = _ctx.inputAriaActivedescendent;
+    if (!identical(_expr_18, currVal_18)) {
+      setAttr(_el_8, 'aria-activedescendant', currVal_18?.toString());
+      _expr_18 = currVal_18;
+    }
+    final currVal_19 = _ctx.inputAriaExpanded;
+    if (!identical(_expr_19, currVal_19)) {
+      setAttr(_el_8, 'aria-expanded', currVal_19?.toString());
+      _expr_19 = currVal_19;
+    }
+    final currVal_20 = _ctx.inputAriaAutocomplete;
+    if (!identical(_expr_20, currVal_20)) {
+      setAttr(_el_8, 'aria-autocomplete', currVal_20?.toString());
+      _expr_20 = currVal_20;
+    }
+    final currVal_21 = _ctx.inputAriaHasPopup;
     if (!identical(_expr_21, currVal_21)) {
-      updateClass(_el_12, 'invisible', currVal_21);
+      setAttr(_el_8, 'aria-haspopup', currVal_21?.toString());
       _expr_21 = currVal_21;
     }
-    final currVal_22 = _ctx.disabled;
-    if (!identical(_expr_22, currVal_22)) {
-      updateClass(_el_13, 'invisible', currVal_22);
-      _expr_22 = currVal_22;
-    }
-    final currVal_23 = _ctx.invalid;
-    if (!identical(_expr_23, currVal_23)) {
-      updateClass(_el_13, 'invalid', currVal_23);
-      _expr_23 = currVal_23;
-    }
-    final bool currVal_24 = !_ctx.focused;
-    if (!identical(_expr_24, currVal_24)) {
-      updateClass(_el_14, 'invisible', currVal_24);
-      _expr_24 = currVal_24;
-    }
-    final currVal_25 = _ctx.invalid;
+    final bool currVal_25 = !_ctx.disabled;
     if (!identical(_expr_25, currVal_25)) {
-      updateClass(_el_14, 'invalid', currVal_25);
+      updateClass(_el_12, 'invisible', currVal_25);
       _expr_25 = currVal_25;
     }
-    final currVal_26 = _ctx.underlineAnimated;
+    final currVal_26 = _ctx.disabled;
     if (!identical(_expr_26, currVal_26)) {
-      updateClass(_el_14, 'animated', currVal_26);
+      updateClass(_el_13, 'invisible', currVal_26);
       _expr_26 = currVal_26;
+    }
+    final currVal_27 = _ctx.invalid;
+    if (!identical(_expr_27, currVal_27)) {
+      updateClass(_el_13, 'invalid', currVal_27);
+      _expr_27 = currVal_27;
+    }
+    final bool currVal_28 = (!_ctx.focused || _ctx.disabled);
+    if (!identical(_expr_28, currVal_28)) {
+      updateClass(_el_14, 'invisible', currVal_28);
+      _expr_28 = currVal_28;
+    }
+    final currVal_29 = _ctx.invalid;
+    if (!identical(_expr_29, currVal_29)) {
+      updateClass(_el_14, 'invalid', currVal_29);
+      _expr_29 = currVal_29;
+    }
+    final currVal_30 = _ctx.underlineAnimated;
+    if (!identical(_expr_30, currVal_30)) {
+      updateClass(_el_14, 'animated', currVal_30);
+      _expr_30 = currVal_30;
     }
   }
 
@@ -372,7 +395,7 @@ class ViewMaterialInputComponent0 extends AppView<import2.MaterialInputComponent
   void _handle_input_8_3($event) {
     final local_inputEl = _el_8;
     ctx.inputKeypress(local_inputEl.value, local_inputEl.validity.valid, local_inputEl.validationMessage);
-    _DefaultValueAccessor_8_5.onChange($event.target.value);
+    _DefaultValueAccessor_8_5.handleChange($event.target.value);
   }
 }
 
@@ -388,7 +411,7 @@ class _ViewMaterialInputComponent1 extends AppView<import2.MaterialInputComponen
   bool _expr_0;
   var _expr_1;
   var _expr_2;
-  _ViewMaterialInputComponent1(AppView<dynamic> parentView, int parentIndex) : super(import11.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMaterialInputComponent1(AppView<dynamic> parentView, int parentIndex) : super(import11.ViewType.embedded, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMaterialInputComponent0._renderType;
   }
   @override
@@ -450,7 +473,7 @@ class _ViewMaterialInputComponent2 extends AppView<import2.MaterialInputComponen
   import3.Text _text_1;
   bool _expr_0;
   var _expr_1;
-  _ViewMaterialInputComponent2(AppView<dynamic> parentView, int parentIndex) : super(import11.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMaterialInputComponent2(AppView<dynamic> parentView, int parentIndex) : super(import11.ViewType.embedded, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMaterialInputComponent0._renderType;
   }
   @override
@@ -490,7 +513,7 @@ class _ViewMaterialInputComponent3 extends AppView<import2.MaterialInputComponen
   import3.Text _text_1;
   bool _expr_0;
   var _expr_1;
-  _ViewMaterialInputComponent3(AppView<dynamic> parentView, int parentIndex) : super(import11.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMaterialInputComponent3(AppView<dynamic> parentView, int parentIndex) : super(import11.ViewType.embedded, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMaterialInputComponent0._renderType;
   }
   @override
@@ -533,7 +556,7 @@ class _ViewMaterialInputComponent4 extends AppView<import2.MaterialInputComponen
   bool _expr_0;
   var _expr_1;
   var _expr_2;
-  _ViewMaterialInputComponent4(AppView<dynamic> parentView, int parentIndex) : super(import11.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMaterialInputComponent4(AppView<dynamic> parentView, int parentIndex) : super(import11.ViewType.embedded, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMaterialInputComponent0._renderType;
   }
   @override
@@ -605,7 +628,7 @@ class _ViewMaterialInputComponent5 extends AppView<import2.MaterialInputComponen
   var _expr_1;
   var _expr_2;
   var _expr_3;
-  _ViewMaterialInputComponent5(AppView<dynamic> parentView, int parentIndex) : super(import11.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMaterialInputComponent5(AppView<dynamic> parentView, int parentIndex) : super(import11.ViewType.embedded, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMaterialInputComponent0._renderType;
   }
   @override
@@ -615,22 +638,22 @@ class _ViewMaterialInputComponent5 extends AppView<import2.MaterialInputComponen
     _el_0.className = 'bottom-section';
     addShimC(_el_0);
     _NgSwitch_0_5 = new import22.NgSwitch();
-    var _anchor_1 = ngAnchor.clone(false);
+    final _anchor_1 = createViewContainerAnchor();
     _el_0.append(_anchor_1);
     _appEl_1 = new ViewContainer(1, 0, this, _anchor_1);
     TemplateRef _TemplateRef_1_8 = new TemplateRef(_appEl_1, viewFactory_MaterialInputComponent6);
     _NgSwitchWhen_1_9 = new import22.NgSwitchWhen(_appEl_1, _TemplateRef_1_8, _NgSwitch_0_5);
-    var _anchor_2 = ngAnchor.clone(false);
+    final _anchor_2 = createViewContainerAnchor();
     _el_0.append(_anchor_2);
     _appEl_2 = new ViewContainer(2, 0, this, _anchor_2);
     TemplateRef _TemplateRef_2_8 = new TemplateRef(_appEl_2, viewFactory_MaterialInputComponent7);
     _NgSwitchWhen_2_9 = new import22.NgSwitchWhen(_appEl_2, _TemplateRef_2_8, _NgSwitch_0_5);
-    var _anchor_3 = ngAnchor.clone(false);
+    final _anchor_3 = createViewContainerAnchor();
     _el_0.append(_anchor_3);
     _appEl_3 = new ViewContainer(3, 0, this, _anchor_3);
     TemplateRef _TemplateRef_3_8 = new TemplateRef(_appEl_3, viewFactory_MaterialInputComponent8);
     _NgSwitchWhen_3_9 = new import22.NgSwitchWhen(_appEl_3, _TemplateRef_3_8, _NgSwitch_0_5);
-    var _anchor_4 = ngAnchor.clone(false);
+    final _anchor_4 = createViewContainerAnchor();
     _el_0.append(_anchor_4);
     _appEl_4 = new ViewContainer(4, 0, this, _anchor_4);
     TemplateRef _TemplateRef_4_8 = new TemplateRef(_appEl_4, viewFactory_MaterialInputComponent9);
@@ -697,7 +720,7 @@ class _ViewMaterialInputComponent6 extends AppView<import2.MaterialInputComponen
   bool _expr_1;
   var _expr_2;
   var _expr_3;
-  _ViewMaterialInputComponent6(AppView<dynamic> parentView, int parentIndex) : super(import11.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMaterialInputComponent6(AppView<dynamic> parentView, int parentIndex) : super(import11.ViewType.embedded, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMaterialInputComponent0._renderType;
   }
   @override
@@ -747,7 +770,7 @@ class _ViewMaterialInputComponent7 extends AppView<import2.MaterialInputComponen
   import3.DivElement _el_0;
   import3.Text _text_1;
   var _expr_0;
-  _ViewMaterialInputComponent7(AppView<dynamic> parentView, int parentIndex) : super(import11.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMaterialInputComponent7(AppView<dynamic> parentView, int parentIndex) : super(import11.ViewType.embedded, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMaterialInputComponent0._renderType;
   }
   @override
@@ -779,7 +802,7 @@ AppView<import2.MaterialInputComponent> viewFactory_MaterialInputComponent7(AppV
 
 class _ViewMaterialInputComponent8 extends AppView<import2.MaterialInputComponent> {
   import3.DivElement _el_0;
-  _ViewMaterialInputComponent8(AppView<dynamic> parentView, int parentIndex) : super(import11.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMaterialInputComponent8(AppView<dynamic> parentView, int parentIndex) : super(import11.ViewType.embedded, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMaterialInputComponent0._renderType;
   }
   @override
@@ -810,7 +833,7 @@ class _ViewMaterialInputComponent9 extends AppView<import2.MaterialInputComponen
   import3.Text _text_1;
   bool _expr_0;
   var _expr_1;
-  _ViewMaterialInputComponent9(AppView<dynamic> parentView, int parentIndex) : super(import11.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMaterialInputComponent9(AppView<dynamic> parentView, int parentIndex) : super(import11.ViewType.embedded, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMaterialInputComponent0._renderType;
   }
   @override
@@ -853,7 +876,7 @@ class _ViewMaterialInputComponentHost0 extends AppView<dynamic> {
   import23.DeferredValidator _DeferredValidator_0_5;
   import2.MaterialInputComponent _MaterialInputComponent_0_6;
   List<dynamic> __NgValidators_0_7;
-  _ViewMaterialInputComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import11.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
+  _ViewMaterialInputComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import11.ViewType.host, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   List<dynamic> get _NgValidators_0_7 {
     if ((this.__NgValidators_0_7 == null)) {
       (__NgValidators_0_7 = [this._DeferredValidator_0_5]);
@@ -866,7 +889,7 @@ class _ViewMaterialInputComponentHost0 extends AppView<dynamic> {
     _compView_0 = new ViewMaterialInputComponent0(this, 0);
     rootEl = _compView_0.rootEl;
     _DeferredValidator_0_5 = new import23.DeferredValidator();
-    _MaterialInputComponent_0_6 = new import2.MaterialInputComponent(null, null, null, _compView_0.ref, _DeferredValidator_0_5);
+    _MaterialInputComponent_0_6 = new import2.MaterialInputComponent(null, null, null, null, _compView_0.ref, _DeferredValidator_0_5);
     _compView_0.create(_MaterialInputComponent_0_6, projectableNodes);
     init0(rootEl);
     return new ComponentRef<import2.MaterialInputComponent>(0, this, rootEl, _MaterialInputComponent_0_6);

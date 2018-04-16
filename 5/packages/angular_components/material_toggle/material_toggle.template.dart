@@ -45,7 +45,7 @@ class ViewMaterialToggleComponent0 extends AppView<import2.MaterialToggleCompone
   var _expr_6;
   var _expr_7;
   static RenderComponentType _renderType;
-  ViewMaterialToggleComponent0(AppView<dynamic> parentView, int parentIndex) : super(import7.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckOnce) {
+  ViewMaterialToggleComponent0(AppView<dynamic> parentView, int parentIndex) : super(import7.ViewType.component, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckOnce) {
     rootEl = import3.document.createElement('material-toggle');
     rootEl.className = 'themeable';
     _renderType ??= import9.appViewUtils.createRenderType('', ViewEncapsulation.Emulated, styles$MaterialToggleComponent);
@@ -61,7 +61,7 @@ class ViewMaterialToggleComponent0 extends AppView<import2.MaterialToggleCompone
     _el_0.className = 'material-toggle';
     createAttr(_el_0, 'role', 'button');
     addShimC(_el_0);
-    var _anchor_1 = ngAnchor.clone(false);
+    final _anchor_1 = createViewContainerAnchor();
     _el_0.append(_anchor_1);
     _appEl_1 = new ViewContainer(1, 0, this, _anchor_1);
     TemplateRef _TemplateRef_1_8 = new TemplateRef(_appEl_1, viewFactory_MaterialToggleComponent1);
@@ -164,7 +164,7 @@ class _ViewMaterialToggleComponent1 extends AppView<import2.MaterialToggleCompon
   import3.DivElement _el_0;
   import3.Text _text_1;
   var _expr_0;
-  _ViewMaterialToggleComponent1(AppView<dynamic> parentView, int parentIndex) : super(import7.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMaterialToggleComponent1(AppView<dynamic> parentView, int parentIndex) : super(import7.ViewType.embedded, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMaterialToggleComponent0._renderType;
   }
   @override
@@ -199,7 +199,7 @@ const List<dynamic> styles$MaterialToggleComponentHost = const [];
 class _ViewMaterialToggleComponentHost0 extends AppView<dynamic> {
   ViewMaterialToggleComponent0 _compView_0;
   import2.MaterialToggleComponent _MaterialToggleComponent_0_5;
-  _ViewMaterialToggleComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import7.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
+  _ViewMaterialToggleComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import7.ViewType.host, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewMaterialToggleComponent0(this, 0);

@@ -55,7 +55,7 @@ class ViewHeroFormComponent0 extends AppView<import1.HeroFormComponent> {
   var _expr_3;
   var _expr_4;
   static RenderComponentType _renderType;
-  ViewHeroFormComponent0(AppView<dynamic> parentView, int parentIndex) : super(import9.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  ViewHeroFormComponent0(AppView<dynamic> parentView, int parentIndex) : super(import9.ViewType.component, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     rootEl = import2.document.createElement('hero-form');
     _renderType ??= import11.appViewUtils.createRenderType('', ViewEncapsulation.Emulated, styles$HeroFormComponent);
     setupComponentType(_renderType);
@@ -101,8 +101,8 @@ class ViewHeroFormComponent0 extends AppView<import1.HeroFormComponent> {
     _el_8.append(_text_9);
     import11.appViewUtils.eventManager.addEventListener(_el_1, 'submit', eventHandler1(_NgForm_1_5.onSubmit));
     final subscription_0 = _NgForm_1_5.ngSubmit.listen(eventHandler1(_handle_ngSubmit_1_0));
-    _el_5.addEventListener('input', eventHandler1(_handle_input_5_1));
     _el_5.addEventListener('blur', eventHandler0(_DefaultValueAccessor_5_6.touchHandler));
+    _el_5.addEventListener('input', eventHandler1(_handle_input_5_2));
     final subscription_1 = _NgControlName_5_8.update.listen(eventHandler1(_handle_ngModelChange_5_0));
     ctx.form = _NgForm_1_5;
     init(const [], [subscription_0, subscription_1]);
@@ -183,8 +183,8 @@ class ViewHeroFormComponent0 extends AppView<import1.HeroFormComponent> {
     ctx.hero.name = $event;
   }
 
-  void _handle_input_5_1($event) {
-    _DefaultValueAccessor_5_6.onChange($event.target.value);
+  void _handle_input_5_2($event) {
+    _DefaultValueAccessor_5_6.handleChange($event.target.value);
   }
 }
 
@@ -197,7 +197,7 @@ const List<dynamic> styles$HeroFormComponentHost = const [];
 class _ViewHeroFormComponentHost0 extends AppView<dynamic> {
   ViewHeroFormComponent0 _compView_0;
   import1.HeroFormComponent _HeroFormComponent_0_5;
-  _ViewHeroFormComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import9.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
+  _ViewHeroFormComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import9.ViewType.host, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewHeroFormComponent0(this, 0);

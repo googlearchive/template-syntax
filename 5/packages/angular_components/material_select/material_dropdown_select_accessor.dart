@@ -133,4 +133,7 @@ abstract class BaseDropdownSelectValueAccessor
   void ngOnDestroy() {
     _visibileSub?.cancel();
   }
+
+  @override
+  void onDisabledChanged(bool isDisabled) {}
 }

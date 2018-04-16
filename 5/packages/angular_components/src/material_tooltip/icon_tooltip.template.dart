@@ -66,7 +66,7 @@ class ViewMaterialIconTooltipComponent0 extends AppView<import2.MaterialIconTool
   var _expr_1;
   var _expr_3;
   static RenderComponentType _renderType;
-  ViewMaterialIconTooltipComponent0(AppView<dynamic> parentView, int parentIndex) : super(import12.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckOnce) {
+  ViewMaterialIconTooltipComponent0(AppView<dynamic> parentView, int parentIndex) : super(import12.ViewType.component, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckOnce) {
     rootEl = import3.document.createElement('material-icon-tooltip');
     _renderType ??= import14.appViewUtils.createRenderType('', ViewEncapsulation.Emulated, styles$MaterialIconTooltipComponent);
     setupComponentType(_renderType);
@@ -211,7 +211,7 @@ class _ViewMaterialIconTooltipComponentHost0 extends AppView<dynamic> {
   ViewMaterialIconTooltipComponent0 _compView_0;
   import22.AcxDarkTheme _AcxDarkTheme_0_5;
   import2.MaterialIconTooltipComponent _MaterialIconTooltipComponent_0_6;
-  _ViewMaterialIconTooltipComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import12.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
+  _ViewMaterialIconTooltipComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import12.ViewType.host, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewMaterialIconTooltipComponent0(this, 0);

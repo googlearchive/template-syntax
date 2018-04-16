@@ -89,7 +89,7 @@ class ViewMaterialTimePickerComponent0 extends AppView<import2.MaterialTimePicke
   String _expr_14;
   bool _expr_15;
   static RenderComponentType _renderType;
-  ViewMaterialTimePickerComponent0(AppView<dynamic> parentView, int parentIndex) : super(import12.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckOnce) {
+  ViewMaterialTimePickerComponent0(AppView<dynamic> parentView, int parentIndex) : super(import12.ViewType.component, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckOnce) {
     rootEl = import3.document.createElement('material-time-picker');
     _renderType ??= import14.appViewUtils.createRenderType('', ViewEncapsulation.Emulated, styles$MaterialTimePickerComponent);
     setupComponentType(_renderType);
@@ -119,7 +119,7 @@ class ViewMaterialTimePickerComponent0 extends AppView<import2.MaterialTimePicke
     _NgValidators_3_6 = [_DeferredValidator_3_5];
     _NgModel_3_7 = new import8.NgModel(_NgValidators_3_6, null);
     _NgControl_3_8 = _NgModel_3_7;
-    _MaterialInputComponent_3_9 = new import9.MaterialInputComponent('text', null, _NgControl_3_8, _compView_3.ref, _DeferredValidator_3_5);
+    _MaterialInputComponent_3_9 = new import9.MaterialInputComponent('text', null, null, _NgControl_3_8, _compView_3.ref, _DeferredValidator_3_5);
     _BaseMaterialInput_3_10 = _MaterialInputComponent_3_9;
     _MaterialInputDefaultValueAccessor_3_11 = new import10.MaterialInputDefaultValueAccessor(_BaseMaterialInput_3_10, _NgControl_3_8);
     _compView_3.create(_MaterialInputComponent_3_9, [const []]);
@@ -315,7 +315,7 @@ const List<dynamic> styles$MaterialTimePickerComponentHost = const [];
 class _ViewMaterialTimePickerComponentHost0 extends AppView<dynamic> {
   ViewMaterialTimePickerComponent0 _compView_0;
   import2.MaterialTimePickerComponent _MaterialTimePickerComponent_0_5;
-  _ViewMaterialTimePickerComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import12.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
+  _ViewMaterialTimePickerComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import12.ViewType.host, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewMaterialTimePickerComponent0(this, 0);

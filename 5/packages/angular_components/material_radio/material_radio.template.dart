@@ -63,7 +63,7 @@ class ViewMaterialRadioComponent0 extends AppView<import2.MaterialRadioComponent
   var _expr_7;
   var _expr_8;
   static RenderComponentType _renderType;
-  ViewMaterialRadioComponent0(AppView<dynamic> parentView, int parentIndex) : super(import9.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckOnce) {
+  ViewMaterialRadioComponent0(AppView<dynamic> parentView, int parentIndex) : super(import9.ViewType.component, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckOnce) {
     rootEl = import3.document.createElement('material-radio');
     rootEl.className = 'themeable';
     _renderType ??= import11.appViewUtils.createRenderType('', ViewEncapsulation.Emulated, styles$MaterialRadioComponent);
@@ -86,7 +86,7 @@ class ViewMaterialRadioComponent0 extends AppView<import2.MaterialRadioComponent
     addShimC(_el_1);
     _MaterialIconComponent_1_5 = new import5.MaterialIconComponent(_el_1);
     _compView_1.create(_MaterialIconComponent_1_5, []);
-    var _anchor_2 = ngAnchor.clone(false);
+    final _anchor_2 = createViewContainerAnchor();
     _el_0.append(_anchor_2);
     _appEl_2 = new ViewContainer(2, 0, this, _anchor_2);
     TemplateRef _TemplateRef_2_8 = new TemplateRef(_appEl_2, viewFactory_MaterialRadioComponent1);
@@ -177,7 +177,7 @@ class _ViewMaterialRadioComponent1 extends AppView<import2.MaterialRadioComponen
   import3.Element _el_0;
   import14.ViewMaterialRippleComponent0 _compView_0;
   import15.MaterialRippleComponent _MaterialRippleComponent_0_5;
-  _ViewMaterialRadioComponent1(AppView<dynamic> parentView, int parentIndex) : super(import9.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMaterialRadioComponent1(AppView<dynamic> parentView, int parentIndex) : super(import9.ViewType.embedded, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMaterialRadioComponent0._renderType;
   }
   @override
@@ -218,7 +218,7 @@ const List<dynamic> styles$MaterialRadioComponentHost = const [];
 class _ViewMaterialRadioComponentHost0 extends AppView<dynamic> {
   ViewMaterialRadioComponent0 _compView_0;
   import2.MaterialRadioComponent _MaterialRadioComponent_0_5;
-  _ViewMaterialRadioComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import9.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
+  _ViewMaterialRadioComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import9.ViewType.host, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewMaterialRadioComponent0(this, 0);

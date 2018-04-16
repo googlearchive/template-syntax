@@ -75,7 +75,7 @@ class ViewDateRangeInputComponent0 extends AppView<import2.DateRangeInputCompone
   var _expr_12;
   var _expr_13;
   static RenderComponentType _renderType;
-  ViewDateRangeInputComponent0(AppView<dynamic> parentView, int parentIndex) : super(import10.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckOnce) {
+  ViewDateRangeInputComponent0(AppView<dynamic> parentView, int parentIndex) : super(import10.ViewType.component, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckOnce) {
     rootEl = import3.document.createElement('date-range-input');
     _renderType ??= import12.appViewUtils.createRenderType('', ViewEncapsulation.Emulated, styles$DateRangeInputComponent);
     setupComponentType(_renderType);
@@ -105,7 +105,7 @@ class ViewDateRangeInputComponent0 extends AppView<import2.DateRangeInputCompone
     createAttr(_el_0, 'dateParsing', '');
     addShimC(_el_0);
     _DeferredValidator_0_5 = new import5.DeferredValidator();
-    _MaterialInputComponent_0_6 = new import6.MaterialInputComponent(null, null, null, _compView_0.ref, _DeferredValidator_0_5);
+    _MaterialInputComponent_0_6 = new import6.MaterialInputComponent(null, null, null, null, _compView_0.ref, _DeferredValidator_0_5);
     _DateInputDirective_0_7 = new import7.DateInputDirective(parentView.injectorGet(const import14.OpaqueToken('third_party.dart_src.acx.material_datepicker.datepickerClock'), viewData.parentIndex, null), parentView.injectorGet(import15.Clock, viewData.parentIndex), _MaterialInputComponent_0_6);
     _BaseMaterialInput_0_8 = _MaterialInputComponent_0_6;
     _MaterialInputDefaultValueAccessor_0_9 = new import8.MaterialInputDefaultValueAccessor(_BaseMaterialInput_0_8, null);
@@ -123,7 +123,7 @@ class ViewDateRangeInputComponent0 extends AppView<import2.DateRangeInputCompone
     createAttr(_el_3, 'dateParsing', '');
     addShimC(_el_3);
     _DeferredValidator_3_5 = new import5.DeferredValidator();
-    _MaterialInputComponent_3_6 = new import6.MaterialInputComponent(null, null, null, _compView_3.ref, _DeferredValidator_3_5);
+    _MaterialInputComponent_3_6 = new import6.MaterialInputComponent(null, null, null, null, _compView_3.ref, _DeferredValidator_3_5);
     _DateInputDirective_3_7 = new import7.DateInputDirective(parentView.injectorGet(const import14.OpaqueToken('third_party.dart_src.acx.material_datepicker.datepickerClock'), viewData.parentIndex, null), parentView.injectorGet(import15.Clock, viewData.parentIndex), _MaterialInputComponent_3_6);
     _BaseMaterialInput_3_8 = _MaterialInputComponent_3_6;
     _MaterialInputDefaultValueAccessor_3_9 = new import8.MaterialInputDefaultValueAccessor(_BaseMaterialInput_3_8, null);
@@ -301,7 +301,7 @@ const List<dynamic> styles$DateRangeInputComponentHost = const [];
 class _ViewDateRangeInputComponentHost0 extends AppView<dynamic> {
   ViewDateRangeInputComponent0 _compView_0;
   import2.DateRangeInputComponent _DateRangeInputComponent_0_5;
-  _ViewDateRangeInputComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import10.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
+  _ViewDateRangeInputComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import10.ViewType.host, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewDateRangeInputComponent0(this, 0);

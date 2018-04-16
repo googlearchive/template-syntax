@@ -39,7 +39,7 @@ class ViewReorderListComponent0 extends AppView<import2.ReorderListComponent> {
   bool _expr_1;
   bool _expr_2;
   static RenderComponentType _renderType;
-  ViewReorderListComponent0(AppView<dynamic> parentView, int parentIndex) : super(import5.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  ViewReorderListComponent0(AppView<dynamic> parentView, int parentIndex) : super(import5.ViewType.component, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     rootEl = import3.document.createElement('reorder-list');
     createAttr(rootEl, 'role', 'list');
     rootEl.className = 'themeable';
@@ -95,7 +95,7 @@ class _ViewReorderListComponentHost0 extends AppView<dynamic> {
   ViewReorderListComponent0 _compView_0;
   import2.ReorderListComponent _ReorderListComponent_0_5;
   bool _query_ReorderItemDirective_0_0_isDirty = true;
-  _ViewReorderListComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import5.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
+  _ViewReorderListComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import5.ViewType.host, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewReorderListComponent0(this, 0);

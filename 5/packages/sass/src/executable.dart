@@ -18,12 +18,11 @@ main(List<String> args) async {
     ..addOption('precision', hide: true)
     ..addFlag('stdin', help: 'Read the stylesheet from stdin.')
     ..addFlag('indented', help: 'Use the indented syntax for input from stdin.')
-    ..addOption('load-path',
+    ..addMultiOption('load-path',
         abbr: 'I',
         valueHelp: 'PATH',
         help: 'A path to use when resolving imports.\n'
             'May be passed multiple times.',
-        allowMultiple: true,
         splitCommas: false)
     ..addOption('style',
         abbr: 's',
@@ -112,6 +111,7 @@ main(List<String> args) async {
     }
 
     if (destination != null) {
+      ensureDir(p.dirname(destination));
       writeFile(destination, css + "\n");
     } else if (css.isNotEmpty) {
       print(css);

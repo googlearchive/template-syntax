@@ -30,7 +30,7 @@ const List<dynamic> styles$MaterialRippleComponent = const [import0.styles];
 
 class ViewMaterialRippleComponent0 extends AppView<import2.MaterialRippleComponent> {
   static RenderComponentType _renderType;
-  ViewMaterialRippleComponent0(AppView<dynamic> parentView, int parentIndex) : super(import4.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckOnce) {
+  ViewMaterialRippleComponent0(AppView<dynamic> parentView, int parentIndex) : super(import4.ViewType.component, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckOnce) {
     rootEl = import6.document.createElement('material-ripple');
     _renderType ??= import7.appViewUtils.createRenderType('', ViewEncapsulation.None, styles$MaterialRippleComponent);
     setupComponentType(_renderType);
@@ -53,7 +53,7 @@ const List<dynamic> styles$MaterialRippleComponentHost = const [];
 class _ViewMaterialRippleComponentHost0 extends AppView<dynamic> {
   ViewMaterialRippleComponent0 _compView_0;
   import2.MaterialRippleComponent _MaterialRippleComponent_0_5;
-  _ViewMaterialRippleComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import4.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
+  _ViewMaterialRippleComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import4.ViewType.host, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewMaterialRippleComponent0(this, 0);

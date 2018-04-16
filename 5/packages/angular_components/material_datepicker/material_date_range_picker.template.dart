@@ -140,7 +140,7 @@ class ViewMaterialDateRangePickerComponent0 extends AppView<import2.MaterialDate
   bool _expr_10;
   bool _expr_11;
   static RenderComponentType _renderType;
-  ViewMaterialDateRangePickerComponent0(AppView<dynamic> parentView, int parentIndex) : super(import14.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  ViewMaterialDateRangePickerComponent0(AppView<dynamic> parentView, int parentIndex) : super(import14.ViewType.component, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     rootEl = import3.document.createElement('material-date-range-picker');
     _renderType ??= import16.appViewUtils.createRenderType('', ViewEncapsulation.Emulated, styles$MaterialDateRangePickerComponent);
     setupComponentType(_renderType);
@@ -173,7 +173,7 @@ class ViewMaterialDateRangePickerComponent0 extends AppView<import2.MaterialDate
     _ButtonDirective_0_5 = new import4.ButtonDirectiveNgCd(new import18.ButtonDirective(_el_0, null));
     _KeyboardOnlyFocusIndicatorDirective_0_6 = new import5.KeyboardOnlyFocusIndicatorDirective(_el_0, parentView.injectorGet(import19.DomService, viewData.parentIndex));
     _PopupSourceDirective_0_7 = new import6.PopupSourceDirective(parentView.injectorGet(import20.DomPopupSourceFactory, viewData.parentIndex), _el_0, parentView.injectorGet(import21.ReferenceDirective, viewData.parentIndex, null));
-    var _anchor_1 = ngAnchor.clone(false);
+    final _anchor_1 = createViewContainerAnchor();
     _el_0.append(_anchor_1);
     _appEl_1 = new ViewContainer(1, 0, this, _anchor_1);
     TemplateRef _TemplateRef_1_8 = new TemplateRef(_appEl_1, viewFactory_MaterialDateRangePickerComponent1);
@@ -188,12 +188,12 @@ class ViewMaterialDateRangePickerComponent0 extends AppView<import2.MaterialDate
     addShimC(_el_3);
     _DropdownButtonComponent_3_5 = new import10.DropdownButtonComponent();
     _compView_3.create(_DropdownButtonComponent_3_5, [const []]);
-    var _anchor_4 = ngAnchor.clone(false);
+    final _anchor_4 = createViewContainerAnchor();
     _el_2.append(_anchor_4);
     _appEl_4 = new ViewContainer(4, 2, this, _anchor_4);
     TemplateRef _TemplateRef_4_8 = new TemplateRef(_appEl_4, viewFactory_MaterialDateRangePickerComponent2);
     _NgIf_4_9 = new NgIf(_appEl_4, _TemplateRef_4_8);
-    var _anchor_5 = ngAnchor.clone(false);
+    final _anchor_5 = createViewContainerAnchor();
     _el_0.append(_anchor_5);
     _appEl_5 = new ViewContainer(5, 0, this, _anchor_5);
     TemplateRef _TemplateRef_5_8 = new TemplateRef(_appEl_5, viewFactory_MaterialDateRangePickerComponent3);
@@ -205,7 +205,7 @@ class ViewMaterialDateRangePickerComponent0 extends AppView<import2.MaterialDate
     addShimC(_el_6);
     _appEl_6 = new ViewContainer(6, null, this, _el_6);
     _MaterialPopupComponent_6_8 = new import12.MaterialPopupComponent(parentView.injectorGet(import23.PopupHierarchy, viewData.parentIndex, null), parentView.injectorGet(import12.MaterialPopupComponent, viewData.parentIndex, null), null, parentView.injectorGet(import24.NgZone, viewData.parentIndex), parentView.injectorGet(import25.OverlayService, viewData.parentIndex), parentView.injectorGet(import26.ZIndexer, viewData.parentIndex), parentView.injectorGet(const import27.OpaqueToken<List<import29.RelativePosition>>('defaultPopupPositions'), viewData.parentIndex), parentView.injectorGet(const import27.OpaqueToken('overlayRepositionLoop'), viewData.parentIndex), parentView.injectorGet(import30.PopupSizeProvider, viewData.parentIndex, null), _compView_6.ref, _appEl_6, new ElementRef(_el_6));
-    var _anchor_7 = ngAnchor.clone(false);
+    final _anchor_7 = createViewContainerAnchor();
     _appEl_7 = new ViewContainer(7, 6, this, _anchor_7);
     TemplateRef _TemplateRef_7_8 = new TemplateRef(_appEl_7, viewFactory_MaterialDateRangePickerComponent4);
     _NgIf_7_9 = new NgIf(_appEl_7, _TemplateRef_7_8);
@@ -349,7 +349,7 @@ class _ViewMaterialDateRangePickerComponent1 extends AppView<import2.MaterialDat
   import3.DivElement _el_0;
   import3.Text _text_1;
   var _expr_0;
-  _ViewMaterialDateRangePickerComponent1(AppView<dynamic> parentView, int parentIndex) : super(import14.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMaterialDateRangePickerComponent1(AppView<dynamic> parentView, int parentIndex) : super(import14.ViewType.embedded, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMaterialDateRangePickerComponent0._renderType;
   }
   @override
@@ -384,7 +384,7 @@ class _ViewMaterialDateRangePickerComponent2 extends AppView<import2.MaterialDat
   import35.ViewNextPrevComponent0 _compView_0;
   import36.NextPrevComponent _NextPrevComponent_0_5;
   bool _expr_0;
-  _ViewMaterialDateRangePickerComponent2(AppView<dynamic> parentView, int parentIndex) : super(import14.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMaterialDateRangePickerComponent2(AppView<dynamic> parentView, int parentIndex) : super(import14.ViewType.embedded, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMaterialDateRangePickerComponent0._renderType;
   }
   @override
@@ -438,7 +438,7 @@ class _ViewMaterialDateRangePickerComponent3 extends AppView<import2.MaterialDat
   import3.DivElement _el_0;
   import3.Text _text_1;
   var _expr_0;
-  _ViewMaterialDateRangePickerComponent3(AppView<dynamic> parentView, int parentIndex) : super(import14.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMaterialDateRangePickerComponent3(AppView<dynamic> parentView, int parentIndex) : super(import14.ViewType.embedded, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMaterialDateRangePickerComponent0._renderType;
   }
   @override
@@ -473,21 +473,22 @@ class _ViewMaterialDateRangePickerComponent4 extends AppView<import2.MaterialDat
   import37.ViewFocusTrapComponent0 _compView_0;
   import38.FocusTrapComponent _FocusTrapComponent_0_5;
   bool _query_AutoFocusDirective_0_0_isDirty = true;
-  import3.Element _el_1;
-  import39.ViewDateRangeEditorComponent0 _compView_1;
-  import40.DateRangeEditorComponent _DateRangeEditorComponent_1_5;
-  import3.DivElement _el_2;
+  import3.DivElement _el_1;
+  import3.Element _el_2;
+  import39.ViewDateRangeEditorComponent0 _compView_2;
+  import40.DateRangeEditorComponent _DateRangeEditorComponent_2_5;
   import3.DivElement _el_3;
-  import3.Element _el_5;
-  import41.ViewMaterialButtonComponent0 _compView_5;
-  import42.AcxDarkTheme _AcxDarkTheme_5_5;
-  import43.MaterialButtonComponent _MaterialButtonComponent_5_6;
-  import3.Text _text_6;
-  import3.Element _el_7;
-  import41.ViewMaterialButtonComponent0 _compView_7;
-  import42.AcxDarkTheme _AcxDarkTheme_7_5;
-  import43.MaterialButtonComponent _MaterialButtonComponent_7_6;
-  import3.Text _text_8;
+  import3.DivElement _el_4;
+  import3.Element _el_6;
+  import41.ViewMaterialButtonComponent0 _compView_6;
+  import42.AcxDarkTheme _AcxDarkTheme_6_5;
+  import43.MaterialButtonComponent _MaterialButtonComponent_6_6;
+  import3.Text _text_7;
+  import3.Element _el_8;
+  import41.ViewMaterialButtonComponent0 _compView_8;
+  import42.AcxDarkTheme _AcxDarkTheme_8_5;
+  import43.MaterialButtonComponent _MaterialButtonComponent_8_6;
+  import3.Text _text_9;
   bool _expr_0;
   bool _expr_2;
   bool _expr_3;
@@ -503,7 +504,7 @@ class _ViewMaterialDateRangePickerComponent4 extends AppView<import2.MaterialDat
   bool _expr_13;
   var _expr_14;
   var _expr_15;
-  _ViewMaterialDateRangePickerComponent4(AppView<dynamic> parentView, int parentIndex) : super(import14.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMaterialDateRangePickerComponent4(AppView<dynamic> parentView, int parentIndex) : super(import14.ViewType.embedded, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMaterialDateRangePickerComponent0._renderType;
   }
   @override
@@ -513,68 +514,73 @@ class _ViewMaterialDateRangePickerComponent4 extends AppView<import2.MaterialDat
     _el_0.className = 'popup-contents';
     addShimC(_el_0);
     _FocusTrapComponent_0_5 = new import38.FocusTrapComponent();
-    _compView_1 = new import39.ViewDateRangeEditorComponent0(this, 1);
-    _el_1 = _compView_1.rootEl;
-    addShimC(_el_1);
-    _DateRangeEditorComponent_1_5 = new import40.DateRangeEditorComponent(_el_1, parentView.parentView.injectorGet(import19.DomService, parentView.viewData.parentIndex), parentView.parentView.injectorGet(import44.ManagedZone, parentView.viewData.parentIndex), parentView.parentView.injectorGet(import40.DateRangeEditorHost, parentView.viewData.parentIndex, null), parentView.parentView.injectorGet(const import27.OpaqueToken('third_party.dart_src.acx.material_datepicker.datepickerClock'), parentView.viewData.parentIndex, null), parentView.parentView.injectorGet(import45.Clock, parentView.viewData.parentIndex));
-    _compView_1.create(_DateRangeEditorComponent_1_5, []);
     var doc = import3.document;
-    _el_2 = doc.createElement('div');
-    _el_2.className = 'apply-bar';
+    _el_1 = doc.createElement('div');
+    _el_1.className = 'wrapper';
+    addShimC(_el_1);
+    _compView_2 = new import39.ViewDateRangeEditorComponent0(this, 2);
+    _el_2 = _compView_2.rootEl;
+    _el_1.append(_el_2);
     addShimC(_el_2);
-    _el_3 = createDivAndAppend(doc, _el_2);
-    _el_3.className = 'separator';
+    _DateRangeEditorComponent_2_5 = new import40.DateRangeEditorComponent(_el_2, parentView.parentView.injectorGet(import19.DomService, parentView.viewData.parentIndex), parentView.parentView.injectorGet(import44.ManagedZone, parentView.viewData.parentIndex), parentView.parentView.injectorGet(import40.DateRangeEditorHost, parentView.viewData.parentIndex, null), parentView.parentView.injectorGet(const import27.OpaqueToken('third_party.dart_src.acx.material_datepicker.datepickerClock'), parentView.viewData.parentIndex, null), parentView.parentView.injectorGet(import45.Clock, parentView.viewData.parentIndex));
+    _compView_2.create(_DateRangeEditorComponent_2_5, []);
+    project(_el_1, 0);
+    _el_3 = createDivAndAppend(doc, _el_1);
+    _el_3.className = 'apply-bar';
     addShimC(_el_3);
-    import3.Text _text_4 = new import3.Text(' ');
-    _el_3.append(_text_4);
-    _compView_5 = new import41.ViewMaterialButtonComponent0(this, 5);
-    _el_5 = _compView_5.rootEl;
-    _el_2.append(_el_5);
-    _el_5.className = 'cancel';
-    addShimC(_el_5);
-    _AcxDarkTheme_5_5 = new import42.AcxDarkTheme(parentView.parentView.injectorGet(const import27.OpaqueToken('acxDarkTheme'), parentView.viewData.parentIndex, null));
-    _MaterialButtonComponent_5_6 = new import43.MaterialButtonComponent(_el_5, _AcxDarkTheme_5_5, _compView_5.ref, null);
-    _text_6 = new import3.Text('');
-    _compView_5.create(_MaterialButtonComponent_5_6, [
-      [_text_6]
+    _el_4 = createDivAndAppend(doc, _el_3);
+    _el_4.className = 'separator';
+    addShimC(_el_4);
+    import3.Text _text_5 = new import3.Text(' ');
+    _el_4.append(_text_5);
+    _compView_6 = new import41.ViewMaterialButtonComponent0(this, 6);
+    _el_6 = _compView_6.rootEl;
+    _el_3.append(_el_6);
+    _el_6.className = 'cancel';
+    addShimC(_el_6);
+    _AcxDarkTheme_6_5 = new import42.AcxDarkTheme(parentView.parentView.injectorGet(const import27.OpaqueToken('acxDarkTheme'), parentView.viewData.parentIndex, null));
+    _MaterialButtonComponent_6_6 = new import43.MaterialButtonComponent(_el_6, _AcxDarkTheme_6_5, _compView_6.ref, null);
+    _text_7 = new import3.Text('');
+    _compView_6.create(_MaterialButtonComponent_6_6, [
+      [_text_7]
     ]);
-    _compView_7 = new import41.ViewMaterialButtonComponent0(this, 7);
-    _el_7 = _compView_7.rootEl;
-    _el_2.append(_el_7);
-    _el_7.className = 'apply';
-    addShimC(_el_7);
-    _AcxDarkTheme_7_5 = new import42.AcxDarkTheme(parentView.parentView.injectorGet(const import27.OpaqueToken('acxDarkTheme'), parentView.viewData.parentIndex, null));
-    _MaterialButtonComponent_7_6 = new import43.MaterialButtonComponent(_el_7, _AcxDarkTheme_7_5, _compView_7.ref, null);
-    _text_8 = new import3.Text('');
-    _compView_7.create(_MaterialButtonComponent_7_6, [
-      [_text_8]
+    _compView_8 = new import41.ViewMaterialButtonComponent0(this, 8);
+    _el_8 = _compView_8.rootEl;
+    _el_3.append(_el_8);
+    _el_8.className = 'apply';
+    addShimC(_el_8);
+    _AcxDarkTheme_8_5 = new import42.AcxDarkTheme(parentView.parentView.injectorGet(const import27.OpaqueToken('acxDarkTheme'), parentView.viewData.parentIndex, null));
+    _MaterialButtonComponent_8_6 = new import43.MaterialButtonComponent(_el_8, _AcxDarkTheme_8_5, _compView_8.ref, null);
+    _text_9 = new import3.Text('');
+    _compView_8.create(_MaterialButtonComponent_8_6, [
+      [_text_9]
     ]);
     _compView_0.create(_FocusTrapComponent_0_5, [
-      <dynamic>[_el_1]..addAll(projectableNodes[0])..addAll([_el_2])
+      [_el_1]
     ]);
     _el_0.addEventListener('keypress', eventHandler1(ctx.onKeyPress));
     _el_0.addEventListener('keydown', eventHandler1(ctx.onKeyDown));
     _el_0.addEventListener('keyup', eventHandler1(ctx.onKeyUp));
-    final subscription_0 = _DateRangeEditorComponent_1_5.presetRangeSelected.listen(eventHandler1(ctx.onRangeClicked));
-    final subscription_1 = _MaterialButtonComponent_5_6.trigger.listen(eventHandler1(_handle_trigger_5_0));
-    final subscription_2 = _MaterialButtonComponent_7_6.trigger.listen(eventHandler1(_handle_trigger_7_0));
+    final subscription_0 = _DateRangeEditorComponent_2_5.presetRangeSelected.listen(eventHandler1(ctx.onRangeClicked));
+    final subscription_1 = _MaterialButtonComponent_6_6.trigger.listen(eventHandler1(_handle_trigger_6_0));
+    final subscription_2 = _MaterialButtonComponent_8_6.trigger.listen(eventHandler1(_handle_trigger_8_0));
     init([_el_0], [subscription_0, subscription_1, subscription_2]);
     return null;
   }
 
   @override
   dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
-    if ((identical(token, import42.AcxDarkTheme) && ((5 <= nodeIndex) && (nodeIndex <= 6)))) {
-      return _AcxDarkTheme_5_5;
+    if ((identical(token, import42.AcxDarkTheme) && ((6 <= nodeIndex) && (nodeIndex <= 7)))) {
+      return _AcxDarkTheme_6_5;
     }
-    if (((identical(token, import43.MaterialButtonComponent) || identical(token, import18.ButtonDirective)) && ((5 <= nodeIndex) && (nodeIndex <= 6)))) {
-      return _MaterialButtonComponent_5_6;
+    if (((identical(token, import43.MaterialButtonComponent) || identical(token, import18.ButtonDirective)) && ((6 <= nodeIndex) && (nodeIndex <= 7)))) {
+      return _MaterialButtonComponent_6_6;
     }
-    if ((identical(token, import42.AcxDarkTheme) && ((7 <= nodeIndex) && (nodeIndex <= 8)))) {
-      return _AcxDarkTheme_7_5;
+    if ((identical(token, import42.AcxDarkTheme) && ((8 <= nodeIndex) && (nodeIndex <= 9)))) {
+      return _AcxDarkTheme_8_5;
     }
-    if (((identical(token, import43.MaterialButtonComponent) || identical(token, import18.ButtonDirective)) && ((7 <= nodeIndex) && (nodeIndex <= 8)))) {
-      return _MaterialButtonComponent_7_6;
+    if (((identical(token, import43.MaterialButtonComponent) || identical(token, import18.ButtonDirective)) && ((8 <= nodeIndex) && (nodeIndex <= 9)))) {
+      return _MaterialButtonComponent_8_6;
     }
     return notFoundResult;
   }
@@ -586,122 +592,122 @@ class _ViewMaterialDateRangePickerComponent4 extends AppView<import2.MaterialDat
     bool firstCheck = (this.cdState == 0);
     if (firstCheck) {
       if (!identical(_ctx.model, null)) {
-        (_DateRangeEditorComponent_1_5.model = _ctx.model);
+        (_DateRangeEditorComponent_2_5.model = _ctx.model);
       }
     }
     final currVal_2 = _ctx.supportsClearRange;
     if (!identical(_expr_2, currVal_2)) {
-      _DateRangeEditorComponent_1_5.supportsClearRange = currVal_2;
+      _DateRangeEditorComponent_2_5.supportsClearRange = currVal_2;
       _expr_2 = currVal_2;
     }
     final currVal_3 = _ctx.supportsCustomRange;
     if (!identical(_expr_3, currVal_3)) {
-      _DateRangeEditorComponent_1_5.supportsCustomRange = currVal_3;
+      _DateRangeEditorComponent_2_5.supportsCustomRange = currVal_3;
       _expr_3 = currVal_3;
     }
     final currVal_4 = _ctx.relativeDaysToToday;
     if (!identical(_expr_4, currVal_4)) {
-      _DateRangeEditorComponent_1_5.relativeDaysToToday = currVal_4;
+      _DateRangeEditorComponent_2_5.relativeDaysToToday = currVal_4;
       _expr_4 = currVal_4;
     }
     final currVal_5 = _ctx.allowHighlightUpdates;
     if (!identical(_expr_5, currVal_5)) {
-      _DateRangeEditorComponent_1_5.allowHighlightUpdates = currVal_5;
+      _DateRangeEditorComponent_2_5.allowHighlightUpdates = currVal_5;
       _expr_5 = currVal_5;
     }
     final currVal_6 = _ctx.supportsComparison;
     if (!identical(_expr_6, currVal_6)) {
-      _DateRangeEditorComponent_1_5.supportsComparison = currVal_6;
+      _DateRangeEditorComponent_2_5.supportsComparison = currVal_6;
       _expr_6 = currVal_6;
     }
     final currVal_7 = _ctx.compact;
     if (!identical(_expr_7, currVal_7)) {
-      _DateRangeEditorComponent_1_5.compact = currVal_7;
+      _DateRangeEditorComponent_2_5.compact = currVal_7;
       _expr_7 = currVal_7;
     }
     final currVal_8 = _ctx.supportsDaysInputs;
     if (!identical(_expr_8, currVal_8)) {
-      _DateRangeEditorComponent_1_5.supportsDaysInputs = currVal_8;
+      _DateRangeEditorComponent_2_5.supportsDaysInputs = currVal_8;
       _expr_8 = currVal_8;
     }
     final currVal_9 = _ctx.presets;
     if (!identical(_expr_9, currVal_9)) {
-      _DateRangeEditorComponent_1_5.presets = currVal_9;
+      _DateRangeEditorComponent_2_5.presets = currVal_9;
       _expr_9 = currVal_9;
     }
     final currVal_10 = _ctx.minDate;
     if (!identical(_expr_10, currVal_10)) {
-      _DateRangeEditorComponent_1_5.minDate = currVal_10;
+      _DateRangeEditorComponent_2_5.minDate = currVal_10;
       _expr_10 = currVal_10;
     }
     final currVal_11 = _ctx.maxDate;
     if (!identical(_expr_11, currVal_11)) {
-      _DateRangeEditorComponent_1_5.maxDate = currVal_11;
+      _DateRangeEditorComponent_2_5.maxDate = currVal_11;
       _expr_11 = currVal_11;
     }
     final currVal_12 = _ctx.isCalendarCreated;
     if (!identical(_expr_12, currVal_12)) {
-      _DateRangeEditorComponent_1_5.isCalendarCreated = currVal_12;
+      _DateRangeEditorComponent_2_5.isCalendarCreated = currVal_12;
       _expr_12 = currVal_12;
     }
     if (firstCheck) {
-      _DateRangeEditorComponent_1_5.ngOnInit();
+      _DateRangeEditorComponent_2_5.ngOnInit();
     }
     changed = false;
     if (changed) {
-      _compView_5.markAsCheckOnce();
+      _compView_6.markAsCheckOnce();
     }
     changed = false;
     if (changed) {
-      _compView_7.markAsCheckOnce();
+      _compView_8.markAsCheckOnce();
     }
     final currVal_0 = _ctx.compact;
     if (!identical(_expr_0, currVal_0)) {
       updateElemClass(_el_0, 'compact', currVal_0);
       _expr_0 = currVal_0;
     }
-    _compView_1.detectHostChanges(firstCheck);
+    _compView_2.detectHostChanges(firstCheck);
     final currVal_13 = _ctx.applyBarVisible;
     if (!identical(_expr_13, currVal_13)) {
-      updateClass(_el_2, 'visible', currVal_13);
+      updateClass(_el_3, 'visible', currVal_13);
       _expr_13 = currVal_13;
     }
-    _compView_5.detectHostChanges(firstCheck);
+    _compView_6.detectHostChanges(firstCheck);
     final currVal_14 = (_ctx.cancelButtonMsg ?? '');
     if (!identical(_expr_14, currVal_14)) {
-      _text_6.text = currVal_14;
+      _text_7.text = currVal_14;
       _expr_14 = currVal_14;
     }
-    _compView_7.detectHostChanges(firstCheck);
+    _compView_8.detectHostChanges(firstCheck);
     final currVal_15 = (_ctx.applyButtonMsg ?? '');
     if (!identical(_expr_15, currVal_15)) {
-      _text_8.text = currVal_15;
+      _text_9.text = currVal_15;
       _expr_15 = currVal_15;
     }
     _compView_0.detectChanges();
-    _compView_1.detectChanges();
-    _compView_5.detectChanges();
-    _compView_7.detectChanges();
+    _compView_2.detectChanges();
+    _compView_6.detectChanges();
+    _compView_8.detectChanges();
     if (firstCheck) {
-      _DateRangeEditorComponent_1_5.ngAfterViewInit();
+      _DateRangeEditorComponent_2_5.ngAfterViewInit();
     }
   }
 
   @override
   void destroyInternal() {
     _compView_0?.destroy();
-    _compView_1?.destroy();
-    _compView_5?.destroy();
-    _compView_7?.destroy();
+    _compView_2?.destroy();
+    _compView_6?.destroy();
+    _compView_8?.destroy();
     _FocusTrapComponent_0_5.ngOnDestroy();
   }
 
-  void _handle_trigger_5_0($event) {
+  void _handle_trigger_6_0($event) {
     ctx.cancel();
     $event.preventDefault();
   }
 
-  void _handle_trigger_7_0($event) {
+  void _handle_trigger_8_0($event) {
     ctx.apply($event);
     $event.preventDefault();
   }
@@ -716,7 +722,7 @@ const List<dynamic> styles$MaterialDateRangePickerComponentHost = const [];
 class _ViewMaterialDateRangePickerComponentHost0 extends AppView<dynamic> {
   ViewMaterialDateRangePickerComponent0 _compView_0;
   import2.MaterialDateRangePickerComponent _MaterialDateRangePickerComponent_0_5;
-  _ViewMaterialDateRangePickerComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import14.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
+  _ViewMaterialDateRangePickerComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import14.ViewType.host, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewMaterialDateRangePickerComponent0(this, 0);

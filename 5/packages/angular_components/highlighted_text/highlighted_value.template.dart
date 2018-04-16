@@ -38,7 +38,7 @@ class ViewHighlightedValueComponent0 extends AppView<import2.HighlightedValueCom
   import4.NgFor _NgFor_0_9;
   var _expr_0;
   static RenderComponentType _renderType;
-  ViewHighlightedValueComponent0(AppView<dynamic> parentView, int parentIndex) : super(import6.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  ViewHighlightedValueComponent0(AppView<dynamic> parentView, int parentIndex) : super(import6.ViewType.component, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     rootEl = import8.document.createElement('highlight-value');
     _renderType ??= import9.appViewUtils.createRenderType('', ViewEncapsulation.Emulated, styles$HighlightedValueComponent);
     setupComponentType(_renderType);
@@ -47,7 +47,7 @@ class ViewHighlightedValueComponent0 extends AppView<import2.HighlightedValueCom
   ComponentRef<import2.HighlightedValueComponent> build() {
     final _rootEl = rootEl;
     final import8.HtmlElement parentRenderNode = initViewRoot(_rootEl);
-    var _anchor_0 = ngAnchor.clone(false);
+    final _anchor_0 = createViewContainerAnchor();
     parentRenderNode.append(_anchor_0);
     _appEl_0 = new ViewContainer(0, null, this, _anchor_0);
     TemplateRef _TemplateRef_0_8 = new TemplateRef(_appEl_0, viewFactory_HighlightedValueComponent1);
@@ -83,7 +83,7 @@ class _ViewHighlightedValueComponent1 extends AppView<import2.HighlightedValueCo
   import8.Text _text_1;
   bool _expr_0;
   var _expr_1;
-  _ViewHighlightedValueComponent1(AppView<dynamic> parentView, int parentIndex) : super(import6.ViewType.EMBEDDED, {'\$implicit': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewHighlightedValueComponent1(AppView<dynamic> parentView, int parentIndex) : super(import6.ViewType.embedded, {'\$implicit': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewHighlightedValueComponent0._renderType;
   }
   @override
@@ -123,7 +123,7 @@ const List<dynamic> styles$HighlightedValueComponentHost = const [];
 class _ViewHighlightedValueComponentHost0 extends AppView<dynamic> {
   ViewHighlightedValueComponent0 _compView_0;
   import2.HighlightedValueComponent _HighlightedValueComponent_0_5;
-  _ViewHighlightedValueComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import6.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
+  _ViewHighlightedValueComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import6.ViewType.host, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewHighlightedValueComponent0(this, 0);

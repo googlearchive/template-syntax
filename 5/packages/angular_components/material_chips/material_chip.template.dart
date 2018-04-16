@@ -49,7 +49,7 @@ class ViewMaterialChipComponent0 extends AppView<import2.MaterialChipComponent> 
   var _expr_1;
   var _expr_2;
   static RenderComponentType _renderType;
-  ViewMaterialChipComponent0(AppView<dynamic> parentView, int parentIndex) : super(import7.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckOnce) {
+  ViewMaterialChipComponent0(AppView<dynamic> parentView, int parentIndex) : super(import7.ViewType.component, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckOnce) {
     rootEl = import5.document.createElement('material-chip');
     rootEl.className = 'themeable';
     _renderType ??= import9.appViewUtils.createRenderType('', ViewEncapsulation.Emulated, styles$MaterialChipComponent);
@@ -59,7 +59,7 @@ class ViewMaterialChipComponent0 extends AppView<import2.MaterialChipComponent> 
   ComponentRef<import2.MaterialChipComponent> build() {
     final _rootEl = rootEl;
     final import5.HtmlElement parentRenderNode = initViewRoot(_rootEl);
-    var _anchor_0 = ngAnchor.clone(false);
+    final _anchor_0 = createViewContainerAnchor();
     parentRenderNode.append(_anchor_0);
     _appEl_0 = new ViewContainer(0, null, this, _anchor_0);
     TemplateRef _TemplateRef_0_8 = new TemplateRef(_appEl_0, viewFactory_MaterialChipComponent1);
@@ -71,7 +71,7 @@ class ViewMaterialChipComponent0 extends AppView<import2.MaterialChipComponent> 
     _text_2 = new import5.Text('');
     _el_1.append(_text_2);
     project(_el_1, 1);
-    var _anchor_3 = ngAnchor.clone(false);
+    final _anchor_3 = createViewContainerAnchor();
     parentRenderNode.append(_anchor_3);
     _appEl_3 = new ViewContainer(3, null, this, _anchor_3);
     TemplateRef _TemplateRef_3_8 = new TemplateRef(_appEl_3, viewFactory_MaterialChipComponent2);
@@ -112,7 +112,7 @@ AppView<import2.MaterialChipComponent> viewFactory_MaterialChipComponent0(AppVie
 
 class _ViewMaterialChipComponent1 extends AppView<import2.MaterialChipComponent> {
   import5.DivElement _el_0;
-  _ViewMaterialChipComponent1(AppView<dynamic> parentView, int parentIndex) : super(import7.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMaterialChipComponent1(AppView<dynamic> parentView, int parentIndex) : super(import7.ViewType.embedded, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMaterialChipComponent0._renderType;
   }
   @override
@@ -137,7 +137,7 @@ class _ViewMaterialChipComponent2 extends AppView<import2.MaterialChipComponent>
   import5.Element _el_1;
   var _expr_0;
   var _expr_1;
-  _ViewMaterialChipComponent2(AppView<dynamic> parentView, int parentIndex) : super(import7.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMaterialChipComponent2(AppView<dynamic> parentView, int parentIndex) : super(import7.ViewType.embedded, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMaterialChipComponent0._renderType;
   }
   @override
@@ -197,7 +197,7 @@ const List<dynamic> styles$MaterialChipComponentHost = const [];
 class _ViewMaterialChipComponentHost0 extends AppView<dynamic> {
   ViewMaterialChipComponent0 _compView_0;
   import2.MaterialChipComponent _MaterialChipComponent_0_5;
-  _ViewMaterialChipComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import7.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
+  _ViewMaterialChipComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import7.ViewType.host, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewMaterialChipComponent0(this, 0);

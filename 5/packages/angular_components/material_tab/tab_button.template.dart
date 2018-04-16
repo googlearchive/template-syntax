@@ -43,7 +43,7 @@ class ViewTabButtonComponent0 extends AppView<import2.TabButtonComponent> {
   bool _expr_5;
   bool _expr_6;
   static RenderComponentType _renderType;
-  ViewTabButtonComponent0(AppView<dynamic> parentView, int parentIndex) : super(import7.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  ViewTabButtonComponent0(AppView<dynamic> parentView, int parentIndex) : super(import7.ViewType.component, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     rootEl = import3.document.createElement('tab-button');
     _renderType ??= import9.appViewUtils.createRenderType('', ViewEncapsulation.Emulated, styles$TabButtonComponent);
     setupComponentType(_renderType);
@@ -140,7 +140,7 @@ const List<dynamic> styles$TabButtonComponentHost = const [];
 class _ViewTabButtonComponentHost0 extends AppView<dynamic> {
   ViewTabButtonComponent0 _compView_0;
   import2.TabButtonComponent _TabButtonComponent_0_5;
-  _ViewTabButtonComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import7.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
+  _ViewTabButtonComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import7.ViewType.host, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewTabButtonComponent0(this, 0);

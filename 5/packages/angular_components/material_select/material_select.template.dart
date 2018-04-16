@@ -65,8 +65,9 @@ class ViewMaterialSelectComponent0 extends AppView<import2.MaterialSelectCompone
   NgIf _NgIf_1_9;
   var _expr_0;
   var _expr_2;
+  var _expr_3;
   static RenderComponentType _renderType;
-  ViewMaterialSelectComponent0(AppView<dynamic> parentView, int parentIndex) : super(import9.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  ViewMaterialSelectComponent0(AppView<dynamic> parentView, int parentIndex) : super(import9.ViewType.component, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     rootEl = import3.document.createElement('material-select');
     createAttr(rootEl, 'role', 'listbox');
     _renderType ??= import11.appViewUtils.createRenderType('', ViewEncapsulation.Emulated, styles$MaterialSelectComponent);
@@ -81,7 +82,7 @@ class ViewMaterialSelectComponent0 extends AppView<import2.MaterialSelectCompone
     parentRenderNode.append(_el_0);
     addShimC(_el_0);
     _MaterialListComponent_0_5 = new import5.MaterialListComponent();
-    var _anchor_1 = ngAnchor.clone(false);
+    final _anchor_1 = createViewContainerAnchor();
     _appEl_1 = new ViewContainer(1, 0, this, _anchor_1);
     TemplateRef _TemplateRef_1_8 = new TemplateRef(_appEl_1, viewFactory_MaterialSelectComponent1);
     _NgIf_1_9 = new NgIf(_appEl_1, _TemplateRef_1_8);
@@ -120,10 +121,15 @@ class ViewMaterialSelectComponent0 extends AppView<import2.MaterialSelectCompone
   }
 
   void detectHostChanges(bool firstCheck) {
-    final currVal_2 = ctx.disabledStr;
+    final currVal_2 = ctx.isMultiSelect;
     if (!identical(_expr_2, currVal_2)) {
-      setAttr(rootEl, 'aria-disabled', currVal_2?.toString());
+      setAttr(rootEl, 'aria-multiselectable', currVal_2?.toString());
       _expr_2 = currVal_2;
+    }
+    final currVal_3 = ctx.disabledStr;
+    if (!identical(_expr_3, currVal_3)) {
+      setAttr(rootEl, 'aria-disabled', currVal_3?.toString());
+      _expr_3 = currVal_3;
     }
   }
 }
@@ -137,7 +143,7 @@ class _ViewMaterialSelectComponent1 extends AppView<import2.MaterialSelectCompon
   ViewContainer _appEl_1;
   import14.NgFor _NgFor_1_9;
   var _expr_0;
-  _ViewMaterialSelectComponent1(AppView<dynamic> parentView, int parentIndex) : super(import9.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMaterialSelectComponent1(AppView<dynamic> parentView, int parentIndex) : super(import9.ViewType.embedded, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMaterialSelectComponent0._renderType;
   }
   @override
@@ -146,7 +152,7 @@ class _ViewMaterialSelectComponent1 extends AppView<import2.MaterialSelectCompon
     _el_0 = doc.createElement('div');
     _el_0.className = 'options-wrapper';
     addShimC(_el_0);
-    var _anchor_1 = ngAnchor.clone(false);
+    final _anchor_1 = createViewContainerAnchor();
     _el_0.append(_anchor_1);
     _appEl_1 = new ViewContainer(1, 0, this, _anchor_1);
     TemplateRef _TemplateRef_1_8 = new TemplateRef(_appEl_1, viewFactory_MaterialSelectComponent2);
@@ -188,7 +194,7 @@ class _ViewMaterialSelectComponent2 extends AppView<import2.MaterialSelectCompon
   ViewContainer _appEl_1;
   NgIf _NgIf_1_9;
   bool _expr_0;
-  _ViewMaterialSelectComponent2(AppView<dynamic> parentView, int parentIndex) : super(import9.ViewType.EMBEDDED, {'\$implicit': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMaterialSelectComponent2(AppView<dynamic> parentView, int parentIndex) : super(import9.ViewType.embedded, {'\$implicit': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMaterialSelectComponent0._renderType;
   }
   @override
@@ -197,7 +203,7 @@ class _ViewMaterialSelectComponent2 extends AppView<import2.MaterialSelectCompon
     _el_0 = doc.createElement('div');
     createAttr(_el_0, 'group', '');
     addShimC(_el_0);
-    var _anchor_1 = ngAnchor.clone(false);
+    final _anchor_1 = createViewContainerAnchor();
     _el_0.append(_anchor_1);
     _appEl_1 = new ViewContainer(1, 0, this, _anchor_1);
     TemplateRef _TemplateRef_1_8 = new TemplateRef(_appEl_1, viewFactory_MaterialSelectComponent3);
@@ -234,16 +240,16 @@ class _ViewMaterialSelectComponent3 extends AppView<import2.MaterialSelectCompon
   ViewContainer _appEl_1;
   import14.NgFor _NgFor_1_9;
   var _expr_1;
-  _ViewMaterialSelectComponent3(AppView<dynamic> parentView, int parentIndex) : super(import9.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMaterialSelectComponent3(AppView<dynamic> parentView, int parentIndex) : super(import9.ViewType.embedded, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMaterialSelectComponent0._renderType;
   }
   @override
   ComponentRef<import2.MaterialSelectComponent> build() {
-    var _anchor_0 = ngAnchor.clone(false);
+    final _anchor_0 = createViewContainerAnchor();
     _appEl_0 = new ViewContainer(0, null, this, _anchor_0);
     TemplateRef _TemplateRef_0_8 = new TemplateRef(_appEl_0, viewFactory_MaterialSelectComponent4);
     _NgIf_0_9 = new NgIf(_appEl_0, _TemplateRef_0_8);
-    var _anchor_1 = ngAnchor.clone(false);
+    final _anchor_1 = createViewContainerAnchor();
     _appEl_1 = new ViewContainer(1, null, this, _anchor_1);
     TemplateRef _TemplateRef_1_8 = new TemplateRef(_appEl_1, viewFactory_MaterialSelectComponent5);
     _NgFor_1_9 = new import14.NgFor(_appEl_1, _TemplateRef_1_8);
@@ -280,7 +286,7 @@ class _ViewMaterialSelectComponent4 extends AppView<import2.MaterialSelectCompon
   import3.Element _el_0;
   import3.Text _text_1;
   var _expr_0;
-  _ViewMaterialSelectComponent4(AppView<dynamic> parentView, int parentIndex) : super(import9.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMaterialSelectComponent4(AppView<dynamic> parentView, int parentIndex) : super(import9.ViewType.embedded, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMaterialSelectComponent0._renderType;
   }
   @override
@@ -320,7 +326,7 @@ class _ViewMaterialSelectComponent5 extends AppView<import2.MaterialSelectCompon
   var _expr_3;
   var _expr_4;
   var _expr_5;
-  _ViewMaterialSelectComponent5(AppView<dynamic> parentView, int parentIndex) : super(import9.ViewType.EMBEDDED, {'\$implicit': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMaterialSelectComponent5(AppView<dynamic> parentView, int parentIndex) : super(import9.ViewType.embedded, {'\$implicit': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMaterialSelectComponent0._renderType;
   }
   @override
@@ -398,7 +404,7 @@ class _ViewMaterialSelectComponentHost0 extends AppView<dynamic> {
   ViewMaterialSelectComponent0 _compView_0;
   import2.MaterialSelectComponent _MaterialSelectComponent_0_5;
   bool _query_SelectionItem_0_0_isDirty = true;
-  _ViewMaterialSelectComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import9.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
+  _ViewMaterialSelectComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import9.ViewType.host, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewMaterialSelectComponent0(this, 0);

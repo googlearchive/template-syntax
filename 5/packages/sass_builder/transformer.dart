@@ -5,16 +5,21 @@ import 'sass_builder.dart';
 /// A pub transformer simply wrapping the [SassBuilder].
 class SassBuilderTransform extends BuilderTransformer {
   static final _outputExtensionKey = 'outputExtension';
-  SassBuilderTransform() : super(new SassBuilder());
-
-  SassBuilderTransform.customExtension(String outputExtension)
-      : super(new SassBuilder(outputExtension: outputExtension));
+  SassBuilderTransform(SassBuilder builder) : super(builder);
 
   factory SassBuilderTransform.asPlugin(BarbackSettings settings) {
+    SassBuilder builder;
+    var outputStyle = settings.configuration[outputStyleKey] as String;
+
     if (settings.configuration.containsKey(_outputExtensionKey)) {
-      return new SassBuilderTransform.customExtension(
-          settings.configuration[_outputExtensionKey] as String);
+      builder = new SassBuilder(
+        outputExtension: settings.configuration[_outputExtensionKey] as String,
+        outputStyle: outputStyle,
+      );
+    } else {
+      builder = new SassBuilder(outputStyle: outputStyle);
     }
-    return new SassBuilderTransform();
+
+    return new SassBuilderTransform(builder);
   }
 }

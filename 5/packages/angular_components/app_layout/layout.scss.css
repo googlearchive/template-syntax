@@ -47,29 +47,28 @@ material-drawer material-list [label] material-icon {
 material-drawer[persistent], material-drawer[permanent] {
   width: 256px;
 }
-material-drawer[persistent] + material-content,
-material-drawer[persistent] + .material-content, material-drawer[permanent] + material-content,
-material-drawer[permanent] + .material-content {
+material-drawer[persistent]:not([end]) ~ material-content,
+material-drawer[persistent]:not([end]) ~ .material-content, material-drawer[permanent]:not([end]) ~ material-content,
+material-drawer[permanent]:not([end]) ~ .material-content {
   margin-left: 256px;
 }
-material-drawer[persistent][end] + material-content,
-material-drawer[persistent][end] + .material-content, material-drawer[permanent][end] + material-content,
-material-drawer[permanent][end] + .material-content {
-  margin-left: 0;
+material-drawer[persistent][end] ~ material-content,
+material-drawer[persistent][end] ~ .material-content, material-drawer[permanent][end] ~ material-content,
+material-drawer[permanent][end] ~ .material-content {
   margin-right: 256px;
 }
-material-drawer[persistent].mat-drawer-collapsed {
+material-drawer[persistent].mat-drawer-collapsed:not([end]) {
   transform: translateX(-100%);
 }
-material-drawer[persistent].mat-drawer-collapsed + material-content,
-material-drawer[persistent].mat-drawer-collapsed + .material-content {
+material-drawer[persistent].mat-drawer-collapsed:not([end]) ~ material-content,
+material-drawer[persistent].mat-drawer-collapsed:not([end]) ~ .material-content {
   margin-left: 0;
 }
 material-drawer[persistent].mat-drawer-collapsed[end] {
   transform: translateX(100%);
 }
-material-drawer[persistent].mat-drawer-collapsed[end] + material-content,
-material-drawer[persistent].mat-drawer-collapsed[end] + .material-content {
+material-drawer[persistent].mat-drawer-collapsed[end] ~ material-content,
+material-drawer[persistent].mat-drawer-collapsed[end] ~ .material-content {
   margin-right: 0;
 }
 material-drawer[persistent], material-drawer[permanent] {
@@ -92,17 +91,15 @@ material-drawer[persistent][end], material-drawer[permanent][end] {
   right: 0;
 }
 material-drawer[persistent] {
-  transition-property: transform, width;
   transition-duration: 150ms;
+  transition-property: transform, width;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-material-drawer[persistent] + material-content,
-material-drawer[persistent] + .material-content {
-  transition: margin-left 150ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-material-drawer[persistent][end] + material-content,
-material-drawer[persistent][end] + .material-content {
-  transition-property: margin-right;
+material-drawer[persistent] ~ material-content,
+material-drawer[persistent] ~ .material-content {
+  transition-duration: 150ms;
+  transition-property: margin-left, margin-right;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 material-content,
@@ -130,28 +127,28 @@ material-content,
   width: 100%;
   z-index: 0;
 }
+.material-header.shadow {
+  /*! @noflip */
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+}
+.material-header ~ material-drawer[permanent], .material-header ~ material-drawer[persistent] {
+  top: 64px;
+}
+.material-header ~ material-content,
+.material-header ~ .material-content {
+  min-height: calc(100% - 64px);
+}
 .material-header.dense-header {
   height: 48px;
 }
 .material-header.dense-header .material-header-row {
   height: 48px;
 }
-.material-header.shadow {
-  /*! @noflip */
-  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
-}
-.material-header + material-drawer[permanent], .material-header + material-drawer[persistent] {
-  top: 64px;
-}
-.material-header + material-drawer + material-content,
-.material-header + material-drawer + .material-content {
-  min-height: calc(100% - 64px);
-}
-.material-header.dense-header + material-drawer[permanent], .material-header.dense-header + material-drawer[persistent] {
+.material-header.dense-header ~ material-drawer[permanent], .material-header.dense-header ~ material-drawer[persistent] {
   top: 48px;
 }
-.material-header.dense-header + material-drawer + material-content,
-.material-header.dense-header + material-drawer + .material-content {
+.material-header.dense-header ~ material-content,
+.material-header.dense-header ~ .material-content {
   min-height: calc(100% - 48px);
 }
 

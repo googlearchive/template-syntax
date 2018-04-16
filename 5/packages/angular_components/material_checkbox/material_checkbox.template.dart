@@ -61,7 +61,7 @@ class ViewMaterialCheckboxComponent0 extends AppView<import2.MaterialCheckboxCom
   var _expr_9;
   var _expr_10;
   static RenderComponentType _renderType;
-  ViewMaterialCheckboxComponent0(AppView<dynamic> parentView, int parentIndex) : super(import9.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckOnce) {
+  ViewMaterialCheckboxComponent0(AppView<dynamic> parentView, int parentIndex) : super(import9.ViewType.component, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckOnce) {
     rootEl = import3.document.createElement('material-checkbox');
     rootEl.className = 'themeable';
     _renderType ??= import11.appViewUtils.createRenderType('', ViewEncapsulation.Emulated, styles$MaterialCheckboxComponent);
@@ -84,7 +84,7 @@ class ViewMaterialCheckboxComponent0 extends AppView<import2.MaterialCheckboxCom
     addShimC(_el_1);
     _GlyphComponent_1_5 = new import5.GlyphComponent(_el_1);
     _compView_1.create(_GlyphComponent_1_5, []);
-    var _anchor_2 = ngAnchor.clone(false);
+    final _anchor_2 = createViewContainerAnchor();
     _el_0.append(_anchor_2);
     _appEl_2 = new ViewContainer(2, 0, this, _anchor_2);
     TemplateRef _TemplateRef_2_8 = new TemplateRef(_appEl_2, viewFactory_MaterialCheckboxComponent1);
@@ -188,7 +188,7 @@ class _ViewMaterialCheckboxComponent1 extends AppView<import2.MaterialCheckboxCo
   import14.ViewMaterialRippleComponent0 _compView_0;
   import15.MaterialRippleComponent _MaterialRippleComponent_0_5;
   var _expr_0;
-  _ViewMaterialCheckboxComponent1(AppView<dynamic> parentView, int parentIndex) : super(import9.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMaterialCheckboxComponent1(AppView<dynamic> parentView, int parentIndex) : super(import9.ViewType.embedded, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMaterialCheckboxComponent0._renderType;
   }
   @override
@@ -235,7 +235,7 @@ const List<dynamic> styles$MaterialCheckboxComponentHost = const [];
 class _ViewMaterialCheckboxComponentHost0 extends AppView<dynamic> {
   ViewMaterialCheckboxComponent0 _compView_0;
   import2.MaterialCheckboxComponent _MaterialCheckboxComponent_0_5;
-  _ViewMaterialCheckboxComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import9.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
+  _ViewMaterialCheckboxComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import9.ViewType.host, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewMaterialCheckboxComponent0(this, 0);

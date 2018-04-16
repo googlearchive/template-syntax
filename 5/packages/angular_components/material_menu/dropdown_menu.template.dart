@@ -59,7 +59,7 @@ class ViewDropdownMenuComponent0 extends AppView<import1.DropdownMenuComponent> 
   var _expr_5;
   var _expr_6;
   static RenderComponentType _renderType;
-  ViewDropdownMenuComponent0(AppView<dynamic> parentView, int parentIndex) : super(import9.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckOnce) {
+  ViewDropdownMenuComponent0(AppView<dynamic> parentView, int parentIndex) : super(import9.ViewType.component, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckOnce) {
     rootEl = import2.document.createElement('dropdown-menu');
     _renderType ??= import11.appViewUtils.createRenderType('', ViewEncapsulation.None, styles$DropdownMenuComponent);
     setupComponentType(_renderType);
@@ -195,7 +195,7 @@ const List<dynamic> styles$DropdownMenuComponentHost = const [];
 class _ViewDropdownMenuComponentHost0 extends AppView<dynamic> {
   ViewDropdownMenuComponent0 _compView_0;
   import1.DropdownMenuComponent _DropdownMenuComponent_0_5;
-  _ViewDropdownMenuComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import9.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
+  _ViewDropdownMenuComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import9.ViewType.host, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewDropdownMenuComponent0(this, 0);

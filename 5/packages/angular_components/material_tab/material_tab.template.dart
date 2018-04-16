@@ -40,7 +40,7 @@ class ViewMaterialTabComponent0 extends AppView<import2.MaterialTabComponent> {
   var _expr_2;
   bool _expr_3;
   static RenderComponentType _renderType;
-  ViewMaterialTabComponent0(AppView<dynamic> parentView, int parentIndex) : super(import6.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  ViewMaterialTabComponent0(AppView<dynamic> parentView, int parentIndex) : super(import6.ViewType.component, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     rootEl = import8.document.createElement('material-tab');
     createAttr(rootEl, 'role', 'tabpanel');
     _renderType ??= import9.appViewUtils.createRenderType('', ViewEncapsulation.Emulated, styles$MaterialTabComponent);
@@ -50,7 +50,7 @@ class ViewMaterialTabComponent0 extends AppView<import2.MaterialTabComponent> {
   ComponentRef<import2.MaterialTabComponent> build() {
     final _rootEl = rootEl;
     final import8.HtmlElement parentRenderNode = initViewRoot(_rootEl);
-    var _anchor_0 = ngAnchor.clone(false);
+    final _anchor_0 = createViewContainerAnchor();
     parentRenderNode.append(_anchor_0);
     _appEl_0 = new ViewContainer(0, null, this, _anchor_0);
     TemplateRef _TemplateRef_0_8 = new TemplateRef(_appEl_0, viewFactory_MaterialTabComponent1);
@@ -96,7 +96,7 @@ AppView<import2.MaterialTabComponent> viewFactory_MaterialTabComponent0(AppView<
 
 class _ViewMaterialTabComponent1 extends AppView<import2.MaterialTabComponent> {
   import8.DivElement _el_0;
-  _ViewMaterialTabComponent1(AppView<dynamic> parentView, int parentIndex) : super(import6.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMaterialTabComponent1(AppView<dynamic> parentView, int parentIndex) : super(import6.ViewType.embedded, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMaterialTabComponent0._renderType;
   }
   @override
@@ -120,7 +120,7 @@ const List<dynamic> styles$MaterialTabComponentHost = const [];
 class _ViewMaterialTabComponentHost0 extends AppView<dynamic> {
   ViewMaterialTabComponent0 _compView_0;
   import2.MaterialTabComponent _MaterialTabComponent_0_5;
-  _ViewMaterialTabComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import6.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
+  _ViewMaterialTabComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import6.ViewType.host, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewMaterialTabComponent0(this, 0);

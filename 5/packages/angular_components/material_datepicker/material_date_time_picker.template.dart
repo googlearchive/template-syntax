@@ -61,7 +61,7 @@ class ViewMaterialDateTimePickerComponent0 extends AppView<import2.MaterialDateT
   var _expr_11;
   var _expr_12;
   static RenderComponentType _renderType;
-  ViewMaterialDateTimePickerComponent0(AppView<dynamic> parentView, int parentIndex) : super(import9.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckOnce) {
+  ViewMaterialDateTimePickerComponent0(AppView<dynamic> parentView, int parentIndex) : super(import9.ViewType.component, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckOnce) {
     rootEl = import3.document.createElement('material-date-time-picker');
     _renderType ??= import11.appViewUtils.createRenderType('', ViewEncapsulation.Emulated, styles$MaterialDateTimePickerComponent);
     setupComponentType(_renderType);
@@ -86,14 +86,6 @@ class ViewMaterialDateTimePickerComponent0 extends AppView<import2.MaterialDateT
     final subscription_1 = _MaterialTimePickerComponent_1_5.timeChange.listen(eventHandler1(_handle_timeChange_1_0));
     init(const [], [subscription_0, subscription_1]);
     return null;
-  }
-
-  @override
-  dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
-    if ((identical(token, import5.MaterialDatepickerComponent) && (0 == nodeIndex))) {
-      return _MaterialDatepickerComponent_0_5;
-    }
-    return notFoundResult;
   }
 
   @override
@@ -213,7 +205,7 @@ const List<dynamic> styles$MaterialDateTimePickerComponentHost = const [];
 class _ViewMaterialDateTimePickerComponentHost0 extends AppView<dynamic> {
   ViewMaterialDateTimePickerComponent0 _compView_0;
   import2.MaterialDateTimePickerComponent _MaterialDateTimePickerComponent_0_5;
-  _ViewMaterialDateTimePickerComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import9.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
+  _ViewMaterialDateTimePickerComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import9.ViewType.host, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewMaterialDateTimePickerComponent0(this, 0);

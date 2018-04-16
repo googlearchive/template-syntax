@@ -37,11 +37,11 @@ typedef Future _ScopeCallback(Future callback());
 /// If [importers] (or, on Node.js, [nodeImporter]) is passed, it's used to
 /// resolve imports in the Sass files. Earlier importers will be preferred.
 ///
-/// If [environment] is passed, it's used as the lexical environment when
-/// evaluating [stylesheet]. It should only contain global definitions.
-///
 /// If [importer] is passed, it's used to resolve relative imports in
 /// [stylesheet] relative to `stylesheet.span.sourceUrl`.
+///
+/// The [functions] are available as global functions when evaluating
+/// [stylesheet].
 ///
 /// Warnings are emitted using [logger], or printed to standard error by
 /// default.
@@ -537,10 +537,28 @@ class _EvaluateVisitor
     var targetText =
         await _interpolationToValue(node.selector, warnForColor: true);
 
-    var target = _adjustParseError(
-        targetText.span,
-        () => new SimpleSelector.parse(targetText.value.trim(),
-            logger: _logger, allowParent: false));
+    var target = _adjustParseError(targetText.span, () {
+      try {
+        return new SimpleSelector.parse(targetText.value.trim(),
+            logger: _logger, allowParent: false);
+      } on SassFormatException catch (error) {
+        CompoundSelector compound;
+        try {
+          compound = new CompoundSelector.parse(targetText.value.trim(),
+              logger: _logger, allowParent: false);
+        } on SassFormatException {
+          throw error;
+        }
+
+        // If the selector was a compound selector but not a simple
+        // selector, emit a more explicit error.
+        throw new SassFormatException(
+            "compound selectors may longer be extended.\n"
+            "Consider `@extend ${compound.components.join(', ')}` instead.\n"
+            "See http://bit.ly/ExtendCompound for details.\n",
+            error.span);
+      }
+    });
     _extender.addExtension(_styleRule.selector, target, node, _mediaQueries);
     return null;
   }

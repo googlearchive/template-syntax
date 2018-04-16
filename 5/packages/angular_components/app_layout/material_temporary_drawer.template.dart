@@ -30,7 +30,7 @@ class ViewMaterialTemporaryDrawerComponent0 extends AppView<import2.MaterialTemp
   bool _expr_0;
   bool _expr_1;
   static RenderComponentType _renderType;
-  ViewMaterialTemporaryDrawerComponent0(AppView<dynamic> parentView, int parentIndex) : super(import5.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckOnce) {
+  ViewMaterialTemporaryDrawerComponent0(AppView<dynamic> parentView, int parentIndex) : super(import5.ViewType.component, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckOnce) {
     rootEl = import3.document.createElement('material-drawer');
     _renderType ??= import7.appViewUtils.createRenderType('', ViewEncapsulation.Emulated, styles$MaterialTemporaryDrawerComponent);
     setupComponentType(_renderType);
@@ -78,7 +78,7 @@ const List<dynamic> styles$MaterialTemporaryDrawerComponentHost = const [];
 class _ViewMaterialTemporaryDrawerComponentHost0 extends AppView<dynamic> {
   ViewMaterialTemporaryDrawerComponent0 _compView_0;
   import2.MaterialTemporaryDrawerComponent _MaterialTemporaryDrawerComponent_0_5;
-  _ViewMaterialTemporaryDrawerComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import5.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
+  _ViewMaterialTemporaryDrawerComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import5.ViewType.host, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewMaterialTemporaryDrawerComponent0(this, 0);

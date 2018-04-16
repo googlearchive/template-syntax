@@ -54,7 +54,7 @@ class ViewFixedMaterialTabStripComponent0 extends AppView<import2.FixedMaterialT
   var _expr_0;
   var _expr_1;
   static RenderComponentType _renderType;
-  ViewFixedMaterialTabStripComponent0(AppView<dynamic> parentView, int parentIndex) : super(import8.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckOnce) {
+  ViewFixedMaterialTabStripComponent0(AppView<dynamic> parentView, int parentIndex) : super(import8.ViewType.component, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckOnce) {
     rootEl = import3.document.createElement('material-tab-strip');
     rootEl.className = 'themeable';
     _renderType ??= import10.appViewUtils.createRenderType('', ViewEncapsulation.Emulated, styles$FixedMaterialTabStripComponent);
@@ -74,7 +74,7 @@ class ViewFixedMaterialTabStripComponent0 extends AppView<import2.FixedMaterialT
     _el_1 = createDivAndAppend(doc, _el_0);
     _el_1.className = 'tab-indicator';
     addShimC(_el_1);
-    var _anchor_2 = ngAnchor.clone(false);
+    final _anchor_2 = createViewContainerAnchor();
     _el_0.append(_anchor_2);
     _appEl_2 = new ViewContainer(2, 0, this, _anchor_2);
     TemplateRef _TemplateRef_2_8 = new TemplateRef(_appEl_2, viewFactory_FixedMaterialTabStripComponent1);
@@ -128,7 +128,7 @@ class _ViewFixedMaterialTabStripComponent1 extends AppView<import2.FixedMaterial
   var _expr_1;
   String _expr_2;
   bool _expr_3;
-  _ViewFixedMaterialTabStripComponent1(AppView<dynamic> parentView, int parentIndex) : super(import8.ViewType.EMBEDDED, {'\$implicit': null, 'index': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewFixedMaterialTabStripComponent1(AppView<dynamic> parentView, int parentIndex) : super(import8.ViewType.embedded, {'\$implicit': null, 'index': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewFixedMaterialTabStripComponent0._renderType;
   }
   @override
@@ -213,7 +213,7 @@ const List<dynamic> styles$FixedMaterialTabStripComponentHost = const [];
 class _ViewFixedMaterialTabStripComponentHost0 extends AppView<dynamic> {
   ViewFixedMaterialTabStripComponent0 _compView_0;
   import2.FixedMaterialTabStripComponent _FixedMaterialTabStripComponent_0_5;
-  _ViewFixedMaterialTabStripComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import8.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
+  _ViewFixedMaterialTabStripComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import8.ViewType.host, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewFixedMaterialTabStripComponent0(this, 0);

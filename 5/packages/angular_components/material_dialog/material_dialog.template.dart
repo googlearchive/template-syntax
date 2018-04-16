@@ -55,7 +55,7 @@ class ViewMaterialDialogComponent0 extends AppView<import2.MaterialDialogCompone
   bool _expr_3;
   bool _expr_4;
   static RenderComponentType _renderType;
-  ViewMaterialDialogComponent0(AppView<dynamic> parentView, int parentIndex) : super(import9.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckOnce) {
+  ViewMaterialDialogComponent0(AppView<dynamic> parentView, int parentIndex) : super(import9.ViewType.component, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckOnce) {
     rootEl = import3.document.createElement('material-dialog');
     _renderType ??= import11.appViewUtils.createRenderType('', ViewEncapsulation.Emulated, styles$MaterialDialogComponent);
     setupComponentType(_renderType);
@@ -73,7 +73,7 @@ class ViewMaterialDialogComponent0 extends AppView<import2.MaterialDialogCompone
     _el_1 = doc.createElement('div');
     _el_1.className = 'wrapper';
     addShimC(_el_1);
-    var _anchor_2 = ngAnchor.clone(false);
+    final _anchor_2 = createViewContainerAnchor();
     _el_1.append(_anchor_2);
     _appEl_2 = new ViewContainer(2, 1, this, _anchor_2);
     TemplateRef _TemplateRef_2_8 = new TemplateRef(_appEl_2, viewFactory_MaterialDialogComponent1);
@@ -86,7 +86,7 @@ class ViewMaterialDialogComponent0 extends AppView<import2.MaterialDialogCompone
     _el_5 = createAndAppend(doc, 'main', _el_1);
     addShimE(_el_5);
     project(_el_5, 1);
-    var _anchor_6 = ngAnchor.clone(false);
+    final _anchor_6 = createViewContainerAnchor();
     _el_1.append(_anchor_6);
     _appEl_6 = new ViewContainer(6, 1, this, _anchor_6);
     TemplateRef _TemplateRef_6_8 = new TemplateRef(_appEl_6, viewFactory_MaterialDialogComponent2);
@@ -145,7 +145,7 @@ AppView<import2.MaterialDialogComponent> viewFactory_MaterialDialogComponent0(Ap
 
 class _ViewMaterialDialogComponent1 extends AppView<import2.MaterialDialogComponent> {
   import3.Element _el_0;
-  _ViewMaterialDialogComponent1(AppView<dynamic> parentView, int parentIndex) : super(import9.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMaterialDialogComponent1(AppView<dynamic> parentView, int parentIndex) : super(import9.ViewType.embedded, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMaterialDialogComponent0._renderType;
   }
   @override
@@ -165,7 +165,7 @@ AppView<import2.MaterialDialogComponent> viewFactory_MaterialDialogComponent1(Ap
 
 class _ViewMaterialDialogComponent2 extends AppView<import2.MaterialDialogComponent> {
   import3.Element _el_0;
-  _ViewMaterialDialogComponent2(AppView<dynamic> parentView, int parentIndex) : super(import9.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMaterialDialogComponent2(AppView<dynamic> parentView, int parentIndex) : super(import9.ViewType.embedded, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMaterialDialogComponent0._renderType;
   }
   @override
@@ -188,7 +188,7 @@ const List<dynamic> styles$MaterialDialogComponentHost = const [];
 class _ViewMaterialDialogComponentHost0 extends AppView<dynamic> {
   ViewMaterialDialogComponent0 _compView_0;
   import2.MaterialDialogComponent _MaterialDialogComponent_0_5;
-  _ViewMaterialDialogComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import9.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
+  _ViewMaterialDialogComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import9.ViewType.host, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewMaterialDialogComponent0(this, 0);

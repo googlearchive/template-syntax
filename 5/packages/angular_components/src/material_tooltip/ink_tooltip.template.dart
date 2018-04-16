@@ -59,7 +59,7 @@ class ViewMaterialInkTooltipComponent0 extends AppView<import2.MaterialInkToolti
   ViewContainer _appEl_1;
   NgIf _NgIf_1_9;
   static RenderComponentType _renderType;
-  ViewMaterialInkTooltipComponent0(AppView<dynamic> parentView, int parentIndex) : super(import6.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckOnce) {
+  ViewMaterialInkTooltipComponent0(AppView<dynamic> parentView, int parentIndex) : super(import6.ViewType.component, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckOnce) {
     rootEl = import8.document.createElement('material-tooltip-text');
     _renderType ??= import9.appViewUtils.createRenderType('', ViewEncapsulation.Emulated, styles$MaterialInkTooltipComponent);
     setupComponentType(_renderType);
@@ -70,7 +70,7 @@ class ViewMaterialInkTooltipComponent0 extends AppView<import2.MaterialInkToolti
     final import8.HtmlElement parentRenderNode = initViewRoot(_rootEl);
     import8.Text _text_0 = new import8.Text('        ');
     parentRenderNode.append(_text_0);
-    var _anchor_1 = ngAnchor.clone(false);
+    final _anchor_1 = createViewContainerAnchor();
     parentRenderNode.append(_anchor_1);
     _appEl_1 = new ViewContainer(1, null, this, _anchor_1);
     TemplateRef _TemplateRef_1_8 = new TemplateRef(_appEl_1, viewFactory_MaterialInkTooltipComponent1);
@@ -108,7 +108,7 @@ class _ViewMaterialInkTooltipComponent1 extends AppView<import2.MaterialInkToolt
   var _expr_3;
   var _expr_4;
   bool _expr_6;
-  _ViewMaterialInkTooltipComponent1(AppView<dynamic> parentView, int parentIndex) : super(import6.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMaterialInkTooltipComponent1(AppView<dynamic> parentView, int parentIndex) : super(import6.ViewType.embedded, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMaterialInkTooltipComponent0._renderType;
   }
   dynamic get _PopupHierarchy_0_11 {
@@ -138,7 +138,7 @@ class _ViewMaterialInkTooltipComponent1 extends AppView<import2.MaterialInkToolt
     _appEl_0 = new ViewContainer(0, null, this, _el_0);
     _MaterialPopupComponent_0_8 = new import13.MaterialPopupComponent(parentView.injectorGet(import15.PopupHierarchy, viewData.parentIndex, null), parentView.injectorGet(import13.MaterialPopupComponent, viewData.parentIndex, null), 'tooltip', parentView.injectorGet(import16.NgZone, viewData.parentIndex), parentView.injectorGet(import17.OverlayService, viewData.parentIndex), parentView.injectorGet(import18.ZIndexer, viewData.parentIndex), parentView.injectorGet(const import19.OpaqueToken<List<import21.RelativePosition>>('defaultPopupPositions'), viewData.parentIndex), parentView.injectorGet(const import19.OpaqueToken('overlayRepositionLoop'), viewData.parentIndex), parentView.injectorGet(import22.PopupSizeProvider, viewData.parentIndex, null), _compView_0.ref, _appEl_0, new ElementRef(_el_0));
     import8.Text _text_1 = new import8.Text('\n          ');
-    var _anchor_2 = ngAnchor.clone(false);
+    final _anchor_2 = createViewContainerAnchor();
     _appEl_2 = new ViewContainer(2, 0, this, _anchor_2);
     TemplateRef _TemplateRef_2_8 = new TemplateRef(_appEl_2, viewFactory_MaterialInkTooltipComponent2);
     _DeferredContentDirective_2_9 = new import14.DeferredContentDirective(_appEl_2, _TemplateRef_2_8, _MaterialPopupComponent_0_8);
@@ -222,7 +222,7 @@ class _ViewMaterialInkTooltipComponent2 extends AppView<import2.MaterialInkToolt
   import8.DivElement _el_0;
   import8.Text _text_2;
   var _expr_0;
-  _ViewMaterialInkTooltipComponent2(AppView<dynamic> parentView, int parentIndex) : super(import6.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMaterialInkTooltipComponent2(AppView<dynamic> parentView, int parentIndex) : super(import6.ViewType.embedded, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMaterialInkTooltipComponent0._renderType;
   }
   @override
@@ -263,7 +263,7 @@ class _ViewMaterialInkTooltipComponentHost0 extends AppView<dynamic> {
   ViewMaterialInkTooltipComponent0 _compView_0;
   dynamic _TooltipController_0_5;
   import2.MaterialInkTooltipComponent _MaterialInkTooltipComponent_0_6;
-  _ViewMaterialInkTooltipComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import6.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
+  _ViewMaterialInkTooltipComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import6.ViewType.host, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewMaterialInkTooltipComponent0(this, 0);

@@ -147,7 +147,7 @@ class ViewMaterialDropdownSelectComponent0 extends AppView<import2.MaterialDropd
   bool _expr_18;
   String _expr_19;
   static RenderComponentType _renderType;
-  ViewMaterialDropdownSelectComponent0(AppView<dynamic> parentView, int parentIndex) : super(import12.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  ViewMaterialDropdownSelectComponent0(AppView<dynamic> parentView, int parentIndex) : super(import12.ViewType.component, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     rootEl = import3.document.createElement('material-dropdown-select');
     _renderType ??= import14.appViewUtils.createRenderType('', ViewEncapsulation.Emulated, styles$MaterialDropdownSelectComponent);
     setupComponentType(_renderType);
@@ -193,7 +193,7 @@ class ViewMaterialDropdownSelectComponent0 extends AppView<import2.MaterialDropd
     createAttr(_el_3, 'header', '');
     addShimC(_el_3);
     project(_el_3, 1);
-    var _anchor_4 = ngAnchor.clone(false);
+    final _anchor_4 = createViewContainerAnchor();
     _appEl_4 = new ViewContainer(4, 2, this, _anchor_4);
     TemplateRef _TemplateRef_4_8 = new TemplateRef(_appEl_4, viewFactory_MaterialDropdownSelectComponent1);
     _DeferredContentDirective_4_9 = new import10.DeferredContentDirective(_appEl_4, _TemplateRef_4_8, _MaterialPopupComponent_2_8);
@@ -395,7 +395,7 @@ class _ViewMaterialDropdownSelectComponent1 extends AppView<import2.MaterialDrop
   ViewContainer _appEl_1;
   NgIf _NgIf_1_9;
   var _expr_1;
-  _ViewMaterialDropdownSelectComponent1(AppView<dynamic> parentView, int parentIndex) : super(import12.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMaterialDropdownSelectComponent1(AppView<dynamic> parentView, int parentIndex) : super(import12.ViewType.embedded, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMaterialDropdownSelectComponent0._renderType;
   }
   @override
@@ -407,7 +407,7 @@ class _ViewMaterialDropdownSelectComponent1 extends AppView<import2.MaterialDrop
     createAttr(_el_0, 'tabIndex', '-1');
     addShimC(_el_0);
     _MaterialListComponent_0_5 = new import32.MaterialListComponent();
-    var _anchor_1 = ngAnchor.clone(false);
+    final _anchor_1 = createViewContainerAnchor();
     _appEl_1 = new ViewContainer(1, 0, this, _anchor_1);
     TemplateRef _TemplateRef_1_8 = new TemplateRef(_appEl_1, viewFactory_MaterialDropdownSelectComponent2);
     _NgIf_1_9 = new NgIf(_appEl_1, _TemplateRef_1_8);
@@ -470,7 +470,7 @@ class _ViewMaterialDropdownSelectComponent2 extends AppView<import2.MaterialDrop
   ViewContainer _appEl_2;
   import34.NgFor _NgFor_2_9;
   var _expr_1;
-  _ViewMaterialDropdownSelectComponent2(AppView<dynamic> parentView, int parentIndex) : super(import12.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMaterialDropdownSelectComponent2(AppView<dynamic> parentView, int parentIndex) : super(import12.ViewType.embedded, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMaterialDropdownSelectComponent0._renderType;
   }
   @override
@@ -479,12 +479,12 @@ class _ViewMaterialDropdownSelectComponent2 extends AppView<import2.MaterialDrop
     _el_0 = doc.createElement('div');
     _el_0.className = 'options-wrapper';
     addShimC(_el_0);
-    var _anchor_1 = ngAnchor.clone(false);
+    final _anchor_1 = createViewContainerAnchor();
     _el_0.append(_anchor_1);
     _appEl_1 = new ViewContainer(1, 0, this, _anchor_1);
     TemplateRef _TemplateRef_1_8 = new TemplateRef(_appEl_1, viewFactory_MaterialDropdownSelectComponent3);
     _NgIf_1_9 = new NgIf(_appEl_1, _TemplateRef_1_8);
-    var _anchor_2 = ngAnchor.clone(false);
+    final _anchor_2 = createViewContainerAnchor();
     _el_0.append(_anchor_2);
     _appEl_2 = new ViewContainer(2, 0, this, _anchor_2);
     TemplateRef _TemplateRef_2_8 = new TemplateRef(_appEl_2, viewFactory_MaterialDropdownSelectComponent4);
@@ -534,7 +534,7 @@ class _ViewMaterialDropdownSelectComponent3 extends AppView<import2.MaterialDrop
   var _expr_2;
   var _expr_3;
   String _expr_4;
-  _ViewMaterialDropdownSelectComponent3(AppView<dynamic> parentView, int parentIndex) : super(import12.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMaterialDropdownSelectComponent3(AppView<dynamic> parentView, int parentIndex) : super(import12.ViewType.embedded, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMaterialDropdownSelectComponent0._renderType;
   }
   @override
@@ -618,7 +618,7 @@ class _ViewMaterialDropdownSelectComponent4 extends AppView<import2.MaterialDrop
   ViewContainer _appEl_1;
   NgIf _NgIf_1_9;
   bool _expr_0;
-  _ViewMaterialDropdownSelectComponent4(AppView<dynamic> parentView, int parentIndex) : super(import12.ViewType.EMBEDDED, {'\$implicit': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMaterialDropdownSelectComponent4(AppView<dynamic> parentView, int parentIndex) : super(import12.ViewType.embedded, {'\$implicit': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMaterialDropdownSelectComponent0._renderType;
   }
   @override
@@ -627,7 +627,7 @@ class _ViewMaterialDropdownSelectComponent4 extends AppView<import2.MaterialDrop
     _el_0 = doc.createElement('div');
     createAttr(_el_0, 'group', '');
     addShimC(_el_0);
-    var _anchor_1 = ngAnchor.clone(false);
+    final _anchor_1 = createViewContainerAnchor();
     _el_0.append(_anchor_1);
     _appEl_1 = new ViewContainer(1, 0, this, _anchor_1);
     TemplateRef _TemplateRef_1_8 = new TemplateRef(_appEl_1, viewFactory_MaterialDropdownSelectComponent5);
@@ -667,24 +667,24 @@ class _ViewMaterialDropdownSelectComponent5 extends AppView<import2.MaterialDrop
   NgIf _NgIf_2_9;
   ViewContainer _appEl_3;
   NgIf _NgIf_3_9;
-  _ViewMaterialDropdownSelectComponent5(AppView<dynamic> parentView, int parentIndex) : super(import12.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMaterialDropdownSelectComponent5(AppView<dynamic> parentView, int parentIndex) : super(import12.ViewType.embedded, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMaterialDropdownSelectComponent0._renderType;
   }
   @override
   ComponentRef<import2.MaterialDropdownSelectComponent> build() {
-    var _anchor_0 = ngAnchor.clone(false);
+    final _anchor_0 = createViewContainerAnchor();
     _appEl_0 = new ViewContainer(0, null, this, _anchor_0);
     TemplateRef _TemplateRef_0_8 = new TemplateRef(_appEl_0, viewFactory_MaterialDropdownSelectComponent6);
     _NgIf_0_9 = new NgIf(_appEl_0, _TemplateRef_0_8);
-    var _anchor_1 = ngAnchor.clone(false);
+    final _anchor_1 = createViewContainerAnchor();
     _appEl_1 = new ViewContainer(1, null, this, _anchor_1);
     TemplateRef _TemplateRef_1_8 = new TemplateRef(_appEl_1, viewFactory_MaterialDropdownSelectComponent7);
     _NgIf_1_9 = new NgIf(_appEl_1, _TemplateRef_1_8);
-    var _anchor_2 = ngAnchor.clone(false);
+    final _anchor_2 = createViewContainerAnchor();
     _appEl_2 = new ViewContainer(2, null, this, _anchor_2);
     TemplateRef _TemplateRef_2_8 = new TemplateRef(_appEl_2, viewFactory_MaterialDropdownSelectComponent8);
     _NgIf_2_9 = new NgIf(_appEl_2, _TemplateRef_2_8);
-    var _anchor_3 = ngAnchor.clone(false);
+    final _anchor_3 = createViewContainerAnchor();
     _appEl_3 = new ViewContainer(3, null, this, _anchor_3);
     TemplateRef _TemplateRef_3_8 = new TemplateRef(_appEl_3, viewFactory_MaterialDropdownSelectComponent10);
     _NgIf_3_9 = new NgIf(_appEl_3, _TemplateRef_3_8);
@@ -723,7 +723,7 @@ class _ViewMaterialDropdownSelectComponent6 extends AppView<import2.MaterialDrop
   import3.Element _el_0;
   import3.Text _text_1;
   var _expr_0;
-  _ViewMaterialDropdownSelectComponent6(AppView<dynamic> parentView, int parentIndex) : super(import12.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMaterialDropdownSelectComponent6(AppView<dynamic> parentView, int parentIndex) : super(import12.ViewType.embedded, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMaterialDropdownSelectComponent0._renderType;
   }
   @override
@@ -761,7 +761,7 @@ class _ViewMaterialDropdownSelectComponent7 extends AppView<import2.MaterialDrop
   var _expr_0;
   var _expr_1;
   var _expr_2;
-  _ViewMaterialDropdownSelectComponent7(AppView<dynamic> parentView, int parentIndex) : super(import12.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMaterialDropdownSelectComponent7(AppView<dynamic> parentView, int parentIndex) : super(import12.ViewType.embedded, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMaterialDropdownSelectComponent0._renderType;
   }
   @override
@@ -823,12 +823,12 @@ class _ViewMaterialDropdownSelectComponent8 extends AppView<import2.MaterialDrop
   ViewContainer _appEl_0;
   import34.NgFor _NgFor_0_9;
   var _expr_0;
-  _ViewMaterialDropdownSelectComponent8(AppView<dynamic> parentView, int parentIndex) : super(import12.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMaterialDropdownSelectComponent8(AppView<dynamic> parentView, int parentIndex) : super(import12.ViewType.embedded, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMaterialDropdownSelectComponent0._renderType;
   }
   @override
   ComponentRef<import2.MaterialDropdownSelectComponent> build() {
-    var _anchor_0 = ngAnchor.clone(false);
+    final _anchor_0 = createViewContainerAnchor();
     _appEl_0 = new ViewContainer(0, null, this, _anchor_0);
     TemplateRef _TemplateRef_0_8 = new TemplateRef(_appEl_0, viewFactory_MaterialDropdownSelectComponent9);
     _NgFor_0_9 = new import34.NgFor(_appEl_0, _TemplateRef_0_8);
@@ -873,7 +873,7 @@ class _ViewMaterialDropdownSelectComponent9 extends AppView<import2.MaterialDrop
   bool _expr_7;
   var _expr_8;
   String _expr_9;
-  _ViewMaterialDropdownSelectComponent9(AppView<dynamic> parentView, int parentIndex) : super(import12.ViewType.EMBEDDED, {'\$implicit': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMaterialDropdownSelectComponent9(AppView<dynamic> parentView, int parentIndex) : super(import12.ViewType.embedded, {'\$implicit': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMaterialDropdownSelectComponent0._renderType;
   }
   @override
@@ -984,7 +984,7 @@ class _ViewMaterialDropdownSelectComponent10 extends AppView<import2.MaterialDro
   import36.KeyboardOnlyFocusIndicatorDirective _KeyboardOnlyFocusIndicatorDirective_0_5;
   import37.MaterialSelectDropdownItemComponent _MaterialSelectDropdownItemComponent_0_6;
   var _expr_1;
-  _ViewMaterialDropdownSelectComponent10(AppView<dynamic> parentView, int parentIndex) : super(import12.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMaterialDropdownSelectComponent10(AppView<dynamic> parentView, int parentIndex) : super(import12.ViewType.embedded, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMaterialDropdownSelectComponent0._renderType;
   }
   @override
@@ -1044,7 +1044,7 @@ const List<dynamic> styles$MaterialDropdownSelectComponentHost = const [];
 class _ViewMaterialDropdownSelectComponentHost0 extends AppView<dynamic> {
   ViewMaterialDropdownSelectComponent0 _compView_0;
   import2.MaterialDropdownSelectComponent _MaterialDropdownSelectComponent_0_5;
-  _ViewMaterialDropdownSelectComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import12.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
+  _ViewMaterialDropdownSelectComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import12.ViewType.host, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewMaterialDropdownSelectComponent0(this, 0);

@@ -28,7 +28,7 @@ class ViewMaterialIconComponent0 extends AppView<import2.MaterialIconComponent> 
   import3.Text _text_1;
   var _expr_0;
   static RenderComponentType _renderType;
-  ViewMaterialIconComponent0(AppView<dynamic> parentView, int parentIndex) : super(import5.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckOnce) {
+  ViewMaterialIconComponent0(AppView<dynamic> parentView, int parentIndex) : super(import5.ViewType.component, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckOnce) {
     rootEl = import3.document.createElement('material-icon');
     _renderType ??= import7.appViewUtils.createRenderType('', ViewEncapsulation.Emulated, styles$MaterialIconComponent);
     setupComponentType(_renderType);
@@ -68,7 +68,7 @@ const List<dynamic> styles$MaterialIconComponentHost = const [];
 class _ViewMaterialIconComponentHost0 extends AppView<dynamic> {
   ViewMaterialIconComponent0 _compView_0;
   import2.MaterialIconComponent _MaterialIconComponent_0_5;
-  _ViewMaterialIconComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import5.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
+  _ViewMaterialIconComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import5.ViewType.host, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewMaterialIconComponent0(this, 0);

@@ -102,7 +102,7 @@ class ViewMaterialMultilineInputComponent0 extends AppView<import3.MaterialMulti
   bool _expr_20;
   bool _expr_21;
   static RenderComponentType _renderType;
-  ViewMaterialMultilineInputComponent0(AppView<dynamic> parentView, int parentIndex) : super(import12.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckOnce) {
+  ViewMaterialMultilineInputComponent0(AppView<dynamic> parentView, int parentIndex) : super(import12.ViewType.component, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckOnce) {
     rootEl = import4.document.createElement('material-input');
     rootEl.className = 'themeable';
     createAttr(rootEl, 'tabIndex', '-1');
@@ -168,7 +168,7 @@ class ViewMaterialMultilineInputComponent0 extends AppView<import3.MaterialMulti
     _el_15 = createDivAndAppend(doc, _el_12);
     _el_15.className = 'focused-underline';
     addShimC(_el_15);
-    var _anchor_16 = ngAnchor.clone(false);
+    final _anchor_16 = createViewContainerAnchor();
     parentRenderNode.append(_anchor_16);
     _appEl_16 = new ViewContainer(16, null, this, _anchor_16);
     TemplateRef _TemplateRef_16_8 = new TemplateRef(_appEl_16, viewFactory_MaterialMultilineInputComponent1);
@@ -280,7 +280,7 @@ class ViewMaterialMultilineInputComponent0 extends AppView<import3.MaterialMulti
     }
     final currVal_13 = _ctx.disabled;
     if (!identical(_expr_13, currVal_13)) {
-      setProp(_el_11, 'disabled', currVal_13);
+      setProp(_el_11, 'readOnly', currVal_13);
       _expr_13 = currVal_13;
     }
     final currVal_14 = import14.interpolate0(_ctx.invalid);
@@ -303,7 +303,7 @@ class ViewMaterialMultilineInputComponent0 extends AppView<import3.MaterialMulti
       updateClass(_el_14, 'invalid', currVal_18);
       _expr_18 = currVal_18;
     }
-    final bool currVal_19 = !_ctx.focused;
+    final bool currVal_19 = (!_ctx.focused || _ctx.disabled);
     if (!identical(_expr_19, currVal_19)) {
       updateClass(_el_15, 'invisible', currVal_19);
       _expr_19 = currVal_19;
@@ -340,7 +340,7 @@ class ViewMaterialMultilineInputComponent0 extends AppView<import3.MaterialMulti
   void _handle_input_11_3($event) {
     final local_textareaEl = _el_11;
     ctx.inputKeypress(local_textareaEl.value, local_textareaEl.validity.valid, local_textareaEl.validationMessage);
-    _DefaultValueAccessor_11_5.onChange($event.target.value);
+    _DefaultValueAccessor_11_5.handleChange($event.target.value);
   }
 }
 
@@ -363,7 +363,7 @@ class _ViewMaterialMultilineInputComponent1 extends AppView<import3.MaterialMult
   var _expr_1;
   var _expr_2;
   var _expr_3;
-  _ViewMaterialMultilineInputComponent1(AppView<dynamic> parentView, int parentIndex) : super(import12.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMaterialMultilineInputComponent1(AppView<dynamic> parentView, int parentIndex) : super(import12.ViewType.embedded, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMaterialMultilineInputComponent0._renderType;
   }
   @override
@@ -373,22 +373,22 @@ class _ViewMaterialMultilineInputComponent1 extends AppView<import3.MaterialMult
     _el_0.className = 'bottom-section';
     addShimC(_el_0);
     _NgSwitch_0_5 = new import21.NgSwitch();
-    var _anchor_1 = ngAnchor.clone(false);
+    final _anchor_1 = createViewContainerAnchor();
     _el_0.append(_anchor_1);
     _appEl_1 = new ViewContainer(1, 0, this, _anchor_1);
     TemplateRef _TemplateRef_1_8 = new TemplateRef(_appEl_1, viewFactory_MaterialMultilineInputComponent2);
     _NgSwitchWhen_1_9 = new import21.NgSwitchWhen(_appEl_1, _TemplateRef_1_8, _NgSwitch_0_5);
-    var _anchor_2 = ngAnchor.clone(false);
+    final _anchor_2 = createViewContainerAnchor();
     _el_0.append(_anchor_2);
     _appEl_2 = new ViewContainer(2, 0, this, _anchor_2);
     TemplateRef _TemplateRef_2_8 = new TemplateRef(_appEl_2, viewFactory_MaterialMultilineInputComponent3);
     _NgSwitchWhen_2_9 = new import21.NgSwitchWhen(_appEl_2, _TemplateRef_2_8, _NgSwitch_0_5);
-    var _anchor_3 = ngAnchor.clone(false);
+    final _anchor_3 = createViewContainerAnchor();
     _el_0.append(_anchor_3);
     _appEl_3 = new ViewContainer(3, 0, this, _anchor_3);
     TemplateRef _TemplateRef_3_8 = new TemplateRef(_appEl_3, viewFactory_MaterialMultilineInputComponent4);
     _NgSwitchWhen_3_9 = new import21.NgSwitchWhen(_appEl_3, _TemplateRef_3_8, _NgSwitch_0_5);
-    var _anchor_4 = ngAnchor.clone(false);
+    final _anchor_4 = createViewContainerAnchor();
     _el_0.append(_anchor_4);
     _appEl_4 = new ViewContainer(4, 0, this, _anchor_4);
     TemplateRef _TemplateRef_4_8 = new TemplateRef(_appEl_4, viewFactory_MaterialMultilineInputComponent5);
@@ -455,7 +455,7 @@ class _ViewMaterialMultilineInputComponent2 extends AppView<import3.MaterialMult
   bool _expr_1;
   var _expr_2;
   var _expr_3;
-  _ViewMaterialMultilineInputComponent2(AppView<dynamic> parentView, int parentIndex) : super(import12.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMaterialMultilineInputComponent2(AppView<dynamic> parentView, int parentIndex) : super(import12.ViewType.embedded, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMaterialMultilineInputComponent0._renderType;
   }
   @override
@@ -505,7 +505,7 @@ class _ViewMaterialMultilineInputComponent3 extends AppView<import3.MaterialMult
   import4.DivElement _el_0;
   import4.Text _text_1;
   var _expr_0;
-  _ViewMaterialMultilineInputComponent3(AppView<dynamic> parentView, int parentIndex) : super(import12.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMaterialMultilineInputComponent3(AppView<dynamic> parentView, int parentIndex) : super(import12.ViewType.embedded, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMaterialMultilineInputComponent0._renderType;
   }
   @override
@@ -537,7 +537,7 @@ AppView<import3.MaterialMultilineInputComponent> viewFactory_MaterialMultilineIn
 
 class _ViewMaterialMultilineInputComponent4 extends AppView<import3.MaterialMultilineInputComponent> {
   import4.DivElement _el_0;
-  _ViewMaterialMultilineInputComponent4(AppView<dynamic> parentView, int parentIndex) : super(import12.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMaterialMultilineInputComponent4(AppView<dynamic> parentView, int parentIndex) : super(import12.ViewType.embedded, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMaterialMultilineInputComponent0._renderType;
   }
   @override
@@ -568,7 +568,7 @@ class _ViewMaterialMultilineInputComponent5 extends AppView<import3.MaterialMult
   import4.Text _text_1;
   bool _expr_0;
   var _expr_1;
-  _ViewMaterialMultilineInputComponent5(AppView<dynamic> parentView, int parentIndex) : super(import12.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMaterialMultilineInputComponent5(AppView<dynamic> parentView, int parentIndex) : super(import12.ViewType.embedded, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMaterialMultilineInputComponent0._renderType;
   }
   @override
@@ -611,7 +611,7 @@ class _ViewMaterialMultilineInputComponentHost0 extends AppView<dynamic> {
   import22.DeferredValidator _DeferredValidator_0_5;
   import3.MaterialMultilineInputComponent _MaterialMultilineInputComponent_0_6;
   List<dynamic> __NgValidators_0_7;
-  _ViewMaterialMultilineInputComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import12.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
+  _ViewMaterialMultilineInputComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import12.ViewType.host, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   List<dynamic> get _NgValidators_0_7 {
     if ((this.__NgValidators_0_7 == null)) {
       (__NgValidators_0_7 = [this._DeferredValidator_0_5]);

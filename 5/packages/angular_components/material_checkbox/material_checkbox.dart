@@ -318,4 +318,7 @@ class MaterialCheckboxComponent implements ControlValueAccessor, Focusable {
     _focused = false;
     _onTouched?.call();
   }
+
+  @override
+  void onDisabledChanged(bool isDisabled) {}
 }

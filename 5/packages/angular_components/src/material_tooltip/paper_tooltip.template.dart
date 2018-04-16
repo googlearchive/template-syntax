@@ -66,7 +66,7 @@ class ViewMaterialPaperTooltipComponent0 extends AppView<import2.MaterialPaperTo
   ViewContainer _appEl_0;
   NgIf _NgIf_0_9;
   static RenderComponentType _renderType;
-  ViewMaterialPaperTooltipComponent0(AppView<dynamic> parentView, int parentIndex) : super(import6.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckOnce) {
+  ViewMaterialPaperTooltipComponent0(AppView<dynamic> parentView, int parentIndex) : super(import6.ViewType.component, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckOnce) {
     rootEl = import8.document.createElement('material-tooltip-card');
     _renderType ??= import9.appViewUtils.createRenderType('', ViewEncapsulation.Emulated, styles$MaterialPaperTooltipComponent);
     setupComponentType(_renderType);
@@ -75,7 +75,7 @@ class ViewMaterialPaperTooltipComponent0 extends AppView<import2.MaterialPaperTo
   ComponentRef<import2.MaterialPaperTooltipComponent> build() {
     final _rootEl = rootEl;
     final import8.HtmlElement parentRenderNode = initViewRoot(_rootEl);
-    var _anchor_0 = ngAnchor.clone(false);
+    final _anchor_0 = createViewContainerAnchor();
     parentRenderNode.append(_anchor_0);
     _appEl_0 = new ViewContainer(0, null, this, _anchor_0);
     TemplateRef _TemplateRef_0_8 = new TemplateRef(_appEl_0, viewFactory_MaterialPaperTooltipComponent1);
@@ -127,7 +127,7 @@ class _ViewMaterialPaperTooltipComponent1 extends AppView<import2.MaterialPaperT
   var _expr_5;
   var _expr_6;
   bool _expr_8;
-  _ViewMaterialPaperTooltipComponent1(AppView<dynamic> parentView, int parentIndex) : super(import6.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMaterialPaperTooltipComponent1(AppView<dynamic> parentView, int parentIndex) : super(import6.ViewType.embedded, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMaterialPaperTooltipComponent0._renderType;
   }
   dynamic get _PopupHierarchy_0_11 {
@@ -276,7 +276,7 @@ class _ViewMaterialPaperTooltipComponentHost0 extends AppView<dynamic> {
   dynamic _TooltipController_0_5;
   import2.MaterialPaperTooltipComponent _MaterialPaperTooltipComponent_0_6;
   dynamic __Tooltip_0_7;
-  _ViewMaterialPaperTooltipComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import6.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
+  _ViewMaterialPaperTooltipComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import6.ViewType.host, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   dynamic get _Tooltip_0_7 {
     if ((this.__Tooltip_0_7 == null)) {
       (__Tooltip_0_7 = import2.getTooltipHandle(this._MaterialPaperTooltipComponent_0_6));

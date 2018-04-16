@@ -6,7 +6,6 @@
 import 'material_fab_menu.dart';
 export 'material_fab_menu.dart';
 import 'dart:async';
-import 'dart:html';
 import 'package:angular/angular.dart';
 import 'package:angular_components/content/deferred_content.dart';
 import 'package:angular_components/focus/focus.dart';
@@ -89,7 +88,6 @@ import '../utils/id_generator/id_generator.dart' as import46;
 const List<dynamic> styles$MaterialFabMenuComponent = const [import0.styles];
 
 class ViewMaterialFabMenuComponent0 extends AppView<import2.MaterialFabMenuComponent> {
-  bool _query_content_1_0_isDirty = true;
   import3.Element _el_1;
   import4.ViewMaterialFabComponent0 _compView_1;
   ViewContainer _appEl_1;
@@ -110,7 +108,7 @@ class ViewMaterialFabMenuComponent0 extends AppView<import2.MaterialFabMenuCompo
   bool _expr_7;
   var _expr_8;
   static RenderComponentType _renderType;
-  ViewMaterialFabMenuComponent0(AppView<dynamic> parentView, int parentIndex) : super(import13.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckOnce) {
+  ViewMaterialFabMenuComponent0(AppView<dynamic> parentView, int parentIndex) : super(import13.ViewType.component, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckOnce) {
     rootEl = import3.document.createElement('material-fab-menu');
     _renderType ??= import15.appViewUtils.createRenderType('', ViewEncapsulation.Emulated, styles$MaterialFabMenuComponent);
     setupComponentType(_renderType);
@@ -150,7 +148,7 @@ class ViewMaterialFabMenuComponent0 extends AppView<import2.MaterialFabMenuCompo
     ]);
     import3.Text _text_5 = new import3.Text('\n');
     parentRenderNode.append(_text_5);
-    var _anchor_6 = ngAnchor.clone(false);
+    final _anchor_6 = createViewContainerAnchor();
     parentRenderNode.append(_anchor_6);
     _appEl_6 = new ViewContainer(6, null, this, _anchor_6);
     TemplateRef _TemplateRef_6_8 = new TemplateRef(_appEl_6, viewFactory_MaterialFabMenuComponent1);
@@ -220,20 +218,6 @@ class ViewMaterialFabMenuComponent0 extends AppView<import2.MaterialFabMenuCompo
     _NgIf_6_9.ngIf = _ctx.hasMenu;
     _appEl_1.detectChangesInNestedViews();
     _appEl_6.detectChangesInNestedViews();
-    if (_query_content_1_0_isDirty) {
-      ctx.contentElementRef = (_appEl_6.mapNestedViews((_ViewMaterialFabMenuComponent1 nestedView) {
-        return nestedView._appEl_2.mapNestedViews((_ViewMaterialFabMenuComponent2 nestedView) {
-          return [nestedView._el_0];
-        });
-      }).isNotEmpty
-          ? _appEl_6.mapNestedViews((_ViewMaterialFabMenuComponent1 nestedView) {
-              return nestedView._appEl_2.mapNestedViews((_ViewMaterialFabMenuComponent2 nestedView) {
-                return [nestedView._el_0];
-              });
-            }).first
-          : null);
-      _query_content_1_0_isDirty = false;
-    }
     final currVal_0 = _ctx.isFabHidden;
     if (!identical(_expr_0, currVal_0)) {
       updateElemClass(_el_1, 'invisible', currVal_0);
@@ -288,7 +272,7 @@ class _ViewMaterialFabMenuComponent1 extends AppView<import2.MaterialFabMenuComp
   var _expr_3;
   bool _expr_4;
   bool _expr_5;
-  _ViewMaterialFabMenuComponent1(AppView<dynamic> parentView, int parentIndex) : super(import13.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMaterialFabMenuComponent1(AppView<dynamic> parentView, int parentIndex) : super(import13.ViewType.embedded, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMaterialFabMenuComponent0._renderType;
   }
   dynamic get _PopupRef_0_11 {
@@ -315,7 +299,7 @@ class _ViewMaterialFabMenuComponent1 extends AppView<import2.MaterialFabMenuComp
     _appEl_0 = new ViewContainer(0, null, this, _el_0);
     _MaterialPopupComponent_0_8 = new import24.MaterialPopupComponent(parentView.injectorGet(import26.PopupHierarchy, viewData.parentIndex, null), parentView.injectorGet(import24.MaterialPopupComponent, viewData.parentIndex, null), null, parentView.injectorGet(import27.NgZone, viewData.parentIndex), parentView.injectorGet(import28.OverlayService, viewData.parentIndex), parentView.injectorGet(import29.ZIndexer, viewData.parentIndex), parentView.injectorGet(const import30.OpaqueToken<List<import32.RelativePosition>>('defaultPopupPositions'), viewData.parentIndex), parentView.injectorGet(const import30.OpaqueToken('overlayRepositionLoop'), viewData.parentIndex), parentView.injectorGet(import33.PopupSizeProvider, viewData.parentIndex, null), _compView_0.ref, _appEl_0, new ElementRef(_el_0));
     import3.Text _text_1 = new import3.Text('\n  ');
-    var _anchor_2 = ngAnchor.clone(false);
+    final _anchor_2 = createViewContainerAnchor();
     _appEl_2 = new ViewContainer(2, 0, this, _anchor_2);
     TemplateRef _TemplateRef_2_8 = new TemplateRef(_appEl_2, viewFactory_MaterialFabMenuComponent2);
     _DeferredContentDirective_2_9 = new import25.DeferredContentDirective(_appEl_2, _TemplateRef_2_8, _MaterialPopupComponent_0_8);
@@ -420,8 +404,9 @@ class _ViewMaterialFabMenuComponent2 extends AppView<import2.MaterialFabMenuComp
   bool _expr_1;
   bool _expr_2;
   bool _expr_3;
-  var _expr_7;
-  _ViewMaterialFabMenuComponent2(AppView<dynamic> parentView, int parentIndex) : super(import13.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  bool _expr_4;
+  var _expr_8;
+  _ViewMaterialFabMenuComponent2(AppView<dynamic> parentView, int parentIndex) : super(import13.ViewType.embedded, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMaterialFabMenuComponent0._renderType;
   }
   @override
@@ -447,7 +432,7 @@ class _ViewMaterialFabMenuComponent2 extends AppView<import2.MaterialFabMenuComp
     import3.Text _text_5 = new import3.Text('\n        ');
     _compView_6 = new import9.ViewMaterialIconComponent0(this, 6);
     _el_6 = _compView_6.rootEl;
-    _el_6.className = 'material-list-item-primary';
+    _el_6.className = 'close-icon material-list-item-primary';
     createAttr(_el_6, 'icon', 'close');
     addShimC(_el_6);
     _MaterialIconComponent_6_5 = new import10.MaterialIconComponent(_el_6);
@@ -521,11 +506,11 @@ class _ViewMaterialFabMenuComponent2 extends AppView<import2.MaterialFabMenuComp
       _MenuItemGroupsComponent_9_8.preventCloseOnPressLeft = '';
       changed = true;
     }
-    final currVal_7 = _ctx.menuItem.subMenu;
-    if (!identical(_expr_7, currVal_7)) {
-      _MenuItemGroupsComponent_9_8.menu = currVal_7;
+    final currVal_8 = _ctx.menuItem.subMenu;
+    if (!identical(_expr_8, currVal_8)) {
+      _MenuItemGroupsComponent_9_8.menu = currVal_8;
       changed = true;
-      _expr_7 = currVal_7;
+      _expr_8 = currVal_8;
     }
     if (changed) {
       _compView_9.markAsCheckOnce();
@@ -543,25 +528,25 @@ class _ViewMaterialFabMenuComponent2 extends AppView<import2.MaterialFabMenuComp
       updateClass(_el_0, 'closing', currVal_1);
       _expr_1 = currVal_1;
     }
-    final currVal_2 = _ctx.menuVisible;
+    final currVal_2 = _ctx.hasIcons;
     if (!identical(_expr_2, currVal_2)) {
-      updateClass(_el_2, 'visible', currVal_2);
+      updateClass(_el_0, 'has-icons', currVal_2);
       _expr_2 = currVal_2;
     }
-    final currVal_3 = _ctx.closing;
+    final currVal_3 = _ctx.menuVisible;
     if (!identical(_expr_3, currVal_3)) {
-      updateClass(_el_2, 'closing', currVal_3);
+      updateClass(_el_2, 'visible', currVal_3);
       _expr_3 = currVal_3;
+    }
+    final currVal_4 = _ctx.closing;
+    if (!identical(_expr_4, currVal_4)) {
+      updateClass(_el_2, 'closing', currVal_4);
+      _expr_4 = currVal_4;
     }
     _compView_4.detectHostChanges(firstCheck);
     _compView_4.detectChanges();
     _compView_6.detectChanges();
     _compView_9.detectChanges();
-  }
-
-  @override
-  void dirtyParentQueriesInternal() {
-    (parentView.parentView as ViewMaterialFabMenuComponent0)._query_content_1_0_isDirty = true;
   }
 
   @override
@@ -584,7 +569,7 @@ const List<dynamic> styles$MaterialFabMenuComponentHost = const [];
 class _ViewMaterialFabMenuComponentHost0 extends AppView<dynamic> {
   ViewMaterialFabMenuComponent0 _compView_0;
   import2.MaterialFabMenuComponent _MaterialFabMenuComponent_0_5;
-  _ViewMaterialFabMenuComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import13.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
+  _ViewMaterialFabMenuComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import13.ViewType.host, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewMaterialFabMenuComponent0(this, 0);

@@ -58,7 +58,7 @@ class ViewMaterialSelectSearchboxComponent0 extends AppView<import2.MaterialSele
   import8.MaterialInputDefaultValueAccessor _MaterialInputDefaultValueAccessor_0_11;
   String _expr_1;
   static RenderComponentType _renderType;
-  ViewMaterialSelectSearchboxComponent0(AppView<dynamic> parentView, int parentIndex) : super(import10.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  ViewMaterialSelectSearchboxComponent0(AppView<dynamic> parentView, int parentIndex) : super(import10.ViewType.component, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     rootEl = import3.document.createElement('material-select-searchbox');
     _renderType ??= import12.appViewUtils.createRenderType('', ViewEncapsulation.Emulated, styles$MaterialSelectSearchboxComponent);
     setupComponentType(_renderType);
@@ -77,7 +77,7 @@ class ViewMaterialSelectSearchboxComponent0 extends AppView<import2.MaterialSele
     _NgValidators_0_6 = [_DeferredValidator_0_5];
     _NgModel_0_7 = new import6.NgModel(_NgValidators_0_6, null);
     _NgControl_0_8 = _NgModel_0_7;
-    _MaterialInputComponent_0_9 = new import7.MaterialInputComponent(null, null, _NgControl_0_8, _compView_0.ref, _DeferredValidator_0_5);
+    _MaterialInputComponent_0_9 = new import7.MaterialInputComponent(null, null, null, _NgControl_0_8, _compView_0.ref, _DeferredValidator_0_5);
     _BaseMaterialInput_0_10 = _MaterialInputComponent_0_9;
     _MaterialInputDefaultValueAccessor_0_11 = new import8.MaterialInputDefaultValueAccessor(_BaseMaterialInput_0_10, _NgControl_0_8);
     _compView_0.create(_MaterialInputComponent_0_9, [const []]);
@@ -169,7 +169,7 @@ const List<dynamic> styles$MaterialSelectSearchboxComponentHost = const [];
 class _ViewMaterialSelectSearchboxComponentHost0 extends AppView<dynamic> {
   ViewMaterialSelectSearchboxComponent0 _compView_0;
   import2.MaterialSelectSearchboxComponent _MaterialSelectSearchboxComponent_0_5;
-  _ViewMaterialSelectSearchboxComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import10.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
+  _ViewMaterialSelectSearchboxComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import10.ViewType.host, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewMaterialSelectSearchboxComponent0(this, 0);

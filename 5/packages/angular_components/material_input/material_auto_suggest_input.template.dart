@@ -174,37 +174,37 @@ class ViewMaterialAutoSuggestInputComponent0 extends AppView<import3.MaterialAut
   import16.CachingDeferredContentDirective _CachingDeferredContentDirective_5_9;
   import4.DivElement _el_6;
   import15.KeyboardOnlyFocusIndicatorDirective _KeyboardOnlyFocusIndicatorDirective_6_5;
-  var _expr_2;
-  var _expr_3;
-  String _expr_5;
-  String _expr_6;
-  int _expr_7;
-  bool _expr_8;
-  bool _expr_9;
-  bool _expr_10;
-  String _expr_11;
+  String _expr_2;
+  String _expr_3;
+  int _expr_4;
+  bool _expr_5;
+  bool _expr_6;
+  bool _expr_7;
+  String _expr_8;
+  var _expr_9;
+  String _expr_10;
+  var _expr_11;
   var _expr_12;
-  String _expr_13;
-  var _expr_14;
-  var _expr_15;
-  bool _expr_16;
-  bool _expr_17;
+  bool _expr_13;
+  bool _expr_14;
+  String _expr_15;
+  String _expr_16;
   String _expr_18;
-  String _expr_19;
-  String _expr_20;
-  String _expr_21;
-  bool _expr_22;
-  String _expr_25;
-  bool _expr_26;
-  bool _expr_27;
+  bool _expr_20;
+  String _expr_22;
+  String _expr_23;
+  bool _expr_24;
+  String _expr_27;
   bool _expr_28;
-  var _expr_29;
-  var _expr_30;
-  bool _expr_32;
-  bool _expr_33;
-  String _expr_34;
+  bool _expr_29;
+  bool _expr_30;
+  var _expr_31;
+  var _expr_32;
+  bool _expr_34;
+  bool _expr_35;
+  String _expr_36;
   static RenderComponentType _renderType;
-  ViewMaterialAutoSuggestInputComponent0(AppView<dynamic> parentView, int parentIndex) : super(import18.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  ViewMaterialAutoSuggestInputComponent0(AppView<dynamic> parentView, int parentIndex) : super(import18.ViewType.component, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     rootEl = import4.document.createElement('material-auto-suggest-input');
     _renderType ??= import20.appViewUtils.createRenderType('', ViewEncapsulation.Emulated, styles$MaterialAutoSuggestInputComponent);
     setupComponentType(_renderType);
@@ -231,7 +231,8 @@ class ViewMaterialAutoSuggestInputComponent0 extends AppView<import3.MaterialAut
     _el_0 = _compView_0.rootEl;
     parentRenderNode.append(_el_0);
     createAttr(_el_0, 'alignPositionY', 'after');
-    createAttr(_el_0, 'aria-autocomplete', 'list');
+    createAttr(_el_0, 'inputAriaAutocomplete', 'list');
+    createAttr(_el_0, 'inputAriaHasPopup', 'listbox');
     createAttr(_el_0, 'popupSource', '');
     createAttr(_el_0, 'role', 'combobox');
     addShimC(_el_0);
@@ -239,7 +240,7 @@ class ViewMaterialAutoSuggestInputComponent0 extends AppView<import3.MaterialAut
     _NgValidators_0_6 = [_DeferredValidator_0_5];
     _NgModel_0_7 = new import7.NgModel(_NgValidators_0_6, null);
     _NgControl_0_8 = _NgModel_0_7;
-    _MaterialInputComponent_0_9 = new import8.MaterialInputComponent(null, null, _NgControl_0_8, _compView_0.ref, _DeferredValidator_0_5);
+    _MaterialInputComponent_0_9 = new import8.MaterialInputComponent(null, null, 'combobox', _NgControl_0_8, _compView_0.ref, _DeferredValidator_0_5);
     _BaseMaterialInput_0_10 = _MaterialInputComponent_0_9;
     _MaterialInputDefaultValueAccessor_0_11 = new import9.MaterialInputDefaultValueAccessor(_BaseMaterialInput_0_10, _NgControl_0_8);
     _ReferenceDirective_0_12 = _MaterialInputComponent_0_9;
@@ -248,7 +249,7 @@ class ViewMaterialAutoSuggestInputComponent0 extends AppView<import3.MaterialAut
     _el_1 = doc.createElement('span');
     createAttr(_el_1, 'trailing', '');
     addShimE(_el_1);
-    var _anchor_2 = ngAnchor.clone(false);
+    final _anchor_2 = createViewContainerAnchor();
     _el_1.append(_anchor_2);
     _appEl_2 = new ViewContainer(2, 1, this, _anchor_2);
     TemplateRef _TemplateRef_2_8 = new TemplateRef(_appEl_2, viewFactory_MaterialAutoSuggestInputComponent1);
@@ -271,7 +272,7 @@ class ViewMaterialAutoSuggestInputComponent0 extends AppView<import3.MaterialAut
     addShimC(_el_4);
     _KeyboardOnlyFocusIndicatorDirective_4_5 = new import15.KeyboardOnlyFocusIndicatorDirective(_el_4, parentView.injectorGet(import33.DomService, viewData.parentIndex));
     project(_el_4, 1);
-    var _anchor_5 = ngAnchor.clone(false);
+    final _anchor_5 = createViewContainerAnchor();
     _appEl_5 = new ViewContainer(5, 3, this, _anchor_5);
     TemplateRef _TemplateRef_5_8 = new TemplateRef(_appEl_5, viewFactory_MaterialAutoSuggestInputComponent2);
     _CachingDeferredContentDirective_5_9 = new import16.CachingDeferredContentDirective(_appEl_5, _TemplateRef_5_8, _MaterialPopupComponent_3_8);
@@ -359,113 +360,135 @@ class ViewMaterialAutoSuggestInputComponent0 extends AppView<import3.MaterialAut
       _NgModel_0_7.ngOnInit();
     }
     changed = false;
-    final currVal_5 = _ctx.label;
+    if (firstCheck) {
+      if (!identical(_ctx.popupId, null)) {
+        _MaterialInputComponent_0_9.inputAriaOwns = _ctx.popupId;
+        changed = true;
+      }
+      _MaterialInputComponent_0_9.inputAriaHasPopup = 'listbox';
+      changed = true;
+      _MaterialInputComponent_0_9.inputAriaAutocomplete = 'list';
+      changed = true;
+    }
+    final currVal_2 = _ctx.label;
+    if (!identical(_expr_2, currVal_2)) {
+      _MaterialInputComponent_0_9.label = currVal_2;
+      changed = true;
+      _expr_2 = currVal_2;
+    }
+    final currVal_3 = _ctx.ariaLabel;
+    if (!identical(_expr_3, currVal_3)) {
+      _MaterialInputComponent_0_9.inputAriaLabel = currVal_3;
+      changed = true;
+      _expr_3 = currVal_3;
+    }
+    final currVal_4 = _ctx.maxCount;
+    if (!identical(_expr_4, currVal_4)) {
+      _MaterialInputComponent_0_9.maxCount = currVal_4;
+      changed = true;
+      _expr_4 = currVal_4;
+    }
+    final currVal_5 = _ctx.displayBottomPanel;
     if (!identical(_expr_5, currVal_5)) {
-      _MaterialInputComponent_0_9.label = currVal_5;
+      _MaterialInputComponent_0_9.displayBottomPanel = currVal_5;
       changed = true;
       _expr_5 = currVal_5;
     }
-    final currVal_6 = _ctx.ariaLabel;
+    final currVal_6 = _ctx.floatingLabel;
     if (!identical(_expr_6, currVal_6)) {
-      _MaterialInputComponent_0_9.inputAriaLabel = currVal_6;
+      _MaterialInputComponent_0_9.floatingLabel = currVal_6;
       changed = true;
       _expr_6 = currVal_6;
     }
-    final currVal_7 = _ctx.maxCount;
+    final currVal_7 = _ctx.disabled;
     if (!identical(_expr_7, currVal_7)) {
-      _MaterialInputComponent_0_9.maxCount = currVal_7;
+      _MaterialInputComponent_0_9.disabled = currVal_7;
       changed = true;
       _expr_7 = currVal_7;
     }
-    final currVal_8 = _ctx.displayBottomPanel;
+    final currVal_8 = _ctx.errorText;
     if (!identical(_expr_8, currVal_8)) {
-      _MaterialInputComponent_0_9.displayBottomPanel = currVal_8;
+      _MaterialInputComponent_0_9.error = currVal_8;
       changed = true;
       _expr_8 = currVal_8;
     }
-    final currVal_9 = _ctx.floatingLabel;
+    final currVal_9 = _ctx.hintText;
     if (!identical(_expr_9, currVal_9)) {
-      _MaterialInputComponent_0_9.floatingLabel = currVal_9;
+      _MaterialInputComponent_0_9.hintText = currVal_9;
       changed = true;
       _expr_9 = currVal_9;
     }
-    final currVal_10 = _ctx.disabled;
+    final currVal_10 = _ctx.requiredErrorMsg;
     if (!identical(_expr_10, currVal_10)) {
-      _MaterialInputComponent_0_9.disabled = currVal_10;
+      _MaterialInputComponent_0_9.requiredErrorMsg = currVal_10;
       changed = true;
       _expr_10 = currVal_10;
     }
-    final currVal_11 = _ctx.errorText;
+    final currVal_11 = _ctx.checkValid;
     if (!identical(_expr_11, currVal_11)) {
-      _MaterialInputComponent_0_9.error = currVal_11;
+      _MaterialInputComponent_0_9.checkValid = currVal_11;
       changed = true;
       _expr_11 = currVal_11;
     }
-    final currVal_12 = _ctx.hintText;
+    final currVal_12 = _ctx.characterCounter;
     if (!identical(_expr_12, currVal_12)) {
-      _MaterialInputComponent_0_9.hintText = currVal_12;
+      _MaterialInputComponent_0_9.characterCounter = currVal_12;
       changed = true;
       _expr_12 = currVal_12;
     }
-    final currVal_13 = _ctx.requiredErrorMsg;
+    final currVal_13 = _ctx.showHintOnlyOnFocus;
     if (!identical(_expr_13, currVal_13)) {
-      _MaterialInputComponent_0_9.requiredErrorMsg = currVal_13;
+      _MaterialInputComponent_0_9.showHintOnlyOnFocus = currVal_13;
       changed = true;
       _expr_13 = currVal_13;
     }
-    final currVal_14 = _ctx.checkValid;
+    final currVal_14 = _ctx.required;
     if (!identical(_expr_14, currVal_14)) {
-      _MaterialInputComponent_0_9.checkValid = currVal_14;
+      _MaterialInputComponent_0_9.required = currVal_14;
       changed = true;
       _expr_14 = currVal_14;
     }
-    final currVal_15 = _ctx.characterCounter;
+    final currVal_15 = _ctx.leadingGlyph;
     if (!identical(_expr_15, currVal_15)) {
-      _MaterialInputComponent_0_9.characterCounter = currVal_15;
+      _MaterialInputComponent_0_9.leadingGlyph = currVal_15;
       changed = true;
       _expr_15 = currVal_15;
     }
-    final currVal_16 = _ctx.showHintOnlyOnFocus;
+    final currVal_16 = _ctx.trailingGlyph;
     if (!identical(_expr_16, currVal_16)) {
-      _MaterialInputComponent_0_9.showHintOnlyOnFocus = currVal_16;
+      _MaterialInputComponent_0_9.trailingGlyph = currVal_16;
       changed = true;
       _expr_16 = currVal_16;
     }
-    final currVal_17 = _ctx.required;
-    if (!identical(_expr_17, currVal_17)) {
-      _MaterialInputComponent_0_9.required = currVal_17;
-      changed = true;
-      _expr_17 = currVal_17;
-    }
-    final currVal_18 = _ctx.leadingGlyph;
+    final currVal_18 = _ctx.activeModel.activeId;
     if (!identical(_expr_18, currVal_18)) {
-      _MaterialInputComponent_0_9.leadingGlyph = currVal_18;
+      _MaterialInputComponent_0_9.inputAriaActivedescendent = currVal_18;
       changed = true;
       _expr_18 = currVal_18;
     }
-    final currVal_19 = _ctx.trailingGlyph;
-    if (!identical(_expr_19, currVal_19)) {
-      _MaterialInputComponent_0_9.trailingGlyph = currVal_19;
-      changed = true;
-      _expr_19 = currVal_19;
-    }
-    final currVal_20 = _ctx.leadingText;
+    final currVal_20 = _ctx.showPopup;
     if (!identical(_expr_20, currVal_20)) {
-      _MaterialInputComponent_0_9.leadingText = currVal_20;
+      _MaterialInputComponent_0_9.inputAriaExpanded = currVal_20;
       changed = true;
       _expr_20 = currVal_20;
     }
-    final currVal_21 = _ctx.trailingText;
-    if (!identical(_expr_21, currVal_21)) {
-      _MaterialInputComponent_0_9.trailingText = currVal_21;
-      changed = true;
-      _expr_21 = currVal_21;
-    }
-    final currVal_22 = _ctx.rightAlign;
+    final currVal_22 = _ctx.leadingText;
     if (!identical(_expr_22, currVal_22)) {
-      _MaterialInputComponent_0_9.rightAlign = currVal_22;
+      _MaterialInputComponent_0_9.leadingText = currVal_22;
       changed = true;
       _expr_22 = currVal_22;
+    }
+    final currVal_23 = _ctx.trailingText;
+    if (!identical(_expr_23, currVal_23)) {
+      _MaterialInputComponent_0_9.trailingText = currVal_23;
+      changed = true;
+      _expr_23 = currVal_23;
+    }
+    final currVal_24 = _ctx.rightAlign;
+    if (!identical(_expr_24, currVal_24)) {
+      _MaterialInputComponent_0_9.rightAlign = currVal_24;
+      changed = true;
+      _expr_24 = currVal_24;
     }
     if (changed) {
       _compView_0.markAsCheckOnce();
@@ -477,45 +500,45 @@ class ViewMaterialAutoSuggestInputComponent0 extends AppView<import3.MaterialAut
     if (firstCheck) {
       (_MaterialPopupComponent_3_8.trackLayoutChanges = true);
     }
-    final currVal_26 = _ctx.autoDismiss;
-    if (!identical(_expr_26, currVal_26)) {
-      _MaterialPopupComponent_3_8.autoDismiss = currVal_26;
-      _expr_26 = currVal_26;
-    }
-    final currVal_27 = _ctx.enforceSpaceConstraints;
-    if (!identical(_expr_27, currVal_27)) {
-      _MaterialPopupComponent_3_8.enforceSpaceConstraints = currVal_27;
-      _expr_27 = currVal_27;
-    }
-    final currVal_28 = _ctx.popupMatchInputWidth;
+    final currVal_28 = _ctx.autoDismiss;
     if (!identical(_expr_28, currVal_28)) {
-      _MaterialPopupComponent_3_8.matchMinSourceWidth = currVal_28;
+      _MaterialPopupComponent_3_8.autoDismiss = currVal_28;
       _expr_28 = currVal_28;
     }
-    final currVal_29 = _ctx.popupPositions;
+    final currVal_29 = _ctx.enforceSpaceConstraints;
     if (!identical(_expr_29, currVal_29)) {
-      _MaterialPopupComponent_3_8.preferredPositions = currVal_29;
+      _MaterialPopupComponent_3_8.enforceSpaceConstraints = currVal_29;
       _expr_29 = currVal_29;
     }
-    final currVal_30 = local_input;
+    final currVal_30 = _ctx.popupMatchInputWidth;
     if (!identical(_expr_30, currVal_30)) {
-      _MaterialPopupComponent_3_8.source = currVal_30;
+      _MaterialPopupComponent_3_8.matchMinSourceWidth = currVal_30;
       _expr_30 = currVal_30;
     }
-    final currVal_32 = _ctx.constrainToViewport;
+    final currVal_31 = _ctx.popupPositions;
+    if (!identical(_expr_31, currVal_31)) {
+      _MaterialPopupComponent_3_8.preferredPositions = currVal_31;
+      _expr_31 = currVal_31;
+    }
+    final currVal_32 = local_input;
     if (!identical(_expr_32, currVal_32)) {
-      _MaterialPopupComponent_3_8.constrainToViewport = currVal_32;
+      _MaterialPopupComponent_3_8.source = currVal_32;
       _expr_32 = currVal_32;
     }
-    final currVal_33 = _ctx.showPopup;
-    if (!identical(_expr_33, currVal_33)) {
-      _MaterialPopupComponent_3_8.visible = currVal_33;
-      _expr_33 = currVal_33;
-    }
-    final currVal_34 = _ctx.slide;
+    final currVal_34 = _ctx.constrainToViewport;
     if (!identical(_expr_34, currVal_34)) {
-      _MaterialPopupComponent_3_8.slide = currVal_34;
+      _MaterialPopupComponent_3_8.constrainToViewport = currVal_34;
       _expr_34 = currVal_34;
+    }
+    final currVal_35 = _ctx.showPopup;
+    if (!identical(_expr_35, currVal_35)) {
+      _MaterialPopupComponent_3_8.visible = currVal_35;
+      _expr_35 = currVal_35;
+    }
+    final currVal_36 = _ctx.slide;
+    if (!identical(_expr_36, currVal_36)) {
+      _MaterialPopupComponent_3_8.slide = currVal_36;
+      _expr_36 = currVal_36;
     }
     _appEl_2.detectChangesInNestedViews();
     _appEl_3.detectChangesInNestedViews();
@@ -524,24 +547,11 @@ class ViewMaterialAutoSuggestInputComponent0 extends AppView<import3.MaterialAut
       if (!identical(_ctx.inputId, null)) {
         setProp(_el_0, 'id', _ctx.inputId);
       }
-      if (!identical(_ctx.popupId, null)) {
-        setAttr(_el_0, 'aria-owns', _ctx.popupId?.toString());
-      }
     }
-    final currVal_2 = _ctx.activeModel.activeId;
-    if (!identical(_expr_2, currVal_2)) {
-      setAttr(_el_0, 'aria-activedescendant', currVal_2?.toString());
-      _expr_2 = currVal_2;
-    }
-    final currVal_3 = _ctx.showPopup;
-    if (!identical(_expr_3, currVal_3)) {
-      setAttr(_el_0, 'aria-expanded', currVal_3?.toString());
-      _expr_3 = currVal_3;
-    }
-    final currVal_25 = import20.interpolate1('selections ', _ctx.popupShadowCssClass, '');
-    if (!identical(_expr_25, currVal_25)) {
-      _compView_3.updateChildClass(_el_3, currVal_25);
-      _expr_25 = currVal_25;
+    final currVal_27 = import20.interpolate1('selections ', _ctx.popupShadowCssClass, '');
+    if (!identical(_expr_27, currVal_27)) {
+      _compView_3.updateChildClass(_el_3, currVal_27);
+      _expr_27 = currVal_27;
     }
     _compView_3.detectHostChanges(firstCheck);
     _compView_0.detectChanges();
@@ -603,7 +613,7 @@ class _ViewMaterialAutoSuggestInputComponent1 extends AppView<import3.MaterialAu
   var _expr_0;
   String _expr_2;
   bool _expr_3;
-  _ViewMaterialAutoSuggestInputComponent1(AppView<dynamic> parentView, int parentIndex) : super(import18.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMaterialAutoSuggestInputComponent1(AppView<dynamic> parentView, int parentIndex) : super(import18.ViewType.embedded, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMaterialAutoSuggestInputComponent0._renderType;
   }
   dynamic get _TooltipController_0_13 {
@@ -715,20 +725,20 @@ class _ViewMaterialAutoSuggestInputComponent2 extends AppView<import3.MaterialAu
   NgIf _NgIf_1_9;
   ViewContainer _appEl_2;
   NgIf _NgIf_2_9;
-  _ViewMaterialAutoSuggestInputComponent2(AppView<dynamic> parentView, int parentIndex) : super(import18.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMaterialAutoSuggestInputComponent2(AppView<dynamic> parentView, int parentIndex) : super(import18.ViewType.embedded, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMaterialAutoSuggestInputComponent0._renderType;
   }
   @override
   ComponentRef<import3.MaterialAutoSuggestInputComponent> build() {
-    var _anchor_0 = ngAnchor.clone(false);
+    final _anchor_0 = createViewContainerAnchor();
     _appEl_0 = new ViewContainer(0, null, this, _anchor_0);
     TemplateRef _TemplateRef_0_8 = new TemplateRef(_appEl_0, viewFactory_MaterialAutoSuggestInputComponent3);
     _NgIf_0_9 = new NgIf(_appEl_0, _TemplateRef_0_8);
-    var _anchor_1 = ngAnchor.clone(false);
+    final _anchor_1 = createViewContainerAnchor();
     _appEl_1 = new ViewContainer(1, null, this, _anchor_1);
     TemplateRef _TemplateRef_1_8 = new TemplateRef(_appEl_1, viewFactory_MaterialAutoSuggestInputComponent4);
     _NgIf_1_9 = new NgIf(_appEl_1, _TemplateRef_1_8);
-    var _anchor_2 = ngAnchor.clone(false);
+    final _anchor_2 = createViewContainerAnchor();
     _appEl_2 = new ViewContainer(2, null, this, _anchor_2);
     TemplateRef _TemplateRef_2_8 = new TemplateRef(_appEl_2, viewFactory_MaterialAutoSuggestInputComponent5);
     _NgIf_2_9 = new NgIf(_appEl_2, _TemplateRef_2_8);
@@ -764,7 +774,7 @@ class _ViewMaterialAutoSuggestInputComponent3 extends AppView<import3.MaterialAu
   import4.Element _el_1;
   import50.ViewMaterialSpinnerComponent0 _compView_1;
   import51.MaterialSpinnerComponent _MaterialSpinnerComponent_1_5;
-  _ViewMaterialAutoSuggestInputComponent3(AppView<dynamic> parentView, int parentIndex) : super(import18.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMaterialAutoSuggestInputComponent3(AppView<dynamic> parentView, int parentIndex) : super(import18.ViewType.embedded, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMaterialAutoSuggestInputComponent0._renderType;
   }
   @override
@@ -802,7 +812,7 @@ class _ViewMaterialAutoSuggestInputComponent4 extends AppView<import3.MaterialAu
   import4.DivElement _el_0;
   import4.Text _text_1;
   var _expr_0;
-  _ViewMaterialAutoSuggestInputComponent4(AppView<dynamic> parentView, int parentIndex) : super(import18.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMaterialAutoSuggestInputComponent4(AppView<dynamic> parentView, int parentIndex) : super(import18.ViewType.embedded, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMaterialAutoSuggestInputComponent0._renderType;
   }
   @override
@@ -842,7 +852,7 @@ class _ViewMaterialAutoSuggestInputComponent5 extends AppView<import3.MaterialAu
   var _expr_0;
   var _expr_3;
   var _expr_4;
-  _ViewMaterialAutoSuggestInputComponent5(AppView<dynamic> parentView, int parentIndex) : super(import18.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMaterialAutoSuggestInputComponent5(AppView<dynamic> parentView, int parentIndex) : super(import18.ViewType.embedded, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMaterialAutoSuggestInputComponent0._renderType;
   }
   @override
@@ -856,7 +866,7 @@ class _ViewMaterialAutoSuggestInputComponent5 extends AppView<import3.MaterialAu
     addShimC(_el_0);
     _KeyboardOnlyFocusIndicatorDirective_0_5 = new import15.KeyboardOnlyFocusIndicatorDirective(_el_0, parentView.parentView.parentView.injectorGet(import33.DomService, parentView.parentView.viewData.parentIndex));
     _MaterialListComponent_0_6 = new import53.MaterialListComponent();
-    var _anchor_1 = ngAnchor.clone(false);
+    final _anchor_1 = createViewContainerAnchor();
     _appEl_1 = new ViewContainer(1, 0, this, _anchor_1);
     TemplateRef _TemplateRef_1_8 = new TemplateRef(_appEl_1, viewFactory_MaterialAutoSuggestInputComponent6);
     _NgFor_1_9 = new import54.NgFor(_appEl_1, _TemplateRef_1_8);
@@ -942,7 +952,7 @@ class _ViewMaterialAutoSuggestInputComponent6 extends AppView<import3.MaterialAu
   ViewContainer _appEl_4;
   import54.NgFor _NgFor_4_9;
   var _expr_3;
-  _ViewMaterialAutoSuggestInputComponent6(AppView<dynamic> parentView, int parentIndex) : super(import18.ViewType.EMBEDDED, {'\$implicit': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMaterialAutoSuggestInputComponent6(AppView<dynamic> parentView, int parentIndex) : super(import18.ViewType.embedded, {'\$implicit': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMaterialAutoSuggestInputComponent0._renderType;
   }
   @override
@@ -952,22 +962,22 @@ class _ViewMaterialAutoSuggestInputComponent6 extends AppView<import3.MaterialAu
     _el_0.className = 'list-group';
     createAttr(_el_0, 'group', '');
     addShimC(_el_0);
-    var _anchor_1 = ngAnchor.clone(false);
+    final _anchor_1 = createViewContainerAnchor();
     _el_0.append(_anchor_1);
     _appEl_1 = new ViewContainer(1, 0, this, _anchor_1);
     TemplateRef _TemplateRef_1_8 = new TemplateRef(_appEl_1, viewFactory_MaterialAutoSuggestInputComponent7);
     _NgIf_1_9 = new NgIf(_appEl_1, _TemplateRef_1_8);
-    var _anchor_2 = ngAnchor.clone(false);
+    final _anchor_2 = createViewContainerAnchor();
     _el_0.append(_anchor_2);
     _appEl_2 = new ViewContainer(2, 0, this, _anchor_2);
     TemplateRef _TemplateRef_2_8 = new TemplateRef(_appEl_2, viewFactory_MaterialAutoSuggestInputComponent8);
     _NgIf_2_9 = new NgIf(_appEl_2, _TemplateRef_2_8);
-    var _anchor_3 = ngAnchor.clone(false);
+    final _anchor_3 = createViewContainerAnchor();
     _el_0.append(_anchor_3);
     _appEl_3 = new ViewContainer(3, 0, this, _anchor_3);
     TemplateRef _TemplateRef_3_8 = new TemplateRef(_appEl_3, viewFactory_MaterialAutoSuggestInputComponent9);
     _NgIf_3_9 = new NgIf(_appEl_3, _TemplateRef_3_8);
-    var _anchor_4 = ngAnchor.clone(false);
+    final _anchor_4 = createViewContainerAnchor();
     _el_0.append(_anchor_4);
     _appEl_4 = new ViewContainer(4, 0, this, _anchor_4);
     TemplateRef _TemplateRef_4_8 = new TemplateRef(_appEl_4, viewFactory_MaterialAutoSuggestInputComponent10);
@@ -1012,7 +1022,7 @@ class _ViewMaterialAutoSuggestInputComponent7 extends AppView<import3.MaterialAu
   import4.Element _el_0;
   import4.Text _text_1;
   var _expr_0;
-  _ViewMaterialAutoSuggestInputComponent7(AppView<dynamic> parentView, int parentIndex) : super(import18.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMaterialAutoSuggestInputComponent7(AppView<dynamic> parentView, int parentIndex) : super(import18.ViewType.embedded, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMaterialAutoSuggestInputComponent0._renderType;
   }
   @override
@@ -1056,7 +1066,7 @@ class _ViewMaterialAutoSuggestInputComponent8 extends AppView<import3.MaterialAu
   var _expr_0;
   var _expr_1;
   var _expr_2;
-  _ViewMaterialAutoSuggestInputComponent8(AppView<dynamic> parentView, int parentIndex) : super(import18.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMaterialAutoSuggestInputComponent8(AppView<dynamic> parentView, int parentIndex) : super(import18.ViewType.embedded, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMaterialAutoSuggestInputComponent0._renderType;
   }
   @override
@@ -1125,7 +1135,7 @@ class _ViewMaterialAutoSuggestInputComponent9 extends AppView<import3.MaterialAu
   import15.KeyboardOnlyFocusIndicatorDirective _KeyboardOnlyFocusIndicatorDirective_0_5;
   import60.MaterialSelectDropdownItemComponent _MaterialSelectDropdownItemComponent_0_6;
   var _expr_1;
-  _ViewMaterialAutoSuggestInputComponent9(AppView<dynamic> parentView, int parentIndex) : super(import18.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMaterialAutoSuggestInputComponent9(AppView<dynamic> parentView, int parentIndex) : super(import18.ViewType.embedded, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMaterialAutoSuggestInputComponent0._renderType;
   }
   @override
@@ -1196,7 +1206,7 @@ class _ViewMaterialAutoSuggestInputComponent10 extends AppView<import3.MaterialA
   var _expr_8;
   var _expr_9;
   String _expr_10;
-  _ViewMaterialAutoSuggestInputComponent10(AppView<dynamic> parentView, int parentIndex) : super(import18.ViewType.EMBEDDED, {'\$implicit': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMaterialAutoSuggestInputComponent10(AppView<dynamic> parentView, int parentIndex) : super(import18.ViewType.embedded, {'\$implicit': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMaterialAutoSuggestInputComponent0._renderType;
   }
   @override
@@ -1312,7 +1322,7 @@ const List<dynamic> styles$MaterialAutoSuggestInputComponentHost = const [];
 class _ViewMaterialAutoSuggestInputComponentHost0 extends AppView<dynamic> {
   ViewMaterialAutoSuggestInputComponent0 _compView_0;
   import3.MaterialAutoSuggestInputComponent _MaterialAutoSuggestInputComponent_0_5;
-  _ViewMaterialAutoSuggestInputComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import18.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
+  _ViewMaterialAutoSuggestInputComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import18.ViewType.host, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewMaterialAutoSuggestInputComponent0(this, 0);

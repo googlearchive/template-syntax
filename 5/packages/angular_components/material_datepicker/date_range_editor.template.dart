@@ -156,7 +156,7 @@ class ViewDateRangeEditorComponent0 extends AppView<import2.DateRangeEditorCompo
   NgIf _NgIf_1_9;
   bool _expr_2;
   static RenderComponentType _renderType;
-  ViewDateRangeEditorComponent0(AppView<dynamic> parentView, int parentIndex) : super(import6.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  ViewDateRangeEditorComponent0(AppView<dynamic> parentView, int parentIndex) : super(import6.ViewType.component, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     rootEl = import8.document.createElement('date-range-editor');
     _renderType ??= import9.appViewUtils.createRenderType('', ViewEncapsulation.Emulated, styles$DateRangeEditorComponent);
     setupComponentType(_renderType);
@@ -165,12 +165,12 @@ class ViewDateRangeEditorComponent0 extends AppView<import2.DateRangeEditorCompo
   ComponentRef<import2.DateRangeEditorComponent> build() {
     final _rootEl = rootEl;
     final import8.HtmlElement parentRenderNode = initViewRoot(_rootEl);
-    var _anchor_0 = ngAnchor.clone(false);
+    final _anchor_0 = createViewContainerAnchor();
     parentRenderNode.append(_anchor_0);
     _appEl_0 = new ViewContainer(0, null, this, _anchor_0);
     TemplateRef _TemplateRef_0_8 = new TemplateRef(_appEl_0, viewFactory_DateRangeEditorComponent1);
     _NgIf_0_9 = new NgIf(_appEl_0, _TemplateRef_0_8);
-    var _anchor_1 = ngAnchor.clone(false);
+    final _anchor_1 = createViewContainerAnchor();
     parentRenderNode.append(_anchor_1);
     _appEl_1 = new ViewContainer(1, null, this, _anchor_1);
     TemplateRef _TemplateRef_1_8 = new TemplateRef(_appEl_1, viewFactory_DateRangeEditorComponent11);
@@ -253,7 +253,7 @@ class _ViewDateRangeEditorComponent1 extends AppView<import2.DateRangeEditorComp
   NgIf _NgIf_6_9;
   bool _expr_0;
   var _expr_4;
-  _ViewDateRangeEditorComponent1(AppView<dynamic> parentView, int parentIndex) : super(import6.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewDateRangeEditorComponent1(AppView<dynamic> parentView, int parentIndex) : super(import6.ViewType.embedded, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewDateRangeEditorComponent0._renderType;
   }
   @override
@@ -263,28 +263,29 @@ class _ViewDateRangeEditorComponent1 extends AppView<import2.DateRangeEditorComp
     _el_0.className = 'preset-list';
     addShimC(_el_0);
     _MaterialSelectComponent_0_5 = new import13.MaterialSelectComponent();
-    var _anchor_1 = ngAnchor.clone(false);
+    final _anchor_1 = createViewContainerAnchor();
     _appEl_1 = new ViewContainer(1, 0, this, _anchor_1);
     TemplateRef _TemplateRef_1_8 = new TemplateRef(_appEl_1, viewFactory_DateRangeEditorComponent2);
     _NgIf_1_9 = new NgIf(_appEl_1, _TemplateRef_1_8);
-    var _anchor_2 = ngAnchor.clone(false);
+    final _anchor_2 = createViewContainerAnchor();
     _appEl_2 = new ViewContainer(2, 0, this, _anchor_2);
     TemplateRef _TemplateRef_2_8 = new TemplateRef(_appEl_2, viewFactory_DateRangeEditorComponent3);
     _NgIf_2_9 = new NgIf(_appEl_2, _TemplateRef_2_8);
     var doc = import8.document;
     _el_3 = doc.createElement('div');
     _el_3.className = 'group';
+    createAttr(_el_3, 'role', 'listbox');
     addShimC(_el_3);
-    var _anchor_4 = ngAnchor.clone(false);
+    final _anchor_4 = createViewContainerAnchor();
     _el_3.append(_anchor_4);
     _appEl_4 = new ViewContainer(4, 3, this, _anchor_4);
     TemplateRef _TemplateRef_4_8 = new TemplateRef(_appEl_4, viewFactory_DateRangeEditorComponent6);
     _NgFor_4_9 = new import14.NgFor(_appEl_4, _TemplateRef_4_8);
-    var _anchor_5 = ngAnchor.clone(false);
+    final _anchor_5 = createViewContainerAnchor();
     _appEl_5 = new ViewContainer(5, 0, this, _anchor_5);
     TemplateRef _TemplateRef_5_8 = new TemplateRef(_appEl_5, viewFactory_DateRangeEditorComponent9);
     _NgIf_5_9 = new NgIf(_appEl_5, _TemplateRef_5_8);
-    var _anchor_6 = ngAnchor.clone(false);
+    final _anchor_6 = createViewContainerAnchor();
     _appEl_6 = new ViewContainer(6, 0, this, _anchor_6);
     TemplateRef _TemplateRef_6_8 = new TemplateRef(_appEl_6, viewFactory_DateRangeEditorComponent10);
     _NgIf_6_9 = new NgIf(_appEl_6, _TemplateRef_6_8);
@@ -381,7 +382,7 @@ class _ViewDateRangeEditorComponent2 extends AppView<import2.DateRangeEditorComp
   import18.MaterialSelectItemComponent _SelectionItem_1_6;
   import8.Text _text_2;
   var _expr_0;
-  _ViewDateRangeEditorComponent2(AppView<dynamic> parentView, int parentIndex) : super(import6.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewDateRangeEditorComponent2(AppView<dynamic> parentView, int parentIndex) : super(import6.ViewType.embedded, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewDateRangeEditorComponent0._renderType;
   }
   @override
@@ -461,7 +462,7 @@ class _ViewDateRangeEditorComponent3 extends AppView<import2.DateRangeEditorComp
   bool _expr_2;
   bool _expr_3;
   var _expr_4;
-  _ViewDateRangeEditorComponent3(AppView<dynamic> parentView, int parentIndex) : super(import6.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewDateRangeEditorComponent3(AppView<dynamic> parentView, int parentIndex) : super(import6.ViewType.embedded, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewDateRangeEditorComponent0._renderType;
   }
   @override
@@ -481,12 +482,12 @@ class _ViewDateRangeEditorComponent3 extends AppView<import2.DateRangeEditorComp
     addShimC(_el_2);
     _text_3 = new import8.Text('');
     _el_2.append(_text_3);
-    var _anchor_4 = ngAnchor.clone(false);
+    final _anchor_4 = createViewContainerAnchor();
     _el_2.append(_anchor_4);
     _appEl_4 = new ViewContainer(4, 2, this, _anchor_4);
     TemplateRef _TemplateRef_4_8 = new TemplateRef(_appEl_4, viewFactory_DateRangeEditorComponent4);
     _NgIf_4_9 = new NgIf(_appEl_4, _TemplateRef_4_8);
-    var _anchor_5 = ngAnchor.clone(false);
+    final _anchor_5 = createViewContainerAnchor();
     _appEl_5 = new ViewContainer(5, 1, this, _anchor_5);
     TemplateRef _TemplateRef_5_8 = new TemplateRef(_appEl_5, viewFactory_DateRangeEditorComponent5);
     _NgIf_5_9 = new NgIf(_appEl_5, _TemplateRef_5_8);
@@ -566,7 +567,7 @@ class _ViewDateRangeEditorComponent4 extends AppView<import2.DateRangeEditorComp
   import8.DivElement _el_0;
   import8.Text _text_1;
   var _expr_0;
-  _ViewDateRangeEditorComponent4(AppView<dynamic> parentView, int parentIndex) : super(import6.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewDateRangeEditorComponent4(AppView<dynamic> parentView, int parentIndex) : super(import6.ViewType.embedded, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewDateRangeEditorComponent0._renderType;
   }
   @override
@@ -601,7 +602,7 @@ class _ViewDateRangeEditorComponent5 extends AppView<import2.DateRangeEditorComp
   import22.ViewGlyphComponent0 _compView_0;
   import23.ButtonDirectiveNgCd _ButtonDirective_0_5;
   import24.GlyphComponent _GlyphComponent_0_6;
-  _ViewDateRangeEditorComponent5(AppView<dynamic> parentView, int parentIndex) : super(import6.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewDateRangeEditorComponent5(AppView<dynamic> parentView, int parentIndex) : super(import6.ViewType.embedded, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewDateRangeEditorComponent0._renderType;
   }
   @override
@@ -671,7 +672,7 @@ class _ViewDateRangeEditorComponent6 extends AppView<import2.DateRangeEditorComp
   String _expr_3;
   bool _expr_4;
   var _expr_5;
-  _ViewDateRangeEditorComponent6(AppView<dynamic> parentView, int parentIndex) : super(import6.ViewType.EMBEDDED, {'\$implicit': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewDateRangeEditorComponent6(AppView<dynamic> parentView, int parentIndex) : super(import6.ViewType.embedded, {'\$implicit': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewDateRangeEditorComponent0._renderType;
   }
   dynamic get _TooltipController_0_11 {
@@ -692,7 +693,7 @@ class _ViewDateRangeEditorComponent6 extends AppView<import2.DateRangeEditorComp
     _MaterialTooltipDirective_0_9 = new import26.MaterialTooltipDirective(parentView.parentView.injectorGet(import30.DomPopupSourceFactory, parentView.viewData.parentIndex), _appEl_0, _el_0, _appEl_0, _compView_0.ref, parentView.parentView.injectorGet(import8.Window, parentView.viewData.parentIndex));
     _SelectionItem_0_10 = _MaterialSelectItemComponent_0_8;
     _text_1 = new import8.Text('');
-    var _anchor_2 = ngAnchor.clone(false);
+    final _anchor_2 = createViewContainerAnchor();
     _appEl_2 = new ViewContainer(2, 0, this, _anchor_2);
     TemplateRef _TemplateRef_2_8 = new TemplateRef(_appEl_2, viewFactory_DateRangeEditorComponent7);
     _NgIf_2_9 = new NgIf(_appEl_2, _TemplateRef_2_8);
@@ -807,7 +808,7 @@ class _ViewDateRangeEditorComponent7 extends AppView<import2.DateRangeEditorComp
   import14.NgFor _NgFor_3_9;
   var _expr_5;
   var _expr_6;
-  _ViewDateRangeEditorComponent7(AppView<dynamic> parentView, int parentIndex) : super(import6.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewDateRangeEditorComponent7(AppView<dynamic> parentView, int parentIndex) : super(import6.ViewType.embedded, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewDateRangeEditorComponent0._renderType;
   }
   dynamic get _PopupHierarchy_2_11 {
@@ -851,7 +852,7 @@ class _ViewDateRangeEditorComponent7 extends AppView<import2.DateRangeEditorComp
     addShimC(_el_2);
     _appEl_2 = new ViewContainer(2, null, this, _el_2);
     _MaterialPopupComponent_2_8 = new import37.MaterialPopupComponent(parentView.parentView.parentView.injectorGet(import40.PopupHierarchy, parentView.parentView.viewData.parentIndex, null), parentView.parentView.parentView.injectorGet(import37.MaterialPopupComponent, parentView.parentView.viewData.parentIndex, null), null, parentView.parentView.parentView.injectorGet(import41.NgZone, parentView.parentView.viewData.parentIndex), parentView.parentView.parentView.injectorGet(import42.OverlayService, parentView.parentView.viewData.parentIndex), parentView.parentView.parentView.injectorGet(import43.ZIndexer, parentView.parentView.viewData.parentIndex), parentView.parentView.parentView.injectorGet(const import38.OpaqueToken<List<import45.RelativePosition>>('defaultPopupPositions'), parentView.parentView.viewData.parentIndex), parentView.parentView.parentView.injectorGet(const import38.OpaqueToken('overlayRepositionLoop'), parentView.parentView.viewData.parentIndex), parentView.parentView.parentView.injectorGet(import46.PopupSizeProvider, parentView.parentView.viewData.parentIndex, null), _compView_2.ref, _appEl_2, new ElementRef(_el_2));
-    var _anchor_3 = ngAnchor.clone(false);
+    final _anchor_3 = createViewContainerAnchor();
     _appEl_3 = new ViewContainer(3, 2, this, _anchor_3);
     TemplateRef _TemplateRef_3_8 = new TemplateRef(_appEl_3, viewFactory_DateRangeEditorComponent8);
     _NgFor_3_9 = new import14.NgFor(_appEl_3, _TemplateRef_3_8);
@@ -984,7 +985,7 @@ class _ViewDateRangeEditorComponent8 extends AppView<import2.DateRangeEditorComp
   String _expr_3;
   bool _expr_4;
   var _expr_5;
-  _ViewDateRangeEditorComponent8(AppView<dynamic> parentView, int parentIndex) : super(import6.ViewType.EMBEDDED, {'\$implicit': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewDateRangeEditorComponent8(AppView<dynamic> parentView, int parentIndex) : super(import6.ViewType.embedded, {'\$implicit': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewDateRangeEditorComponent0._renderType;
   }
   dynamic get _TooltipController_0_12 {
@@ -1134,7 +1135,7 @@ class _ViewDateRangeEditorComponent9 extends AppView<import2.DateRangeEditorComp
   var _expr_6;
   int _expr_9;
   var _expr_11;
-  _ViewDateRangeEditorComponent9(AppView<dynamic> parentView, int parentIndex) : super(import6.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewDateRangeEditorComponent9(AppView<dynamic> parentView, int parentIndex) : super(import6.ViewType.embedded, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewDateRangeEditorComponent0._renderType;
   }
   @override
@@ -1158,7 +1159,7 @@ class _ViewDateRangeEditorComponent9 extends AppView<import2.DateRangeEditorComp
     _NgValidators_2_6 = [_DeferredValidator_2_5];
     _NgModel_2_7 = new import52.NgModel(_NgValidators_2_6, null);
     _NgControl_2_8 = _NgModel_2_7;
-    _MaterialInputComponent_2_9 = new import53.MaterialInputComponent(null, null, _NgControl_2_8, _compView_2.ref, _DeferredValidator_2_5);
+    _MaterialInputComponent_2_9 = new import53.MaterialInputComponent(null, null, null, _NgControl_2_8, _compView_2.ref, _DeferredValidator_2_5);
     _BaseMaterialInput_2_10 = _MaterialInputComponent_2_9;
     _MaterialInputDefaultValueAccessor_2_11 = new import54.MaterialInputDefaultValueAccessor(_BaseMaterialInput_2_10, _NgControl_2_8);
     _compView_2.create(_MaterialInputComponent_2_9, [const []]);
@@ -1184,7 +1185,7 @@ class _ViewDateRangeEditorComponent9 extends AppView<import2.DateRangeEditorComp
     _NgValidators_6_6 = [_DeferredValidator_6_5];
     _NgModel_6_7 = new import52.NgModel(_NgValidators_6_6, null);
     _NgControl_6_8 = _NgModel_6_7;
-    _MaterialInputComponent_6_9 = new import53.MaterialInputComponent(null, null, _NgControl_6_8, _compView_6.ref, _DeferredValidator_6_5);
+    _MaterialInputComponent_6_9 = new import53.MaterialInputComponent(null, null, null, _NgControl_6_8, _compView_6.ref, _DeferredValidator_6_5);
     _BaseMaterialInput_6_10 = _MaterialInputComponent_6_9;
     _MaterialInputDefaultValueAccessor_6_11 = new import54.MaterialInputDefaultValueAccessor(_BaseMaterialInput_6_10, _NgControl_6_8);
     _compView_6.create(_MaterialInputComponent_6_9, [const []]);
@@ -1404,7 +1405,7 @@ class _ViewDateRangeEditorComponent10 extends AppView<import2.DateRangeEditorCom
   import58.ViewComparisonRangeEditorComponent0 _compView_1;
   import59.ComparisonRangeEditorComponent _ComparisonRangeEditorComponent_1_5;
   var _expr_0;
-  _ViewDateRangeEditorComponent10(AppView<dynamic> parentView, int parentIndex) : super(import6.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewDateRangeEditorComponent10(AppView<dynamic> parentView, int parentIndex) : super(import6.ViewType.embedded, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewDateRangeEditorComponent0._renderType;
   }
   @override
@@ -1476,7 +1477,7 @@ class _ViewDateRangeEditorComponent11 extends AppView<import2.DateRangeEditorCom
   var _expr_7;
   bool _expr_11 = false;
   bool _expr_12;
-  _ViewDateRangeEditorComponent11(AppView<dynamic> parentView, int parentIndex) : super(import6.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewDateRangeEditorComponent11(AppView<dynamic> parentView, int parentIndex) : super(import6.ViewType.embedded, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewDateRangeEditorComponent0._renderType;
   }
   @override
@@ -1485,12 +1486,12 @@ class _ViewDateRangeEditorComponent11 extends AppView<import2.DateRangeEditorCom
     _el_0 = doc.createElement('div');
     _el_0.className = 'right-column';
     addShimC(_el_0);
-    var _anchor_1 = ngAnchor.clone(false);
+    final _anchor_1 = createViewContainerAnchor();
     _el_0.append(_anchor_1);
     _appEl_1 = new ViewContainer(1, 0, this, _anchor_1);
     TemplateRef _TemplateRef_1_8 = new TemplateRef(_appEl_1, viewFactory_DateRangeEditorComponent12);
     _NgIf_1_9 = new NgIf(_appEl_1, _TemplateRef_1_8);
-    _anchor_2 = ngAnchor.clone(false);
+    _anchor_2 = createViewContainerAnchor();
     _el_0.append(_anchor_2);
     _el_3 = createDivAndAppend(doc, _el_0);
     _el_3.className = 'range-input';
@@ -1502,32 +1503,32 @@ class _ViewDateRangeEditorComponent11 extends AppView<import2.DateRangeEditorCom
     addShimC(_el_4);
     _DateRangeInputComponent_4_5 = new import61.DateRangeInputComponent(_compView_4.ref);
     _compView_4.create(_DateRangeInputComponent_4_5, []);
-    var _anchor_5 = ngAnchor.clone(false);
+    final _anchor_5 = createViewContainerAnchor();
     _el_0.append(_anchor_5);
     _appEl_5 = new ViewContainer(5, 0, this, _anchor_5);
     TemplateRef _TemplateRef_5_8 = new TemplateRef(_appEl_5, viewFactory_DateRangeEditorComponent14);
     _NgIf_5_9 = new NgIf(_appEl_5, _TemplateRef_5_8);
-    var _anchor_6 = ngAnchor.clone(false);
+    final _anchor_6 = createViewContainerAnchor();
     _el_0.append(_anchor_6);
     _appEl_6 = new ViewContainer(6, 0, this, _anchor_6);
     TemplateRef _TemplateRef_6_8 = new TemplateRef(_appEl_6, viewFactory_DateRangeEditorComponent15);
     _NgIf_6_9 = new NgIf(_appEl_6, _TemplateRef_6_8);
-    var _anchor_7 = ngAnchor.clone(false);
+    final _anchor_7 = createViewContainerAnchor();
     _el_0.append(_anchor_7);
     _appEl_7 = new ViewContainer(7, 0, this, _anchor_7);
     TemplateRef _TemplateRef_7_8 = new TemplateRef(_appEl_7, viewFactory_DateRangeEditorComponent16);
     _NgIf_7_9 = new NgIf(_appEl_7, _TemplateRef_7_8);
-    _anchor_8 = ngAnchor.clone(false);
+    _anchor_8 = createViewContainerAnchor();
     _el_0.append(_anchor_8);
     _el_9 = createDivAndAppend(doc, _el_0);
     _el_9.className = 'picker-container';
     addShimC(_el_9);
-    var _anchor_10 = ngAnchor.clone(false);
+    final _anchor_10 = createViewContainerAnchor();
     _el_9.append(_anchor_10);
     _appEl_10 = new ViewContainer(10, 9, this, _anchor_10);
     TemplateRef _TemplateRef_10_8 = new TemplateRef(_appEl_10, viewFactory_DateRangeEditorComponent18);
     _NgIf_10_9 = new NgIf(_appEl_10, _TemplateRef_10_8);
-    var _anchor_11 = ngAnchor.clone(false);
+    final _anchor_11 = createViewContainerAnchor();
     _el_9.append(_anchor_11);
     _appEl_11 = new ViewContainer(11, 9, this, _anchor_11);
     TemplateRef _TemplateRef_11_8 = new TemplateRef(_appEl_11, viewFactory_DateRangeEditorComponent19);
@@ -1666,7 +1667,7 @@ class _ViewDateRangeEditorComponent12 extends AppView<import2.DateRangeEditorCom
   import22.ViewGlyphComponent0 _compView_3;
   import24.GlyphComponent _GlyphComponent_3_5;
   var _expr_0;
-  _ViewDateRangeEditorComponent12(AppView<dynamic> parentView, int parentIndex) : super(import6.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewDateRangeEditorComponent12(AppView<dynamic> parentView, int parentIndex) : super(import6.ViewType.embedded, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewDateRangeEditorComponent0._renderType;
   }
   @override
@@ -1741,7 +1742,7 @@ class _ViewDateRangeEditorComponent14 extends AppView<import2.DateRangeEditorCom
   import8.DivElement _el_0;
   import8.Text _text_1;
   var _expr_0;
-  _ViewDateRangeEditorComponent14(AppView<dynamic> parentView, int parentIndex) : super(import6.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewDateRangeEditorComponent14(AppView<dynamic> parentView, int parentIndex) : super(import6.ViewType.embedded, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewDateRangeEditorComponent0._renderType;
   }
   @override
@@ -1782,7 +1783,7 @@ class _ViewDateRangeEditorComponent15 extends AppView<import2.DateRangeEditorCom
   var _expr_3;
   bool _expr_4;
   var _expr_5;
-  _ViewDateRangeEditorComponent15(AppView<dynamic> parentView, int parentIndex) : super(import6.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewDateRangeEditorComponent15(AppView<dynamic> parentView, int parentIndex) : super(import6.ViewType.embedded, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewDateRangeEditorComponent0._renderType;
   }
   @override
@@ -1890,7 +1891,7 @@ class _ViewDateRangeEditorComponent16 extends AppView<import2.DateRangeEditorCom
   var _expr_0;
   bool _expr_1;
   var _expr_3;
-  _ViewDateRangeEditorComponent16(AppView<dynamic> parentView, int parentIndex) : super(import6.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewDateRangeEditorComponent16(AppView<dynamic> parentView, int parentIndex) : super(import6.ViewType.embedded, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewDateRangeEditorComponent0._renderType;
   }
   @override
@@ -2011,7 +2012,7 @@ class _ViewDateRangeEditorComponent18 extends AppView<import2.DateRangeEditorCom
   var _expr_4;
   var _expr_5;
   bool _expr_6;
-  _ViewDateRangeEditorComponent18(AppView<dynamic> parentView, int parentIndex) : super(import6.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewDateRangeEditorComponent18(AppView<dynamic> parentView, int parentIndex) : super(import6.ViewType.embedded, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewDateRangeEditorComponent0._renderType;
   }
   @override
@@ -2122,7 +2123,7 @@ class _ViewDateRangeEditorComponent19 extends AppView<import2.DateRangeEditorCom
   var _expr_1;
   var _expr_2;
   bool _expr_3;
-  _ViewDateRangeEditorComponent19(AppView<dynamic> parentView, int parentIndex) : super(import6.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewDateRangeEditorComponent19(AppView<dynamic> parentView, int parentIndex) : super(import6.ViewType.embedded, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewDateRangeEditorComponent0._renderType;
   }
   @override
@@ -2210,7 +2211,7 @@ const List<dynamic> styles$DateRangeEditorComponentHost = const [];
 class _ViewDateRangeEditorComponentHost0 extends AppView<dynamic> {
   ViewDateRangeEditorComponent0 _compView_0;
   import2.DateRangeEditorComponent _DateRangeEditorComponent_0_5;
-  _ViewDateRangeEditorComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import6.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
+  _ViewDateRangeEditorComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import6.ViewType.host, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewDateRangeEditorComponent0(this, 0);

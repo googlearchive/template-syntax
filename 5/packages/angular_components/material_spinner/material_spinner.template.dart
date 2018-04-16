@@ -26,7 +26,7 @@ class ViewMaterialSpinnerComponent0 extends AppView<import2.MaterialSpinnerCompo
   import3.DivElement _el_2;
   import3.DivElement _el_3;
   static RenderComponentType _renderType;
-  ViewMaterialSpinnerComponent0(AppView<dynamic> parentView, int parentIndex) : super(import5.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckOnce) {
+  ViewMaterialSpinnerComponent0(AppView<dynamic> parentView, int parentIndex) : super(import5.ViewType.component, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckOnce) {
     rootEl = import3.document.createElement('material-spinner');
     _renderType ??= import7.appViewUtils.createRenderType('', ViewEncapsulation.Emulated, styles$MaterialSpinnerComponent);
     setupComponentType(_renderType);
@@ -62,7 +62,7 @@ const List<dynamic> styles$MaterialSpinnerComponentHost = const [];
 class _ViewMaterialSpinnerComponentHost0 extends AppView<dynamic> {
   ViewMaterialSpinnerComponent0 _compView_0;
   import2.MaterialSpinnerComponent _MaterialSpinnerComponent_0_5;
-  _ViewMaterialSpinnerComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import5.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
+  _ViewMaterialSpinnerComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import5.ViewType.host, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewMaterialSpinnerComponent0(this, 0);

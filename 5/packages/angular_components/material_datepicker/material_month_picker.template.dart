@@ -42,7 +42,7 @@ class ViewMaterialMonthPickerComponent0 extends AppView<import2.MaterialMonthPic
   import3.DivElement _el_0;
   import3.DivElement _el_1;
   static RenderComponentType _renderType;
-  ViewMaterialMonthPickerComponent0(AppView<dynamic> parentView, int parentIndex) : super(import5.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckOnce) {
+  ViewMaterialMonthPickerComponent0(AppView<dynamic> parentView, int parentIndex) : super(import5.ViewType.component, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckOnce) {
     rootEl = import3.document.createElement('material-month-picker');
     _renderType ??= import7.appViewUtils.createRenderType('', ViewEncapsulation.Emulated, styles$MaterialMonthPickerComponent);
     setupComponentType(_renderType);
@@ -73,7 +73,7 @@ const List<dynamic> styles$MaterialMonthPickerComponentHost = const [];
 class _ViewMaterialMonthPickerComponentHost0 extends AppView<dynamic> {
   ViewMaterialMonthPickerComponent0 _compView_0;
   import2.MaterialMonthPickerComponent _MaterialMonthPickerComponent_0_5;
-  _ViewMaterialMonthPickerComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import5.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
+  _ViewMaterialMonthPickerComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import5.ViewType.host, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewMaterialMonthPickerComponent0(this, 0);

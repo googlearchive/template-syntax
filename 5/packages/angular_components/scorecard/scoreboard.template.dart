@@ -64,7 +64,7 @@ class ViewScoreboardComponent0 extends AppView<import2.ScoreboardComponent> {
   bool _expr_1;
   var _expr_3;
   static RenderComponentType _renderType;
-  ViewScoreboardComponent0(AppView<dynamic> parentView, int parentIndex) : super(import8.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckOnce) {
+  ViewScoreboardComponent0(AppView<dynamic> parentView, int parentIndex) : super(import8.ViewType.component, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckOnce) {
     rootEl = import3.document.createElement('acx-scoreboard');
     _renderType ??= import10.appViewUtils.createRenderType('', ViewEncapsulation.Emulated, styles$ScoreboardComponent);
     setupComponentType(_renderType);
@@ -77,7 +77,7 @@ class ViewScoreboardComponent0 extends AppView<import2.ScoreboardComponent> {
     _el_0 = createDivAndAppend(doc, parentRenderNode);
     _el_0.className = 'acx-scoreboard';
     addShimC(_el_0);
-    var _anchor_1 = ngAnchor.clone(false);
+    final _anchor_1 = createViewContainerAnchor();
     _el_0.append(_anchor_1);
     _appEl_1 = new ViewContainer(1, 0, this, _anchor_1);
     TemplateRef _TemplateRef_1_8 = new TemplateRef(_appEl_1, viewFactory_ScoreboardComponent1);
@@ -88,7 +88,7 @@ class ViewScoreboardComponent0 extends AppView<import2.ScoreboardComponent> {
     addShimC(_el_2);
     _ScorecardBarDirective_2_5 = new import6.ScorecardBarDirective(parentView.injectorGet(import13.DomService, viewData.parentIndex), _el_2, parentView.injectorGet(const import14.OpaqueToken('isRtl'), viewData.parentIndex, null));
     project(_el_2, 0);
-    var _anchor_3 = ngAnchor.clone(false);
+    final _anchor_3 = createViewContainerAnchor();
     _el_0.append(_anchor_3);
     _appEl_3 = new ViewContainer(3, 0, this, _anchor_3);
     TemplateRef _TemplateRef_3_8 = new TemplateRef(_appEl_3, viewFactory_ScoreboardComponent2);
@@ -150,7 +150,7 @@ class _ViewScoreboardComponent1 extends AppView<import2.ScoreboardComponent> {
   bool _expr_0;
   var _expr_1;
   var _expr_2;
-  _ViewScoreboardComponent1(AppView<dynamic> parentView, int parentIndex) : super(import8.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewScoreboardComponent1(AppView<dynamic> parentView, int parentIndex) : super(import8.ViewType.embedded, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewScoreboardComponent0._renderType;
   }
   @override
@@ -241,7 +241,7 @@ class _ViewScoreboardComponent2 extends AppView<import2.ScoreboardComponent> {
   bool _expr_0;
   var _expr_1;
   var _expr_2;
-  _ViewScoreboardComponent2(AppView<dynamic> parentView, int parentIndex) : super(import8.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewScoreboardComponent2(AppView<dynamic> parentView, int parentIndex) : super(import8.ViewType.embedded, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewScoreboardComponent0._renderType;
   }
   @override
@@ -327,7 +327,7 @@ class _ViewScoreboardComponentHost0 extends AppView<dynamic> {
   ViewScoreboardComponent0 _compView_0;
   import2.ScoreboardComponent _ScoreboardComponent_0_5;
   bool _query_ScorecardComponent_0_0_isDirty = true;
-  _ViewScoreboardComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import8.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
+  _ViewScoreboardComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import8.ViewType.host, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewScoreboardComponent0(this, 0);

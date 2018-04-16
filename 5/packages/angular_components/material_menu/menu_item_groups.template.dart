@@ -136,7 +136,7 @@ class ViewMenuItemGroupsComponent0 extends AppView<import2.MenuItemGroupsCompone
   bool _expr_1;
   var _expr_2;
   static RenderComponentType _renderType;
-  ViewMenuItemGroupsComponent0(AppView<dynamic> parentView, int parentIndex) : super(import9.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckOnce) {
+  ViewMenuItemGroupsComponent0(AppView<dynamic> parentView, int parentIndex) : super(import9.ViewType.component, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckOnce) {
     rootEl = import3.document.createElement('menu-item-groups');
     _renderType ??= import11.appViewUtils.createRenderType('', ViewEncapsulation.Emulated, styles$MenuItemGroupsComponent);
     setupComponentType(_renderType);
@@ -154,7 +154,7 @@ class ViewMenuItemGroupsComponent0 extends AppView<import2.MenuItemGroupsCompone
     addShimC(_el_1);
     _FocusTrapComponent_1_5 = new import5.FocusTrapComponent();
     import3.Text _text_2 = new import3.Text('\n  ');
-    var _anchor_3 = ngAnchor.clone(false);
+    final _anchor_3 = createViewContainerAnchor();
     _appEl_3 = new ViewContainer(3, 1, this, _anchor_3);
     TemplateRef _TemplateRef_3_8 = new TemplateRef(_appEl_3, viewFactory_MenuItemGroupsComponent1);
     _NgFor_3_9 = new import7.NgFor(_appEl_3, _TemplateRef_3_8);
@@ -263,7 +263,7 @@ class _ViewMenuItemGroupsComponent1 extends AppView<import2.MenuItemGroupsCompon
   NgIf _NgIf_4_9;
   bool _expr_0;
   bool _expr_1;
-  _ViewMenuItemGroupsComponent1(AppView<dynamic> parentView, int parentIndex) : super(import9.ViewType.EMBEDDED, {'\$implicit': null, 'index': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMenuItemGroupsComponent1(AppView<dynamic> parentView, int parentIndex) : super(import9.ViewType.embedded, {'\$implicit': null, 'index': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMenuItemGroupsComponent0._renderType;
   }
   @override
@@ -276,14 +276,14 @@ class _ViewMenuItemGroupsComponent1 extends AppView<import2.MenuItemGroupsCompon
     addShimC(_el_0);
     import3.Text _text_1 = new import3.Text('\n    ');
     _el_0.append(_text_1);
-    var _anchor_2 = ngAnchor.clone(false);
+    final _anchor_2 = createViewContainerAnchor();
     _el_0.append(_anchor_2);
     _appEl_2 = new ViewContainer(2, 0, this, _anchor_2);
     TemplateRef _TemplateRef_2_8 = new TemplateRef(_appEl_2, viewFactory_MenuItemGroupsComponent2);
     _NgIf_2_9 = new NgIf(_appEl_2, _TemplateRef_2_8);
     import3.Text _text_3 = new import3.Text('\n    ');
     _el_0.append(_text_3);
-    var _anchor_4 = ngAnchor.clone(false);
+    final _anchor_4 = createViewContainerAnchor();
     _el_0.append(_anchor_4);
     _appEl_4 = new ViewContainer(4, 0, this, _anchor_4);
     TemplateRef _TemplateRef_4_8 = new TemplateRef(_appEl_4, viewFactory_MenuItemGroupsComponent4);
@@ -333,7 +333,7 @@ class _ViewMenuItemGroupsComponent2 extends AppView<import2.MenuItemGroupsCompon
   NgIf _NgIf_7_9;
   bool _expr_0;
   var _expr_1;
-  _ViewMenuItemGroupsComponent2(AppView<dynamic> parentView, int parentIndex) : super(import9.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMenuItemGroupsComponent2(AppView<dynamic> parentView, int parentIndex) : super(import9.ViewType.embedded, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMenuItemGroupsComponent0._renderType;
   }
   @override
@@ -357,7 +357,7 @@ class _ViewMenuItemGroupsComponent2 extends AppView<import2.MenuItemGroupsCompon
     _el_2.append(_text_5);
     import3.Text _text_6 = new import3.Text('\n      ');
     _el_0.append(_text_6);
-    var _anchor_7 = ngAnchor.clone(false);
+    final _anchor_7 = createViewContainerAnchor();
     _el_0.append(_anchor_7);
     _appEl_7 = new ViewContainer(7, 0, this, _anchor_7);
     TemplateRef _TemplateRef_7_8 = new TemplateRef(_appEl_7, viewFactory_MenuItemGroupsComponent3);
@@ -418,7 +418,7 @@ class _ViewMenuItemGroupsComponent3 extends AppView<import2.MenuItemGroupsCompon
   import19.MaterialIconComponent _MaterialIconComponent_0_5;
   bool _expr_0;
   var _expr_1;
-  _ViewMenuItemGroupsComponent3(AppView<dynamic> parentView, int parentIndex) : super(import9.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMenuItemGroupsComponent3(AppView<dynamic> parentView, int parentIndex) : super(import9.ViewType.embedded, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMenuItemGroupsComponent0._renderType;
   }
   @override
@@ -470,13 +470,13 @@ class _ViewMenuItemGroupsComponent4 extends AppView<import2.MenuItemGroupsCompon
   ViewContainer _appEl_1;
   import7.NgFor _NgFor_1_9;
   var _expr_0;
-  _ViewMenuItemGroupsComponent4(AppView<dynamic> parentView, int parentIndex) : super(import9.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMenuItemGroupsComponent4(AppView<dynamic> parentView, int parentIndex) : super(import9.ViewType.embedded, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMenuItemGroupsComponent0._renderType;
   }
   @override
   ComponentRef<import2.MenuItemGroupsComponent> build() {
     import3.Text _text_0 = new import3.Text('\n      ');
-    var _anchor_1 = ngAnchor.clone(false);
+    final _anchor_1 = createViewContainerAnchor();
     _appEl_1 = new ViewContainer(1, null, this, _anchor_1);
     TemplateRef _TemplateRef_1_8 = new TemplateRef(_appEl_1, viewFactory_MenuItemGroupsComponent5);
     _NgFor_1_9 = new import7.NgFor(_appEl_1, _TemplateRef_1_8);
@@ -510,13 +510,13 @@ AppView<import2.MenuItemGroupsComponent> viewFactory_MenuItemGroupsComponent4(Ap
 class _ViewMenuItemGroupsComponent5 extends AppView<import2.MenuItemGroupsComponent> {
   ViewContainer _appEl_1;
   NgIf _NgIf_1_9;
-  _ViewMenuItemGroupsComponent5(AppView<dynamic> parentView, int parentIndex) : super(import9.ViewType.EMBEDDED, {'\$implicit': null, 'index': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMenuItemGroupsComponent5(AppView<dynamic> parentView, int parentIndex) : super(import9.ViewType.embedded, {'\$implicit': null, 'index': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMenuItemGroupsComponent0._renderType;
   }
   @override
   ComponentRef<import2.MenuItemGroupsComponent> build() {
     import3.Text _text_0 = new import3.Text('\n        ');
-    var _anchor_1 = ngAnchor.clone(false);
+    final _anchor_1 = createViewContainerAnchor();
     _appEl_1 = new ViewContainer(1, null, this, _anchor_1);
     TemplateRef _TemplateRef_1_8 = new TemplateRef(_appEl_1, viewFactory_MenuItemGroupsComponent6);
     _NgIf_1_9 = new NgIf(_appEl_1, _TemplateRef_1_8);
@@ -584,7 +584,7 @@ class _ViewMenuItemGroupsComponent6 extends AppView<import2.MenuItemGroupsCompon
   bool _expr_15;
   var _expr_16;
   var _expr_19;
-  _ViewMenuItemGroupsComponent6(AppView<dynamic> parentView, int parentIndex) : super(import9.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMenuItemGroupsComponent6(AppView<dynamic> parentView, int parentIndex) : super(import9.ViewType.embedded, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMenuItemGroupsComponent0._renderType;
   }
   dynamic get _TooltipController_1_17 {
@@ -614,27 +614,27 @@ class _ViewMenuItemGroupsComponent6 extends AppView<import2.MenuItemGroupsCompon
     _PopupSourceDirective_1_13 = new import26.PopupSourceDirective(parentView.parentView.parentView.parentView.parentView.injectorGet(import33.DomPopupSourceFactory, parentView.parentView.parentView.parentView.viewData.parentIndex), _el_1, parentView.parentView.parentView.parentView.parentView.injectorGet(import36.ReferenceDirective, parentView.parentView.parentView.parentView.viewData.parentIndex, null));
     _FocusableActivateItem_1_14 = _FocusActivableItemDirective_1_9;
     import3.Text _text_2 = new import3.Text('\n            ');
-    var _anchor_3 = ngAnchor.clone(false);
+    final _anchor_3 = createViewContainerAnchor();
     _appEl_3 = new ViewContainer(3, 1, this, _anchor_3);
     TemplateRef _TemplateRef_3_8 = new TemplateRef(_appEl_3, viewFactory_MenuItemGroupsComponent7);
     _NgIf_3_9 = new NgIf(_appEl_3, _TemplateRef_3_8);
     import3.Text _text_4 = new import3.Text('\n            ');
-    var _anchor_5 = ngAnchor.clone(false);
+    final _anchor_5 = createViewContainerAnchor();
     _appEl_5 = new ViewContainer(5, 1, this, _anchor_5);
     TemplateRef _TemplateRef_5_8 = new TemplateRef(_appEl_5, viewFactory_MenuItemGroupsComponent8);
     _NgIf_5_9 = new NgIf(_appEl_5, _TemplateRef_5_8);
     import3.Text _text_6 = new import3.Text('\n            ');
-    var _anchor_7 = ngAnchor.clone(false);
+    final _anchor_7 = createViewContainerAnchor();
     _appEl_7 = new ViewContainer(7, 1, this, _anchor_7);
     TemplateRef _TemplateRef_7_8 = new TemplateRef(_appEl_7, viewFactory_MenuItemGroupsComponent9);
     _NgIf_7_9 = new NgIf(_appEl_7, _TemplateRef_7_8);
     import3.Text _text_8 = new import3.Text('\n            ');
-    var _anchor_9 = ngAnchor.clone(false);
+    final _anchor_9 = createViewContainerAnchor();
     _appEl_9 = new ViewContainer(9, 1, this, _anchor_9);
     TemplateRef _TemplateRef_9_8 = new TemplateRef(_appEl_9, viewFactory_MenuItemGroupsComponent10);
     _NgIf_9_9 = new NgIf(_appEl_9, _TemplateRef_9_8);
     import3.Text _text_10 = new import3.Text('\n            ');
-    var _anchor_11 = ngAnchor.clone(false);
+    final _anchor_11 = createViewContainerAnchor();
     _appEl_11 = new ViewContainer(11, 1, this, _anchor_11);
     TemplateRef _TemplateRef_11_8 = new TemplateRef(_appEl_11, viewFactory_MenuItemGroupsComponent11);
     _NgIf_11_9 = new NgIf(_appEl_11, _TemplateRef_11_8);
@@ -643,7 +643,7 @@ class _ViewMenuItemGroupsComponent6 extends AppView<import2.MenuItemGroupsCompon
       [_text_2, _appEl_3, _text_4, _appEl_5, _text_6, _appEl_7, _text_8, _appEl_9, _text_10, _appEl_11, _text_12]
     ]);
     import3.Text _text_13 = new import3.Text('\n          ');
-    var _anchor_14 = ngAnchor.clone(false);
+    final _anchor_14 = createViewContainerAnchor();
     _appEl_14 = new ViewContainer(14, null, this, _anchor_14);
     TemplateRef _TemplateRef_14_8 = new TemplateRef(_appEl_14, viewFactory_MenuItemGroupsComponent12);
     _NgIf_14_9 = new NgIf(_appEl_14, _TemplateRef_14_8);
@@ -836,7 +836,7 @@ class _ViewMenuItemGroupsComponent7 extends AppView<import2.MenuItemGroupsCompon
   import18.ViewMaterialIconComponent0 _compView_0;
   import19.MaterialIconComponent _MaterialIconComponent_0_5;
   var _expr_0;
-  _ViewMenuItemGroupsComponent7(AppView<dynamic> parentView, int parentIndex) : super(import9.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMenuItemGroupsComponent7(AppView<dynamic> parentView, int parentIndex) : super(import9.ViewType.embedded, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMenuItemGroupsComponent0._renderType;
   }
   @override
@@ -885,7 +885,7 @@ class _ViewMenuItemGroupsComponent8 extends AppView<import2.MenuItemGroupsCompon
   import39.ViewHighlightedTextComponent0 _compView_2;
   import40.HighlightedTextComponent _HighlightedTextComponent_2_5;
   var _expr_0;
-  _ViewMenuItemGroupsComponent8(AppView<dynamic> parentView, int parentIndex) : super(import9.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMenuItemGroupsComponent8(AppView<dynamic> parentView, int parentIndex) : super(import9.ViewType.embedded, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMenuItemGroupsComponent0._renderType;
   }
   @override
@@ -941,7 +941,7 @@ class _ViewMenuItemGroupsComponent9 extends AppView<import2.MenuItemGroupsCompon
   import3.Element _el_0;
   import3.Text _text_2;
   var _expr_0;
-  _ViewMenuItemGroupsComponent9(AppView<dynamic> parentView, int parentIndex) : super(import9.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMenuItemGroupsComponent9(AppView<dynamic> parentView, int parentIndex) : super(import9.ViewType.embedded, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMenuItemGroupsComponent0._renderType;
   }
   @override
@@ -981,7 +981,7 @@ class _ViewMenuItemGroupsComponent10 extends AppView<import2.MenuItemGroupsCompo
   import42.MenuItemAffixListComponent _MenuItemAffixListComponent_0_5;
   bool _expr_0;
   var _expr_1;
-  _ViewMenuItemGroupsComponent10(AppView<dynamic> parentView, int parentIndex) : super(import9.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMenuItemGroupsComponent10(AppView<dynamic> parentView, int parentIndex) : super(import9.ViewType.embedded, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMenuItemGroupsComponent0._renderType;
   }
   @override
@@ -1035,7 +1035,7 @@ class _ViewMenuItemGroupsComponent11 extends AppView<import2.MenuItemGroupsCompo
   import3.Element _el_0;
   import18.ViewMaterialIconComponent0 _compView_0;
   import19.MaterialIconComponent _MaterialIconComponent_0_5;
-  _ViewMenuItemGroupsComponent11(AppView<dynamic> parentView, int parentIndex) : super(import9.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMenuItemGroupsComponent11(AppView<dynamic> parentView, int parentIndex) : super(import9.ViewType.embedded, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMenuItemGroupsComponent0._renderType;
   }
   @override
@@ -1086,10 +1086,11 @@ class _ViewMenuItemGroupsComponent12 extends AppView<import2.MenuItemGroupsCompo
   dynamic __PopupHierarchy_0_12;
   ViewContainer _appEl_2;
   import46.DeferredContentDirective _DeferredContentDirective_2_9;
-  var _expr_2;
+  String _expr_0;
   var _expr_3;
-  bool _expr_4;
-  _ViewMenuItemGroupsComponent12(AppView<dynamic> parentView, int parentIndex) : super(import9.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  var _expr_4;
+  bool _expr_5;
+  _ViewMenuItemGroupsComponent12(AppView<dynamic> parentView, int parentIndex) : super(import9.ViewType.embedded, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMenuItemGroupsComponent0._renderType;
   }
   dynamic get _PopupRef_0_10 {
@@ -1115,7 +1116,7 @@ class _ViewMenuItemGroupsComponent12 extends AppView<import2.MenuItemGroupsCompo
     _appEl_0 = new ViewContainer(0, null, this, _el_0);
     _MaterialPopupComponent_0_8 = new import45.MaterialPopupComponent(parentView.parentView.parentView.parentView.parentView.parentView.injectorGet(import47.PopupHierarchy, parentView.parentView.parentView.parentView.parentView.viewData.parentIndex, null), parentView.parentView.parentView.parentView.parentView.parentView.injectorGet(import45.MaterialPopupComponent, parentView.parentView.parentView.parentView.parentView.viewData.parentIndex, null), null, parentView.parentView.parentView.parentView.parentView.parentView.injectorGet(import48.NgZone, parentView.parentView.parentView.parentView.parentView.viewData.parentIndex), parentView.parentView.parentView.parentView.parentView.parentView.injectorGet(import49.OverlayService, parentView.parentView.parentView.parentView.parentView.viewData.parentIndex), parentView.parentView.parentView.parentView.parentView.parentView.injectorGet(import50.ZIndexer, parentView.parentView.parentView.parentView.parentView.viewData.parentIndex), parentView.parentView.parentView.parentView.parentView.parentView.injectorGet(const import51.OpaqueToken<List<import53.RelativePosition>>('defaultPopupPositions'), parentView.parentView.parentView.parentView.parentView.viewData.parentIndex), parentView.parentView.parentView.parentView.parentView.parentView.injectorGet(const import51.OpaqueToken('overlayRepositionLoop'), parentView.parentView.parentView.parentView.parentView.viewData.parentIndex), parentView.parentView.parentView.parentView.parentView.parentView.injectorGet(import54.PopupSizeProvider, parentView.parentView.parentView.parentView.parentView.viewData.parentIndex, null), _compView_0.ref, _appEl_0, new ElementRef(_el_0));
     import3.Text _text_1 = new import3.Text('\n            ');
-    var _anchor_2 = ngAnchor.clone(false);
+    final _anchor_2 = createViewContainerAnchor();
     _appEl_2 = new ViewContainer(2, 0, this, _anchor_2);
     TemplateRef _TemplateRef_2_8 = new TemplateRef(_appEl_2, viewFactory_MenuItemGroupsComponent13);
     _DeferredContentDirective_2_9 = new import46.DeferredContentDirective(_appEl_2, _TemplateRef_2_8, _MaterialPopupComponent_0_8);
@@ -1154,26 +1155,31 @@ class _ViewMenuItemGroupsComponent12 extends AppView<import2.MenuItemGroupsCompo
       _MaterialPopupComponent_0_8.autoDismiss = false;
       _MaterialPopupComponent_0_8.enforceSpaceConstraints = true;
     }
-    final currVal_2 = _ctx.preferredSubMenuPositions;
-    if (!identical(_expr_2, currVal_2)) {
-      _MaterialPopupComponent_0_8.preferredPositions = currVal_2;
-      _expr_2 = currVal_2;
-    }
-    final currVal_3 = local_subMenuSource;
+    final currVal_3 = _ctx.preferredSubMenuPositions;
     if (!identical(_expr_3, currVal_3)) {
-      _MaterialPopupComponent_0_8.source = currVal_3;
+      _MaterialPopupComponent_0_8.preferredPositions = currVal_3;
       _expr_3 = currVal_3;
     }
-    final currVal_4 = _ctx.isSubMenuVisible(local_item);
+    final currVal_4 = local_subMenuSource;
     if (!identical(_expr_4, currVal_4)) {
-      _MaterialPopupComponent_0_8.visible = currVal_4;
+      _MaterialPopupComponent_0_8.source = currVal_4;
       _expr_4 = currVal_4;
+    }
+    final currVal_5 = _ctx.isSubMenuVisible(local_item);
+    if (!identical(_expr_5, currVal_5)) {
+      _MaterialPopupComponent_0_8.visible = currVal_5;
+      _expr_5 = currVal_5;
     }
     if (firstCheck) {
       (_DeferredContentDirective_2_9.preserveDimensions = true);
     }
     _appEl_0.detectChangesInNestedViews();
     _appEl_2.detectChangesInNestedViews();
+    final currVal_0 = _ctx.popupClass;
+    if (!identical(_expr_0, currVal_0)) {
+      _compView_0.updateChildClass(_el_0, currVal_0);
+      _expr_0 = currVal_0;
+    }
     _compView_0.detectHostChanges(firstCheck);
     _compView_0.detectChanges();
     if (firstCheck) {
@@ -1210,8 +1216,9 @@ class _ViewMenuItemGroupsComponent13 extends AppView<import2.MenuItemGroupsCompo
   import2.MenuItemGroupsComponent _MenuItemGroupsComponent_2_6;
   var _expr_0;
   var _expr_2;
-  var _expr_3;
-  _ViewMenuItemGroupsComponent13(AppView<dynamic> parentView, int parentIndex) : super(import9.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  String _expr_3;
+  var _expr_4;
+  _ViewMenuItemGroupsComponent13(AppView<dynamic> parentView, int parentIndex) : super(import9.ViewType.embedded, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMenuItemGroupsComponent0._renderType;
   }
   @override
@@ -1268,11 +1275,17 @@ class _ViewMenuItemGroupsComponent13 extends AppView<import2.MenuItemGroupsCompo
       changed = true;
       _expr_2 = currVal_2;
     }
-    final currVal_3 = _ctx.isKeyboardOpenedSubmenu;
+    final currVal_3 = _ctx.popupClass;
     if (!identical(_expr_3, currVal_3)) {
-      _MenuItemGroupsComponent_2_6.activateFirstItemOnInit = currVal_3;
+      _MenuItemGroupsComponent_2_6.popupClass = currVal_3;
       changed = true;
       _expr_3 = currVal_3;
+    }
+    final currVal_4 = _ctx.isKeyboardOpenedSubmenu;
+    if (!identical(_expr_4, currVal_4)) {
+      _MenuItemGroupsComponent_2_6.activateFirstItemOnInit = currVal_4;
+      changed = true;
+      _expr_4 = currVal_4;
     }
     if (changed) {
       _compView_2.markAsCheckOnce();
@@ -1308,7 +1321,7 @@ const List<dynamic> styles$MenuItemGroupsComponentHost = const [];
 class _ViewMenuItemGroupsComponentHost0 extends AppView<dynamic> {
   ViewMenuItemGroupsComponent0 _compView_0;
   import2.MenuItemGroupsComponent _MenuItemGroupsComponent_0_5;
-  _ViewMenuItemGroupsComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import9.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
+  _ViewMenuItemGroupsComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import9.ViewType.host, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewMenuItemGroupsComponent0(this, 0);

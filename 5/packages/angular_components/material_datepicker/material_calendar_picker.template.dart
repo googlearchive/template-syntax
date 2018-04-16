@@ -57,7 +57,7 @@ class ViewMaterialCalendarPickerComponent0 extends AppView<import2.MaterialCalen
   var _expr_0;
   bool _expr_1;
   static RenderComponentType _renderType;
-  ViewMaterialCalendarPickerComponent0(AppView<dynamic> parentView, int parentIndex) : super(import7.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckOnce) {
+  ViewMaterialCalendarPickerComponent0(AppView<dynamic> parentView, int parentIndex) : super(import7.ViewType.component, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckOnce) {
     rootEl = import3.document.createElement('material-calendar-picker');
     _renderType ??= import9.appViewUtils.createRenderType('', ViewEncapsulation.Emulated, styles$MaterialCalendarPickerComponent);
     setupComponentType(_renderType);
@@ -70,7 +70,7 @@ class ViewMaterialCalendarPickerComponent0 extends AppView<import2.MaterialCalen
     _el_0 = createAndAppend(doc, 'header', parentRenderNode);
     _el_0.className = 'header';
     addShimE(_el_0);
-    var _anchor_1 = ngAnchor.clone(false);
+    final _anchor_1 = createViewContainerAnchor();
     _el_0.append(_anchor_1);
     _appEl_1 = new ViewContainer(1, 0, this, _anchor_1);
     TemplateRef _TemplateRef_1_8 = new TemplateRef(_appEl_1, viewFactory_MaterialCalendarPickerComponent1);
@@ -120,7 +120,7 @@ class _ViewMaterialCalendarPickerComponent1 extends AppView<import2.MaterialCale
   import3.DivElement _el_0;
   import3.Text _text_1;
   var _expr_0;
-  _ViewMaterialCalendarPickerComponent1(AppView<dynamic> parentView, int parentIndex) : super(import7.ViewType.EMBEDDED, {'\$implicit': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMaterialCalendarPickerComponent1(AppView<dynamic> parentView, int parentIndex) : super(import7.ViewType.embedded, {'\$implicit': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMaterialCalendarPickerComponent0._renderType;
   }
   @override
@@ -155,7 +155,7 @@ const List<dynamic> styles$MaterialCalendarPickerComponentHost = const [];
 class _ViewMaterialCalendarPickerComponentHost0 extends AppView<dynamic> {
   ViewMaterialCalendarPickerComponent0 _compView_0;
   import2.MaterialCalendarPickerComponent _MaterialCalendarPickerComponent_0_5;
-  _ViewMaterialCalendarPickerComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import7.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
+  _ViewMaterialCalendarPickerComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import7.ViewType.host, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewMaterialCalendarPickerComponent0(this, 0);
