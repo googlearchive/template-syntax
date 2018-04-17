@@ -130,7 +130,7 @@
 <div>
   <img [src]="heroImageUrl">
   <my-hero [hero]="currentHero"></my-hero>
-  <div [ngClass]="{special: isSpecial}"></div>
+  <div [ngClass]="{'special': isSpecial}">...</div>
 </div>
 <br><br>
 
@@ -300,10 +300,10 @@ button</button>
 <my-hero (deleteRequest)="deleteHero($event)" [hero]="currentHero"></my-hero>
 <br>
 
-<big-my-hero
+<my-big-hero
     (deleteRequest)="deleteHero($event)"
     [hero]="currentHero">
-</big-my-hero>
+</my-big-hero>
 
 <div class="parent-div" (click)="onClickMe($event)" clickable>Click me
   <div class="child-div">Click me too!</div>
@@ -368,8 +368,8 @@ without NgModel
 
 <!-- not used in chapter -->
 <br>
-<label>saveable   <input type="checkbox" [(ngModel)]="canSave"></label> |
-<label>modified:  <input type="checkbox" [value]="!isUnchanged" (change)="isUnchanged=!isUnchanged"></label> |
+<label>saveable   <input type="checkbox" [(ngModel)]="canSave"></label>
+<label>modified:  <input type="checkbox" [checked]="!isUnchanged" (change)="isUnchanged=!isUnchanged"></label>
 <label>special:   <input type="checkbox" [(ngModel)]="isSpecial"></label>
 <button (click)="setCurrentClasses()">Refresh currentClasses</button>
 <br><br>
@@ -382,7 +382,7 @@ without NgModel
 <div [ngClass]="isSpecial ? 'special' : ''">This div is special</div>
 
 <div class="bad curly special">Bad curly special</div>
-<div [ngClass]="{bad:false, curly:true, special:true}">Curly special</div>
+<div [ngClass]="{'bad':false, 'curly':true, 'special':true}">Curly special</div>
 
 <a class="to-toc" href="#toc">top</a>
 
