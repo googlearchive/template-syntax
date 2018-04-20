@@ -188,7 +188,5 @@ class AppComponent implements OnInit {
     };
   }
 
-  int trackByHeroes(int index, Hero hero) => hero.id;
-
-  int trackById(int index, dynamic item) => item.id;
+  Object trackByHeroId(_, dynamic o) => o is Hero ? o.id : o;
 }
