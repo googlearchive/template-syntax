@@ -37,7 +37,6 @@ import 'package:angular_components/model/date/date.dart';
 import 'package:angular_components/model/date/date_formatter.dart';
 import 'package:angular_components/model/observable/observable.dart';
 import 'package:angular_components/utils/angular/managed_zone/interface.dart';
-import 'package:angular_components/utils/angular/properties/properties.dart';
 import 'package:angular_components/utils/browser/dom_service/dom_service.dart';
 import 'package:angular_components/utils/showhide/showhide.dart';
 import 'package:angular/src/di/reflector.dart' as _ngRef;
@@ -69,9 +68,8 @@ import 'package:angular_components/src/material_datepicker/comparison_range_edit
 import 'package:angular_components/src/material_datepicker/date_range_editor_model.template.dart' as _ref25;
 import 'package:angular_components/src/material_datepicker/date_range_editor_model.template.dart' as _ref26;
 import 'package:angular_components/utils/angular/managed_zone/interface.template.dart' as _ref27;
-import 'package:angular_components/utils/angular/properties/properties.template.dart' as _ref28;
-import 'package:angular_components/utils/browser/dom_service/dom_service.template.dart' as _ref29;
-import 'package:angular_components/utils/showhide/showhide.template.dart' as _ref30;
+import 'package:angular_components/utils/browser/dom_service/dom_service.template.dart' as _ref28;
+import 'package:angular_components/utils/showhide/showhide.template.dart' as _ref29;
 import 'package:angular_components/material_datepicker/date_range_editor.scss.css.shim.dart' as import0;
 import 'package:angular/src/core/linker/app_view.dart';
 import 'date_range_editor.dart' as import2;
@@ -2007,10 +2005,10 @@ class _ViewDateRangeEditorComponent18 extends AppView<import2.DateRangeEditorCom
   import67.ShowHideDirective _ShowHideDirective_0_6;
   var _expr_0;
   var _expr_1;
-  var _expr_2;
+  bool _expr_2;
   var _expr_3;
   var _expr_4;
-  var _expr_5;
+  bool _expr_5;
   bool _expr_6;
   _ViewDateRangeEditorComponent18(AppView<dynamic> parentView, int parentIndex) : super(import6.ViewType.embedded, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewDateRangeEditorComponent0._renderType;
@@ -2069,6 +2067,9 @@ class _ViewDateRangeEditorComponent18 extends AppView<import2.DateRangeEditorCom
     }
     if (changed) {
       _compView_0.markAsCheckOnce();
+    }
+    if (changed) {
+      _MaterialCalendarPickerComponent_0_5.ngAfterChanges();
     }
     if (firstCheck) {
       _MaterialCalendarPickerComponent_0_5.ngOnInit();
@@ -2147,26 +2148,29 @@ class _ViewDateRangeEditorComponent19 extends AppView<import2.DateRangeEditorCom
     bool changed = false;
     bool firstCheck = (this.cdState == 0);
     changed = false;
-    final currVal_0 = _ctx.minDate;
+    final currVal_0 = _ctx.monthSelectorState;
     if (!identical(_expr_0, currVal_0)) {
-      _MaterialMonthPickerComponent_0_5.minDate = currVal_0;
+      _MaterialMonthPickerComponent_0_5.state = currVal_0;
       changed = true;
       _expr_0 = currVal_0;
     }
-    final currVal_1 = _ctx.maxDate;
+    final currVal_1 = _ctx.minDate;
     if (!identical(_expr_1, currVal_1)) {
-      _MaterialMonthPickerComponent_0_5.maxDate = currVal_1;
+      _MaterialMonthPickerComponent_0_5.minDate = currVal_1;
       changed = true;
       _expr_1 = currVal_1;
     }
-    final currVal_2 = _ctx.monthSelectorState;
+    final currVal_2 = _ctx.maxDate;
     if (!identical(_expr_2, currVal_2)) {
-      _MaterialMonthPickerComponent_0_5.state = currVal_2;
+      _MaterialMonthPickerComponent_0_5.maxDate = currVal_2;
       changed = true;
       _expr_2 = currVal_2;
     }
     if (changed) {
       _compView_0.markAsCheckOnce();
+    }
+    if (changed) {
+      _MaterialMonthPickerComponent_0_5.ngAfterChanges();
     }
     if (firstCheck) {
       _MaterialMonthPickerComponent_0_5.ngOnInit();
@@ -2285,5 +2289,4 @@ void initReflector() {
   _ref27.initReflector();
   _ref28.initReflector();
   _ref29.initReflector();
-  _ref30.initReflector();
 }

@@ -50,6 +50,13 @@
 header {
   display: flex;
   color: rgba(0, 0, 0, 0.87);
+  transition: min-height 436ms cubic-bezier(0.4, 0, 0.2, 1), opacity 436ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+header.hidden {
+  min-height: 0;
+  height: 0;
+  opacity: 0;
+  overflow: hidden;
 }
 
 .header {

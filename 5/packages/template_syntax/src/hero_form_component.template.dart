@@ -114,13 +114,10 @@ class ViewHeroFormComponent0 extends AppView<import1.HeroFormComponent> {
     if ((identical(token, const import14.MultiToken('NgValidators')) && (5 == nodeIndex))) {
       return _NgValidators_5_5;
     }
-    if ((identical(token, import4.DefaultValueAccessor) && (5 == nodeIndex))) {
-      return _DefaultValueAccessor_5_6;
-    }
     if ((identical(token, const import14.MultiToken<import15.ControlValueAccessor>('NgValueAccessor')) && (5 == nodeIndex))) {
       return _NgValueAccessor_5_7;
     }
-    if (((identical(token, import6.NgControlName) || identical(token, import16.NgControl)) && (5 == nodeIndex))) {
+    if ((identical(token, import16.NgControl) && (5 == nodeIndex))) {
       return _NgControlName_5_8;
     }
     if ((identical(token, import3.NgForm) && ((1 <= nodeIndex) && (nodeIndex <= 7)))) {

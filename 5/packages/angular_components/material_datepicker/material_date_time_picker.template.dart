@@ -14,7 +14,6 @@ import 'package:angular_components/material_datepicker/material_time_picker.dart
 import 'package:angular_components/material_datepicker/module.dart';
 import 'package:angular_components/material_input/material_input.dart';
 import 'package:angular_components/model/date/date.dart';
-import 'package:angular_components/utils/angular/properties/properties.dart';
 import 'package:angular/src/di/reflector.dart' as _ngRef;
 import 'package:angular/angular.template.dart' as _ref0;
 import 'package:angular_components/material_datepicker/material_datepicker.template.dart' as _ref1;
@@ -22,7 +21,6 @@ import 'package:angular_components/material_datepicker/material_time_picker.temp
 import 'package:angular_components/material_datepicker/module.template.dart' as _ref3;
 import 'package:angular_components/material_input/material_input.template.dart' as _ref4;
 import 'package:angular_components/model/date/date.template.dart' as _ref5;
-import 'package:angular_components/utils/angular/properties/properties.template.dart' as _ref6;
 import 'package:angular_components/material_datepicker/material_date_time_picker.scss.css.shim.dart' as import0;
 import 'package:angular/src/core/linker/app_view.dart';
 import 'material_date_time_picker.dart' as import2;
@@ -55,9 +53,9 @@ class ViewMaterialDateTimePickerComponent0 extends AppView<import2.MaterialDateT
   bool _expr_5;
   var _expr_6;
   var _expr_7;
-  var _expr_8;
-  var _expr_9;
-  var _expr_10;
+  bool _expr_8;
+  bool _expr_9;
+  bool _expr_10;
   var _expr_11;
   var _expr_12;
   static RenderComponentType _renderType;
@@ -251,5 +249,4 @@ void initReflector() {
   _ref3.initReflector();
   _ref4.initReflector();
   _ref5.initReflector();
-  _ref6.initReflector();
 }

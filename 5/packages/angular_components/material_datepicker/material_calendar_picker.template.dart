@@ -15,7 +15,6 @@ import 'package:angular_components/material_datepicker/calendar.dart';
 import 'package:angular_components/material_datepicker/module.dart';
 import 'package:angular_components/model/date/date.dart';
 import 'package:angular_components/model/observable/observable.dart';
-import 'package:angular_components/utils/angular/properties/properties.dart';
 import 'package:angular_components/utils/browser/feature_detector/feature_detector.dart' show isEdge, isFirefox;
 import '../src/material_datepicker/calendar_listener.dart';
 import '../src/material_datepicker/enum_parsing.dart';
@@ -27,8 +26,7 @@ import 'package:angular_components/material_datepicker/calendar.template.dart' a
 import 'package:angular_components/material_datepicker/module.template.dart' as _ref4;
 import 'package:angular_components/model/date/date.template.dart' as _ref5;
 import 'package:angular_components/model/observable/observable.template.dart' as _ref6;
-import 'package:angular_components/utils/angular/properties/properties.template.dart' as _ref7;
-import 'package:angular_components/utils/browser/feature_detector/feature_detector.template.dart' as _ref8;
+import 'package:angular_components/utils/browser/feature_detector/feature_detector.template.dart' as _ref7;
 import 'package:angular_components/material_datepicker/material_calendar_picker.scss.css.shim.dart' as import0;
 import 'package:angular/src/core/linker/app_view.dart';
 import 'material_calendar_picker.dart' as import2;
@@ -212,5 +210,4 @@ void initReflector() {
   _ref5.initReflector();
   _ref6.initReflector();
   _ref7.initReflector();
-  _ref8.initReflector();
 }

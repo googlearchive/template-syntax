@@ -11,7 +11,6 @@ import 'package:intl/intl.dart';
 import 'package:quiver/time.dart';
 import 'package:angular_components/material_input/material_input.dart';
 import 'package:angular_components/model/date/date.dart';
-import 'package:angular_components/utils/angular/properties/properties.dart';
 import 'package:angular_components/utils/disposer/disposer.dart';
 import 'calendar.dart';
 import 'module.dart';
@@ -20,8 +19,7 @@ import 'module.template.dart' as _ref1;
 import 'package:angular/angular.template.dart' as _ref2;
 import 'package:angular_components/material_input/material_input.template.dart' as _ref3;
 import 'package:angular_components/model/date/date.template.dart' as _ref4;
-import 'package:angular_components/utils/angular/properties/properties.template.dart' as _ref5;
-import 'package:angular_components/utils/disposer/disposer.template.dart' as _ref6;
+import 'package:angular_components/utils/disposer/disposer.template.dart' as _ref5;
 
 var _visited = false;
 void initReflector() {
@@ -36,5 +34,4 @@ void initReflector() {
   _ref3.initReflector();
   _ref4.initReflector();
   _ref5.initReflector();
-  _ref6.initReflector();
 }

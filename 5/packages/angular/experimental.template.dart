@@ -10,7 +10,6 @@ import 'package:angular/src/runtime.dart';
 import 'package:meta/meta.dart';
 import 'src/bootstrap/run.dart' show appInjector;
 import 'src/core/linker/app_view.dart' as app_view;
-import 'src/core/linker/app_view_utils.dart';
 import 'src/di/injector/injector.dart';
 import 'src/runtime.dart';
 import 'package:angular/angular.template.dart' as _ref0;
@@ -18,10 +17,9 @@ import 'package:angular/src/runtime.template.dart' as _ref1;
 import 'src/bootstrap/modules.template.dart' as _ref2;
 import 'src/bootstrap/run.template.dart' as _ref3;
 import 'src/core/linker/app_view.template.dart' as _ref4;
-import 'src/core/linker/app_view_utils.template.dart' as _ref5;
-import 'src/core/linker/component_resolver.template.dart' as _ref6;
-import 'src/di/injector/injector.template.dart' as _ref7;
-import 'src/runtime.template.dart' as _ref8;
+import 'src/core/linker/component_resolver.template.dart' as _ref5;
+import 'src/di/injector/injector.template.dart' as _ref6;
+import 'src/runtime.template.dart' as _ref7;
 
 var _visited = false;
 void initReflector() {
@@ -38,5 +36,4 @@ void initReflector() {
   _ref5.initReflector();
   _ref6.initReflector();
   _ref7.initReflector();
-  _ref8.initReflector();
 }

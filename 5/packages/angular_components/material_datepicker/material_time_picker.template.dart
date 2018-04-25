@@ -17,7 +17,6 @@ import 'package:angular_components/model/a11y/keyboard_handler_mixin.dart';
 import 'package:angular_components/model/selection/select.dart';
 import 'package:angular_components/model/selection/selection_model.dart';
 import 'package:angular_components/model/selection/string_selection_options.dart';
-import 'package:angular_components/utils/angular/properties/properties.dart';
 import 'package:angular_components/utils/disposer/disposer.dart';
 import 'package:angular/src/di/reflector.dart' as _ngRef;
 import 'package:angular/angular.template.dart' as _ref0;
@@ -28,8 +27,7 @@ import 'package:angular_components/model/a11y/keyboard_handler_mixin.template.da
 import 'package:angular_components/model/selection/select.template.dart' as _ref5;
 import 'package:angular_components/model/selection/selection_model.template.dart' as _ref6;
 import 'package:angular_components/model/selection/string_selection_options.template.dart' as _ref7;
-import 'package:angular_components/utils/angular/properties/properties.template.dart' as _ref8;
-import 'package:angular_components/utils/disposer/disposer.template.dart' as _ref9;
+import 'package:angular_components/utils/disposer/disposer.template.dart' as _ref8;
 import 'package:angular_components/material_datepicker/material_time_picker.scss.css.shim.dart' as import0;
 import 'package:angular/src/core/linker/app_view.dart';
 import 'material_time_picker.dart' as import2;
@@ -369,5 +367,4 @@ void initReflector() {
   _ref6.initReflector();
   _ref7.initReflector();
   _ref8.initReflector();
-  _ref9.initReflector();
 }

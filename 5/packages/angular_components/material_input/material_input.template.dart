@@ -108,12 +108,14 @@ class ViewMaterialInputComponent0 extends AppView<import2.MaterialInputComponent
   var _expr_19;
   var _expr_20;
   var _expr_21;
-  bool _expr_25;
-  bool _expr_26;
+  var _expr_22;
+  var _expr_23;
   bool _expr_27;
   bool _expr_28;
   bool _expr_29;
   bool _expr_30;
+  bool _expr_31;
+  bool _expr_32;
   static RenderComponentType _renderType;
   ViewMaterialInputComponent0(AppView<dynamic> parentView, int parentIndex) : super(import11.ViewType.component, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckOnce) {
     rootEl = import3.document.createElement('material-input');
@@ -206,9 +208,6 @@ class ViewMaterialInputComponent0 extends AppView<import2.MaterialInputComponent
 
   @override
   dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
-    if ((identical(token, import6.DefaultValueAccessor) && (8 == nodeIndex))) {
-      return _DefaultValueAccessor_8_5;
-    }
     if ((identical(token, const import17.MultiToken<import18.ControlValueAccessor>('NgValueAccessor')) && (8 == nodeIndex))) {
       return _NgValueAccessor_8_7;
     }
@@ -314,60 +313,70 @@ class ViewMaterialInputComponent0 extends AppView<import2.MaterialInputComponent
       setProp(_el_8, 'readOnly', currVal_15);
       _expr_15 = currVal_15;
     }
-    final currVal_17 = _ctx.inputAriaOwns;
+    final currVal_17 = _ctx.inputAriaLabel;
     if (!identical(_expr_17, currVal_17)) {
-      setAttr(_el_8, 'aria-owns', currVal_17?.toString());
+      setAttr(_el_8, 'aria-label', currVal_17?.toString());
       _expr_17 = currVal_17;
     }
-    final currVal_18 = _ctx.inputAriaActivedescendent;
+    final currVal_18 = _ctx.invalid;
     if (!identical(_expr_18, currVal_18)) {
-      setAttr(_el_8, 'aria-activedescendant', currVal_18?.toString());
+      setAttr(_el_8, 'aria-invalid', currVal_18?.toString());
       _expr_18 = currVal_18;
     }
-    final currVal_19 = _ctx.inputAriaExpanded;
+    final currVal_19 = _ctx.inputAriaOwns;
     if (!identical(_expr_19, currVal_19)) {
-      setAttr(_el_8, 'aria-expanded', currVal_19?.toString());
+      setAttr(_el_8, 'aria-owns', currVal_19?.toString());
       _expr_19 = currVal_19;
     }
-    final currVal_20 = _ctx.inputAriaAutocomplete;
+    final currVal_20 = _ctx.inputAriaActivedescendent;
     if (!identical(_expr_20, currVal_20)) {
-      setAttr(_el_8, 'aria-autocomplete', currVal_20?.toString());
+      setAttr(_el_8, 'aria-activedescendant', currVal_20?.toString());
       _expr_20 = currVal_20;
     }
-    final currVal_21 = _ctx.inputAriaHasPopup;
+    final currVal_21 = _ctx.inputAriaExpanded;
     if (!identical(_expr_21, currVal_21)) {
-      setAttr(_el_8, 'aria-haspopup', currVal_21?.toString());
+      setAttr(_el_8, 'aria-expanded', currVal_21?.toString());
       _expr_21 = currVal_21;
     }
-    final bool currVal_25 = !_ctx.disabled;
-    if (!identical(_expr_25, currVal_25)) {
-      updateClass(_el_12, 'invisible', currVal_25);
-      _expr_25 = currVal_25;
+    final currVal_22 = _ctx.inputAriaAutocomplete;
+    if (!identical(_expr_22, currVal_22)) {
+      setAttr(_el_8, 'aria-autocomplete', currVal_22?.toString());
+      _expr_22 = currVal_22;
     }
-    final currVal_26 = _ctx.disabled;
-    if (!identical(_expr_26, currVal_26)) {
-      updateClass(_el_13, 'invisible', currVal_26);
-      _expr_26 = currVal_26;
+    final currVal_23 = _ctx.inputAriaHasPopup;
+    if (!identical(_expr_23, currVal_23)) {
+      setAttr(_el_8, 'aria-haspopup', currVal_23?.toString());
+      _expr_23 = currVal_23;
     }
-    final currVal_27 = _ctx.invalid;
+    final bool currVal_27 = !_ctx.disabled;
     if (!identical(_expr_27, currVal_27)) {
-      updateClass(_el_13, 'invalid', currVal_27);
+      updateClass(_el_12, 'invisible', currVal_27);
       _expr_27 = currVal_27;
     }
-    final bool currVal_28 = (!_ctx.focused || _ctx.disabled);
+    final currVal_28 = _ctx.disabled;
     if (!identical(_expr_28, currVal_28)) {
-      updateClass(_el_14, 'invisible', currVal_28);
+      updateClass(_el_13, 'invisible', currVal_28);
       _expr_28 = currVal_28;
     }
     final currVal_29 = _ctx.invalid;
     if (!identical(_expr_29, currVal_29)) {
-      updateClass(_el_14, 'invalid', currVal_29);
+      updateClass(_el_13, 'invalid', currVal_29);
       _expr_29 = currVal_29;
     }
-    final currVal_30 = _ctx.underlineAnimated;
+    final bool currVal_30 = (!_ctx.focused || _ctx.disabled);
     if (!identical(_expr_30, currVal_30)) {
-      updateClass(_el_14, 'animated', currVal_30);
+      updateClass(_el_14, 'invisible', currVal_30);
       _expr_30 = currVal_30;
+    }
+    final currVal_31 = _ctx.invalid;
+    if (!identical(_expr_31, currVal_31)) {
+      updateClass(_el_14, 'invalid', currVal_31);
+      _expr_31 = currVal_31;
+    }
+    final currVal_32 = _ctx.underlineAnimated;
+    if (!identical(_expr_32, currVal_32)) {
+      updateClass(_el_14, 'animated', currVal_32);
+      _expr_32 = currVal_32;
     }
   }
 

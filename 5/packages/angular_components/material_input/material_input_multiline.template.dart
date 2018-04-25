@@ -188,9 +188,6 @@ class ViewMaterialMultilineInputComponent0 extends AppView<import3.MaterialMulti
 
   @override
   dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
-    if ((identical(token, import5.DefaultValueAccessor) && (11 == nodeIndex))) {
-      return _DefaultValueAccessor_11_5;
-    }
     if ((identical(token, const import18.MultiToken<import19.ControlValueAccessor>('NgValueAccessor')) && (11 == nodeIndex))) {
       return _NgValueAccessor_11_7;
     }

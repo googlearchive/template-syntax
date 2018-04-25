@@ -30,7 +30,6 @@ import 'package:angular_components/model/a11y/keyboard_handler_mixin.dart';
 import 'package:angular_components/model/date/date.dart';
 import 'package:angular_components/model/date/date_formatter.dart';
 import 'package:angular_components/model/observable/observable.dart';
-import 'package:angular_components/utils/angular/properties/properties.dart';
 import 'package:angular_components/utils/browser/dom_service/dom_service.dart';
 import 'package:angular_components/utils/disposer/disposer.dart';
 import 'package:angular/src/di/reflector.dart' as _ngRef;
@@ -55,9 +54,8 @@ import 'package:angular_components/model/a11y/keyboard_handler_mixin.template.da
 import 'package:angular_components/model/date/date.template.dart' as _ref18;
 import 'package:angular_components/model/date/date_formatter.template.dart' as _ref19;
 import 'package:angular_components/model/observable/observable.template.dart' as _ref20;
-import 'package:angular_components/utils/angular/properties/properties.template.dart' as _ref21;
-import 'package:angular_components/utils/browser/dom_service/dom_service.template.dart' as _ref22;
-import 'package:angular_components/utils/disposer/disposer.template.dart' as _ref23;
+import 'package:angular_components/utils/browser/dom_service/dom_service.template.dart' as _ref21;
+import 'package:angular_components/utils/disposer/disposer.template.dart' as _ref22;
 import 'package:angular_components/material_datepicker/material_date_range_picker.scss.css.shim.dart' as import0;
 import 'package:angular/src/core/linker/app_view.dart';
 import 'material_date_range_picker.dart' as import2;
@@ -493,14 +491,14 @@ class _ViewMaterialDateRangePickerComponent4 extends AppView<import2.MaterialDat
   bool _expr_2;
   bool _expr_3;
   bool _expr_4;
-  var _expr_5;
-  var _expr_6;
-  var _expr_7;
-  var _expr_8;
+  bool _expr_5;
+  bool _expr_6;
+  bool _expr_7;
+  bool _expr_8;
   var _expr_9;
   var _expr_10;
   var _expr_11;
-  var _expr_12;
+  bool _expr_12;
   bool _expr_13;
   var _expr_14;
   var _expr_15;
@@ -795,5 +793,4 @@ void initReflector() {
   _ref20.initReflector();
   _ref21.initReflector();
   _ref22.initReflector();
-  _ref23.initReflector();
 }
