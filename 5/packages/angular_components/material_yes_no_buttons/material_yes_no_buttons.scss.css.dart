@@ -1,4 +1,0 @@
-library asset_angular_components_lib_material_yes_no_buttons_material_yes_no_buttons.scss.css.dart;
-
-
-const List<dynamic> styles = const [':host {\n  display: flex;\n}\n\n.btn.btn-yes,\n.btn.btn-no {\n  height: 36px;\n  margin: 0 4px;\n}\n\n.btn:not([disabled]).highlighted[raised] {\n  background-color: #4285f4;\n  color: #fff;\n}\n.btn:not([disabled]).highlighted:not([raised]) {\n  color: #4285f4;\n}\n\n.spinner {\n  align-items: center;\n  display: flex;\n  margin-right: 24px;\n  min-width: 128px;\n}\n\n:host(.no-margin) .btn {\n  margin: 0;\n  min-width: 0;\n  padding: 0;\n}\n:host(.no-margin) .btn .content {\n  padding-right: 0;\n}\n\n:host[reverse] {\n  flex-direction: row-reverse;\n}\n:host[reverse] .spinner {\n  justify-content: flex-end;\n}\n\n:host[dense] .btn.btn-yes ::ng-deep:not([icon]),\n:host[dense] .btn.btn-no ::ng-deep:not([icon]) {\n  height: 32px;\n  font-size: 13px;\n}\n'];

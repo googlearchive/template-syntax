@@ -1,4 +1,0 @@
-library asset_template_syntax_lib_app_component.css.dart;
-
-
-const List<dynamic> styles = const ['a.to-toc { margin: 30px 0; }\nbutton { font-size: 100%; margin: 0 2px; }\ndiv[clickable] {cursor: pointer; max-width: 200px; margin: 16px 0}\n#noTrackByCnt, #withTrackByCnt {color: darkred; max-width: 450px; margin: 4px;}\nimg {height: 100px;}\n.box {border: 1px solid black; padding: 6px; max-width: 450px;}\n.child-div {margin-left: 1em; font-weight: normal}\n.context {margin-left: 1em;}\n.hidden {display: none}\n.parent-div {margin-top: 1em; font-weight: bold}\n.special {font-weight:bold; font-size: x-large}\n.bad {color: red;}\n.saveable {color: limegreen;}\n.curly, .modified {font-family: "Brush Script MT"}\n.toe {margin-left: 1em; font-style: italic;}\nlittle-hero {color:blue; font-size: smaller; background-color: Turquoise }\n.to-toc {margin-top: 10px; display: block}\n'];
