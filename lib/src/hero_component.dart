@@ -19,7 +19,7 @@ import 'hero.dart';
 class HeroComponent implements OnInit {
   @Input()
   Hero hero;
-  final _deleteRequest = new StreamController<Hero>();
+  final _deleteRequest = StreamController<Hero>();
   @Output()
   Stream<Hero> get deleteRequest => _deleteRequest.stream;
 
@@ -32,8 +32,7 @@ class HeroComponent implements OnInit {
 
   @override
   void ngOnInit() {
-    if (hero == null)
-      hero = new Hero(null, '', 'Zzzzzz'); // default sleeping hero
+    if (hero == null) hero = Hero(null, '', 'Zzzzzz'); // default sleeping hero
   }
 
   void delete() {
