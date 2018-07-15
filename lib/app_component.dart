@@ -1,4 +1,5 @@
 import 'dart:html';
+import 'dart:math' as math;
 
 import 'package:angular/angular.dart';
 import 'package:angular_forms/angular_forms.dart';
@@ -30,7 +31,7 @@ enum Color { red, green, blue }
     SizerComponent,
     materialDirectives
   ],
-  exports: [Color],
+  exports: [Color, math.min],
   providers: [materialProviders],
   pipes: [commonPipes],
 )
