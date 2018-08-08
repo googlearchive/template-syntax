@@ -28,6 +28,8 @@ packages/analyzer/src/summary/format.fbs
 packages/angular/src/di/README.md
 packages/angular_components/app_layout/README.md
 packages/angular_components/app_layout/g3doc/simple_app_bar.png
+packages/angular_components/css/mdc_web/README.md
+packages/angular_components/material_card/README.md
 packages/angular_components/material_datepicker/proto/date.proto
 packages/angular_components/material_datepicker/proto/date_range.proto
 packages/angular_components/src/material_datepicker/closedhand.cur
