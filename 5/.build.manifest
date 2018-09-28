@@ -35,6 +35,9 @@ packages/angular_components/material_datepicker/proto/date_range.proto
 packages/angular_components/src/material_datepicker/closedhand.cur
 packages/angular_components/src/material_datepicker/openhand.cur
 packages/build_modules/src/analysis_options.default.yaml
+packages/build_runner/src/server/README.md
+packages/build_runner/src/server/build_updates_client/hot_reload_client.dart.js
+packages/build_runner/src/server/build_updates_client/live_reload_client.js
 packages/build_runner/src/server/graph_viz.html
 packages/build_runner/src/server/graph_viz.js
 packages/build_runner/src/server/graph_viz_main.dart.js
@@ -287,6 +290,7 @@ packages/node_preamble/preamble.js
 packages/node_preamble/preamble.min.js
 packages/package_resolver/src/test_package_config
 packages/pageloader/src/generators/README.md
+packages/pedantic/analysis_options.yaml
 packages/test/dart.js
 packages/test/src/runner/browser/static/favicon.ico
 packages/test/src/runner/browser/static/host.css
