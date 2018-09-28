@@ -29,7 +29,8 @@ enum Color { red, green, blue }
     ClickDirective,
     ClickDirective2,
     SizerComponent,
-    materialDirectives
+    MaterialRadioComponent,
+    MaterialRadioGroupComponent,
   ],
   exports: [Color, math.min],
   providers: [materialProviders],
