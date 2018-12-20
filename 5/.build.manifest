@@ -6,7 +6,6 @@ favicon.png
 index.html
 main.dart.js
 packages/$sdk/_internal/ddc_sdk.sum
-packages/$sdk/_internal/spec.sum
 packages/$sdk/_internal/strong.sum
 packages/$sdk/dev_compiler/amd/dart_sdk.js
 packages/$sdk/dev_compiler/amd/require.js
@@ -32,6 +31,8 @@ packages/angular_components/css/mdc_web/README.md
 packages/angular_components/material_card/README.md
 packages/angular_components/material_datepicker/proto/date.proto
 packages/angular_components/material_datepicker/proto/date_range.proto
+packages/angular_components/material_input/material_auto_suggest_input.md
+packages/angular_components/material_select/material_dropdown_select.md
 packages/angular_components/src/material_datepicker/closedhand.cur
 packages/angular_components/src/material_datepicker/openhand.cur
 packages/build_modules/src/analysis_options.default.yaml
@@ -282,7 +283,6 @@ packages/intl/src/data/dates/symbols/zh_CN.json
 packages/intl/src/data/dates/symbols/zh_HK.json
 packages/intl/src/data/dates/symbols/zh_TW.json
 packages/intl/src/data/dates/symbols/zu.json
-packages/kernel/analyzer/readme.md
 packages/kernel/binary/readme.md
 packages/kernel/target/readme.md
 packages/kernel/text/readme.md

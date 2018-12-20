@@ -23,12 +23,13 @@ specific styling so you can easily override style values as needed.
 class MyComponent {}
 ```
 
+
 ## App Bar
 
 An app bar has the following classes which can be used together to create a
 header:
 
-<!-- mdformat off(Basic table formatting for Github markdown compatibility) -->
+<!-- mdformat off(Basic table formatting for GitHub markdown compatibility) -->
 
 Class                   | Description
 ----------------------- | ------------------------------------------------------
@@ -67,7 +68,7 @@ Here is an example:
 </header>
 ```
 
-![Simple App Bar](/dart-lang/angular_components/master/lib/app_layout/g3doc/simple_app_bar.png)
+![Simple App Bar](/dart-lang/angular_components/master/angular_components/lib/app_layout/g3doc/simple_app_bar.png)
 
 ## Drawers
 
@@ -270,7 +271,7 @@ using a mixin.
 Example scss drawer content component:
 
 ```scss
-@import 'third_party/dart_src/acx/app_layout/lib/mixins';
+@import 'package:angular_components/lib/app_layout/mixins';
 
 :host {
   @include mat-drawer-list-items;
